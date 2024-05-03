@@ -1,0 +1,25 @@
+parameters:
+  - name: appName
+    type: string
+  - name: resource_group
+    type: string
+  - name: image
+    type: string
+  - name: acrUrl
+    type: string
+
+
+steps:
+  - script: |
+          az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+          az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+          dockerimagename="${{ parameters.acrUrl }}/${{ parameters.image }}"
+          echo "image is $dockerimagename"
+          az webapp config container set -n "${{ parameters.appName }}" -g "${{ parameters.resource_group }}" --docker-custom-image-name "$dockerimagename"
+    displayName: 'Deploy  Container to Azure App Service'
+    env:
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+      continueOnError: "false"

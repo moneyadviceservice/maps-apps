@@ -1,0 +1,20 @@
+parameters:
+
+  - name: resource_group
+    type: string
+  - name: APP_NAME
+    type: string
+  - name: keyvaultname
+    type: string
+
+steps:
+
+  - template: ../steps/update-envars.yml
+    parameters:
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+      APP_NAME: ${{ parameters.APP_NAME }}
+      RESOURCE_GROUP: ${{ parameters.resource_group }}
+      keyvaultname: ${{ parameters.keyvaultname }}

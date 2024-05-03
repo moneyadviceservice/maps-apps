@@ -1,0 +1,74 @@
+{
+  "name": "pensionwise-triage",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pensionwise-triage",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/pensionwise-triage",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/lib/public",
+            "output": "./"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/pensionwise-triage"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pensionwise-triage:build",
+        "dev": true,
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pensionwise-triage:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pensionwise-triage:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "pensionwise-triage:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/pensionwise-triage/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/pensionwise-triage",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

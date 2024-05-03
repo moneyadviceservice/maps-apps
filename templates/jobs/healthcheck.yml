@@ -1,0 +1,51 @@
+parameters:
+  - name: url
+    type: string
+  - name: sha
+    type: string
+
+steps:
+
+    - script: |
+        url=${{ parameters.url }}
+        APP_SHA=${{ parameters.sha }}
+        # Set the timeout duration in seconds (6 minutes * 60 seconds/minute)
+        timeout_duration=$((6 * 60))
+
+        # Start time
+        start_time=$(date +%s)
+
+        while :; do
+            # Get the current time
+            current_time=$(date +%s)
+
+            # Calculate elapsed time
+            elapsed_time=$((current_time - start_time))
+
+            # Break the loop if the timeout has been reached
+            if [ $elapsed_time -ge $timeout_duration ]; then
+                echo "Error: Status code 200 not received within 4 minutes."
+                exit 1
+            fi
+
+            # Get the HTTP status code
+            http_status_code=$(curl -o /dev/null -s -w "%{http_code}" $url)
+
+            # Check if the status code is 200
+            if [ "$http_status_code" -eq 200 ]; then
+                echo "Success: Received status code 200."
+                json=$(curl -s $url)
+                sha=$( echo ${json} | jq -r .image_sha)
+                echo "returned sha is $sha, APP_SHA is ${APP_SHA}"
+                if [ "${sha}" != "${APP_SHA}"  ]
+                then
+                  echo "Healthcheck failed"
+                else
+                  echo "Healthcheck passed"
+                  exit 0
+                fi
+            else
+                # Wait for a short period before trying again
+                sleep 5
+            fi
+        done

@@ -1,0 +1,31 @@
+trigger: none
+name: Check dependencies vulnerabilities
+
+schedules:
+  - cron: '0 3 * * 1'
+    always: true
+    branches:
+      include:
+        - main
+    batch: true
+    displayName: OWASP Dependency Check
+steps:
+  - task: UseNode@1
+    inputs:
+      version: '18.17.1'
+    displayName: 'Install Node.js'
+  - script: |
+      npm install
+  - task: dependency-check-build-task@6
+    inputs:
+      projectName: 'MaPS Apps'
+      scanPath: 'package-lock.json'
+      format: 'HTML, JUNIT'
+      warnOnCVSSViolation: true
+      nvdApiKey: $(nvdApiKey)
+      nvdApiDelay: '8000'
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: 'dependency-check/*junit.xml'
+      searchFolder: '$(Common.TestResultsDirectory)'

@@ -1,0 +1,28 @@
+parameters:
+  - name: environment
+    type: string
+  - name: target_branch
+    type: string
+  - name: build_id
+    type: string
+  - name: source_version
+    type: string
+  - name: tag
+    type: string
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: keyvaultname
+    type: string
+steps:
+
+  - template: ../steps/1-checkout-main.yml
+
+  - template: ../steps/2-install-dependencies.yml
+
+  - template: ../steps/7-build-and-list-affected-projects.yml
+    parameters:
+      target_branch: ${{ parameters.target_branch }}
+      version: ${{ parameters.tag }}
+      keyvaultname: ${{ parameters.keyvaultname }}
+      compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
