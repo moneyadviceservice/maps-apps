@@ -55,7 +55,7 @@
     "@nx/eslint-plugin": "18.0.4",
     "@nx/jest": "18.0.4",
     "@nx/js": "17.3.2",
-    "@nx/react": "17.3.2",
+    "@nx/react": "18.3.4",
     "@nx/storybook": "17.3.2",
     "@nx/workspace": "17.3.2",
     "@storybook/addon-designs": "^7.0.5",
