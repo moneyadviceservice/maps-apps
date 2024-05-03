@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component renders correctly 1`] = `
+<div
+  class="print:hidden"
+  data-testid="contact"
+>
+  <div
+    class="fixed top-0 right-0"
+  >
+    <button
+      class="t-chat-button fixed flex md:flex-col shadow-bottom-gray outline-0 bottom-4 bg-white right-4 justify-between min-w-[12.063rem] md:min-w-0 md:min-h-[7.1rem] md:align-bottom md:top-[40%] md:bottom-auto md:right-0 border solid rounded md:rounded-l md:rounded-r-none border-pink-600 md:border-r-0 py-1.5 px-2.5 md:p-2.5 hover:bg-gray-100 hover:text-pink-800 focus:text-grey-800 focus:bg-yellow-200 focus:border-purple-700 focus:border-2 focus:shadow-none"
+      data-testid="contact-open"
+    >
+      <div
+        class="t-chat-button-icon flex justify-center md:self-center"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div
+        class="t-chat-button-text text-lg font-bold text-end md:text-left self-center md:max-w-[3.438rem]"
+      >
+        Talk to us live
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Contact component renders correctly money opened 1`] = `
+<div
+  class="print:hidden"
+  data-testid="contact"
+>
+  <div
+    class="t-chat-panel fixed top-0 right-0 bg-gray-100 h-screen max-w-[24.438rem] z-20"
+  >
+    <div
+      class="flex flex-col-reverse flex-wrap-reverse"
+    >
+      <div
+        class="overflow-y-scroll h-4/5 md:h-full scroll-pb-2.5 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-pink-600 scrollbar-track-gray-100 md:overflow-hidden"
+      >
+        <div
+          class="t-chat-panel-title text-3xl text-blue-800 font-bold px-4 pt-3.5"
+        >
+          Talk to us live for money guidance using WhatsApp
+        </div>
+        <div
+          class="flex flex-row grow justify-between items-stretch px-4 flex-wrap"
+        >
+          <a
+            class="t-chat-panel-button-inline flex bg-white outline-0 shadow-bottom-gray top-1/2 mr-2 my-7 right-0 border solid rounded border-pink-600 py-2 px-4 w-full text-xl text-pink-600 hover:bg-gray-100 hover:text-pink-800 focus:text-gray-800 focus:bg-yellow-200 focus:border-purple-700 focus:border-2 focus:shadow-none"
+            href="https://wa.me/447701342744"
+            target="_blank"
+          >
+            <svgr-mock
+              classname=""
+            />
+            <span
+              class="pl-2.5 font-semibold"
+            >
+              +44 77 0134 2744
+            </span>
+          </a>
+          <div
+            class="flex pb-4"
+          >
+            <p
+              class="mb-4"
+              data-testid="paragraph"
+            >
+              Download app
+            </p>
+            <a
+              class="underline text-pink-800 pl-1 hover:no-underline hover:text-pink-900 focus:no-underline focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus"
+              href="https://www.whatsapp.com/download/"
+              target="_blank"
+            >
+              WhatsApp
+            </a>
+          </div>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            For help sorting out your debts or credit questions. For everything else please contact us via Webchat or telephone.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white p-3"
+      >
+        <div
+          class="flex justify-between"
+        >
+          <button
+            class="t-chat-panel-previous flex flex-row justify-end items-center text-pink-600 hover:text-pink-900 hover:underline focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus outline-0"
+            data-testid="contact-back"
+          >
+            <svgr-mock
+              classname=""
+            />
+            <span
+              class="text-base ml-1.5 flex"
+            >
+              Previous
+            </span>
+          </button>
+          <button
+            class="t-chat-panel-close flex flex-row justify-end items-center text-pink-600 hover:text-pink-900 hover:underline focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus outline-0"
+          >
+            <svgr-mock
+              classname="text-pink-600"
+              fill="#c82a87"
+            />
+            <span
+              class="text-lg font-bold text-gray-800 ml-1 flex"
+            >
+              Close
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="t-overlay fixed inset-0 w-screen h-screen bg-gray-800 opacity-25"
+    data-testid="contact-close"
+    role="none"
+  />
+</div>
+`;
+
+exports[`Contact component renders correctly money opened and closed 1`] = `
+<div
+  class="print:hidden"
+  data-testid="contact"
+>
+  <div
+    class="fixed top-0 right-0"
+  >
+    <button
+      class="t-chat-button fixed flex md:flex-col shadow-bottom-gray outline-0 bottom-4 bg-white right-4 justify-between min-w-[12.063rem] md:min-w-0 md:min-h-[7.1rem] md:align-bottom md:top-[40%] md:bottom-auto md:right-0 border solid rounded md:rounded-l md:rounded-r-none border-pink-600 md:border-r-0 py-1.5 px-2.5 md:p-2.5 hover:bg-gray-100 hover:text-pink-800 focus:text-grey-800 focus:bg-yellow-200 focus:border-purple-700 focus:border-2 focus:shadow-none"
+      data-testid="contact-open"
+    >
+      <div
+        class="t-chat-button-icon flex justify-center md:self-center"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div
+        class="t-chat-button-text text-lg font-bold text-end md:text-left self-center md:max-w-[3.438rem]"
+      >
+        Talk to us live
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Contact component renders correctly pensions opened 1`] = `
+<div
+  class="print:hidden"
+  data-testid="contact"
+>
+  <div
+    class="t-chat-panel fixed top-0 right-0 bg-gray-100 h-screen max-w-[24.438rem] z-20"
+  >
+    <div
+      class="flex flex-col-reverse flex-wrap-reverse"
+    >
+      <div
+        class="overflow-y-scroll h-4/5 md:h-full scroll-pb-2.5 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-pink-600 scrollbar-track-gray-100 md:overflow-hidden"
+      >
+        <div
+          class="t-chat-panel-title text-3xl text-blue-800 font-bold px-4 pt-3.5"
+        >
+          Talk to us live for pensions guidance using web chat
+        </div>
+        <div
+          class="flex flex-row grow justify-between items-stretch px-4 flex-wrap"
+        >
+          <a
+            class="t-chat-panel-button-inline flex bg-white outline-0 shadow-bottom-gray top-1/2 mr-2 my-7 right-0 border solid rounded border-pink-600 py-2 px-4 w-full text-xl text-pink-600 hover:bg-gray-100 hover:text-pink-800 focus:text-gray-800 focus:bg-yellow-200 focus:border-purple-700 focus:border-2 focus:shadow-none"
+            href="https://www.moneyhelper.org.uk/pensionschat"
+            target="_blank"
+          >
+            <svgr-mock
+              classname=""
+            />
+            <span
+              class="pl-2.5 font-semibold"
+            >
+              Start webchat
+            </span>
+          </a>
+          <table
+            class="table-fixed border border-slate-400 border-x-0 border-t-0 w-full text-base"
+          >
+            <thead>
+              <tr
+                class="border border-slate-400 border-x-0 border-t-0"
+              >
+                <th
+                  class="text-left"
+                >
+                  Hours
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border border-slate-400 border-x-0"
+              >
+                <td
+                  class="pb-2 pt-2 max-w-[7.5rem]"
+                >
+                  Mon-Fri:
+                </td>
+                <td
+                  class="pb-2 pt-2 font-bold"
+                >
+                  9.00am – 6.00pm
+                </td>
+              </tr>
+              <tr
+                class="border border-slate-400 border-x-0"
+              >
+                <td
+                  class="pb-2 pt-2 max-w-[7.5rem]"
+                >
+                  Sun and bank holidays:
+                </td>
+                <td
+                  class="pb-2 pt-2 font-bold"
+                >
+                  Closed
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="bg-white p-3"
+      >
+        <div
+          class="flex justify-between"
+        >
+          <button
+            class="t-chat-panel-previous flex flex-row justify-end items-center text-pink-600 hover:text-pink-900 hover:underline focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus outline-0"
+            data-testid="contact-back"
+          >
+            <svgr-mock
+              classname=""
+            />
+            <span
+              class="text-base ml-1.5 flex"
+            >
+              Previous
+            </span>
+          </button>
+          <button
+            class="t-chat-panel-close flex flex-row justify-end items-center text-pink-600 hover:text-pink-900 hover:underline focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus outline-0"
+          >
+            <svgr-mock
+              classname="text-pink-600"
+              fill="#c82a87"
+            />
+            <span
+              class="text-lg font-bold text-gray-800 ml-1 flex"
+            >
+              Close
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="t-overlay fixed inset-0 w-screen h-screen bg-gray-800 opacity-25"
+    data-testid="contact-close"
+    role="none"
+  />
+</div>
+`;

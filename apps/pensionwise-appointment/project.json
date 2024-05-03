@@ -1,0 +1,74 @@
+{
+  "name": "pensionwise-appointment",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pensionwise-appointment",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/pensionwise-appointment",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/lib/public",
+            "output": "./"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/pensionwise-appointment"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pensionwise-appointment:build",
+        "dev": true,
+        "port": 4250
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pensionwise-appointment:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pensionwise-appointment:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "pensionwise-appointment:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/pensionwise-appointment/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/pensionwise-appointment",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,21 @@
+parameters:
+- name: serviceName
+  type: string
+  default: 'pensionwise-triage'
+
+jobs:
+- job: Deploy_${{ parameters.serviceName }}_if_affected
+  dependsOn: Checkout_Build_Affected
+  variables:
+    envstodeploy: $[ dependencies.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+  condition: contains(variables.envstodeploy, ${{ parameters.serviceName }} )
+  steps:
+    - script: |
+      echo "This job runs if 'pensionwise-triage' is in envstodeploy: $(envstodeploy)"
+      displayName: 'Conditional Execution based on List Value'
+    - script: |
+      echo "##vso[task.setvariable variable=prId]$(System.PullRequest.PullRequestId)"
+      displayName: 'Save PR ID'
+    - template: ../steps/conditional-deploy.yml
+      parameters:
+        serviceName: ${{ parameters.serviceName }}

@@ -1,0 +1,86 @@
+parameters:
+  - name: environment
+    type: string
+    default: "review"
+  - name: parametersFile
+    type: string
+  - name: "location"
+    type: string
+  - name: "azureResourceManagerConnection"
+    type: string
+  - name: "subscriptionId"
+    type: string
+  - name: "managedIdentityName"
+    type: string
+  - name: "managedIdentityresourceGroupName"
+    type: string
+  - name: "webAppName"
+    type: string
+  - name: "acrName"
+    type: string
+  - name: ASPResourceGroup
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_PASSWORD
+    type: string
+  - name: port
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_USERNAME
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_URL
+    type: string
+
+steps:
+
+- checkout: self
+
+- task: AzureCLI@2
+  displayName: "Create Resource Group"
+  inputs:
+    azureSubscription: "ADO-PWD-Connection"
+    scriptType: "bash"
+    scriptLocation: "inlineScript"
+    inlineScript: |
+      az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+      az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+      az account show
+      if [ $(az group exists --name 'pensionwise-${{ parameters.environment }}-uksouth-rg') = false ]; then
+        az group create --name 'pensionwise-${{ parameters.environment }}-uksouth-rg' --location '${{ parameters.location }}'
+      else
+        echo 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+        echo show contents of 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+        az resource list --resource-group 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+      fi
+- script: |
+    az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+    az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+    appExists=$(az webapp show --name ${{ parameters.webAppName }} --resource-group 'pensionwise-${{ parameters.environment }}-uksouth-rg' --query id -o tsv)
+
+    if [ -n "$appExists" ]; then
+        echo "Web app ${{ parameters.webAppName }} exists. Proceeding with deletion."
+        az webapp delete --name ${{ parameters.webAppName }} --resource-group 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+    else
+        echo "Web app ${{ parameters.webAppName }} does not exist. Skipping deletion."
+    fi
+  displayName: Delete existing app service
+
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: "Deploy App Service Plan"
+  inputs:
+      deploymentScope: "Resource Group"
+      azureResourceManagerConnection: "ADO-PWD-Connection"
+      subscriptionId: ${{ parameters.subscriptionId }}
+      resourceGroupName: pensionwise-${{ parameters.environment }}-uksouth-rg
+      action: 'Create Or Update Resource Group'
+      location: "uksouth"
+      templateLocation: "Linked artifact"
+      csmFile: "arm-templates/appserviceandplan.json"
+      csmParametersFile: "parameters/appservice.${{ parameters.environment }}.parameters.json"
+      overrideParameters: >-
+        -appName ${{ parameters.webAppName }}
+        -DOCKER_REGISTRY_SERVER_PASSWORD ${{ parameters.DOCKER_REGISTRY_SERVER_PASSWORD }}
+        -PORT ${{ parameters.port }}
+        -WEBSITES_PORT ${{ parameters.PORT }}
+        -DOCKER_REGISTRY_SERVER_USERNAME ${{ parameters.DOCKER_REGISTRY_SERVER_USERNAME }}
+        -DOCKER_REGISTRY_SERVER_URL ${{ parameters.DOCKER_REGISTRY_SERVER_URL }}
+        -acrName ${{ parameters.acrName }}
+      deploymentMode: "Incremental"

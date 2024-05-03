@@ -1,0 +1,49 @@
+parameters:
+  - name: environment
+    type: string
+    default: "test"
+  - name: parametersFile
+    type: string
+  - name: "location"
+    type: string
+    default: "uksouth"
+  - name: "planname"
+    type: string
+    default: "uksouth"
+  - name: "appname"
+    type: string
+  - name: "ASPResourceGroup"
+    type: string
+
+
+jobs:
+- job: DestroyReviewAppService
+  displayName: "SPN login and destroy review app service"
+  condition: contains(variables['System.PullRequest.SourceBranch'], 'refs/pull')
+  steps:
+      - checkout: self
+      - task: AzureCLI@2
+        displayName: "Create Resource Group"
+        inputs:
+          azureSubscription: "ADO-PWD-Connection"
+          scriptType: "bash"
+          scriptLocation: "inlineScript"
+          inlineScript: |
+            az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+            az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+            az account show
+            if [ $(az group exists --name 'pensionwise-${{ parameters.environment }}-uksouth-rg' = false ]; then
+              az group create --name 'pensionwise-${{ parameters.environment }}-uksouth-rg' --location '${{ parameters.location }}'
+            else
+              echo 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+              echo show contents of 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+              az resource list --resource-group 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+            fi
+      - task: AzureCLI@2
+        displayName: "Destroy App review Service"
+        inputs:
+          azureSubscription: "ADO-PWD-Connection"
+          scriptType: "bash"
+          scriptLocation: "inlineScript"
+          inlineScript: |
+            echo "This job runs only when a PR is merged to destroy review app service."

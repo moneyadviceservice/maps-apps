@@ -1,0 +1,62 @@
+name: Build infrastructure maps-apps
+trigger: none
+
+parameters:
+  - name: environment
+    displayName: Environment
+    type: string
+    default: dev
+    values:
+      - dev
+      - dev1
+      - test
+      - test1
+      - staging
+      - preprod
+      - prod
+  - name: application
+    displayName: Application
+    type: string
+    default: triage
+    values:
+    - triage
+    - appointment
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Build
+    displayName: Build appServicePlanName and appService for ${{ parameters.environment }}
+    jobs:
+      - job: Deploy_pensionwise_triage_${{ parameters.environment }}
+        variables:
+          - template: templates/variables/${{ parameters.environment }}.yml
+          - group: ${{ parameters.environment }}_maps_apps
+          - template: templates/variables/global.yml
+        steps:
+          - template: templates/jobs/deploy-environment.yml
+            parameters:
+              environment: ${{ parameters.environment }}
+              AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+              azureResourceManagerConnection: 'ADO-PWD-Connection'
+              location: 'uksouth'
+              webAppName: '${{ parameters.environment }}-pensionwise-${{ parameters.application }}'
+              port: 3000
+              sku: $(SKU)
+              appServicePlanName: "pensionwise-${{ parameters.environment }}-uksouth-asp"
+              DOCKER_REGISTRY_SERVER_PASSWORD: $(DOCKER_REGISTRY_SERVER_PASSWORD)
+              DOCKER_REGISTRY_SERVER_URL: $(DOCKER_REGISTRY_SERVER_URL)
+              DOCKER_REGISTRY_SERVER_USERNAME: $(DOCKER_REGISTRY_SERVER_USERNAME)
+              subscriptionId: $(AZURE_SUBSCRIPTION_ID)
+              acrName: $(ACR_NAME)
+
+
+          - template: templates/steps/update-envars.yml
+            parameters:
+              AKS_SPN_ID: $(AKS_SPN_ID)
+              AKS_SPN_KEY: $(AKS_SPN_KEY)
+              TENANT_ID: $(TENANT_ID)
+              AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+              APP_NAME: ${{ parameters.environment }}-pensionwise-${{ parameters.application }}
+              RESOURCE_GROUP: pensionwise-${{ parameters.environment }}-uksouth-rg

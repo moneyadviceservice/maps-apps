@@ -1,0 +1,16 @@
+parameters:
+  - name: resource_group
+    type: string
+  - name: appName
+    type: string
+  - name: image
+    type: string
+
+steps:
+
+  - template: ../steps/update-docker-tag.yml
+    parameters:
+      appName: '${{ parameters.appName }}'
+      resource_group: ${{ parameters.resource_group }}
+      image: '${{ parameters.image }}'
+      acrUrl: '$(acrUrl)'

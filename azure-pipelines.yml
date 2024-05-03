@@ -1,0 +1,180 @@
+name: PR - Maps Apps
+
+trigger: none
+
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- template: templates/variables/global.yml
+- template: templates/variables/dev.yml
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Checkout_Build_Affected
+        displayName: 'Checkout and Build affected Apps'
+        steps:
+          - script: |
+              if [ -n "$(System.PullRequest.PullRequestId)" ]; then
+                PRID=$(System.PullRequest.PullRequestId)
+              else
+                PRID=$(date +%Y%m%d%H%M%S)
+              fi
+              echo "##vso[task.setvariable variable=prid;isOutput=true]$PRID"
+              echo "##vso[task.setvariable variable=prid]$PRID"
+              echo "PRID is set to $PRID"
+            displayName: 'Set PRID Variable'
+            name: setprid
+
+          - script: |
+              echo "the params are PRID: $(prid),BUILD ID - $(Build.BuildId), source version: $(Build.SourceVersion)"
+            displayName: 'echo parameters'
+
+          - template: templates/jobs/build.yml
+            parameters:
+              environment: review
+              target_branch: refs/heads/main
+              build_id: $(Build.BuildId)
+              source_version: $(Build.SourceVersion)
+              tag: pr-$(prid)
+              compareWithTargetBranch: true
+              keyvaultname: $(keyvaultname)
+
+
+  - stage: Test
+    dependsOn: [Build]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+      - name: prid
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['setprid.prid'] ]
+
+    jobs:
+      - job: Run_tests
+        displayName: 'Run tests'
+        steps:
+          - template: templates/jobs/test.yml
+            parameters:
+              compareWithTargetBranch: true
+              envstodeploy: $(envstodeploy)
+              keyvaultname: $(keyvaultname)
+
+  - stage: Deploy
+    dependsOn: [Build, Test]
+
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+      - name: prid
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['setprid.prid'] ]
+
+
+    jobs:
+      - job: Deploy_pensionwise_triage_if_affected
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        steps:
+          - template: templates/jobs/deploy-affected-apps.yml
+            parameters:
+              serviceName: pensionwise-triage
+              tag: pr-$(prid)
+              port: 3000
+              resource_group: pensionwise-review-uksouth-rg
+              environment: 'review'
+              appName: pensionwise-triage-pr-$(prid)
+
+      - job: Deploy_pensionwise_appointment_if_affected
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        steps:
+          - template: templates/jobs/deploy-affected-apps.yml
+            parameters:
+              serviceName: pensionwise-appointment
+              tag: pr-$(prid)
+              port: 3000
+              resource_group: pensionwise-review-uksouth-rg
+              environment: 'review'
+              appName: pensionwise-appointment-pr-$(prid)
+
+  - stage: Update_Env_Vars
+    dependsOn: [Build, Test, Deploy]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+      - name: appointment-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-appointment-image-sha'] ]
+
+      - name: triage-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-triage-image-sha'] ]
+
+      - name: prid
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['setprid.prid'] ]
+
+
+    jobs:
+      - job: Update_var_pensionwise_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Update environment variables - appointments'
+        steps:
+          - script: |
+             echo "triage-image-sha is $(triage-image-sha),appointment-image-sha is $(appointment-image-sha)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-review-uksouth-rg
+              APP_NAME: 'pensionwise-appointment-pr-$(prid)'
+              keyvaultname: $(keyvaultname)
+      - job: Update_var_pensionwise_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Update environment variables - pensionwise-triage'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-review-uksouth-rg
+              APP_NAME: 'pensionwise-triage-pr-$(prid)'
+              keyvaultname: $(keyvaultname)
+
+  - stage: Check_Liveliness
+    dependsOn: [Build,Test, Deploy,Update_Env_Vars]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+      - name: appointment-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-appointment-image-sha'] ]
+
+      - name: triage-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-triage-image-sha'] ]
+
+      - name: prid
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['setprid.prid'] ]
+
+
+    jobs:
+      - job: Perform_liveliness_check_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Carry out liveliness check - appointment'
+        steps:
+          - script: |
+             echo "triage-image-sha is $(triage-image-sha),appointment-image-sha is $(appointment-image-sha)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(appointment-image-sha)
+              url: 'pensionwise-appointment-pr-$(prid).azurewebsites.net/api/healthcheck'
+      - job: Perform_liveliness_check_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Carry out liveliness check - triage'
+        steps:
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(triage-image-sha)
+              url: 'pensionwise-triage-pr-$(prid).azurewebsites.net/api/healthcheck'
