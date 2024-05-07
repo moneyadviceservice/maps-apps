@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskList component renders correctly 1`] = `
+<ol
+  class="border-t-1 border-slate-400"
+  data-testid="test-component"
+>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <form
+      method="POST"
+      novalidate=""
+    >
+      <input
+        name="task"
+        type="HIDDEN"
+        value="1"
+      />
+      <input
+        name="status"
+        type="HIDDEN"
+        value="4"
+      />
+      <input
+        name="language"
+        type="HIDDEN"
+        value="en"
+      />
+      <button
+        class="text-left items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none grid grid-cols-8 items-center w-full"
+        data-testid="task-1"
+        formaction="api/test"
+        role="link"
+      >
+        <div
+          class="col-span-5"
+        >
+          Task 1
+        </div>
+        <div
+          class="col-span-3 text-right"
+        >
+          <span
+            class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block bg-green-700 text-white"
+          >
+            Completed
+          </span>
+        </div>
+      </button>
+    </form>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <form
+      method="POST"
+      novalidate=""
+    >
+      <input
+        name="task"
+        type="HIDDEN"
+        value="2"
+      />
+      <input
+        name="status"
+        type="HIDDEN"
+        value="3"
+      />
+      <input
+        name="language"
+        type="HIDDEN"
+        value="en"
+      />
+      <button
+        class="text-left items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none grid grid-cols-8 items-center w-full"
+        data-testid="task-2"
+        formaction="api/test"
+        role="link"
+      >
+        <div
+          class="col-span-5"
+        >
+          Task 2
+        </div>
+        <div
+          class="col-span-3 text-right"
+        >
+          <span
+            class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block bg-gray-400 text-white"
+          >
+            In progress
+          </span>
+        </div>
+      </button>
+    </form>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <form
+      method="POST"
+      novalidate=""
+    >
+      <input
+        name="task"
+        type="HIDDEN"
+        value="3"
+      />
+      <input
+        name="status"
+        type="HIDDEN"
+        value="3"
+      />
+      <input
+        name="language"
+        type="HIDDEN"
+        value="en"
+      />
+      <button
+        class="text-left items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none grid grid-cols-8 items-center w-full"
+        data-testid="task-3"
+        formaction="api/test"
+        role="link"
+      >
+        <div
+          class="col-span-5"
+        >
+          Task 3
+        </div>
+        <div
+          class="col-span-3 text-right"
+        >
+          <span
+            class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+          >
+            Not started
+          </span>
+        </div>
+      </button>
+    </form>
+  </li>
+</ol>
+`;
+
+exports[`TaskList component renders disabled links list correctly 1`] = `
+<ol
+  class="border-t-1 border-slate-400"
+  data-testid="test-component"
+>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 1
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Cannot start yet
+        </span>
+      </div>
+    </div>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 2
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Cannot start yet
+        </span>
+      </div>
+    </div>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 3
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Cannot start yet
+        </span>
+      </div>
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`TaskList component renders notLaunched list correctly 1`] = `
+<ol
+  class="border-t-1 border-slate-400"
+  data-testid="test-component"
+>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 1
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Launching soon
+        </span>
+      </div>
+    </div>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 2
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Launching soon
+        </span>
+      </div>
+    </div>
+  </li>
+  <li
+    class="text-gray-800 border-b-1 border-slate-400 py-2"
+  >
+    <div
+      class="grid grid-cols-8 items-center"
+    >
+      <div
+        class="col-span-5"
+      >
+        Task 3
+      </div>
+      <div
+        class="col-span-3 text-right"
+      >
+        <span
+          class="text-base text-gray-800 bg-gray-100 py-1 px-2 inline-block"
+        >
+          Launching soon
+        </span>
+      </div>
+    </div>
+  </li>
+</ol>
+`;

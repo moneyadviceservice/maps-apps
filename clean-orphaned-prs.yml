@@ -1,0 +1,39 @@
+trigger: none
+name: Check dependencies version
+
+parameters:
+- name: resourceGroups
+  type: object
+  default:
+  - mapsnextjs-test-uksouth-rg
+  - pensionwise-review-uksouth-rg
+  - mapsnextjs-review-uksouth-rg
+
+schedules:
+- cron: '0 20 * * 1,3,5'
+  always: true
+  branches:
+    include:
+    - main
+  batch: true
+  displayName: PR Cleanup
+
+
+jobs:
+- job: CleanupPRs
+  displayName: 'Clean up Pull Requests'
+  pool:
+    vmImage: 'ubuntu-latest'
+
+  steps:
+  - script: |
+      pr_ids=$(curl -s -u $(access-token) "https://dev.azure.com/moneyandpensionsservice/MaPS%20Digital/_apis/git/repositories/maps-apps/pullrequests?api-version=6.0" -H "Accept: application/json" | jq -r '.value[] | select(.status == "active") | .pullRequestId | tostring')
+      echo "##vso[task.setvariable variable=pr_id_list;isOutput=true]$pr_ids"
+    name: getPRs
+    displayName: Get PR's
+
+  - ${{ each resourcegroup in parameters.resourceGroups }}:
+    - template: templates/jobs/clean-env-prs.yml
+      parameters:
+        resourcegroup: ${{ resourcegroup }}
+        pr_id_list: $(getPRs.pr_id_list)

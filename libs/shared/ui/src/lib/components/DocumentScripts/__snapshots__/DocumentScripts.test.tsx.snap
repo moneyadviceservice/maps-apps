@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component renders correctly 1`] = `
+<div>
+  <noscript>
+    &lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQD7M4S" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+  </noscript>
+</div>
+`;

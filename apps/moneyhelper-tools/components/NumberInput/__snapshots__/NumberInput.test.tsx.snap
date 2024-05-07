@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberInput component renders correctly 1`] = `
+<input
+  class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+  data-testid="number-input"
+  id="id"
+  inputmode="numeric"
+  name="name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`NumberInput component renders correctly with a custom className 1`] = `
+<input
+  class="rounded-lg tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+  data-testid="number-input"
+  id="id"
+  inputmode="numeric"
+  name="name"
+  type="text"
+  value=""
+/>
+`;

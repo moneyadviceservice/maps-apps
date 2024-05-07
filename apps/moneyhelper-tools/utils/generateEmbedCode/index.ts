@@ -1,0 +1,1 @@
+export { generateEmbedCode } from './generateEmbedCode';

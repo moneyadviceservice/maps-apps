@@ -1,0 +1,70 @@
+parameters:
+  - name: environment
+    type: string
+  - name: location
+    type: string
+  - name: webAppName
+    type: string
+  - name: port
+    type: string
+  - name: appServicePlanName
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_PASSWORD
+    type: string
+  - name: azureResourceManagerConnection
+    type: string
+  - name: AZURE_SUBSCRIPTION_ID
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_USERNAME
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_URL
+    type: string
+  - name: subscriptionId
+    type: string
+  - name: sku
+    type: string
+  - name: acrName
+    type: string
+
+steps:
+  - checkout: self
+
+  - task: AzureCLI@2
+    displayName: "Create Resource Group"
+    inputs:
+      azureSubscription: "${{ parameters.azureResourceManagerConnection }}"
+      scriptType: "bash"
+      scriptLocation: "inlineScript"
+      inlineScript: |
+        az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+
+        if [ $(az group exists --name 'pensionwise-${{ parameters.environment }}-uksouth-rg') = false ]; then
+              az group create --name 'pensionwise-${{ parameters.environment }}-uksouth-rg' --location '${{ parameters.location }}'
+        else
+          echo 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+          echo show contents of 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+          az resource list --resource-group 'pensionwise-${{ parameters.environment }}-uksouth-rg'
+        fi
+
+  - task: AzureResourceManagerTemplateDeployment@3
+    displayName: "Deploy App Service Plan"
+    inputs:
+        deploymentScope: "Resource Group"
+        azureResourceManagerConnection: "${{ parameters.azureResourceManagerConnection }}"
+        subscriptionId: "${{ parameters.subscriptionId }}"
+        resourceGroupName: "pensionwise-${{ parameters.environment }}-uksouth-rg"
+        action: 'Create Or Update Resource Group'
+        location: "${{ parameters.location }}"
+        templateLocation: "Linked artifact"
+        csmFile: "arm-templates/appserviceandplan.json"
+        csmParametersFile: "parameters/appserviceandplan.parameters.json"
+        overrideParameters: >-
+          -appName ${{ parameters.webAppName }}
+          -DOCKER_REGISTRY_SERVER_USERNAME ${{ parameters.DOCKER_REGISTRY_SERVER_USERNAME }}
+          -DOCKER_REGISTRY_SERVER_PASSWORD ${{ parameters.DOCKER_REGISTRY_SERVER_PASSWORD }}
+          -DOCKER_REGISTRY_SERVER_URL ${{ parameters.DOCKER_REGISTRY_SERVER_URL }}
+          -WEBSITES_PORT ${{ parameters.port }}
+          -appServicePlanName ${{ parameters.appServicePlanName }}
+          -sku ${{ parameters.sku }}
+          -acrName ${{ parameters.acrName }}
+        deploymentMode: "Incremental"

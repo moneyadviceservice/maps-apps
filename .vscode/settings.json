@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  }
+}

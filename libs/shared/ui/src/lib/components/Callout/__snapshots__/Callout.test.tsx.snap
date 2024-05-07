@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Callout component renders the default variant correctly 1`] = `
+<div
+  class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-200 before:bg-blue-800"
+  data-testid="callout-default-test"
+>
+  Callout
+</div>
+`;
+
+exports[`Callout component renders the negative variant correctly 1`] = `
+<div
+  class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-red-100 before:bg-red-700"
+  data-testid="callout-negative-test"
+>
+  Callout
+</div>
+`;
+
+exports[`Callout component renders the positive variant correctly 1`] = `
+<div
+  class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-green-100 before:bg-green-700"
+  data-testid="callout-positive-test"
+>
+  Callout
+</div>
+`;
+
+exports[`Callout component renders the warning variant correctly 1`] = `
+<div
+  class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-yellow-150 before:bg-yellow-700"
+  data-testid="callout-warning-test"
+>
+  Callout
+</div>
+`;

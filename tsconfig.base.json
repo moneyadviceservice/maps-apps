@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "allowJs": true,
+    "module": "esnext",
+    "lib": ["es2020", "dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@maps-digital/shared/hooks": ["libs/shared/hooks/src/index.ts"],
+      "@maps-digital/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@maps-digital/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@maps-digital/tools": ["libs/shared/tools/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
