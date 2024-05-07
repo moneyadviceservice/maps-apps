@@ -48,7 +48,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^20.0.3",
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
     "@cypress/webpack-preprocessor": "^6.0.0",
     "@nx/cypress": "18.2.3",
     "@nx/eslint": "17.3.2",
