@@ -53,7 +53,7 @@
     "@nx/cypress": "18.2.3",
     "@nx/eslint": "17.3.2",
     "@nx/eslint-plugin": "18.0.4",
-    "@nx/jest": "18.0.4",
+    "@nx/jest": "19.0.7",
     "@nx/js": "17.3.2",
     "@nx/react": "17.3.2",
     "@nx/storybook": "17.3.2",
