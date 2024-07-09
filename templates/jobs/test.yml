@@ -1,0 +1,26 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: envstodeploy
+    type: string
+  - name: keyvaultname
+    type: string
+steps:
+  - template: ../steps/1-checkout-main.yml
+
+  - template: ../steps/4-run-tests.yml
+    parameters:
+      compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+      envstodeploy: ${{ parameters.envstodeploy }}
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      keyvaultname: ${{ parameters.keyvaultname }}
+
+  - template: ../steps/5-analyze-code.yml
+    parameters:
+      SONARCLOUD_NAME: 'MAPS-SonarCloud'
+      SONARCLOUD_ORGANISATION: $(organisationkey)
+      SONARCLOUD_PROJECTKEY: $(projectKey)
+      SONARCLOUD_PROJECTNAME: 'maps-apps'

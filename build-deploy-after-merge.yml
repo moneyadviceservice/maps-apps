@@ -1,0 +1,181 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+
+  - name: target_environment
+    value: 'dev'
+  - template: templates/variables/dev.yml
+  - template: templates/variables/global.yml
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Checkout_Build_Affected
+        displayName: 'Checkout and Build affected Apps'
+        steps:
+          - script: |
+              echo "the params are build_id: $(Build.BuildId),source_version: $(Build.SourceVersion), tag: dev-$(Build.BuildId)"
+            displayName: 'echo parameters'
+
+          - template: templates/jobs/build.yml
+            parameters:
+              environment: 'dev'
+              target_branch: refs/heads/main
+              build_id: $(Build.BuildId)
+              source_version: $(Build.SourceVersion)
+              tag: dev-$(Build.BuildId)
+              compareWithTargetBranch: false
+              keyvaultname: $(keyvaultname)
+
+  - stage: Test
+    dependsOn: Build
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+
+    jobs:
+      - job: Run_tests
+        displayName: 'Run tests'
+        steps:
+          - template: templates/jobs/test.yml
+            parameters:
+              compareWithTargetBranch: false
+              envstodeploy: $(envstodeploy)
+              keyvaultname: $(keyvaultname)
+
+  - stage: Deploy
+    dependsOn: [Build, Test]
+
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+    jobs:
+      - job: Deploy_pensionwise_triage_if_affected
+        displayName: 'Deploy pensionwise triage if affected'
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        steps:
+          - template: templates/jobs/update-app-service.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              appName: dev-pensionwise-triage
+              image: pensionwise-triage:dev-$(Build.BuildId)
+
+      - job: Deploy_pensionwise_appointment_if_affected
+        displayName: 'Deploy pensionwise appointment if affected'
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        steps:
+          - template: templates/jobs/update-app-service.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              appName: dev-pensionwise-appointment
+              image: pensionwise-appointment:dev-$(Build.BuildId)
+
+  - stage: Storybook
+    displayName: Deploy Storybook
+    dependsOn: Deploy
+    condition: succeeded()
+    jobs:
+      - job: Storybook_Deploy
+        displayName: Install packages and publishes to Chromatic
+        variables:
+          npm_config_cache: $(Pipeline.Workspace)/.npm
+        steps:
+          - checkout: self
+            displayName: Get full Git history
+            fetchDepth: 0
+          - script: |
+             az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+             CHROMATIC_PROJECT_TOKEN_VAL=$(az keyvault secret show --name CHROMATIC-PROJECT-TOKEN --vault-name $(keyvaultname) --query "value" -o tsv)
+             echo "##vso[task.setvariable variable=CHROMATIC_PROJECT_TOKEN;]$CHROMATIC_PROJECT_TOKEN_VAL"
+            displayName: Fetch secrets
+          - task: NodeTool@0
+            inputs:
+              versionSpec: 18.x
+            displayName: Install Node.js
+          - task: Cache@2
+            displayName: Install and cache packages
+            inputs:
+              key: npm | "$(Agent.OS)" | package-lock.json
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+              path: $(npm_config_cache)
+          - script: npm ci
+            condition: "ne(variables.CACHE_RESTORED, 'true')"
+          - task: CmdLine@2
+            displayName: Publish to Chromatic
+            inputs:
+              script: npx chromatic
+            env:
+              CHROMATIC_PROJECT_TOKEN: $(CHROMATIC_PROJECT_TOKEN)
+
+  - stage: Update_Env_Vars
+    dependsOn: [Build, Test, Deploy]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+    jobs:
+      - job: Update_var_pensionwise_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Update environment variables - appointments'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              APP_NAME: 'dev-pensionwise-appointment'
+              keyvaultname: $(keyvaultname)
+
+      - job: Update_var_pensionwise_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Update environment variables - pensionwise-triage'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              APP_NAME: 'dev-pensionwise-triage'
+              keyvaultname: $(keyvaultname)
+
+  - stage: Check_Liveliness
+    dependsOn: [Build,Test, Deploy,Update_Env_Vars]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.envstodeploy'] ]
+
+      - name: appointment-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-appointment-image-sha'] ]
+
+      - name: triage-image-sha
+        value: $[ stageDependencies.Build.Checkout_Build_Affected.outputs['buildnxaffected.pensionwise-triage-image-sha'] ]
+
+
+    jobs:
+      - job: Perform_liveliness_check_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Carry out liveliness check - appointment'
+        steps:
+          - script: |
+             echo "triage-image-sha is $(triage-image-sha),appointment-image-sha is $(appointment-image-sha)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(appointment-image-sha)
+              url: 'https://dev-pwappt.moneyhelper.org.uk/api/healthcheck'
+
+      - job: Perform_liveliness_check_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Carry out liveliness check - triage'
+        steps:
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(triage-image-sha)
+              url: 'https://dev-pwtriage.moneyhelper.org.uk/api/healthcheck'

@@ -1,0 +1,38 @@
+parameters:
+  - name: AKS_SPN_ID
+    type: string
+  - name: AKS_SPN_KEY
+    type: string
+  - name: TENANT_ID
+    type: string
+  - name: AZURE_SUBSCRIPTION_ID
+    type: string
+  - name: APP_NAME
+    type: string
+  - name: RESOURCE_GROUP
+    type: string
+  - name: keyvaultname
+    type: string
+
+steps:
+    - script: |
+
+          az login --service-principal --username ${{ parameters.AKS_SPN_ID }} --password ${{ parameters.AKS_SPN_KEY }} --tenant ${{ parameters.TENANT_ID }}
+          secrets=$(az keyvault secret list --vault-name ${{ parameters.keyvaultname }} --query "[].name" -o tsv)
+          variablesString=""
+          az account set --subscription ${{ parameters.AZURE_SUBSCRIPTION_ID }}
+          jsonstr=$(az webapp config appsettings list --name ${{ parameters.APP_NAME }} --resource-group ${{ parameters.RESOURCE_GROUP }} )
+          for secretName in $secrets; do
+                  secretValue=$(az keyvault secret show --name $secretName --vault-name ${{ parameters.keyvaultname }} --query "value" -o tsv)
+                  secretName="${secretName//-/_}"
+                  variablesString+="$secretName=$secretValue "
+          done
+          if [[ "$variablesString" == "" ]]; then
+              echo "The variable is empty"
+          else
+              IFS=' ' read -r -a varsArray <<< "$variablesString"
+              az webapp config appsettings set -g ${{ parameters.RESOURCE_GROUP }} -n ${{ parameters.APP_NAME }} --settings "${varsArray[@]}"
+              az webapp restart  -g ${{ parameters.RESOURCE_GROUP }} -n ${{ parameters.APP_NAME }}
+          fi
+      displayName: 'Update env variables'
+      continueOnError: "false"

@@ -1,0 +1,30 @@
+parameters:
+  - name: target_branch
+    type: string
+  - name: build_id
+    type: string
+  - name: source_version
+    type: string
+  - name: environment
+    type: string
+
+
+steps:
+- checkout: self
+  clean: true
+  persistCredentials: true
+  fetchDepth: 10
+  displayName: Check out source code from main repository
+
+- script: |
+    git fetch origin ${{ parameters.target_branch }}:refs/remotes/origin/${{ parameters.target_branch }} && git checkout ${{ parameters.target_branch }}
+  displayName: 'Checkout target branch of PR'
+
+
+- script: |
+    git branch
+    ls
+  displayName: 'show latest branch'
+
+- script: git checkout ${{ parameters.source_version }}
+  displayName: 'Re-checkout PR source commit'

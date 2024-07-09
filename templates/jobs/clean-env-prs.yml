@@ -1,0 +1,39 @@
+parameters:
+  - name: resourcegroup
+    type: string
+  - name: pr_id_list
+    type: string
+
+steps:
+
+  - script: |
+
+      echo "parameters - ${{ parameters.resourcegroup }} - ${{ parameters.resourcegroup }}, pridlist - ${{ parameters.pr_id_list }}"
+      resource_group="${{ parameters.resourcegroup }}"
+      pr_id_list_str="${{ parameters.pr_id_list }}"
+      az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+      # Convert comma-separated string to array
+      IFS=',' read -r -a pr_id_list <<< "$pr_id_list_str"
+
+      webapp_names=$(az webapp list --resource-group "$resource_group"  --query "[].name" -o tsv)
+
+      for webapp in $webapp_names; do
+        last_four=${webapp: -4}
+        match_found=false
+
+        for pr_id in "${pr_id_list[@]}"; do
+          if [[ "$last_four" == "$pr_id" ]]; then
+            match_found=true
+            echo "web app $webapp is active so not deleted"
+            break
+          fi
+        done
+
+        if [ "$match_found" = false ]; then
+          echo "Deleting web app: $webapp"
+          # Command to delete the web app
+          az webapp delete --name $webapp --resource-group $resource_group
+        fi
+      done
+
+    displayName: 'delete inactive pr in resource group ${{ parameters.resourcegroup }}'
