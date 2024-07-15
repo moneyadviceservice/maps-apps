@@ -1,0 +1,112 @@
+{
+  "pensionPolicies": [
+    {
+      "pensionArrangements": [
+        {
+          "externalPensionPolicyId": "D1006548723",
+          "externalAssetId": "63ab8af1-2004-4a0b-bad0-629cca220757",
+          "matchType": "DEFN",
+          "schemeName": "Your Pension DC Master Trust",
+          "contactReference": "D1006548723",
+          "pensionType": "DC",
+          "pensionOrigin": "WM",
+          "pensionStatus": "A",
+          "startDate": "1998-05-16",
+          "retirementDate": "2038-09-18",
+          "dateOfBirth": "1973-09-18",
+          "pensionAdministrator": {
+            "name": "Your Pension",
+            "contactMethods": [
+              {
+                "preferred": true,
+                "contactMethodDetails": {
+                  "url": "https://www.yourpension.co.uk"
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "email": "mastertrust@yourpension.com"
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 80087355",
+                  "usage": ["M"]
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "postalName": "Your Pension",
+                  "line1": "92 Victoria Lane",
+                  "line2": "Frampton Cotterell",
+                  "line3": "Bristol",
+                  "line4": "South Glocustershire",
+                  "postcode": "BS36 9DD",
+                  "countryCode": "GB"
+                }
+              }
+            ]
+          },
+          "employmentMembershipPeriods": [
+            {
+              "employerName": "Sweets R Us",
+              "membershipStartDate": "1998-05-16"
+            }
+          ],
+          "benefitIllustrations": [
+            {
+              "illustrationComponents": [
+                {
+                  "illustrationType": "ERI",
+                  "benefitType": "DC",
+                  "calculationMethod": "SMPI",
+                  "payableDetails": {
+                    "payableDate": "2038-09-18",
+                    "amountType": "INC",
+                    "annualAmount": 20700,
+                    "monthlyAmount": 1725,
+                    "increasing": false
+                  },
+                  "survivorBenefit": false,
+                  "dcPot": 300000,
+                  "safeguardedBenefit": false
+                },
+                {
+                  "illustrationType": "AP",
+                  "benefitType": "DC",
+                  "amountType": "INC",
+                  "calculationMethod": "SMPI",
+                  "payableDetails": {
+                    "payableDate": "2038-09-18",
+                    "amountType": "INC",
+                    "annualAmount": 16215,
+                    "monthlyAmount": 1351,
+                    "increasing": false
+                  },
+                  "dcPot": 235000,
+                  "survivorBenefit": false,
+                  "safeguardedBenefit": false
+                }
+              ],
+              "illustrationDate": "2023-05-16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "peiInformation": {
+    "peiRetrievalComplete": true,
+    "peiData": [
+      {
+        "pei": "7075aa11-10ad-4b2f-a9f5-1068e79119bf:49004195-c564-419e-a0c3-64c1d45fe592",
+        "description": "Your Pension DC Master Trust",
+        "retrievalStatus": "RETRIEVAL_COMPLETE"
+      }
+    ]
+  },
+  "pensionsDataRetrievalComplete": true
+}

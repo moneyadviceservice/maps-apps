@@ -1,0 +1,64 @@
+parameters:
+  - name: environment
+    type: string
+  - name: parametersFile
+    type: string
+  - name: "location"
+    type: string
+  - name: "azureResourceManagerConnection"
+    type: string
+  - name: "subscriptionId"
+    type: string
+  - name: "managedIdentityName"
+    type: string
+  - name: "managedIdentityresourceGroupName"
+    type: string
+  - name: "webAppName"
+    type: string
+  - name: "acrName"
+    type: string
+  - name: ASPResourceGroup
+    type: string
+  - name: DOCKER_REGISTRY_SERVER_PASSWORD
+    type: string
+  - name: port
+    type: string
+  - name: NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT
+    type: string
+  - name: AEM_HOST
+    type: string
+  - name: AEM_USERNAME
+    type: string
+  - name: AEM_PASSWORD
+    type: string
+  - name: NOTIFY_TEMPLATE_ID
+    type: string
+  - name: NOTIFY_API_KEY
+    type: string
+  - name: appServicePlanName
+    type: string
+
+
+
+steps:
+
+- checkout: self
+
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: "Deploy App Service Plan"
+  inputs:
+      deploymentScope: "Resource Group"
+      azureResourceManagerConnection: "ADO-PWD-Connection"
+      subscriptionId: "3a9bae85-2f6e-47a1-a371-7ee3c84cf70b"
+      resourceGroupName: "pensionwise-${{ parameters.environment }}-uksouth-rg"
+      action: 'Create Or Update Resource Group'
+      location: "uksouth"
+      templateLocation: "Linked artifact"
+      csmFile: "arm-templates/appserviceonly.json"
+      csmParametersFile: "parameters/appservice.appserviceonly.json"
+      overrideParameters: >-
+        -appName ${{ parameters.webAppName }}
+        -DOCKER_REGISTRY_SERVER_PASSWORD ${{ parameters.DOCKER_REGISTRY_SERVER_PASSWORD }}
+        -PORT ${{ parameters.port }}
+        -appServicePlanName ${{ parameters.appServicePlanName }}
+      deploymentMode: "Incremental"

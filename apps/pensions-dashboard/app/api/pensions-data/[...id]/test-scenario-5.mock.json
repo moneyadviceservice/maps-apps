@@ -1,0 +1,124 @@
+{
+  "pensionPolicies": [
+    {
+      "pensionArrangements": [
+        {
+          "matchType": "DEFN",
+          "schemeName": "State Pension",
+          "pensionType": "SP",
+          "retirementDate": "2042-02-23",
+          "externalAssetId": "7f0763a9-ac18-43c3-b2e7-723a74eba292",
+          "benefitIllustrations": [
+            {
+              "illustrationDate": "2024-08-24",
+              "illustrationComponents": [
+                {
+                  "benefitType": "SP",
+                  "payableDetails": {
+                    "amountType": "INC",
+                    "payableDate": "2042-02-23",
+                    "annualAmount": 11502,
+                    "monthlyAmount": 958.5,
+                    "increasing": true
+                  },
+                  "illustrationType": "ERI",
+                  "calculationMethod": "BS"
+                }
+              ]
+            },
+            {
+              "illustrationDate": "2024-08-24",
+              "illustrationComponents": [
+                {
+                  "benefitType": "SP",
+                  "payableDetails": {
+                    "amountType": "INC",
+                    "payableDate": "2042-02-23",
+                    "annualAmount": 11502,
+                    "monthlyAmount": 958.5,
+                    "increasing": true
+                  },
+                  "illustrationType": "AP",
+                  "calculationMethod": "BS"
+                }
+              ]
+            }
+          ],
+          "pensionAdministrator": {
+            "name": "DWP",
+            "contactMethods": [
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "postalName": "Freepost DWP",
+                  "line1": "Pensions Service 3",
+                  "countryCode": "GB"
+                }
+              },
+              {
+                "preferred": true,
+                "contactMethodDetails": {
+                  "url": "https://www.gov.uk/future-pension-centre"
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 8007310175",
+                  "usage": ["M", "W"]
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 8007310176",
+                  "usage": ["M"]
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 8007310456",
+                  "usage": ["W"]
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 1912182051",
+                  "usage": ["N"]
+                }
+              },
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "number": "+44 1912183600",
+                  "usage": ["N"]
+                }
+              }
+            ]
+          },
+          "additionalDataSources": [
+            {
+              "url": "https://www.gov.uk/check-state-pension",
+              "informationType": "SP"
+            }
+          ],
+          "statePensionMessageEng": "State pension message in English.",
+          "statePensionMessageWelsh": "Neges pensiwn gwladol yn Saesneg."
+        }
+      ]
+    }
+  ],
+  "peiInformation": {
+    "peiRetrievalComplete": true,
+    "peiData": [
+      {
+        "pei": "7075aa11-10ad-4b2f-a9f5-1068e79119bf:7f0763a9-ac18-43c3-b2e7-723a74eba292",
+        "description": "State Pension Details",
+        "retrievalStatus": "RETRIEVAL_COMPLETE"
+      }
+    ]
+  },
+  "pensionsDataRetrievalComplete": true
+}

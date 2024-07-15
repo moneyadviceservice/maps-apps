@@ -1,0 +1,340 @@
+{
+  "landingPage": {
+    "en": {
+      "heading": "Workplace pension contribution calculator",
+      "intro": "If you’re an employee you’ve probably been automatically enrolled into a pension by your employer. Use our workplace pension contribution calculator to help you work out how much is getting paid into your pension.",
+      "info": [
+        "A certain percentage of your salary has to be paid into your pension as a legal minimum – and both you and your employer have to pay into it.",
+        "We’ll help you work out how much:",
+        "your employer pays into your pension",
+        "you’re paying into your pension",
+        "tax relief you’re getting on your pension contributions."
+      ],
+      "button": "Start workplace pension contribution calculator",
+      "help": "Need more information on pensions?Call our helpline free on 0800 011 3797 or use our webchat. One of our pension specialists will be happy to answer your questions.Our help is impartial and free to use, whether that’s online or over the phone.Opening times: Monday to Friday, 9am to 5pm. Closed on bank holidays."
+    }
+  },
+  "yourDetails": {
+    "salary": {
+      "messages": {
+        "primaryMessage": "Your employer will not automatically enrol you into a pension but you can choose to join. If you earn more than the lower level of qualifying earnings, your employer must also contribute.",
+        "primaryMessage2": "Your employer will not automatically enrol you into a workplace pension scheme but you can choose to join. If you do so, your employer will make contributions.",
+        "secondaryMessage": "Please note: Your earnings are very close to the threshold at which your employer does not have to contribute to your pension if you choose to enrol. You should check to confirm whether or not your employer will contribute as this threshold varies depending on whether you are paid monthly, weekly or 4-weekly. Read more about the salary thresholds for workplace pensions. (opens in a new window) ",
+        "secondaryMessage2": "Please Note: Your earnings are very close to the automatic enrolment salary threshold. You should check with your employer to confirm whether or not you are eligible to be automatically enrolled as the thresholds vary depending on whether you are paid monthly, weekly or 4-weekly. Read more about the salary thresholds for workplace pensions. (opens in a new window) "
+      },
+      "testCases": [
+        {
+          "salary": "6229",
+          "frequency": "1",
+          "label": "only primary message for salary £6229 per annum",
+          "messages": ["primaryMessage"]
+        },
+        {
+          "salary": "6230",
+          "frequency": "1",
+          "label": "both primary and secondary messages for salary £6230 per annum",
+          "messages": ["primaryMessage", "secondaryMessage"]
+        },
+
+        {
+          "salary": "6245",
+          "frequency": "1",
+          "label": "both primary and secondary messages for salary from £6240 to £6250 per annum",
+          "messages": ["primaryMessage2", "secondaryMessage"]
+        },
+        {
+          "salary": "9989",
+          "frequency": "1",
+          "label": "only primary message for salary from £6251 to £9989 per annum",
+          "messages": ["primaryMessage2"]
+        },
+
+        {
+          "salary": "10000",
+          "frequency": "1",
+          "label": "both primary and secondary messages for salary from £9990 to £10000 per annum",
+          "messages": ["primaryMessage2", "secondaryMessage2"]
+        },
+        {
+          "salary": "10010",
+          "frequency": "1",
+          "label": "only secondary message for salary from £10001 to £10010 per annum",
+          "messages": ["secondaryMessage2"]
+        },
+        {
+          "salary": "10011",
+          "frequency": "1",
+          "label": "no messages for salary £10011 or above per annum",
+          "messages": []
+        },
+        {
+          "salary": "509",
+          "frequency": "12",
+          "label": "only primary message for salary £509 or below per month",
+          "messages": ["primaryMessage"]
+        },
+        {
+          "salary": "510",
+          "frequency": "12",
+          "label": "both primary and secondary messages for salary from £510 to £519 per month",
+          "messages": ["primaryMessage", "secondaryMessage"]
+        },
+        {
+          "salary": "520",
+          "frequency": "12",
+          "label": "both primary and secondary messages for salary from £520 to £530 per month",
+          "messages": ["primaryMessage2", "secondaryMessage"]
+        },
+        {
+          "salary": "822",
+          "frequency": "12",
+          "label": "only primary message for salary from £520 to £530 per month",
+          "messages": ["primaryMessage2"]
+        },
+        {
+          "salary": "833",
+          "frequency": "12",
+          "label": "both primary and secondary messages for salary from £823 to £833 per month",
+          "messages": ["primaryMessage2", "secondaryMessage2"]
+        },
+        {
+          "salary": "834",
+          "frequency": "12",
+          "label": "only secondary message for salary from £834 to £843 per month",
+          "messages": ["secondaryMessage2"]
+        },
+        {
+          "salary": "844",
+          "frequency": "12",
+          "label": "no messages for salary from £844 or above per month",
+          "messages": []
+        },
+        {
+          "salary": "469",
+          "frequency": "13",
+          "label": "only primary message for salary £469 or below per month",
+          "messages": ["primaryMessage"]
+        },
+        {
+          "salary": "479",
+          "frequency": "13",
+          "label": "both primary and secondary messages for salary from £470 to £479 per 4weeks",
+          "messages": ["primaryMessage", "secondaryMessage"]
+        },
+        {
+          "salary": "480",
+          "frequency": "13",
+          "label": "both primary and secondary messages for salary from £480 to £490 per 4weeks",
+          "messages": ["primaryMessage2", "secondaryMessage"]
+        },
+        {
+          "salary": "491",
+          "frequency": "13",
+          "label": " only primary message for salary from £491 to £757 per 4weeks",
+          "messages": ["primaryMessage2"]
+        },
+        {
+          "salary": "768",
+          "frequency": "13",
+          "label": "both primary and secondary messages for salary from £758 to £768 per 4weeks",
+          "messages": ["primaryMessage2", "secondaryMessage2"]
+        },
+        {
+          "salary": "778",
+          "frequency": "13",
+          "label": "only  secondary message for salary from £769 to £778 per 4weeks",
+          "messages": ["secondaryMessage2"]
+        },
+        {
+          "salary": "779",
+          "frequency": "13",
+          "label": "no message for salary £779 or above per 4weeks ",
+          "messages": []
+        },
+        {
+          "salary": "109",
+          "frequency": "52",
+          "label": "only primary message for salary £109 per week",
+          "messages": ["primaryMessage"]
+        },
+        {
+          "salary": "110",
+          "frequency": "52",
+          "label": "both primary and secondary messages for salary from £110 to £119 per week",
+          "messages": ["primaryMessage", "secondaryMessage"]
+        },
+        {
+          "salary": "120",
+          "frequency": "52",
+          "label": "both primary and secondary messages for salary from £120 to £130 per week",
+          "messages": ["primaryMessage2", "secondaryMessage"]
+        },
+        {
+          "salary": "181",
+          "frequency": "52",
+          "label": "only secondary message for salary from £131 to £181 per week",
+          "messages": ["primaryMessage2"]
+        },
+        {
+          "salary": "182",
+          "frequency": "52",
+          "label": "both primary and secondary messages for salary from £182 to £192 per week",
+          "messages": ["primaryMessage2", "secondaryMessage2"]
+        },
+        {
+          "salary": "193",
+          "frequency": "52",
+          "label": "only secondary message for salary from £193 to £202 per week",
+          "messages": ["secondaryMessage2"]
+        },
+        {
+          "salary": "203",
+          "frequency": "52",
+          "label": "no messages for salary £203 or above per week",
+          "messages": []
+        }
+      ]
+    }
+  },
+  "testCases": [
+    {
+      "label": "age 21 with salary of 12000 per annum",
+      "age": "21",
+      "ageValidationMessage": "Your employer will not automatically enrol you into a pension but you can choose to join. If you earn more than the lower level of qualifying earnings, your employer must also contribute.",
+      "salary": "12000",
+      "salaryFrequency": "1",
+      "salaryValidationMessages": [],
+      "contributionType": "contributionType-0",
+      "contributionsMessage": "Contributions will be made on your qualifying earnings of £5,760 per year.",
+      "employeeContribution": "9",
+      "employerContribution": "6",
+      "resultsMessage": "Contributions will be based on your qualifying earnings of £5,760 per year.",
+      "contributions": [
+        {
+          "duration": "1",
+          "durationType": "yearly",
+          "employeeContribution": "£518.40",
+          "taxRelief": "£103.68",
+          "employerContribution": "£345.60",
+          "totalContribution": "£864.00"
+        },
+        {
+          "duration": "12",
+          "durationType": "monthly",
+          "employeeContribution": "£43.20",
+          "taxRelief": "£8.64",
+          "employerContribution": "£28.80",
+          "totalContribution": "£72.00"
+        },
+        {
+          "duration": "13",
+          "durationType": "4 weeks",
+          "employeeContribution": "£39.88",
+          "taxRelief": "£7.98",
+          "employerContribution": "£26.58",
+          "totalContribution": "£66.46"
+        },
+        {
+          "duration": "52",
+          "durationType": "weekly",
+          "employeeContribution": "£9.97",
+          "taxRelief": "£1.99",
+          "employerContribution": "£6.65",
+          "totalContribution": "£16.62"
+        }
+      ]
+    },
+    {
+      "label": "age 32 with salary of 6000 per month",
+      "age": "32",
+      "salary": "6000",
+      "salaryFrequency": "12",
+      "salaryValidationMessages": [],
+      "contributionType": "contributionType-0",
+      "contributionsMessage": "Contributions will be made on your qualifying earnings of £44,030 per year.",
+      "employeeContribution": "5",
+      "employerContribution": "3",
+      "resultsMessage": "Contributions will be based on your qualifying earnings of £44,030 per year.",
+      "contributions": [
+        {
+          "duration": "1",
+          "durationType": "yearly",
+          "employeeContribution": "£2,201.50",
+          "taxRelief": "£440.30",
+          "employerContribution": "£1,320.90",
+          "totalContribution": "£3,522.40"
+        },
+        {
+          "duration": "12",
+          "durationType": "monthly",
+          "employeeContribution": "£183.46",
+          "taxRelief": "£36.69",
+          "employerContribution": "£110.07",
+          "totalContribution": "£293.53"
+        },
+        {
+          "duration": "13",
+          "durationType": "4 weeks",
+          "employeeContribution": "£169.35",
+          "taxRelief": "£33.87",
+          "employerContribution": "£101.61",
+          "totalContribution": "£270.96"
+        },
+        {
+          "duration": "52",
+          "durationType": "weekly",
+          "employeeContribution": "£42.34",
+          "taxRelief": "£8.47",
+          "employerContribution": "£25.40",
+          "totalContribution": "£67.74"
+        }
+      ]
+    },
+    {
+      "label": "age 66 with salary of 67000 per year",
+      "age": "66",
+      "salary": "67000",
+      "salaryFrequency": "1",
+      "salaryValidationMessages": [],
+      "contributionType": "contributionType-1",
+      "contributionsMessage": "Contributions will be made on your salary of £67,000 per year.",
+      "employeeContribution": "5",
+      "employerContribution": "3",
+      "resultsMessage": "Contributions will be based on your salary of £67,000 per year.",
+      "contributions": [
+        {
+          "duration": "1",
+          "durationType": "yearly",
+          "employeeContribution": "£3,350.00",
+          "taxRelief": "£670.00",
+          "employerContribution": "£2,010.00",
+          "totalContribution": "£5,360.00"
+        },
+        {
+          "duration": "12",
+          "durationType": "monthly",
+          "employeeContribution": "£279.17",
+          "taxRelief": "£55.83",
+          "employerContribution": "£167.50",
+          "totalContribution": "£446.67"
+        },
+        {
+          "duration": "13",
+          "durationType": "4 weeks",
+          "employeeContribution": "£257.69",
+          "taxRelief": "£51.54",
+          "employerContribution": "£154.62",
+          "totalContribution": "£412.31"
+        },
+        {
+          "duration": "52",
+          "durationType": "weekly",
+          "employeeContribution": "£64.42",
+          "taxRelief": "£12.88",
+          "employerContribution": "£38.65",
+          "totalContribution": "£103.07"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+parameters:
+  - name: target_branch
+    type: string
+  - name: version
+    type: string
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: keyvaultname
+    type: string
+
+steps:
+  - script: |
+
+      variablesString=""
+      az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+      secrets=$(az keyvault secret list --vault-name ${{ parameters.keyvaultname }} --query "[].name" -o tsv)
+      for secretName in $secrets; do
+          if [[ $secretName == NEXT-PUBLIC-* ]]; then
+              secretValue=$(az keyvault secret show --name $secretName --vault-name ${{ parameters.keyvaultname }} --query "value" -o tsv)
+              secretName="${secretName//-/_}"
+              variablesString+="$secretName=$secretValue "
+              export "$secretName=$secretValue"
+          fi
+      done
+      az acr login --name pensionwise
+      projnamelist=()  # Initialize the array
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+        affected=$(npx nx affected:build --base=origin/${{ parameters.target_branch }})
+      else
+        affected=$(npx nx affected:build --target=build --base=HEAD~1 --head=HEAD)
+      fi
+      echo $affected
+      count=$(echo "$affected" | grep -o "projects" | wc -l)
+      echo "Affected: $affected"
+      if echo "$affected" | grep -q "No projects with target build"; then
+        echo "No affected projects. Exiting step."
+        stepoutput=""
+        echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+        exit 0
+      fi
+      projects=$(echo "$affected" | grep "^    - ")
+      readarray -t projectarray <<< "$projects"
+      for project in "${projectarray[@]}"; do
+        echo "Project: $project"
+        projname=$(echo "$project" | sed 's/^[ \t]*-//')
+        substring="shared"
+        if [[ ! $projname == *"$substring"* ]]; then
+          echo "processing $projname"
+          version=${{ parameters.version }}
+          # Log into the corresponding ACR
+          acr_name="${projname%%-*}"
+          echo "Logging into ACR: $acr_name, Environment: $env_name"
+          az acr login --name $acr_name
+          env_name=development
+          appname="${projname#"${projname%%[![:space:]]*}"}"
+          eval "$variablesString  npx nx build \"$appname\""
+          rm -rf packages
+          mkdir -p packages
+          cp package.json .dockerignore package-lock.json tsconfig.base.json $appname.dockerfile ./packages &&
+          cp -rf apps/"$appname"/public libs ./packages &&
+          cp -rf dist/apps/$appname/.next ./packages/.next
+          cd packages || exit
+          mv $appname.dockerfile dockerfile
+          npm install
+          sha=$(git rev-parse HEAD)
+          echo "sha is $sha"
+          docker build --cache-from ${acr_name}.azurecr.io/${appname}:cache --build-arg IMAGE_SHA=$sha -t ${acr_name}.azurecr.io/${appname}:${version} -t ${acr_name}.azurecr.io/${appname}:cache .
+          docker push ${acr_name}.azurecr.io/${appname}:${version}
+          docker push ${acr_name}.azurecr.io/${appname}:cache
+          projnamelist+=("$projname")
+          echo "##vso[task.setvariable variable=$appname-image-sha;isOutput=true]$sha"
+          cd -
+        fi
+      done
+      stepoutput=$(IFS=,; echo "${projnamelist[*]}")
+      echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+    displayName: 'Add Affected projects to list'
+    continueOnError: 'false'
+    name: buildnxaffected
+    env:
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)

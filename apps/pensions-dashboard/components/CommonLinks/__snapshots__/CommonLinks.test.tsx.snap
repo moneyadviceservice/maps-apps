@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommonLinks renders correctly 1`] = `
+<div>
+  <div
+    class="border-t-1 py-16"
+  >
+    <div
+      class="container-auto"
+    >
+      <h2
+        class="text-3xl md:text-4xl text-gray-800 font-bold mb-4"
+      >
+        Manage your information
+      </h2>
+      <ul
+        class="[&>*:last-child]:border-b-1"
+      >
+        <li
+          class="py-2 border-t-1 border-slate-400"
+        >
+          <a
+            class="text-sm inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="/en/manage-consent"
+          >
+            Manage consent
+          </a>
+        </li>
+        <li
+          class="py-2 border-t-1 border-slate-400"
+        >
+          <a
+            class="text-sm inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="/en/manage-consent"
+          >
+            Delegate access to a financial adviser
+          </a>
+        </li>
+        <li
+          class="py-2 border-t-1 border-slate-400"
+        >
+          <a
+            class="text-sm inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="/en/complaints"
+          >
+            Make a complaint
+          </a>
+        </li>
+        <li
+          class="py-2 border-t-1 border-slate-400"
+        >
+          <a
+            class="text-sm inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="/en/download-data"
+          >
+            <svgr-mock
+              classname=""
+            />
+            Download my pension information (.pdf)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

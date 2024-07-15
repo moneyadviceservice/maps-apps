@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "test-pensionwise-triage"
+    },
+    "appServicePlanName": {
+      "value": "pensionwise"
+    },
+    "location": {
+      "value": "uksouth"
+    },
+    "sku": {
+      "value": "S2"
+    },
+    "nodeVersion": {
+      "value": "20.5.0"
+    },
+    "runtimeStack": {
+      "value": "NODE|20.5.0"
+    },
+    "PORT": {
+      "value": 3000
+    },
+    "DOCKER_REGISTRY_SERVER_USERNAME": {
+      "value": "pensionwise"
+    },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": {
+      "value": "xxxx"
+    },
+    "DOCKER_REGISTRY_SERVER_URL": {
+      "value": "https://pensionwise.azurecr.io"
+    },
+    "acrName": {
+      "value": "pensionwise"
+    }
+  }
+}

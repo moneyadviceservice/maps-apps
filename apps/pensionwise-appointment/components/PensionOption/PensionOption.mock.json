@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "title": "Pension option title",
+  "keyFactsTitle": "Key facts",
+  "keyFactsText": {
+    "json": [
+      {
+        "nodeType": "unordered-list",
+        "content": [
+          {
+            "nodeType": "list-item",
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Key fact 1"
+              }
+            ]
+          },
+          {
+            "nodeType": "list-item",
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Key fact 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "question": {
+    "id": 7,
+    "title": "Does this option interest you?",
+    "options": ["Yes", "No"],
+    "definition": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+            }
+          ]
+        }
+      ]
+    },
+    "errorText": "Select whether you're interested in taking your pension this way"
+  }
+}

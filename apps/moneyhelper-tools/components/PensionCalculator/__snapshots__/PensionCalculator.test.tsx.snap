@@ -1,0 +1,1953 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionCalculator component renders correctly step contributions part salary 1`] = `
+<div
+  class="pb-7 flex flex-col"
+  data-testid="pension-calculator"
+>
+  <form
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="false"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value="en"
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="contributions"
+    />
+    <div
+      class="lg:max-w-[960px]"
+    >
+      <p
+        class="-mt-6 mb-6 md:text-2xl print:hidden text-gray-400"
+        data-testid="paragraph"
+      >
+        It is now law that most employees must be enrolled into a workplace pension scheme by their employer. This calculator will show you how much will be paid into your pension by you and your employer.
+      </p>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-details"
+      >
+        <div
+          id="top"
+        >
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            1. Your details
+          </h4>
+          <div
+            class="md:ml-3 md:inline-flex items-baseline text-gray-400"
+          >
+            <p
+              class="mr-3 my-1"
+            >
+              (
+              25
+               
+              years
+              , £
+              <span>
+                5,000
+              </span>
+               
+              per
+               
+              year
+              , 
+              part salary
+              )
+            </p>
+            <a
+              class="ml-auto print:hidden inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="edit-details"
+              href="/en/undefined/calculator?age=25&contributionType=part&frequency=1&salary=5%2C000&currentStep=details#top"
+            >
+              Edit
+            </a>
+          </div>
+          <div>
+            <div
+              class="bg-gray-200 p-4 my-4 print:p-0 text-xs sm:text-sm"
+            >
+              Your employer will not automatically enrol you into a pension but you can choose to join. If you earn more than the lower level of qualifying earnings, your employer must also contribute.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-contributions"
+      >
+        <div>
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            2. Your contributions
+          </h4>
+        </div>
+        <div
+          class="flex-col mt-6"
+        >
+          <p
+            class="mb-1.5 text-gray-800"
+            data-testid="contribution-message"
+          >
+            Contributions will be made on your
+             
+            qualifying earnings of
+             £
+            <span>
+              5,000
+            </span>
+             
+            per year
+            .
+          </p>
+          <details
+            class="group tool-expand"
+            data-testid="expandable-section"
+          >
+            <summary
+              class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+            >
+              <svgr-mock
+                classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                What are qualified earnings?
+              </div>
+            </summary>
+            <div
+              class=" my-4"
+            >
+              <p>
+                This is the part of your annual pay that will be used to calculate your pension contribution under automatic enrolment. It is your earnings before tax (up to a maximum limit of £50,270 per year) – less the lower earnings threshold of £6,240.
+              </p>
+            </div>
+          </details>
+          <div
+            class="bg-gray-200 p-4 mt-4 mb-2"
+          >
+            <p
+              class="text-gray-800"
+            >
+              The legal minimum that must be paid into your pension is 8% a year. At least 3% of this must be paid by your employer. The usual split is 5% from employees and 3% from employers.
+            </p>
+          </div>
+          <details
+            class="group tool-expand"
+            data-testid="expandable-section"
+          >
+            <summary
+              class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+            >
+              <svgr-mock
+                classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                More info on your contributions
+              </div>
+            </summary>
+            <div
+              class=" my-4"
+            >
+              <p>
+                The overall minimum that must be paid into your pension is 8% of your qualifying earnings. At least 3% must be paid by your employer, however if your employer pays more than 3% you need only pay the balance up to 8%. For example, if your employer pays 6%, you need only pay 2%. However, the more you and your employer pay in, the better your retirement income will be.
+              </p>
+            </div>
+          </details>
+          <div
+            class="mb-4 max-w-sm"
+          >
+            <div
+              class="flex-col mt-4"
+              id=""
+            >
+              <div
+                class=""
+                data-testid="errors"
+              >
+                <div
+                  class="bg-gray-100 p-4"
+                >
+                  <div>
+                    <p
+                      class="mb-3"
+                    >
+                      At your salary level there is no legal minimum contribution but your workplace pension scheme may have a set minimum. Check with your employer.
+                    </p>
+                    <label
+                      class="mb-2.5 block font-bold"
+                      for="employeeContribution"
+                    >
+                      Enter your contribution
+                    </label>
+                    <div
+                      class="flex items-baseline"
+                    >
+                      <div
+                        class="flex"
+                      >
+                        <input
+                          class="border-gray-400 rounded-l tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+                          data-testid="number-input"
+                          id="employeeContribution"
+                          inputmode="numeric"
+                          name="employeeContribution"
+                          type="text"
+                          value="5.0"
+                        />
+                        <span
+                          aria-hidden="true"
+                          class="bg-gray-100 py-2 px-3 rounded-r border-gray-400 border border-solid"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <span
+                        class="ml-2 mt-auto text-gray-400"
+                      >
+                        of
+                         
+                        £
+                        <span>
+                          5,000
+                        </span>
+                         
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-col mt-4"
+              id=""
+            >
+              <div
+                class=""
+                data-testid="errors"
+              >
+                <div
+                  class="bg-gray-100 p-4"
+                >
+                  <div>
+                    <label
+                      class="mb-2.5 block font-bold"
+                      for="employerContribution"
+                    >
+                      Enter your employer’s contribution
+                    </label>
+                    <div
+                      class="flex items-baseline"
+                    >
+                      <div
+                        class="flex"
+                      >
+                        <input
+                          class="border-gray-400 rounded-l tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+                          data-testid="number-input"
+                          id="employerContribution"
+                          inputmode="numeric"
+                          name="employerContribution"
+                          type="text"
+                          value="3.0"
+                        />
+                        <span
+                          aria-hidden="true"
+                          class="bg-gray-100 py-2 px-3 rounded-r border-gray-400 border border-solid"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <span
+                        class="ml-2 mt-auto text-gray-400"
+                      >
+                        of
+                         
+                        £
+                        <span>
+                          5,000
+                        </span>
+                         
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="mt-4 border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+      id="submit"
+      name="submit"
+      type="submit"
+    >
+      <span />
+      Calculate your contributions
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`PensionCalculator component renders correctly step details 1`] = `
+<div
+  class="pb-7 flex flex-col"
+  data-testid="pension-calculator"
+>
+  <form
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="false"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value="en"
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="details"
+    />
+    <div
+      class="lg:max-w-[960px]"
+    >
+      <p
+        class="-mt-6 mb-6 md:text-2xl print:hidden text-gray-400"
+        data-testid="paragraph"
+      >
+        It is now law that most employees must be enrolled into a workplace pension scheme by their employer. This calculator will show you how much will be paid into your pension by you and your employer.
+      </p>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-details"
+      >
+        <div
+          id="top"
+        >
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            1. Your details
+          </h4>
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id="error-age"
+        >
+          <div
+            class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+            data-testid="errors"
+          >
+            <div
+              class="text-red-700 py-2"
+            >
+              <span
+                class="pr-2"
+              >
+                1
+                .
+              </span>
+              Please enter your age
+            </div>
+            <label
+              class="mb-half block font-bold"
+              for="age"
+            >
+              Your age
+            </label>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Why do we need your age?
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    We need to know your age so that we can work out the contributions correctly – the rules vary slightly based on age. This is explained in the letter you receive from your employer about automatic enrolment.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <input
+              class="rounded border-gray-600 py-2 mt-1 max-w-[200px] tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+              data-testid="number-input"
+              id="age"
+              inputmode="numeric"
+              name="age"
+              type="text"
+              value=""
+            />
+          </div>
+          <div />
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id="error-salary"
+        >
+          <div
+            class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+            data-testid="errors"
+          >
+            <div
+              class="text-red-700 py-2"
+            >
+              <span
+                class="pr-2"
+              >
+                2
+                .
+              </span>
+              Please enter your salary
+            </div>
+            <label
+              class="mb-half block font-bold"
+              for="salary"
+            >
+              Your salary
+            </label>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More info about your salary
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    Enter your salary before tax or other deductions are taken off. This is known as your gross salary.
+                     
+                    <a
+                      class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/auto-enrolment/i-have-more-than-one-job-how-does-this-affect-my-pension"
+                    >
+                      If you have more than one job
+                    </a>
+                    , you will have to enter each salary separately.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div
+              class="flex"
+            >
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid"
+                >
+                  £
+                </span>
+                <input
+                  class="mr-2 border-gray-600 tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+                  data-testid="number-input"
+                  id="salary"
+                  inputmode="numeric"
+                  name="salary"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+              >
+                <span
+                  class="print:hidden flex absolute pointer-events-none items-center inset-y-0 right-0 w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r shadow-bottom-gray focus:shadow-none"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                </span>
+                <select
+                  class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                  data-testid="frequency"
+                  id="frequency"
+                  name="frequency"
+                >
+                  <option
+                    selected=""
+                    value="1"
+                  >
+                    per year
+                  </option>
+                  <option
+                    value="12"
+                  >
+                    per month
+                  </option>
+                  <option
+                    value="13"
+                  >
+                    per 4 weeks
+                  </option>
+                  <option
+                    value="52"
+                  >
+                    per week
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div />
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id=""
+        >
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <label
+              class="mb-half block font-bold"
+              for="contributionType"
+            >
+              Choose how your employer makes contributions
+            </label>
+            <p
+              class="mb-4 mt-2"
+              data-testid="paragraph"
+            >
+              Your employer can choose whether to make contributions on part of your salary (known as your qualifying earnings) or on your full salary. To find this out, you will need to check with your employer.
+            </p>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More info about your salary
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    This is the part of your annual pay that will be used to calculate your pension contribution under automatic enrolment. It is your earnings before tax (up to a maximum limit of £50,270 per year) – less the lower earnings threshold of £6,240.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div />
+            <div
+              data-testid="question-radio"
+            >
+              <div
+                class="mt-3"
+              >
+                <div
+                  class="flex flex-wrap relative"
+                  data-testid="radio-button"
+                >
+                  <input
+                    checked=""
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    id="contributionType-0"
+                    name="contributionType"
+                    required=""
+                    type="radio"
+                    value="part"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] p-[7px] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                    for="contributionType-0"
+                  >
+                    My employer makes contributions on part of my salary (if you're not sure select this option)
+                  </label>
+                </div>
+              </div>
+              <div
+                class="mt-3"
+              >
+                <div
+                  class="flex flex-wrap relative"
+                  data-testid="radio-button"
+                >
+                  <input
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    id="contributionType-1"
+                    name="contributionType"
+                    required=""
+                    type="radio"
+                    value="full"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] p-[7px] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                    for="contributionType-1"
+                  >
+                    My employer makes contributions on my full salary
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="mt-4 border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+      id="submit"
+      name="submit"
+      type="submit"
+    >
+      <span />
+      Next
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`PensionCalculator component renders correctly step details 2`] = `
+<div
+  class="pb-7 flex flex-col"
+  data-testid="pension-calculator"
+>
+  <form
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="false"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value="en"
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="details"
+    />
+    <div
+      class="lg:max-w-[960px]"
+    >
+      <p
+        class="-mt-6 mb-6 md:text-2xl print:hidden text-gray-400"
+        data-testid="paragraph"
+      >
+        It is now law that most employees must be enrolled into a workplace pension scheme by their employer. This calculator will show you how much will be paid into your pension by you and your employer.
+      </p>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-details"
+      >
+        <div
+          id="top"
+        >
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            1. Your details
+          </h4>
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id=""
+        >
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <label
+              class="mb-half block font-bold"
+              for="age"
+            >
+              Your age
+            </label>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Why do we need your age?
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    We need to know your age so that we can work out the contributions correctly – the rules vary slightly based on age. This is explained in the letter you receive from your employer about automatic enrolment.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <input
+              class="rounded border-gray-600 py-2 mt-1 max-w-[200px] tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+              data-testid="number-input"
+              id="age"
+              inputmode="numeric"
+              name="age"
+              type="text"
+              value="25"
+            />
+          </div>
+          <div />
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id=""
+        >
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <label
+              class="mb-half block font-bold"
+              for="salary"
+            >
+              Your salary
+            </label>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More info about your salary
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    Enter your salary before tax or other deductions are taken off. This is known as your gross salary.
+                     
+                    <a
+                      class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/auto-enrolment/i-have-more-than-one-job-how-does-this-affect-my-pension"
+                    >
+                      If you have more than one job
+                    </a>
+                    , you will have to enter each salary separately.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div
+              class="flex"
+            >
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid"
+                >
+                  £
+                </span>
+                <input
+                  class="mr-2 border-gray-600 tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline"
+                  data-testid="number-input"
+                  id="salary"
+                  inputmode="numeric"
+                  name="salary"
+                  type="text"
+                  value="30,000"
+                />
+              </div>
+              <div
+                class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+              >
+                <span
+                  class="print:hidden flex absolute pointer-events-none items-center inset-y-0 right-0 w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r shadow-bottom-gray focus:shadow-none"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                </span>
+                <select
+                  class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                  data-testid="frequency"
+                  id="frequency"
+                  name="frequency"
+                >
+                  <option
+                    selected=""
+                    value="1"
+                  >
+                    per year
+                  </option>
+                  <option
+                    value="12"
+                  >
+                    per month
+                  </option>
+                  <option
+                    value="13"
+                  >
+                    per 4 weeks
+                  </option>
+                  <option
+                    value="52"
+                  >
+                    per week
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div />
+        </div>
+        <div
+          class="flex-col mt-4 mb-6"
+          id=""
+        >
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <label
+              class="mb-half block font-bold"
+              for="contributionType"
+            >
+              Choose how your employer makes contributions
+            </label>
+            <p
+              class="mb-4 mt-2"
+              data-testid="paragraph"
+            >
+              Your employer can choose whether to make contributions on part of your salary (known as your qualifying earnings) or on your full salary. To find this out, you will need to check with your employer.
+            </p>
+            <div>
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More info about your salary
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p>
+                    This is the part of your annual pay that will be used to calculate your pension contribution under automatic enrolment. It is your earnings before tax (up to a maximum limit of £50,270 per year) – less the lower earnings threshold of £6,240.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div />
+            <div
+              data-testid="question-radio"
+            >
+              <div
+                class="mt-3"
+              >
+                <div
+                  class="flex flex-wrap relative"
+                  data-testid="radio-button"
+                >
+                  <input
+                    checked=""
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    id="contributionType-0"
+                    name="contributionType"
+                    required=""
+                    type="radio"
+                    value="part"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] p-[7px] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                    for="contributionType-0"
+                  >
+                    My employer makes contributions on part of my salary (if you're not sure select this option)
+                  </label>
+                </div>
+              </div>
+              <div
+                class="mt-3"
+              >
+                <div
+                  class="flex flex-wrap relative"
+                  data-testid="radio-button"
+                >
+                  <input
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    id="contributionType-1"
+                    name="contributionType"
+                    required=""
+                    type="radio"
+                    value="full"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] p-[7px] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                    for="contributionType-1"
+                  >
+                    My employer makes contributions on my full salary
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="mt-4 border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+      id="submit"
+      name="submit"
+      type="submit"
+    >
+      <span />
+      Next
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`PensionCalculator component renders correctly step results 1`] = `
+<div
+  class="pb-7 flex flex-col"
+  data-testid="pension-calculator"
+>
+  <form
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="true"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value="en"
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value="workplace-pension-calculator"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="results"
+    />
+    <div
+      class="lg:max-w-[960px]"
+    >
+      <p
+        class="-mt-6 mb-6 md:text-2xl print:hidden text-gray-400"
+        data-testid="paragraph"
+      >
+        It is now law that most employees must be enrolled into a workplace pension scheme by their employer. This calculator will show you how much will be paid into your pension by you and your employer.
+      </p>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-details"
+      >
+        <div
+          id="top"
+        >
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            1. Your details
+          </h4>
+          <div
+            class="md:ml-3 md:inline-flex items-baseline text-gray-400"
+          >
+            <p
+              class="mr-3 my-1"
+            >
+              (
+              25
+               
+              years
+              , £
+              <span>
+                30,000
+              </span>
+               
+              per
+               
+              year
+              , 
+              part salary
+              )
+            </p>
+            <a
+              class="ml-auto print:hidden inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="edit-details"
+              href="/en/workplace-pension-calculator/calculator?age=25&contributionType=part&frequency=1&salary=30%2C000&currentStep=details?isEmbedded=true#top"
+            >
+              Edit
+            </a>
+          </div>
+          <div />
+        </div>
+      </div>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-contributions"
+      >
+        <div>
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            2. Your contributions
+          </h4>
+          <div
+            class="md:ml-3 md:inline-flex items-baseline text-gray-400"
+          >
+            <p
+              class="mr-3 my-1"
+            >
+              (
+              You
+              : 
+              %,
+               
+              Your employer
+              :
+               
+              %)
+            </p>
+            <a
+              class="ml-auto print:hidden inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="edit-contributions"
+              href="/en/workplace-pension-calculator/calculator?age=25&contributionType=part&frequency=1&salary=30%2C000&currentStep=contributions?isEmbedded=true#top"
+            >
+              Edit
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-results"
+      >
+        <h4
+          class="text-xl md:text-2xl font-bold text-blue-800"
+        >
+          3. Your results
+        </h4>
+        <p
+          class="mt-4 print:mb-4 text-gray-400 mb-1"
+          data-testid="results-message"
+        >
+          Contributions will be based on your qualifying earnings of
+           £
+          <span>
+            23,760
+          </span>
+           
+          per year
+          .
+        </p>
+        <div
+          class="print:hidden"
+        >
+          <details
+            class="group tool-expand"
+            data-testid="expandable-section"
+          >
+            <summary
+              class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+            >
+              <svgr-mock
+                classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                What are qualifying earnings?
+              </div>
+            </summary>
+            <div
+              class=" my-4"
+            >
+              <p
+                class="text-gray-800"
+              >
+                This is the part of your annual pay that will be used to calculate your pension contribution under automatic enrolment. It is your earnings before tax (up to a maximum limit of £50,270 per year) – less the lower earnings threshold of £6,240.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div
+          class="md:flex my-6 items-center bg-gray-200 p-4 print:hidden"
+        >
+          <label
+            class="block font-bold mb-2 md:mr-4 md:mb-0"
+            for="salary"
+          >
+            Show my contributions
+          </label>
+          <div
+            class="flex"
+          >
+            <div
+              class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+            >
+              <span
+                class="print:hidden flex absolute pointer-events-none items-center inset-y-0 right-0 w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r shadow-bottom-gray focus:shadow-none"
+              >
+                <svgr-mock
+                  classname=""
+                />
+              </span>
+              <select
+                class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                data-testid="results"
+                id="results"
+                name="results"
+              >
+                <option
+                  value="1"
+                >
+                  per year
+                </option>
+                <option
+                  selected=""
+                  value="12"
+                >
+                  per month
+                </option>
+                <option
+                  value="13"
+                >
+                  per 4 weeks
+                </option>
+                <option
+                  value="52"
+                >
+                  per week
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <dl
+          class="border-gray-200 border-[1px] p-4"
+        >
+          <dt
+            class="font-bold mb-1"
+          >
+            Your monthly contribution
+          </dt>
+          <dd
+            class="mb-3"
+          >
+            <span
+              class="flex"
+            >
+              £
+              <span>
+                99.00
+              </span>
+            </span>
+            <span>
+              (
+              includes tax relief
+               £
+              <span>
+                19.80
+              </span>
+              )
+            </span>
+            <div
+              class="print:hidden"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Tax relief on pension contributions
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p
+                    class="text-gray-800"
+                  >
+                    You get tax relief on pension contributions which means some of the money from your pay that would have gone to the government as tax goes towards your pension instead.
+                     
+                    <a
+                      class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/tax-relief-and-your-pension"
+                      target="_blank"
+                    >
+                      Read more about how you get tax relief
+                       
+                      <span
+                        class="sr-only"
+                      >
+                         (opens in a new window) 
+                      </span>
+                      <svgr-mock
+                        classname="inline ml-[6px] mr-[2px]"
+                      />
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </dd>
+          <dt
+            class="font-bold mb-1"
+          >
+            Employers monthly contribution
+          </dt>
+          <dd
+            class="mb-3"
+          >
+            £
+            <span>
+              59.40
+            </span>
+          </dd>
+          <dt
+            class="font-bold mb-1"
+          >
+            Total monthly contributions
+          </dt>
+          <dd>
+            £
+            <span>
+              158.40
+            </span>
+          </dd>
+        </dl>
+        <ul
+          class="my-8 print:hidden"
+        >
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="print"
+              href="#top"
+            >
+              Print your results
+            </a>
+          </li>
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="link"
+              href="mailto:?body=%0A%20%20%20%201.%20Your%20details%3A%2025%20Years%2C%20%C2%A330%2C000%20per%20year%2C%20part%20salary%0A%0A%20%20%20%202.%20Your%20contributions%3A%20You%3A%20undefined%25%2C%20Your%20employer%3A%20undefined%25%0A%0A%20%20%20%203.%20Your%20Results%0A%0A%20%20%20%20Qualifying%20earnings%3A%20%C2%A323%2C760%0A%0A%20%20%20%20%0A%20%20%20%20Your%20monthly%20contribution%3A%20%C2%A399.00%20(includes%20tax%20relief%20of%20%C2%A319.80)%0A%0A%20%20%20%20Employers%20monthly%20contribution%3A%20%C2%A359.40%0A%0A%20%20%20%20Total%20monthly%20contributions%3A%20%C2%A3158.40%0A%20%20%20%20%20%20"
+            >
+              Email your results
+            </a>
+          </li>
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="link"
+              href="/en/workplace-pension-calculator/calculator?reset=true?isEmbedded=true#top"
+            >
+              Reset the calculator
+            </a>
+          </li>
+        </ul>
+        <div
+          class="mt-4 print:hidden"
+        >
+          <h5
+            class="text-lg md:text-xl text-gray-800 font-bold"
+          >
+            Next steps
+          </h5>
+          <ul
+            class="mt-4"
+          >
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  1
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Use our
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/use-our-pension-calculator"
+                  >
+                    Pension Calculator
+                  </a>
+                   
+                  to see how much pension pot you will build over time.
+                </span>
+              </div>
+            </li>
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  2
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Find out more about workplace
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/auto-enrolment"
+                  >
+                    workplace pensions
+                  </a>
+                   
+                </span>
+              </div>
+            </li>
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  3
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Use our
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"
+                  >
+                    Pension Calculator
+                  </a>
+                   
+                  to see what effect your contributions will have on your income.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionCalculator component renders correctly step results with overriding query param for result filter 1 year 1`] = `
+<div
+  class="pb-7 flex flex-col"
+  data-testid="pension-calculator"
+>
+  <form
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="false"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value="cy"
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value="workplace-pension-calculator"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="results"
+    />
+    <div
+      class="lg:max-w-[960px]"
+    >
+      <p
+        class="-mt-6 mb-6 md:text-2xl print:hidden text-gray-400"
+        data-testid="paragraph"
+      >
+        It is now law that most employees must be enrolled into a workplace pension scheme by their employer. This calculator will show you how much will be paid into your pension by you and your employer.
+      </p>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-details"
+      >
+        <div
+          id="top"
+        >
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            1. Your details
+          </h4>
+          <div
+            class="md:ml-3 md:inline-flex items-baseline text-gray-400"
+          >
+            <p
+              class="mr-3 my-1"
+            >
+              (
+              25
+               
+              years
+              , £
+              <span>
+                30,000
+              </span>
+               
+              per
+               
+              year
+              , 
+              part salary
+              )
+            </p>
+            <a
+              class="ml-auto print:hidden inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="edit-details"
+              href="/cy/workplace-pension-calculator/calculator?age=25&contributionType=part&frequency=1&salary=30%2C000&results=1&currentStep=details#top"
+            >
+              Edit
+            </a>
+          </div>
+          <div />
+        </div>
+      </div>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-contributions"
+      >
+        <div>
+          <h4
+            class="text-xl md:text-2xl font-bold inline-flex items-baseline text-blue-800"
+          >
+            2. Your contributions
+          </h4>
+          <div
+            class="md:ml-3 md:inline-flex items-baseline text-gray-400"
+          >
+            <p
+              class="mr-3 my-1"
+            >
+              (
+              You
+              : 
+              %,
+               
+              Your employer
+              :
+               
+              %)
+            </p>
+            <a
+              class="ml-auto print:hidden inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="edit-contributions"
+              href="/cy/workplace-pension-calculator/calculator?age=25&contributionType=part&frequency=1&salary=30%2C000&results=1&currentStep=contributions#top"
+            >
+              Edit
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-gray-200 border-t-[1px] py-2.5"
+        data-testid="pension-results"
+      >
+        <h4
+          class="text-xl md:text-2xl font-bold text-blue-800"
+        >
+          3. Your results
+        </h4>
+        <p
+          class="mt-4 print:mb-4 text-gray-400 mb-1"
+          data-testid="results-message"
+        >
+          Contributions will be based on your qualifying earnings of
+           £
+          <span>
+            23,760
+          </span>
+           
+          per year
+          .
+        </p>
+        <div
+          class="print:hidden"
+        >
+          <details
+            class="group tool-expand"
+            data-testid="expandable-section"
+          >
+            <summary
+              class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+            >
+              <svgr-mock
+                classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                What are qualifying earnings?
+              </div>
+            </summary>
+            <div
+              class=" my-4"
+            >
+              <p
+                class="text-gray-800"
+              >
+                This is the part of your annual pay that will be used to calculate your pension contribution under automatic enrolment. It is your earnings before tax (up to a maximum limit of £50,270 per year) – less the lower earnings threshold of £6,240.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div
+          class="md:flex my-6 items-center bg-gray-200 p-4 print:hidden"
+        >
+          <label
+            class="block font-bold mb-2 md:mr-4 md:mb-0"
+            for="salary"
+          >
+            Show my contributions
+          </label>
+          <div
+            class="flex"
+          >
+            <div
+              class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+            >
+              <span
+                class="print:hidden flex absolute pointer-events-none items-center inset-y-0 right-0 w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r shadow-bottom-gray focus:shadow-none"
+              >
+                <svgr-mock
+                  classname=""
+                />
+              </span>
+              <select
+                class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                data-testid="results"
+                id="results"
+                name="results"
+              >
+                <option
+                  selected=""
+                  value="1"
+                >
+                  per year
+                </option>
+                <option
+                  value="12"
+                >
+                  per month
+                </option>
+                <option
+                  value="13"
+                >
+                  per 4 weeks
+                </option>
+                <option
+                  value="52"
+                >
+                  per week
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <dl
+          class="border-gray-200 border-[1px] p-4"
+        >
+          <dt
+            class="font-bold mb-1"
+          >
+            Your yearly contribution
+          </dt>
+          <dd
+            class="mb-3"
+          >
+            <span
+              class="flex"
+            >
+              £
+              <span>
+                99.00
+              </span>
+            </span>
+            <span>
+              (
+              includes tax relief
+               £
+              <span>
+                19.80
+              </span>
+              )
+            </span>
+            <div
+              class="print:hidden"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Tax relief on pension contributions
+                  </div>
+                </summary>
+                <div
+                  class=" my-4"
+                >
+                  <p
+                    class="text-gray-800"
+                  >
+                    You get tax relief on pension contributions which means some of the money from your pay that would have gone to the government as tax goes towards your pension instead.
+                     
+                    <a
+                      class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/tax-relief-and-your-pension"
+                      target="_blank"
+                    >
+                      Read more about how you get tax relief
+                       
+                      <span
+                        class="sr-only"
+                      >
+                         (opens in a new window) 
+                      </span>
+                      <svgr-mock
+                        classname="inline ml-[6px] mr-[2px]"
+                      />
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </dd>
+          <dt
+            class="font-bold mb-1"
+          >
+            Employers yearly contribution
+          </dt>
+          <dd
+            class="mb-3"
+          >
+            £
+            <span>
+              59.40
+            </span>
+          </dd>
+          <dt
+            class="font-bold mb-1"
+          >
+            Total yearly contributions
+          </dt>
+          <dd>
+            £
+            <span>
+              158.40
+            </span>
+          </dd>
+        </dl>
+        <ul
+          class="my-8 print:hidden"
+        >
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="print"
+              href="#top"
+            >
+              Print your results
+            </a>
+          </li>
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="link"
+              href="mailto:?body=%0A%20%20%20%201.%20Your%20details%3A%2025%20Years%2C%20%C2%A330%2C000%20per%20year%2C%20part%20salary%0A%0A%20%20%20%202.%20Your%20contributions%3A%20You%3A%20undefined%25%2C%20Your%20employer%3A%20undefined%25%0A%0A%20%20%20%203.%20Your%20Results%0A%0A%20%20%20%20Qualifying%20earnings%3A%20%C2%A323%2C760%0A%0A%20%20%20%20%0A%20%20%20%20Your%20yearly%20contribution%3A%20%C2%A399.00%20(includes%20tax%20relief%20of%20%C2%A319.80)%0A%0A%20%20%20%20Employers%20yearly%20contribution%3A%20%C2%A359.40%0A%0A%20%20%20%20Total%20yearly%20contributions%3A%20%C2%A3158.40%0A%20%20%20%20%20%20"
+            >
+              Email your results
+            </a>
+          </li>
+          <li>
+            <a
+              class="mb-3 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              data-testid="link"
+              href="/cy/workplace-pension-calculator/calculator?reset=true#top"
+            >
+              Reset the calculator
+            </a>
+          </li>
+        </ul>
+        <div
+          class="mt-4 print:hidden"
+        >
+          <h5
+            class="text-lg md:text-xl text-gray-800 font-bold"
+          >
+            Next steps
+          </h5>
+          <ul
+            class="mt-4"
+          >
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  1
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Use our
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/use-our-pension-calculator"
+                  >
+                    Pension Calculator
+                  </a>
+                   
+                  to see how much pension pot you will build over time.
+                </span>
+              </div>
+            </li>
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  2
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Find out more about workplace
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/auto-enrolment"
+                  >
+                    workplace pensions
+                  </a>
+                   
+                </span>
+              </div>
+            </li>
+            <li
+              class="mb-4"
+            >
+              <div
+                class="flex md:items-baseline text-md md:text-base"
+              >
+                <span
+                  class="inline-flex border-green-600 text-green-600 border-[2px] min-w-[34px] w-[34px] h-[34px] items-center justify-center"
+                >
+                  3
+                </span>
+                 
+                <span
+                  class="ml-4 text-gray-800"
+                >
+                  Use our
+                   
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"
+                  >
+                    Pension Calculator
+                  </a>
+                   
+                  to see what effect your contributions will have on your income.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

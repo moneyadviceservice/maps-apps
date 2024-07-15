@@ -1,0 +1,22 @@
+steps:
+  - script: |
+      # Install NVM
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+      # Load NVM into the current shell session
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+      # Install and use the desired Node.js version
+      nvm install 20.5.0 # Replace with your desired Node.js version
+      nvm use 20.5.0
+
+      # Verify the installation
+      node -v
+      npm -v
+
+      # Export the Node.js binary path to the PATH environment variable
+      echo "##vso[task.setvariable variable=PATH]$NVM_DIR/versions/node/v20.5.0/bin:$(/usr/bin/printenv PATH)"
+
+    displayName: 'Install NVM and Node.js'

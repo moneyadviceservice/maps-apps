@@ -1,0 +1,91 @@
+parameters:
+  - name: projectName
+    type: string
+  - name: environment
+    type: string
+  - name: target_branch
+    type: string
+  - name: build_id
+    type: string
+  - name: source_version
+    type: string
+  - name: version
+    type: string
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: acrName
+    type: string
+
+steps:
+  - template: ./install-node-js.yml
+  - script: |
+      # Construct the Key Vault name based on acrName and environment
+      keyvaultname="${{ parameters.acrName }}-${{ parameters.environment }}"
+
+      # Initialise variables string
+      variablesString=""
+
+      # Azure login
+      echo "Logging in to Azure..."
+      az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+
+      # Retrieve secrets from Key Vault
+      echo "Retrieving secrets from Key Vault: $keyvaultname"
+      secrets=$(az keyvault secret list --vault-name $keyvaultname --query "[].name" -o tsv)
+      for secretName in $secrets; do
+          if [[ $secretName == NEXT-PUBLIC-* ]]; then
+              secretValue=$(az keyvault secret show --name $secretName --vault-name $keyvaultname --query "value" -o tsv)
+              secretName="${secretName//-/_}"
+              variablesString+="$secretName=$secretValue "
+              export "$secretName=$secretValue"
+          fi
+      done
+
+      # Process project if not shared
+      projname=${{ parameters.projectName }}
+      substring="shared"
+      if [[ ! $projname == *"$substring"* ]]; then
+        echo "Processing $projname"
+        version=${{ parameters.version }}
+
+        # Log into ACR
+        acr_name="${projname%%-*}"
+        echo "Logging into ACR: $acr_name, Environment: ${{ parameters.environment }}"
+        az acr login --name $acr_name
+
+        # Build project
+        appname="${projname#"${projname%%[![:space:]]*}"}"
+        cd $(Build.SourcesDirectory)
+        npm install
+        eval "$variablesString npx nx build \"$appname\""
+
+        # Prepare Docker build
+        rm -rf packages
+        mkdir -p packages
+        cp package.json .dockerignore package-lock.json tsconfig.base.json $appname.dockerfile ./packages
+        cp -rf apps/"$appname"/public libs ./packages
+        cp -rf dist/apps/$appname/.next ./packages/.next
+        cd packages || exit
+        mv $appname.dockerfile dockerfile
+
+        # Compute unique SHA
+        sha=$(git rev-parse HEAD)
+        app_sha=$(echo -n "$appname" | sha256sum | cut -d' ' -f1)
+        unique_sha="${sha}-${app_sha}"
+
+        # Build and push Docker image
+        docker build --cache-from ${acr_name}.azurecr.io/${appname}:cache-${version} --build-arg IMAGE_SHA=$unique_sha -t ${acr_name}.azurecr.io/${appname}:${version} -t ${acr_name}.azurecr.io/${appname}:cache-${version} .
+        docker push ${acr_name}.azurecr.io/${appname}:${version}
+        docker push ${acr_name}.azurecr.io/${appname}:cache-${version}
+
+        # Set output variable
+        echo "##vso[task.setvariable variable=${appname}-image-sha;isOutput=true]$unique_sha"
+        cd -
+      fi
+    displayName: 'Build and Push ${{ parameters.projectName }}'
+    name: buildnxaffected
+    env:
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)

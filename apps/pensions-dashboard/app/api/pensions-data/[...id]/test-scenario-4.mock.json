@@ -1,0 +1,135 @@
+{
+  "pensionPolicies": [
+    {
+      "pensionArrangements": [
+        {
+          "externalAssetId": "1ba03e25-659a-43b8-ae77-b956df168969",
+          "matchType": "POSS",
+          "schemeName": "My Company Direct Contribution Scheme",
+          "alternateSchemeNames": [
+            {
+              "name": "Converted from My Old Direct Contribution Scheme",
+              "alternateNameType": "FOR"
+            }
+          ],
+          "contactReference": "Q12345",
+          "pensionAdministrator": {
+            "name": "Pension Company 1",
+            "contactMethods": [
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "email": "example@examplemyline.com"
+                }
+              },
+              {
+                "preferred": true,
+                "contactMethodDetails": {
+                  "number": "+123 1111111111",
+                  "usage": ["A", "M"]
+                }
+              }
+            ]
+          },
+          "additionalDataSources": [
+            {
+              "url": "http://example.com",
+              "informationType": "C_AND_C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pensionArrangements": [
+        {
+          "externalAssetId": "0c6b191a-6778-4d4f-9b01-2defa78ae1f2",
+          "matchType": "POSS",
+          "schemeName": "My Old Company Direct Contribution Scheme",
+          "alternateSchemeNames": [],
+          "contactReference": "Q-abcde",
+          "pensionAdministrator": {
+            "name": "Pension Company 1",
+            "contactMethods": [
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "email": "example@examplemyline.com"
+                }
+              },
+              {
+                "preferred": true,
+                "contactMethodDetails": {
+                  "number": "+123 1111111111",
+                  "usage": ["A", "M"]
+                }
+              }
+            ]
+          },
+          "additionalDataSources": [
+            {
+              "url": "http://example2.com",
+              "informationType": "C_AND_C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pensionArrangements": [
+        {
+          "externalAssetId": "3af98316-3911-4337-88b1-353b872420e8",
+          "matchType": "POSS",
+          "schemeName": "My First Company Direct Contribution Scheme",
+          "alternateSchemeNames": [],
+          "contactReference": "Ref 1378321/334",
+          "pensionAdministrator": {
+            "name": "Pension Company 2",
+            "contactMethods": [
+              {
+                "preferred": false,
+                "contactMethodDetails": {
+                  "email": "pensionCo1@examplemyline.com"
+                }
+              },
+              {
+                "preferred": true,
+                "contactMethodDetails": {
+                  "number": "+44 1111155555",
+                  "usage": ["W"]
+                }
+              }
+            ]
+          },
+          "additionalDataSources": [
+            {
+              "url": "http://pensionCo1.com",
+              "informationType": "C_AND_C"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "peiInformation": {
+    "peiRetrievalComplete": true,
+    "peiData": [
+      {
+        "pei": "7075aa11-10ad-4b2f-a9f5-1068e79119bf:1ba03e25-659a-43b8-ae77-b956df168969",
+        "description": "My Company Direct Contribution Scheme",
+        "retrievalStatus": "RETRIEVAL_COMPLETE"
+      },
+      {
+        "pei": "4572fe02-ed14-4738-b6c1-7b71cfd09c16:3ff67f16-f72b-4a6b-af4c-1c04abe0b103",
+        "description": "My Old Company Direct Contribution Scheme",
+        "retrievalStatus": "RETRIEVAL_COMPLETE"
+      },
+      {
+        "pei": "5ee364b7-b38a-44ec-9108-b6fbb27bd473:574d9d45-132e-41bd-82f8-5d36e4c16ced",
+        "description": "My Old Company Direct Contribution Scheme",
+        "retrievalStatus": "RETRIEVAL_COMPLETE"
+      }
+    ]
+  },
+  "pensionsDataRetrievalComplete": true
+}

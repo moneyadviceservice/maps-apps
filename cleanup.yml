@@ -1,0 +1,65 @@
+trigger:
+  branches:
+    include:
+      - main
+
+schedules:
+  - cron: '0 18 * * 5' # Every Friday at 6 PM UTC
+    displayName: 'Weekly PR Clean-up'
+    branches:
+      include:
+        - main
+    always: true
+
+jobs:
+  - job: CleanUpPRJob
+    displayName: 'Clean Up Old PRs'
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.x'
+          addToPath: true
+
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+        displayName: 'Install jq'
+
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: 'ADO-PWD-Connection'
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            chmod +x scripts/pull-request-clean.sh
+            ./scripts/pull-request-clean.sh
+
+  - job: CleanUpACRJob
+    displayName: 'Clean Up Old ACR Images'
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.x'
+          addToPath: true
+
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          python3 -m pip install --upgrade pip
+          python3 -m pip install azure-identity azure-mgmt-containerregistry azure-containerregistry
+        displayName: 'Install Python3 Dependencies'
+
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: 'ADO-PWD-Connection'
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            python3 scripts/cleanup_acr.py
+        displayName: 'Run ACR Cleanup Script'

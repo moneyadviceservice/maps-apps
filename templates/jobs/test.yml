@@ -1,0 +1,63 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: envstodeploy
+    type: string
+
+jobs:
+  - job: test_pensionwise_triage_if_affected
+    displayName: 'pensionwise-triage'
+    condition: and(succeeded(), contains(stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensionwise-triage'))
+    steps:
+      - template: ../steps/4-run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          envstodeploy: pensionwise-triage
+          AKS_SPN_ID: $(AKS_SPN_ID)
+          AKS_SPN_KEY: $(AKS_SPN_KEY)
+          TENANT_ID: $(TENANT_ID)
+          acrName: pensionwise
+          environment: review
+
+  - job: test_pensionwise_appointment_if_affected
+    displayName: 'pensionwise-appointment'
+    condition: and(succeeded(), contains(stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensionwise-appointment'))
+    steps:
+      - template: ../steps/4-run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          envstodeploy: pensionwise-appointment
+          AKS_SPN_ID: $(AKS_SPN_ID)
+          AKS_SPN_KEY: $(AKS_SPN_KEY)
+          TENANT_ID: $(TENANT_ID)
+          acrName: pensionwise
+          environment: review
+
+  # - job: test_moneyhelper_tools_if_affected
+  #   displayName: 'moneyhelper-tools'
+  #   condition: and(succeeded(), contains(stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'moneyhelper-tools'))
+  #   steps:
+  #     - template: ../steps/4-run-tests.yml
+  #       parameters:
+  #         compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+  #         envstodeploy: moneyhelper-tools
+  #         AKS_SPN_ID: $(AKS_SPN_ID)
+  #         AKS_SPN_KEY: $(AKS_SPN_KEY)
+  #         TENANT_ID: $(TENANT_ID)
+  #         acrName: moneyhelper
+  #         environment: review
+
+  - job: test_pensions_dashboard_if_affected
+    displayName: 'pensions-dashboard'
+    condition: and(succeeded(), contains(stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensions-dashboard'))
+    steps:
+      - template: ../steps/4-run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          envstodeploy: pensions-dashboard
+          AKS_SPN_ID: $(AKS_SPN_ID)
+          AKS_SPN_KEY: $(AKS_SPN_KEY)
+          TENANT_ID: $(TENANT_ID)
+          acrName: pensions
+          environment: review

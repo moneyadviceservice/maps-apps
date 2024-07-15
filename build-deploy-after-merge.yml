@@ -1,0 +1,307 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - name: target_environment
+    value: 'dev'
+  - template: templates/variables/dev.yml
+  - template: templates/variables/global.yml
+
+stages:
+  - stage: Build
+    variables:
+      - name: envstodeploy
+        value: $[ dependencies.Determine_Affected.outputs['determinenxaffected.envstodeploy'] ]
+      - name: prid
+        value: $[ dependencies.Determine_Affected.outputs['setprid.prid'] ]
+
+    jobs:
+      - job: Determine_Affected
+        displayName: 'Determine Affected Apps'
+        steps:
+          - script: |
+              cd $(Build.SourcesDirectory)
+              echo "the params are build_id: $(Build.BuildId), source_version: $(Build.SourceVersion), tag: dev-$(Build.BuildId)"
+            displayName: 'Echo Parameters'
+
+          - template: templates/steps/6-determine-affected.yml
+            parameters:
+              target_branch: refs/heads/main
+              compareWithTargetBranch: true
+
+      - template: templates/jobs/build-affected.yml
+        parameters:
+          environment: dev
+          envstodeploy: $(envstodeploy)
+          tag: dev-$(Build.BuildId)
+          target_branch: refs/heads/main
+          build_id: $(Build.BuildId)
+          source_version: $(Build.SourceVersion)
+
+  - stage: Test
+    dependsOn: [Build]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'] ]
+
+    jobs:
+      - job: Analyse_code
+        displayName: 'Analyse Code'
+        steps:
+          - template: templates/steps/5-analyze-code.yml
+            parameters:
+              SONARCLOUD_NAME: 'MAPS-SonarCloud'
+              SONARCLOUD_ORGANISATION: $(organisationkey)
+              SONARCLOUD_PROJECTKEY: $(projectKey)
+              SONARCLOUD_PROJECTNAME: 'maps-apps'
+              compareWithTargetBranch: false
+              keyvaultname: $(keyvaultname)
+              AKS_SPN_ID: $(AKS_SPN_ID)
+              AKS_SPN_KEY: $(AKS_SPN_KEY)
+              TENANT_ID: $(TENANT_ID)
+
+      - template: templates/jobs/test.yml
+        parameters:
+          compareWithTargetBranch: false
+          envstodeploy: $(envstodeploy)
+
+  - stage: Deploy
+    dependsOn: [Build, Test]
+
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'] ]
+
+    jobs:
+      - job: Deploy_pensionwise_triage_if_affected
+        displayName: 'Deploy pensionwise triage if affected'
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        steps:
+          - template: templates/jobs/update-app-service.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              appName: dev-pensionwise-triage
+              image: pensionwise-triage:dev-$(Build.BuildId)
+              acrName: pensionwise
+
+      - job: Deploy_pensionwise_appointment_if_affected
+        displayName: 'Deploy pensionwise appointment if affected'
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        steps:
+          - template: templates/jobs/update-app-service.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              appName: dev-pensionwise-appointment
+              image: pensionwise-appointment:dev-$(Build.BuildId)
+              acrName: pensionwise
+
+      # - job: Deploy_moneyhelper_tools_if_affected
+      #   displayName: 'Deploy moneyhelper tools if affected'
+      #   condition: contains(variables.envstodeploy, 'moneyhelper-tools')
+      #   steps:
+      #     - template: templates/jobs/update-app-service.yml
+      #       parameters:
+      #         resource_group: moneyhelper-dev-uksouth-rg
+      #         appName: dev-moneyhelper-tools
+      #         image: moneyhelper-tools:dev-$(Build.BuildId)
+      #         acrName: moneyhelper
+
+      - job: Deploy_pensions_dashboard_if_affected
+        displayName: 'Deploy pensions dashboard if affected'
+        condition: contains(variables.envstodeploy, 'pensions-dashboard')
+        steps:
+          - template: templates/jobs/update-app-service.yml
+            parameters:
+              resource_group: pensions-dev-uksouth-rg
+              appName: dev-pensions-dashboard
+              image: pensions-dashboard:dev-$(Build.BuildId)
+              acrName: pensions
+
+  - stage: Storybook
+    displayName: Deploy Storybook
+    dependsOn: Deploy
+    condition: succeeded()
+    jobs:
+      - job: Storybook_Deploy
+        displayName: Install packages and publishes to Chromatic
+        variables:
+          npm_config_cache: $(Pipeline.Workspace)/.npm
+        steps:
+          - checkout: self
+            displayName: Get full Git history
+            fetchDepth: 0
+          - script: |
+              az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+              CHROMATIC_PROJECT_TOKEN_VAL=$(az keyvault secret show --name CHROMATIC-PROJECT-TOKEN --vault-name $(keyvaultname) --query "value" -o tsv)
+              echo "##vso[task.setvariable variable=CHROMATIC_PROJECT_TOKEN;]$CHROMATIC_PROJECT_TOKEN_VAL"
+            displayName: Fetch secrets
+          - task: NodeTool@0
+            inputs:
+              versionSpec: 18.x
+            displayName: Install Node.js
+          - task: Cache@2
+            displayName: Install and cache packages
+            inputs:
+              key: npm | "$(Agent.OS)" | package-lock.json
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+              path: $(npm_config_cache)
+          - script: npm ci
+            condition: "ne(variables.CACHE_RESTORED, 'true')"
+          - task: CmdLine@2
+            displayName: Publish to Chromatic
+            inputs:
+              script: npx chromatic
+            env:
+              CHROMATIC_PROJECT_TOKEN: $(CHROMATIC_PROJECT_TOKEN)
+
+  - stage: Update_Env_Vars
+    dependsOn: [Build, Test, Deploy]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'] ]
+      - name: environment
+        value: dev
+
+    jobs:
+      - job: Update_var_pensionwise_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Update environment variables - appointments'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              APP_NAME: 'dev-pensionwise-appointment'
+              acrName: pensionwise
+              environment: $(environment)
+
+      - job: Update_var_pensionwise_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Update environment variables - pensionwise-triage'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensionwise-dev-uksouth-rg
+              APP_NAME: 'dev-pensionwise-triage'
+              acrName: pensionwise
+              environment: $(environment)
+
+      # - job: Update_var_moneyhelper_tools
+      #   condition: contains(variables.envstodeploy, 'moneyhelper-tools')
+      #   displayName: 'Update environment variables - moneyhelper-tools'
+      #   steps:
+      #     - template: templates/jobs/update-env-vars.yml
+      #       parameters:
+      #         resource_group: moneyhelper-dev-uksouth-rg
+      #         APP_NAME: 'dev-moneyhelper-tools'
+      #         acrName: moneyhelper
+      #         environment: $(environment)
+
+      - job: Update_var_pensions_dashboard
+        condition: contains(variables.envstodeploy, 'pensions-dashboard')
+        displayName: 'Update environment variables - pensions-dashboard'
+        steps:
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: pensions-dev-uksouth-rg
+              APP_NAME: 'dev-pensions-dashboard'
+              acrName: pensions
+              environment: $(environment)
+
+  - stage: Check_Liveliness
+    dependsOn: [Build, Test, Deploy, Update_Env_Vars]
+    variables:
+      - name: envstodeploy
+        value: $[ stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy'] ]
+
+      - name: appointment-image-sha
+        value: $[ stageDependencies.Build.Build_pensionwise_appointment_if_affected.outputs['buildnxaffected.pensionwise-appointment-image-sha'] ]
+
+      - name: triage-image-sha
+        value: $[ stageDependencies.Build.Build_pensionwise_triage_if_affected.outputs['buildnxaffected.pensionwise-triage-image-sha'] ]
+
+      # - name: moneyhelper-tools-image-sha
+      #   value: $[ stageDependencies.Build.Build_moneyhelper_tools_if_affected.outputs['buildnxaffected.moneyhelper-tools-image-sha'] ]
+
+      - name: pensions-dashboard-image-sha
+        value: $[ stageDependencies.Build.Build_pensions_dashboard_if_affected.outputs['buildnxaffected.pensions-dashboard-image-sha'] ]
+
+    jobs:
+      - job: Perform_liveliness_check_appointment
+        condition: contains(variables.envstodeploy, 'pensionwise-appointment')
+        displayName: 'Carry out liveliness check - appointment'
+        steps:
+          - script: |
+              echo "appointment-image-sha is $(appointment-image-sha)"
+              echo "envstodeploy is $(envstodeploy)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(appointment-image-sha)
+              url: 'https://dev-pensionwise-appointment.azurewebsites.net/api/healthcheck'
+              resource_group: 'pensionwise-dev-uksouth-rg'
+              app_name: 'dev-pensionwise-appointment'
+              client_id: $(AKS_SPN_ID)
+              client_secret: $(AKS_SPN_KEY)
+              tenant_id: $(TENANT_ID)
+
+      - job: Perform_liveliness_check_triage
+        condition: contains(variables.envstodeploy, 'pensionwise-triage')
+        displayName: 'Carry out liveliness check - triage'
+        steps:
+          - script: |
+              echo "triage-image-sha is $(triage-image-sha)"
+              echo "envstodeploy is $(envstodeploy)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(triage-image-sha)
+              url: 'https://dev-pensionwise-triage.azurewebsites.net/api/healthcheck'
+              resource_group: 'pensionwise-dev-uksouth-rg'
+              app_name: 'dev-pensionwise-triage'
+              client_id: $(AKS_SPN_ID)
+              client_secret: $(AKS_SPN_KEY)
+              tenant_id: $(TENANT_ID)
+
+      # - job: Perform_liveliness_check_moneyhelper_tools
+      #   condition: contains(variables.envstodeploy, 'moneyhelper-tools')
+      #   displayName: 'Carry out liveliness check - moneyhelper-tools'
+      #   steps:
+      #     - script: |
+      #         echo "envstodeploy is $(envstodeploy)"
+      #       displayName: 'echo image sha'
+
+      #     - template: templates/jobs/healthcheck.yml
+      #       parameters:
+      #         sha: $(moneyhelper-tools-image-sha)
+      #         url: 'https://dev-moneyhelper-tools.azurewebsites.net/api/healthcheck'
+      #         resource_group: 'moneyhelper-dev-uksouth-rg'
+      #         app_name: 'dev-moneyhelper-tools'
+      #         client_id: $(AKS_SPN_ID)
+      #         client_secret: $(AKS_SPN_KEY)
+      #         tenant_id: $(TENANT_ID)
+
+      - job: Perform_liveliness_check_pensions_dashboard
+        condition: contains(variables.envstodeploy, 'pensions-dashboard')
+        displayName: 'Carry out liveliness check - pensions-dashboard'
+        steps:
+          - script: |
+              echo "envstodeploy is $(envstodeploy)"
+            displayName: 'echo image sha'
+
+          - template: templates/jobs/healthcheck.yml
+            parameters:
+              sha: $(pensions-dashboard-image-sha)
+              url: 'https://dev-pensions-dashboard.azurewebsites.net/api/healthcheck'
+              resource_group: 'pensions-dev-uksouth-rg'
+              app_name: 'dev-pensions-dashboard'
+              client_id: $(AKS_SPN_ID)
+              client_secret: $(AKS_SPN_KEY)
+              tenant_id: $(TENANT_ID)

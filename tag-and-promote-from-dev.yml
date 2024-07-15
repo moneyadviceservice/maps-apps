@@ -1,0 +1,138 @@
+trigger: none
+
+parameters:
+  - name: sourceenvironment
+    displayName: Source Environment
+    type: string
+    default: dev
+    values:
+      - dev
+
+  - name: targetenvironment
+    displayName: Target Environment
+    type: string
+    default: test
+    values:
+      - test
+      - dev
+      - test1
+
+  - name: application
+    displayName: Application
+    type: string
+    default: triage
+    values:
+      - pensionwise-triage
+      - pensionwise-appointment
+      # - moneyhelper-tools
+      - pensions-dashboard
+
+  - name: acrName
+    displayName: ACR Name
+    type: string
+    values:
+      - pensionwise
+      # - moneyhelper
+      - pensions
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - template: templates/variables/${{ parameters.targetenvironment }}.yml
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Promote_${{ parameters.sourceenvironment }}_to_${{ parameters.targetenvironment }}
+        displayName: Promote ${{ parameters.sourceenvironment }} to ${{ parameters.targetenvironment }}
+        steps:
+          - checkout: self
+            clean: 'true'
+            persistCredentials: 'true'
+            fetchDepth: 10
+            displayName: Check out source code from main repository
+
+          - script: |
+              git fetch origin main:main
+            displayName: Fetch the latest history for main branch
+
+          - script: |
+              git checkout -B main
+              git fetch origin main
+              git reset --hard origin/main
+            displayName: Fetch and checkout main branch
+
+          - script: |
+              git config --global user.name "Deployment"
+              git config --global user.email "depoyments@solirius.com"
+              promdatetime=$(date +%Y%m%d%H%M%S)
+              git tag -a $promdatetime -m "Version $promdatetime"
+              git push origin $promdatetime
+              git show-ref --tags
+              git checkout $promdatetime
+              echo "This is pwd $(pwd)"
+              echo "This is ls $(ls)"
+              echo "##vso[task.setvariable variable=projtag;]$promdatetime"
+            displayName: 'Tag and push build'
+
+          - script: |
+
+              variablesString=""
+              echo "keyvaultname is $(keyvaultname)"
+              az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+              secrets=$(az keyvault secret list --vault-name $(keyvaultname) --query "[].name" -o tsv)
+              for secretName in $secrets; do
+                  if [[ $secretName == NEXT-PUBLIC-* ]]; then
+                      secretValue=$(az keyvault secret show --name $secretName --vault-name $(keyvaultname) --query "value" -o tsv)
+                      secretName="${secretName//-/_}"
+                      variablesString+="$secretName=$secretValue "
+                      echo "param $secretName=$secretValue"
+                      export "$secretName=$secretValue"
+                  fi
+              done
+              appname=${{ parameters.application }}
+              npm ci
+              eval "$variablesString npx nx run \"${appname}:build\""
+              rm -rf packages
+              mkdir -p packages #make directory packages
+              cp package.json ./packages # copy package.json to packages\
+              cp .dockerignore  ./packages # copy .dockerignore  to packages
+              cp package-lock.json ./packages # copy package-lock.json to packages
+              cp tsconfig.base.json ./packages # copy tsconfig.base.json to packages
+              cp $appname.dockerfile ./packages # copy dockerfile to packages
+              cp -rf apps/"$appname"/public ./packages # copy the app to packages
+              cp -rf libs ./packages/ # copy the library to packages
+              cp -rf dist/apps/$appname/.next ./packages/.next # copy the .next folder to packages
+              cd packages || exit
+              acr_name=${{ parameters.acrName }}
+              mv $appname.dockerfile dockerfile
+              npm ci # run npm ci
+              echo "projtag target is $(projtag)"
+              version=${{ parameters.targetenvironment }}-$(projtag)
+              echo "Version is $version"
+              az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+              az acr login --name ${acr_name}
+              dockertagname="${acr_name}.azurecr.io/${appname}:${version}"
+              echo "dockertagname source is $dockertagname"
+              docker build -t ${acr_name}.azurecr.io/${appname}:${version} .
+              docker push ${acr_name}.azurecr.io/${appname}:${version}
+              echo "##vso[task.setvariable variable=dockertagname;]$dockertagname"
+
+            displayName: 'build and dockerise ${{ parameters.application }}'
+
+          - template: templates/jobs/update-env-vars.yml
+            parameters:
+              resource_group: ${{ parameters.acrName }}-${{ parameters.targetenvironment }}-uksouth-rg
+              APP_NAME: ${{ parameters.targetenvironment }}-${{ parameters.application }}
+              acrName: ${{ parameters.acrName }}
+              environment: ${{ parameters.targetenvironment }}
+
+          - script: |
+              echo "dockertagname target is $dockertagname  projtag is $(projtag)"
+              az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+              az account set --subscription $(AZURE_SUBSCRIPTION_ID)
+              az webapp config container set -n "${{ parameters.targetenvironment }}-${{ parameters.application }}" -g ${{ parameters.acrName }}-${{ parameters.targetenvironment }}-uksouth-rg --container-image-name "$(dockertagname)"
+              az webapp config appsettings set -g ${{ parameters.acrName }}-${{ parameters.targetenvironment }}-uksouth-rg -n "${{ parameters.targetenvironment }}-${{ parameters.application }}" --settings "projtag=$(projtag)"
+
+            displayName: 'deploy to ${{ parameters.targetenvironment }}'
