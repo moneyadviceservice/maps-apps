@@ -1,0 +1,51 @@
+{
+  "core": {
+    "heading": "Estimate how much you could get",
+    "incomeText": "What is your yearly income?",
+    "incomeLabel": "Include money you get from work, State Pension and any other taxable income you have. Find out more information on what other income is taxable. (opens in a new window) ",
+    "potText": "How much is in your pot?",
+    "cashChunkText": "How much do you want to take as your first cash chunk?",
+    "callOutText": "If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension. Find a retirement adviser. (opens in a new window) ",
+    "resultsTitle": "Your results",
+    "potLabel": "Your pot could be worth this much over the next 5 years:",
+    "resultsHeader": "If you take £%FIRST_CHUNK% from your £%POT% pot, you could get:",
+    "resultsLabel1": "We estimate you'll pay:",
+    "resultsLabel2": "Leaving:",
+    "updateChunkLabel": "or try a different cash chunk:",
+    "resultInfo": "This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate",
+    "unableSubmitLabel": "Unable to submit the form",
+    "incomeErrorLabel": "What is your yearly income? - Enter a figure",
+    "potErrorLabel": "How much is in your pot? - Enter a figure",
+    "potZeroErrorLabel": "How much is in your pot? - Amount must be at least £1",
+    "cashChunkErrorLabel": "How much do you want to take as your first cash chunk? - Enter a figure",
+    "chunkLessThanPotErrorLabel": "How much do you want to take as your first cash chunk? - Amount must be less than your pension pot value",
+    "incomeFieldLevelErrorLabel": "Enter a figure",
+    "potFieldLevelErrorLabel": "Enter a figure",
+    "potZeroFieldLevelErrorLabel": "Amount must be at least £1",
+    "cashChunkFieldLevelErrorLabel": "Enter a figure",
+    "chunkLessThanPotFieldLevelErrorLabel": "Amount must be less than your pension pot value"
+  },
+  "tests": [
+    {
+      "label": "Income  £45,000 pot £70,000 and cash chunk £20,000",
+      "income": "45,000",
+      "pot": "70,000",
+      "cashInChunk": "20,000",
+      "results": ["£15,054", "£4,946 in tax", "£50,000 in your pot"]
+    },
+    {
+      "label": "Income  £95,000 pot £100,000 and cash chunk £80,000",
+      "income": "95,000",
+      "pot": "100,000",
+      "cashInChunk": "80,000",
+      "results": ["£54,507", "£25,493 in tax", "£20,000 in your pot"]
+    },
+    {
+      "label": "Income  £100,000 pot £90,000 and cash chunk £89,999",
+      "income": "100,000",
+      "pot": "90,000",
+      "cashInChunk": "89,999",
+      "results": ["£60,881", "£29,118 in tax", "£1 in your pot"]
+    }
+  ]
+}

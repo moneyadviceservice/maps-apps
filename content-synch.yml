@@ -1,0 +1,61 @@
+trigger: none
+name: Content synch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: '20.5.0'
+    displayName: 'Install Node.js'
+
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: 'ADO-PWD-Connection'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        # Retrieve secrets from Azure Key Vault
+        JSON_STRING=$(az keyvault secret show --vault-name aio-content-synch --name JSON-STRING --query value -o tsv)
+        PRIVATE_KEY=$(az keyvault secret show --vault-name aio-content-synch --name PRIVATE-KEY --query value -o tsv)
+
+        # Export secrets as environment variables
+        echo "##vso[task.setvariable variable=JSON_STRING]$JSON_STRING"
+        echo "##vso[task.setvariable variable=PRIVATE_KEY]$PRIVATE_KEY"
+
+  - script: |
+
+      # Remove surrounding single quotes from the secrets if they exist
+      JSON_STRING=$(echo "$JSON_STRING" | sed "s/^'//" | sed "s/'$//")
+      PRIVATE_KEY=$(echo "$PRIVATE_KEY" | sed "s/^'//" | sed "s/'$//")
+
+      # Write the secrets to files
+      echo "$JSON_STRING" > config.json
+      echo -e "$PRIVATE_KEY" > private.key
+
+      # Install aio-cli and plugins
+      npm install -g @adobe/aio-cli
+      aio --version
+      aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+      aio plugins:update
+
+      # Configure aio-cli with the retrieved secrets
+      aio config:set jwt-auth config.json --file --json
+      aio config:set jwt-auth.private_key private.key --file
+      aio config:set cloudmanager_programid 99954
+      aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key private.key --file
+
+      # Debug values for content flow creation
+      echo "Creating content flow with the following parameters:"
+      echo "Program ID: 99954"
+      echo "Source Environment ID: $(source-environment-id)"
+      echo "Content Set ID: $(content-set-id)"
+      echo "Target Environment ID: $(target-environment-id)"
+      echo "Include ACL: false"
+      echo "Tier: author"
+      echo "Merge Exclude Paths: false"
+
+      # Create content flow
+      aio cloudmanager:content-flow:create $(source-environment-id) $(content-set-id) $(target-environment-id) false author
+    displayName: 'Install aio-cli, configure, and create content flow'

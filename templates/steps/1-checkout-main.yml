@@ -1,0 +1,11 @@
+steps:
+- checkout: self
+  clean: true
+  persistCredentials: true
+  fetchDepth: 10
+  displayName: Check out source code from main repository
+
+
+- script: |
+    git fetch origin main:refs/remotes/origin/main
+  displayName: Fetch the latest history for main branch

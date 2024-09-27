@@ -1,0 +1,108 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: envstodeploy
+    type: string
+  - name: AKS_SPN_ID
+    type: string
+  - name: AKS_SPN_KEY
+    type: string
+  - name: TENANT_ID
+    type: string
+  - name: acrName
+    type: string
+  - name: environment
+    type: string
+
+steps:
+  - template: ./1-checkout-main.yml
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+         git fetch origin main:main
+         git fetch origin main:refs/remotes/origin/main
+      else
+         git fetch  --depth=2 origin main:main
+         git fetch  --depth=2 origin main:refs/remotes/origin/main
+      fi
+    displayName: 'Fetch branch to compare'
+
+  - script: |
+      keyvaultname="${{ parameters.acrName }}-${{ parameters.environment }}"
+      az login --service-principal --username ${{ parameters.AKS_SPN_ID }} --password ${{ parameters.AKS_SPN_KEY }} --tenant ${{ parameters.TENANT_ID }}
+      secrets=$(az keyvault secret list --vault-name $keyvaultname --query "[].name" -o tsv)
+      for secretName in $secrets; do
+
+            secretValue=$(az keyvault secret show --name $secretName --vault-name $keyvaultname --query "value" -o tsv)
+            secretName="${secretName//-/_}"
+            variablesString+="$secretName=$secretValue "
+            echo "##vso[task.setvariable variable=$secretName]$secretValue"
+
+      done
+
+    displayName: 'Export Environment variable'
+
+  - template: ./install-node-js.yml
+
+  - script: npm ci
+    displayName: 'Install Dependencies'
+
+  - script: |
+      set -e
+
+      echo "envtodeploy value is ${{ parameters.envstodeploy }} -"
+      startPort=3000
+      endPort=3500
+      portnum=""
+
+      IFS=',' read -ra ENVS <<< "${{ parameters.envstodeploy }}"
+      if [ ${#ENVS[@]} -eq 0 ]; then
+        echo "No environments to deploy. Exiting."
+        exit 0
+      fi
+
+      for env in "${ENVS[@]}"; do
+        echo "======================================================================="
+        echo "Running end-to-end tests for environment: $env"
+        echo "======================================================================="
+
+        for port in $(seq $startPort $endPort); do
+          lockFile="/tmp/.X${port}-lock"
+          if [ -f $lockFile ]; then
+            echo "Removing existing lock file: $lockFile"
+            rm -f $lockFile
+          fi
+          if ! nc -z localhost $port; then
+            portnum=$port
+            startPort=$((portnum + 1))
+            break
+          fi
+        done
+
+        if [ -z "$portnum" ]; then
+          echo "No free port found. Exiting with error."
+          exit 1
+        fi
+
+        echo "Starting Xvfb on port: $portnum"
+        Xvfb :$portnum -screen 0 1280x1024x24 &
+        XVFB_PID=$!
+        export DISPLAY=:$portnum
+
+        echo "Running E2E tests for environment: $env"
+        testResults=$(npm run test:e2e-ci $env-e2e --port='cypress-auto' 2>&1) || status=$?
+
+        if [ -n "$status" ] && [ "$status" -ne 0 ]; then
+          echo "E2E tests failed for environment: $env"
+          echo "E2E test output: $testResults"
+          kill $XVFB_PID
+          exit $status
+        else
+          echo "E2E tests passed for environment: $env"
+          echo "E2E test output: $testResults"
+        fi
+
+        echo "Terminating Xvfb with PID: $XVFB_PID"
+        kill $XVFB_PID
+      done
+    displayName: 'Run affected E2E tests'

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": { "value": "test-moneyhelper-tools" },
+    "appServicePlanName": { "value": "moneyhelper" },
+    "location": { "value": "uksouth" },
+    "sku": { "value": "S1" },
+    "nodeVersion": { "value": "14.15.1" },
+    "runtimeStack": { "value": "NODE|14.15.1" },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": { "value": "test-password" },
+    "DOCKER_REGISTRY_SERVER_USERNAME": { "value": "moneyhelper" },
+    "port": { "value": "3000" },
+    "DOCKER_REGISTRY_SERVER_URL": { "value": "https://moneyhelper.azurecr.io" },
+    "WEBSITES_PORT": { "value": "3000" },
+    "acrName": { "value": "moneyhelper" }
+  }
+}

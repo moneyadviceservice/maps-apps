@@ -1,0 +1,44 @@
+{
+  "name": "pensionwise-appointment-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pensionwise-appointment-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensionwise-appointment-e2e/cypress.config.ts",
+        "devServerTarget": "pensionwise-appointment:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4251
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensionwise-appointment:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensionwise-appointment-e2e/cypress.config.ts",
+        "devServerTarget": "pensionwise-appointment:serve:development",
+        "testingType": "e2e",
+        "port": 4251,
+        "browser": "chrome"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensionwise-appointment:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["pensionwise-appointment"]
+}

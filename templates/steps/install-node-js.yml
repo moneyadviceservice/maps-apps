@@ -1,0 +1,11 @@
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.5.0'
+      nodejsMirror: 'https://npmmirror.com/mirrors/node'
+    displayName: 'Install Node.js 20.5.0'
+  - script: |
+      node -v
+      npm -v
+    displayName: 'Verify Node.js and NPM Version'
+

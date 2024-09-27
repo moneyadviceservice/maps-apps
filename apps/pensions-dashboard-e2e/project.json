@@ -1,0 +1,42 @@
+{
+  "name": "pensions-dashboard-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pensions-dashboard-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["pensions-dashboard"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensions-dashboard-e2e/cypress.config.ts",
+        "devServerTarget": "pensions-dashboard:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4101
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensions-dashboard:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensions-dashboard-e2e/cypress.config.ts",
+        "devServerTarget": "pensions-dashboard:serve:development",
+        "testingType": "e2e",
+        "port": 4101
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensions-dashboard:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

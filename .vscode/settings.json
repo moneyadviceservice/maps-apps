@@ -1,0 +1,15 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "sonarlint.connectedMode.project": {
+    "connectionId": "maps",
+    "projectKey": "moneyandpensionsservice_maps-apps"
+  }
+}

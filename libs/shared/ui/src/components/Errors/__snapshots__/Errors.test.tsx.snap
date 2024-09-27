@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Errors component renders correctly 1`] = `
+<div
+  class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+  data-testid="errors"
+>
+  This contains errors
+</div>
+`;
+
+exports[`Errors component renders correctly when there are no errors 1`] = `
+<div
+  class=""
+  data-testid="errors"
+>
+  This contains errors
+</div>
+`;

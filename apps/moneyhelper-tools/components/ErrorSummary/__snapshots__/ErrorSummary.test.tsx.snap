@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorSummary component renders correctly 1`] = `
+<div>
+  <div
+    aria-describedby="error-summary-heading"
+    aria-relevant="all"
+    id="error-summary-heading"
+    role="alert"
+  >
+    <div
+      class="t-error-summary border-4 w-full border-red-700 py-8 px-4 sm:px-6 lg:px-8 outline-none"
+    >
+      <div
+        class="flex items-center"
+      >
+        <svgr-mock
+          classname="min-w-[50px]"
+          data-testid="icon-error"
+        />
+        <h5
+          class="text-lg md:text-xl text-gray-800 font-bold"
+          id="error-summary-heading"
+        />
+      </div>
+      <div
+        class="pl-4 md:pl-[50px]"
+      >
+        <ul
+          class="list-disc mt-3 ml-4"
+        >
+          <li
+            class="list-none -ml-4 underline text-lg decoration-solid text-red-700 mb-2.5 last:mb-0 break-words"
+          >
+            <a
+              class="whitespace-pre-wrap"
+              href="#test1"
+            >
+              test1
+               - 
+              test1
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <input
+    id="test1"
+    name="test1"
+    type="text"
+  />
+</div>
+`;

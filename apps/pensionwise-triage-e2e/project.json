@@ -1,0 +1,44 @@
+{
+  "name": "pensionwise-triage-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pensionwise-triage-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensionwise-triage-e2e/cypress.config.ts",
+        "devServerTarget": "pensionwise-triage:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4201
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensionwise-triage:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pensionwise-triage-e2e/cypress.config.ts",
+        "devServerTarget": "pensionwise-triage:serve:development",
+        "testingType": "e2e",
+        "port": 4201,
+        "browser": "chrome"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensionwise-triage:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["pensionwise-triage"]
+}

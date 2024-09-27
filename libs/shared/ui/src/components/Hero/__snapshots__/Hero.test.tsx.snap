@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component renders correctly 1`] = `
+<div
+  class="bg-blue-800 mb-16"
+  data-testid="test-component"
+>
+  <div
+    class="container-auto relative py-6 h-full w-full lg:p-20 lg:block bg-no-repeat bg:none bg-[right_center] bg-[size:420px] lg:bg-hero_pension_wise"
+  >
+    <div
+      class="absolute left-9 top-9"
+    >
+      <svgr-mock
+        classname="hidden lg:block md:scale-[1.82]"
+      />
+    </div>
+    <div
+      class="hero"
+    >
+      <div
+        class="text-white font-semibold text-2xl lg:ml-8 lg:w-7/12 xl:w-3/4 xl:pr-32"
+      >
+        <h1
+          class="text-4xl md:text-6xl mb-8 font-bold"
+          data-testid="hero-title"
+        >
+          test title
+        </h1>
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;

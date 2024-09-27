@@ -1,0 +1,78 @@
+parameters:
+  - name: url
+    type: string
+  - name: sha
+    type: string
+  - name: resource_group
+    type: string
+  - name: app_name
+    type: string
+  - name: client_id
+    type: string
+  - name: client_secret
+    type: string
+  - name: tenant_id
+    type: string
+
+steps:
+  - script: |
+      az login --service-principal --username ${{ parameters.client_id }} --password ${{ parameters.client_secret }} --tenant ${{ parameters.tenant_id }}
+
+      url=${{ parameters.url }}
+      APP_SHA=${{ parameters.sha }}
+      resource_group=${{ parameters.resource_group }}
+      app_name=${{ parameters.app_name }}
+      agent_ip=$(curl -s http://ipinfo.io/ip)
+
+      echo "Whitelisting agent IP: $agent_ip"
+      az webapp config access-restriction add --resource-group $resource_group --name $app_name --rule-name allow-agent --ip-address $agent_ip --action Allow --priority 100
+
+      echo "Checking health of $url"
+      echo "Expected sha is $APP_SHA"
+      timeout_duration=$((8 * 60))
+      echo "Timeout duration is $timeout_duration seconds"
+
+      # Start time
+      start_time=$(date +%s)
+
+      while :; do
+          # Get the current time
+          current_time=$(date +%s)
+
+          # Calculate elapsed time
+          elapsed_time=$((current_time - start_time))
+
+          # Break the loop if the timeout has been reached
+          if [ $elapsed_time -ge $timeout_duration ]; then
+              echo "Error: Status code 200 not received within 8 minutes."
+              az webapp config access-restriction remove --resource-group $resource_group --name $app_name --rule-name allow-agent
+              exit 1
+          fi
+
+          # Get the HTTP status code
+          http_status_code=$(curl -o /dev/null -s -w "%{http_code}" $url)
+
+          # Check if the status code is 200
+          if [ "$http_status_code" -eq 200 ]; then
+              echo "Success: Received status code 200."
+              json=$(curl -s $url)
+              sha=$(echo ${json} | jq -r .image_sha)
+              echo "Returned sha is $sha, APP_SHA is ${APP_SHA}"
+              if [ "${sha}" != "${APP_SHA}" ]; then
+                echo "Healthcheck failed: SHA mismatch"
+                az webapp config access-restriction remove --resource-group $resource_group --name $app_name --rule-name allow-agent
+                exit 1
+              else
+                echo "Healthcheck passed: SHA matched"
+                az webapp config access-restriction remove --resource-group $resource_group --name $app_name --rule-name allow-agent
+                exit 0
+              fi
+          else
+              # Wait for a short period before trying again
+              echo "Non-200 status code received: $http_status_code"
+              response=$(curl -s $url)
+              echo "Response: $response"
+              sleep 5
+          fi
+      done
+    displayName: 'Perform Health Check and Whitelist IP'

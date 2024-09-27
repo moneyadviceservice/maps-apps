@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly 1`] = `
+<footer
+  class="t-footer mt-8 border-t border-gray-100"
+  data-testid="footer"
+>
+  <div
+    class="t-footer-primary"
+  >
+    <div
+      class="lg:hidden pt-4 space-y-8"
+    >
+      <div
+        class="container-auto"
+      >
+        <div
+          class="t-footer-branding space-y-4 md:space-y-0 md:flex md:space-x-4"
+        >
+          <div
+            class="t-footer-gov"
+          >
+            <img
+              alt="H.M. Government logo"
+              data-nimg="1"
+              decoding="async"
+              height="74"
+              loading="lazy"
+              src="/_next/image?url=%2Ffooter%2Fgov.png&w=640&q=75"
+              srcset="/_next/image?url=%2Ffooter%2Fgov.png&w=256&q=75 1x, /_next/image?url=%2Ffooter%2Fgov.png&w=640&q=75 2x"
+              style="color: transparent;"
+              width="220"
+            />
+          </div>
+          <hr
+            class=""
+          />
+          <div>
+            <div
+              class="t-footer-maps flex-grow space-y-4 text-sm"
+            >
+              <div>
+                MoneyHelper is provided by:
+              </div>
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://moneyandpensionsservice.org.uk/"
+              >
+                <img
+                  alt="MaPS logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="60"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fmaps-logo.png&w=384&q=75"
+                  srcset="/_next/image?url=%2Fmaps-logo.png&w=256&q=75 1x, /_next/image?url=%2Fmaps-logo.png&w=384&q=75 2x"
+                  style="color: transparent;"
+                  width="164"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="t-footer-accessibility bg-gray-100"
+      >
+        <div
+          class="container-auto"
+        >
+          <div
+            class="py-8 md:flex md:items-end space-y-8 md:gap-8"
+          >
+            <div
+              class="flex items-end gap-4"
+            >
+              <a
+                aria-label="W3C WAI-AA WCAG 2.1"
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+              >
+                <div
+                  class="p-0.5"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                </div>
+              </a>
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://clearest.co.uk/gold-standard/"
+              >
+                <img
+                  alt="Plain language commission logo"
+                  class="p-0.5"
+                  data-nimg="1"
+                  decoding="async"
+                  height="87"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fplain-language-commission.jpg&w=256&q=75"
+                  srcset="/_next/image?url=%2Fplain-language-commission.jpg&w=96&q=75 1x, /_next/image?url=%2Fplain-language-commission.jpg&w=256&q=75 2x"
+                  style="color: transparent;"
+                  width="68"
+                />
+              </a>
+            </div>
+            <a
+              class="space-x-2 inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/contact-us/report-accessibility-problem"
+            >
+              <div
+                class="flex items-center space-x-2"
+              >
+                <svgr-mock
+                  classname=""
+                />
+                <div>
+                  Report an accessibility problem
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden lg:block"
+    >
+      <div
+        class="container-auto"
+      >
+        <div
+          class="grid grid-cols-2"
+        >
+          <div
+            class="t-footer-branding grid grid-cols-2 py-8"
+          >
+            <div
+              class="t-footer-gov"
+            >
+              <img
+                alt="H.M. Government logo"
+                data-nimg="1"
+                decoding="async"
+                height="74"
+                loading="lazy"
+                src="/_next/image?url=%2Ffooter%2Fgov.png&w=640&q=75"
+                srcset="/_next/image?url=%2Ffooter%2Fgov.png&w=256&q=75 1x, /_next/image?url=%2Ffooter%2Fgov.png&w=640&q=75 2x"
+                style="color: transparent;"
+                width="220"
+              />
+            </div>
+            <div
+              class="t-footer-maps space-y-4 text-md"
+            >
+              <div>
+                MoneyHelper is provided by:
+              </div>
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://moneyandpensionsservice.org.uk/"
+              >
+                <img
+                  alt="MaPS logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="60"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fmaps-logo.png&w=384&q=75"
+                  srcset="/_next/image?url=%2Fmaps-logo.png&w=256&q=75 1x, /_next/image?url=%2Fmaps-logo.png&w=384&q=75 2x"
+                  style="color: transparent;"
+                  width="164"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="t-footer-accessibility bg-gray-100 flex pl-4"
+          >
+            <div
+              class="flex-grow"
+            />
+            <div
+              class="py-8 flex items-end space-y-8 gap-8"
+            >
+              <div
+                class="flex items-end gap-4"
+              >
+                <a
+                  aria-label="W3C WAI-AA WCAG 2.1"
+                  class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                  href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+                >
+                  <div
+                    class="p-0.5"
+                  >
+                    <svgr-mock
+                      classname=""
+                    />
+                  </div>
+                </a>
+                <a
+                  class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                  href="https://clearest.co.uk/gold-standard/"
+                >
+                  <img
+                    alt="Plain language commission logo"
+                    class="p-0.5"
+                    data-nimg="1"
+                    decoding="async"
+                    height="87"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fplain-language-commission.jpg&w=256&q=75"
+                    srcset="/_next/image?url=%2Fplain-language-commission.jpg&w=96&q=75 1x, /_next/image?url=%2Fplain-language-commission.jpg&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="68"
+                  />
+                </a>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/contact-us/report-accessibility-problem"
+              >
+                <div
+                  class="flex items-center space-x-2"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                  <div>
+                    Report an accessibility problem
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="t-footer-secondary pt-6 pb-24 md:pb-6 bg-gray-800"
+  >
+    <div
+      class="container-auto"
+    >
+      <div
+        class="space-y-3"
+      >
+        <div
+          class="t-footer-copy text-white text-sm"
+        >
+          © 2024 Money and Pensions Service, 120 Holborn, London EC1N 2TD. All rights reserved.
+        </div>
+        <div>
+          <ul
+            class="divide-x divide-gray-400"
+          >
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/about-us"
+              >
+                About us
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/about-us/terms-and-conditions"
+              >
+                Terms & conditions
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/about-us/privacy-notice"
+              >
+                Privacy notice
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/about-us/accessibility"
+              >
+                Accessibility
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/about-us/cookie-policy"
+              >
+                Cookies
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/contact-us/report-a-problem"
+              >
+                Report a problem
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/contact-us"
+              >
+                Contact us
+              </a>
+            </li>
+            <li
+              class="inline pl-2 first:pl-0 pr-2 text-white text-sm"
+            >
+              <button
+                class="t-footer-cookie-preferences text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-whiteLink-button"
+                data-testid="cookie-button"
+                type="submit"
+              >
+                <span />
+                Cookie preferences
+                <span />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
