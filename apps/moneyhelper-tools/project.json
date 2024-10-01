@@ -1,0 +1,76 @@
+{
+  "name": "moneyhelper-tools",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/moneyhelper-tools",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/moneyhelper-tools"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/moneyhelper-tools"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "moneyhelper-tools:build",
+        "dev": true,
+        "port": 4300
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "moneyhelper-tools:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "moneyhelper-tools:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "moneyhelper-tools:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/moneyhelper-tools/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/moneyhelper-tools/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/moneyhelper-tools",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

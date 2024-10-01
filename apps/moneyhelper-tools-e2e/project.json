@@ -1,0 +1,41 @@
+{
+  "name": "moneyhelper-tools-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/moneyhelper-tools-e2e/src",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/moneyhelper-tools-e2e/cypress.config.ts",
+        "devServerTarget": "moneyhelper-tools:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "moneyhelper-tools:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/moneyhelper-tools-e2e/cypress.config.ts",
+        "devServerTarget": "moneyhelper-tools:serve",
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "moneyhelper-tools:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["moneyhelper-tools"]
+}

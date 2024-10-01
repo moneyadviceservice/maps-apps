@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Key Vault resource."
+      }
+    },
+    "location": {
+      "type": "string",
+      "metadata": {
+        "description": "Location for the Key Vault resource."
+      },
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "sku": {
+      "type": "string",
+      "metadata": {
+        "description": "SKU for the Key Vault resource."
+      },
+      "defaultValue": "Standard"
+    },
+    "appServiceName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Azure App Service"
+      }
+    },
+    "appInsightsName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Application Insights resource."
+      }
+    },
+    "mapsUami": {
+      "type": "object",
+      "metadata": {
+        "description": "The user assigned identity provided by Maps Infra team"
+      }
+    }
+  },
+  "resources": [
+    {
+      "apiVersion": "2016-10-01",
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "[parameters('keyVaultName')]",
+      "location": "[parameters('location')]",
+      "identity": {
+        "type": "UserAssigned",
+        "userAssignedIdentities": {
+          "[parameters('mapsUami').resourceID]": {}
+        }
+      },
+      "properties": {
+        "sku": {
+          "name": "[parameters('sku')]",
+          "family": "A"
+        },
+        "tenantId": "[subscription().tenantId]",
+        "accessPolicies": [
+          {
+            "tenantId": "[subscription().tenantid]",
+            "objectId": "[reference(resourceId('Microsoft.Web/sites', parameters('appServiceName')), '2021-02-01', 'full').identity.principalId]",
+            "permissions": {
+              "keys": [],
+              "secrets": [
+                "get"
+              ],
+              "certificates": []
+            }
+          },
+          {
+            "tenantId": "[subscription().tenantid]",
+            "objectId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName')), '2015-05-01', 'full').identity.principalId]",
+            "permissions": {
+              "keys": [],
+              "secrets": [
+                "get"
+              ],
+              "certificates": []
+            }
+          }
+        ],
+        "enabledForDeployment": true,
+        "enabledForDiskEncryption": true,
+        "enabledForTemplateDeployment": true
+      }
+    }
+  ],
+  "outputs": {}
+}

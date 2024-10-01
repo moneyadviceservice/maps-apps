@@ -1,0 +1,143 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "type": "string",
+      "defaultValue": "pensionwise-test-app"
+    },
+    "appServicePlanName": {
+      "type": "string",
+      "defaultValue": "pensionwise-test-app-plan"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "uksouth"
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "F1"
+    },
+    "nodeVersion": {
+      "type": "string",
+      "defaultValue": "20.5.0"
+    },
+    "runtimeStack": {
+      "type": "string",
+      "defaultValue": "NODE|20.5.0"
+    },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": {
+      "type": "string"
+    },
+    "DOCKER_REGISTRY_SERVER_USERNAME": {
+      "type": "string"
+    },
+    "port": {
+      "type": "string"
+    },
+    "DOCKER_REGISTRY_SERVER_URL": {
+      "type": "string",
+      "defaultValue": "https://pensionwise.azurecr.io"
+    },
+    "NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT": {
+      "type": "string"
+    },
+
+    "AEM_HOST": {
+      "type": "string"
+    },
+    "AEM_USERNAME": {
+      "type": "string"
+    },
+    "AEM_PASSWORD": {
+      "type": "string"
+    },
+
+    "NOTIFY_TEMPLATE_ID": {
+      "type": "string"
+    },
+    "NOTIFY_API_KEY": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "appServicePlanId": "/subscriptions/3a9bae85-2f6e-47a1-a371-7ee3c84cf70b/resourceGroups/pensionwise-test-uksouth-rg/providers/Microsoft.Web/serverfarms/pensionwise"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2021-01-15",
+      "name": "[parameters('appName')]",
+      "location": "[parameters('location')]",
+      "kind": "app,linux",
+      "properties": {
+        "name": "[parameters('appName')]",
+        "serverFarmId": "[variables('appServicePlanId')]",
+        "siteConfig": {
+          "linuxFxVersion": "DOCKER|microsoft/azure-app-service-sample:latest",
+          "appSettings": [
+            {
+              "name": "WEBSITE_NODE_DEFAULT_VERSION",
+              "value": "[parameters('nodeVersion')]"
+            },
+            {
+              "name": "WEBSITE_RUN_FROM_PACKAGE",
+              "value": "1"
+            },
+            {
+              "name": "NODE_VERSION",
+              "value": "20.5.0"
+            },
+            {
+              "name": "WEBSITES_PORT",
+              "value": "[parameters('port')]"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_PASSWORD')]"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_USERNAME",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_USERNAME')]"
+            },
+            {
+              "name": "DOCKER_ENABLE_CI",
+              "value": "true"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_URL",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_URL')]"
+            },
+            {
+              "name": "NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT",
+              "value": "[parameters('NEXT_PUBLIC_ADOBE_ANALYTICS_SCRIPT')]"
+            },
+
+            {
+              "name": "AEM_HOST",
+              "value": "[parameters('AEM_HOST')]"
+            },
+            {
+              "name": "AEM_USERNAME",
+              "value": "[parameters('AEM_USERNAME')]"
+            },
+
+            {
+              "name": "AEM_PASSWORD",
+              "value": "[parameters('AEM_PASSWORD')]"
+            },
+
+            {
+              "name": "NOTIFY_TEMPLATE_ID",
+              "value": "[parameters('NOTIFY_TEMPLATE_ID')]"
+            },
+            {
+              "name": "NOTIFY_API_KEY",
+              "value": "[parameters('NOTIFY_API_KEY')]"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

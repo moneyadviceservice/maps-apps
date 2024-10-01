@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RangeSlider component renders correctly 1`] = `
+<div>
+  <div>
+    <input
+      class="w-full mt-4 mb-3 tool-slider"
+      max="100"
+      min="0"
+      step="1"
+      type="range"
+      value="0"
+    />
+    <div
+      aria-hidden="true"
+      class="flex justify-between"
+    >
+      <p>
+        £0
+      </p>
+      <p>
+        £100
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RangeSlider component renders with label 1`] = `
+<div>
+  <div>
+    <label>
+      Select a value
+    </label>
+    <input
+      class="w-full mt-4 mb-3 tool-slider"
+      max="100"
+      min="0"
+      step="1"
+      type="range"
+      value="0"
+    />
+    <div
+      aria-hidden="true"
+      class="flex justify-between"
+    >
+      <p>
+        £0
+      </p>
+      <p>
+        £100
+      </p>
+    </div>
+  </div>
+</div>
+`;

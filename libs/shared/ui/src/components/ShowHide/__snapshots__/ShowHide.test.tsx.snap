@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowHide component renders correctly 1`] = `
+<div
+  class="flex flex-col-reverse"
+  data-testid="test-component"
+>
+  <button
+    aria-controls="expanded-content"
+    aria-expanded="false"
+    class="group inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button"
+    data-testid="show-hide-view-btn"
+    type="button"
+  >
+    <span />
+    <span
+      class="flex items-center content-center rounded mr-4 w-[40px] h-[40px] shadow-bottom-gray border border-pink-600 bg-white group-hover:border-pink-800 group-focus:bg-yellow-200 group-focus:shadow-none"
+    >
+      <svgr-mock
+        classname="w-12 h-6 text-pink-600 group-hover:text-pink-800 group-focus:text-gray-800"
+      />
+    </span>
+     
+    View all
+    <span />
+  </button>
+  <div
+    class="hidden"
+    data-testid="expanded-content"
+    id="expanded-content"
+  >
+    ShowHide
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+variables:
+  - name: azureServiceConnectionName
+    value: 'AzureDevServiceConnection'
+  - name: azureSubscriptionID
+    value: 'b7d58423-b5cf-4fc4-98bb-446c92dc6ec5'
+  - name: azureResourceGroup
+    value: 'tbd'
+  - name: SKU
+    value: 'S2'
+  - name: keyvaultnamex
+    value: 'MapsAppsDev'
+  - name: keyvaultname
+    value: 'MapsAppsDev'

@@ -1,0 +1,38 @@
+name: ACR Cleanup
+
+trigger:
+  branches:
+    include:
+      - main
+
+variables:
+  serviceConnection: 'ADO-PWD-Connection'
+  agentPool: 'ubuntu-latest'
+
+jobs:
+  - job: CleanUpACR
+    displayName: 'Clean Up ACR Images older than 30 days'
+    pool:
+      vmImage: $(agentPool)
+
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.x'
+          addToPath: true
+
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          python3 -m pip install --upgrade pip
+          python3 -m pip install azure-identity azure-mgmt-containerregistry azure-containerregistry
+        displayName: 'Install Python3 Dependencies'
+
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: $(serviceConnection)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            python3 scripts/acr_cleanup.py
+        displayName: 'Clean up ACR images older than 30 days'

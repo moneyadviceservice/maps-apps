@@ -1,0 +1,3 @@
+[build]
+    # Only proceed with build if there are changes in this app
+    ignore = "npx nx-ignore pensionwise-triage"

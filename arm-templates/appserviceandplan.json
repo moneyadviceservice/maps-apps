@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "type": "string"
+    },
+    "appServicePlanName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "nodeVersion": {
+      "type": "string"
+    },
+    "runtimeStack": {
+      "type": "string",
+      "defaultValue": "NODE|20.5.0"
+    },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": {
+      "type": "string"
+    },
+    "DOCKER_REGISTRY_SERVER_USERNAME": {
+      "type": "string"
+    },
+    "port": {
+      "type": "string"
+    },
+    "DOCKER_REGISTRY_SERVER_URL": {
+      "type": "string",
+      "defaultValue": "https://pensionwise.azurecr.io"
+    },
+    "WEBSITES_PORT": {
+      "type": "string"
+    },
+    "acrName": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "appServicePlanId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]",
+    "appServiceId": "[resourceId('Microsoft.Web/sites', parameters('appName'))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/serverfarms",
+      "apiVersion": "2021-01-15",
+      "name": "[parameters('appServicePlanName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "[parameters('sku')]"
+      },
+      "properties": {
+        "name": "[parameters('appServicePlanName')]",
+        "reserved": true
+      }
+    },
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2021-01-15",
+      "name": "[parameters('appName')]",
+      "location": "[parameters('location')]",
+      "dependsOn": ["[variables('appServicePlanId')]"],
+      "kind": "app,linux",
+      "properties": {
+        "name": "[parameters('appName')]",
+        "serverFarmId": "[variables('appServicePlanId')]",
+        "siteConfig": {
+          "linuxFxVersion": "[parameters('runtimeStack')]",
+          "appSettings": [
+            {
+              "name": "WEBSITE_NODE_DEFAULT_VERSION",
+              "value": "[parameters('nodeVersion')]"
+            },
+            {
+              "name": "WEBSITE_RUN_FROM_PACKAGE",
+              "value": "1"
+            },
+            {
+              "name": "NODE_VERSION",
+              "value": "[parameters('nodeVersion')]"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_PASSWORD')]"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_USERNAME",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_USERNAME')]"
+            },
+            {
+              "name": "DOCKER_ENABLE_CI",
+              "value": "true"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_URL",
+              "value": "[parameters('DOCKER_REGISTRY_SERVER_URL')]"
+            },
+            {
+              "name": "WEBSITES_PORT",
+              "value": "[parameters('WEBSITES_PORT')]"
+            },
+            {
+              "name": "PORT",
+              "value": "[parameters('port')]"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

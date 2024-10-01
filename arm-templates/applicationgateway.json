@@ -1,0 +1,166 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "applicationGatewayName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the Application Gateway."
+            }
+        },
+        "skuTier": {
+            "type": "string",
+            "allowedValues": [ "Standard", "WAF" ],
+            "metadata": {
+                "description": "Tier of the SKU for the Application Gateway."
+            },
+            "defaultValue": "Standard"
+        },
+        "skuName": {
+            "type": "string",
+            "allowedValues": [ "Standard_Small", "Standard_Medium", "WAF_Medium", "WAF_Large" ],
+            "metadata": {
+                "description": "Name of the SKU for the Application Gateway."
+            },
+            "defaultValue": "Standard_Small"
+        },
+        "frontendPort": {
+            "type": "int",
+            "metadata": {
+                "description": "Frontend port for the Application Gateway."
+            },
+            "defaultValue": 80
+        },
+        "backendAddressPoolName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the backend address pool."
+            }
+        },
+        "backendHttpSettingsName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the backend HTTP settings."
+            }
+        },
+        "location": {
+            "type": "string",
+            "metadata": {
+                "description": "Location for the Application Gateway."
+            },
+            "defaultValue": "[resourceGroup().location]"
+        },
+        "resourceGroupName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the resource group where the Application Gateway will be created."
+            }
+        },
+        "publicIpName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the public IP address associated with the Application Gateway."
+            }
+        },
+        "mapsUami": {
+            "type": "object",
+            "metadata": {
+                "description": "The user assigned identity provided by Maps Infra team"
+            }
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2020-10-01",
+            "type": "Microsoft.Network/applicationGateways",
+            "name": "[parameters('applicationGatewayName')]",
+            "location": "[parameters('location')]",
+            "identity": {
+                "type": "UserAssigned",
+                "userAssignedIdentities": {
+                    "[parameters('mapsUami').resourceID]": {}
+                }
+            },
+            "properties": {
+                "sku": {
+                    "name": "[parameters('skuName')]",
+                    "tier": "[parameters('skuTier')]"
+                },
+                "frontendIPConfigurations": [
+                    {
+                        "name": "appGatewayFrontendIP",
+                        "properties": {
+                            "publicIPAddress": {
+                                "id": "[variables('publicIPAddressId')]"
+                            }
+                        }
+                    }
+                ],
+                "frontendPorts": [
+                    {
+                        "name": "appGatewayFrontendPort",
+                        "properties": {
+                            "port": "[parameters('frontendPort')]"
+                        }
+                    }
+                ],
+                "backendAddressPools": [
+                    {
+                        "name": "[parameters('backendAddressPoolName')]"
+                    }
+                ],
+                "backendHttpSettingsCollection": [
+                    {
+                        "name": "[parameters('backendHttpSettingsName')]",
+                        "properties": {
+                            "port": 80,
+                            "protocol": "Http",
+                            "cookieBasedAffinity": "Disabled",
+                            "pickHostNameFromBackendAddress": true
+                        }
+                    }
+                ],
+                "httpListeners": [
+                    {
+                        "name": "appGatewayHttpListener",
+                        "properties": {
+                            "frontendIPConfiguration": {
+                                "id": "[variables('frontendIPConfigId')]"
+                            },
+                            "frontendPort": {
+                                "id": "[variables('frontendPortId')]"
+                            },
+                            "protocol": "Http"
+                        }
+                    }
+                ],
+                "requestRoutingRules": [
+                    {
+                        "name": "appGatewayRule",
+                        "properties": {
+                            "ruleType": "Basic",
+                            "httpListener": {
+                                "id": "[variables('httpListenerId')]"
+                            },
+                            "backendAddressPool": {
+                                "id": "[variables('backendAddressPoolId')]"
+                            },
+                            "backendHttpSettings": {
+                                "id": "[variables('backendHttpSettingsId')]"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "variables": {
+        "frontendIPConfigId": "[resourceId('Microsoft.Network/applicationGateways/frontendIPConfigurations', parameters('applicationGatewayName'), 'appGatewayFrontendIP')]",
+        "frontendPortId": "[resourceId('Microsoft.Network/applicationGateways/frontendPorts', parameters('applicationGatewayName'), 'appGatewayFrontendPort')]",
+        "backendAddressPoolId": "[resourceId('Microsoft.Network/applicationGateways/backendAddressPools', parameters('applicationGatewayName'), parameters('backendAddressPoolName'))]",
+        "backendHttpSettingsId": "[resourceId('Microsoft.Network/applicationGateways/backendHttpSettingsCollection', parameters('applicationGatewayName'), parameters('backendHttpSettingsName'))]",
+        "httpListenerId": "[resourceId('Microsoft.Network/applicationGateways/httpListeners', parameters('applicationGatewayName'), 'appGatewayHttpListener')]",
+        "publicIPAddressId": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('resourceGroupName'), parameters('publicIpName'))]"
+    },
+    "outputs": {}
+}
