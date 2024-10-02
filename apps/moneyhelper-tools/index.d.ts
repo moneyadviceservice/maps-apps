@@ -1,0 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+declare module '*.svg' {
+  const content: any;
+  export const ReactComponent: any;
+  export default content;
+}
+
+// force test run - cypress
+
+declare module 'notifications-node-client';

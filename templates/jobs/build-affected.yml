@@ -1,0 +1,78 @@
+parameters:
+  - name: envstodeploy
+    type: string
+  - name: tag
+    type: string
+  - name: target_branch
+    type: string
+  - name: build_id
+    type: string
+  - name: source_version
+    type: string
+  - name: environment
+    type: string
+
+jobs:
+  - job: Build_pensionwise_triage_if_affected
+    displayName: 'pensionwise-triage'
+    dependsOn: Determine_Affected
+    condition: and(succeeded(), contains(dependencies.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensionwise-triage'))
+    steps:
+      - template: ../steps/7-build-affected-apps.yml
+        parameters:
+          acrName: pensionwise
+          projectName: pensionwise-triage
+          environment: ${{ parameters.environment }}
+          target_branch: ${{ parameters.target_branch }}
+          build_id: ${{ parameters.build_id }}
+          source_version: ${{ parameters.source_version }}
+          version: ${{ parameters.tag }}
+          compareWithTargetBranch: true
+
+  - job: Build_pensionwise_appointment_if_affected
+    displayName: 'pensionwise-appointment'
+    dependsOn: Determine_Affected
+    condition: and(succeeded(), contains(dependencies.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensionwise-appointment'))
+    steps:
+      - template: ../steps/7-build-affected-apps.yml
+        parameters:
+          acrName: pensionwise
+          projectName: pensionwise-appointment
+          environment: ${{ parameters.environment }}
+          target_branch: ${{ parameters.target_branch }}
+          build_id: ${{ parameters.build_id }}
+          source_version: ${{ parameters.source_version }}
+          version: ${{ parameters.tag }}
+          compareWithTargetBranch: true
+
+  - job: Build_moneyhelper_tools_if_affected
+    displayName: 'moneyhelper-tools'
+    dependsOn: Determine_Affected
+    condition: and(succeeded(), contains(dependencies.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/7-build-affected-apps.yml
+        parameters:
+          acrName: moneyhelper
+          projectName: moneyhelper-tools
+          environment: ${{ parameters.environment }}
+          target_branch: ${{ parameters.target_branch }}
+          build_id: ${{ parameters.build_id }}
+          source_version: ${{ parameters.source_version }}
+          version: ${{ parameters.tag }}
+          compareWithTargetBranch: true
+
+  - job: Build_pensions_dashboard_if_affected
+    displayName: 'pensions-dashboard'
+    dependsOn: Determine_Affected
+    condition: and(succeeded(), contains(dependencies.Determine_Affected.outputs['determinenxaffected.envstodeploy'], 'pensions-dashboard'))
+    steps:
+      - template: ../steps/7-build-affected-apps.yml
+        parameters:
+          acrName: pensions
+          projectName: pensions-dashboard
+          environment: ${{ parameters.environment }}
+          target_branch: ${{ parameters.target_branch }}
+          build_id: ${{ parameters.build_id }}
+          source_version: ${{ parameters.source_version }}
+          version: ${{ parameters.tag }}
+          compareWithTargetBranch: true

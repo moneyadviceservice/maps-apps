@@ -1,0 +1,197 @@
+{
+  "/start": {
+    "page": {
+      "lang": "en",
+      "pageName": "start",
+      "pageTitle": "Before you start - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "start",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "1"
+    }
+  },
+  "/age": {
+    "page": {
+      "lang": "cy",
+      "pageName": "age",
+      "pageTitle": "Beth yw eich oedran? - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "age",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "2"
+    }
+  },
+  "/age/under-50?q1=1": {
+    "page": {
+      "lang": "en",
+      "pageName": "under-50",
+      "pageTitle": "Under 50 - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "under 50",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "2.1"
+    }
+  },
+  "/age/50-54?q1=2": {
+    "page": {
+      "lang": "cy",
+      "pageName": "50-54",
+      "pageTitle": "Os ydych yn 50-54 oed - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "50 54",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "2.2"
+    }
+  },
+  "/pension-type?q1=2": {
+    "page": {
+      "lang": "cy",
+      "pageName": "pension-type",
+      "pageTitle": "Eich math o bensiwn - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "pension type",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "3"
+    }
+  },
+  "/terminal-illness?q1=2&q2=1": {
+    "page": {
+      "lang": "en",
+      "pageName": "terminal-illness",
+      "pageTitle": "Have you been diagnosed with a terminal illness? - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "terminal illness",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "4"
+    }
+  },
+  "/terminal-illness/coping-with-terminal-illness?q1=2&q2=1&q3=1": {
+    "page": {
+      "lang": "cy",
+      "pageName": "coping-with-terminal-illness",
+      "pageTitle": "Delio â salwch - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "coping with terminal illness",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "4.1"
+    }
+  },
+  "/pension-type/no-dc-pension?q1=2&q2=2&q3=1": {
+    "page": {
+      "lang": "cy",
+      "pageName": "no-dc-pension",
+      "pageTitle": "Pensiwn heb gyfraniad diffinedig - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "no dc pension",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "3.1"
+    }
+  },
+  "/pension-type?q1=3": {
+    "page": {
+      "lang": "en",
+      "pageName": "pension-type",
+      "pageTitle": "Your pension type - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "pension type",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "3"
+    }
+  },
+  "/terminal-illness?q1=3&q2=1": {
+    "page": {
+      "lang": "cy",
+      "pageName": "terminal-illness",
+      "pageTitle": "Ydych chi wedi cael diagnosis salwch terfynol? - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "terminal illness",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "4"
+    }
+  },
+  "/terminal-illness/coping-with-terminal-illness?q1=3&q2=1&q3=1": {
+    "page": {
+      "lang": "en",
+      "pageName": "coping-with-terminal-illness",
+      "pageTitle": "Living with an illness - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "coping with terminal illness",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "4.1"
+    }
+  },
+  "/pension-type/no-dc-pension?q1=3&q2=2&q3=1": {
+    "page": {
+      "lang": "cy",
+      "pageName": "no-dc-pension",
+      "pageTitle": "Pensiwn heb gyfraniad diffinedig - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "no dc pension",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "3.1"
+    }
+  },
+  "/age/75-and-over?q1=4&q2=2&q3=1": {
+    "page": {
+      "lang": "en",
+      "pageName": "75-and-over",
+      "pageTitle": "If you're 75 and older - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "75 and over",
+      "toolCategory": "",
+      "toolName": "PWD-Triage",
+      "toolStep": "2.3"
+    }
+  }
+}

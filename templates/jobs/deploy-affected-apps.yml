@@ -1,0 +1,44 @@
+parameters:
+  - name: serviceName
+    type: string
+  - name: tag
+    type: string
+  - name: port
+    type: string
+  - name: resource_group
+    type: string
+  - name: environment
+    type: string
+  - name: appName
+    type: string
+  - name: acrName
+    type: string
+
+steps:
+  - script: |
+      echo "This job runs ${{ parameters.serviceName }}:${{ parameters.tag }}"
+    displayName: 'Conditional Execution based on List Value'
+
+  - template: ../steps/deploy-review.yml
+    parameters:
+      environment: ${{ parameters.environment }}
+      parametersFile: 'appservice.${{ parameters.acrName }}.review.parameters.json'
+      subscriptionId: $(AZURE_SUBSCRIPTION_ID)
+      azureResourceManagerConnection: $(ARM_CONNECTION)
+      location: 'uksouth'
+      managedIdentityName: $(MANAGED_IDENTITY)
+      managedIdentityresourceGroupName: $(MANAGED_ID_RESOURCE_GROUP)
+      webAppName: ${{ parameters.appName }}
+      acrName: ${{ parameters.acrName }}
+      ASPResourceGroup: ${{ parameters.resource_group }}
+      DOCKER_REGISTRY_SERVER_PASSWORD: $(DOCKER_REGISTRY_SERVER_PASSWORD)
+      port: ${{ parameters.port }}
+      DOCKER_REGISTRY_SERVER_URL: $(DOCKER_REGISTRY_SERVER_URL)
+      DOCKER_REGISTRY_SERVER_USERNAME: $(DOCKER_REGISTRY_SERVER_USERNAME)
+
+  - template: ../steps/update-docker-tag.yml
+    parameters:
+      appName: '${{ parameters.appName }}'
+      resource_group: ${{ parameters.resource_group }}
+      image: '${{ parameters.serviceName }}:${{ parameters.tag }}'
+      acrName: '${{ parameters.acrName }}'

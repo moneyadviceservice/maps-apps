@@ -1,0 +1,42 @@
+{
+  "core": {
+    "heading": "Estimate how much your pot could grow",
+    "potText": "How much is in your pot?",
+    "monthText": "How much can you pay in each month?",
+    "callOutText": "If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension. Find a retirement adviser. (opens in a new window) ",
+    "resultsTitle": "Your results",
+    "potLabel": "Your pot could be worth this much over the next 5 years:",
+    "resultsHeader1": "Years left untouched",
+    "resultsHeader2": "Amount in your pot",
+    "updateMonthLabel": "or try paying in a different amount each month:",
+    "resultInfo1": "This is an estimate based on your whole pot growing at a rate of about 3% per year — this may vary.",
+    "resultInfo2": "The amount in your pot will be affected by inflation and any fees your provider charges.",
+    "resultInfo3": "You must leave your whole pot — you can't take just the 25% tax-free lump sum and leave the rest.",
+    "unableSubmitLabel": "Unable to submit the form",
+    "incomeErrorLabel": "What is your yearly income? - Enter a figure",
+    "incomeErrorLabelForZero": "How much is in your pot? - Amount must be at least £1",
+    "potErrorLabel": "How much is in your pot? - Enter a figure",
+    "fieldLevelErrorLabel": "Enter a figure",
+    "fieldLevelErrorLabel1": "Amount must be at least £1"
+  },
+  "tests": [
+    {
+      "label": "pot £70,000 and monthly contribution £400",
+      "monthlyContribution": "400",
+      "pot": "70,000",
+      "yearly": ["£76,900", "£84,007", "£91,327", "£98,867", "£106,633"]
+    },
+    {
+      "label": "pot £70,000 and monthly contribution £0",
+      "monthlyContribution": "0",
+      "pot": "70,000",
+      "yearly": ["£72,100", "£74,263", "£76,491", "£78,786", "£81,149"]
+    },
+    {
+      "label": "pot £90,000 and monthly contribution £10,000",
+      "monthlyContribution": "10,000",
+      "pot": "90,000",
+      "yearly": ["£212,700", "£339,081", "£469,253", "£603,331", "£741,431"]
+    }
+  ]
+}

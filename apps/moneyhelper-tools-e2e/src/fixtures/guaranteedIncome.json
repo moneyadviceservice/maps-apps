@@ -1,0 +1,52 @@
+{
+  "core": {
+    "heading": "Estimate how much your guaranteed income could be",
+    "potLabel": "How much is in your pot?",
+    "ageLabel": "What age do you want to take your money?",
+    "callOutText": "If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension. Find a retirement adviser. (opens in a new window) ",
+    "resultsTitle": "Your results",
+    "potResultsLabel": "Based on what you’ve told us, if you use your £%POT_VALUE% pot in one go, you could get:",
+    "estimateLabel": "and get:",
+    "taxAmount": "£%TAX_VALUE% guaranteed annual taxable income, for the rest of your life",
+    "resultCalculationInfo": "This estimate is for a single-life non-escalating annuity.",
+    "resultEstimateInfo": "You may wish to choose a joint-life annuity that pays your spouse or partner after you die, or an enhanced annuity which pays more if you smoke or have a medical condition.",
+    "unableSubmitLabel": "Unable to submit the form",
+    "potErrorLabel": "How much is in your pot? - Enter a figure",
+    "ageErrorLabel": "What age do you want to take your money? - Enter a figure",
+    "age2ErrorLabel": "What age do you want to take your money? - you can compare annuities on the MoneyHelper website",
+    "potFieldLevelErrorLabel": "Enter a figure",
+    "ageFieldLevelErrorLabel": "Enter a figure",
+    "age2FieldLevelErrorLabel": "You must be aged 55 to 75 - you can compare annuities on the MoneyHelper website (opens in a new window) "
+  },
+  "tests": [
+    {
+      "label": "pot £34,555 and age 56",
+      "pot": "34,555",
+      "age": "56",
+      "takeHome": "£8,639 tax free",
+      "tax": "1,600"
+    },
+    {
+      "label": "pot £99,000 and age 65",
+      "pot": "99,000",
+      "age": "65",
+      "takeHome": "£24,750 tax free",
+      "tax": "5,300"
+    },
+    {
+      "label": "pot £54,000 and age 75",
+      "pot": "54,000",
+      "age": "75",
+      "takeHome": "£13,500 tax free",
+      "tax": "3,800"
+    },
+
+    {
+      "label": "pot £90,000 and age 55",
+      "pot": "90,000",
+      "age": "55",
+      "takeHome": "£22,500 tax free",
+      "tax": "4,100"
+    }
+  ]
+}
