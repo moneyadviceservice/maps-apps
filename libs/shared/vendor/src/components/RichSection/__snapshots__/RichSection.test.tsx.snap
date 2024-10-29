@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RichSection component renders correctly 1`] = `
+<div
+  data-testid="test-component"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-6"
+    data-testid="section-title"
+  >
+    Example section title?
+  </h1>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal test-classes"
+    data-testid="rich-text"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen 
+      <a
+        class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="tel:01234567890"
+      >
+         call us on 01234 567890
+      </a>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+    </p>
+    <ol
+      class="pl-4"
+    >
+      <li>
+        uip ex ea commodo consequat. 
+      </li>
+      <li>
+        Duis aute irure dolor in reprehenderit in 
+      </li>
+      <li>
+        voluptate velit esse cillum dolore eu fugiat nu
+      </li>
+    </ol>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      example unordered list
+    </p>
+    <ul
+      class="list-disc pl-4"
+    >
+      <li>
+        uip ex ea commodo consequat. 
+      </li>
+      <li>
+        Duis aute irure dolor in reprehenderit in 
+      </li>
+      <li>
+        voluptate velit esse cillum dolore eu fugiat nu
+      </li>
+    </ul>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <a
+      class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+      href="http://www.adobe.com"
+      target="_blank"
+    >
+      An external link
+      <span
+        class="sr-only"
+      >
+         (opens in a new window) 
+      </span>
+      <svgr-mock
+        classname="inline ml-[6px] mr-[2px]"
+      />
+    </a>
+  </div>
+</div>
+`;

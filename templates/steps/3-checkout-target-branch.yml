@@ -1,0 +1,20 @@
+parameters:
+  - name: target_branch
+    type: string
+  - name: build_id
+    type: string
+  - name: sourceVersion
+    type: string
+
+steps:
+- script: |
+    target_branch=refs/heads/main
+    git fetch origin ${{ parameters.target_branch }}:refs/remotes/origin/${{ parameters.target_branch }}
+    git checkout ${{ parameters.target_branch }}
+  displayName: 'Checkout target branch of PR'
+- script: |
+       echo "##vso[task.setvariable variable=prId]${{ parameters.build_id }}"
+  displayName: 'Save PR ID'
+
+- script: git checkout ${{ parameters.sourceVersion }}
+  displayName: 'Re-checkout PR source commit'

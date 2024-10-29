@@ -1,0 +1,208 @@
+{
+  "site": {
+    "title": "MoneyHelper Pensions Dashboard",
+    "header": {
+      "links": {
+        "exit": "Exit the Dashboard"
+      }
+    },
+    "footer": {
+      "common-links": {
+        "heading": "Manage your information",
+        "delegate-access": "Delegate access to a financial adviser",
+        "complaints": "Make a complaint",
+        "download-data": "Download my pension information (.pdf)",
+        "manage-consent": "Manage Consent"
+      }
+    },
+    "beta-banner-link": "https://forms.office.com.mcas.ms/Pages/ResponsePage.aspx?id=MhDku86PQk26tUTiFRCIbQWmPIAsJ39Jk_BmPtD78jJUN0pPNlpONUdETUZaS0hNREpNMUE5S1BDSS4u"
+  },
+  "common": {
+    "per-month": "per month",
+    "per-year": "per year",
+    "date-unavailable": "Date unavailable",
+    "amount-unavailable": "£unavailable",
+    "scheme": "Scheme name",
+    "employer": "Employer",
+    "retirement-age": "Expected retirement age",
+    "estimated-income": "Estimated income",
+    "details-link": "See details",
+    "progress-complete": "complete",
+    "contact": {
+      "preferred": "Best way to contact your provider with queries",
+      "telephone": "Telephone number",
+      "telephone-main": "Main telephone",
+      "telephone-whatsapp": "WhatsApp",
+      "email": "Email",
+      "website": "Website",
+      "address": "Address"
+    }
+  },
+  "pages": {
+    "error": {
+      "title": "Sorry we couldn't find the page you're looking for",
+      "intro": "It may no longer exist, or the link contained an error",
+      "what-you-can-do": {
+        "title": "What you can do",
+        "item-1": "If you typed the URL in the address bar, check it's correct.",
+        "item-2": "You can also [browse from our homepage]({link}) for the information you need.",
+        "item-3": "Try clicking the Back button in your browser to check if you're in the right place.",
+        "item-4": "Or use the search box, above, to find what you were looking for."
+      }
+    },
+    "start": {
+      "hero-text": "See all your pensions in one place with our free and secure government-backed service.",
+      "form-button": "Start",
+      "section-you-can": {
+        "title": "You can :",
+        "item-1": "View all your pensions together - including workplace pensions, personal pensions, your State Pension and any you might have lost.",
+        "item-2": "See how much you could get when you retire."
+      },
+      "section-how-it-works": {
+        "title": "How it works",
+        "step-1": "Prove your identity using **GOV.UK One Login**. You can set one up as part of this tool.",
+        "step-2": "Enter your **National Insurance number**, if you know it. You can still proceed without one",
+        "step-3": "See all the pensions that match your details, including your estimated income when you retire.",
+        "step-4": "Log back in any time to view your pensions dashboard and latest figures."
+      },
+      "section-you-need": {
+        "title": "You'll need",
+        "item-1": "a mobile phone",
+        "item-2": "your National Insurance number",
+        "item-3": "photo ID, if it's your first time using GOV.UK One Login"
+      }
+    },
+    "loading": {
+      "title": "Searching for your pensions",
+      "description": "This typically takes {duration} seconds. Thank you for your patience. \n\nWe're searching 3000 pension schemes and providers for your pensions.",
+      "refresh": "Do not refresh or close the page.",
+      "progress": "{progress}% complete",
+      "carousel": {
+        "heading": "Did you know?",
+        "not-matched": "There are an estimated 2.8 million pension pots not currently matched to their owner.",
+        "not-matched-alt": "Logo of a piggy bank",
+        "dashboard": "Not all pension options are listed here. Please get in touch with your specific schemes and providers for more details.",
+        "dashboard-alt": "Logo of a dashboard screen",
+        "schemes": "Not all pension options are listed here. Please get in touch with your specific schemes and providers for more details.",
+        "schemes-alt": "Logo of three arrows fanning out"
+      }
+    },
+    "your-pensions": {
+      "title": "Your Pensions",
+      "heading": "Pension breakdown",
+      "description": "Your breakdown only includes pensions that have been matched to your personal details.",
+      "callout": {
+        "heading": "Your summary",
+        "description": "When you are **{age}** years old, your total estimated retirement income could be **{monthlyTotal}** a month or **{annualTotal}** a year."
+      },
+      "confirmed-pensions": {
+        "heading": "Pensions confirmed as yours"
+      }
+    },
+    "pension-summary": {
+      "breadcrumb": "Summary",
+      "title": "{name} summary",
+      "description": "You can take your **{name}** on **{date}** when you are **{age}** years old. Your forecast is **{monthly}** a month or **{yearly}** a year.",
+      "details": {
+        "heading": "Details",
+        "benefit-type": "Benefit type",
+        "annual-amount": "Annual amount",
+        "monthly-amount": "Monthly amount",
+        "payable-date": "Payable date"
+      },
+      "pension-provider": {
+        "heading": "Pension provider details",
+        "provider": "Pension provider"
+      },
+      "headings": {
+        "pot": "Pot value",
+        "employer": "Employer",
+        "employment-dates": "Dates of employment"
+      },
+      "more-info": {
+        "cost": "For more information about costs and charges, go to",
+        "sp": "For more information about your State Pension, go to"
+      }
+    },
+    "pending-pensions": {
+      "title": "Pending Pensions",
+      "description": "These pensions are waiting for more information from your pension providers. You do not need to take action. \n\nThey'll automatically show up on your pension breakdown once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "Pensions that need action",
+      "description": "These pensions only match some of your details. We need more information to confirm they belong to you.",
+      "card": {
+        "description": "Contact {pensionAdministrator} and give them your reference number. They'll ask for your details and confirm whether this pension belongs to you. If confirmed, it will show up in your pensions breakdown.",
+        "reference": "Reference number",
+        "contact-heading": "Show contact details"
+      }
+    },
+    "overview": {
+      "title": "Pensions found",
+      "heading": "We found {totalPensions} pensions",
+      "heading-single": "We found {totalPensions} pension",
+      "heading-none": "We could not find any pensions",
+      "channels": {
+        "confirmed": {
+          "title": "Pensions with complete information",
+          "cta": "See pensions breakdown"
+        },
+        "incomplete": {
+          "title": "Pensions waiting for more information from your pension providers",
+          "sub-title": "No action needed.",
+          "cta": "View pending pensions"
+        },
+        "unconfirmed": {
+          "title": "Pensions that need you to contact your pension provider",
+          "sub-title": "Action needed to confirm if these pensions belong to you or for some other reason.",
+          "cta": "Review pensions that need action"
+        }
+      },
+      "no-pensions": {
+        "heading": "What you can do",
+        "item-1": "If you didn't provide your National Insurance number, [go back and enter it](/).",
+        "item-2": "If your State Pension is not showing and you think you're entitled to one, [check your details using your State Pension forecast](/).",
+        "item-3": "If you know the name of your employer(s) or pension provider(s), you can contact them directly.",
+        "item-4": "If you still cannot see your pensions, see our [Help and support](/)."
+      },
+      "common-links": {
+        "pensions-not-showing": "Is one or more of your pensions not showing?"
+      }
+    },
+    "complaints": {
+      "title": "Complaints",
+      "content": "WELSH --A page to register a complaint. \n\nNew Paragraph. Example markdown with *italic*, **bold**, and an external link to [a website](http://foo.bar)"
+    },
+    "download-data": {
+      "title": "Download Data",
+      "content": "A page to download data"
+    },
+    "manage-consent": {
+      "title": "Manage Consent",
+      "content": "A page to manage consent"
+    },
+    "manage-pensions": {
+      "title": "Manage Pensions"
+    }
+  },
+  "data": {
+    "pensions": {
+      "unavailable-reasons": {
+        "ANO": "Placeholder text for code ANO",
+        "DB": "Placeholder text for code DB",
+        "DBC": "Your provider needs more time to calculate an estimated income. It can take ten days. Check back again soon.",
+        "DCC": "Placeholder text for code DCC",
+        "DCHA": "Placeholder text for code DCHA",
+        "DCHP": "Placeholder text for code DCHP",
+        "DCSM": "Placeholder text for code DCSM",
+        "MEM": "Placeholder text for code MEM",
+        "NEW": "This pension is less than three months old, so your provider cannot provide any information yet. Check back again soon.",
+        "NET": "Placeholder text for code NET",
+        "PPF": "Placeholder text for code PPF",
+        "TRN": "Placeholder text for code TRN",
+        "WU": "Placeholder text for code WU",
+        "SML": "Placeholder text for code SML"
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "site": {
+    "title": "WELSH -- MoneyHelper Pensions Dashboard",
+    "header": {
+      "links": {
+        "exit": "WELSH - Exit the Dashboard"
+      }
+    },
+    "footer": {
+      "common-links": {
+        "heading": "WELSH -- Manage your information",
+        "delegate-access": "WELSH -- Delegate access to a financial adviser",
+        "complaints": "WELSH -- Make a complaint",
+        "download-data": "WELSH -- Download my pension information (.pdf)",
+        "manage-consent": "WELSH -- Manage Consent"
+      }
+    },
+    "beta-banner-link": "https://forms.office.com.mcas.ms/Pages/ResponsePage.aspx?id=MhDku86PQk26tUTiFRCIbQWmPIAsJ39Jk_BmPtD78jJUN0pPNlpONUdETUZaS0hNREpNMUE5S1BDSS4u"
+  },
+  "common": {
+    "per-month": "WELSH -- per month",
+    "per-year": "WELSH -- per year",
+    "date-unavailable": "WELSH -- Date unavailable",
+    "amount-unavailable": "WELSH -- £unavailable",
+    "scheme": "WELSH -- Scheme name",
+    "employer": "WELSH -- Employer",
+    "retirement-age": "WELSH -- Expected retirement age",
+    "estimated-income": "WELSH -- Estimated income",
+    "details-link": "WELSH -- See details",
+    "progress-complete": "WELSH -- complete",
+    "contact": {
+      "preferred": "WELSH -- Best way to contact your provider with queries",
+      "telephone": "WELSH -- Telephone number",
+      "telephone-main": "WELSH -- Main telephone",
+      "telephone-whatsapp": "WELSH -- WhatsApp",
+      "email": "WELSH -- Email",
+      "website": "WELSH -- Website",
+      "address": "WELSH -- Address"
+    }
+  },
+  "pages": {
+    "error": {
+      "title": "Mae'n ddrwg gennym ni allem ddod o hyd i'r dudalen rydych yn chwilio amdani",
+      "intro": "Efallai nad yw'n bodoli mwyach, neu roedd y ddolen yn cynnwys gwall.",
+      "what-you-can-do": {
+        "title": "Beth allwch chi ei wneud",
+        "item-1": "Os ydych wedi teipio'r URL yn y bar cyfeiriad, gwiriwch ei fod yn gywir.",
+        "item-2": "Gallwch hefyd [bori ein hafan]({link}) am y wybodaeth sydd ei hangen arnoch.",
+        "item-3": "Ceisiwch glicio ar y botwm Yn ôl yn eich porwr i wirio a ydych yn y lle iawn.",
+        "item-4": "Neu defnyddiwch y blwch chwilio, uchod, i ddod o hyd i'r hyn roeddech yn chwilio amdano."
+      }
+    },
+    "start": {
+      "hero-text": "WELSH -- See all your pensions in one place with our free and secure government-backed service.",
+      "form-button": "WELSH -- Start",
+      "section-you-can": {
+        "title": "WELSH -- You can :",
+        "item-1": "WELSH -- View all your pensions together - including workplace pensions, personal pensions, your State Pension and any you might have lost.",
+        "item-2": "WELSH -- See how much you could get when you retire."
+      },
+      "section-how-it-works": {
+        "title": "WELSH -- How it works",
+        "step-1": "WELSH -- Prove your identity using **GOV.UK One Login**. You can set one up as part of this tool.",
+        "step-2": "WELSH -- Enter your **National Insurance number**, if you know it. You can still proceed without one",
+        "step-3": "WELSH -- See all the pensions that match your details, including your estimated income when you retire.",
+        "step-4": "WELSH -- Log back in any time to view your pensions dashboard and latest figures."
+      },
+      "section-you-need": {
+        "title": "WELSH -- You'll need",
+        "item-1": "WELSH -- a mobile phone",
+        "item-2": "WELSH -- your National Insurance number",
+        "item-3": "WELSH -- photo ID, if it's your first time using GOV.UK One Login"
+      }
+    },
+    "loading": {
+      "title": "WELSH -- Searching for your pensions",
+      "description": "WELSH -- This typically takes {duration} seconds. Thank you for your patience. \n\nWe're searching 3000 pension schemes and providers for your pensions.",
+      "refresh": "WELSH -- Do not refresh or close the page.",
+      "progress": "WELSH -- {progress}% complete",
+      "carousel": {
+        "heading": "WELSH -- Did you know?",
+        "not-matched": "WELSH -- There are an estimated 2.8 million pension pots not currently matched to their owner.",
+        "not-matched-alt": "WELSH -- Logo of a piggy bank",
+        "dashboard": "WELSH -- Not all pension options are listed here. Please get in touch with your specific schemes and providers for more details.",
+        "dashboard-alt": "WELSH -- Logo of a dashboard screen",
+        "schemes": "WELSH -- Not all pension options are listed here. Please get in touch with your specific schemes and providers for more details.",
+        "schemes-alt": "WELSH -- Logo of three arrows fanning out"
+      }
+    },
+    "your-pensions": {
+      "title": "WELSH -- Your Pensions",
+      "heading": "WELSH -- Pension breakdown",
+      "description": "WELSH -- Your breakdown only includes pensions that have been matched to your personal details.",
+      "callout": {
+        "heading": "WELSH -- Your summary",
+        "description": "WELSH -- When you are **{age}** years old, your total estimated retirement income could be **{monthlyTotal}** a month or **{annualTotal}** a year."
+      },
+      "confirmed-pensions": {
+        "heading": "WELSH -- Pensions confirmed as yours"
+      }
+    },
+    "pension-summary": {
+      "breadcrumb": "WELSH -- Summary",
+      "title": "WELSH -- {name} summary",
+      "description": "WELSH -- You can take your **{name}** on **{date}** when you are **{age}** years old. Your forecast is **{monthly}** a month or **{yearly}** a year.",
+      "details": {
+        "heading": "WELSH -- Details",
+        "benefit-type": "WELSH -- Benefit type",
+        "annual-amount": "WELSH -- Annual amount",
+        "monthly-amount": "WELSH -- Monthly amount",
+        "payable-date": "WELSH -- Payable date"
+      },
+      "pension-provider": {
+        "heading": "WELSH -- Pension provider details",
+        "provider": "WELSH -- Pension provider"
+      },
+      "headings": {
+        "pot": "WELSH -- Pot value",
+        "employer": "WELSH -- Employer",
+        "employment-dates": "WELSH -- Dates of employment"
+      },
+      "more-info": {
+        "cost": "WELSH -- For more information about costs and charges, go to",
+        "sp": "WELSH -- For more information about your State Pension, go to"
+      }
+    },
+    "pending-pensions": {
+      "title": "WELSH -- Pending Pensions",
+      "description": "WELSH -- These pensions are waiting for more information from your pension providers. You do not need to take action. \n\nThey'll automatically show up on your pension breakdown once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "WELSH -- Pensions that need action",
+      "description": "WELSH -- These pensions only match some of your details. We need more information to confirm they belong to you.",
+      "card": {
+        "description": "WELSH -- Contact {pensionAdministrator} and give them your reference number. They'll ask for your details and confirm whether this pension belongs to you. If confirmed, it will show up in your pensions breakdown.",
+        "reference": "WELSH -- Reference number",
+        "contact-heading": "WELSH -- Show contact details"
+      }
+    },
+    "overview": {
+      "title": "WELSH -- Pensions found",
+      "heading": "WELSH -- We found {totalPensions} pensions",
+      "heading-single": "WELSH -- We found {totalPensions} pension",
+      "heading-none": "WELSH -- We could not find any pensions",
+      "channels": {
+        "confirmed": {
+          "title": "WELSH -- Pensions with complete information",
+          "cta": "WELSH -- See pensions breakdown"
+        },
+        "incomplete": {
+          "title": "WELSH -- Pensions waiting for more information from your pension providers",
+          "sub-title": "WELSH -- No action needed.",
+          "cta": "WELSH -- View pending pensions"
+        },
+        "unconfirmed": {
+          "title": "WELSH -- Pensions that need you to contact your pension provider",
+          "sub-title": "WELSH -- Action needed to confirm if these pensions belong to you or for some other reason.",
+          "cta": "WELSH -- Review pensions that need action"
+        }
+      },
+      "no-pensions": {
+        "heading": "WELSH -- What you can do",
+        "item-1": "WELSH -- If you didn't provide your National Insurance number, [go back and enter it](/).",
+        "item-2": "WELSH -- If your State Pension is not showing and you think you're entitled to one, [check your details using your State Pension forecast](/).",
+        "item-3": "WELSH -- If you know the name of your employer(s) or pension provider(s), you can contact them directly.",
+        "item-4": "WELSH -- If you still cannot see your pensions, see our [Help and support](/)."
+      },
+      "common-links": {
+        "pensions-not-showing": "WELSH -- Is one or more of your pensions not showing?"
+      }
+    },
+    "complaints": {
+      "title": "WELSH -- Complaints",
+      "content": "WELSH --A page to register a complaint. \n\nNew Paragraph. Example markdown with *italic*, **bold**, and an external link to [a website](http://foo.bar)"
+    },
+    "download-data": {
+      "title": "WELSH -- Download Data",
+      "content": "WELSH -- A page to download data"
+    },
+    "manage-consent": {
+      "title": "WELSH -- Manage Consent",
+      "content": "WELSH -- A page to manage consent"
+    },
+    "manage-pensions": {
+      "title": "WELSH -- Manage Pensions"
+    }
+  },
+  "data": {
+    "pensions": {
+      "unavailable-reasons": {
+        "ANO": "WELSH — Placeholder text for code ANO",
+        "DB": "WELSH — Placeholder text for code DB",
+        "DBC": "WELSH — Your provider needs more time to calculate an estimated income. It can take ten days. Check back again soon.",
+        "DCC": "WELSH — Placeholder text for code DCC",
+        "DCHA": "WELSH — Placeholder text for code DCHA",
+        "DCHP": "WELSH — Placeholder text for code DCHP",
+        "DCSM": "WELSH — Placeholder text for code DCSM",
+        "MEM": "WELSH — Placeholder text for code MEM",
+        "NEW": "This pension is less than three months old, so your provider cannot provide any information yet. Check back again soon.",
+        "NET": "WELSH — Placeholder text for code NET",
+        "PPF": "WELSH — Placeholder text for code PPF",
+        "TRN": "WELSH — Placeholder text for code TRN",
+        "WU": "WELSH — Placeholder text for code WU",
+        "SML": "WELSH — Placeholder text for code SML"
+      }
+    }
+  }
+}

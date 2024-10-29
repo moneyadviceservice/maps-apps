@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb component renders desktop version correctly 1`] = `
+<nav
+  aria-label="breadcrumbs"
+  class="md:block hidden"
+  data-testid="breadcrumb-desktop"
+>
+  <ul
+    class="t-breadcrumb-desktop flex px-4 py-4"
+  >
+    <li
+      class="flex items-center pr-2"
+    >
+      <a
+        class="text-pink-600 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-200 focus:shadow-link-focus outline-none"
+        href="https://www.moneyhelper.org.uk/en"
+      >
+        Crumb 1
+      </a>
+      <div
+        aria-hidden="true"
+        class="pl-2"
+      >
+        <svg
+          aria-hidden="true"
+          fill="#c82a87"
+          height="15"
+          viewBox="0 0 8 15"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 0.5L8.74228e-08 2.5L3.9 6.4C4.5 7 4.5 7.9 3.9 8.5L5.24537e-07 12.5L2 14.5L6.2 10.3C7.8 8.7 7.8 6.2 6.2 4.6L2 0.5Z"
+            fill="#C82A87"
+          />
+        </svg>
+      </div>
+    </li>
+    <li
+      class="flex items-center pr-2"
+    >
+      <a
+        class="text-pink-600 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-200 focus:shadow-link-focus outline-none"
+        href="https://www.moneyhelper.org.uk/en"
+      >
+        Crumb 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Breadcrumb component renders mobile version correctly 1`] = `
+<a
+  class="print:hidden md:hidden outline-none t-breadcrumb-mobile pl-2.5 flex items-center py-1 relative z-1 border-1 border-white shadow-box-link hover:border-1 hover:border-pink-800 focus:bg-yellow-200 focus:shadow-box-link-focus focus:border-2 focus:border-purple-700 focus:border-opacity-100"
+  data-testid="breadcrumb-mobile"
+  href="https://www.moneyhelper.org.uk/en"
+>
+  <svg
+    aria-hidden="true"
+    fill="none"
+    height="14"
+    viewBox="0 0 8 14"
+    width="8"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6 14L8 12L4.1 8.1C3.5 7.5 3.5 6.6 4.1 6L8 2L6 -8.74228e-08L1.8 4.2C0.200001 5.8 0.200001 8.3 1.8 9.9L6 14Z"
+      fill="#C82A87"
+    />
+  </svg>
+  <div
+    class="pl-2"
+  >
+    <p
+      class="text-base"
+    >
+      Crumb 1
+    </p>
+    <p
+      class="hover:text-pink-900 focus:text-gray-800 text-base font-semibold text-pink-600"
+    >
+      Crumb 2
+    </p>
+  </div>
+</a>
+`;

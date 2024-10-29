@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "TestAppInsights"
+        },
+        "type": {
+            "value": "web"
+        },
+        "regionId": {
+            "value": "UK South"
+        },
+        "tagsArray": {
+            "value": {}
+        },
+        "requestSource": {
+            "value": "CustomDeployment"
+        },
+        "workspaceResourceId": {
+            "value": ""
+        },
+        "mapsUami": {
+            "value": {
+                "resourceID": "/subscriptions/3a9bae85-2f6e-47a1-a371-7ee3c84cf70b/resourcegroups/MaPS-UserManID/providers/Microsoft.ManagedIdentity/userAssignedIdentities/pwdresourcecreator"
+            }
+        },
+        "resourceGroup": {
+            "value": ""
+        }
+    }
+}

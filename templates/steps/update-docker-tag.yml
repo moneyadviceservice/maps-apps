@@ -1,0 +1,35 @@
+parameters:
+  - name: appName
+    type: string
+  - name: resource_group
+    type: string
+  - name: image
+    type: string
+  - name: acrName
+    type: string
+
+steps:
+  - script: |
+      set -e
+      sleep 30 # wait for the app service to be ready
+      echo "Logging into Azure"
+      az login --service-principal --username $AKS_SPN_ID --password $AKS_SPN_KEY --tenant $TENANT_ID
+
+      echo "Setting the Azure subscription"
+      az account set --subscription $AZURE_SUBSCRIPTION_ID
+
+      acrUrl="${{ parameters.acrName }}.azurecr.io"
+      echo "ACR URL is $acrUrl"
+
+      dockerimagename="$acrUrl/${{ parameters.image }}"
+      echo "Docker image name is $dockerimagename"
+
+      echo "Configuring the App Service to use the Docker image"
+      az webapp config container set -n ${{ parameters.appName }} -g ${{ parameters.resource_group }} --container-image-name $dockerimagename
+    displayName: 'Deploy Container to Azure App Service'
+    env:
+      AKS_SPN_ID: $(AKS_SPN_ID)
+      AKS_SPN_KEY: $(AKS_SPN_KEY)
+      TENANT_ID: $(TENANT_ID)
+      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+    continueOnError: false

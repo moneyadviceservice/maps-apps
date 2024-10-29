@@ -1,0 +1,77 @@
+{
+  "name": "money-adviser-network",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/money-adviser-network",
+  "projectType": "application",
+  "implicitDependencies": ["money-adviser-network-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/money-adviser-network"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/money-adviser-network"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "money-adviser-network:build",
+        "dev": true,
+        "port": 4350
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "money-adviser-network:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "money-adviser-network:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "money-adviser-network:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/money-adviser-network/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/money-adviser-network/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/money-adviser-network",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

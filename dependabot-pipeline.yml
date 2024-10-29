@@ -1,0 +1,20 @@
+trigger: none
+name: Check dependencies version
+
+schedules:
+  - cron: '0 2 * * 1'
+    always: true
+    branches:
+      include:
+        - main
+    batch: true
+    displayName: Weekly Dependency Check
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: dependabot@1
+    displayName: 'Run Dependabot'
+    inputs:
+      azureDevOpsAccessToken: $(access-token)

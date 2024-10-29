@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionPage should render Questions component with correct props 1`] = `
+<div>
+  Mocked Questions Component
+</div>
+`;

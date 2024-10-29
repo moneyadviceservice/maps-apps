@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoneyInput component renders correctly 1`] = `
+<div
+  class="flex"
+>
+  <span
+    aria-hidden="true"
+    class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+  >
+    £
+  </span>
+  <input
+    class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline border-gray-400 border-t border-b border-r border-l-0 rounded-r rounded-l-none"
+    data-testid="number-input"
+    id="test-id"
+    inputmode="numeric"
+    name="test-name"
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`MoneyInput component renders correctly with addon 1`] = `
+<div
+  class="flex"
+>
+  <span
+    aria-hidden="true"
+    class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+  >
+    £
+  </span>
+  <input
+    class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline border-gray-400 border-t border-b border-l-0 rounded-none border-r-0"
+    data-testid="number-input"
+    id="test-id"
+    inputmode="numeric"
+    name="test-name"
+    type="text"
+    value=""
+  />
+  <span
+    aria-hidden="true"
+    class="bg-gray-100 py-2 px-3 rounded-r border-gray-400 border border-solid text-nowrap"
+  >
+    £
+  </span>
+</div>
+`;

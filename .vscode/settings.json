@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  }
+
+  //* Tailwind IntelliSense specific settings
+  // "editor.quickSuggestions": {
+  //   "strings": "on"
+  // }
+
+  //* Conventional Commits specific settings
+  // "conventionalCommits.autoCommit": false,
+
+  //* Wallaby.js specific settings
+  // "wallaby.startAutomatically": false,
+}
