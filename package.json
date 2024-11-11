@@ -61,7 +61,7 @@
     "@nx/js": "20.0.0",
     "@nx/react": "20.0.0",
     "@nx/storybook": "20.0.0",
-    "@nx/workspace": "20.0.0",
+    "@nx/workspace": "20.0.13",
     "@storybook/addon-designs": "^8.0.3",
     "@storybook/addon-essentials": "8.3.4",
     "@storybook/addon-interactions": "8.3.4",
