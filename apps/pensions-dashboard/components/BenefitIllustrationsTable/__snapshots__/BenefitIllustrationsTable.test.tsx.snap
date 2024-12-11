@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BenefitsIllustrationsTable renders correctly 1`] = `
+<div>
+  <div
+    class="relative mb-16 overflow-x-auto"
+  >
+    <table
+      class="w-[800px] md:w-full"
+    >
+      <thead>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <th
+            class="w-1/4 md:w-1/2 border-b-1 border-b-slate-400"
+          />
+          <th
+            class="py-3 text-left align-top"
+          >
+            ERI
+          </th>
+          <th
+            class="py-3 text-left align-top"
+          >
+            AP
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.details.benefit-type
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            Defined Contribution
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            Defined Contribution
+          </td>
+        </tr>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.headings.pot
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            £540,500
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            £540,500
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

@@ -1,0 +1,80 @@
+parameters:
+  - name: AKS_SPN_ID
+    type: string
+  - name: AKS_SPN_KEY
+    type: string
+  - name: TENANT_ID
+    type: string
+  - name: AZURE_SUBSCRIPTION_ID
+    type: string
+  - name: APP_NAME
+    type: string
+  - name: RESOURCE_GROUP
+    type: string
+  - name: acrName
+    type: string
+  - name: environment
+    type: string
+
+steps:
+  - script: |
+      set -e
+
+      # Construct the Key Vault name based on acrName and environment
+      keyvaultname="${{ parameters.acrName }}-${{ parameters.environment }}"
+
+      echo "Logging in to Azure..."
+      az login --service-principal --username ${{ parameters.AKS_SPN_ID }} --password ${{ parameters.AKS_SPN_KEY }} --tenant ${{ parameters.TENANT_ID }}
+
+      echo "Retrieving secrets from Key Vault: $keyvaultname"
+      secrets=$(az keyvault secret list --vault-name $keyvaultname --query "[].name" -o tsv)
+      variablesString=""
+
+      echo "Setting Azure subscription..."
+      az account set --subscription ${{ parameters.AZURE_SUBSCRIPTION_ID }}
+
+      echo "Retrieving current app settings..."
+      jsonstr=$(az webapp config appsettings list --name ${{ parameters.APP_NAME }} --resource-group ${{ parameters.RESOURCE_GROUP }})
+
+      echo "Processing secrets..."
+      for secretName in $secrets; do
+          echo "Processing secret: $secretName"
+          secretValue=$(az keyvault secret show --name $secretName --vault-name $keyvaultname --query "value" -o tsv)
+          if [ -z "$secretValue" ]; then
+              echo "Warning: Secret $secretName has an empty value"
+          else
+              scrambledValue=$(echo "$secretValue" | sed 's/./*/g')
+              echo "Retrieved secret $secretName with value $scrambledValue"
+          fi
+          secretName="${secretName//-/_}"
+          variablesString+="$secretName=$secretValue "
+      done
+
+      if [[ "$variablesString" == "" ]]; then
+          echo "The variable string is empty"
+      else
+          IFS=' ' read -r -a varsArray <<< "$variablesString"
+          echo "Setting app settings..."
+
+          retries=5
+          delay=10
+          for ((i=1;i<=retries;i++)); do
+              if az webapp config appsettings set -g ${{ parameters.RESOURCE_GROUP }} -n ${{ parameters.APP_NAME }} --settings "${varsArray[@]}"; then
+                  echo "App settings updated successfully."
+                  break
+              else
+                  echo "Failed to update app settings. Attempt $i of $retries."
+                  if [ $i -eq $retries ]; then
+                      echo "Max retries reached. Exiting with error."
+                      exit 1
+                  fi
+                  echo "Retrying in $delay seconds..."
+                  sleep $delay
+              fi
+          done
+
+          echo "Restarting web app..."
+          az webapp restart -g ${{ parameters.RESOURCE_GROUP }} -n ${{ parameters.APP_NAME }}
+      fi
+    displayName: 'Update env variables'
+    continueOnError: 'false'

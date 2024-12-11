@@ -1,0 +1,131 @@
+name: CI
+
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Determine_Affected
+        displayName: 'Determine Affected Apps'
+        steps:
+          - script: |
+              cd $(Build.SourcesDirectory)
+              echo "the params are build_id: $(Build.BuildId), source_version: $(Build.SourceVersion), tag: dev-$(Build.BuildId)"
+            displayName: 'Echo Parameters'
+
+          - checkout: self
+            clean: true
+            persistCredentials: true
+            fetchDepth: 10
+            displayName: Check out source code from main repository
+
+          - script: |
+              git fetch origin main:refs/remotes/origin/main
+            displayName: Fetch the latest history for main branch
+
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '20.9.0'
+              nodejsMirror: 'https://npmmirror.com/mirrors/node'
+            displayName: 'Install Node.js 20.9.0'
+          - script: |
+              node -v
+              npm -v
+            displayName: 'Verify Node.js and NPM Version'
+          - script: npm ci
+            displayName: 'Install Dependencies'
+
+          - script: |
+              cd $(Build.SourcesDirectory)
+
+              # Fetch the base (previous) commit on main
+              git fetch origin main --prune --unshallow
+              BASE_COMMIT=$(git rev-parse origin/main~1)
+              HEAD_COMMIT=$(git rev-parse origin/main)
+
+              echo "Base commit: $BASE_COMMIT"
+              echo "Head commit: $HEAD_COMMIT"
+
+              echo "Running npx nx show projects --affected --type app"
+              affected=$(npx nx show projects --affected --type app --base=$BASE_COMMIT --head=$HEAD_COMMIT)
+
+              echo "Affected Projects: $affected"
+
+              if [ -z "$affected" ]; then
+                echo "No affected projects. Exiting step."
+                stepoutput=""
+                echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+                exit 0
+              fi
+
+              echo "Formatting output of affected projects..."
+              stepoutput=$(echo "$affected" | tr '\n' ',')
+              stepoutput=${stepoutput%,}
+
+              echo "Setting envstodeploy variable..."
+              echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+              echo "envstodeploy is set to: $stepoutput"
+            displayName: 'Determine Affected Projects'
+            name: determinenxaffected
+
+  - stage: Test
+    dependsOn: [Build]
+    variables:
+      - name: envstodeploy
+        value: stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy']
+
+    jobs:
+      - job: Analyse_code
+        displayName: 'Analyse Code'
+        steps:
+          - template: steps/analyze-code.yml
+            parameters:
+              SONARCLOUD_NAME: 'MAPS-SonarCloud'
+              SONARCLOUD_ORGANISATION: $(organisationkey)
+              SONARCLOUD_PROJECTKEY: $(projectKey)
+              SONARCLOUD_PROJECTNAME: 'maps-apps'
+              compareWithTargetBranch: false
+              keyvaultname: MapsAppsDev
+              AKS_SPN_ID: $(AKS_SPN_ID)
+              AKS_SPN_KEY: $(AKS_SPN_KEY)
+              TENANT_ID: $(TENANT_ID)
+
+      - template: templates/test-affected.yml
+        parameters:
+          compareWithTargetBranch: false
+          envstodeploy: ${{ variables.envstodeploy }}
+
+  - stage: ResetDevelopToMain
+    dependsOn: [Build, Test]
+    displayName: 'Resetting'
+    jobs:
+      - job: reset_develop_to_main
+        displayName: 'Resetting develop to main'
+        steps:
+          - checkout: self
+            displayName: Check out source code from main repository
+            fetchDepth: 0
+            persistCredentials: true
+
+          - script: |
+              git fetch
+            displayName: Fetch
+
+          - script: |
+              git checkout main && git pull origin main
+            displayName: Get latest from main
+
+          - script: |
+              git checkout develop && git pull origin develop
+              git reset --hard main
+            displayName: Resetting develop to main
+
+          - script: |
+              git push origin develop --force-with-lease
+            displayName: Pushing develop

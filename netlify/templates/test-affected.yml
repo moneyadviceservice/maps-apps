@@ -1,0 +1,147 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: envstodeploy
+    type: string
+
+jobs:
+  - job: test_pensionwise_triage_if_affected
+    displayName: 'pensionwise-triage'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensionwise-triage'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: pensionwise-triage-e2e
+          projectName: 'pensionwise-triage'
+
+  - job: test_pensionwise_appointment_if_affected
+    displayName: 'pensionwise-appointment'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensionwise-appointment'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: pensionwise-appointment-e2e
+          projectName: 'pensionwise-appointment'
+
+  - job: test_moneyhelper_tools_adjustable_income_if_affected
+    displayName: 'tools-adjustable-income-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-adjustable-income-e2e
+
+  - job: test_moneyhelper_tools_baby_costs_calculator_if_affected
+    displayName: 'tools-baby-costs-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-baby-costs-calculator-e2e
+
+  - job: test_moneyhelper_tools_cash_in_chunks_if_affected
+    displayName: 'tools-cash-in-chunks-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-cash-in-chunks-e2e
+
+  - job: test_moneyhelper_tools_guaranteed_income_if_affected
+    displayName: 'tools-guaranteed-income-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-guaranteed-income-e2e
+
+  - job: test_moneyhelper_tools_mortgage_affordability_calculator_if_affected
+    displayName: 'tools-mortgage-affordability-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-mortgage-affordability-calculator-e2e
+
+  - job: test_moneyhelper_tools_pension_type_if_affected
+    displayName: 'tools-pension-type-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-pension-type-e2e
+
+  - job: test_moneyhelper_tools_pot_estimator_if_affected
+    displayName: 'tools-pot-estimator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-pot-estimator-e2e
+
+  - job: test_moneyhelper_tools_pot_untouched_if_affected
+    displayName: 'tools-pot-untouched-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-pot-untouched-e2e
+
+  - job: test_moneyhelper_tools_savings_calculator_if_affected
+    displayName: 'tools-savings-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-savings-calculator-e2e
+
+  - job: test_moneyhelper_tools_workplace_pension_calculator_if_affected
+    displayName: 'tools-workplace-pension-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-workplace-pension-calculator-e2e
+
+  - job: test_pensions_dashboard_if_affected
+    displayName: 'pensions-dashboard'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensions-dashboard'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'pensions-dashboard'
+          testtorun: pensions-dashboard-e2e
+
+  - job: test_money_adviser_network_if_affected
+    displayName: 'money-adviser-network'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'money-adviser-network'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'money-adviser-network'
+          testtorun: money-adviser-network-e2e

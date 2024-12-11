@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolFeedback component renders correctly (cy) 1`] = `
+<div
+  class="toolFeedbackWidget mt-8 welshBackButton"
+  id="test-id"
+/>
+`;
+
+exports[`ToolFeedback component renders correctly (en) 1`] = `
+<div
+  class="toolFeedbackWidget mt-8"
+  id="test-id"
+/>
+`;

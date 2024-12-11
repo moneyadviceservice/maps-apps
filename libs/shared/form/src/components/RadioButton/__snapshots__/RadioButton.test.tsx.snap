@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton component renders correctly 1`] = `
+<div
+  class="relative flex flex-wrap"
+  data-testid="radio-button"
+>
+  <input
+    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+    id="test-id"
+    name="test-name"
+    type="radio"
+    value=""
+  />
+  <label
+    class="align-self-center max-w-[calc(100%-40px)] p-[7px] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+    for="test-id"
+  >
+    Radio label name
+  </label>
+</div>
+`;

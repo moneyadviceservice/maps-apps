@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChangeAnswers Component renders the component with provided props 1`] = `
+<div
+  class="container-auto"
+>
+  <div
+    class="flex items-center text-pink-600 group"
+  >
+    <svgr-mock
+      aria-hidden="true"
+      classname="text-pink-600 group-hover:text-pink-800 w-[8px] h-[15px]"
+    />
+    <a
+      class="ml-2 underline tool-nav-prev group-hover:text-pink-800 group-hover:no-underline"
+      href="/back"
+    >
+      Change
+    </a>
+  </div>
+  <div
+    class="lg:max-w-[950px]"
+  >
+    <h2
+      class="text-3xl md:text-4xl text-gray-800 font-bold"
+    >
+      Change
+    </h2>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Test text
+    </p>
+    <ul
+      class="pt-2 md:pt-4 pb-6 md:pb-8"
+    >
+      <li>
+        <form
+          method="POST"
+        >
+          <input
+            data-testid="urlData-1"
+            name="urlData"
+            type="hidden"
+            value=""
+          />
+          <input
+            data-testid="language-1"
+            name="language"
+            type="hidden"
+            value="en"
+          />
+          <input
+            data-testid="pagePath-1"
+            name="pagePath"
+            type="hidden"
+            value="money-adviser-network/start/q-1"
+          />
+          <div
+            class="grid grid-cols-1 md:grid-cols-8 gap-x-7 md:border-b-1 border-slate-400 pb-6 md:pb-2 md:mt-2"
+          >
+            <p
+              class="text-base font-bold col-span-1 md:col-span-4 mb-2"
+              data-testid="q-1"
+              id="q-1"
+            >
+              Question 1
+            </p>
+            <p
+              class="col-span-1 md:col-span-3 mb-2"
+              data-testid="a-1"
+            >
+              Answer 1
+            </p>
+            <div
+              class="col-span-1"
+            >
+              <button
+                aria-describedby="q-1"
+                class="inline-flex items-center text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button align-top gap-0"
+                data-testid="change-question-1"
+                formaction="/change-answer"
+                name="questionNbr"
+                type="submit"
+                value="1"
+              >
+                <span />
+                Change
+                <span />
+              </button>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li>
+        <form
+          method="POST"
+        >
+          <input
+            data-testid="urlData-2"
+            name="urlData"
+            type="hidden"
+            value=""
+          />
+          <input
+            data-testid="language-2"
+            name="language"
+            type="hidden"
+            value="en"
+          />
+          <input
+            data-testid="pagePath-2"
+            name="pagePath"
+            type="hidden"
+            value="money-adviser-network/start/q-2"
+          />
+          <div
+            class="grid grid-cols-1 md:grid-cols-8 gap-x-7 md:border-b-1 border-slate-400 pb-6 md:pb-2 md:mt-2"
+          >
+            <p
+              class="text-base font-bold col-span-1 md:col-span-4 mb-2"
+              data-testid="q-2"
+              id="q-2"
+            >
+              Question 2
+            </p>
+            <p
+              class="col-span-1 md:col-span-3 mb-2"
+              data-testid="a-2"
+            >
+              Answer 2
+            </p>
+            <div
+              class="col-span-1"
+            >
+              <button
+                aria-describedby="q-2"
+                class="inline-flex items-center text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button align-top gap-0"
+                data-testid="change-question-2"
+                formaction="/change-answer"
+                name="questionNbr"
+                type="submit"
+                value="2"
+              >
+                <span />
+                Change
+                <span />
+              </button>
+            </div>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <form
+      method="POST"
+    >
+      <input
+        name="urlData"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="cookieData"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="language"
+        type="hidden"
+        value="en"
+      />
+      <input
+        name="currentFlow"
+        type="hidden"
+        value="start"
+      />
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full justify-center md:w-auto md:justify-start m-auto"
+        data-testid="submit-form"
+        formaction="/submit-api"
+        type="submit"
+      >
+        <span />
+        Next
+        <span />
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`ChangeAnswers Component renders warning message when on the telephone flow with immediate callback scheduled 1`] = `
+<div
+  class="container-auto"
+>
+  <div
+    class="flex items-center text-pink-600 group"
+  >
+    <svgr-mock
+      aria-hidden="true"
+      classname="text-pink-600 group-hover:text-pink-800 w-[8px] h-[15px]"
+    />
+    <a
+      class="ml-2 underline tool-nav-prev group-hover:text-pink-800 group-hover:no-underline"
+      href="/back"
+    >
+      Change
+    </a>
+  </div>
+  <div
+    class="lg:max-w-[950px]"
+  >
+    <h2
+      class="text-3xl md:text-4xl text-gray-800 font-bold"
+    >
+      Change
+    </h2>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Test text
+    </p>
+    <ul
+      class="pt-2 md:pt-4 pb-6 md:pb-8"
+    >
+      <li>
+        <form
+          method="POST"
+        >
+          <input
+            data-testid="urlData-1"
+            name="urlData"
+            type="hidden"
+            value=""
+          />
+          <input
+            data-testid="language-1"
+            name="language"
+            type="hidden"
+            value="en"
+          />
+          <input
+            data-testid="pagePath-1"
+            name="pagePath"
+            type="hidden"
+            value="money-adviser-network/start/q-1"
+          />
+          <div
+            class="grid grid-cols-1 md:grid-cols-8 gap-x-7 md:border-b-1 border-slate-400 pb-6 md:pb-2 md:mt-2"
+          >
+            <p
+              class="text-base font-bold col-span-1 md:col-span-4 mb-2"
+              data-testid="q-1"
+              id="q-1"
+            >
+              Question 1
+            </p>
+            <p
+              class="col-span-1 md:col-span-3 mb-2"
+              data-testid="a-1"
+            >
+              Answer 1
+            </p>
+            <div
+              class="col-span-1"
+            >
+              <button
+                aria-describedby="q-1"
+                class="inline-flex items-center text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button align-top gap-0"
+                data-testid="change-question-1"
+                formaction="/change-answer"
+                name="questionNbr"
+                type="submit"
+                value="1"
+              >
+                <span />
+                Change
+                <span />
+              </button>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li>
+        <form
+          method="POST"
+        >
+          <input
+            data-testid="urlData-2"
+            name="urlData"
+            type="hidden"
+            value=""
+          />
+          <input
+            data-testid="language-2"
+            name="language"
+            type="hidden"
+            value="en"
+          />
+          <input
+            data-testid="pagePath-2"
+            name="pagePath"
+            type="hidden"
+            value="money-adviser-network/start/q-2"
+          />
+          <div
+            class="grid grid-cols-1 md:grid-cols-8 gap-x-7 md:border-b-1 border-slate-400 pb-6 md:pb-2 md:mt-2"
+          >
+            <p
+              class="text-base font-bold col-span-1 md:col-span-4 mb-2"
+              data-testid="q-2"
+              id="q-2"
+            >
+              Question 2
+            </p>
+            <p
+              class="col-span-1 md:col-span-3 mb-2"
+              data-testid="a-2"
+            >
+              Answer 2
+            </p>
+            <div
+              class="col-span-1"
+            >
+              <button
+                aria-describedby="q-2"
+                class="inline-flex items-center text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button align-top gap-0"
+                data-testid="change-question-2"
+                formaction="/change-answer"
+                name="questionNbr"
+                type="submit"
+                value="2"
+              >
+                <span />
+                Change
+                <span />
+              </button>
+            </div>
+          </div>
+        </form>
+      </li>
+    </ul>
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-yellow-150 before:bg-yellow-700 mb-8"
+      data-testid="callout-warning-telephone-confirm-warning"
+    >
+      Change
+    </div>
+  </div>
+  <div>
+    <form
+      method="POST"
+    >
+      <input
+        name="urlData"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="cookieData"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="language"
+        type="hidden"
+        value="en"
+      />
+      <input
+        name="currentFlow"
+        type="hidden"
+        value="telephone"
+      />
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full justify-center md:w-auto md:justify-start m-auto"
+        data-testid="submit-form"
+        formaction="/submit-api"
+        type="submit"
+      >
+        <span />
+        Next
+        <span />
+      </button>
+    </form>
+  </div>
+</div>
+`;

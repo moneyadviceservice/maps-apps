@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "test-money"
+    },
+    "appServicePlanName": {
+      "value": "money"
+    },
+    "location": {
+      "value": "uksouth"
+    },
+    "sku": {
+      "value": "S2"
+    },
+    "nodeVersion": {
+      "value": "20.9.0"
+    },
+    "runtimeStack": {
+      "value": "NODE|20.9.0"
+    },
+    "port": {
+      "value": 3000
+    },
+    "DOCKER_REGISTRY_SERVER_USERNAME": {
+      "value": "money"
+    },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": {
+      "value": "xxxx"
+    },
+    "DOCKER_REGISTRY_SERVER_URL": {
+      "value": "https://money.azurecr.io"
+    },
+    "acrName": {
+      "value": "money"
+    }
+  }
+}

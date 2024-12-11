@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpandableSection component renders accordion with different titles on close and on open correctly 1`] = `
+<details
+  class="group border-t-1 border-b-1 mb-[-1px] border-slate-400 tool-expand"
+  data-testid="expandable-section"
+>
+  <summary
+    class="text-pink-600 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-[19px] hover:underline font-bold justify-between gap-2"
+  >
+    <div
+      class="hidden group-open:block"
+    >
+      Hide Content
+    </div>
+    <div
+      class="group-open:hidden block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+    <svgr-mock
+      classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-6"
+    />
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;
+
+exports[`ExpandableSection component renders accordion without icon correctly 1`] = `
+<details
+  class="group tool-expand"
+  data-testid="expandable-section"
+>
+  <summary
+    class="text-pink-600 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus underline"
+  >
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;
+
+exports[`ExpandableSection component renders correctly 1`] = `
+<details
+  class="group tool-expand"
+  data-testid="expandable-section"
+>
+  <summary
+    class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+  >
+    <svgr-mock
+      classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+    />
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;
+
+exports[`ExpandableSection component renders main left icon correctly 1`] = `
+<details
+  class="group border-t-1 border-b-1 mb-[-1px] border-slate-400 tool-expand"
+  data-testid="expandable-section"
+>
+  <summary
+    class="text-pink-600 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-[19px] hover:underline font-bold justify-start gap-2"
+  >
+    <svgr-mock
+      classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2"
+    />
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;
+
+exports[`ExpandableSection component renders open 1`] = `
+<details
+  class="group tool-collapse"
+  data-testid="expandable-section"
+  open=""
+>
+  <summary
+    class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+  >
+    <svgr-mock
+      classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+    />
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;
+
+exports[`ExpandableSection component renders secondary correctly 1`] = `
+<details
+  class="group border-t-1 border-b-1 mb-[-1px] border-slate-400 tool-expand"
+  data-testid="expandable-section"
+>
+  <summary
+    class="text-pink-600 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-[19px] hover:underline font-bold justify-between gap-2"
+  >
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Expand
+    </div>
+    <svgr-mock
+      classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-6"
+    />
+  </summary>
+  <div
+    class="my-4"
+  >
+    <p>
+      Contents
+    </p>
+  </div>
+</details>
+`;

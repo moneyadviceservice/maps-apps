@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmedPensionsCallout renders correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl px-6 py-6"
+    data-testid="information-callout"
+  >
+    <h4
+      class="text-xl md:text-2xl text-blue-800 font-bold flex gap-2 mt-0 mb-4 items-top"
+    >
+      Test Scheme
+    </h4>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Admin Name
+    </p>
+    <p
+      class="mb-0 text-gray-400"
+      data-testid="paragraph"
+    >
+      common.employer
+      :
+    </p>
+    <p
+      class="pb-2 mb-2 border-b-1 border-slate-400"
+      data-testid="paragraph"
+    >
+      Employer 1
+    </p>
+    <p
+      class="pb-2 mb-2 border-b-1 border-slate-400"
+      data-testid="paragraph"
+    >
+      Employer 2
+    </p>
+    <p
+      class="mb-0 text-gray-400"
+      data-testid="paragraph"
+    >
+      common.retirement-age
+    </p>
+    <p
+      class="pb-2 mb-2 border-b-1 border-slate-400"
+      data-testid="paragraph"
+    >
+      67
+    </p>
+    <p
+      class="mb-0 text-gray-400"
+      data-testid="paragraph"
+    >
+      common.estimated-income
+    </p>
+    <p
+      class="mb-4 pb-2 border-b-1 border-slate-400"
+      data-testid="paragraph"
+    >
+      <strong
+        class="mr-2 text-xl"
+      >
+        common.amount-unavailable
+      </strong>
+      common.a-month
+    </p>
+    <a
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+      data-testid="details-link"
+      href="/en/pension-details/12345"
+    >
+      common.details-link
+    </a>
+  </div>
+</div>
+`;

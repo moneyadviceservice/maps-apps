@@ -1,0 +1,2138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component renders correctly 1`] = `
+<div>
+  <div
+    class="p-3 space-y-4 border"
+    id="Test"
+  >
+    <h2
+      class="text-3xl md:text-4xl text-blue-800 font-bold"
+    >
+      test one
+    </h2>
+    <hr />
+    <div
+      class="text-lg text-gray-700"
+    >
+      test
+    </div>
+    <div
+      class="space-y-4"
+    >
+      <ul>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/en/Test"
+          >
+            English home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/cy/Test"
+          >
+            Cymraeg home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=en&name=Test"
+          >
+            English
+             Example page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=cy&name=Test"
+          >
+            Cymraeg
+             Example page
+          </a>
+        </li>
+      </ul>
+      <div
+        class="border shadow"
+      >
+        <div
+          class="px-3 py-2 border-b"
+        >
+          <div>
+            <label
+              class="block mb-1 text-lg font-bold text-gray-700"
+              for=":r0:"
+            >
+              1. Choose a language
+            </label>
+            <div
+              class="max-w-sm"
+            >
+              <div
+                class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+              >
+                <span
+                  class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                >
+                  <svgr-mock
+                    classname="h-full"
+                  />
+                </span>
+                <select
+                  class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                  data-testid="language-select"
+                  id=":r0:"
+                  name="language"
+                >
+                  <option
+                    value="en"
+                  >
+                    English
+                  </option>
+                  <option
+                    value="cy"
+                  >
+                    Cymraeg
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="px-3 py-4 text-lg font-bold text-gray-700"
+          >
+            2. Copy the code below and paste it in your HTML.
+          </div>
+          <code>
+            <pre
+              class="prism-code language-jsx p-3 overflow-scroll"
+              style="color: rgb(57, 58, 52); background-color: rgb(246, 248, 250);"
+            >
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  script
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="0"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  src
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="0"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  https://adviser.moneyhelper.org.uk/api/embed
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="0"
+                />
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  script
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain"
+                  i="0"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain"
+                  i="1"
+                >
+                      
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  div
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="1"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  class
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  mas-iframe-container
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-name"
+                  i="1"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  style
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation attr-equals"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  width
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  overflow
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   hidden
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  padding-top
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  66.66
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  position
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   relative
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="1"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain-text"
+                  i="2"
+                >
+                        
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="2"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="2"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  iframe
+                </span>
+                <span
+                  class="token tag"
+                  i="2"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="3"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="3"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  class
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="3"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  mas-iframe
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="3"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="4"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag special-attr attr-name"
+                  i="4"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  style
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation attr-equals"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  width
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  height
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  left
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  position
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   absolute
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  top
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  border
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="4"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="5"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="5"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  src
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="5"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  https://adviser.moneyhelper.org.uk/en/Test?isEmbedded=true
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="5"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="6"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="6"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  loading
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="6"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  lazy
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="6"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="7"
+                  style="color: rgb(0, 0, 159);"
+                >
+                        
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="7"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  iframe
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="7"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain-text"
+                  i="8"
+                >
+                      
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="8"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="8"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  div
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="8"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+              </div>
+            </pre>
+          </code>
+          <div
+            class="flex items-center gap-3 p-3"
+          >
+            <button
+              class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-lg"
+              data-testid="copy-embed-test-one"
+              type="submit"
+            >
+              <span />
+              Copy to clipboard
+              <span />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select component renders correctly 2`] = `
+<div>
+  <div
+    class="p-3 space-y-4 border"
+    id="Test"
+  >
+    <h2
+      class="text-3xl md:text-4xl text-blue-800 font-bold"
+    >
+      test two
+    </h2>
+    <hr />
+    <div
+      class="text-lg text-gray-700"
+    >
+      test
+    </div>
+    <div
+      class="space-y-4"
+    >
+      <ul>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/en/Test"
+          >
+            English home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/cy/Test"
+          >
+            Cymraeg home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=en&name=Test"
+          >
+            English
+             Example page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=cy&name=Test"
+          >
+            Cymraeg
+             Example page
+          </a>
+        </li>
+      </ul>
+      <div
+        class="border shadow"
+      >
+        <div
+          class="px-3 py-2 border-b"
+        >
+          <div>
+            <label
+              class="block mb-1 text-lg font-bold text-gray-700"
+              for=":r1:"
+            >
+              1. Choose a language
+            </label>
+            <div
+              class="max-w-sm"
+            >
+              <div
+                class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+              >
+                <span
+                  class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                >
+                  <svgr-mock
+                    classname="h-full"
+                  />
+                </span>
+                <select
+                  class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+                  data-testid="language-select"
+                  id=":r1:"
+                  name="language"
+                >
+                  <option
+                    value="en"
+                  >
+                    English
+                  </option>
+                  <option
+                    value="cy"
+                  >
+                    Cymraeg
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="px-3 py-4 text-lg font-bold text-gray-700"
+          >
+            2. Copy the code below and paste it in your HTML.
+          </div>
+          <code>
+            <pre
+              class="prism-code language-jsx p-3 overflow-scroll"
+              style="color: rgb(57, 58, 52); background-color: rgb(246, 248, 250);"
+            >
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  script
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="0"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  src
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="0"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  https://adviser.moneyhelper.org.uk/api/embed
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="0"
+                />
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="0"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  script
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="0"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain"
+                  i="0"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain"
+                  i="1"
+                >
+                      
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  div
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="1"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  class
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  mas-iframe-container
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="1"
+                  style="color: rgb(0, 0, 159);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-name"
+                  i="1"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  style
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation attr-equals"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  width
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  overflow
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   hidden
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  padding-top
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  66.66
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="1"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  position
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="1"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   relative
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="1"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="1"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain-text"
+                  i="2"
+                >
+                        
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="2"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;
+                </span>
+                <span
+                  class="token tag"
+                  i="2"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  iframe
+                </span>
+                <span
+                  class="token tag"
+                  i="2"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="3"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="3"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  class
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="3"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  mas-iframe
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="3"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="3"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="4"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag special-attr attr-name"
+                  i="4"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  style
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation attr-equals"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  width
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  height
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  100
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css unit"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  %
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  left
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  position
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   absolute
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  top
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css property"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  border
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  :
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css"
+                  i="4"
+                  style="color: rgb(227, 17, 108);"
+                >
+                   
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css number"
+                  i="4"
+                  style="color: rgb(54, 172, 170);"
+                >
+                  0
+                </span>
+                <span
+                  class="token tag special-attr attr-value value css language-css punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  ;
+                </span>
+                <span
+                  class="token tag special-attr attr-value punctuation"
+                  i="4"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="4"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="5"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="5"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  src
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="5"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  https://adviser.moneyhelper.org.uk/en/Test?isEmbedded=true
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="5"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="5"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="6"
+                  style="color: rgb(0, 0, 159);"
+                >
+                          
+                </span>
+                <span
+                  class="token tag attr-name"
+                  i="6"
+                  style="color: rgb(0, 164, 219);"
+                >
+                  loading
+                </span>
+                <span
+                  class="token tag attr-value punctuation attr-equals"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  =
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag attr-value"
+                  i="6"
+                  style="color: rgb(227, 17, 108);"
+                >
+                  lazy
+                </span>
+                <span
+                  class="token tag attr-value punctuation"
+                  i="6"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  "
+                </span>
+                <span
+                  class="token tag"
+                  i="6"
+                  style="color: rgb(0, 0, 159);"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token tag"
+                  i="7"
+                  style="color: rgb(0, 0, 159);"
+                >
+                        
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="7"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  iframe
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="7"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+                <span
+                  class="token plain-text"
+                  i="7"
+                />
+              </div>
+              <div
+                class="token-line"
+                style="color: rgb(57, 58, 52);"
+              >
+                <span
+                  class="token plain-text"
+                  i="8"
+                >
+                      
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="8"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &lt;/
+                </span>
+                <span
+                  class="token tag"
+                  i="8"
+                  style="color: rgb(0, 0, 159);"
+                >
+                  div
+                </span>
+                <span
+                  class="token tag punctuation"
+                  i="8"
+                  style="color: rgb(57, 58, 52);"
+                >
+                  &gt;
+                </span>
+              </div>
+            </pre>
+          </code>
+          <div
+            class="flex items-center gap-3 p-3"
+          >
+            <button
+              class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-lg"
+              data-testid="copy-embed-test-two"
+              type="submit"
+            >
+              <span />
+              Copy to clipboard
+              <span />
+            </button>
+            <div
+              class="text-lg font-bold text-gray-900 animate-bounce"
+            >
+              Done!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

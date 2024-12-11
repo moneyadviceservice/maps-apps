@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailsSection renders correctly 1`] = `
+<div>
+  <h2
+    class="text-3xl md:text-4xl text-gray-800 font-bold"
+  >
+    pages.pension-details.details.heading
+  </h2>
+  <div
+    class="relative mb-16 overflow-x-auto"
+  >
+    <table
+      class="w-[800px] md:w-full"
+    >
+      <thead>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <th
+            class="w-1/4 md:w-1/2 border-b-1 border-b-slate-400"
+          />
+          <th
+            class="py-3 text-left align-top"
+          >
+            ERI
+          </th>
+          <th
+            class="py-3 text-left align-top"
+          >
+            AP
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.details.benefit-type
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            Defined Contribution
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            Defined Contribution
+          </td>
+        </tr>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.details.annual-amount
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            common.amount-unavailable
+             
+            common.a-year
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            common.amount-unavailable
+             
+            common.a-year
+          </td>
+        </tr>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.details.monthly-amount
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            common.amount-unavailable
+             
+            common.a-month
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            common.amount-unavailable
+             
+            common.a-month
+          </td>
+        </tr>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.details.payable-date
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            date unavailable
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            date unavailable
+          </td>
+        </tr>
+        <tr
+          class="border-b-1 border-b-slate-400"
+        >
+          <td
+            class="py-3 text-left align-top font-bold"
+          >
+            pages.pension-details.headings.pot
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            £540,500
+          </td>
+          <td
+            class="py-3 text-left align-top"
+          >
+            £540,500
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

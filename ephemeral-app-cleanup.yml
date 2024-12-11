@@ -1,0 +1,69 @@
+name: PR App Services clean up
+
+trigger:
+  branches:
+    include:
+      - main
+
+schedules:
+  #At 8 on Fridays
+  - cron: '0 20 * * 5' #to-do: change to nightly once time to deploy ephemeral app is reduced
+    always: true
+    branches:
+      include:
+        - main
+    batch: true
+    displayName: PR App Service Cleanup
+
+variables:
+  agentPool: 'ubuntu-latest'
+  serviceConnection: 'ADO-PWD-Connection'
+
+parameters:
+  - name: resourceGroups
+    type: object
+    default:
+      - mapsnextjs-test-uksouth-rg
+      - pensionwise-review-uksouth-rg
+      - mapsnextjs-review-uksouth-rg
+      - moneyhelper-review-uksouth-rg
+      - pensions-review-uksouth-rg
+      - money-review-uksouth-rg
+
+jobs:
+  - job: CleanupPRs
+    displayName: 'Clean up PR App Services'
+    pool:
+      vmImage: $(agentPool)
+
+    steps:
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+        displayName: 'Install jq'
+
+      - script: |
+          set -e
+
+          echo "Fetching active PRs..."
+          response=$(curl -s -u :$(ACCESS_TOKEN) "https://dev.azure.com/moneyandpensionsservice/MaPS%20Digital/_apis/git/repositories/maps-apps/pullrequests?searchCriteria.status=active&api-version=7.1" -H "Accept: application/json")
+          echo "API Response: $response"
+
+          pr_ids=$(echo $response | jq -r '.value | map(.pullRequestId | tostring) | join(",")')
+          if [ -z "$pr_ids" ]; then
+            echo "No active PRs found."
+          fi
+
+          echo "Active PRs: $pr_ids"
+          echo "##vso[task.setvariable variable=pr_id_list;isOutput=true]$pr_ids"
+        name: getActivePRs
+        displayName: Get Active PR IDs
+
+      - ${{ each resourcegroup in parameters.resourceGroups }}:
+          - task: AzureCLI@2
+            inputs:
+              azureSubscription: $(serviceConnection)
+              scriptType: 'bash'
+              scriptPath: scripts/empemeral-app-cleanup.sh
+              arguments: ${{ resourcegroup }} $(getActivePRs.pr_id_list)
+            displayName: 'Remove inactive PR review web app in resource group ${{ parameters.resourcegroup }}'

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScamWarning renders correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border-slate-400 rounded-bl-3xl border-[8px] px-6 py-8 mt-12 md:px-12"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-2xl md:text-3xl text-gray-800 font-bold mb-4"
+    >
+      test
+    </h3>
+    test
+  </div>
+</div>
+`;

@@ -1,0 +1,85 @@
+parameters:
+  - name: SONARCLOUD_NAME
+    type: string
+  - name: SONARCLOUD_ORGANISATION
+    type: string
+  - name: SONARCLOUD_PROJECTKEY
+    type: string
+  - name: SONARCLOUD_PROJECTNAME
+    type: string
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: keyvaultname
+    type: string
+  - name: AKS_SPN_ID
+    type: string
+  - name: AKS_SPN_KEY
+    type: string
+  - name: TENANT_ID
+    type: string
+
+steps:
+  - template: ./1-checkout-main.yml
+  - template: ./install-node-js.yml
+
+  - script: npm ci
+    displayName: 'Install Dependencies'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+         git fetch origin main:main
+         git fetch origin main:refs/remotes/origin/main
+      else
+         git fetch  --depth=2 origin main:main
+         git fetch  --depth=2 origin main:refs/remotes/origin/main
+      fi
+    displayName: 'Fetch branch to compare'
+
+  - script: |
+      keyvaultname="${{ parameters.keyvaultname }}"
+      az login --service-principal --username ${{ parameters.AKS_SPN_ID }} --password ${{ parameters.AKS_SPN_KEY }} --tenant ${{ parameters.TENANT_ID }}
+
+      echo "Fetching secrets from Key Vault: $keyvaultname"
+      secrets=$(az keyvault secret list --vault-name $keyvaultname --query "[].name" -o tsv)
+      echo "Secrets found: $secrets"
+
+      for secretName in $secrets; do
+          secretValue=$(az keyvault secret show --name $secretName --vault-name $keyvaultname --query "value" -o tsv)
+
+          # Replace dashes with underscores in secret names to form valid environment variable names
+          secretName="${secretName//-/_}"
+
+          # Set the environment variable for the pipeline
+          echo "##vso[task.setvariable variable=$secretName]$secretValue"
+      done
+
+    displayName: 'Export Environment variables from Key Vault'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+          npx nx affected:test
+      else
+          npx nx affected:test --base=HEAD~1 --head=HEAD
+      fi
+    displayName: 'Run affected unit tests'
+
+  - script: |
+      npm run test:coverage
+    displayName: 'Creating test coverage file'
+    continueOnError: true
+
+  - task: SonarCloudPrepare@3
+    inputs:
+      SonarCloud: ${{ parameters.SONARCLOUD_NAME }}
+      organization: ${{ parameters.SONARCLOUD_ORGANISATION }}
+      scannerMode: 'CLI'
+      configMode: 'file'
+      configFile: './sonarqube/sonar-project.properties'
+      projectName: ${{ parameters.SONARCLOUD_PROJECTNAME }}
+      cliProjectKey: ${{ parameters.SONARCLOUD_PROJECTKEY }}
+
+  - task: SonarCloudAnalyze@3
+
+  - task: SonarCloudPublish@3
+    inputs:
+      pollingTimeoutSec: '300'

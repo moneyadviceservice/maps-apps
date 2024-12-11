@@ -1,0 +1,50 @@
+name: Deploy to Netlify
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - pensions-dashboard
+      - moneyhelper-tools
+      - pensionwise-appointment
+      - pensionwise-triage
+      - money-adviser-network
+  - name: context
+    displayName: Environment
+    type: string
+    default: test
+    values:
+      - test
+      - staging
+      - production
+
+variables:
+  HEAD_SHA: $(git rev-parse HEAD)
+  ${{ if eq(parameters.context, 'test') }}:
+    context: branch-deploy
+  ${{ if eq(parameters.context, 'staging') }}:
+    context: branch-deploy
+  ${{ if eq(parameters.context, 'production') }}:
+    context: production
+
+stages:
+  - stage: Deploy
+    displayName: 'Deploy to Netlify'
+    jobs:
+      - job: Build_selected_app
+        displayName: ${{ parameters.appname }}
+        steps:
+          - template: templates/manual-deploy.yml
+            parameters:
+              appname: ${{ parameters.appname }}
+              environment: ${{ parameters.context }}
+              context: ${{ variables.context }}
+              branchname: $(Build.SourceBranchName)
+              authtoken: $(NETLIFY_AUTH_TOKEN)

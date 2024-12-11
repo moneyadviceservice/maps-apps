@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmbedMSForm renders default iframe 1`] = `
+<div>
+  <iframe
+    class="w-full"
+    data-testid="embedded-ms-form"
+    id="emebedded-ms-form"
+    src="https://example.com/form&embed=true"
+    title="Test Form"
+  />
+</div>
+`;

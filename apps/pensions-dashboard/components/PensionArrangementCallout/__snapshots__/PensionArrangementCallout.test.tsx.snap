@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionArrangementCallout renders correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl px-6 py-8 pb-2 mt-8"
+    data-testid="information-callout"
+  >
+    <h4
+      class="text-xl md:text-2xl text-blue-800 font-bold flex gap-3 mb-4"
+    >
+      <svgr-mock
+        classname="w-[30px] h-[30px] fill-red-700"
+      />
+      State Pension
+    </h4>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      pages.pensions-that-need-action.card.description
+    </p>
+    <p
+      class="mb-0 font-bold"
+      data-testid="paragraph"
+    >
+      pages.pensions-that-need-action.card.reference
+    </p>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      REF123
+    </p>
+    <div
+      class="py-4 mt-8 border-t-1"
+    >
+      <details
+        class="group tool-expand"
+        data-testid="expandable-section"
+      >
+        <summary
+          class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+        >
+          <svgr-mock
+            classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+          />
+          <div
+            class="block"
+            data-testid="summary-block-title"
+          >
+            pages.pensions-that-need-action.card.contact-heading
+          </div>
+        </summary>
+        <div
+          class="my-4"
+        >
+          <div
+            class="mb-4"
+          >
+            <div
+              class="font-bold"
+            >
+              common.contact.preferred
+            </div>
+            <div>
+              WhatsApp: +123 1111111111
+            </div>
+          </div>
+          <div
+            class="mb-4"
+          >
+            <div
+              class="font-bold"
+            >
+              common.contact.telephone
+            </div>
+            <div>
+              WhatsApp: +123 1111111111
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;

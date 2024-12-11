@@ -1,0 +1,146 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: testtorun
+    type: string
+  - name: projectName
+    type: string
+
+steps:
+  - checkout: self
+    clean: true
+    persistCredentials: true
+    fetchDepth: 10
+    displayName: Check out source code from main repository
+
+  - script: |
+      git fetch origin main:refs/remotes/origin/main
+    displayName: Fetch the latest history for main branch
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+         git fetch origin main:main
+         git fetch origin main:refs/remotes/origin/main
+      else
+         git fetch  --depth=2 origin main:main
+         git fetch  --depth=2 origin main:refs/remotes/origin/main
+      fi
+    displayName: 'Fetch branch to compare'
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.9.0'
+      nodejsMirror: 'https://npmmirror.com/mirrors/node'
+    displayName: 'Install Node.js 20.9.0'
+
+  - script: |
+      npm cache clean --force
+      npm ci
+    displayName: 'Install Dependencies'
+
+  - script: |
+
+      echo "Installing Netlify CLI..."
+      npm install -g netlify-cli
+
+      echo "Checking app has matching netlify site"
+      case "${{ parameters.projectName }}" in
+        "money-adviser-network")
+          NETLIFY_SITE_ID="2f25fbee-8b6f-4f26-9f53-34c311cb9e2d"
+          NETLIFY_SITE_FILTER="money-adviser-network"
+          ;;
+        "pensions-dashboard")
+          NETLIFY_SITE_ID="1f0bf590-5ad7-40a2-813c-8c2a9334b19d"
+          NETLIFY_SITE_FILTER="pensions-dashboard"
+          ;;
+        "moneyhelper-tools")
+          NETLIFY_SITE_ID="0d476dfe-1f52-454b-9513-04e84a18d95c"
+          NETLIFY_SITE_FILTER="moneyhelper-tools"
+          ;;
+        "pensionwise-triage")
+          NETLIFY_SITE_ID="cfc0443a-8a71-435c-a231-8f6f0772c815"
+          NETLIFY_SITE_FILTER="pensionwise-triage"
+          ;;
+        "pensionwise-appointment")
+          NETLIFY_SITE_ID="5a06402b-1141-4675-9cc6-ebf477676397"
+          NETLIFY_SITE_FILTER="pensionwise-appointment"
+          ;;
+        *)
+          echo "Error: Unknown project name ${{ parameters.projectName }}"
+          exit 1
+          ;;
+      esac
+
+      echo "Linking to Netlify site with ID: $NETLIFY_SITE_ID and filter: $NETLIFY_SITE_FILTER"
+      netlify link --id "$NETLIFY_SITE_ID" --filter "$NETLIFY_SITE_FILTER"
+      echo "Retrieving and exporting environment variables from Netlify for deploy-preview"
+
+      echo "Running end to end tests for develop/deploy-preview"
+      env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context "deploy-preview" --json --filter "$NETLIFY_SITE_FILTER")
+
+      if [[ -z "$env_vars_json" ]]; then
+          echo "Error: Failed to retrieve environment variables."
+          exit 1
+      fi
+      echo "Parsing and export each environment variable"
+      for s in $(echo $env_vars_json | jq -r "to_entries|map(\"\(.key)=\(.value|tostring)\")|.[]" ); do
+          export $s
+      done
+
+      set -e
+
+      startPort=3000
+      endPort=3500
+      portnum=""
+
+      IFS=',' read -ra ENVS <<< "${{ parameters.testtorun }}"
+      if [ ${#ENVS[@]} -eq 0 ]; then
+        echo "No environments to deploy. Exiting."
+        exit 0
+      fi
+
+      for env in "${ENVS[@]}"; do
+        echo "======================================================================="
+        echo "Running end-to-end tests for $env"
+        echo "======================================================================="
+
+        for port in $(seq $startPort $endPort); do
+          lockFile="/tmp/.X${port}-lock"
+          if [ -f $lockFile ]; then
+            echo "Removing existing lock file: $lockFile"
+            rm -f $lockFile
+          fi
+          if ! nc -z localhost $port; then
+            portnum=$port
+            startPort=$((portnum + 1))
+            break
+          fi
+        done
+
+        if [ -z "$portnum" ]; then
+          echo "No free port found. Exiting with error."
+          exit 1
+        fi
+
+        echo "Starting Xvfb on port: $portnum"
+        Xvfb :$portnum -screen 0 1280x1024x24 &
+        XVFB_PID=$!
+        export DISPLAY=:$portnum
+
+        echo "Running E2E tests for environment: $env"
+        testResults=$(npm run test:e2e-ci $env --port='cypress-auto' 2>&1) || status=$?
+
+        if [ -n "$status" ] && [ "$status" -ne 0 ]; then
+          echo "E2E tests failed for environment: $env"
+          echo "E2E test output: $testResults"
+          kill $XVFB_PID
+          exit $status
+        else
+          echo "E2E tests passed for environment: $env"
+          echo "E2E test output: $testResults"
+        fi
+
+        echo "Terminating Xvfb with PID: $XVFB_PID"
+        kill $XVFB_PID
+      done
+    displayName: 'Run affected E2E tests'

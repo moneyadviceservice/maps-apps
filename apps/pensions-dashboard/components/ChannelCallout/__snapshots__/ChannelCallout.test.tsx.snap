@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelCallout renders correctly 1`] = `
+<div>
+  <div
+    class="relative min-h-[95px] rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-green-100 before:bg-green-700 p-8 pt-6 mb-12"
+    data-testid="callout-positive"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+    >
+      Test Title
+    </h4>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Test Description
+    </p>
+    <ul>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension Admin Highland
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension For Everyone
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        State Pension
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension Admin Highland
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension Admin Highland
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension Admin Highland
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension For Everyone
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension For Everyone
+      </li>
+      <li
+        class="flex items-center gap-3 mt-4"
+      >
+        <span
+          class="w-[24px] h-[24px]"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Pension For Everyone
+      </li>
+    </ul>
+    <a
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 mt-6 mb-2"
+      href="/en/test-link"
+    >
+      Test Link Text
+    </a>
+  </div>
+</div>
+`;

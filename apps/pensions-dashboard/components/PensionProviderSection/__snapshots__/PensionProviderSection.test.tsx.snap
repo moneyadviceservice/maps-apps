@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionProviderSection renders correctly 1`] = `
+<DocumentFragment>
+  <h2
+    class="text-3xl md:text-4xl text-gray-800 font-bold"
+  >
+    pages.pension-details.pension-provider.heading
+  </h2>
+  <div
+    data-testid="pension-provider-details-table"
+  >
+    {"externalPensionPolicyId":"D2007659822","externalAssetId":"b3cd4ebd-8a49-4ebc-a15e-1e79dff1e5ad","matchType":"DEFN","schemeName":"Master Trust Workplace 0887","contactReference":"Ref/rb-dr-bd-sb-08","pensionType":"DC","pensionOrigin":"WM","pensionStatus":"I","startDate":"2011-05-16","retirementDate":"2025-08-23","dateOfBirth":"1979-09-18","statePensionMessageEng":"State Pension Message English","statePensionMessageWelsh":"State Pension Message Welsh","pensionAdministrator":{"name":"Pension Admin Highland","contactMethods":[{"preferred":true,"contactMethodDetails":{"url":"https://www.highlandadmin.co.uk"}},{"preferred":true,"contactMethodDetails":{"email":"mastertrust@highlandadmin.com"}},{"preferred":false,"contactMethodDetails":{"number":"+44 800873434","usage":["M"]}},{"preferred":false,"contactMethodDetails":{"postalName":"Pension Admin Highland","line1":"1 Travis Avenue","line2":"Main Street","line3":"Liverpool","postcode":"M16 0QG","countryCode":"GB"}}]},"employmentMembershipPeriods":[{"employerName":"Borough Finance Centre","membershipStartDate":"2011-05-16"}],"benefitIllustrations":[{"illustrationComponents":[{"illustrationType":"ERI","unavailableReason":"DCC","benefitType":"DC","calculationMethod":"SMPI","survivorBenefit":true,"dcPot":540500,"safeguardedBenefit":true},{"illustrationType":"AP","unavailableReason":"DCC","benefitType":"DC","amountType":"INC","calculationMethod":"SMPI","dcPot":540500,"survivorBenefit":true,"safeguardedBenefit":true}],"illustrationDate":"2024-01-01"}]}
+  </div>
+</DocumentFragment>
+`;

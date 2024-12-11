@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preferred Contacts renders correctly when address is preferred 1`] = `
+<div>
+  <div>
+    <p>
+      Pension Admin Highland
+    </p>
+    <p>
+      1 Travis Avenue
+    </p>
+    <p>
+      Main Street
+    </p>
+    <p>
+      Liverpool
+    </p>
+    <p>
+      M16 0QG
+    </p>
+    <p>
+      United Kingdom
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Preferred Contacts renders correctly when email is preferred 1`] = `
+<div>
+  <div>
+    Email: 
+    mastertrust@highlandadmin.com
+  </div>
+</div>
+`;
+
+exports[`Preferred Contacts renders correctly when phone number is preferred 1`] = `
+<div>
+  <div>
+    Main telephone: +44 800873434
+  </div>
+</div>
+`;
+
+exports[`Preferred Contacts renders correctly when website is preferred 1`] = `
+<div>
+  <div>
+    Website:
+     
+    <a
+      class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+      href="https://www.highlandadmin.co.uk"
+      target="_blank"
+    >
+      https://www.highlandadmin.co.uk
+      <span
+        class="sr-only"
+      >
+         (opens in a new window) 
+      </span>
+      <svgr-mock
+        classname="inline ml-[6px] mr-[2px]"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Preferred Contacts renders no preferred contacts correctly 1`] = `<div />`;

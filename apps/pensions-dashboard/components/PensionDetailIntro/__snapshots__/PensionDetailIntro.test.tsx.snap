@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailIntro renders correctly 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Description with name: Master Trust Workplace 0887, date: Date unavailable, age: undefined, monthly: Amount unavailable, yearly: Amount unavailable
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders null when no data is provided 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Description with name: Master Trust Workplace 0887, date: Date unavailable, age: undefined, monthly: Amount unavailable, yearly: Amount unavailable
+    </p>
+  </div>
+</div>
+`;

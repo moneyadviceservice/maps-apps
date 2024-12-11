@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": { "value": "dev-money-adviser-network" },
+    "appServicePlanName": { "value": "money" },
+    "location": { "value": "uksouth" },
+    "sku": { "value": "S1" },
+    "nodeVersion": { "value": "14.15.1" },
+    "runtimeStack": { "value": "NODE|14.15.1" },
+    "DOCKER_REGISTRY_SERVER_PASSWORD": { "value": "dev-password" },
+    "DOCKER_REGISTRY_SERVER_USERNAME": { "value": "money" },
+    "port": { "value": "3000" },
+    "DOCKER_REGISTRY_SERVER_URL": { "value": "https://money.azurecr.io" },
+    "WEBSITES_PORT": { "value": "3000" },
+    "acrName": { "value": "money" }
+  }
+}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDCPotRow renders correctly 1`] = `
+<div>
+  <tr
+    class="border-b-1 border-b-slate-400"
+  >
+    <td
+      class="py-3 text-left align-top font-bold"
+    >
+      pages.pension-details.headings.pot
+    </td>
+    <td
+      class="py-3 text-left align-top"
+    >
+      £540,500
+    </td>
+    <td
+      class="py-3 text-left align-top"
+    >
+      £540,500
+    </td>
+  </tr>
+</div>
+`;
