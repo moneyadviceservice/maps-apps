@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CashInChunksResults should not render with empty queryData 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl>
+      <dt
+        class="mb-2 font-medium"
+      >
+        If you take
+         
+        <span />
+         
+        from your
+         
+        <span />
+         
+        pot, you could get:
+      </dt>
+      <dd
+        class="mb-4"
+      >
+        <span
+          class="text-4xl font-bold"
+        />
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        We estimate you'll pay:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span
+          class=" inline"
+        />
+         
+        in tax
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        Leaving:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span />
+         
+        in your pot
+      </dd>
+    </dl>
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <fieldset
+        class="mb-4"
+      >
+        <label
+          class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+          for="updateChunk"
+        >
+          or try a different cash chunk:
+        </label>
+        <p
+          class="text-base text-gray-400 mb-2"
+        >
+          Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+        </p>
+        <div
+          class="flex"
+        >
+          <span
+            aria-hidden="true"
+            class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+          >
+            £
+          </span>
+          <input
+            aria-label="or try a different cash chunk, in pounds."
+            aria-required="true"
+            class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+            data-testid="updateChunk"
+            id="updateChunk"
+            inputmode="numeric"
+            name="updateChunk"
+            type="text"
+            value=""
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="mt-8 text-base"
+    />
+  </div>
+</div>
+`;
+
+exports[`CashInChunksResults should render correctly 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl>
+      <dt
+        class="mb-2 font-medium"
+      >
+        If you take
+         
+        <span>
+          £1,000
+        </span>
+         
+        from your
+         
+        <span>
+          £100,000
+        </span>
+         
+        pot, you could get:
+      </dt>
+      <dd
+        class="mb-4"
+      >
+        <span
+          class="text-4xl font-bold"
+        >
+          £1,000
+        </span>
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        We estimate you'll pay:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span
+          class=" inline"
+        >
+          £0
+        </span>
+         
+        in tax
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        Leaving:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £99,000
+        </span>
+         
+        in your pot
+      </dd>
+    </dl>
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <fieldset
+        class="mb-4"
+      >
+        <label
+          class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+          for="updateChunk"
+        >
+          or try a different cash chunk:
+        </label>
+        <p
+          class="text-base text-gray-400 mb-2"
+        >
+          Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+        </p>
+        <div
+          class="flex"
+        >
+          <span
+            aria-hidden="true"
+            class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+          >
+            £
+          </span>
+          <input
+            aria-label="or try a different cash chunk, in pounds."
+            aria-required="true"
+            class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+            data-testid="updateChunk"
+            id="updateChunk"
+            inputmode="numeric"
+            name="updateChunk"
+            type="text"
+            value="1,000"
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="mt-8 text-base"
+    />
+  </div>
+</div>
+`;

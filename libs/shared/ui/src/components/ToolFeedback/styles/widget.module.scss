@@ -1,0 +1,150 @@
+@tailwind components;
+
+/* 
+  The styles for this component are placed outside the component because TailwindCSS doesn't apply 
+  styles to dynamically injected elements after the initial build. Tailwind relies on its 
+  utility classes being present during build time.
+*/
+/* Reusable Tailwind components */
+@layer components {
+  .izCommonButton {
+    @apply min-w-[120px] min-h-[40px] bg-pink-600 text-white md:ml-2 text-base leading-normal md:leading-6 px-4 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer #{!important};
+  }
+
+  .izButtonFocus {
+    @apply focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none #{!important};
+  }
+
+  .izButtonActive {
+    @apply active:shadow-none active:outline-[3px] active:outline-offset-0 active:bg-pink-900 active:outline-yellow-200 active:text-white #{!important};
+  }
+
+  .izButtonHover {
+    @apply hover:bg-pink-800 hover:shadow-none hover:text-white #{!important};
+  }
+
+  .izReportButton {
+    @apply md:min-w-[264px] min-h-[40px] lg:min-w-[262px] px-5 py-2 text-pink-600 bg-white border-1 rounded border-solid border-pink-600 shadow-[0px_3px_0px_0px_rgba(0,11,59,0.25)] w-full md:w-auto text-center #{!important};
+  }
+}
+.toolFeedbackWidget {
+  /* The main container */
+  :global(#iz-cr) {
+    @apply border-t-slate-400 border-1 pb-3 #{!important};
+  }
+  :global(#iz-cr.izCr-.iz-pv-) {
+    @apply rounded-none overflow-hidden #{!important}; /* overflow-hidden required as changing the padding causes a scrollbar to be visible on injected content */
+  }
+  /* The main header container */
+  :global(#iz-cr .izMainElements) {
+    @apply flex flex-col md:flex-row md:items-center justify-between #{!important};
+
+    :global(.izItems) {
+      @apply w-full px-0 #{!important};
+    }
+  }
+
+  /* Buttons container */
+  :global(#iz-cr .izOButtons) {
+    @apply items-center gap-2 justify-end #{!important};
+  }
+
+  /* Submit buttons */
+  :global(#iz-cr #Insitez\:6 .izButton), /* "Yes" journey submit button */
+  :global(#iz-cr #Insitez\:8 .izButton), /* "No" journey submit button */
+  :global(#iz-cr #Insitez\:13 .izButton) {
+    /* "Report a problem" journey submit button */
+    @apply izCommonButton izButtonFocus izButtonActive izButtonHover w-full md:w-40 text-sm block text-center #{!important};
+  }
+  /* Yes/No buttons */
+  :global(#iz-cr .izOButtons .izOButton) {
+    @apply izCommonButton izButtonFocus izButtonActive izButtonHover w-full md:max-w-[120px] md:max-h-[40px] #{!important};
+  }
+  :global(#iz-cr .izItems:has(> div#Insitez\:3)) {
+    @apply md:max-w-[42%] #{!important};
+  }
+  /* Report a problem button */
+  :global(#Insitez\:12 .izButton) {
+    @apply izReportButton izButtonFocus izButtonActive izButtonHover;
+    :global(.izButtonText) {
+      @apply font-semibold #{!important};
+    }
+  }
+
+  /* Back button */
+  :global(#iz-cr .izNav- .izBack.iz-i-cr .iz-arrow-left) {
+    @apply relative text-[0px] #{!important};
+
+    &:focus {
+      @apply text-gray-800 bg-yellow-200 shadow-link-focus #{!important};
+    }
+
+    &:active {
+      @apply text-gray-800 underline bg-transparent shadow-none #{!important};
+    }
+
+    &::after {
+      @apply content-['Previous'] text-sm text-pink-600 underline hover:no-underline focus:no-underline cursor-pointer opacity-100 #{!important};
+    }
+  }
+  /* Back button container */
+  :global(#iz-cr .izBack) {
+    @apply min-w-[60px] opacity-100 h-[26px] #{!important};
+  }
+
+  :global(#iz-cr .izHeaderFont.izFirstQuestionHeader.izNs-),   /* First Page Title */
+  :global(#iz-cr .izHeaderFont.izNs-) {
+    /* Secondary Title - Anything after the first question */
+    @apply text-gray-800 px-0 #{!important};
+  }
+
+  /* First Page Title */
+  :global(#iz-cr .izHeaderFont.izFirstQuestionHeader.izNs-) {
+    @apply font-bold text-[19px] w-full  #{!important};
+  }
+
+  /* Secondary Title - Anything after the first question */
+  :global(#iz-cr .izHeaderFont.izNs-) {
+    @apply pb-8 pt-4 #{!important};
+  }
+
+  /* Layout after first step */
+  :global(#iz-cr .izMainElements:has(> div.izItems > div#Insitez\:10.izItem)), /* Report a Problem journey */
+  :global(#iz-cr .izMainElements:has(> div.izItems > div#Insitez\:15.izItem)), /* Submit journey */
+  :global(#iz-cr .izMainElements:has(> div.izItems > div#Insitez\:5.izItem)), /* Yes journey */
+  :global(#iz-cr .izMainElements:has(> div.izItems > div#Insitez\:7.izItem)) /* No journey */ {
+    @apply flex-col items-start justify-start #{!important};
+  }
+
+  :global(#iz-cr #Insitez\:5) {
+    @apply pb-1 #{!important};
+  }
+
+  /* Hide the Done button */
+  :global(
+      div.izFooter.izNs-
+        div.izPb-.izCf-
+        div
+        div.izButton:not(#Insitez\:12 .izButton)
+    ) {
+    @apply hidden #{!important};
+  }
+
+  /* Remmove right padding */
+  :global(div.izFooter.izNs-) {
+    @apply px-0 #{!important};
+  }
+
+  /* Item/Question header */
+  :global(#iz-cr .izItemHeader) {
+    @apply font-normal #{!important};
+  }
+}
+/* Welsh back button */
+.welshBackButton {
+  :global(#iz-cr .izNav- .izBack.iz-i-cr .iz-arrow-left) {
+    &::after {
+      @apply content-['Blaenorol'] text-sm text-pink-600 underline hover:no-underline focus:no-underline cursor-pointer opacity-100 #{!important};
+    }
+  }
+}

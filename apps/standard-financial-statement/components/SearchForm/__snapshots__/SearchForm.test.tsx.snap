@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm component renders correctly 1`] = `
+<form
+  action="/en/search"
+  class="flex lg:my-4 lg:w-[266px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+  data-testid="search-form"
+>
+  <label
+    class="sr-only"
+    for="q"
+  >
+    Search
+  </label>
+  <input
+    class="w-full p-2 rounded-l"
+    id="q"
+    name="q"
+    required=""
+    type="text"
+  />
+  <button
+    class="p-1 bg-green-300 rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+    title="Search"
+  >
+    <search.svg
+      class=""
+    />
+  </button>
+</form>
+`;

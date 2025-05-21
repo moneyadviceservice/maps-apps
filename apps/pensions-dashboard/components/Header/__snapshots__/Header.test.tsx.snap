@@ -1,0 +1,969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-200 focus:z-20 focus:border-b-4 focus:border-b-blue-800 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="relative z-10 bg-blue-800 t-header print:hidden shadow-bottom-gray"
+  >
+    <div
+      class="container-auto relative z-10 flex items-center px-4 h-[96px]"
+    >
+      <a
+        aria-label="Money helper"
+        href="https://moneyhelper.org.uk/en"
+      >
+        <span>
+          <svgr-mock
+            classname="w-[72px] h-[44px] sm:w-[99px] sm:h-[51px]"
+          />
+        </span>
+      </a>
+      <div
+        class="w-[176px] sm:w-auto text-center mx-auto text-white t-header-logo text-[20px] leading-[24px] sm:leading-[43px] sm:text-[34px] font-bold"
+      >
+        Pensions Dashboard
+      </div>
+      <nav
+        aria-label="Language switcher"
+        class="hidden absolute md:hidden lg:block right-[90px]"
+        data-testid="language-switcher"
+      >
+        <ul>
+          <li
+            class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+          >
+            <span
+              aria-current="true"
+              class="p-2 px-4 text-white"
+            >
+              English
+            </span>
+          </li>
+          <li
+            class="inline-block"
+          >
+            <a
+              class="group p-2 px-4 inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="/cy"
+              hreflang="cy"
+              lang="cy"
+              rel="alternate"
+            >
+              <span
+                class="sr-only"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+              <span
+                aria-hidden="true"
+                class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+              >
+                Cymraeg
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <details
+          class="relative group"
+        >
+          <summary
+            class="t-header-menu-open cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+            data-testid="nav-toggle"
+            title="Open menu"
+          >
+            <div
+              class="mx-auto w-[72px]"
+            >
+              <div
+                class="group-open:hidden"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  menu
+                </span>
+              </div>
+              <div
+                class="hidden group-open:block"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  close
+                </span>
+              </div>
+            </div>
+          </summary>
+          <nav
+            class="absolute right-0 z-10 flex pt-4 text-gray-900 t-header-navigation w-72 md:w-96"
+          >
+            <div
+              class="w-full space-y-4 bg-white border"
+            >
+              <ul
+                class="divide-y"
+              >
+                <li
+                  class="px-3 py-2"
+                >
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    data-testid="logout-link"
+                    href="/en/you-are-about-to-leave"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <div>
+                        Exit and log out
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        width="32"
+                      >
+                        <path
+                          d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="px-3 pb-3 t-header-navigation-button"
+                data-testid="language-switcher-btn"
+              >
+                <a
+                  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+                  href="?language=cy"
+                  lang="cy"
+                >
+                  Cymraeg
+                </a>
+              </div>
+            </div>
+          </nav>
+        </details>
+        <dialog
+          aria-label="Reset"
+          class="p-0 rounded-bl-[32px] text-left backdrop:bg-black/40"
+          data-testid="logout-dialog"
+        >
+          <div
+            class="max-w-[500px]"
+          >
+            <button
+              aria-label="Close"
+              class="p-1 absolute t-close-button inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none right-2 top-2 px-4 py-2"
+              data-testid="close-dialog"
+              id="closeDialog"
+              type="button"
+            >
+              <span />
+              <div
+                class="flex items-center justify-end font-semibold text-pink-600"
+              >
+                <svgr-mock
+                  classname="mr-2 w-[14px] h-[14px]"
+                />
+                 
+                Close
+              </div>
+              <span />
+            </button>
+            <div
+              class="flex flex-col p-8 pt-12 gap-2 justify-between items-start"
+            >
+              <div
+                class="text-base"
+              >
+                <h2
+                  class="text-3xl font-bold mb-3 text-blue-800 md:mb-4 md:text-5xl"
+                >
+                  You’re about to leave
+                </h2>
+                <p
+                  class="mb-6 md:mb-8"
+                  data-testid="paragraph"
+                >
+                  We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.
+                </p>
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  Are you sure you want to leave?
+                </p>
+                <div
+                  class="mt-10 mb-6 md:flex"
+                >
+                  <a
+                    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 block w-full mb-4 text-center md:mr-4 md:inline-flex md:text-left md:mb-0 md:w-auto"
+                    data-testid="logout-yes"
+                    href="/en/you-have-exited-the-pensions-dashboard"
+                  >
+                    Yes, exit the Dashboard
+                  </a>
+                  <button
+                    class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button w-full md:w-auto"
+                    data-testid="logout-no"
+                    type="submit"
+                  >
+                    <span />
+                    Cancel
+                    <span />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header component renders correctly when the nav is opened by a Space keypress 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-200 focus:z-20 focus:border-b-4 focus:border-b-blue-800 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 z-10 bg-black opacity-25 t-menu-overlay"
+  />
+  <div
+    class="relative z-10 bg-blue-800 t-header print:hidden shadow-bottom-gray"
+  >
+    <div
+      class="container-auto relative z-10 flex items-center px-4 h-[96px]"
+    >
+      <a
+        aria-label="Money helper"
+        href="https://moneyhelper.org.uk/en"
+      >
+        <span>
+          <svgr-mock
+            classname="w-[72px] h-[44px] sm:w-[99px] sm:h-[51px]"
+          />
+        </span>
+      </a>
+      <div
+        class="w-[176px] sm:w-auto text-center mx-auto text-white t-header-logo text-[20px] leading-[24px] sm:leading-[43px] sm:text-[34px] font-bold"
+      >
+        Pensions Dashboard
+      </div>
+      <nav
+        aria-label="Language switcher"
+        class="hidden absolute md:hidden lg:block right-[90px]"
+        data-testid="language-switcher"
+      >
+        <ul>
+          <li
+            class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+          >
+            <span
+              aria-current="true"
+              class="p-2 px-4 text-white"
+            >
+              English
+            </span>
+          </li>
+          <li
+            class="inline-block"
+          >
+            <a
+              class="group p-2 px-4 inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="/cy"
+              hreflang="cy"
+              lang="cy"
+              rel="alternate"
+            >
+              <span
+                class="sr-only"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+              <span
+                aria-hidden="true"
+                class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+              >
+                Cymraeg
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <details
+          class="relative group"
+          open=""
+        >
+          <summary
+            class="t-header-menu-close cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+            data-testid="nav-toggle"
+            title="Close menu"
+          >
+            <div
+              class="mx-auto w-[72px]"
+            >
+              <div
+                class="group-open:hidden"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  menu
+                </span>
+              </div>
+              <div
+                class="hidden group-open:block"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  close
+                </span>
+              </div>
+            </div>
+          </summary>
+          <nav
+            class="absolute right-0 z-10 flex pt-4 text-gray-900 t-header-navigation w-72 md:w-96"
+          >
+            <div
+              class="w-full space-y-4 bg-white border"
+            >
+              <ul
+                class="divide-y"
+              >
+                <li
+                  class="px-3 py-2"
+                >
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    data-testid="logout-link"
+                    href="/en/you-are-about-to-leave"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <div>
+                        Exit and log out
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        width="32"
+                      >
+                        <path
+                          d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="px-3 pb-3 t-header-navigation-button"
+                data-testid="language-switcher-btn"
+              >
+                <a
+                  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+                  href="?language=cy"
+                  lang="cy"
+                >
+                  Cymraeg
+                </a>
+              </div>
+            </div>
+          </nav>
+        </details>
+        <dialog
+          aria-label="Reset"
+          class="p-0 rounded-bl-[32px] text-left backdrop:bg-black/40"
+          data-testid="logout-dialog"
+        >
+          <div
+            class="max-w-[500px]"
+          >
+            <button
+              aria-label="Close"
+              class="p-1 absolute t-close-button inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none right-2 top-2 px-4 py-2"
+              data-testid="close-dialog"
+              id="closeDialog"
+              type="button"
+            >
+              <span />
+              <div
+                class="flex items-center justify-end font-semibold text-pink-600"
+              >
+                <svgr-mock
+                  classname="mr-2 w-[14px] h-[14px]"
+                />
+                 
+                Close
+              </div>
+              <span />
+            </button>
+            <div
+              class="flex flex-col p-8 pt-12 gap-2 justify-between items-start"
+            >
+              <div
+                class="text-base"
+              >
+                <h2
+                  class="text-3xl font-bold mb-3 text-blue-800 md:mb-4 md:text-5xl"
+                >
+                  You’re about to leave
+                </h2>
+                <p
+                  class="mb-6 md:mb-8"
+                  data-testid="paragraph"
+                >
+                  We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.
+                </p>
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  Are you sure you want to leave?
+                </p>
+                <div
+                  class="mt-10 mb-6 md:flex"
+                >
+                  <a
+                    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 block w-full mb-4 text-center md:mr-4 md:inline-flex md:text-left md:mb-0 md:w-auto"
+                    data-testid="logout-yes"
+                    href="/en/you-have-exited-the-pensions-dashboard"
+                  >
+                    Yes, exit the Dashboard
+                  </a>
+                  <button
+                    class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button w-full md:w-auto"
+                    data-testid="logout-no"
+                    type="submit"
+                  >
+                    <span />
+                    Cancel
+                    <span />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header component renders correctly when the nav is opened by an Enter keypress 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-200 focus:z-20 focus:border-b-4 focus:border-b-blue-800 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 z-10 bg-black opacity-25 t-menu-overlay"
+  />
+  <div
+    class="relative z-10 bg-blue-800 t-header print:hidden shadow-bottom-gray"
+  >
+    <div
+      class="container-auto relative z-10 flex items-center px-4 h-[96px]"
+    >
+      <a
+        aria-label="Money helper"
+        href="https://moneyhelper.org.uk/en"
+      >
+        <span>
+          <svgr-mock
+            classname="w-[72px] h-[44px] sm:w-[99px] sm:h-[51px]"
+          />
+        </span>
+      </a>
+      <div
+        class="w-[176px] sm:w-auto text-center mx-auto text-white t-header-logo text-[20px] leading-[24px] sm:leading-[43px] sm:text-[34px] font-bold"
+      >
+        Pensions Dashboard
+      </div>
+      <nav
+        aria-label="Language switcher"
+        class="hidden absolute md:hidden lg:block right-[90px]"
+        data-testid="language-switcher"
+      >
+        <ul>
+          <li
+            class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+          >
+            <span
+              aria-current="true"
+              class="p-2 px-4 text-white"
+            >
+              English
+            </span>
+          </li>
+          <li
+            class="inline-block"
+          >
+            <a
+              class="group p-2 px-4 inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="/cy"
+              hreflang="cy"
+              lang="cy"
+              rel="alternate"
+            >
+              <span
+                class="sr-only"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+              <span
+                aria-hidden="true"
+                class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+              >
+                Cymraeg
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <details
+          class="relative group"
+          open=""
+        >
+          <summary
+            class="t-header-menu-close cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+            data-testid="nav-toggle"
+            title="Close menu"
+          >
+            <div
+              class="mx-auto w-[72px]"
+            >
+              <div
+                class="group-open:hidden"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  menu
+                </span>
+              </div>
+              <div
+                class="hidden group-open:block"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  close
+                </span>
+              </div>
+            </div>
+          </summary>
+          <nav
+            class="absolute right-0 z-10 flex pt-4 text-gray-900 t-header-navigation w-72 md:w-96"
+          >
+            <div
+              class="w-full space-y-4 bg-white border"
+            >
+              <ul
+                class="divide-y"
+              >
+                <li
+                  class="px-3 py-2"
+                >
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    data-testid="logout-link"
+                    href="/en/you-are-about-to-leave"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <div>
+                        Exit and log out
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        width="32"
+                      >
+                        <path
+                          d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="px-3 pb-3 t-header-navigation-button"
+                data-testid="language-switcher-btn"
+              >
+                <a
+                  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+                  href="?language=cy"
+                  lang="cy"
+                >
+                  Cymraeg
+                </a>
+              </div>
+            </div>
+          </nav>
+        </details>
+        <dialog
+          aria-label="Reset"
+          class="p-0 rounded-bl-[32px] text-left backdrop:bg-black/40"
+          data-testid="logout-dialog"
+        >
+          <div
+            class="max-w-[500px]"
+          >
+            <button
+              aria-label="Close"
+              class="p-1 absolute t-close-button inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none right-2 top-2 px-4 py-2"
+              data-testid="close-dialog"
+              id="closeDialog"
+              type="button"
+            >
+              <span />
+              <div
+                class="flex items-center justify-end font-semibold text-pink-600"
+              >
+                <svgr-mock
+                  classname="mr-2 w-[14px] h-[14px]"
+                />
+                 
+                Close
+              </div>
+              <span />
+            </button>
+            <div
+              class="flex flex-col p-8 pt-12 gap-2 justify-between items-start"
+            >
+              <div
+                class="text-base"
+              >
+                <h2
+                  class="text-3xl font-bold mb-3 text-blue-800 md:mb-4 md:text-5xl"
+                >
+                  You’re about to leave
+                </h2>
+                <p
+                  class="mb-6 md:mb-8"
+                  data-testid="paragraph"
+                >
+                  We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.
+                </p>
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  Are you sure you want to leave?
+                </p>
+                <div
+                  class="mt-10 mb-6 md:flex"
+                >
+                  <a
+                    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 block w-full mb-4 text-center md:mr-4 md:inline-flex md:text-left md:mb-0 md:w-auto"
+                    data-testid="logout-yes"
+                    href="/en/you-have-exited-the-pensions-dashboard"
+                  >
+                    Yes, exit the Dashboard
+                  </a>
+                  <button
+                    class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button w-full md:w-auto"
+                    data-testid="logout-no"
+                    type="submit"
+                  >
+                    <span />
+                    Cancel
+                    <span />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header component renders correctly when the nav is opened with a click 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-200 focus:z-20 focus:border-b-4 focus:border-b-blue-800 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 z-10 bg-black opacity-25 t-menu-overlay"
+  />
+  <div
+    class="relative z-10 bg-blue-800 t-header print:hidden shadow-bottom-gray"
+  >
+    <div
+      class="container-auto relative z-10 flex items-center px-4 h-[96px]"
+    >
+      <a
+        aria-label="Money helper"
+        href="https://moneyhelper.org.uk/en"
+      >
+        <span>
+          <svgr-mock
+            classname="w-[72px] h-[44px] sm:w-[99px] sm:h-[51px]"
+          />
+        </span>
+      </a>
+      <div
+        class="w-[176px] sm:w-auto text-center mx-auto text-white t-header-logo text-[20px] leading-[24px] sm:leading-[43px] sm:text-[34px] font-bold"
+      >
+        Pensions Dashboard
+      </div>
+      <nav
+        aria-label="Language switcher"
+        class="hidden absolute md:hidden lg:block right-[90px]"
+        data-testid="language-switcher"
+      >
+        <ul>
+          <li
+            class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+          >
+            <span
+              aria-current="true"
+              class="p-2 px-4 text-white"
+            >
+              English
+            </span>
+          </li>
+          <li
+            class="inline-block"
+          >
+            <a
+              class="group p-2 px-4 inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="/cy"
+              hreflang="cy"
+              lang="cy"
+              rel="alternate"
+            >
+              <span
+                class="sr-only"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+              <span
+                aria-hidden="true"
+                class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+              >
+                Cymraeg
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <details
+          class="relative group"
+          open=""
+        >
+          <summary
+            class="t-header-menu-close cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+            data-testid="nav-toggle"
+            title="Close menu"
+          >
+            <div
+              class="mx-auto w-[72px]"
+            >
+              <div
+                class="group-open:hidden"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  menu
+                </span>
+              </div>
+              <div
+                class="hidden group-open:block"
+              >
+                <svgr-mock
+                  classname="mx-auto"
+                />
+                <span>
+                  close
+                </span>
+              </div>
+            </div>
+          </summary>
+          <nav
+            class="absolute right-0 z-10 flex pt-4 text-gray-900 t-header-navigation w-72 md:w-96"
+          >
+            <div
+              class="w-full space-y-4 bg-white border"
+            >
+              <ul
+                class="divide-y"
+              >
+                <li
+                  class="px-3 py-2"
+                >
+                  <a
+                    class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    data-testid="logout-link"
+                    href="/en/you-are-about-to-leave"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <div>
+                        Exit and log out
+                      </div>
+                      <svg
+                        aria-hidden="true"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        width="32"
+                      >
+                        <path
+                          d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="px-3 pb-3 t-header-navigation-button"
+                data-testid="language-switcher-btn"
+              >
+                <a
+                  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+                  href="?language=cy"
+                  lang="cy"
+                >
+                  Cymraeg
+                </a>
+              </div>
+            </div>
+          </nav>
+        </details>
+        <dialog
+          aria-label="Reset"
+          class="p-0 rounded-bl-[32px] text-left backdrop:bg-black/40"
+          data-testid="logout-dialog"
+        >
+          <div
+            class="max-w-[500px]"
+          >
+            <button
+              aria-label="Close"
+              class="p-1 absolute t-close-button inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none right-2 top-2 px-4 py-2"
+              data-testid="close-dialog"
+              id="closeDialog"
+              type="button"
+            >
+              <span />
+              <div
+                class="flex items-center justify-end font-semibold text-pink-600"
+              >
+                <svgr-mock
+                  classname="mr-2 w-[14px] h-[14px]"
+                />
+                 
+                Close
+              </div>
+              <span />
+            </button>
+            <div
+              class="flex flex-col p-8 pt-12 gap-2 justify-between items-start"
+            >
+              <div
+                class="text-base"
+              >
+                <h2
+                  class="text-3xl font-bold mb-3 text-blue-800 md:mb-4 md:text-5xl"
+                >
+                  You’re about to leave
+                </h2>
+                <p
+                  class="mb-6 md:mb-8"
+                  data-testid="paragraph"
+                >
+                  We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.
+                </p>
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  Are you sure you want to leave?
+                </p>
+                <div
+                  class="mt-10 mb-6 md:flex"
+                >
+                  <a
+                    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 block w-full mb-4 text-center md:mr-4 md:inline-flex md:text-left md:mb-0 md:w-auto"
+                    data-testid="logout-yes"
+                    href="/en/you-have-exited-the-pensions-dashboard"
+                  >
+                    Yes, exit the Dashboard
+                  </a>
+                  <button
+                    class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button w-full md:w-auto"
+                    data-testid="logout-no"
+                    type="submit"
+                  >
+                    <span />
+                    Cancel
+                    <span />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </div>
+  </div>
+</header>
+`;

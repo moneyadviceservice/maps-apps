@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailsContactTable renders correctly 1`] = `
+<div>
+  <div
+    class="mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    >
+      pages.pension-details.pension-provider.heading
+    </h2>
+    <table
+      class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+      data-testid="table-section-content"
+    >
+      <tbody
+        class="max-md:block"
+      >
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            pages.pension-details.pension-provider.provider
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+          >
+            Pension Admin Highland
+          </td>
+        </tr>
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            common.contact.website
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+          >
+            <div>
+              <a
+                class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none break-all"
+                href="https://www.highlandadmin.co.uk"
+                target="_blank"
+              >
+                https://www.highlandadmin.co.uk
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  classname="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            pages.pension-details.pension-provider.preferred
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+            data-testid="preferred-contact-methods"
+          >
+            common.contact.website
+            , 
+            common.contact.email
+          </td>
+        </tr>
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            common.contact.email
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+            data-testid="contact-method-email"
+          >
+            <div>
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none break-all"
+                href="mailto:mastertrust@highlandadmin.com"
+              >
+                mastertrust@highlandadmin.com
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            common.contact.telephone
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+            data-testid="contact-method-phone"
+          >
+            <div>
+              Main telephone: +44 800873434
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="max-md:block border-b-1 border-b-slate-400"
+        >
+          <td
+            class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+          >
+            common.contact.address
+          </td>
+          <td
+            class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+            data-testid="contact-method-address"
+          >
+            <div
+              class="leading-7"
+            >
+              <p>
+                Pension Admin Highland
+              </p>
+              <p>
+                1 Travis Avenue
+              </p>
+              <p>
+                Main Street
+              </p>
+              <p>
+                Liverpool
+              </p>
+              <p>
+                M16 0QG
+              </p>
+              <p>
+                United Kingdom
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

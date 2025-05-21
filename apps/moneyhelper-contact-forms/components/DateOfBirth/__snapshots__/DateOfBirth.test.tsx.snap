@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateOfBirth Component renders the component with no errors 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="date-of-birth-title"
+>
+  components.date-of-birth.title
+</h1>
+`;
+
+exports[`DateOfBirth Component renders the generic error for dates when there is an error 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="date-of-birth-title"
+>
+  components.date-of-birth.title
+</h1>
+`;

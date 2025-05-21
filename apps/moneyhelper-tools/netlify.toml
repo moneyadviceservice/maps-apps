@@ -1,0 +1,13 @@
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[dev]
+  framework = "next"
+  targetPort = 4300
+  port = 8888

@@ -1,0 +1,745 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryTotal component renders correctly 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £200
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spare cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders negative 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,200
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-red-600 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Overspend
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £200
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders neutral 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-400 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Zero balance
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £0
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders with Estimate 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none w-full h-full mb-2 py-5 px-4 bg-gray-100 rounded-none border-8 border-y-0 rounded-bl-lg border-l-yellow-700 text-black"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Estimated Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none w-full h-full mb-2 py-5 px-4 bg-gray-100 rounded-none border-8 border-y-0 rounded-bl-lg border-l-yellow-700 text-black"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Estimated Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £200
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none w-full h-full mb-2 py-5 px-4 bg-green-700 rounded-none border-8 border-y-0 rounded-bl-lg border-l-yellow-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Estimated Spare Cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders with children 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £200
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spare cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    class="flex justify-center px-1 mt-6 mb-4"
+  >
+    <button>
+      Reset the calculator
+    </button>
+  </div>
+</div>
+`;
+
+exports[`SummaryTotal component renders with decrease 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,400
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your budget now
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,100
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your new budget
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <span
+            class="inline-flex"
+          >
+            <span
+              class="flex items-center gap-2 flex-row-reverse"
+            >
+              <b>
+                £980.00
+              </b>
+              <span
+                class="inline-block border-solid border-x-transparent border-t-[13px] border-x-[8px] border-b-0 border-t-green-700"
+              />
+            </span>
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spare cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders with dropdown 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <div
+    class="px-6 pt-0 pb-4"
+  >
+    <div
+      class="relative block focus-within:border-purple-600 border-transparent border focus-within:rounded focus-within:shadow-select-focus"
+    >
+      <span
+        class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-pink-600 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+      >
+        <svgr-mock
+          classname="h-full"
+        />
+      </span>
+      <select
+        class="print:p-1 text-gray-500 border-gray-400 border-y border-l w-full outline-none block text-md h-10 pl-3 pr-12 bg-white rounded focus:border-white tool-dd"
+        name="divisor"
+      >
+        <option
+          selected=""
+          value="1"
+        >
+          Per month
+        </option>
+        <option
+          value="12"
+        >
+          Per year
+        </option>
+      </select>
+    </div>
+  </div>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,000
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spending
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £200
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spare cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`SummaryTotal component renders with increase 1`] = `
+<div
+  class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pt-3 pb-4"
+>
+  <table
+    class="w-full border-collapse"
+  >
+    <thead
+      class="sr-only"
+    >
+      <tr>
+        <th
+          class="hidden"
+        />
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="flex flex-col mx-1"
+    >
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your income
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,400
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your budget now
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £1,100
+          </b>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Your new budget
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <span
+            class="inline-flex"
+          >
+            <span
+              class="flex items-center gap-2 flex-row-reverse"
+            >
+              <b>
+                £1,100.00
+              </b>
+              <span
+                class="inline-block border-solid border-x-transparent border-b-[13px] border-x-[8px] border-t-0 border-b-red-700"
+              />
+            </span>
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+        data-testid="summary-total-item-value"
+      >
+        <th
+          class="text-lg font-normal"
+        >
+          Spare cash
+        </th>
+        <td
+          class="text-md"
+          data-testid="item-value"
+        >
+          <b>
+            £800
+          </b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

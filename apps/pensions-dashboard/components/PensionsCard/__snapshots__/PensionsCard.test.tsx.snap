@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionsCard renders confirmed card correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-blue-800 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-blue-800 flex items-center px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      components.pension-card.type.SP
+    </h3>
+    <div
+      class="px-6 pt-5 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-800 font-bold flex gap-2 my-0 items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <div
+        class="pb-4 mt-4 border-b-1 border-slate-400"
+      >
+        <img
+          alt="site.hm-gov-logo-alt"
+          data-nimg="1"
+          decoding="async"
+          height="28"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="188"
+        />
+      </div>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.estimated-income
+        :
+      </p>
+      <p
+        class="mb-4 pb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-monthly-amount"
+      >
+        <strong
+          class="mr-2 text-[24px]"
+        >
+          --
+        </strong>
+        common.a-month
+      </p>
+      <a
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+        data-testid="details-link"
+        href="/en/pension-details/12345"
+      >
+        common.details-link
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders confirmed no income card correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-400 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-400 flex items-center px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[16px] h-[16px] mr-2"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-6 pt-5 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-800 font-bold flex gap-2 my-0 items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <div
+        class="flex gap-3 my-5"
+      >
+        <svgr-mock
+          classname="w-[30px] h-[30px] shrink-0 fill-gray-800"
+          fill="true"
+        />
+        <p
+          class="mb-0 text-gray-400"
+          data-testid="pension-card-unavailable-reason"
+        >
+          data.pensions.unavailable-reasons.DCHA
+        </p>
+      </div>
+      <a
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+        data-testid="details-link"
+        href="/en/pension-details/12345"
+      >
+        common.details-link
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders pending card for NEW correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-400 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-400 flex items-center px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[16px] h-[16px] mr-2"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-6 pt-5 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-800 font-bold flex gap-2 my-0 items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <div
+        class="flex gap-3 my-5"
+      >
+        <svgr-mock
+          classname="w-[30px] h-[30px] shrink-0 fill-gray-800"
+          fill="true"
+        />
+        <p
+          class="mb-0 text-gray-400"
+          data-testid="pension-card-unavailable-reason"
+        >
+          data.pensions.unavailable-reasons.NEW_MATCHTYPE
+        </p>
+      </div>
+      <a
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+        data-testid="details-link"
+        href="/en/pension-details/12345"
+      >
+        common.details-link
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders pending card for SYS correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-400 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-400 flex items-center px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[16px] h-[16px] mr-2"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-6 pt-5 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-800 font-bold flex gap-2 my-0 items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="mt-2 mb-0 text-gray-400"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <div
+        class="flex gap-3 my-5"
+      >
+        <svgr-mock
+          classname="w-[30px] h-[30px] shrink-0 fill-gray-800"
+          fill="true"
+        />
+        <p
+          class="mb-0 text-gray-400"
+          data-testid="pension-card-unavailable-reason"
+        >
+          data.pensions.unavailable-reasons.SYS_MATCHTYPE
+        </p>
+      </div>
+      <a
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0"
+        data-testid="details-link"
+        href="/en/pension-details/12345"
+      >
+        common.details-link
+      </a>
+    </div>
+  </div>
+</div>
+`;

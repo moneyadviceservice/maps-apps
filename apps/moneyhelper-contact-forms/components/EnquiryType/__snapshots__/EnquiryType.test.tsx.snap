@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnquiryType Component does not render error message when there is no error 1`] = `
+<div>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="enquiry-type-title"
+  >
+    components.enquiry-type.title
+  </h1>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        class=""
+        data-testid="question-radio"
+      >
+        <div
+          class="mt-3"
+        >
+          <div
+            class="relative flex flex-wrap items-center text-base"
+            data-testid="radio-button"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              id="flow-0"
+              name="flow"
+              required=""
+              type="radio"
+              value="pension-retirement"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+              for="flow-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`EnquiryType Component renders component correctly 1`] = `
+<div>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="enquiry-type-title"
+  >
+    components.enquiry-type.title
+  </h1>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        class=""
+        data-testid="question-radio"
+      >
+        <div
+          class="mt-3"
+        >
+          <div
+            class="relative flex flex-wrap items-center text-base"
+            data-testid="radio-button"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              id="flow-0"
+              name="flow"
+              required=""
+              type="radio"
+              value="pension-retirement"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+              for="flow-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`EnquiryType Component renders error message when there is an error 1`] = `
+<div>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="enquiry-type-title"
+  >
+    components.enquiry-type.title
+  </h1>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <p
+        class="mb-4 text-red-700"
+        data-testid="flow-error"
+        id="flow-error"
+      >
+        components.enquiry-type.form.flow.error
+      </p>
+      <div
+        class=""
+        data-testid="question-radio"
+      >
+        <div
+          class="mt-3"
+        >
+          <div
+            class="relative flex flex-wrap items-center text-base"
+            data-testid="radio-button"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              id="flow-0"
+              name="flow"
+              required=""
+              type="radio"
+              value="pension-retirement"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+              for="flow-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`EnquiryType Component renders title and radio button labels 1`] = `
+<div>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="enquiry-type-title"
+  >
+    components.enquiry-type.title
+  </h1>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        class=""
+        data-testid="question-radio"
+      >
+        <div
+          class="mt-3"
+        >
+          <div
+            class="relative flex flex-wrap items-center text-base"
+            data-testid="radio-button"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              id="flow-0"
+              name="flow"
+              required=""
+              type="radio"
+              value="pension-retirement"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+              for="flow-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`EnquiryType Component renders title and radio button labels 2`] = `
+<div>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="enquiry-type-title"
+  >
+    components.enquiry-type.title
+  </h1>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        class=""
+        data-testid="question-radio"
+      >
+        <div
+          class="mt-3"
+        >
+          <div
+            class="relative flex flex-wrap items-center text-base"
+            data-testid="radio-button"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              id="flow-0"
+              name="flow"
+              required=""
+              type="radio"
+              value="pension-retirement"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+              for="flow-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;

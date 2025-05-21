@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterSection matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="t-filter-section"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold"
+    >
+      Test Title
+    </h5>
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+        />
+        <div
+          class="hidden group-open:block"
+        >
+          Cuddio diffiniadau
+        </div>
+        <div
+          class="group-open:hidden block"
+          data-testid="summary-block-title"
+        >
+          Dangos diffiniadau
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+      />
+    </details>
+    <fieldset
+      class="mt-3"
+    >
+      <legend
+        class="sr-only"
+      >
+        Test Title
+      </legend>
+      <div
+        class="grid space-y-4 sm:grid-cols-2 lg:block"
+      />
+    </fieldset>
+  </div>
+</DocumentFragment>
+`;

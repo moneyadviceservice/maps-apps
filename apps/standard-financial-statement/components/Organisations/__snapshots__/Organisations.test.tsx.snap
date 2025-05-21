@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisations component renders search input, select, and table 1`] = `
+<div>
+  <form
+    class="my-6"
+    method="GET"
+  >
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-4"
+    >
+      <div>
+        <input
+          data-testid="search-input"
+          value=""
+        />
+      </div>
+      <div>
+        <select
+          data-testid="select-input"
+        >
+          <option
+            value=""
+          >
+            Select
+          </option>
+          <option
+            value="type1"
+          >
+            Type 1
+          </option>
+        </select>
+      </div>
+    </div>
+    <noscript />
+  </form>
+  <p
+    class="mb-4 text-blue-600 font-bold text-xl"
+    data-testid="paragraph"
+  >
+    1
+     
+    organisations
+  </p>
+  <table
+    class="w-full border-collapse"
+    id="table"
+  >
+    <thead>
+      <tr
+        class="text-left border-b font-normal bg-blue-600 text-white align-top"
+      >
+        <th
+          class="p-3 font-normal"
+        >
+          Organisation Name
+        </th>
+        <th
+          class="p-3 font-normal"
+        >
+          Organisation Type
+        </th>
+        <th
+          class="p-3 font-normal"
+        >
+          Membership code number
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b even:bg-gray-50"
+      >
+        <td
+          class="p-3"
+        >
+          Test Org
+        </td>
+        <td
+          class="p-3"
+        >
+          Test Type
+        </td>
+        <td
+          class="p-3"
+        >
+          123
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form
+    action="undefined#table"
+    method="GET"
+  >
+    <input
+      name="name"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="type"
+      type="hidden"
+      value=""
+    />
+    <div
+      class="flex justify-between items-center p-4"
+    >
+      <button
+        class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button disabled:opacity-0 text-magenta-700 font-semibold"
+        data-testid="prev-button"
+        disabled=""
+        name="page"
+        type="submit"
+        value="0"
+      >
+        <span>
+          <chevron-left.svg
+            classname="fill-magenta-700 [&_path]:magenta-700"
+          />
+        </span>
+        Previous
+        <span />
+      </button>
+      <span
+        class="text-magenta-700 pr-4"
+      >
+        Page
+         
+        1
+         
+        of
+         
+        1
+      </span>
+      <button
+        class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button disabled:opacity-0 text-magenta-700 font-semibold"
+        data-testid="next-button"
+        disabled=""
+        name="page"
+        type="submit"
+        value="2"
+      >
+        <span />
+        Next
+        <span>
+          <chevron-right.svg
+            classname="fill-magenta-700 [&_path]:fill-magenta-700"
+          />
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;

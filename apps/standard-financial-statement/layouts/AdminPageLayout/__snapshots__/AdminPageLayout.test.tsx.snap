@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasePageLayout renders correctly 1`] = `
+<div>
+  <div
+    id="top"
+  >
+    <header
+      data-testid="admin-header"
+    >
+      <a
+        class="sr-only focus:not-sr-only focus:bg-yellow-200 focus:border-b-4 focus:border-b-blue-800 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+        href="#main"
+      >
+        Skip to content
+      </a>
+      <div
+        class="relative bg-blue-600 print:hidden"
+      >
+        <div
+          class="container-auto flex items-center justify-center max-w-[1272px]"
+        >
+          <a
+            aria-label="SFS Admin"
+            class="max-h-[64px] max-w-[116px] lg:max-w-[186px] lg:max-h-[102px]"
+            href="/admin"
+          >
+            <img
+              alt="SFS"
+              data-nimg="1"
+              decoding="async"
+              height="0"
+              loading="lazy"
+              src="/_next/image?url=%2Ftest.png&w=384&q=75"
+              srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+              style="color: transparent;"
+              width="186"
+            />
+          </a>
+          <div
+            class="items-center hidden ml-auto lg:flex"
+          >
+            <nav
+              data-testid="admin-nav"
+            >
+              <ul
+                class="flex items-center space-x-4 "
+              >
+                <li
+                  class="flex items-center"
+                >
+                  <a
+                    class="gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none ml-2 flex items-center text-white no-underline, text-sm"
+                    href="/profile"
+                    title=""
+                  >
+                    <div
+                      class="flex items-center gap-2"
+                    >
+                      <profile.svg
+                        class="fill-white [&_g]:fill-white"
+                      />
+                      <div
+                        class="flex flex-col leading-tight"
+                      >
+                        <div
+                          class="font-bold"
+                        >
+                          Joe Blogs
+                        </div>
+                        <div>
+                          email@domain.com
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="flex items-center"
+                >
+                  <a
+                    class="gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none ml-2 flex items-center text-white"
+                    href="/logout"
+                    title=""
+                  >
+                    Sign out
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="container-auto pb-8 max-w-[1272px] bg-right mt-8"
+    >
+      test content
+    </div>
+  </div>
+</div>
+`;

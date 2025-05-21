@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea Component renders with a character counter 1`] = `
+<textarea
+  aria-invalid="false"
+  aria-required="false"
+  class="border-gray-400 w-full px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field min-h-[312px] resize"
+  id="test-textarea"
+  maxlength="100"
+  minlength="0"
+/>
+`;
+
+exports[`TextArea Component renders with a default value 1`] = `
+<textarea
+  aria-invalid="false"
+  aria-required="false"
+  class="border-gray-400 w-full px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field min-h-[312px] resize"
+  id="test-textarea"
+  maxlength="0"
+  minlength="0"
+>
+  Default Value
+</textarea>
+`;
+
+exports[`TextArea Component renders with a hint 1`] = `
+<p
+  class="mb-4 text-gray-400"
+  data-testid="test-textarea-hint"
+>
+  This is a hint
+</p>
+`;
+
+exports[`TextArea Component renders with a label 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Label
+</label>
+`;
+
+exports[`TextArea Component renders with an error message 1`] = `
+<p
+  class="mb-4 text-red-700"
+  data-testid="test-textarea-error"
+  id="test-textarea-error"
+>
+  This is an error
+</p>
+`;
+
+exports[`TextArea Component renders with both hint and error message 1`] = `
+<p
+  class="text-gray-400 mb-2"
+  data-testid="test-textarea-hint"
+>
+  This is a hint
+</p>
+`;

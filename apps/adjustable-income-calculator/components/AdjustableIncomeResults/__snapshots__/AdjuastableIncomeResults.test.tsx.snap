@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdjustableIncomeResults should render correctly 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl>
+      <dt
+        class="mb-2 font-medium"
+      >
+        Based on what you’ve told us, if you use your
+         
+        <span>
+          £100,000
+        </span>
+         
+        pension pot to take an adjustable income, you could get:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £25,000
+        </span>
+         
+        tax free
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        and
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        a monthly income of
+         
+        <span>
+          £325
+        </span>
+         
+        until you’re
+         
+        <span>
+          85
+        </span>
+      </dd>
+    </dl>
+    <div
+      class="mt-8"
+    >
+      <ul
+        class="list-disc pl-6"
+      >
+        <li
+          class="mb-2"
+        >
+          Average life expectancy for those aged 55 is mid-to-late 80s. A monthly income of £325 could last until you’re 85, though you could live longer.
+        </li>
+        <p>
+          Callout results message
+        </p>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

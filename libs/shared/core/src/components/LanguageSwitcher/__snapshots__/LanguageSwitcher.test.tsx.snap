@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSwitcher component renders correctly 1`] = `
+<nav
+  aria-label="Language switcher"
+  class="hidden md:block absolute right-[70px]"
+  data-testid="test-component"
+>
+  <ul>
+    <li
+      class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+    >
+      <span
+        aria-current="true"
+        class="p-2 px-4 text-white"
+      >
+        English
+      </span>
+    </li>
+    <li
+      class="inline-block"
+    >
+      <a
+        class="group p-2 px-4 inline-flex items-center gap-2 text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="/cy"
+        hreflang="cy"
+        lang="cy"
+        rel="alternate"
+      >
+        <span
+          class="sr-only"
+        >
+          Newid yr iaith ir Gymraeg
+        </span>
+        <span
+          aria-hidden="true"
+          class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+        >
+          Cymraeg
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

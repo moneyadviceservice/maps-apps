@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClaimingYourStatePension Component renders component correctly 1`] = `
+<div>
+  <div
+    class="mt-8"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 pb-0"
+      data-testid="information-callout"
+    >
+      <h4
+        class="text-xl md:text-2xl text-gray-800 font-bold flex flex-row items-center gap-[18px] mb-6"
+      >
+        <svgr-mock
+          classname="text-teal-600/75 size-8 shrink-0"
+        />
+        pages.pension-details.claiming-your-state-pension.heading
+      </h4>
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-tick_green [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] m-1 mb-2"
+        data-testid="rich-text"
+      >
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="list-disc marker:text-blue-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4"
+                data-testid="paragraph"
+              >
+                item1
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4"
+                data-testid="paragraph"
+              >
+                item2
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4"
+                data-testid="paragraph"
+              >
+                item3
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

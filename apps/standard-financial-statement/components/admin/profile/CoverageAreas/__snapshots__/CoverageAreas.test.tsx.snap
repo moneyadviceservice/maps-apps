@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoverageAreas CoverageAreas component in edit mode renders default regions 1`] = `
+<div>
+  <div
+    class="container-auto overflow-hidden border rounded-md t-refine-search border-slate-300 mb-8 p-0"
+  >
+    <div
+      class=" w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300"
+    >
+      Coverage areas
+    </div>
+    <div
+      data-testid="checkbox-group"
+    >
+      Mocked CheckboxGroup - default keys:
+       
+      wales, scotland
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CoverageAreas component in read mode matches snapshot 1`] = `
+<div>
+  <div
+    class="container-auto overflow-hidden border rounded-md t-refine-search border-slate-300 mb-8 p-0"
+  >
+    <div
+      class=" w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300"
+    >
+      Coverage areas
+    </div>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-6"
+    >
+      <div
+        class="flex items-center space-x-2"
+        data-testid="coverage-item"
+      >
+        <tick-green.svg
+          classname="w-4"
+        />
+        <span
+          class="font-bold"
+        >
+          Scotland
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

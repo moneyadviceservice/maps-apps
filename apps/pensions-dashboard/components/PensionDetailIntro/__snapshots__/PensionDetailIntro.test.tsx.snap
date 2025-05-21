@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailIntro renders correctly 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined contribution pension. You’ve built up -- in this pension pot. This could give you an income of £-- a month from the pension retirement date of --.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with DB data with an estimate 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined benefit workplace pension. The amount you’re paid is based on your salary and years you’ve been a scheme member. This could give you an income of £-- a month from the pension retirement date of --.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with DC and pension group GREEN_NO_INCOME 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined contribution pension. At the moment, we cannot provide an estimate at retirement because your provider needs more time to calculate an estimated income. This can take 3 working days. Check back again soon.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with DC and pension group GREEN_NO_INCOME and WU unavailableCode 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined contribution pension. At the moment, we cannot provide an estimate at retirement. Contact Pension For Everyone: pensionAdministrator.name and give them your reference number. They'll help you resolve any issues with this pension.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with DC and pension group YELLOW 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined contribution pension. At the moment, we cannot provide an estimate at retirement because your provider needs more time to calculate an estimated income. This can take 3 working days. Check back again soon.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with DC data with an estimate 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      This is a defined contribution pension. You’ve built up -- in this pension pot. This could give you an income of £-- a month from the pension retirement date of --.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailIntro renders correctly with State Pension data 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      You will reach State Pension age on --. Your forecast is £-- a month.
+    </p>
+  </div>
+</div>
+`;

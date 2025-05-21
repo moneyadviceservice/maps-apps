@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutScams Component renders component correctly 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="about-scams-title"
+>
+  components.about-scams.title
+</h1>
+`;

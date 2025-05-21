@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactDetails renders correctly with errors 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="contact-details-title"
+>
+  components.contact-details.title
+</h1>
+`;
+
+exports[`ContactDetails renders the component with no errors 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="contact-details-title"
+>
+  components.contact-details.title
+</h1>
+`;

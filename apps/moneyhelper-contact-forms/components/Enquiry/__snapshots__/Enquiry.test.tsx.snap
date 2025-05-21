@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Enquiry Component renders the component with title and form 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="enquiry-title"
+>
+  components.enquiry.title
+</h1>
+`;
+
+exports[`Enquiry Component renders with errors 1`] = `
+<h1
+  class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+  data-testid="enquiry-title"
+>
+  components.enquiry.title
+</h1>
+`;

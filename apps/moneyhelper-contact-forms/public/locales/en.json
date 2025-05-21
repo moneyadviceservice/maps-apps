@@ -1,0 +1,145 @@
+{
+  "site": {
+    "title": "Money Helper Contact Form",
+    "seoTitle": "Money Helper Tools",
+    "back": "Back",
+    "breadcrumbs": {
+      "step1": "Home",
+      "step2": "Contact us",
+      "step3": "Free money and pensions guidance"
+    }
+  },
+  "layout": {
+    "title": "Free money and pensions guidance",
+    "content": "We’ll respond as soon as we can, but this can take over five working days. For a quicker reply, [use our webchat](https://www.moneyhelper.org.uk/en/pensions-chat) between 9am and 5pm, Monday to Friday.",
+    "money-management": {
+      "title": "Money management"
+    },
+    "scams": {
+      "title": "Concerns about financial scams, fraud and mis-selling"
+    }
+  },
+  "components": {
+    "guidance": {
+      "title": "Get in touch with our experts",
+      "intro": "Use this form to ask for information and guidance. We do not provide regulated financial advice.",
+      "content": "We offer free and impartial information and guidance to help you make the most of your money and pensions. Our service is designed to support you in making your own informed decisions based on your circumstances. Our specialists may ask you about your personal and financial circumstances, to tailor the guidance for you.\n\nWe don’t give legal or regulated financial advice or recommend specific financial products because we aren’t regulated or authorised by the Financial Conduct Authority to do so. This means we can’t tell you what the best option is for you, or what to do with your money or pension.\n\nIf you’re looking for personalised money or pensions advice or specific product recommendations, you’ll need to see a regulated financial adviser or seek legal advice.\n\nDon’t tell us any of your banking or financial details, your National Insurance number or other sensitive personal information. As an impartial arms-length body, we don’t have access to your banking or pensions records. See our [Privacy Notice](/) for more information about your rights, as well as what data we collect and store."
+    },
+    "enquiry-type": {
+      "title": "What kind of enquiry do you have?",
+      "form": {
+        "flow": {
+          "options": [
+            {
+              "text": "Money management",
+              "value": "money-management"
+            },
+            {
+              "text": "Concern about financial scams, fraud or mis-selling",
+              "value": "scams"
+            }
+          ],
+          "error": "Please select the type of enquiry you would like to make."
+        }
+      }
+    },
+    "name": {
+      "title": "What is your name?",
+      "form": {
+        "first-name": {
+          "label": "First name",
+          "error": "Please type your first name"
+        },
+        "last-name": {
+          "label": "Last name",
+          "error": "Please type your last name"
+        }
+      }
+    },
+    "date-of-birth": {
+      "title": "When were you born?",
+      "intro": "Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960",
+      "form": {
+        "day": {
+          "label": "Day"
+        },
+        "month": {
+          "label": "Month"
+        },
+        "year": {
+          "label": "Year"
+        },
+        "generic": {
+          "error": "Please enter a valid date"
+        }
+      },
+      "expandable-section": {
+        "title": "Why are we asking this?",
+        "content": "Our guidance regarding your money or pension options available may be different depending upon your age"
+      }
+    },
+    "contact-details": {
+      "title": "What are your contact details?",
+      "form": {
+        "email": {
+          "label": "Email address",
+          "hint": "For example name@example.co.uk. Don’t use a shared email address.",
+          "error": "Please enter a valid email address"
+        },
+        "phone-number": {
+          "label": "Phone number (optional)",
+          "hint": "For example +44 79555 55555",
+          "error": "Please enter a valid phone number"
+        },
+        "post-code": {
+          "label": "Home post code (optional)",
+          "hint": "For example EC1N 2TD",
+          "error": "Please enter a valid postcode"
+        }
+      },
+      "expandable-section": {
+        "title": "Why are we asking this?",
+        "content": "Email and phone number allows us to reply to your enquiry.\n\nPost code allows us to find specific services within your location. Additionally, this may be used to analyse trends by location."
+      }
+    },
+    "enquiry": {
+      "title": "What is your enquiry?",
+      "form": {
+        "text-area": {
+          "money-management": {
+            "label": "Tell us about your situation and the issues you need help resolving. We can find answers for you more quickly if you can give us as much detail about your circumstances as you can. It’s also helpful for us to know if you’re vulnerable in any way (e.g. struggling with mental health, having difficulty accessing support services, living with learning difficulties)."
+          },
+          "scams": {
+            "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus."
+          },
+          "error": "Your enquiry must be between 50 and 4,000 characters."
+        }
+      }
+    },
+    "confirmation": {
+      "callout": {
+        "title": "Thank you for your enquiry",
+        "content": "Your reference number is **{referenceNumber}**."
+      },
+      "content": "We aim to respond within five working days",
+      "what-happens-next": {
+        "title": "What happens next?",
+        "items": [
+          "We’ll send you an email to **{email}** to confirm that we’ve received your enquiry",
+          "If you don’t get this email, check your spam or junk mail folder"
+        ]
+      },
+      "privacy-notice": "Our [Privacy Notice](#) provides further information, together with your rights in respect of the data we hold on you."
+    },
+    "about-scams": {
+      "title": "About financial scams, fraud and mis-selling",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit."
+    }
+  },
+  "common": {
+    "continue": "Continue",
+    "error-callout": {
+      "title": "There was a problem"
+    }
+  }
+}

@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders as anchor 1`] = `
+<a
+  class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button"
+  data-testid="button"
+  href="https://www.moneyhelper.org.uk/en"
+>
+  <span />
+  Back
+  <span />
+</a>
+`;
+
+exports[`Button component renders chevron icon to the left correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span>
+    <svgr-mock
+      classname=""
+    />
+  </span>
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders chevron icon to the right correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span>
+    <svgr-mock
+      classname=""
+    />
+  </span>
+</button>
+`;
+
+exports[`Button component renders close variant correctly 1`] = `
+<button
+  class="p-1 absolute top-1 right-1 t-close-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Close
+  <span />
+</button>
+`;
+
+exports[`Button component renders correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders link variant correctly 1`] = `
+<button
+  class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Edit
+  <span />
+</button>
+`;
+
+exports[`Button component renders loading variant correctly 1`] = `
+<button
+  class="cursor-not-allowed border-slate-400 border bg-gray-100 text-gray-500 shadow-none t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 t-loading-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with analyticsClassName correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button analytics"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with className correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button class"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with type button correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="button"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with type reset correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="reset"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with type submit correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders primary variant with width correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-1/2"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders secondary variant correctly 1`] = `
+<button
+  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;
+
+exports[`Button component renders white link variant correctly 1`] = `
+<button
+  class="text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-whiteLink-button"
+  data-testid="button"
+  type="submit"
+>
+  <span />
+  Click me
+  <span />
+</button>
+`;

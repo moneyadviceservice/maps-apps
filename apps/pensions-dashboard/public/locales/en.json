@@ -1,0 +1,524 @@
+{
+  "site": {
+    "title": "MoneyHelper Pensions Dashboard",
+    "header": {
+      "logo": "Pensions Dashboard",
+      "links": {
+        "exit": "Exit and log out"
+      }
+    },
+    "footer": {
+      "common-links": {
+        "heading": "Manage your information",
+        "delegate-access": "Delegate access to a financial adviser",
+        "complaints": "Make a complaint",
+        "download-data": "Download my pension information (.pdf)",
+        "manage-consent": "Manage Consent"
+      }
+    },
+    "back": "Back",
+    "back-to-top": "Back to top",
+    "help-and-support-link-text": "Help and support",
+    "hm-gov-logo-alt": "H.M. Government logo",
+    "feedback-link": "https://forms.office.com/Pages/ResponsePage.aspx?id=MhDku86PQk26tUTiFRCIbQWmPIAsJ39Jk_BmPtD78jJUM1ZQTk8zMEFUVllJRTNHOTcwRkU3UENCVy4u",
+    "help-and-support": {
+      "title": "Help and support",
+      "feedback-link": "Give us feedback",
+      "card-1": {
+        "title": "Explore the Pensions Dashboard",
+        "description": "Don’t know where to start? Learn how to get the most out of your Pensions Dashboard and get answers for common questions."
+      },
+      "card-2": {
+        "title": "Understand your pensions",
+        "description": "Unsure about your next steps? Our free, impartial guidance can help you understand your pensions and plan for a comfortable retirement."
+      },
+      "card-3": {
+        "title": "Report a technical problem",
+        "description": "Is something not working? Tell us if there’s an issue with your Pensions Dashboard or if you’re experiencing any technical problems."
+      }
+    },
+    "logout": {
+      "about-to-leave": "You’re about to leave",
+      "we-will-redirect": "We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.",
+      "are-you-sure": "Are you sure you want to leave?",
+      "yes-exit": "Yes, exit the Dashboard"
+    }
+  },
+  "common": {
+    "a-month": "a month",
+    "a-year": "a year",
+    "date-unavailable": "Date unavailable",
+    "amount-unavailable": "£unavailable",
+    "scheme": "Scheme name",
+    "employer": "Employer",
+    "provider": "Pension provider",
+    "retirement-date": "Expected retirement date",
+    "estimated-income": "Estimated income",
+    "details-link": "See details",
+    "progress-complete": "complete",
+    "close": "Close",
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "contact": {
+      "preferred": "Best way to contact your provider with queries",
+      "telephone": "Phone number",
+      "telephone-main": "Main telephone",
+      "telephone-whatsapp": "WhatsApp",
+      "email": "Email",
+      "website": "Website",
+      "address": "Address",
+      "postal-address": "Postal Address",
+      "phone": "Phone"
+    },
+    "yes": "Yes",
+    "no": "No"
+  },
+  "pages": {
+    "error": {
+      "title": "Sorry we couldn’t find the page you’re looking for",
+      "intro": "We’re still building and improving our service. Something went wrong but we will try to fix it.",
+      "what-you-can-do": {
+        "title": "What you can do:",
+        "items": [
+          "Click the Back button in your browser to check if you’re in the right place.",
+          "[Report a technical problem.](/en/support/report-a-technical-problem)"
+        ]
+      }
+    },
+    "start": {
+      "hero-text": "See your pensions in one place with our free and secure government-backed service.",
+      "form-button": "Start",
+      "section-you-can": {
+        "title": "You can",
+        "items": [
+          "See your pensions all together in one place - including workplace pensions, personal pensions, your State Pension and any you might have lost.",
+          "See how much you could get when you retire."
+        ]
+      },
+      "section-how-it-works": {
+        "title": "How it works",
+        "items": [
+          "Prove your identity using **GOV.UK One Login**. You can set one up as part of this tool.",
+          "Enter your **National Insurance number**, if you know it. You can still proceed without one.",
+          "See all the pensions that match your details, including your estimated income when you retire.",
+          "Come back any time to view your Pensions Dashboard and latest figures."
+        ]
+      },
+      "section-you-need": {
+        "title": "You’ll need",
+        "items": [
+          "a mobile phone",
+          "your current address and any previous addresses you know",
+          "photo ID, if it’s your first time using GOV.UK One Login",
+          "your National Insurance number, if you know it"
+        ]
+      },
+      "disclosure": "We’ll share the information from GOV.UK One Login with pension providers to find your pensions. We will not store your data. Learn more in [our privacy notice](https://www.pensionsdashboardsprogramme.org.uk/privacy-notice).",
+      "some-pensions-may-not-be-included": {
+        "title": "Some pensions may not be included",
+        "text": "You will not see pension schemes that:",
+        "items": [
+          "you’ve already taken or received money from, including those in pension drawdown",
+          "have fewer than 100 scheme members, unless the provider connects to the Pensions Dashboard voluntarily",
+          "are not registered with the Pension Regulator",
+          "are administered outside Great Britain (England, Scotland and Wales)",
+          "were set up for the Secret Intelligence Service or the Security Service."
+        ],
+        "note": "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+      }
+    },
+    "welcome": {
+      "title": "Welcome to the MoneyHelper Pensions Dashboard",
+      "heading": "Important information",
+      "form-button": "I understand",
+      "intro": "Don't make decisions about your money and pensions based solely on the information in your Pensions Dashboard.",
+      "content": "The values are for illustration only and are based on some assumptions, such as your retirement age. Always check with your pension providers for the most up-to-date information, and consider speaking to a regulated financial adviser before making decisions about your pensions.",
+      "values": {
+        "title": "All pension values:",
+        "items": [
+          "are estimated and not guaranteed",
+          "are shown before tax, as pension tax depends on your income and circumstances",
+          "could go up or down based on factors such as investment performance and your contributions."
+        ]
+      },
+      "excluded": {
+        "title": "Some information may not be included.",
+        "items": [
+          "You will not see pensions you’ve already taken money from, pensions administered outside Great Britain or pensions with very few scheme members.",
+          "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+        ]
+      }
+    },
+    "searching-for-your-pension": {
+      "title": "Loading your pensions",
+      "description": "This can take up to {duration} seconds. Thanks for your patience.",
+      "refresh": "Do not refresh or close this page.",
+      "progress": "{progress}% complete",
+      "carousel": {
+        "heading": "Did you know?",
+        "text-1": "There are an estimated 3.3 million lost or unclaimed pension pots in the UK.",
+        "subtext-1": "(Lost Pensions Survey, Pensions Policy Institute, 2024)",
+        "alt-1": "Logo of a pound sign in a magnifying glass",
+        "text-2": "77% of savers don’t know how much they’ll need in their pension for a comfortable retirement.",
+        "subtext-2": "(Developing Retirement Living Standards, Pensions and Lifetime Savings Association, 2019)",
+        "alt-2": "Logo of an increasing graph and coins",
+        "text-3": "You usually need 35 qualifying years of National Insurance credits to get the full State Pension.",
+        "alt-3": "Logo of a briefcase"
+      }
+    },
+    "your-pension-breakdown": {
+      "page-title": "Your Pension Breakdown",
+      "title": "Your pensions",
+      "confirmed-pensions": {
+        "heading": "Pensions with an estimated income",
+        "accordion-title": "About these values",
+        "accordion-content": "Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up. See the pension details pages for more information."
+      },
+      "confirmed-pensions-no-income": {
+        "heading": "Pensions without an estimated income",
+        "accordion-title": "Why pensions might not show in your estimate",
+        "accordion-content": "Pensions still waiting for data from your pension providers and those with values less than £5,000 won’t show in your estimate. If any other pensions are missing, see [Help and support_target=_self](#help-and-support)."
+      },
+      "scam-warning": {
+        "heading": "Be aware of scams",
+        "description": {
+          "items": [
+            "Your Pensions Dashboard contains sensitive and valuable information. Think carefully before sharing your information with a third party.",
+            "Scammers play on our sense of fear. If you’ve been contacted without warning and told you need to move your pensions to a safe place, this is a scam."
+          ]
+        },
+        "action": {
+          "heading": "If you’re worried about scams, you can:",
+          "items": [
+            "Read our guidance on [spotting pension scams](https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam)",
+            "Call our financial crimes and scams unit on [0800 015 4402](tel:08000154402)"
+          ]
+        }
+      }
+    },
+    "pension-details": {
+      "title": "{name} summary",
+      "toolIntro": {
+        "estimate-DC": "This is a **{type}** pension. You’ve built up **{pot}** in this pension pot. This could give you an income of **{monthly}** a month from the pension retirement date of **{date}**.",
+        "estimate-DB": "This is a **{type}** workplace pension. The amount you’re paid is based on your salary and years you’ve been a scheme member. This could give you an income of **{monthly}** a month from the pension retirement date of **{date}**.",
+        "estimate-SP": "You will reach State Pension age on **{date}**. Your forecast is **{monthly}** a month.",
+        "no-estimate": "This is a **{type}** pension. At the moment, we cannot provide an estimate at retirement because {reason}",
+        "no-estimate-wu": "This is a **{type}** pension. At the moment, we cannot provide an estimate at retirement. {reason}"
+      },
+      "details": {
+        "title": "Pension details",
+        "current-value": "Current value",
+        "estimate-at-retirement": "Estimate at retirement",
+        "forecast": "Forecast",
+        "mobile-current": "Now",
+        "estimate-today": "Estimate today",
+        "mobile-retirement": "At retirement",
+        "annual-amount": "Annual amount",
+        "monthly-amount": "Monthly amount",
+        "pot-value": "Pot value",
+        "tax-free-lump-sum": "Tax-free lump sum",
+        "payable-date": "Payable date"
+      },
+      "pension-provider": {
+        "heading": "Contact your provider",
+        "provider": "Pension provider",
+        "preferred": "Preferred contact method"
+      },
+      "headings": {
+        "state-pension": "State Pension forecast",
+        "pot": "Pot value",
+        "employer": "Employer",
+        "employment-dates": "Dates of employment",
+        "plan-details": "Plan details",
+        "additional-data": "Additional data",
+        "other-details": "Other details"
+      },
+      "information": {
+        "about": {
+          "title": "About these values",
+          "description": "Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up."
+        },
+        "how-estimate-is-calculated": {
+          "title": "How your estimated income is calculated",
+          "dc": "Estimates for this defined contribution scheme are based on you buying a guaranteed income for life (an annuity), which starts paying from the scheme’s retirement date. They’re also based on the provider’s assumptions about inflation, investment performance, and whether you’re paying into the scheme.",
+          "db": "Estimates for this defined benefit pension are based on your salary and years you’ve been a scheme member, as well as the scheme’s retirement date. They’re also based on the provider’s assumptions about inflation and whether you’re paying into the scheme."
+        }
+      },
+      "status": {
+        "active": "This pension is active. This means it’s being paid into.",
+        "inactive": "This pension is inactive."
+      },
+      "claiming-your-state-pension": {
+        "heading": "Claiming your State Pension",
+        "items": [
+          "You won’t get your State Pension automatically - you have to claim it.",
+          "You’ll get a letter no later than two months before you reach State Pension age, telling you what to do. If you don’t get a letter, you can still make a claim."
+        ]
+      },
+      "other-details": {
+        "calculation-method": "Calculation method",
+        "amount-type": "Amount type",
+        "last-payment-date": "Last payment date",
+        "increase": "Increase",
+        "survivor-benefit": "Survivor benefit",
+        "safeguarded-benefit": "Safeguarded benefit",
+        "warning": "Warning"
+      },
+      "plan-details": {
+        "plan-reference": "Plan reference number",
+        "pension-start-date": "Pension start date",
+        "active-contributions": "Active contributions",
+        "employer-name": "Employer name",
+        "employer-status": "Employer status",
+        "retirement-date": "Pension retirement date",
+        "employment-start-date": "Employment start date",
+        "employment-end-date": "Employment end date",
+        "data-illustration-date": "Data illustration date",
+        "pension-origin": "Pension origin"
+      }
+    },
+    "pending-pensions": {
+      "title": "Pending pensions",
+      "description": "**You don't need to do anything.** These pensions are waiting for more information from your pension providers.\n\n They'll automatically show up in ‘Your pensions’ once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "Pensions that need action",
+      "description": "These pensions need you to **contact the pension provider**. \n\nThe provider may need more information to confirm a pension belongs to you, or there could be another issue with the pension they need to speak to you about.",
+      "card": {
+        "description": "Contact {pensionAdministrator} and give them your reference number. They’ll ask for your details and confirm whether this pension belongs to you.",
+        "reference": "Reference number",
+        "contact-heading-open": "Show contact details",
+        "contact-heading-close": "Hide contact details"
+      },
+      "scam-warning": {
+        "heading": "Be aware of scams",
+        "description": "A pension provider will **never contact you first** to ask for your personal information about a pension they say might belong to you. You must contact the pension provider with your reference number to confirm if a pension is yours."
+      }
+    },
+    "your-pension-search-results": {
+      "page-title": "Your Pension Search Results",
+      "title": "Pensions found",
+      "heading": "We found {totalPensions} pensions",
+      "heading-single": "We found {totalPensions} pension",
+      "channels": {
+        "confirmed": {
+          "title": "Your pensions",
+          "cta": "See your pensions"
+        },
+        "incomplete": {
+          "title": "Pending pensions",
+          "sub-title": "We’re waiting for more information from the pension provider(s). You don’t need to do anything.",
+          "cta": "See pending pensions"
+        },
+        "unconfirmed": {
+          "title": "Pensions that need you to contact the provider",
+          "sub-title": "Contact the pension provider(s). They’ll help resolve any issues.",
+          "cta": "Get contact details"
+        }
+      },
+      "common-links": {
+        "pensions-not-showing": "Are you expecting to see other pensions?"
+      }
+    },
+    "no-pensions-found": {
+      "title": "No pensions found",
+      "heading": "What you can do:",
+      "tooltip": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "items": [
+        "Check back later to see if your pensions are showing.",
+        "If you didn’t enter your National Insurance number, go back and enter it.",
+        "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "If you still cannot see your pensions, [report a technical problem](/en/support/report-a-technical-problem)."
+      ]
+    },
+    "pensions-not-showing": {
+      "title": "Pensions not showing",
+      "intro": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "heading": "What you can do:",
+      "items": [
+        "Check back later to see if your pensions are showing.",
+        "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to return to the start and sign in again with GOV.UK One Login.",
+        "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "If you know the name of your employer(s) or pension provider(s), contact them directly."
+      ]
+    },
+    "complaints": {
+      "title": "Complaints",
+      "content": "A page to register a complaint. \n\nNew Paragraph. Example markdown with *italic*, **bold**, and an external link to [a website](http://foo.bar)"
+    },
+    "download-data": {
+      "title": "Download Data",
+      "content": "A page to download data"
+    },
+    "manage-consent": {
+      "title": "Manage Consent",
+      "content": "A page to manage consent"
+    },
+    "manage-pensions": {
+      "title": "Manage Pensions"
+    },
+    "support": {
+      "back-text": "Exit help and support",
+      "callout": {
+        "title": "Not what you’re looking for?",
+        "content": "If you can’t find the answer you were looking for try our other guides or get in touch"
+      },
+      "explore-the-pensions-dashboard": {
+        "title": "Explore the Pensions Dashboard",
+        "link": "explore-the-pensions-dashboard",
+        "heading": "General questions",
+        "description": "Get support for common questions and learn how to make the most of your Pensions Dashboard."
+      },
+      "understand-your-pensions": {
+        "title": "Understand your pensions",
+        "link": "understand-your-pensions",
+        "heading": "General questions",
+        "description": "Get support for common questions about pensions.",
+        "further-guidance": {
+          "title": "Further guidance",
+          "description": "Whether you’re just starting to think about pensions or you’re about to retire, MoneyHelper has guidance to help you plan.",
+          "links": [
+            {
+              "title": "Pensions explained",
+              "text": "Starting a pension, types of pension, understanding pensions",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics"
+            },
+            {
+              "title": "State Pension",
+              "text": "How it works, what you might get, National Insurance",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension"
+            },
+            {
+              "title": "Pension problems and changes",
+              "text": "Complaints, financial help when retired, changes to schemes",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems"
+            },
+            {
+              "title": "Taking your pension",
+              "text": "Ways to draw your pension, when can you retire, Pension Wise appointments",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension"
+            },
+            {
+              "title": "Building your pension",
+              "text": "How much do you need, ways to build your pot, transferring and merging",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot"
+            },
+            {
+              "title": "Tax and pensions",
+              "text": "All guidance, including how to use the Pension Wise service",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement"
+            },
+            {
+              "title": "Tools",
+              "text": "Useful tools, including; Pension calculator, Find a retirement advisor and Money Midlife MOT",
+              "href": "https://www.moneyhelper.org.uk/en/tools-and-calculators"
+            }
+          ]
+        }
+      },
+      "report-a-technical-problem": {
+        "title": "Report a technical problem",
+        "link": "report-a-technical-problem",
+        "intro": "We are still building and improving our service. Please tell us what technical issue you are experiencing in as much detail as possible.",
+        "content": "Thanks for helping improve the MoneyHelper Pensions Dashboard."
+      }
+    }
+  },
+  "components": {
+    "unconfirmed-pensions-callout": {
+      "heading": "Important",
+      "description": "You have {number} pensions that need you to contact the provider."
+    },
+    "pension-card": {
+      "type": {
+        "DB": "Defined benefit pension",
+        "DC": "Defined contribution pension",
+        "SP": "State pension"
+      }
+    }
+  },
+  "data": {
+    "pensions": {
+      "unavailable-reasons": {
+        "ANO": "Your provider is waiting for information from a third party and needs more time to send us information. You do not to do anything at this point.",
+        "DB": "Placeholder text for code DB.",
+        "DBC": "Your provider needs more time to calculate an estimated income. This can take 10 working days. Check back again soon.",
+        "DCC": "Your provider needs more time to calculate an estimated income. This can take 3 working days. Check back again soon.",
+        "DCHA": "The value of this pension is less than £5,000. Pension providers can choose whether to send data for pensions under this amount.",
+        "DCHP": "The pension's retirement date is less than 2 years away. Contact your provider for your pension details.",
+        "DCSM": "Placeholder text for code DCSM.",
+        "MEM": "Placeholder text for code MEM.",
+        "NEW": "Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "NET": "Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "PPF": "The pension scheme is currently in a Pension Protection Fund assessment period. Contact your provider for your pension details.",
+        "TRN": "There's a transaction affecting the value of this pension. Contact your provider for the most up-to-date information.",
+        "WU": "Contact {pensionProvider} and give them your reference number. They'll help you resolve any issues with this pension.",
+        "SML": "The estimated income for this pension is less than £120 a year. No data will be available unless the pension value increases.",
+        "SYS_MATCHTYPE": "There's an issue with the data from your pension provider. You do not need to take any action at this point.",
+        "NEW_MATCHTYPE": "This is a new pension. Your provider needs more time to send us data."
+      },
+      "additional-types": {
+        "C_AND_C": "Costs and charges",
+        "SIP": "Statement of Investment Principles",
+        "IMP": "Implementation Statement",
+        "ANR": "Annual Report",
+        "SP": "Additional State Pension Information"
+      },
+      "calculation-method": {
+        "BS": "benefit-specific method based on pension provider/scheme rules",
+        "CBI": "cash balance illustration methodology from ASTM1 for calculating income fund only and/or benefit-specific method based on pension provider/scheme rules for calculating fund value",
+        "SMPI": "statutory money purchase illustration methodology from ASTM1"
+      },
+      "amount-type": {
+        "INC": "recurring income",
+        "INCL": "recurring income alternative calculated using the LEGACY pension provider/scheme basis",
+        "INCN": "recurring income alternative calculated using the NEW pension provider/scheme basis",
+        "CSH": "a separately accrued lump sum",
+        "CSHL": "a separately accrued lump sum alternative calculated using the LEGACY pension provider/scheme basis",
+        "CSHN": "a separately accrued lump sum alternative calculated using the NEW pension provider/scheme basis"
+      },
+      "employer-status": {
+        "C": "Current",
+        "H": "Historical"
+      },
+      "pension-origin": {
+        "A": "deferred annuity",
+        "PC": "pension provider - pension credit user",
+        "PM": "pension provider - active or deferred user",
+        "PT": "pension provider - deferred transfer in user",
+        "WC": "scheme - pension credit user",
+        "WM": "scheme - active or deferred user",
+        "WT": "scheme - deferred transfer in user"
+      },
+      "types": {
+        "DB": "defined benefit",
+        "DC": "defined contribution"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    }
+  },
+  "timeout": {
+    "keep-me-signed-in": "Keep me signed in",
+    "log-me-out": "Log me out",
+    "return-to-start": "Return to start page",
+    "been-inactive": "You’ve been inactive for a while",
+    "to-return-to-dashboard": "To return to your Pensions Dashboard, you’ll need to sign in again using GOV.UK One Login.",
+    "exited-the-dashboard": "You’ve exited the Pensions Dashboard",
+    "sign-in-again": "You’ll need to sign in again using GOV.UK One Login to view your pensions.",
+    "automatic-expiry": "Your Pensions Dashboard session automatically expires after {totalTimeout} minutes of inactivity. This is to protect your personal information.",
+    "protect-your-information": "This is to protect your personal information.",
+    "session-expired": "Your session has expired",
+    "session-will-timeout": "Your Pensions Dashboard session will time out after **{totalTimeout} minutes**.",
+    "modal-session-timeout": "Your Pensions Dashboard session will time out in ",
+    "minutes": "minutes",
+    "minute": "minute",
+    "seconds": "seconds",
+    "second": "second",
+    "what-did-you-think": "What did you think of this service?",
+    "takes-2-mins": "(Takes 2 minutes)"
+  }
+}

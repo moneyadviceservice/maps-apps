@@ -1,0 +1,1751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionPotCalculator component renders correctly cash in chunks 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much you could get
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="income"
+            >
+              What is your yearly income?
+            </label>
+            <p
+              aria-describedby="income"
+              class="text-base text-gray-400 mb-2"
+            >
+              Include money you get from work, State Pension and any other taxable income you have. Find out more information on
+               
+              <a
+                class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits"
+                target="_blank"
+              >
+                what other income is taxable (opens in new tab)
+              </a>
+            </p>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="What is your yearly income? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="income"
+                id="income"
+                inputmode="numeric"
+                name="income"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="chunk"
+            >
+              How much do you want to take as your first cash chunk?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much do you want to take as your first cash chunk? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="chunk"
+                id="chunk"
+                inputmode="numeric"
+                name="chunk"
+                type="text"
+                value="1,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Calculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly adjustable income 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much you could get
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="100,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="age"
+            >
+              What age do you want to take your money?
+            </label>
+            <div
+              class="flex"
+            >
+              <input
+                aria-label="What age do you want to take your money? In years."
+                class="tool-field w-full border pl-2 focus:outline-purple-700 focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+                data-testid="age"
+                id="age"
+                inputmode="numeric"
+                name="age"
+                type="text"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+              >
+                Years
+              </span>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          aria-live="polite"
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <dl>
+            <dt
+              class="mb-2 font-medium"
+            >
+              Based on what you’ve told us, if you use your
+               
+              <span>
+                £100,000
+              </span>
+               
+              pension pot to take an adjustable income, you could get:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £25,000
+              </span>
+               
+              tax free
+            </dd>
+            <dt
+              class="mb-2 font-medium"
+            >
+              and
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              a monthly income of
+               
+              <span>
+                £200
+              </span>
+               
+              until you’re
+               
+              <span>
+                93
+              </span>
+            </dd>
+          </dl>
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <fieldset
+              class="mb-4"
+            >
+              <label
+                class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+                for="updateMonth"
+              >
+                or try a different monthly income:
+              </label>
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+                >
+                  £
+                </span>
+                <input
+                  aria-label="or try a different monthly income, in pounds."
+                  aria-required="true"
+                  class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                  data-testid="updateMonth"
+                  id="updateMonth"
+                  inputmode="numeric"
+                  name="updateMonth"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="mt-8"
+          >
+            <ul
+              class="list-disc pl-6"
+            >
+              <li
+                class="mb-2"
+              >
+                Average life expectancy for those aged 55 is mid-to-late 80s. A monthly income of £200 could last until you’re 85, though you could live longer.
+              </li>
+              <li
+                class="mb-2"
+              >
+                You could pay Income Tax on your monthly income.
+              </li>
+              <li
+                class="mb-2"
+              >
+                This is an estimate based on the amount in your pot growing at a rate of about 3% per year — this may vary.
+              </li>
+              <li
+                class="mb-2"
+              >
+                No allowance has been made for inflation, you may wish to consider how this will affect the buying power of this income.
+              </li>
+              <li>
+                If you have a very large pot, your tax-free amount could be different. This depends on whether you’ve gone over the lifetime allowance (LTA), whether you’ve registered for LTA protection, whether you are liable for LTA tax charges, and whether you’ve already taken money from your pot.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly cash in chunks 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much you could get
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="income"
+            >
+              What is your yearly income?
+            </label>
+            <p
+              aria-describedby="income"
+              class="text-base text-gray-400 mb-2"
+            >
+              Include money you get from work, State Pension and any other taxable income you have. Find out more information on
+               
+              <a
+                class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits"
+                target="_blank"
+              >
+                what other income is taxable (opens in new tab)
+              </a>
+            </p>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="What is your yearly income? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="income"
+                id="income"
+                inputmode="numeric"
+                name="income"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="chunk"
+            >
+              How much do you want to take as your first cash chunk?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much do you want to take as your first cash chunk? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="chunk"
+                id="chunk"
+                inputmode="numeric"
+                name="chunk"
+                type="text"
+                value="1,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          aria-live="polite"
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <dl>
+            <dt
+              class="mb-2 font-medium"
+            >
+              If you take
+               
+              <span>
+                £1,000
+              </span>
+               
+              from your
+               
+              <span>
+                £10,000
+              </span>
+               
+              pot, you could get:
+            </dt>
+            <dd
+              class="mb-4"
+            >
+              <span
+                class="text-4xl font-bold"
+              >
+                £1,000
+              </span>
+            </dd>
+            <dt
+              class="mb-2 font-medium"
+            >
+              We estimate you'll pay:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span
+                class=" inline"
+              >
+                £0
+              </span>
+               
+              in tax
+            </dd>
+            <dt
+              class="mb-2 font-medium"
+            >
+              Leaving:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £9,000
+              </span>
+               
+              in your pot
+            </dd>
+          </dl>
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <fieldset
+              class="mb-4"
+            >
+              <label
+                class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+                for="updateChunk"
+              >
+                or try a different cash chunk:
+              </label>
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+                >
+                  £
+                </span>
+                <input
+                  aria-label="or try a different cash chunk, in pounds."
+                  aria-required="true"
+                  class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                  data-testid="updateChunk"
+                  id="updateChunk"
+                  inputmode="numeric"
+                  name="updateChunk"
+                  type="text"
+                  value="100"
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="mt-8 text-base"
+          >
+            <p>
+              This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly guaranteed income 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much your guaranteed income could be
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="100,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="age"
+            >
+              What age do you want to take your money?
+            </label>
+            <div
+              class="flex"
+            >
+              <input
+                aria-label="What age do you want to take your money? In years."
+                aria-required="true"
+                class="tool-field w-full border pl-2 focus:outline-purple-700 focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+                data-testid="age"
+                id="age"
+                inputmode="numeric"
+                name="age"
+                type="text"
+                value="57"
+              />
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+              >
+                Years
+              </span>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <dl>
+            <dt
+              class="mb-2 font-medium"
+            >
+              Based on what you’ve told us, if you use your
+               
+              <span>
+                £100,000
+              </span>
+               
+              pot in one go, you could get:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £25,000
+              </span>
+               
+              tax free
+            </dd>
+            <dt
+              class="mb-2 font-medium"
+            >
+              and get:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £4,700
+              </span>
+               
+              guaranteed annual taxable income, for the rest of your life
+            </dd>
+          </dl>
+          <div
+            class="mt-8 text-base"
+          >
+            <ul
+              class="list-disc pl-6"
+            >
+              <li
+                class="mb-2"
+              >
+                This estimate is for a single-life non-escalating annuity.
+              </li>
+              <li>
+                You may wish to choose a joint-life annuity that pays your spouse or partner after you die, or an enhanced annuity which pays more if you smoke or have a medical condition.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly leave pot untouched 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much your pot could grow
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="100,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="month"
+            >
+              How much can you pay in each month?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much can you pay in each month? In pounds."
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="month"
+                id="month"
+                inputmode="numeric"
+                name="month"
+                type="text"
+                value="100"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          aria-live="polite"
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <p>
+            Your pot could be worth this much over the next 5 years:
+          </p>
+          <table
+            class="table-auto w-full mb-6 my-4"
+          >
+            <caption
+              class="invisible h-0"
+            >
+              Estimated pot growth
+            </caption>
+            <thead>
+              <tr
+                class="border-t border-slate-400"
+              >
+                <th
+                  class="text-left py-2"
+                >
+                  Years left untouched
+                </th>
+                <th
+                  class="text-left py-2"
+                >
+                  Amount in your pot
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  1
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £104,200
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  2
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £108,526
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  3
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £112,982
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  4
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £117,571
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  5
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £122,298
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <fieldset
+              class="mb-4"
+            >
+              <label
+                class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+                for="updateMonth"
+              >
+                or try paying in a different amount each month:
+              </label>
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+                >
+                  £
+                </span>
+                <input
+                  aria-label="or try paying in a different amount each month, in pounds."
+                  aria-required="true"
+                  class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                  data-testid="updateMonth"
+                  id="updateMonth"
+                  inputmode="numeric"
+                  name="updateMonth"
+                  type="text"
+                  value="200"
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="mt-8 text-base"
+          >
+            <ul
+              class="list-disc pl-6"
+            >
+              <li
+                class="mb-2"
+              >
+                This is an estimate based on your whole pot growing at a rate of about 3% per year — this may vary.
+              </li>
+              <li
+                class="mb-2"
+              >
+                The amount in your pot will be affected by inflation and any fees your provider charges.
+              </li>
+              <li>
+                You must leave your whole pot — you can
+                '
+                t take just the 25% tax-free lump sum and leave the rest.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly take whole pot 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate what you’d get after tax
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="income"
+            >
+              What is your yearly income?
+            </label>
+            <p
+              aria-describedby="income"
+              class="text-base text-gray-400 mb-2"
+            >
+              Include money you get from work, State Pension and any other taxable income you have. Find out more information on
+               
+              <a
+                class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits"
+                target="_blank"
+              >
+                what other income is taxable (opens in new tab)
+              </a>
+            </p>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="What is your yearly income? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="income"
+                id="income"
+                inputmode="numeric"
+                name="income"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="10,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <dl>
+            <dt
+              class="mb-2 font-medium"
+            >
+              If you take your whole
+               
+              <span>
+                £10,000
+              </span>
+               
+              pot in one go, you could get:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £9,014
+              </span>
+            </dd>
+            <dt
+              class="mb-2 font-medium"
+            >
+              We estimate you'll pay:
+            </dt>
+            <dd
+              class="mb-4 text-4xl font-bold"
+            >
+              <span>
+                £986
+              </span>
+               
+              in tax
+            </dd>
+          </dl>
+          <div
+            class="mt-8 text-base"
+          >
+            <ul
+              class="list-disc pl-6"
+            >
+              <li
+                class="mb-2"
+              >
+                This calculation assumes you are entitled to 25% of your total pot as a tax-free lump sum.
+              </li>
+              <li>
+                This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component renders results correctly with no spacing 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-6 text-blue-800 md:mb-8"
+      >
+        Estimate how much your pot could grow
+      </h2>
+      <div
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      />
+      <form
+        action=""
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much is in your pot? In pounds."
+                aria-required="true"
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="pot"
+                id="pot"
+                inputmode="numeric"
+                name="pot"
+                type="text"
+                value="100,000"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+              for="month"
+            >
+              How much can you pay in each month?
+            </label>
+            <div
+              class="flex"
+            >
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+              >
+                £
+              </span>
+              <input
+                aria-label="How much can you pay in each month? In pounds."
+                class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                data-testid="month"
+                id="month"
+                inputmode="numeric"
+                name="month"
+                type="text"
+                value="100"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Recalculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension.
+             
+            <a
+              class="inline items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+              href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+              target="_blank"
+            >
+              Find a retirement adviser (opens in new tab)
+            </a>
+          </p>
+        </div>
+        <div
+          aria-live="polite"
+          id="results"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+          >
+            Your results
+          </h2>
+          <p>
+            Your pot could be worth this much over the next 5 years:
+          </p>
+          <table
+            class="table-auto w-full mb-6 my-4"
+          >
+            <caption
+              class="invisible h-0"
+            >
+              Estimated pot growth
+            </caption>
+            <thead>
+              <tr
+                class="border-t border-slate-400"
+              >
+                <th
+                  class="text-left py-2"
+                >
+                  Years left untouched
+                </th>
+                <th
+                  class="text-left py-2"
+                >
+                  Amount in your pot
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  1
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £104,200
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  2
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £108,526
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  3
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £112,982
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  4
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £117,571
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="border-t border-slate-400 last:border-b"
+              >
+                <td
+                  class="font-semibold py-2"
+                >
+                  5
+                </td>
+                <td
+                  class="font-semibold py-2"
+                >
+                  <span>
+                    £122,298
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            class=""
+            data-testid="errors"
+          >
+            <fieldset
+              class="mb-4"
+            >
+              <label
+                class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+                for="updateMonth"
+              >
+                or try paying in a different amount each month:
+              </label>
+              <div
+                class="flex"
+              >
+                <span
+                  aria-hidden="true"
+                  class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+                >
+                  £
+                </span>
+                <input
+                  aria-label="or try paying in a different amount each month, in pounds."
+                  aria-required="true"
+                  class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+                  data-testid="updateMonth"
+                  id="updateMonth"
+                  inputmode="numeric"
+                  name="updateMonth"
+                  type="text"
+                  value="100"
+                />
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="mt-8 text-base"
+          >
+            <ul
+              class="list-disc pl-6"
+            >
+              <li
+                class="mb-2"
+              >
+                This is an estimate based on your whole pot growing at a rate of about 3% per year — this may vary.
+              </li>
+              <li
+                class="mb-2"
+              >
+                The amount in your pot will be affected by inflation and any fees your provider charges.
+              </li>
+              <li>
+                You must leave your whole pot — you can
+                '
+                t take just the 25% tax-free lump sum and leave the rest.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

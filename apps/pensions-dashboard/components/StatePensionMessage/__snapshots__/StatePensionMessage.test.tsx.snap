@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatePensionMessage does not render if pension type is not state pension 1`] = `<div />`;
+
+exports[`StatePensionMessage renders English when no locale is provided 1`] = `
+<div>
+  <h2
+    class="md:text-4xl text-gray-800 mb-4 text-2xl font-bold"
+  >
+    pages.pension-details.headings.state-pension
+  </h2>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    State Pension Message English
+  </p>
+</div>
+`;
+
+exports[`StatePensionMessage renders correctly 1`] = `
+<div>
+  <h2
+    class="md:text-4xl text-gray-800 mb-4 text-2xl font-bold"
+  >
+    pages.pension-details.headings.state-pension
+  </h2>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    State Pension Message English
+  </p>
+</div>
+`;

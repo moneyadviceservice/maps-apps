@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeavePotUntouchedResults should render correctly with default props 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <p>
+      Your pot could be worth this much over the next 5 years:
+    </p>
+    <table
+      class="table-auto w-full mb-6 my-4"
+    >
+      <caption
+        class="invisible h-0"
+      >
+        Estimated pot growth
+      </caption>
+      <thead>
+        <tr
+          class="border-t border-slate-400"
+        >
+          <th
+            class="text-left py-2"
+          >
+            Years left untouched
+          </th>
+          <th
+            class="text-left py-2"
+          >
+            Amount in your pot
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="border-t border-slate-400 last:border-b"
+        >
+          <td
+            class="font-semibold py-2"
+          >
+            1
+          </td>
+          <td
+            class="font-semibold py-2"
+          >
+            <span>
+              £107,800
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="border-t border-slate-400 last:border-b"
+        >
+          <td
+            class="font-semibold py-2"
+          >
+            2
+          </td>
+          <td
+            class="font-semibold py-2"
+          >
+            <span>
+              £115,834
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="border-t border-slate-400 last:border-b"
+        >
+          <td
+            class="font-semibold py-2"
+          >
+            3
+          </td>
+          <td
+            class="font-semibold py-2"
+          >
+            <span>
+              £124,109
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="border-t border-slate-400 last:border-b"
+        >
+          <td
+            class="font-semibold py-2"
+          >
+            4
+          </td>
+          <td
+            class="font-semibold py-2"
+          >
+            <span>
+              £132,632
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="border-t border-slate-400 last:border-b"
+        >
+          <td
+            class="font-semibold py-2"
+          >
+            5
+          </td>
+          <td
+            class="font-semibold py-2"
+          >
+            <span>
+              £141,411
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <fieldset
+        class="mb-4"
+      >
+        <label
+          class="text-2xl font-medium text-gray-800 inline-flex mb-2"
+          for="updateMonth"
+        >
+          or try paying in a different amount each month:
+        </label>
+        <div
+          class="flex"
+        >
+          <span
+            aria-hidden="true"
+            class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+          >
+            £
+          </span>
+          <input
+            aria-label="or try paying in a different amount each month, in pounds."
+            aria-required="true"
+            class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+            data-testid="updateMonth"
+            id="updateMonth"
+            inputmode="numeric"
+            name="updateMonth"
+            type="text"
+            value="400"
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="mt-8 text-base"
+    >
+      <p>
+        Callout results message
+      </p>
+    </div>
+  </div>
+</div>
+`;

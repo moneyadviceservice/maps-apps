@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IntendedUseSelect renders correctly and matches snapshot 1`] = `
+<div>
+  <label
+    class="block mb-2"
+    for="intended_use"
+  >
+    Filter by organisation type
+  </label>
+  <div
+    class="relative h-[49px] max-w-[458px]"
+  >
+    <select
+      class="w-full h-full p-2 border border-gray-400 rounded"
+      data-testid="select-input"
+      id="intended_use"
+      name="intended_use"
+    >
+      <option
+        selected=""
+        value=""
+      >
+        Please select a value
+      </option>
+      <option
+        value="provide-debt-advice"
+      >
+        Provide debt advice
+      </option>
+      <option
+        value="collection-of-debt"
+      >
+        Collection of debt
+      </option>
+      <option
+        value="insolvency"
+      >
+        Insolvency
+      </option>
+      <option
+        value="tech"
+      >
+        Tech
+      </option>
+      <option
+        value="other"
+      >
+        Other (please specify)
+      </option>
+    </select>
+    <div
+      class="absolute right-0 top-0 pointer-events-none w-12 p-3 h-full rounded-r bg-green-300"
+      data-testid="icon"
+      data-type="chevron-down"
+    >
+      chevron-down
+    </div>
+  </div>
+</div>
+`;

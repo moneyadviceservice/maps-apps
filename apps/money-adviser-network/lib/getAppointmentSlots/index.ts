@@ -1,0 +1,1 @@
+export { getAppointmentSlots } from './getAppointmentSlots';

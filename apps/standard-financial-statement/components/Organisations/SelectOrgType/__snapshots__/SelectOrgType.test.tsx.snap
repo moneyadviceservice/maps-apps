@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectOrgType renders a select element with options 1`] = `
+<div>
+  <label
+    class="block mb-2"
+    for="type"
+  >
+    Filter by organisation type
+  </label>
+  <div
+    class="relative h-[49px] max-w-[458px]"
+  >
+    <select
+      class="w-full h-full p-2 border border-gray-400 rounded"
+      id="type"
+      name="type"
+    >
+      <option
+        selected=""
+        value=""
+      >
+        Please select a value
+      </option>
+      <option
+        value="Free-to-client advice services provider"
+      >
+        Free-to-client advice services provider
+      </option>
+      <option
+        value="Central Government department"
+      >
+        Central Government department
+      </option>
+      <option
+        value="Commercial credit provider (including mortgage lender)"
+      >
+        Commercial credit provider (including mortgage lender)
+      </option>
+      <option
+        value="Credit union / Community development finance institution"
+      >
+        Credit union / Community development finance institution
+      </option>
+      <option
+        value="Fuel provider"
+      >
+        Fuel provider
+      </option>
+      <option
+        value="Insolvency practitioner"
+      >
+        Insolvency practitioner
+      </option>
+      <option
+        value="Debt management company"
+      >
+        Debt management company
+      </option>
+      <option
+        value="Local authority"
+      >
+        Local authority
+      </option>
+      <option
+        value="Registered social landlord"
+      >
+        Registered social landlord
+      </option>
+      <option
+        value="Water supplier"
+      >
+        Water supplier
+      </option>
+      <option
+        value="Debt collection agency"
+      >
+        Debt collection agency
+      </option>
+      <option
+        value="Software provider"
+      >
+        Software provider
+      </option>
+      <option
+        value="Solicitors"
+      >
+        Solicitors
+      </option>
+      <option
+        value="other"
+      >
+        Other
+      </option>
+    </select>
+    <div
+      class="absolute right-0 top-0 pointer-events-none w-12 p-3 h-full rounded-r bg-green-300"
+      data-testid="chevron-icon"
+    >
+      Icon
+    </div>
+  </div>
+</div>
+`;

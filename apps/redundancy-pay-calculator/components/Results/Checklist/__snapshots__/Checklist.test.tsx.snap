@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redundancy pay calculator AdditionalInfo Component Render correctly 1`] = `
+<div>
+  <p
+    class="pb-[8px]"
+  >
+    Checklist
+  </p>
+  <div
+    class="flex items-center"
+    data-testid="list-element"
+  >
+    <ul
+      class="list-none marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug w-full"
+      start="-1"
+    >
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svg
+            class="max-w-[24px] mx-[8px] my-[2px]"
+            fill="none"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M22 6.82796L13.6637 16.0556C11.3426 18.6248 7.43393 18.6515 5.08073 16.1144L2 12.7929L4.84303 9.92571L7.92375 13.2472C8.70815 14.093 10.0111 14.084 10.7847 13.2276L19.1211 4L22 6.82796Z"
+              fill="#008021"
+              fill-rule="evenodd"
+            />
+          </svg>
+          item 1
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svg
+            class="max-w-[24px] mx-[8px] my-[2px]"
+            fill="none"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M22 6.82796L13.6637 16.0556C11.3426 18.6248 7.43393 18.6515 5.08073 16.1144L2 12.7929L4.84303 9.92571L7.92375 13.2472C8.70815 14.093 10.0111 14.084 10.7847 13.2276L19.1211 4L22 6.82796Z"
+              fill="#008021"
+              fill-rule="evenodd"
+            />
+          </svg>
+          item 2
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svg
+            class="max-w-[24px] mx-[8px] my-[2px]"
+            fill="none"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M22 6.82796L13.6637 16.0556C11.3426 18.6248 7.43393 18.6515 5.08073 16.1144L2 12.7929L4.84303 9.92571L7.92375 13.2472C8.70815 14.093 10.0111 14.084 10.7847 13.2276L19.1211 4L22 6.82796Z"
+              fill="#008021"
+              fill-rule="evenodd"
+            />
+          </svg>
+          item 3
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svg
+            class="max-w-[24px] mx-[8px] my-[2px]"
+            fill="none"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M22 6.82796L13.6637 16.0556C11.3426 18.6248 7.43393 18.6515 5.08073 16.1144L2 12.7929L4.84303 9.92571L7.92375 13.2472C8.70815 14.093 10.0111 14.084 10.7847 13.2276L19.1211 4L22 6.82796Z"
+              fill="#008021"
+              fill-rule="evenodd"
+            />
+          </svg>
+          item 4
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svg
+            class="max-w-[24px] mx-[8px] my-[2px]"
+            fill="none"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M22 6.82796L13.6637 16.0556C11.3426 18.6248 7.43393 18.6515 5.08073 16.1144L2 12.7929L4.84303 9.92571L7.92375 13.2472C8.70815 14.093 10.0111 14.084 10.7847 13.2276L19.1211 4L22 6.82796Z"
+              fill="#008021"
+              fill-rule="evenodd"
+            />
+          </svg>
+          item 5
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

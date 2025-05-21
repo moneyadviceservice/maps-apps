@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomWebChatLink component renders correctly 1`] = `
+<button
+  class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button gap-0 w-full test-class"
+  data-testid="test-custom-web-chat"
+  type="button"
+>
+  <span />
+  Start webchat
+  <span />
+</button>
+`;
+
+exports[`CustomWebChatLink component renders correctly when webchat is open 1`] = `
+<button
+  class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button w-full gap-0"
+  data-testid="test-custom-web-chat"
+  type="button"
+>
+  <span />
+  Close webchat
+  <span />
+</button>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab component renders active tab correctly 1`] = `
+<div>
+  <button
+    aria-selected="true"
+    class="t-button t-step-navigation__button p-3 snap-start leading-4 flex-none font-bold !gap-0 whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab border-b-3 border-blue-800 text-blue-800 no-underline focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+    role="tab"
+  >
+    Income
+  </button>
+</div>
+`;
+
+exports[`Tab component renders correctly 1`] = `
+<div>
+  <button
+    class="t-button t-step-navigation__button p-3 border-b-3 border-[4c6272] snap-start leading-4 flex-none font-bold text-pink-800 !gap-0 underline whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+    role="tab"
+  >
+    Income
+  </button>
+</div>
+`;
