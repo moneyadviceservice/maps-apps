@@ -33,7 +33,7 @@
     "@azure/cosmos": "^4.2.0",
     "@azure/msal-node": "^3.5.1",
     "@azure/storage-blob": "^12.27.0",
-    "@googlemaps/google-maps-services-js": "^3.4.0",
+    "@googlemaps/google-maps-services-js": "^3.4.1",
     "@netlify/blobs": "^8.2.0",
     "@netlify/functions": "^3.1.2",
     "@nx/devkit": "21.0.3",
