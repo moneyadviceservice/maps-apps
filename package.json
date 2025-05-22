@@ -48,7 +48,7 @@
     "currency.js": "^2.0.4",
     "date-fns": "^4.1.0",
     "dinero.js": "^2.0.0-alpha.8",
-    "embla-carousel-autoplay": "^8.2.0",
+    "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.2.0",
     "exceljs": "^4.4.0",
     "focus-trap-react": "^10.2.3",
