@@ -1,0 +1,1 @@
+export { ResultsSummary } from './ResultsSummary';

@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutDebt Component renders component correctly 1`] = `
+<div
+  class="md:max-w-5xl"
+>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="about-debt-title"
+  >
+    components.about-debt.title
+  </h1>
+  <p
+    class="text-2xl font-light text-gray-800 mb-9"
+    data-testid="about-debt-subTitle"
+  >
+    components.about-debt.subTitle
+  </p>
+  <div
+    class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-teal-300 text-3xl font-semibold text-gray-800 md:text-4xl md:max-w-4xl mb-9"
+    data-testid="urgent-callout"
+  >
+    <div
+      class="flex gap-4 sm:gap-6"
+    >
+      <div
+        class="text-pink-800"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.about-debt.callout
+        </p>
+      </div>
+    </div>
+  </div>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.about-debt.content
+  </p>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;

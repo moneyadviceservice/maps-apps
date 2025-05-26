@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation Component handles missing email gracefully 1`] = `
+<div
+  class="md:max-w-4xl"
+>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl bg-blue-800 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold text-white mb-9"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.callout.title
+    </h1>
+    <p
+      class="mb-0 text-white"
+      data-testid="paragraph"
+    >
+      Your reference number is CAS-60785.
+    </p>
+  </div>
+  <p
+    class="my-9"
+    data-testid="confirmation-content"
+  >
+    components.confirmation.content
+  </p>
+  <div>
+    <h2
+      class="text-4xl md:text-6xl text-gray-800 font-bold mb-4"
+      data-testid="confirmation-what-happens-next-title"
+    >
+      components.confirmation.what-happens-next.title
+    </h2>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="list-disc marker:text-gray-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug ml-8"
+        data-testid="confirmation-what-happens-next-list"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            We’ll send you an email to **** to confirm that we’ve received your enquiry
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            If you don’t get this email, check your spam or junk mail folder
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Confirmation Component renders the component 1`] = `
+<div
+  class="md:max-w-4xl"
+>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl bg-blue-800 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold text-white mb-9"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.callout.title
+    </h1>
+    <p
+      class="mb-0 text-white"
+      data-testid="paragraph"
+    >
+      Your reference number is CAS-60785.
+    </p>
+  </div>
+  <p
+    class="my-9"
+    data-testid="confirmation-content"
+  >
+    components.confirmation.content
+  </p>
+  <div>
+    <h2
+      class="text-4xl md:text-6xl text-gray-800 font-bold mb-4"
+      data-testid="confirmation-what-happens-next-title"
+    >
+      components.confirmation.what-happens-next.title
+    </h2>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="list-disc marker:text-gray-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug ml-8"
+        data-testid="confirmation-what-happens-next-list"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            We’ll send you an email to 
+            <strong>
+              test@example.com
+            </strong>
+             to confirm that we’ve received your enquiry
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            If you don’t get this email, check your spam or junk mail folder
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

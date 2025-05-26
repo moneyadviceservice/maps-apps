@@ -1,0 +1,524 @@
+{
+  "site": {
+    "title": "WELSH -- MoneyHelper Pensions Dashboard",
+    "header": {
+      "logo": "WELSH -- Pensions Dashboard",
+      "links": {
+        "exit": "WELSH - Exit and log out"
+      }
+    },
+    "footer": {
+      "common-links": {
+        "heading": "WELSH -- Manage your information",
+        "delegate-access": "WELSH -- Delegate access to a financial adviser",
+        "complaints": "WELSH -- Make a complaint",
+        "download-data": "WELSH -- Download my pension information (.pdf)",
+        "manage-consent": "WELSH -- Manage Consent"
+      }
+    },
+    "back": "Yn ôl",
+    "back-to-top": "WELSH -- Back to top",
+    "help-and-support-link-text": "Cymorth a chefnogaeth",
+    "hm-gov-logo-alt": "Logo Llywodraeth E.M",
+    "feedback-link": "https://forms.office.com/Pages/ResponsePage.aspx?id=MhDku86PQk26tUTiFRCIbQWmPIAsJ39Jk_BmPtD78jJUM0JWOTNIS1Y3TDQzM002MEE5RlIzT1pMUi4u",
+    "help-and-support": {
+      "title": "WELSH -- Help and support",
+      "feedback-link": "WELSH -- Give us feedback",
+      "card-1": {
+        "title": "WELSH -- Explore the Pensions Dashboard",
+        "description": "WELSH -- Don’t know where to start? Learn how to get the most out of your Pensions Dashboard and get answers for common questions."
+      },
+      "card-2": {
+        "title": "WELSH -- Understand your pensions",
+        "description": "WELSH -- Unsure about your next steps? Our free, impartial guidance can help you understand your pensions and plan for a comfortable retirement."
+      },
+      "card-3": {
+        "title": "WELSH -- Report a technical problem",
+        "description": "WELSH -- Is something not working? Tell us if there’s an issue with your Pensions Dashboard or if you’re experiencing any technical problems."
+      }
+    },
+    "logout": {
+      "about-to-leave": "WELSH -- You’re about to leave",
+      "we-will-redirect": "WELSH -- We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.",
+      "are-you-sure": "WELSH -- Are you sure you want to leave?",
+      "yes-exit": "WELSH -- Yes, exit the Dashboard"
+    }
+  },
+  "common": {
+    "a-month": "WELSH -- a month",
+    "a-year": "WELSH -- a year",
+    "date-unavailable": "WELSH -- Date unavailable",
+    "amount-unavailable": "WELSH -- £unavailable",
+    "scheme": "WELSH -- Scheme name",
+    "employer": "WELSH -- Employer",
+    "provider": "WELSH -- Pension provider",
+    "retirement-date": "WELSH -- Expected retirement date",
+    "estimated-income": "WELSH -- Estimated income",
+    "details-link": "WELSH -- See details",
+    "progress-complete": "WELSH -- complete",
+    "close": "Cau",
+    "reset": "WELSH -- Reset",
+    "cancel": "WELSH -- Cancel",
+    "contact": {
+      "preferred": "WELSH -- Best way to contact your provider with queries",
+      "telephone": "WELSH -- Phone number",
+      "telephone-main": "WELSH -- Main telephone",
+      "telephone-whatsapp": "WELSH -- WhatsApp",
+      "email": "WELSH -- Email",
+      "website": "WELSH -- Website",
+      "address": "WELSH -- Address",
+      "postal-address": "WELSH -- Postal Address",
+      "phone": "WELSH -- Phone"
+    },
+    "yes": "WELSH -- Yes",
+    "no": "WELSH -- No"
+  },
+  "pages": {
+    "error": {
+      "title": "Mae’n ddrwg gennym ni allem ddod o hyd i’r dudalen rydych yn chwilio amdani",
+      "intro": "WELSH -- We’re still building and improving our service. Something went wrong but we will try to fix it.",
+      "what-you-can-do": {
+        "title": "Beth allwch chi ei wneud:",
+        "items": [
+          "WELSH -- Click the Back button in your browser to check if you’re in the right place.",
+          "WELSH -- [Report a technical problem.](/cy/support/report-a-technical-problem)"
+        ]
+      }
+    },
+    "start": {
+      "hero-text": "WELSH -- See your pensions in one place with our free and secure government-backed service.",
+      "form-button": "WELSH -- Start",
+      "section-you-can": {
+        "title": "WELSH -- You can",
+        "items": [
+          "WELSH -- See your pensions all together in one place - including workplace pensions, personal pensions, your State Pension and any you might have lost.",
+          "WELSH -- See how much you could get when you retire."
+        ]
+      },
+      "section-how-it-works": {
+        "title": "WELSH -- How it works",
+        "items": [
+          "WELSH -- Prove your identity using **GOV.UK One Login**. You can set one up as part of this tool.",
+          "WELSH -- Enter your **National Insurance number**, if you know it. You can still proceed without one",
+          "WELSH -- See all the pensions that match your details, including your estimated income when you retire.",
+          "WELSH -- Come back any time to view your Pensions Dashboard and latest figures."
+        ]
+      },
+      "section-you-need": {
+        "title": "WELSH -- You’ll need",
+        "items": [
+          "WELSH -- a mobile phone",
+          "WELSH -- your current address and any previous addresses you know",
+          "WELSH -- photo ID, if it’s your first time using GOV.UK One Login",
+          "WELSH -- your National Insurance number, if you know it"
+        ]
+      },
+      "disclosure": "WELSH -- We’ll share the information from GOV.UK One Login with pension providers to find your pensions. We will not store your data. Learn more in [our privacy notice](https://www.pensionsdashboardsprogramme.org.uk/privacy-notice).",
+      "some-pensions-may-not-be-included": {
+        "title": "WELSH -- Some pensions may not be included",
+        "text": "WELSH -- You will not see pension schemes that:",
+        "items": [
+          "WELSH -- you’ve already taken or received money from, including those in pension drawdown",
+          "WELSH -- have fewer than 100 scheme members, unless the provider connects to the Pensions Dashboard voluntarily",
+          "WELSH -- are not registered with the Pension Regulator",
+          "WELSH -- are administered outside Great Britain (England, Scotland and Wales)",
+          "WELSH -- were set up for the Secret Intelligence Service or the Security Service."
+        ],
+        "note": "WELSH -- Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+      }
+    },
+    "welcome": {
+      "title": "WELSH -- Welcome to the MoneyHelper Pensions Dashboard",
+      "heading": "WELSH -- Important information",
+      "form-button": "WELSH -- I understand",
+      "intro": "WELSH -- Don't make decisions about your money and pensions based solely on the information in your Pensions Dashboard.",
+      "content": "WELSH -- The values are for illustration only and are based on some assumptions, such as your retirement age. Always check with your pension providers for the most up-to-date information, and consider speaking to a regulated financial adviser before making decisions about your pensions.",
+      "values": {
+        "title": "WELSH -- All pension values:",
+        "items": [
+          "WELSH -- are estimated and not guaranteed",
+          "WELSH -- are shown before tax, as pension tax depends on your income and circumstances",
+          "WELSH -- could go up or down based on factors such as investment performance and your contributions."
+        ]
+      },
+      "excluded": {
+        "title": "WELSH -- Some information may not be included.",
+        "items": [
+          "WELSH -- You will not see pensions you’ve already taken money from, pensions administered outside Great Britain or pensions with very few scheme members.",
+          "WELSH -- Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+        ]
+      }
+    },
+    "searching-for-your-pension": {
+      "title": "WELSH -- Loading your pensions",
+      "description": "WELSH -- This can take up to {duration} seconds. Thanks for your patience.",
+      "refresh": "WELSH -- Do not refresh or close this page.",
+      "progress": "WELSH -- {progress}% complete",
+      "carousel": {
+        "heading": "WELSH -- Did you know?",
+        "text-1": "WELSH -- There are an estimated 3.3 million lost or unclaimed pension pots in the UK.",
+        "subtext-1": "WELSH - (Lost Pensions Survey, Pensions Policy Institute, 2024)",
+        "alt-1": "WELSH -- Logo of a pound sign in a magnifying glass",
+        "text-2": "WELSH -- 77% of savers don’t know how much they’ll need in their pension for a comfortable retirement.",
+        "subtext-2": "WELSH -- (Developing Retirement Living Standards, Pensions and Lifetime Savings Association, 2019)",
+        "alt-2": "WELSH -- Logo of an increasing graph and coins",
+        "text-3": "WELSH -- You usually need 35 qualifying years of National Insurance credits to get the full State Pension.",
+        "alt-3": "WELSH -- Logo of a briefcase"
+      }
+    },
+    "your-pension-breakdown": {
+      "page-title": "WELSH -- Your Pension Breakdown",
+      "title": "WELSH -- Your pensions",
+      "confirmed-pensions": {
+        "heading": "WELSH -- Pensions with an estimated income",
+        "accordion-title": "WELSH -- About these values",
+        "accordion-content": "WELSH -- Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up. See the pension details pages for more information."
+      },
+      "confirmed-pensions-no-income": {
+        "heading": "WELSH -- Pensions without an estimated income",
+        "accordion-title": "WELSH -- Why pensions might not show in your estimate",
+        "accordion-content": "WELSH -- Pensions still waiting for data from your pension providers and those with values less than £5,000 won’t show in your estimate. If any other pensions are missing, see [Help and support_target=_self](#help-and-support)."
+      },
+      "scam-warning": {
+        "heading": "WELSH -- Be aware of scams",
+        "description": {
+          "items": [
+            "WELSH -- Your Pensions Dashboard contains sensitive and valuable information. Think carefully before sharing your information with a third party.",
+            "WELSH -- Scammers play on our sense of fear. If you’ve been contacted without warning and told you need to move your pensions to a safe place, this is a scam."
+          ]
+        },
+        "action": {
+          "heading": "WELSH -- If you’re worried about scams, you can:",
+          "items": [
+            "WELSH -- Read our guidance on [spotting pension scams](https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam)",
+            "WELSH -- Call our financial crimes and scams unit on [0800 015 4402](tel:08000154402)"
+          ]
+        }
+      }
+    },
+    "pension-details": {
+      "title": "WELSH -- {name} summary",
+      "toolIntro": {
+        "estimate-DC": "WELSH -- This is a **{type}** pension. You’ve built up **{pot}** in this pension pot. This could give you an income of **{monthly}** a month from the pension retirement date of **{date}**.",
+        "estimate-DB": "WELSH -- This is a **{type}** workplace pension. The amount you’re paid is based on your salary and years you’ve been a scheme member. This could give you an income of **{monthly}** a month from the pension retirement date of **{date}**.",
+        "estimate-SP": "WELSH -- You will reach State Pension age on **{date}**. Your forecast is **{monthly}** a month.",
+        "no-estimate": "WELSH -- This is a **{type}** pension. At the moment, we cannot provide an estimate at retirement because {reason}",
+        "no-estimate-wu": "WELSH -- This is a **{type}** pension. At the moment, we cannot provide an estimate at retirement. {reason}"
+      },
+      "details": {
+        "title": "WELSH -- Pension details",
+        "current-value": "WELSH -- Current value",
+        "estimate-at-retirement": "WELSH -- Estimate at retirement",
+        "forecast": "WELSH -- Forecast",
+        "mobile-current": "WELSH -- Now",
+        "estimate-today": "WELSH -- Estimate today",
+        "mobile-retirement": "WELSH -- At retirement",
+        "annual-amount": "WELSH -- Annual amount",
+        "monthly-amount": "WELSH -- Monthly amount",
+        "pot-value": "WELSH -- Pot value",
+        "tax-free-lump-sum": "WELSH -- Tax-free lump sum",
+        "payable-date": "WELSH -- Payable date"
+      },
+      "pension-provider": {
+        "heading": "WELSH -- Contact your provider",
+        "provider": "WELSH -- Pension provider",
+        "preferred": "WELSH -- Preferred contact method"
+      },
+      "headings": {
+        "state-pension": "WELSH -- State Pension forecast",
+        "pot": "WELSH -- Pot value",
+        "employer": "WELSH -- Employer",
+        "employment-dates": "WELSH -- Dates of employment",
+        "plan-details": "WELSH - Plan details",
+        "additional-data": "WELSH -- Additional data",
+        "other-details": "WELSH -- Other details"
+      },
+      "information": {
+        "about": {
+          "title": "WELSH -- About these values",
+          "description": "WELSH -- Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up."
+        },
+        "how-estimate-is-calculated": {
+          "title": "WELSH -- How your estimated income is calculated",
+          "dc": "WELSH -- Estimates for this defined contribution scheme are based on you buying a guaranteed income for life (an annuity), which starts paying from the scheme’s retirement date. They’re also based on the provider’s assumptions about inflation, investment performance, and whether you’re paying into the scheme.",
+          "db": "WELSH -- Estimates for this defined benefit pension are based on your salary and years you’ve been a scheme member, as well as the scheme’s retirement date. They’re also based on the provider’s assumptions about inflation and whether you’re paying into the scheme."
+        }
+      },
+      "status": {
+        "active": "WELSH -- This pension is active. This means it’s being paid into.",
+        "inactive": "WELSH -- This pension is inactive."
+      },
+      "other-details": {
+        "calculation-method": "WELSH -- Calculation method",
+        "amount-type": "WELSH -- Amount type",
+        "last-payment-date": "WELSH -- Last payment date",
+        "increase": "WELSH -- Increase",
+        "survivor-benefit": "WELSH -- Survivor benefit",
+        "safeguarded-benefit": "WELSH -- Safeguarded benefit",
+        "warning": "WELSH -- Warning"
+      },
+      "claiming-your-state-pension": {
+        "heading": "WELSH -- Claiming your State Pension",
+        "items": [
+          "WELSH -- You won’t get your State Pension automatically - you have to claim it.",
+          "WELSH -- You’ll get a letter no later than two months before you reach State Pension age, telling you what to do. If you don’t get a letter, you can still make a claim."
+        ]
+      },
+      "plan-details": {
+        "plan-reference": "WELSH -- Plan reference number",
+        "pension-start-date": "WELSH -- Pension start date",
+        "active-contributions": "WELSH -- Active contributions",
+        "employer-name": "WELSH -- Employer name",
+        "employer-status": "WELSH -- Employer status",
+        "retirement-date": "WELSH -- Pension retirement date",
+        "employment-start-date": "WELSH -- Employment start date",
+        "employment-end-date": "WELSH -- Employment end date",
+        "data-illustration-date": "WELSH -- Data illustration date",
+        "pension-origin": "WELSH -- Pension origin"
+      }
+    },
+    "pending-pensions": {
+      "title": "WELSH -- Pending pensions",
+      "description": "WELSH -- **You don't need to do anything.** These pensions are waiting for more information from your pension providers.\n\n They'll automatically show up in ‘Your pensions’ once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "WELSH -- Pensions that need action",
+      "description": "WELSH -- These pensions need you to **contact the pension provider**. \n\nThe provider may need more information to confirm a pension belongs to you, or there could be another issue with the pension they need to speak to you about.",
+      "card": {
+        "description": "WELSH -- Contact {pensionAdministrator} and give them your reference number. They’ll ask for your details and confirm whether this pension belongs to you.",
+        "reference": "WELSH -- Reference number",
+        "contact-heading-open": "WELSH -- Show contact details",
+        "contact-heading-close": "WELSH -- Hide contact details"
+      },
+      "scam-warning": {
+        "heading": "WELSH -- Be aware of scams",
+        "description": "WELSH -- A pension provider will **never contact you first** to ask for your personal information about a pension they say might belong to you. You must contact the pension provider with your reference number to confirm if a pension is yours."
+      }
+    },
+    "your-pension-search-results": {
+      "page-title": "WELSH -- Your Pension Search Results",
+      "title": "WELSH -- Pensions found",
+      "heading": "WELSH -- We found {totalPensions} pensions",
+      "heading-single": "WELSH -- We found {totalPensions} pension",
+      "channels": {
+        "confirmed": {
+          "title": "WELSH -- Your pensions",
+          "cta": "WELSH -- See your pensions"
+        },
+        "incomplete": {
+          "title": "WELSH -- Pending pensions",
+          "sub-title": "WELSH -- We’re waiting for more information from the pension provider(s). You don’t need to do anything.",
+          "cta": "WELSH -- See pending pensions"
+        },
+        "unconfirmed": {
+          "title": "WELSH -- Pensions that need you to contact the provider",
+          "sub-title": "WELSH -- Contact the pension provider(s). They’ll help resolve any issues.",
+          "cta": "WELSH -- Get contact details"
+        }
+      },
+      "common-links": {
+        "pensions-not-showing": "WELSH -- Are you expecting to see other pensions?"
+      }
+    },
+    "no-pensions-found": {
+      "title": "WELSH -- No pensions found",
+      "heading": "WELSH -- What you can do:",
+      "tooltip": "WELSH -- We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "items": [
+        "WELSH -- Check back later to see if your pensions are showing.",
+        "WELSH -- If you didn’t enter your National Insurance number, go back and enter it.",
+        "WELSH -- If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "WELSH -- If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "WELSH -- If you still cannot see your pensions, [report a technical problem](/cy/support/report-a-technical-problem)."
+      ]
+    },
+    "pensions-not-showing": {
+      "title": "WELSH -- Pensions not showing",
+      "intro": "WELSH -- We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "heading": "WELSH -- What you can do:",
+      "items": [
+        "WELSH -- Check back later to see if your pensions are showing.",
+        "WELSH -- Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to return to the start and sign in again with GOV.UK One Login.",
+        "WELSH -- If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "WELSH -- If you know the name of your employer(s) or pension provider(s), contact them directly."
+      ]
+    },
+    "complaints": {
+      "title": "WELSH -- Complaints",
+      "content": "WELSH -- A page to register a complaint. \n\nNew Paragraph. Example markdown with *italic*, **bold**, and an external link to [a website](http://foo.bar)"
+    },
+    "download-data": {
+      "title": "WELSH -- Download Data",
+      "content": "WELSH -- A page to download data"
+    },
+    "manage-consent": {
+      "title": "WELSH -- Manage Consent",
+      "content": "WELSH -- A page to manage consent"
+    },
+    "manage-pensions": {
+      "title": "WELSH -- Manage Pensions"
+    },
+    "support": {
+      "back-text": "WELSH -- Exit help and support",
+      "callout": {
+        "title": "WELSH -- Not what you’re looking for?",
+        "content": "WELSH -- If you can’t find the answer you were looking for try our other guides or get in touch"
+      },
+      "explore-the-pensions-dashboard": {
+        "title": "WELSH -- Explore the Pensions Dashboard",
+        "link": "explore-the-pensions-dashboard",
+        "heading": "WELSH -- General questions",
+        "description": "WELSH -- Get support for common questions and learn how to make the most of your Pensions Dashboard."
+      },
+      "understand-your-pensions": {
+        "title": "WELSH -- Understand your pensions",
+        "link": "understand-your-pensions",
+        "heading": "WELSH -- General questions",
+        "description": "WELSH -- Get support for common questions about pensions.",
+        "further-guidance": {
+          "title": "WELSH -- Further guidance",
+          "description": "WELSH -- Whether you’re just starting to think about pensions or you’re about to retire, MoneyHelper has guidance to help you plan.",
+          "links": [
+            {
+              "title": "WELSH -- Pensions explained",
+              "text": "WELSH -- Staring a pension, types of pension, understanding pensions",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics"
+            },
+            {
+              "title": "WELSH -- State Pension",
+              "text": "WELSH -- How it works, what you might get, National Insurance",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension"
+            },
+            {
+              "title": "WELSH -- Pension problems and changes",
+              "text": "WELSH -- Complaints, financial help when retired, changes to schemes",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems"
+            },
+            {
+              "title": "WELSH -- Taking your pension",
+              "text": "WELSH -- Ways to draw your pension, when can you retire, Pension Wise appointments",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension"
+            },
+            {
+              "title": "WELSH -- Building your pension",
+              "text": "WELSH -- How much do you need, ways to build your pot, transferring and merging",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot"
+            },
+            {
+              "title": "WELSH -- Tax and pensions",
+              "text": "WELSH -- All guidance, including how to use the Pension Wise service",
+              "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement"
+            },
+            {
+              "title": "WELSH -- Tools",
+              "text": "WELSH -- Useful tools, including; Pension calculator, Find a retirement advisor and Money Midlife MOT",
+              "href": "https://www.moneyhelper.org.uk/cy/tools-and-calculators"
+            }
+          ]
+        }
+      },
+      "report-a-technical-problem": {
+        "title": "WELSH -- Report a technical problem",
+        "link": "report-a-technical-problem",
+        "intro": "WELSH -- We are still building and improving our service. Please tell us what technical issue you are experiencing in as much detail as possible.",
+        "content": "WELSH -- Thanks for helping improve the MoneyHelper Pensions Dashboard."
+      }
+    }
+  },
+  "components": {
+    "unconfirmed-pensions-callout": {
+      "heading": "WELSH — Important",
+      "description": "WELSH — You have {number} pensions that need you to contact the provider."
+    },
+    "pension-card": {
+      "type": {
+        "DB": "WELSH - Defined benefit pension",
+        "DC": "WELSH - Defined contribution pension",
+        "SP": "WELSH - State pension"
+      }
+    }
+  },
+  "data": {
+    "pensions": {
+      "unavailable-reasons": {
+        "ANO": "WELSH - Your provider is waiting for information from a third party and needs more time to send us information. You do not to do anything at this point.",
+        "DB": "WELSH - Placeholder text for code DB.",
+        "DBC": "WELSH - Your provider needs more time to calculate an estimated income. This can take 10 working days. Check back again soon.",
+        "DCC": "WELSH - Your provider needs more time to calculate an estimated income. This can take 3 working days. Check back again soon.",
+        "DCHA": "WELSH - The value of this pension is less than £5,000. Pension providers can choose whether to send data for pensions under this amount.",
+        "DCHP": "WELSH - The pension's retirement date is less than 2 years away. Contact your provider for your pension details.",
+        "DCSM": "WELSH - Placeholder text for code DCSM.",
+        "MEM": "WELSH - Placeholder text for code MEM.",
+        "NEW": "WELSH - Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "NET": "WELSH - Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "PPF": "WELSH - The pension scheme is currently in a Pension Protection Fund assessment period. Contact your provider for your pension details.",
+        "TRN": "WELSH - There's a transaction affecting the value of this pension. Contact your provider for the most up-to-date information.",
+        "WU": "WELSH - Contact {pensionProvider} and give them your reference number. They'll help you resolve any issues with this pension.",
+        "SML": "WELSH - The estimated income for this pension is less than £120 a year. No data will be available unless the pension value increases.",
+        "SYS_MATCHTYPE": "WELSH - There's an issue with the data from your pension provider. You do not need to take any action at this point.",
+        "NEW_MATCHTYPE": "WELSH - This is a new pension. Your provider needs more time to send us data."
+      },
+      "additional-types": {
+        "C_AND_C": "WELSH - Costs and charges",
+        "SIP": "WELSH - Statement of Investment Principles",
+        "IMP": "WELSH - Implementation Statement",
+        "ANR": "WELSH - Annual Report",
+        "SP": "WELSH - Additional State Pension Information"
+      },
+      "calculation-method": {
+        "BS": "WELSH - benefit-specific method based on pension provider/scheme rules",
+        "CBI": "WELSH - cash balance illustration methodology from ASTM1 for calculating income fund only and/or benefit-specific method based on pension provider/scheme rules for calculating fund value",
+        "SMPI": "WELSH - statutory money purchase illustration methodology from ASTM1"
+      },
+      "amount-type": {
+        "INC": "WELSH - recurring income",
+        "INCL": "WELSH - recurring income alternative calculated using the LEGACY pension provider/scheme basis",
+        "INCN": "WELSH - recurring income alternative calculated using the NEW pension provider/scheme basis",
+        "CSH": "WELSH - a separately accrued lump sum",
+        "CSHL": "WELSH - a separately accrued lump sum alternative calculated using the LEGACY pension provider/scheme basis",
+        "CSHN": "WELSH - a separately accrued lump sum alternative calculated using the NEW pension provider/scheme basis"
+      },
+      "employer-status": {
+        "C": "WELSH - Current",
+        "H": "WELSH - Historical"
+      },
+      "pension-origin": {
+        "A": "WELSH - deferred annuity",
+        "PC": "WELSH - pension provider - pension credit user",
+        "PM": "WELSH - pension provider - active or deferred user",
+        "PT": "WELSH - pension provider - deferred transfer in user",
+        "WC": "WELSH - scheme - pension credit user",
+        "WM": "WELSH - scheme - active or deferred user",
+        "WT": "WELSH - scheme - deferred transfer in user"
+      },
+      "types": {
+        "DB": "WELSH - defined benefit",
+        "DC": "WELSH - defined contribution"
+      },
+      "status": {
+        "active": "WELSH - Active",
+        "inactive": "WELSH - Inactive"
+      }
+    }
+  },
+  "timeout": {
+    "keep-me-signed-in": "WELSH -- Keep me signed in",
+    "log-me-out": "WELSH -- Log me out",
+    "return-to-start": "WELSH -- Return to start page",
+    "been-inactive": "WELSH -- You’ve been inactive for a while",
+    "to-return-to-dashboard": "WELSH -- To return to your Pensions Dashboard, you’ll need to sign in again using GOV.UK One Login.",
+    "exited-the-dashboard": "WELSH -- You’ve exited the Pensions Dashboard",
+    "sign-in-again": "WELSH -- You’ll need to sign in again using GOV.UK One Login to view your pensions.",
+    "automatic-expiry": "WELSH -- Your Pensions Dashboard session automatically expires after {totalTimeout} minutes of inactivity. This is to protect your personal information.",
+    "protect-your-information": "WELSH -- This is to protect your personal information.",
+    "session-expired": "WELSH -- Your session has expired",
+    "session-will-timeout": "WELSH -- Your Pensions Dashboard session will time out after **{totalTimeout} minutes**.",
+    "modal-session-timeout": "WELSH -- Your Pensions Dashboard session will time out in ",
+    "minutes": "WELSH -- minutes",
+    "minute": "WELSH -- minute",
+    "seconds": "WELSH -- seconds",
+    "second": "WELSH -- second",
+    "what-did-you-think": "WELSH -- What did you think of this service?",
+    "takes-2-mins": "WELSH -- (Takes 2 minutes)"
+  }
+}

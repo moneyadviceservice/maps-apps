@@ -1,0 +1,2785 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailsSection displays annual row 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays annual row with no data 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              --
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays monthly row 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays monthly row with no data 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              --
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays payable date row 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-payable-date"
+            >
+              23 February 2042
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-payable-date"
+            >
+              23 February 2042
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-payable-date-mobile"
+        >
+          23 February 2042
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-payable-date-mobile"
+        >
+          23 February 2042
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays payable date row with no data 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-payable-date"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-payable-date"
+            >
+              --
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-payable-date-mobile"
+        >
+          --
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-payable-date-mobile"
+        >
+          --
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays pot value row 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays pot value row with no data 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              --
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          --
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays retirement date when no payable date 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-payable-date"
+            >
+              1 January 1970
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-payable-date"
+            >
+              1 January 1970
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-payable-date-mobile"
+        >
+          1 January 1970
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-payable-date-mobile"
+        >
+          1 January 1970
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays tax free row 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection displays tax free row with no data 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-tax-free-lump-sum"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-tax-free-lump-sum"
+            >
+              --
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-tax-free-lump-sum-mobile"
+        >
+          --
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-tax-free-lump-sum-mobile"
+        >
+          --
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection does not display payable date row if pension type is DB 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection does not display payable date row if pension type is DC 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection does not display pot value row if pension type is DB 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              --
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              --
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-tax-free-lump-sum"
+            >
+              £9,999
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          --
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-tax-free-lump-sum-mobile"
+        >
+          £9,999
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection does not display tax free if pension type is DC 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailsSection renders correctly 1`] = `
+<div>
+  <div
+    class="hidden md:block"
+  >
+    <div
+      class="mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <table
+        class="w-full max-md:leading-6 max-md:block border-t-1 border-t-slate-400"
+        data-testid="table-section-content"
+      >
+        <thead>
+          <tr>
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 md:w-1/3 lg:w-2/5"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+            <th
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="max-md:block"
+        >
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-annual-amount"
+            >
+              £11,502 a year
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-annual-amount"
+            >
+              £11,502 a year
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-monthly-amount"
+            >
+              £958.50 a month
+            </td>
+          </tr>
+          <tr
+            class="max-md:block border-b-1 border-b-slate-400"
+          >
+            <td
+              class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+            />
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="current-pot-value"
+            >
+              £235,000
+            </td>
+            <td
+              class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+              data-testid="retirement-pot-value"
+            >
+              £235,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    class="md:hidden mt-14 md:mt-16"
+  >
+    <h2
+      class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+      data-testid="table-section-heading"
+    />
+    <div
+      class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+    >
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="current-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+      <h3
+        class="text-2xl md:text-3xl text-gray-800 mt-8 font-semibold"
+      />
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-annual-amount-mobile"
+        >
+          £11,502 a year
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-monthly-amount-mobile"
+        >
+          £958.50 a month
+        </div>
+      </div>
+      <div>
+        <div
+          class="font-bold"
+        />
+        <div
+          data-testid="retirement-pot-value-mobile"
+        >
+          £235,000
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

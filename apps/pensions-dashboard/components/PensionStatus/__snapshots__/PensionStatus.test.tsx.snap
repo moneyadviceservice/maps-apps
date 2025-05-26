@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pension Status component should render active status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4 mb-4"
+  >
+    <div
+      class="rounded-full bg-green-700 min-w-4 min-h-4"
+    />
+    pages.pension-details.status.active
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render inactive status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4 mb-4"
+  >
+    <div
+      class="rounded-full bg-gray-400 min-w-4 min-h-4"
+    />
+    pages.pension-details.status.inactive
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render short active status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4"
+  >
+    <div
+      class="rounded-full bg-green-700 w-[12px] h-[12px]"
+    />
+    data.pensions.status.active
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render short inactive status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4"
+  >
+    <div
+      class="rounded-full bg-gray-400 w-[12px] h-[12px]"
+    />
+    data.pensions.status.inactive
+  </div>
+</div>
+`;

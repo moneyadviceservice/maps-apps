@@ -1,0 +1,40 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "strict": true,
+    "noEmit": true,
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "target": "es2015",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": ["jest", "node"],
+    "baseUrl": ".",
+
+    "paths": {
+      "@maps-react/pension-tools/*": ["../../libs/shared/pension-tools/src/*"],
+      "@maps-react/hooks/*": ["../../libs/shared/hooks/src/*"],
+      "@maps-react/layouts/*": ["../../libs/shared/layouts/src/*"],
+      "@maps-react/form/*": ["../../libs/shared/form/src/*"],
+      "@maps-react/common/*": ["../../libs/shared/ui/src/*"],
+      "@maps-react/core/*": ["../../libs/shared/core/src/*"],
+      "@maps-react/vendor/*": ["../../libs/shared/vendor/src/*"],
+      "@maps-react/utils/*": ["../../libs/shared/utils/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
+}
