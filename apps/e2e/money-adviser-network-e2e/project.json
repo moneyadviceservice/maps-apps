@@ -1,0 +1,42 @@
+{
+  "name": "money-adviser-network-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/money-adviser-network-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/money-adviser-network-e2e/cypress.config.ts",
+        "devServerTarget": "money-adviser-network:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "money-adviser-network:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/money-adviser-network-e2e/cypress.config.ts",
+        "devServerTarget": "money-adviser-network:serve",
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "money-adviser-network:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["money-adviser-network"]
+}

@@ -1,0 +1,1002 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colors component renders correctly 1`] = `
+<div
+  data-testid="colors"
+>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      red
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(255, 240, 240);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              red
+              -
+              100
+            </p>
+            <p>
+              #FFF0F0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(217, 125, 125);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              red
+              -
+              400
+            </p>
+            <p>
+              #D97D7D
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(208, 0, 0);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              red
+              -
+              700
+            </p>
+            <p>
+              #d00000
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      yellow
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(252, 248, 237);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              yellow
+              -
+              100
+            </p>
+            <p>
+              #FCF8ED
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(255, 244, 215);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              yellow
+              -
+              150
+            </p>
+            <p>
+              #FFF4D7
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(240, 240, 90);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              yellow
+              -
+              200
+            </p>
+            <p>
+              #F0F05A
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(234, 208, 142);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              yellow
+              -
+              400
+            </p>
+            <p>
+              #EAD08E
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(255, 194, 0);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              yellow
+              -
+              700
+            </p>
+            <p>
+              #FFC200
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      gray
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(243, 241, 243);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              100
+            </p>
+            <p>
+              #f3f1f3
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(237, 240, 240);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              200
+            </p>
+            <p>
+              #EDF0F0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(247, 246, 246);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              300
+            </p>
+            <p>
+              #F7F6F6
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(96, 99, 126);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              400
+            </p>
+            <p>
+              #60637E
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(67, 69, 89);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              450
+            </p>
+            <p>
+              #434559
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(51, 51, 63);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              500
+            </p>
+            <p>
+              #33333F
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(0, 11, 59);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              gray
+              -
+              800
+            </p>
+            <p>
+              #000b3b
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      green
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(240, 247, 242);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              green
+              -
+              100
+            </p>
+            <p>
+              #F0F7F2
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(176, 202, 53);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              green
+              -
+              300
+            </p>
+            <p>
+              #B0CA35
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(125, 182, 139);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              green
+              -
+              400
+            </p>
+            <p>
+              #7DB68B
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(141, 171, 1);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              green
+              -
+              500
+            </p>
+            <p>
+              #8DAB01
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(0, 128, 33);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              green
+              -
+              700
+            </p>
+            <p>
+              #008021
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      slate
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(127, 131, 191);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              slate
+              -
+              100
+            </p>
+            <p>
+              #7F83BF
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(251, 250, 251);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              slate
+              -
+              200
+            </p>
+            <p>
+              #FBFAFB
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(157, 161, 202);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              slate
+              -
+              400
+            </p>
+            <p>
+              #9da1ca
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      pink
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(219, 123, 180);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              pink
+              -
+              400
+            </p>
+            <p>
+              #db7bb4
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(200, 42, 135);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              pink
+              -
+              600
+            </p>
+            <p>
+              #c82a87
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(174, 0, 96);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              pink
+              -
+              800
+            </p>
+            <p>
+              #ae0060
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(156, 0, 82);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              pink
+              -
+              900
+            </p>
+            <p>
+              #9c0052
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      teal
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(111, 216, 216);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              teal
+              -
+              300
+            </p>
+            <p>
+              #6FD8D8
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(0, 120, 143);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              teal
+              -
+              400
+            </p>
+            <p>
+              #00788f
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      blue
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(241, 242, 250);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              blue
+              -
+              100
+            </p>
+            <p>
+              #F1F2FA
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(231, 232, 246);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              blue
+              -
+              200
+            </p>
+            <p>
+              #E7E8F6
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(223, 228, 231);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              blue
+              -
+              300
+            </p>
+            <p>
+              #DFE4E7
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(0, 40, 62);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              blue
+              -
+              600
+            </p>
+            <p>
+              #00283E
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(15, 25, 160);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              blue
+              -
+              800
+            </p>
+            <p>
+              #0F19A0
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      purple
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(121, 43, 158);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              purple
+              -
+              700
+            </p>
+            <p>
+              #792b9e
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mb-10 -ml-4 -mr-4"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-2 ml-4 mr-4"
+    >
+      magenta
+    </h4>
+    <div
+      class="flex flex-wrap"
+    >
+      <div
+        class="w-1/6"
+      >
+        <div
+          class="ml-4 mr-4"
+        >
+          <div
+            class="h-32 rounded-md"
+            style="background-color: rgb(59, 16, 44);"
+          />
+          <div
+            class="mt-3"
+          >
+            <p>
+              magenta
+              -
+              700
+            </p>
+            <p>
+              #3B102C
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

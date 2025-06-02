@@ -1,0 +1,1499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionOption component renders correctly with default values 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an embedded tool 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="calculator-title"
+  >
+    Calculator
+  </h3>
+  <p
+    class="mb-6"
+    data-testid="paragraph"
+  >
+    Results are guides only and won't be saved. We don't store your data.
+  </p>
+  <div
+    class="mb-12"
+  >
+    <script
+      src="https://dev-moneyhelper-tools.azurewebsites.net/api/embed"
+    />
+    <div
+      class="mas-iframe-container"
+      style="width: 100%; overflow: hidden; padding-top: 66.66%; position: relative;"
+    >
+      <iframe
+        class="mas-iframe"
+        data-testid="tool-iframe-leave-pot-untouched"
+        id="leave-pot-untouched"
+        src="https://dev-moneyhelper-tools.azurewebsites.net/en/leave-pot-untouched"
+        style="width: 100%; height: 100%; left: 0px; position: absolute; top: 0px; border: 0px;"
+        title="leave-pot-untouched"
+      />
+    </div>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an optional expandable section 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-4"
+    data-testid="more-info-title"
+  >
+    More information
+  </h3>
+  <details
+    class="group border-t-1 border-b-1 mb-[-1px] border-slate-400 tool-expand"
+    data-testid="expandable-section"
+  >
+    <summary
+      class="text-pink-600 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-[19px] hover:underline font-semibold justify-start gap-2"
+    >
+      <svgr-mock
+        classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2"
+      />
+      <div
+        class="block"
+        data-testid="summary-block-title"
+      >
+        Expandable title
+      </div>
+    </summary>
+    <div
+      class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Some text
+        </p>
+      </div>
+    </div>
+  </details>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an optional suitable callout 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <div
+    class="grid grid-cols-1 items-start gap-8 mb-8"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-green-100 before:bg-green-700"
+      data-testid="callout-positive"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-tick_green [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] [&_h3]:mt-0 [&_h3]:md:text-lg"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          <strong>
+            Suitable callout
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an optional tool intro 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-lg text-gray-800 font-normal leading-[26px] mb-10"
+    data-testid="tool-intro"
+  >
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      Tool intro text
+    </p>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an optional unsuitable callout 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <div
+    class="grid grid-cols-1 items-start gap-8 mb-8"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-red-100 before:bg-red-700"
+      data-testid="callout-negative"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-cross_red [&_ul>li:before]:w-[15px] [&_ul>li:before]:h-[15px] [&_h3]:mt-0 [&_h3]:md:text-lg"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          <strong>
+            Unsuitable callout
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with an optional warning callout 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <div
+    class="mb-8"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-yellow-150 before:bg-yellow-700"
+      data-testid="callout-warning"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_h3]:mt-0 [&_h3]:md:text-lg"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          This is a warning
+        </p>
+      </div>
+    </div>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`PensionOption component renders with optional suitable and unsuitable callouts 1`] = `
+<div
+  data-testid="pension-option"
+>
+  <h1
+    class="text-4xl md:text-6xl text-gray-800 font-bold mt-2 mb-14"
+    data-testid="section-title"
+  >
+    Pension option title
+  </h1>
+  <div
+    class="grid grid-cols-1 items-start gap-8 mb-8 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-green-100 before:bg-green-700"
+      data-testid="callout-positive"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-tick_green [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] [&_h3]:mt-0 [&_h3]:md:text-lg"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          <strong>
+            Suitable callout
+          </strong>
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-red-100 before:bg-red-700"
+      data-testid="callout-negative"
+    >
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-cross_red [&_ul>li:before]:w-[15px] [&_ul>li:before]:h-[15px] [&_h3]:mt-0 [&_h3]:md:text-lg"
+        data-testid="rich-text"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          <strong>
+            Unsuitable callout
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <h3
+    class="text-2xl md:text-3xl text-gray-800 font-bold mb-6"
+    data-testid="key-facts-title"
+  >
+    Key facts
+  </h3>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal mb-8 [&_ul>li]:mb-2"
+    data-testid="key-facts"
+  >
+    <ul
+      class="pl-4 list-disc"
+    >
+      <li>
+        Key fact 1
+      </li>
+      <li>
+        Key fact 2
+      </li>
+    </ul>
+  </div>
+  <form
+    class="mt-10 py-8 border-t-4 border-b-4 border-blue-800"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="question"
+      type="HIDDEN"
+      value="q7"
+    />
+    <input
+      name="language"
+      type="HIDDEN"
+      value="en"
+    />
+    <input
+      name="task"
+      type="HIDDEN"
+      value=""
+    />
+    <input
+      name="status"
+      type="HIDDEN"
+      value="4"
+    />
+    <fieldset
+      aria-describedby="question-hint "
+    >
+      <legend>
+        <h3
+          class="text-2xl md:text-3xl text-blue-800 font-bold mb-3"
+          data-testid="section-title-footer"
+        >
+          Does this option interest you?
+        </h3>
+      </legend>
+      <span
+        class="text-gray-400"
+        id="question-hint"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </span>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class=""
+          data-testid="question-radio"
+        >
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-0"
+                name="answer"
+                required=""
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+          <div
+            class="mt-3"
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="answer-1"
+                name="answer"
+                required=""
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-pink-600 after:rounded-full after:opacity-0 hover:after:opacity-100 hover:after:border-pink-800 active:after:opacity-100 active:after:border-pink-400 peer-focus:before:border-4 peer-focus:before:border-purple-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_4px] peer-focus:before:shadow-yellow-200 peer-checked:after:opacity-100"
+                for="answer-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      class="mt-8 md:flex"
+    >
+      <button
+        class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full md:w-auto"
+        data-testid="continue"
+        formaction="/api/submit-options"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+      <a
+        class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full mt-6 ml-0 md:ml-4 md:mt-0 md:w-auto"
+        data-testid="save-and-return"
+        href="/en/undefined/save"
+      >
+        <svgr-mock
+          classname=""
+        />
+         
+        Save and come back later
+      </a>
+    </div>
+  </form>
+</div>
+`;

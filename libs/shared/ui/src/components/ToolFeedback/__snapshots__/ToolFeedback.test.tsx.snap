@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolFeedback component renders correctly with custom survey IDs 1`] = `
+<div
+  class="toolFeedbackWidget mt-8"
+  id="custom-en-dev-id"
+/>
+`;
+
+exports[`ToolFeedback component renders correctly with default survey IDs (cy) 1`] = `
+<div
+  class="toolFeedbackWidget mt-8 welshBackButton"
+  id="informizely-embed-zjiieufr"
+/>
+`;
+
+exports[`ToolFeedback component renders correctly with default survey IDs (en) 1`] = `
+<div
+  class="toolFeedbackWidget mt-8"
+  id="informizely-embed-fjguluwfj"
+/>
+`;

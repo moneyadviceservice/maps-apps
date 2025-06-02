@@ -1,0 +1,14 @@
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[dev]
+    base = "/"
+    command = "npx nx run mortgage-calculator:serve"
+    targetPort = 4390
+

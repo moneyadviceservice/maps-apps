@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResetCalculator component renders correctly 1`] = `
+<div
+  id="ajax"
+>
+  <h2
+    class="text-3xl md:text-4xl text-blue-800 font-bold"
+  >
+    Reset the calculator
+  </h2>
+  <p
+    class="pb-4"
+  >
+    Are you sure you want to clear your budget information?
+  </p>
+  <div
+    class="flex flex-row items-start gap-5"
+  >
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button"
+      formaction="/api/reset-calculator"
+      type="submit"
+    >
+      <span />
+      Confirm
+      <span />
+    </button>
+    <button
+      class="border border-pink-600 text-pink-600 bg-white hover:border-pink-800 hover:text-pink-800 hover:shadow-none focus:border-transparent active:text-slate-900 active:outline-purple-700 active:bg-white active:border-transparent t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-secondary-button"
+      formaction="api/cancel"
+      type="submit"
+    >
+      <span />
+      Cancel
+      <span />
+    </button>
+  </div>
+</div>
+`;

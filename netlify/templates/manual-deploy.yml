@@ -1,0 +1,43 @@
+parameters:
+  - name: appname
+    type: string
+  - name: context
+    type: string
+  - name: branchname
+    type: string
+  - name: authtoken
+    type: string
+  - name: environment
+    type: string
+
+steps:
+  - checkout: self
+  - template: ../steps/install-node.yml
+  - script: |
+      npm install
+      netlify link --filter=${{ parameters.appname }} --name=${{ parameters.appname }}
+      branch=${{ parameters.branchname }}
+
+      echo "Getting branch specific env vars for ${{ parameters.environment }}"
+      env_vars_json=$(netlify env:list --json --filter=${{ parameters.appname }} --context=branch:${{ parameters.environment }})
+
+      if [ "$env_vars_json" = "{}" ]; then
+        echo "JSON object is empty, no variables returned, check ${{ parameters.appname }} environment variables for ${{ parameters.environment }}"
+        exit 1
+      elif [[ -z "$env_vars_json" ]]; then
+        echo "Error: Failed to retrieve environment variables."
+        exit 1
+      else
+        echo "Setting branch specific variables as base branch-deploy environment variables for this build"
+        echo "$env_vars_json" | jq -r 'to_entries | .[] | "\(.key): \(.value)"' | while IFS=: read -r key value; do
+          echo "Setting $key"
+          if [[ -z "$value" ]]; then
+            echo "Error: Value empty for $key"
+            exit 1
+          else
+            netlify env:set key value --context ${{ parameters.context }} --filter ${{ parameters.appname }} 
+          fi
+        done
+        netlify deploy --filter=${{ parameters.appname }} --build --context=${{ parameters.context }} --auth=${{ parameters.authtoken }} --alias ${{ parameters.environment }}
+      fi
+    displayName: 'Deploy ${{ parameters.appname }}'
