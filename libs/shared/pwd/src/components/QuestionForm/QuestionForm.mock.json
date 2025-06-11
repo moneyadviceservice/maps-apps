@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "questionCounter": "Example subtitle",
+  "title": "Example question title?",
+  "errorText": "Select your age",
+  "options": [
+    "Example answer 1",
+    "Example answer 2",
+    "Example answer 3",
+    "Example answer 4"
+  ],
+  "moreInfoLabel": "example label",
+  "moreInfoText": {
+    "json": [
+      {
+        "nodeType": "paragraph",
+        "content": [
+          {
+            "nodeType": "text",
+            "value": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nam aliquam distinctio earum id iure dolores maxime incidunt, ipsam fuga accusamus vitae, exercitationem magnam cumque perferendis voluptates nemo. Repellat, accusamus."
+          }
+        ]
+      }
+    ]
+  }
+}

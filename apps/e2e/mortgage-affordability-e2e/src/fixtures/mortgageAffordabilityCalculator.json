@@ -1,0 +1,91 @@
+{
+  "core": {
+    "annualIncome": {
+      "title": "Mortgage affordability calculator",
+      "heading": "How much can you borrow?",
+      "primaryInfo": "This tool will help you estimate how much you can afford to borrow to buy a home. We'll work it out by looking at your income and your outgoings. Mortgage lenders will look at these figures very closely to work out how much they'll offer you.It should take about five minutes to complete.",
+      "subHeading": "Annual Income",
+      "annualIncomeLabel": "What is your annual income or salary before tax?",
+      "takeHomeLabel": "What is your monthly take-home pay?",
+      "takeHomeHintText": "This is your monthly income after tax, minus pension, NI and other deductions.",
+      "otherIncomeLabel": "Do you have any other income? (Optional)",
+      "otherIncomeIncludeLabel": "What counts as income?",
+      "otherIncomeDescription": "Include income from other jobs, pension income, guaranteed bonus, regular overtime, other employment, rental income, maintenance payments, pension, car allowance etc.",
+      "secondApplicantLabel": "Is there a second applicant?"
+    },
+
+    "householdCosts": {
+      "title": "Mortgage affordability calculator",
+      "heading": "Monthly household Costs",
+      "monthlyHouseholdInfo": "Use this section to get a basic idea of how your monthly budget adds up, and how affordable your monthly mortgage payments will be.If you don't have any expenses in these sections right now, imagine what they are likely to be in your new home.If you're applying with someone else, add their monthly costs to yours and put them in the fields below.",
+      "householdSubHeading": "Estimated monthly committed costs",
+
+      "creditCardLabel": "Credit card and loan payments",
+      "creditCardIncludeLabel": "Which payments should I include?",
+      "creditCardDescription": "Include: Credit card, store card and catalogue debts; car finance and personal loans; student loans; and hire purchase commitments.Exclude: Day-to-day living costs (e.g. food, clothes, entertainment and holidays); fixed spending (e.g. subscriptions to gyms or other memberships; utility bills; mobile phones; broadband; council tax; childcare or school fees).",
+
+      "childAndSpouseLabel": "Child and spousal maintenance payments",
+      "childAndSpouseIncludeLabel": "Which payments should I include?",
+      "childAndSpouseDescription": "Payment towards the support and maintenance of children, or maintenance of an ex-partner.",
+
+      "subHeading2": "Estimated monthly fixed costs",
+
+      "childCareLabel": "Childcare and school fees",
+      "childCareIncludeLabel": "Which costs should I include?",
+      "childCareDescription": "Include: Nursery and childcare fees, breakfast clubs, childminder, extracurricular classes etc.",
+
+      "travelCostsLabel": "Travel costs",
+      "travelCostsIncludeLabel": "Which costs count?",
+      "travelCostsDescription": "Include: Fuel, public transport, regular rail and air fares.Exclude: Expenses related to holidays and weekends away.",
+
+      "billsLabel": "Bills and insurance",
+      "billsIncludeLabel": "Which bills to include?",
+      "billsDescription": "Include: Council Tax, gym memberships, utility bills, mobile phones, annual insurance (such as contents, car, pet, travel), magazine subscriptions, broadband, roadside recovery etc.",
+
+      "mortgageLabel": "Current rent or mortgage payment",
+      "mortgageIncludeLabel": "Why do I need to include this?",
+      "mortgageDescription": "This won't be included in the calculation, but you might want to include it to see the difference between your current rent or mortgage payments and the new payments you'll be making.",
+
+      "subHeading3": "Estimated monthly living costs",
+      "monthlyLivingCostsInfo": "Your lifestyle costs shouldn't change when you get a mortgage, but lenders will want to 'stress test' if you can afford your payments should interest rates rise or your circumstances change.",
+
+      "entertainmentLabel": "Entertainment and leisure",
+      "entertainmentIncludeLabel": "Expenses to include",
+      "entertainmentDescription": "Include: Eating out, clothing, daily coffees/teas, theatre, museums, evenings out, family days out, personal grooming etc.",
+
+      "holidaysLabel": "Holidays",
+      "holidaysIncludeLabel": "Expenses to include",
+      "holidaysDescription": "Think about how much you typically spend on holidays or weekends away per year, and divide that by 12.Exclude: Travel insurance or travel for work.",
+
+      "groceriesLabel": "Food, groceries and toiletries",
+      "groceriesIncludeLabel": "Expenses to include",
+      "groceriesDescription": "Include: Weekly shop, daily lunches, toiletries etc."
+    },
+    "overstretched": {
+      "title": "It appears your budget is overstretched",
+      "primaryInfo": "Your monthly committed costs are higher than your take-home pay. Based on the costs you've entered, you won't be offered a mortgage.",
+      "subHeading": "Please check the numbers you have entered.",
+      "secondaryInfo": "If you are spending more than your take-home pay, this means that you are overstretching your budget and are at risk of getting into debt."
+    },
+    "calloutMessages": {
+      "negative": "You run a very high risk of overstretching your budget.See summary",
+      "warning": "You are at risk of overstretching your budget.See summary",
+      "positive": "Your budget is not overstretched.See summary"
+    },
+    "budgetInfo": {
+      "negative": {
+        "heading": "You run a very high risk of overstretching your budget.",
+        "info": "You run a very high risk of overstretching your budget to meet these repayments. Think about a smaller, more affordable mortgage. Here's what you can do now."
+      },
+      "positive": {
+        "heading": "Your budget is not overstretched.",
+        "info": "Your budget is not overstretched and you can meet these repayments. But think ahead - if interest rates rise, could you afford this mortgage?"
+      },
+      "warning": {
+        "heading": "You are at risk of overstretching your budget.",
+        "info": "You are at risk of overstretching your budget to meet these repayments, particularly if your circumstances change or interest rates rise. Here's what you can do now."
+      },
+      "basicPercentageLabel": "Your mortgage repayments + your monthly essential costs are %BASIC_COST_PERCENTAGE% of your total take-home pay."
+    }
+  }
+}

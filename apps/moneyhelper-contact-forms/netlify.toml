@@ -1,0 +1,19 @@
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[dev]
+    targetPort = 4500
+    autoLaunch = false
+    base = '/'
+    command = 'npx nx run moneyhelper-contact-forms:serve'
+
+[[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200

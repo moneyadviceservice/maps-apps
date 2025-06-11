@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component renders correctly 1`] = `
+<label
+  class="flex"
+>
+  <input
+    class="sr-only peer tool-cbox"
+    id="test-id"
+    name="test-name"
+    type="checkbox"
+    value=""
+  />
+  <div
+    class="flex items-center justify-center flex-none w-10 h-10 p-1 text-white bg-white border border-gray-400 rounded peer-checked:text-pink-600 peer-focus:border-2 peer-focus:border-purple-700 peer-focus:ring-4 peer-focus:ring-yellow-300 peer-disabled:border-slate-400 peer-checked:disabled:text-gray-500"
+  >
+    <svgr-mock
+      classname="w-6 h-5"
+      role="presentation"
+    />
+  </div>
+  <p
+    class="self-center ml-4"
+  >
+    Lorem Ipsum
+  </p>
+</label>
+`;

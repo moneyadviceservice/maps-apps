@@ -1,0 +1,1 @@
+export { transformImageForTeaserCard } from './transformImageForTeaserCard';

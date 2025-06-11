@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Memberships Memberships component in edit mode render with correct defaultValues 1`] = `
+<div>
+  <div
+    class="w-full overflow-hidden"
+  >
+    <div
+      class="w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300 rounded-t-md p-0"
+    >
+      Memberships
+    </div>
+    <div
+      class="p-6 overflow-x-auto "
+    >
+      <div
+        class="min-w-[550px]"
+      >
+        <div
+          class="flex flex-col lg:flex-row mb-6"
+        >
+          <div
+            class="w-full md:w-1/2"
+          >
+            <p
+              class="text-gray-450 mb-0"
+              data-testid="paragraph"
+            >
+              Registered with FCA
+            </p>
+            <div
+              data-testid="radio-select"
+            >
+              yes
+            </div>
+          </div>
+          <div
+            class="w-full md:w-1/2"
+          >
+            <p
+              class="text-gray-450 mb-0"
+              data-testid="paragraph"
+            >
+              FCA licence number
+            </p>
+            <input
+              class="w-full max-w-[458px] border border-slate-400 rounded px-2 py-1 h-[49px] font-normal"
+              name="fca_number"
+              value="FCA-123456"
+            />
+          </div>
+        </div>
+        <div
+          class="flex"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <div
+              class="flex"
+            >
+              <div
+                class="w-1/2"
+              >
+                <p
+                  class="text-gray-450 mb-0"
+                  data-testid="paragraph"
+                >
+                  Organisation Membership
+                </p>
+              </div>
+              <div
+                class="w-1/2"
+              >
+                <p
+                  class="text-gray-450 mb-0"
+                  data-testid="paragraph"
+                >
+                  Membership number
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex"
+              data-testid="membership-item"
+            >
+              <div
+                class="w-1/2 font-bold"
+              >
+                <input
+                  class="w-full max-w-[458px] border border-slate-400 rounded px-2 py-1 h-[49px] font-normal"
+                  name="organisation_membership[auk].title"
+                  value="AdviceUK"
+                />
+              </div>
+              <div
+                class="w-1/2 font-bold"
+              >
+                <input
+                  class="w-full max-w-[458px] border border-slate-400 rounded px-2 py-1 h-[49px] font-normal"
+                  name="organisation_membership[0].key"
+                  value="auk"
+                />
+              </div>
+            </div>
+            <div
+              class="flex"
+              data-testid="membership-item"
+            >
+              <div
+                class="w-1/2 font-bold"
+              >
+                <input
+                  class="w-full max-w-[458px] border border-slate-400 rounded px-2 py-1 h-[49px] font-normal"
+                  name="organisation_membership[ima].title"
+                  value="IMA"
+                />
+              </div>
+              <div
+                class="w-1/2 font-bold"
+              >
+                <input
+                  class="w-full max-w-[458px] border border-slate-400 rounded px-2 py-1 h-[49px] font-normal"
+                  name="organisation_membership[1].key"
+                  value="ima"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Memberships Memberships component in read mode matches snapshot 1`] = `
+<div>
+  <div
+    class="w-full overflow-hidden"
+  >
+    <div
+      class="w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300 rounded-t-md p-0"
+    >
+      Memberships
+    </div>
+    <div
+      class="p-6 overflow-x-auto "
+    >
+      <div
+        class="min-w-[550px]"
+      >
+        <div
+          class="flex flex-col lg:flex-row mb-6"
+        >
+          <div
+            class="w-full md:w-1/2"
+          >
+            <p
+              class="text-gray-450 mb-0"
+              data-testid="paragraph"
+            >
+              Registered with FCA
+            </p>
+            <p
+              class="mb-4 font-bold"
+              data-testid="fca-registered"
+            >
+              <tick-green.svg
+                classname="w-4 inline"
+              />
+               
+              Yes
+            </p>
+          </div>
+          <div
+            class="w-full md:w-1/2"
+          >
+            <p
+              class="text-gray-450 mb-0"
+              data-testid="paragraph"
+            >
+              FCA licence number
+            </p>
+            <p
+              class="mb-4 font-bold"
+              data-testid="fca-number"
+            >
+              999999
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex"
+        >
+          <div
+            class="flex flex-col w-full"
+          >
+            <div
+              class="flex"
+            >
+              <div
+                class="w-1/2"
+              >
+                <p
+                  class="text-gray-450 mb-0"
+                  data-testid="paragraph"
+                >
+                  Organisation Membership
+                </p>
+              </div>
+              <div
+                class="w-1/2"
+              >
+                <p
+                  class="text-gray-450 mb-0"
+                  data-testid="paragraph"
+                >
+                  Membership number
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex"
+              data-testid="membership-item"
+            >
+              <div
+                class="w-1/2 font-bold"
+              >
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  Example Org
+                </p>
+              </div>
+              <div
+                class="w-1/2 font-bold"
+              >
+                <p
+                  class="mb-4"
+                  data-testid="paragraph"
+                >
+                  EX123
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

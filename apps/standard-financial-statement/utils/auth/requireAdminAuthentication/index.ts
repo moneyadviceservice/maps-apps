@@ -1,0 +1,1 @@
+export { requireAdminAuthentication } from './requireAdminAuthentication';

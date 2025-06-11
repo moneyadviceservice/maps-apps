@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberFormat component renders correctly 1`] = `
+<span
+  id="id"
+  name="name"
+/>
+`;
+
+exports[`NumberFormat component renders correctly with a custom className 1`] = `
+<span
+  class="rounded-lg"
+  id="id"
+  name="name"
+/>
+`;
+
+exports[`NumberFormat component renders correctly with direction and position props 1`] = `
+<span
+  class="inline-flex"
+>
+  <span
+    class="flex items-center gap-2 flex-row"
+  >
+    <span
+      id="id"
+      name="name"
+    />
+    <span
+      class="inline-block border-solid border-x-transparent border-t-[13px] border-x-[8px] border-b-0 border-t-green-700"
+    />
+  </span>
+</span>
+`;

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar component renders the blue variant correctly 1`] = `
+<div
+  class=""
+  data-testid="progress-component"
+>
+  <label
+    class="block mb-6 text-2xl font-bold text-center md:text-4xl"
+    for="progress"
+  >
+    30% complete
+  </label>
+  <progress
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="30"
+    class="w-full border-2 bg-white border-slate-400 rounded-full h-[18px] shadow-bottom-slate overflow-hidden [&::-webkit-progress-bar]:bg-white [&::-webkit-progress-value]:rounded-full [&::-moz-progress-bar]:rounded-full [&::-webkit-progress-value]:bg-blue-800 [&::-moz-progress-bar]:bg-blue-800"
+    id="progress"
+    max="100"
+    value="30"
+  />
+</div>
+`;
+
+exports[`ProgressBar component renders the default correctly 1`] = `
+<div
+  class=""
+  data-testid="progress"
+>
+  <label
+    class="block mb-6 text-2xl font-bold text-center md:text-4xl"
+    for="progress"
+  >
+    30% complete
+  </label>
+  <progress
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="30"
+    class="w-full border-2 bg-white border-slate-400 rounded-full h-[18px] shadow-bottom-slate overflow-hidden [&::-webkit-progress-bar]:bg-white [&::-webkit-progress-value]:rounded-full [&::-moz-progress-bar]:rounded-full [&::-webkit-progress-value]:bg-pink-600 [&::-moz-progress-bar]:bg-pink-600"
+    id="progress"
+    max="100"
+    value="30"
+  />
+</div>
+`;

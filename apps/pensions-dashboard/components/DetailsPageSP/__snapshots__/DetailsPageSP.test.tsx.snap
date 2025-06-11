@@ -1,0 +1,838 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPageSp Component renders state pension details page correctly 1`] = `
+<div>
+  <div
+    class="xl:grid xl:grid-cols-10"
+  >
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-gray-800 font-normal text-lg leading-[1.5] md:text-2xl md:leading-10 mb-6 md:mb-12 mt-2"
+        data-testid="tool-intro"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          pages.pension-details.toolIntro.no-estimate
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-10"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="hidden md:block"
+        >
+          <div
+            class="mt-14 md:mt-16"
+          >
+            <h2
+              class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+              data-testid="table-section-heading"
+            >
+              pages.pension-details.details.title
+            </h2>
+            <table
+              class="w-full max-md:leading-6 max-md:block table-fixed"
+              data-testid="table-section-content"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+                  />
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.monthly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.yearly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.payable-date
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="max-md:block"
+              >
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.estimate-today
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-estimate-today"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.forecast
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-forecast"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="md:hidden mt-14 md:mt-16"
+        >
+          <h2
+            class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+            data-testid="table-section-heading"
+          >
+            pages.pension-details.details.title
+          </h2>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.estimate-today
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.forecast
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 pb-2 md:pr-10"
+          data-testid="information-callout"
+        >
+          <h4
+            class="text-xl md:text-2xl text-gray-800 font-bold flex flex-row gap-[10px] mb-4"
+          >
+            <svgr-mock
+              classname="size-8 shrink-0"
+            />
+            pages.pension-details.claiming-your-state-pension.heading
+          </h4>
+          <div
+            class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] mb-0 [&_ul>li:before]:bg-tick_grey"
+            data-testid="rich-text"
+          >
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="list-disc marker:text-blue-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug !mb-0"
+                start="-1"
+              >
+                <li>
+                  <p
+                    class="mb-4"
+                    data-testid="paragraph"
+                  >
+                    pages.pension-details.claiming-your-state-pension.items
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DetailsPageSp Component renders with WU unavailable code 1`] = `
+<div>
+  <div
+    class="xl:grid xl:grid-cols-10"
+  >
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-gray-800 font-normal text-lg leading-[1.5] md:text-2xl md:leading-10 mb-6 md:mb-12 mt-2"
+        data-testid="tool-intro"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          pages.pension-details.toolIntro.no-estimate-wu
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-10"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="hidden md:block"
+        >
+          <div
+            class="mt-14 md:mt-16"
+          >
+            <h2
+              class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+              data-testid="table-section-heading"
+            >
+              pages.pension-details.details.title
+            </h2>
+            <table
+              class="w-full max-md:leading-6 max-md:block table-fixed"
+              data-testid="table-section-content"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+                  />
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.monthly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.yearly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.payable-date
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="max-md:block"
+              >
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.estimate-today
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-estimate-today"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.forecast
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-forecast"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="md:hidden mt-14 md:mt-16"
+        >
+          <h2
+            class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+            data-testid="table-section-heading"
+          >
+            pages.pension-details.details.title
+          </h2>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.estimate-today
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.forecast
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 pb-2 md:pr-10"
+          data-testid="information-callout"
+        >
+          <h4
+            class="text-xl md:text-2xl text-gray-800 font-bold flex flex-row gap-[10px] mb-4"
+          >
+            <svgr-mock
+              classname="size-8 shrink-0"
+            />
+            pages.pension-details.claiming-your-state-pension.heading
+          </h4>
+          <div
+            class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] mb-0 [&_ul>li:before]:bg-tick_grey"
+            data-testid="rich-text"
+          >
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="list-disc marker:text-blue-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug !mb-0"
+                start="-1"
+              >
+                <li>
+                  <p
+                    class="mb-4"
+                    data-testid="paragraph"
+                  >
+                    pages.pension-details.claiming-your-state-pension.items
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DetailsPageSp Component renders without unavailable code 1`] = `
+<div>
+  <div
+    class="xl:grid xl:grid-cols-10"
+  >
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="t-tool-intro border-l-[6px] border-teal-300 pl-6 text-gray-800 font-normal text-lg leading-[1.5] md:text-2xl md:leading-10 mb-6 md:mb-12 mt-2"
+        data-testid="tool-intro"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          pages.pension-details.toolIntro.no-estimate
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-10"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="hidden md:block"
+        >
+          <div
+            class="mt-14 md:mt-16"
+          >
+            <h2
+              class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+              data-testid="table-section-heading"
+            >
+              pages.pension-details.details.title
+            </h2>
+            <table
+              class="w-full max-md:leading-6 max-md:block table-fixed"
+              data-testid="table-section-content"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+                  />
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.monthly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.yearly-amount
+                  </th>
+                  <th
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+                  >
+                    pages.pension-details.details.payable-date
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="max-md:block"
+              >
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.estimate-today
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-estimate-today"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-estimate-today"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+                <tr
+                  class="max-md:block border-b-1 border-b-slate-400"
+                >
+                  <td
+                    class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+                  >
+                    pages.pension-details.details.forecast
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="monthly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="yearly-forecast"
+                  >
+                    --
+                  </td>
+                  <td
+                    class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                    data-testid="payable-date-forecast"
+                  >
+                    23 August 2025
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="md:hidden mt-14 md:mt-16"
+        >
+          <h2
+            class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+            data-testid="table-section-heading"
+          >
+            pages.pension-details.details.title
+          </h2>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.estimate-today
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-estimate-today-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+          >
+            <h3
+              class="text-2xl md:text-3xl text-gray-800 font-semibold"
+            >
+              pages.pension-details.details.forecast
+            </h3>
+            <div
+              class=""
+            >
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.monthly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.yearly-amount
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                --
+              </div>
+            </div>
+            <div>
+              <div
+                class="font-bold"
+              >
+                pages.pension-details.details.payable-date
+              </div>
+              <div
+                data-testid="current-forecast-mobile"
+              >
+                23 August 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="xl:col-span-7 2xl:col-span-6"
+    >
+      <div
+        class="mt-10 md:mt-16"
+      >
+        <div
+          class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 pb-2 md:pr-10"
+          data-testid="information-callout"
+        >
+          <h4
+            class="text-xl md:text-2xl text-gray-800 font-bold flex flex-row gap-[10px] mb-4"
+          >
+            <svgr-mock
+              classname="size-8 shrink-0"
+            />
+            pages.pension-details.claiming-your-state-pension.heading
+          </h4>
+          <div
+            class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px] mb-0 [&_ul>li:before]:bg-tick_grey"
+            data-testid="rich-text"
+          >
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="list-disc marker:text-blue-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug !mb-0"
+                start="-1"
+              >
+                <li>
+                  <p
+                    class="mb-4"
+                    data-testid="paragraph"
+                  >
+                    pages.pension-details.claiming-your-state-pension.items
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
