@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisteredUsers matches snapshot 1`] = `
+<div>
+  <div
+    class="container-auto overflow-hidden border rounded-md t-refine-search border-slate-300 mb-8 p-0"
+  >
+    <div
+      class=" w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300"
+    >
+      Registered Users
+    </div>
+    <div
+      class="overflow-auto"
+    >
+      <table
+        class="w-full"
+      >
+        <thead>
+          <tr
+            class="border-b border-gray-300 text-left"
+          >
+            <th
+              class="px-4 py-2 font-medium cursor-pointer"
+            >
+              <div
+                class="flex items-center gap-1"
+              >
+                First name
+                 
+                <chevron-down-icon.svg
+                  classname="w-4"
+                />
+              </div>
+            </th>
+            <th
+              class="px-4 py-2 font-medium"
+            >
+              Last name
+            </th>
+            <th
+              class="px-4 py-2 font-medium"
+            >
+              Email
+            </th>
+            <th
+              class="px-4 py-2 font-medium"
+            >
+              Job title
+            </th>
+            <th
+              class="px-4 py-2 font-medium"
+            >
+              Join date
+            </th>
+            <th
+              class="px-4 py-2 font-medium"
+            >
+              Last login
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="odd:bg-gray-50
+                   border-b border-gray-200"
+          >
+            <td
+              class="px-4 py-2 font-bold"
+              data-testid="user-first-name"
+            >
+              Alice
+            </td>
+            <td
+              class="px-4 py-2 font-bold"
+              data-testid="user-last-name"
+            >
+              Brown
+            </td>
+            <td
+              class="px-4 py-2 underline text-blue-600"
+              data-testid="user-email"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="mailto:alice@example.com"
+              >
+                alice@example.com
+              </a>
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-job-title"
+            >
+              Designer
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-join-date"
+            >
+              15 Jun 2023
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-last-login"
+            >
+              12 Mar 2024
+            </td>
+          </tr>
+          <tr
+            class="odd:bg-gray-50
+                   border-b border-gray-200"
+          >
+            <td
+              class="px-4 py-2 font-bold"
+              data-testid="user-first-name"
+            >
+              Zoe
+            </td>
+            <td
+              class="px-4 py-2 font-bold"
+              data-testid="user-last-name"
+            >
+              Anderson
+            </td>
+            <td
+              class="px-4 py-2 underline text-blue-600"
+              data-testid="user-email"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="mailto:zoe@example.com"
+              >
+                zoe@example.com
+              </a>
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-job-title"
+            >
+              Engineer
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-join-date"
+            >
+              10 Mar 2023
+            </td>
+            <td
+              class="px-4 py-2"
+              data-testid="user-last-login"
+            >
+              1 Apr 2024
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionToolsInputs should render an input fields with label, description, error message and values successfully  1`] = `
+<div>
+  <div
+    class="border-0 border-l-4 border-red-700 border-solid pl-4"
+    data-testid="errors"
+  >
+    <fieldset
+      class="mb-4"
+    >
+      <label
+        class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+        for="pot"
+      >
+        How much is in your pot?
+      </label>
+      <p
+        class="text-base text-gray-400 mb-2"
+      >
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+      </p>
+      <div
+        aria-describedby="pot"
+        class="mb-2 text-red-700"
+      >
+        Enter a figure
+      </div>
+      <div
+        class="flex"
+      >
+        <span
+          aria-hidden="true"
+          class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+        >
+          £
+        </span>
+        <input
+          aria-label="How much is in your pot? In pounds."
+          aria-required="true"
+          class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+          data-testid="pot"
+          id="pot"
+          inputmode="numeric"
+          name="pot"
+          type="text"
+          value=""
+        />
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`PensionToolsInputs should render an input fields with label, description, error message and values successfully  2`] = `
+<div>
+  <div
+    class="border-0 border-l-4 border-red-700 border-solid pl-4"
+    data-testid="errors"
+  >
+    <fieldset
+      class="mb-4"
+    >
+      <label
+        class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+        for="age"
+      >
+        How old are you?
+      </label>
+      <p
+        class="text-base text-gray-400 mb-2"
+      >
+        Age description
+      </p>
+      <div
+        aria-describedby="age"
+        class="mb-2 text-red-700"
+      >
+        Enter a figure
+      </div>
+      <div
+        class="flex"
+      >
+        <input
+          aria-label="How old are you? In years."
+          aria-required="true"
+          class="tool-field w-full border pl-2 focus:outline-purple-700 focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+          data-testid="age"
+          id="age"
+          inputmode="numeric"
+          name="age"
+          type="text"
+          value="30"
+        />
+        <span
+          aria-hidden="true"
+          class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+        >
+          Years
+        </span>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`PensionToolsInputs should render an input pot fields successfully without any value and enter value 1`] = `
+<div>
+  <div
+    class="border-0 border-l-4 border-red-700 border-solid pl-4"
+    data-testid="errors"
+  >
+    <fieldset
+      class="mb-4"
+    >
+      <label
+        class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+        for="pot"
+      >
+        How much is in your pot?
+      </label>
+      <p
+        class="text-base text-gray-400 mb-2"
+      >
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+      </p>
+      <div
+        aria-describedby="pot"
+        class="mb-2 text-red-700"
+      >
+        Enter a figure
+      </div>
+      <div
+        class="flex"
+      >
+        <span
+          aria-hidden="true"
+          class="bg-gray-100 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px]"
+        >
+          £
+        </span>
+        <input
+          aria-label="How much is in your pot? In pounds."
+          aria-required="true"
+          class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline mr-2 border-gray-600 border-l-0 max-w-[360px]"
+          data-testid="pot"
+          id="pot"
+          inputmode="numeric"
+          name="pot"
+          type="text"
+          value="1,000"
+        />
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`PensionToolsInputs should render an input pot fields successfully without any value and enter value 2`] = `
+<div>
+  <div
+    class="border-0 border-l-4 border-red-700 border-solid pl-4"
+    data-testid="errors"
+  >
+    <fieldset
+      class="mb-4"
+    >
+      <label
+        class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+        for="age"
+      >
+        How old are you?
+      </label>
+      <p
+        class="text-base text-gray-400 mb-2"
+      >
+        Age description
+      </p>
+      <div
+        aria-describedby="age"
+        class="mb-2 text-red-700"
+      >
+        Enter a figure
+      </div>
+      <div
+        class="flex"
+      >
+        <input
+          aria-label="How old are you? In years."
+          aria-required="true"
+          class="tool-field w-full border pl-2 focus:outline-purple-700 focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+          data-testid="age"
+          id="age"
+          inputmode="numeric"
+          name="age"
+          type="text"
+          value="1000"
+        />
+        <span
+          aria-hidden="true"
+          class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+        >
+          Years
+        </span>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormErrorSummary renders correctly as new org 1`] = `
+<div>
+  <div
+    aria-relevant="all"
+    data-testid="error-summary-container"
+    id="error-summary-container"
+    role="alert"
+    tabindex="-1"
+  />
+</div>
+`;
