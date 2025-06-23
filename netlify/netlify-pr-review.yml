@@ -1,0 +1,114 @@
+name: CI
+
+trigger: none
+
+pr:
+  branches:
+    include:
+      - main
+      - feature/*
+      - release/*
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+stages:
+  - stage: Build
+    variables:
+      - name: npm_config_cache
+        value: $(Pipeline.Workspace)/.npm
+    jobs:
+      - job: Determine_Affected
+        displayName: 'Determine Affected Apps'
+        steps:
+          - script: |
+              cd $(Build.SourcesDirectory)
+              echo "the params are build_id: $(Build.BuildId), source_version: $(Build.SourceVersion), tag: dev-$(Build.BuildId)"
+            displayName: 'Echo Parameters'
+
+          - checkout: self
+            clean: true
+            persistCredentials: true
+            fetchDepth: 0
+            displayName: Check out source code from main repository
+          - script: |
+              git fetch origin main:refs/remotes/origin/main
+            displayName: Fetch the latest history for main branch
+          - template: steps/install-node.yml
+          - task: Cache@2
+            name: npmCache
+            displayName: Cache npm shared cache
+            inputs:
+              key: 'npm | "$(Agent.OS)" | package-lock.json'
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+              path: $(npm_config_cache)
+          - script: npm ci --prefer-offline --no-audit --cache=$(npm_config_cache)
+            displayName: 'Install Dependencies'
+
+          - script: |
+              cd $(Build.SourcesDirectory)
+
+              # Fetch the base commit on main
+              git fetch origin main --prune
+              HEAD_COMMIT=$(git rev-parse HEAD)
+              BASE_COMMIT=$(git rev-parse origin/main)
+
+              echo "Base commit: $BASE_COMMIT"
+              echo "Head commit: $HEAD_COMMIT"
+
+              echo "Running npx nx show projects --affected --type app"
+              affected=$(npx nx show projects --affected --type app --base=$BASE_COMMIT --head=$HEAD_COMMIT)
+
+              echo "Affected Projects: $affected"
+
+              if [ -z "$affected" ]; then
+                echo "No affected projects. Exiting step."
+                stepoutput=""
+                echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+                exit 0
+              fi
+
+              echo "Formatting output of affected projects..."
+              stepoutput=$(echo "$affected" | tr '\n' ',')
+              stepoutput=${stepoutput%,}
+
+              echo "Setting envstodeploy variable..."
+              echo "##vso[task.setvariable variable=envstodeploy;isOutput=true]$stepoutput"
+              echo "envstodeploy is set to: $stepoutput"
+            displayName: 'Determine Affected Projects'
+            name: determinenxaffected
+
+  - stage: Code_Analysis
+    displayName: 'Code Analysis'
+    dependsOn: []
+
+    jobs:
+      - job: Analyse_code
+        displayName: 'Analyse Code'
+        steps:
+          - template: steps/analyze-code.yml
+            parameters:
+              SONARCLOUD_NAME: 'MAPS-SonarCloud'
+              SONARCLOUD_ORGANISATION: $(organisationkey)
+              SONARCLOUD_PROJECTKEY: $(projectKey)
+              SONARCLOUD_PROJECTNAME: 'maps-apps'
+              compareWithTargetBranch: false
+              keyvaultname: MapsAppsDev
+              AKS_SPN_ID: $(AKS_SPN_ID)
+              AKS_SPN_KEY: $(AKS_SPN_KEY)
+              TENANT_ID: $(TENANT_ID)
+
+  - stage: Test
+    dependsOn: [Build]
+    variables:
+      - name: envstodeploy
+        value: stageDependencies.Build.Determine_Affected.outputs['determinenxaffected.envstodeploy']
+
+    jobs:
+      - template: templates/test-affected.yml
+        parameters:
+          compareWithTargetBranch: false
+          envstodeploy: ${{ variables.envstodeploy }}
+          context: deploy-preview
+          environment: develop

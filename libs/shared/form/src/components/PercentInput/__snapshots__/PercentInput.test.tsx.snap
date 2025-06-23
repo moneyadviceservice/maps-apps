@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PercentInput component renders correctly 1`] = `
+<div
+  class="flex"
+>
+  <input
+    class="tool-field w-full border pl-2 ml-0 h-auto focus:outline-purple-700 focus:shadow-focus-outline border-gray-400 border-t border-b border-r-0 border-l-1 rounded-l"
+    data-testid="number-input"
+    id="test-id"
+    inputmode="numeric"
+    name="test-name"
+    type="text"
+    value=""
+  />
+  <span
+    aria-hidden="true"
+    class="bg-gray-100 px-3 h-[49px] rounded-r border-gray-400 border border-solid justify-center flex items-center"
+  >
+    %
+  </span>
+</div>
+`;

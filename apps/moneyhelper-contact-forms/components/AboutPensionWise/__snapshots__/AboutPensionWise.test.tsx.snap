@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPensionWise Component renders component correctly 1`] = `
+<div
+  class="md:max-w-5xl"
+>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-blue-800"
+    data-testid="about-pension-wise-title"
+  >
+    components.about-pension-wise.title
+  </h1>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.about-pension-wise.sub-title
+  </p>
+  <div
+    class="flex items-center"
+    data-testid="list-element"
+  >
+    <ul
+      class="list-disc marker:text-gray-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug ml-8"
+      data-testid="about-pension-wise-list"
+      start="-1"
+    >
+      <li>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          mock-value
+        </p>
+      </li>
+      <li>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          mock-text
+        </p>
+      </li>
+    </ul>
+  </div>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.about-pension-wise.content
+  </p>
+  <div
+    class="mt-12"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          components.about-pension-wise.expandable-section.title
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.about-pension-wise.expandable-section.content
+        </p>
+      </div>
+    </details>
+  </div>
+  <form
+    action="/api/form-handler"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-9"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.continue
+      <span />
+    </button>
+  </form>
+</div>
+`;

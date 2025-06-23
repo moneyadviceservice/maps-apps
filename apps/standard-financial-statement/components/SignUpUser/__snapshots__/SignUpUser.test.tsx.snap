@@ -1,0 +1,1452 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpOrg renders correctly as new user 1`] = `
+<div>
+  <form
+    action="/api/sign-up-user"
+    class="mt-6"
+    data-testid="signUpUserForm"
+    id="sign-up-user-form"
+    method="POST"
+    novalidate=""
+  >
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="orgLicenceNumber"
+            >
+              Membership number:
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="orgLicenceNumber"
+              id="orgLicenceNumber"
+              name="orgLicenceNumber"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold my-8 md:text-5xl"
+      >
+        Register as a user of your organisation
+      </h2>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="firstName"
+            >
+              First name
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="firstName"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="lastName"
+            >
+              Surname
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="lastName"
+              id="lastName"
+              name="lastName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="emailAddress"
+            >
+              Email address
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="emailAddress"
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="tel"
+            >
+              Telephone Number
+            </label>
+            <input
+              class="tool-field border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="tel"
+              id="tel"
+              inputmode="numeric"
+              name="tel"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="jobTitle"
+            >
+              Job Title
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="jobTitle"
+              id="jobTitle"
+              name="jobTitle"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="password"
+            >
+              Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="password"
+                id="password"
+                name="password"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="confirmPassword"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="mb-4"
+          >
+            <label
+              class="block mb-8 text-3xl font-bold md:text-5xl"
+              for="codeOfConduct"
+            >
+              Code of Conduct agreement
+            </label>
+            <p>
+              Please tick this box to confirm you agree to the SFS Code of Conduct, which provides a guide to best practice use of the SFS.
+            </p>
+            <div
+              class="grid gap-4 mt-10 mb-16 md:grid-cols-2"
+            >
+              <label
+                class="flex"
+              >
+                <input
+                  class="sr-only peer tool-cbox"
+                  data-testid="codeOfConduct"
+                  id="codeOfConduct"
+                  name="codeOfConduct"
+                  type="checkbox"
+                  value="true"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 text-white bg-white border border-gray-400 rounded peer-focus:border-2 peer-focus:border-purple-700 peer-focus:ring-4 peer-focus:ring-yellow-300 peer-disabled:border-slate-400 peer-checked:disabled:text-gray-500 peer-checked:text-blue-600"
+                >
+                  <tick.svg
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <p
+                  class="self-center ml-4"
+                >
+                  I agree to the
+                   
+                  <a
+                    class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-bold text-magenta-700"
+                    href="/en/apply-to-use-the-sfs/sfs-code-of-conduct"
+                    target="_blank"
+                  >
+                    Code of Conduct
+                  </a>
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-green-300"
+      data-testid="signupUser"
+      type="submit"
+    >
+      <span />
+      Next
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SignUpOrg renders correctly existing user 1`] = `
+<div>
+  <form
+    action="/api/sign-up-user"
+    class="mt-6"
+    data-testid="signUpUserForm"
+    id="sign-up-user-form"
+    method="POST"
+    novalidate=""
+  >
+    <div
+      class="mb-8"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold my-8 md:text-5xl"
+      >
+        Part 2 - Register as a user
+      </h2>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="firstName"
+            >
+              First name
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="firstName"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="lastName"
+            >
+              Surname
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="lastName"
+              id="lastName"
+              name="lastName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="emailAddress"
+            >
+              Email address
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="emailAddress"
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="tel"
+            >
+              Telephone Number
+            </label>
+            <input
+              class="tool-field border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="tel"
+              id="tel"
+              inputmode="numeric"
+              name="tel"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="jobTitle"
+            >
+              Job Title
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="jobTitle"
+              id="jobTitle"
+              name="jobTitle"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="password"
+            >
+              Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="password"
+                id="password"
+                name="password"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="confirmPassword"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="mb-4"
+          >
+            <label
+              class="block mb-8 text-3xl font-bold md:text-5xl"
+              for="codeOfConduct"
+            >
+              Code of Conduct agreement
+            </label>
+            <p>
+              Please tick this box to confirm you agree to the SFS Code of Conduct, which provides a guide to best practice use of the SFS.
+            </p>
+            <div
+              class="grid gap-4 mt-10 mb-16 md:grid-cols-2"
+            >
+              <label
+                class="flex"
+              >
+                <input
+                  class="sr-only peer tool-cbox"
+                  data-testid="codeOfConduct"
+                  id="codeOfConduct"
+                  name="codeOfConduct"
+                  type="checkbox"
+                  value="true"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 text-white bg-white border border-gray-400 rounded peer-focus:border-2 peer-focus:border-purple-700 peer-focus:ring-4 peer-focus:ring-yellow-300 peer-disabled:border-slate-400 peer-checked:disabled:text-gray-500 peer-checked:text-blue-600"
+                >
+                  <tick.svg
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <p
+                  class="self-center ml-4"
+                >
+                  I agree to the
+                   
+                  <a
+                    class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-bold text-magenta-700"
+                    href="/en/apply-to-use-the-sfs/sfs-code-of-conduct"
+                    target="_blank"
+                  >
+                    Code of Conduct
+                  </a>
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-green-300"
+      data-testid="signupUser"
+      type="submit"
+    >
+      <span />
+      Next
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SignUpOrg renders correctly with continuationToken and OTP input 1`] = `
+<div>
+  <form
+    action="/api/sign-up-user"
+    class="mt-6"
+    data-testid="signUpUserForm"
+    id="sign-up-user-form"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="continuation_token"
+      type="hidden"
+      value="1234"
+    />
+    <div
+      class="mb-8"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold my-8 md:text-5xl"
+      >
+        Part 2 - Register as a user
+      </h2>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="firstName"
+            >
+              First name
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="firstName"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="lastName"
+            >
+              Surname
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="lastName"
+              id="lastName"
+              name="lastName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="emailAddress"
+            >
+              Email address
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="emailAddress"
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="tel"
+            >
+              Telephone Number
+            </label>
+            <input
+              class="tool-field border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="tel"
+              id="tel"
+              inputmode="numeric"
+              name="tel"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="jobTitle"
+            >
+              Job Title
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="jobTitle"
+              id="jobTitle"
+              name="jobTitle"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="password"
+            >
+              Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="password"
+                id="password"
+                name="password"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="confirmPassword"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="mb-4"
+          >
+            <label
+              class="block mb-8 text-3xl font-bold md:text-5xl"
+              for="codeOfConduct"
+            >
+              Code of Conduct agreement
+            </label>
+            <p>
+              Please tick this box to confirm you agree to the SFS Code of Conduct, which provides a guide to best practice use of the SFS.
+            </p>
+            <div
+              class="grid gap-4 mt-10 mb-16 md:grid-cols-2"
+            >
+              <label
+                class="flex"
+              >
+                <input
+                  class="sr-only peer tool-cbox"
+                  data-testid="codeOfConduct"
+                  id="codeOfConduct"
+                  name="codeOfConduct"
+                  type="checkbox"
+                  value="true"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 text-white bg-white border border-gray-400 rounded peer-focus:border-2 peer-focus:border-purple-700 peer-focus:ring-4 peer-focus:ring-yellow-300 peer-disabled:border-slate-400 peer-checked:disabled:text-gray-500 peer-checked:text-blue-600"
+                >
+                  <tick.svg
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <p
+                  class="self-center ml-4"
+                >
+                  I agree to the
+                   
+                  <a
+                    class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-bold text-magenta-700"
+                    href="/en/apply-to-use-the-sfs/sfs-code-of-conduct"
+                    target="_blank"
+                  >
+                    Code of Conduct
+                  </a>
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-16 -mt-6"
+    >
+      <h3
+        class="text-gray-800 mb-8 text-3xl font-bold md:text-5xl"
+      >
+        One-time passcode
+      </h3>
+      <div
+        class="text-gray-500"
+      >
+        Please enter the One-time passcode which has been sent to:
+        <span
+          class="block mb-8"
+        />
+      </div>
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div>
+            <label
+              class="block mb-2 text-2xl"
+              for="otp"
+            >
+              One-time passcode
+            </label>
+            <div
+              class="max-w-sm mt-2"
+            >
+              <input
+                class="tool-field w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field border-gray-400"
+                data-testid="otp"
+                id="otp"
+                inputmode="numeric"
+                name="otp"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-green-300"
+      data-testid="signupUser"
+      type="submit"
+    >
+      <span />
+      Apply now
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SignUpOrg renders correctly with errors 1`] = `
+<div>
+  <form
+    action="/api/sign-up-user"
+    class="mt-6"
+    data-testid="signUpUserForm"
+    id="sign-up-user-form"
+    method="POST"
+    novalidate=""
+  >
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="orgLicenceNumber"
+            >
+              Membership number:
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="orgLicenceNumber"
+              id="orgLicenceNumber"
+              name="orgLicenceNumber"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold my-8 md:text-5xl"
+      >
+        Register as a user of your organisation
+      </h2>
+      <div
+        class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="firstName"
+            >
+              First name
+            </label>
+            <div
+              class="text-red-500 text-[18px] mb-1 -mt-2"
+            >
+              error
+            </div>
+            <input
+              aria-invalid="false"
+              class="w-full h-10 px-3 m-px rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field border-red-500 border-[2px]"
+              data-testid="firstName"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="lastName"
+            >
+              Surname
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="lastName"
+              id="lastName"
+              name="lastName"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="emailAddress"
+            >
+              Email address
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="emailAddress"
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="tel"
+            >
+              Telephone Number
+            </label>
+            <input
+              class="tool-field border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="tel"
+              id="tel"
+              inputmode="numeric"
+              name="tel"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="jobTitle"
+            >
+              Job Title
+            </label>
+            <input
+              aria-invalid="false"
+              class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+              data-testid="jobTitle"
+              id="jobTitle"
+              name="jobTitle"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="password"
+            >
+              Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="password"
+                id="password"
+                name="password"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <label
+              class="block mb-2 text-2xl"
+              for="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <div
+              class="relative"
+            >
+              <input
+                aria-invalid="false"
+                class="border-gray-400 w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field pr-24"
+                data-testid="confirmPassword"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-0 bottom-0 text-sm uppercase"
+                type="button"
+              >
+                SHOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-8"
+    >
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <div
+          class="mb-8"
+        >
+          <div
+            class="mb-4"
+          >
+            <label
+              class="block mb-8 text-3xl font-bold md:text-5xl"
+              for="codeOfConduct"
+            >
+              Code of Conduct agreement
+            </label>
+            <p>
+              Please tick this box to confirm you agree to the SFS Code of Conduct, which provides a guide to best practice use of the SFS.
+            </p>
+            <div
+              class="grid gap-4 mt-10 mb-16 md:grid-cols-2"
+            >
+              <label
+                class="flex"
+              >
+                <input
+                  class="sr-only peer tool-cbox"
+                  data-testid="codeOfConduct"
+                  id="codeOfConduct"
+                  name="codeOfConduct"
+                  type="checkbox"
+                  value="true"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 text-white bg-white border border-gray-400 rounded peer-focus:border-2 peer-focus:border-purple-700 peer-focus:ring-4 peer-focus:ring-yellow-300 peer-disabled:border-slate-400 peer-checked:disabled:text-gray-500 peer-checked:text-blue-600"
+                >
+                  <tick.svg
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <p
+                  class="self-center ml-4"
+                >
+                  I agree to the
+                   
+                  <a
+                    class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-bold text-magenta-700"
+                    href="/en/apply-to-use-the-sfs/sfs-code-of-conduct"
+                    target="_blank"
+                  >
+                    Code of Conduct
+                  </a>
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-green-300"
+      data-testid="signupUser"
+      type="submit"
+    >
+      <span />
+      Next
+      <span />
+    </button>
+  </form>
+</div>
+`;
