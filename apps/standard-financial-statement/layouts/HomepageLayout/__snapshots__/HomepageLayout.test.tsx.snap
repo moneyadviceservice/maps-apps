@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomepageLayout renders dom elements correctly 1`] = `
+<div>
+  <div
+    class="container-auto pb-8 max-w-[1272px] bg-right mt-8"
+    style="background-image: url(/asset-path/image-src); background-color: rgba(255, 255, 255, 0.33); background-blend-mode: lighten; width: auto; height: 100%; background-repeat: no-repeat; background-position-x: 100%; background-position-y: 0;"
+  >
+    <div
+      class="lg:max-w-[840px] space-y-8 pb-6 pt-4"
+    >
+      <h1
+        class="text-4xl md:text-6xl text-gray-800 font-bold"
+        data-testid="homepage-heading"
+      >
+        Hero title
+      </h1>
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+        data-testid="rich-text"
+      />
+      <a
+        class="border-0 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 text-blue-600 bg-green-300 hover:bg-green-500"
+        data-testid="homepage-primary-link"
+        href="url/route"
+        title="Description of link"
+      >
+        Link Text
+      </a>
+    </div>
+  </div>
+  <div
+    class="w-full pt-8 pb-8 bg-blue-600"
+  >
+    <div
+      class="container-auto pb-8 max-w-[1272px]"
+    >
+      <div
+        class="w-full space-y-8 pt-8"
+      >
+        <div
+          class="space-y-5"
+        >
+          <div
+            class="md:grid-cols-3 grid grid-cols-1 gap-8"
+          >
+            <a
+              class="t-teaser flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden bg-white hover:outline-pink-800 hover:decoration-pink-800 hover:underline focus:bg-yellow-200 focus:!text-gray-800 focus:!no-underline focus:outline focus:!outline-purple-800 focus:outline-[4px] focus:outline-offset-0 focus:shadow-none active:bg-gray-200 active:text-gray-800 active:no-underline active:outline active:outline-purple-800 active:shadow-none active:outline-[4px] active:outline-offset-0 text-magenta-700 hover:text-magenta-700 hover:border-magenta-700"
+              data-testid="teaserCard"
+              href="teaser-link"
+              target="_top"
+            >
+              <img
+                alt=""
+                class="object-cover h-full w-full"
+                data-nimg="1"
+                decoding="async"
+                height="125"
+                loading="lazy"
+                src="/_next/image?url=%2Fasset-path%2Fimage-src&w=256&q=75"
+                srcset="/_next/image?url=%2Fasset-path%2Fimage-src&w=128&q=75 1x, /_next/image?url=%2Fasset-path%2Fimage-src&w=256&q=75 2x"
+                style="color: transparent;"
+                width="125"
+              />
+              <div
+                class="p-5 space-y-3 group"
+              >
+                <h5
+                  class="md:text-xl text-xl font-bold text-inherit"
+                >
+                  Teaser Title
+                </h5>
+                <p
+                  class="inline-block w-full text-base text-gray-800 no-underline"
+                >
+                  Teaser description
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepContainer component renders correctly as form 1`] = `
+<div
+  class="container-auto"
+>
+  <div
+    class="flex items-center text-pink-600 group"
+  >
+    <svgr-mock
+      aria-hidden="true"
+      classname="text-pink-600 group-hover:text-pink-800 w-[8px] h-[15px]"
+    />
+    <a
+      class="ml-2 underline tool-nav-prev group-hover:text-pink-800 group-hover:no-underline"
+      href="test/back/link"
+    >
+      Back
+    </a>
+  </div>
+  <span>
+    Questions
+  </span>
+</div>
+`;
+
+exports[`StepContainer component renders correctly with children only 1`] = `
+<div
+  class="container-auto"
+>
+  <div
+    class="flex items-center text-pink-600 group"
+  >
+    <svgr-mock
+      aria-hidden="true"
+      classname="text-pink-600 group-hover:text-pink-800 w-[8px] h-[15px]"
+    />
+    <a
+      class="ml-2 underline tool-nav-prev group-hover:text-pink-800 group-hover:no-underline"
+      href="test/back/link"
+    >
+      Back
+    </a>
+  </div>
+  <form
+    data-testid="form"
+    method="POST"
+  >
+    <input
+      name="isEmbed"
+      type="hidden"
+      value="true"
+    />
+    <input
+      name="language"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="savedData"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="dataPath"
+      type="hidden"
+      value=""
+    />
+    <span>
+      Questions
+    </span>
+    <button
+      class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button mt-8"
+      data-testid="step-container-submit-button"
+      formaction="/api/submit"
+      type="submit"
+    >
+      <span />
+      <span />
+    </button>
+  </form>
+</div>
+`;

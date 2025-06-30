@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackToTop component renders correctly 1`] = `
+<div
+  class="flex items-center justify-center py-8 mt-12 border-t-1 border-b-1 border-slate-400"
+  data-testid="top"
+>
+  <div
+    class="flex gap-4 mr-auto"
+  >
+    <button
+      class="hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:bg-blue-600 hover:text-white focus::not-active:bg-magenta-700 active:not-focus:bg-blue-600 focus::not-active:text-white active::not-focus:text-white"
+      data-testid="print"
+      type="submit"
+    >
+      <span />
+      Print
+      <span />
+    </button>
+    <a
+      class="hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:bg-blue-600 hover:text-white focus::not-active:bg-magenta-700 active:not-focus:bg-blue-600 focus::not-active:text-white active::not-focus:text-white"
+      href="mailto:?body=url"
+    >
+      Email
+    </a>
+  </div>
+  <div
+    class="flex items-center justify-center gap-2 ml-auto"
+  >
+    <a
+      class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-blue-600 visited:text-blue-600"
+      href="#top"
+    >
+      Back to top
+    </a>
+    <arrow-up.svg
+      classname=""
+      fill="text-blue-600"
+    />
+  </div>
+</div>
+`;
+
+exports[`BackToTop component renders correctly with click to print action 1`] = `
+<div
+  class="flex items-center justify-center py-8 mt-12 border-t-1 border-b-1 border-slate-400"
+  data-testid="top"
+>
+  <div
+    class="flex gap-4 mr-auto"
+  >
+    <button
+      class="hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:bg-blue-600 hover:text-white focus::not-active:bg-magenta-700 active:not-focus:bg-blue-600 focus::not-active:text-white active::not-focus:text-white"
+      data-testid="print"
+      type="submit"
+    >
+      <span />
+      Print
+      <span />
+    </button>
+    <a
+      class="hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:bg-blue-600 hover:text-white focus::not-active:bg-magenta-700 active:not-focus:bg-blue-600 focus::not-active:text-white active::not-focus:text-white"
+      href="mailto:?body=url"
+    >
+      Email
+    </a>
+  </div>
+  <div
+    class="flex items-center justify-center gap-2 ml-auto"
+  >
+    <a
+      class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-blue-600 visited:text-blue-600"
+      href="#top"
+    >
+      Back to top
+    </a>
+    <arrow-up.svg
+      classname=""
+      fill="text-blue-600"
+    />
+  </div>
+</div>
+`;
