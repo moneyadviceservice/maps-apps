@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMoneyManagement Component renders component correctly 1`] = `
+<p
+  class="mb-4"
+  data-testid="about-money-management-content"
+>
+  components.about-money-management.content
+</p>
+`;

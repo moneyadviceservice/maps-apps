@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Guidance Component renders component correctly 1`] = `
+<div
+  class="flex flex-col gap-2 py-4 md:gap-4"
+>
+  <p
+    class="mb-2 text-2xl font-light md:mb-4"
+    data-testid="guidance-intro"
+  >
+    components.guidance.intro
+  </p>
+  <p
+    class="mb-2 md:mb-4"
+    data-testid="paragraph"
+  >
+    components.guidance.content
+  </p>
+</div>
+`;

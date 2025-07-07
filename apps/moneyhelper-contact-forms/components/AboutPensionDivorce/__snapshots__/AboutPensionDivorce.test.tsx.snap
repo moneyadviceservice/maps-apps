@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPensionDivorce Component renders component correctly 1`] = `
+<p
+  class="mb-6"
+  data-testid="about-pension-divorce-content"
+>
+  components.about-pension-divorce.content
+</p>
+`;

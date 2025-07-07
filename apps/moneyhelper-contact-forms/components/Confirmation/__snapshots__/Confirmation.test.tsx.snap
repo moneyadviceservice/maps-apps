@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation Component handles missing email gracefully 1`] = `
+<div
+  class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-800 p-9"
+  data-testid="information-callout"
+>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-white"
+    data-testid="confirmation-title"
+  >
+    Your reference number is undefined.
+  </h1>
+</div>
+`;
+
+exports[`Confirmation Component renders the component 1`] = `
+<div
+  class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-800 p-9"
+  data-testid="information-callout"
+>
+  <h1
+    class="text-4xl md:text-6xl font-bold mb-4 text-white"
+    data-testid="confirmation-title"
+  >
+    Your reference number is undefined.
+  </h1>
+</div>
+`;

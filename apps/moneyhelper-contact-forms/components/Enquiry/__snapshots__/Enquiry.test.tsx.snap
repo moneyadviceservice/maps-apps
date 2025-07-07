@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Enquiry Component renders the component with title and form 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class=""
+    data-testid="errors"
+  >
+    <label
+      class="block mb-4"
+      for="text-area"
+    >
+      components.enquiry.form.text-area.undefined.label
+    </label>
+    <textarea
+      aria-invalid="false"
+      aria-label="components.enquiry.form.text-area.undefined.label"
+      aria-required="true"
+      class="border-gray-400 obfuscate w-full px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field min-h-[312px] resize"
+      id="text-area"
+      maxlength="4000"
+      minlength="50"
+      name="text-area"
+    />
+    <p
+      aria-live="polite"
+      class="text-base text-gray-400"
+    >
+      You have 4,000 characters remaining.
+    </p>
+  </div>
+  <button
+    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full my-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.continue
+    <span />
+  </button>
+</form>
+`;
+
+exports[`Enquiry Component renders with errors 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-4"
+      for="text-area"
+    >
+      components.enquiry.form.text-area.undefined.label
+    </label>
+    <p
+      class="mb-4 text-red-700"
+      data-testid="text-area-error"
+      id="text-area-error"
+    >
+      components.enquiry.form.text-area.error
+    </p>
+    <textarea
+      aria-errormessage="text-area-error"
+      aria-invalid="true"
+      aria-label="components.enquiry.form.text-area.undefined.label"
+      aria-required="true"
+      class="border-red-700 obfuscate w-full px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field min-h-[312px] resize"
+      id="text-area"
+      maxlength="4000"
+      minlength="50"
+      name="text-area"
+    />
+    <p
+      aria-live="polite"
+      class="text-base text-gray-400"
+    >
+      You have 4,000 characters remaining.
+    </p>
+  </div>
+  <button
+    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full my-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.continue
+    <span />
+  </button>
+</form>
+`;

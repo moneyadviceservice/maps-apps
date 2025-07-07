@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPensionWise Component renders component correctly 1`] = `
+<p
+  class="mb-4"
+  data-testid="paragraph"
+>
+  components.about-pension-wise.sub-title
+</p>
+`;

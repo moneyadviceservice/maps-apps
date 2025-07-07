@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutInsurance Component renders component correctly 1`] = `
+<div
+  class="md:max-w-5xl"
+>
+  <p
+    class="text-2xl font-light mb-9"
+    data-testid="about-insurance-sub-title"
+  >
+    components.about-insurance.sub-title
+  </p>
+  <div
+    class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-teal-300 text-3xl font-semibold md:text-4xl md:max-w-4xl mb-9"
+    data-testid="urgent-callout"
+  >
+    <div
+      class="flex gap-4 sm:gap-6"
+    >
+      <div
+        class="text-pink-800"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.about-insurance.callout
+        </p>
+      </div>
+    </div>
+  </div>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.about-insurance.content
+  </p>
+</div>
+`;

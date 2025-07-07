@@ -1,0 +1,39 @@
+{
+  "name": "standard-financial-statement-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/standard-financial-statement-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["standard-financial-statement"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/standard-financial-statement-e2e/cypress.config.ts",
+        "devServerTarget": "standard-financial-statement:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "standard-financial-statement:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/standard-financial-statement-e2e/cypress.config.ts",
+        "devServerTarget": "standard-financial-statement:serve",
+        "testingType": "e2e",
+        "port": 4301
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "standard-financial-statement:serve:production"
+        }
+      }
+    }
+  }
+}

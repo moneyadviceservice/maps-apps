@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Name Component renders an error message for the first-name field when there is an error 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form"
+  class="md:max-w-xl"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class="pt-6 mb-4"
+  >
+    <div
+      class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="first-name"
+      >
+        components.name.form.first-name.label
+      </label>
+      <p
+        class="mb-4 text-red-700"
+        data-testid="first-name-error"
+        id="first-name-error"
+      >
+        components.name.form.first-name.error
+      </p>
+      <input
+        aria-describedby="first-name-error"
+        aria-invalid="true"
+        class="border-red-700 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-first-name"
+        id="first-name"
+        name="first-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-2"
+  >
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="last-name"
+      >
+        components.name.form.last-name.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="border-gray-400 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-last-name"
+        id="last-name"
+        name="last-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-6"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          components.name.expandable-section.title
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.name.expandable-section.content
+        </p>
+      </div>
+    </details>
+  </div>
+  <button
+    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full my-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.continue
+    <span />
+  </button>
+</form>
+`;
+
+exports[`Name Component renders an error message for the last-name field when there is an error 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form"
+  class="md:max-w-xl"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class="pt-6 mb-4"
+  >
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="first-name"
+      >
+        components.name.form.first-name.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="border-gray-400 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-first-name"
+        id="first-name"
+        name="first-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-2"
+  >
+    <div
+      class="border-0 border-l-4 pl-5 border-red-700 border-solid"
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="last-name"
+      >
+        components.name.form.last-name.label
+      </label>
+      <p
+        class="mb-4 text-red-700"
+        data-testid="last-name-error"
+        id="last-name-error"
+      >
+        components.name.form.last-name.error
+      </p>
+      <input
+        aria-describedby="last-name-error"
+        aria-invalid="true"
+        class="border-red-700 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-last-name"
+        id="last-name"
+        name="last-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-6"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          components.name.expandable-section.title
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.name.expandable-section.content
+        </p>
+      </div>
+    </details>
+  </div>
+  <button
+    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full my-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.continue
+    <span />
+  </button>
+</form>
+`;
+
+exports[`Name Component renders the component with no errors 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form"
+  class="md:max-w-xl"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class="pt-6 mb-4"
+  >
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="first-name"
+      >
+        components.name.form.first-name.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="border-gray-400 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-first-name"
+        id="first-name"
+        name="first-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-2"
+  >
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="last-name"
+      >
+        components.name.form.last-name.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="border-gray-400 obfuscate w-full h-10 px-3 m-px border rounded focus:outline-purple-700 focus:shadow-focus-outline tool-field"
+        data-testid="input-last-name"
+        id="last-name"
+        name="last-name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="mb-6"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-select-focus text-pink-800 underline hover:text-pink-800 hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-pink-600 shrink-0 w-5 mr-2 group-hover:text-pink-800"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          components.name.expandable-section.title
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px]"
+      >
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          components.name.expandable-section.content
+        </p>
+      </div>
+    </details>
+  </div>
+  <button
+    class="border-0 text-white bg-pink-600 hover:bg-pink-800 hover:shadow-none active:bg-pink-900 active:outline-yellow-200 active:text-white t-button px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-500 disabled:shadow-none focus:bg-yellow-200 focus:outline-purple-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none active:shadow-none active:outline-[3px] active:outline-offset-0 t-primary-button w-full my-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.continue
+    <span />
+  </button>
+</form>
+`;

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionPotGuaranteedIncomeResults should render correctly 1`] = `
+<div>
+  <div
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl>
+      <dt
+        class="mb-2 font-medium"
+      >
+        Based on what you’ve told us, if you use your
+         
+        <span>
+          £100,000
+        </span>
+         
+        pot in one go, you could get:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £25,000
+        </span>
+         
+        tax free
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        and get:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £5,600
+        </span>
+         
+        guaranteed annual taxable income, for the rest of your life
+      </dd>
+    </dl>
+    <div
+      class="mt-8 text-base"
+    />
+  </div>
+</div>
+`;
