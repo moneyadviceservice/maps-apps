@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component 0 1`] = `
+<div
+  class="flex flex-col py-2 space-x-1 lg:flex-row border-y border-slate-400"
+>
+  <div
+    class="hidden lg:flex items-center justify-center lg:justify-start"
+  >
+    21 - 30 of 242
+  </div>
+  <nav
+    aria-label="pagination"
+    class="flex flex-wrap justify-center space-y-2 t-pagination lg:space-x-1 lg:space-y-0 lg:grow"
+  >
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-previous sm:flex-none justify-self-start mt-2 lg:mt-0 pl-2 border-white"
+      href="?order=&providerName=AZ&p=2"
+    >
+      <span>
+        <svgr-mock />
+      </span>
+      Previous
+      <span />
+    </a>
+    <ul
+      class="flex items-center justify-center flex-1 min-w-full space-x-1 lg:flex-none lg:min-w-fit"
+    >
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=1"
+          id="page-1"
+          title="Go to page number 1"
+        >
+          1
+        </a>
+      </li>
+      <li
+        class="text-pink-600"
+      >
+        …
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="flex text-base items-center px-3.5 py-1 border-4 rounded-bl-lg active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page t-selected bg-pink-600 text-white no-underline border-pink-600 cursor-default"
+          href="?order=&providerName=AZ&p=3"
+          id="page-3"
+          title="Go to page number 3"
+        >
+          3
+        </a>
+      </li>
+      <li
+        class="text-pink-600"
+      >
+        …
+      </li>
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=25"
+          id="page-25"
+          title="Go to page number 25"
+        >
+          25
+        </a>
+      </li>
+    </ul>
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline order-4 justify-self-end t-next pr-2 border-white"
+      data-testid="next-button"
+      href="?order=&providerName=AZ&p=4"
+    >
+      <span />
+      Next
+      <span>
+        <svgr-mock />
+      </span>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Pagination component 20 1`] = `
+<div
+  class="flex flex-col py-2 space-x-1 lg:flex-row border-y border-slate-400"
+>
+  <div
+    class="hidden lg:flex items-center justify-center lg:justify-start"
+  >
+    21 - 30 of 242
+  </div>
+  <nav
+    aria-label="pagination"
+    class="flex flex-wrap justify-center space-y-2 t-pagination lg:space-x-1 lg:space-y-0 lg:grow"
+  >
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-previous sm:flex-none justify-self-start mt-2 lg:mt-0 pl-2 border-white"
+      href="?order=&providerName=AZ&p=2"
+    >
+      <span>
+        <svgr-mock />
+      </span>
+      Previous
+      <span />
+    </a>
+    <ul
+      class="flex items-center justify-center flex-1 min-w-full space-x-1 lg:flex-none lg:min-w-fit"
+    >
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=1"
+          id="page-1"
+          title="Go to page number 1"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          class="mr-2 text-pink-600 md:hidden"
+        >
+          …
+        </span>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=2"
+          id="page-2"
+          title="Go to page number 2"
+        >
+          2
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="flex text-base items-center px-3.5 py-1 border-4 rounded-bl-lg active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page t-selected bg-pink-600 text-white no-underline border-pink-600 cursor-default"
+          href="?order=&providerName=AZ&p=3"
+          id="page-3"
+          title="Go to page number 3"
+        >
+          3
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=4"
+          id="page-4"
+          title="Go to page number 4"
+        >
+          4
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=5"
+          id="page-5"
+          title="Go to page number 5"
+        >
+          5
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=6"
+          id="page-6"
+          title="Go to page number 6"
+        >
+          6
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=7"
+          id="page-7"
+          title="Go to page number 7"
+        >
+          7
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=8"
+          id="page-8"
+          title="Go to page number 8"
+        >
+          8
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=9"
+          id="page-9"
+          title="Go to page number 9"
+        >
+          9
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=10"
+          id="page-10"
+          title="Go to page number 10"
+        >
+          10
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=11"
+          id="page-11"
+          title="Go to page number 11"
+        >
+          11
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=12"
+          id="page-12"
+          title="Go to page number 12"
+        >
+          12
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=13"
+          id="page-13"
+          title="Go to page number 13"
+        >
+          13
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=14"
+          id="page-14"
+          title="Go to page number 14"
+        >
+          14
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=15"
+          id="page-15"
+          title="Go to page number 15"
+        >
+          15
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=16"
+          id="page-16"
+          title="Go to page number 16"
+        >
+          16
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=17"
+          id="page-17"
+          title="Go to page number 17"
+        >
+          17
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=18"
+          id="page-18"
+          title="Go to page number 18"
+        >
+          18
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=19"
+          id="page-19"
+          title="Go to page number 19"
+        >
+          19
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=20"
+          id="page-20"
+          title="Go to page number 20"
+        >
+          20
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=21"
+          id="page-21"
+          title="Go to page number 21"
+        >
+          21
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=22"
+          id="page-22"
+          title="Go to page number 22"
+        >
+          22
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=23"
+          id="page-23"
+          title="Go to page number 23"
+        >
+          23
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=24"
+          id="page-24"
+          title="Go to page number 24"
+        >
+          24
+        </a>
+      </li>
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=25"
+          id="page-25"
+          title="Go to page number 25"
+        >
+          25
+        </a>
+      </li>
+    </ul>
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline order-4 justify-self-end t-next pr-2 border-white"
+      data-testid="next-button"
+      href="?order=&providerName=AZ&p=4"
+    >
+      <span />
+      Next
+      <span>
+        <svgr-mock />
+      </span>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Pagination component renders component when no results 1`] = `
+<div
+  class="flex flex-col py-2 space-x-1 lg:flex-row border-y border-slate-400"
+>
+  <div
+    class="hidden lg:flex items-center justify-center lg:justify-start"
+  />
+  <nav
+    aria-label="pagination"
+    class="flex flex-wrap justify-center space-y-2 t-pagination lg:space-x-1 lg:space-y-0 lg:grow"
+  >
+    <ul
+      class="flex items-center justify-center flex-1 min-w-full space-x-1 lg:flex-none lg:min-w-fit"
+    />
+  </nav>
+</div>
+`;
+
+exports[`Pagination component renders correctly 1`] = `
+<div
+  class="flex flex-col py-2 space-x-1 lg:flex-row border-y border-slate-400"
+>
+  <div
+    class="hidden lg:flex items-center justify-center lg:justify-start"
+  >
+    21 - 30 of 242
+  </div>
+  <nav
+    aria-label="pagination"
+    class="flex flex-wrap justify-center space-y-2 t-pagination lg:space-x-1 lg:space-y-0 lg:grow"
+  >
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-previous sm:flex-none justify-self-start mt-2 lg:mt-0 pl-2 border-white"
+      href="?order=&providerName=AZ&p=2"
+    >
+      <span>
+        <svgr-mock />
+      </span>
+      Previous
+      <span />
+    </a>
+    <ul
+      class="flex items-center justify-center flex-1 min-w-full space-x-1 lg:flex-none lg:min-w-fit"
+    >
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=1"
+          id="page-1"
+          title="Go to page number 1"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          class="mr-2 text-pink-600 md:hidden"
+        >
+          …
+        </span>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=2"
+          id="page-2"
+          title="Go to page number 2"
+        >
+          2
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="flex text-base items-center px-3.5 py-1 border-4 rounded-bl-lg active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page t-selected bg-pink-600 text-white no-underline border-pink-600 cursor-default"
+          href="?order=&providerName=AZ&p=3"
+          id="page-3"
+          title="Go to page number 3"
+        >
+          3
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=4"
+          id="page-4"
+          title="Go to page number 4"
+        >
+          4
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white hidden md:block"
+          href="?order=&providerName=AZ&p=5"
+          id="page-5"
+          title="Go to page number 5"
+        >
+          5
+        </a>
+      </li>
+      <li
+        class="text-pink-600"
+      >
+        …
+      </li>
+      <li>
+        <a
+          class="flex text-base items-center underline px-3.5 py-1 border-4 rounded-bl-lg hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline t-page text-pink-600 border-white"
+          href="?order=&providerName=AZ&p=25"
+          id="page-25"
+          title="Go to page number 25"
+        >
+          25
+        </a>
+      </li>
+    </ul>
+    <a
+      class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:shadow-link-focus focus-within:outline-0 underline focus:no-underline cursor-pointer active:text-gray-800 active:bg-transparent active:shadow-none t-link-button border-4 rounded-md text-pink-600 visited:!text-pink-600 hover:bg-gray-200 hover:!text-pink-900 hover:border-gray-200 hover:outline-0 hover:no-underline focus:bg-yellow-200 focus:border-blue-800 focus:!text-gray-800 focus:outline-0 focus:shadow-none active:!bg-gray-200 active:border-gray-200 active:!text-gray-800 active:outline-0 active:underline order-4 justify-self-end t-next pr-2 border-white"
+      data-testid="next-button"
+      href="?order=&providerName=AZ&p=4"
+    >
+      <span />
+      Next
+      <span>
+        <svgr-mock />
+      </span>
+    </a>
+  </nav>
+</div>
+`;
