@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders Header and matches snapshot 1`] = `
+<div>
+  <div
+    class="container-auto max-w-[1272px]"
+    data-testid="header"
+  >
+    Header component here
+  </div>
+</div>
+`;

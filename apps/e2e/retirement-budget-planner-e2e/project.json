@@ -1,0 +1,42 @@
+{
+  "name": "retirement-budget-planner-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/e2e/retirement-budget-planner-e2e/src",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/retirement-budget-planner-e2e/cypress.config.ts",
+        "devServerTarget": "retirement-budget-planner:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4310
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "retirement-budget-planner:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/retirement-budget-planner-e2e/cypress.config.ts",
+        "devServerTarget": "retirement-budget-planner:serve",
+        "testingType": "e2e",
+        "port": 4310
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "retirement-budget-planner:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["retirement-budget-planner"]
+}

@@ -1,0 +1,67 @@
+name: Remove Netlify Environment Variables for Branch Context
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+parameters:
+  - name: appName
+    displayName: App to Clean
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-rejection
+      - debt-advice-locator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - standard-financial-statement
+      - guaranteed-income-estimator
+      - take-whole-pot
+      - tools-index
+      - mortgage-affordability
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - stamp-duty-calculator
+      - credit-options
+      - evidence-hub
+
+  - name: branchName
+    displayName: 'Branch Name'
+    type: string
+
+steps:
+  - task: PowerShell@2
+    inputs:
+      targetType: inline
+      script: |
+        $branchname = "${{ parameters.branchName }}"
+        $deployContext = "branch:$branchname"
+        Write-Host "Branch name is: $branchname"
+
+        $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+        netlify link --filter="${{ parameters.appname }}" --name="${{ parameters.appname }}"
+        $env_vars_json = netlify env:list --context=$deployContext --json --filter="${{ parameters.appName }}"
+
+        $env_vars = $env_vars_json | ConvertFrom-Json
+        foreach ($item in $env_vars.PSObject.Properties) {
+            $key = $item.Name
+            Write-Host "Removing $key from context $deployContext"
+            netlify env:unset $key --context $deployContext --filter="${{ parameters.appName }}"
+        }
+    displayName: 'Remove Netlify Environment Variabless for ${{ parameters.appName }} : ${{ parameters.branchName }}'

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialShareTool component renders correctly 1`] = `
+<h2
+  class="text-lg text-gray-800 font-bold mb-4 md:mb-0 sm:mt-2"
+>
+  Share this tool
+</h2>
+`;

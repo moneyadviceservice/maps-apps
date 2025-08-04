@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "types": ["cypress", "node"],
+    "sourceMap": false
+  },
+  "include": ["src/**/*.ts", "src/**/*.js", "cypress.config.ts"]
+}

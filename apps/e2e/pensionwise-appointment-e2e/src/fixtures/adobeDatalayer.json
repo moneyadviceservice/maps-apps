@@ -1,0 +1,197 @@
+{
+  "": {
+    "page": {
+      "lang": "en",
+      "pageName": "pension-wise-appointment",
+      "pageTitle": "Your appointment - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "pension wise appointment",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "8"
+    }
+  },
+  "/pension-basics?version=1&t1=3&task=1": {
+    "page": {
+      "lang": "en",
+      "pageName": "pension-basics",
+      "pageTitle": "Pension basics - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "pension basics",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "9"
+    }
+  },
+  "/income-savings?version=1&t1=4&task=2&t1q1=1&t1q2=1&t2=3": {
+    "page": {
+      "lang": "cy",
+      "pageName": "income-savings",
+      "pageTitle": "Incwm a chynilion - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "income savings",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "10"
+    }
+  },
+  "/debt-repayment?version=1&t1=4&task=3&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=3": {
+    "page": {
+      "lang": "en",
+      "pageName": "debt-repayment",
+      "pageTitle": "Debt and repayment - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "debt repayment",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "11"
+    }
+  },
+  "/your-home?version=1&t1=4&task=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=3": {
+    "page": {
+      "lang": "en",
+      "pageName": "your-home",
+      "pageTitle": "Your home - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "your home",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "12"
+    }
+  },
+  "/health-family?version=1&t1=4&task=5&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=3": {
+    "page": {
+      "lang": "en",
+      "pageName": "health-family",
+      "pageTitle": "Health and family - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "health family",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "13"
+    }
+  },
+  "/retire-later-or-delay?version=1&t1=4&task=6&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=3": {
+    "page": {
+      "lang": "en",
+      "pageName": "retire-later-or-delay",
+      "pageTitle": "Retire later or delay taking your pension - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "retire later or delay",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "14"
+    }
+  },
+  "/guaranteed-income?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=3&task=7": {
+    "page": {
+      "lang": "cy",
+      "pageName": "guaranteed-income",
+      "pageTitle": "Incwm gwarantedig (blwydd-daliadau)",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "guaranteed income",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "15"
+    }
+  },
+  "/flexible-income?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=4&t7q1=1&t8=3&task=8": {
+    "page": {
+      "lang": "en",
+      "pageName": "flexible-income",
+      "pageTitle": "Flexible income (pension drawdown) - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "flexible income",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "16"
+    }
+  },
+  "/lump-sums?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=4&t7q1=1&t8=4&t8q1=2&t9=3&task=9": {
+    "page": {
+      "lang": "cy",
+      "pageName": "lump-sums",
+      "pageTitle": "Cymryd eich pensiwn fel nifer o gyfandaliadau",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "lump sums",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "17"
+    }
+  },
+  "/take-pot-in-one?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=4&t7q1=1&t8=4&t8q1=2&t9=4&t9q1=1&t10=3&task=10": {
+    "page": {
+      "lang": "en",
+      "pageName": "take-pot-in-one",
+      "pageTitle": "Take your pension in one go - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "take pot in one",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "18"
+    }
+  },
+  "/mix-options?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=4&t7q1=1&t8=4&t8q1=2&t9=4&t9q1=1&t10=4&t10q1=2&t11=3&task=11": {
+    "page": {
+      "lang": "cy",
+      "pageName": "mix-options",
+      "pageTitle": "Cymysgu eich opsiynau - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "mix options",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "19"
+    }
+  },
+  "/summary?version=1&t1=4&t1q1=1&t1q2=1&t2=4&t2q1=2&t2q2=2&t2q3=3&t3=4&t3q1=3&t4=4&t4q1=2&t5=4&t5q1=2&t5q2=2&t6=4&t6q1=2&t7=4&t7q1=1&t8=4&t8q1=2&t9=4&t9q1=1&t10=4&t10q1=2&t11=4&t11q1=1&t12=4&task=12&complete=true": {
+    "page": {
+      "lang": "en",
+      "pageName": "summary",
+      "pageTitle": "Appointment summary - Pension Wise",
+      "pageType": "tool page",
+      "site": "moneyhelper"
+    },
+    "tool": {
+      "stepName": "summary",
+      "toolCategory": "",
+      "toolName": "PWD-Appointment",
+      "toolStep": "20"
+    }
+  }
+}

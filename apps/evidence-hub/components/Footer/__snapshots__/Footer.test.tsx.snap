@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders Footer and matches snapshot 1`] = `
+<div>
+  <div
+    class="container-auto max-w-[1272px]"
+    data-testid="footer"
+  >
+    Footer component here
+  </div>
+</div>
+`;

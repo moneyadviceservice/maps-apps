@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component renders correctly 1`] = `
+<svgr-mock
+  classname="test-class"
+  data-testid="icon"
+/>
+`;

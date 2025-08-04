@@ -1,0 +1,72 @@
+name: Restore Netlify App Environment Variables from Azure Key Vault
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+parameters:
+  - name: appName
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-rejection
+      - debt-advice-locator
+      - leave-pot-untouched
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - standard-financial-statement
+      - guaranteed-income-estimator
+      - take-whole-pot
+      - tools-index
+      - mortgage-affordability
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - stamp-duty-calculator
+      - credit-options
+      - evidence-hub
+  - name: context
+    displayName: EnvironmentContext
+    type: string
+
+steps:
+  - task: AzureCLI@2
+    inputs:
+      displayName: 'Backup Netlify Environment Variables to Azure Key Vault'
+      azureSubscription: 'ADO-PWD-Connection'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        $siteName = '${{ parameters.appname }}'
+        $context =  '${{ parameters.context }}'.Replace('_', '-US-').Replace(':', '-CLN-').Replace('.', '-DOT-').Replace('/', '-FSLSH-')
+
+        $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+        netlify link --filter=$siteName --name=$siteName
+
+        $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+        $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+        $site = Invoke-RestMethod ('https://api.netlify.com/api/v1/sites/{0}.moneyhelper.org.uk' -f $siteName) -Method 'GET' -Headers $headers
+                
+        $existingSecrets = az keyvault secret list --vault-name maps-apps-var-backup | ConvertFrom-Json
+        $appContextSecrets = $existingSecrets | where { $_.name -like ('{0}---*---{1}' -f $site.id.Split('-')[0],$context) } | foreach { $_.name }
+        foreach ($secretKey in $appContextSecrets) {
+            $secretKeySplit = $secretKey.Replace('-US-', '_').Replace('-CLN-', ':').Replace('-DOT-', '.').Replace('-FSLSH-', '/') -split '---'
+            $variableName = $secretKeySplit[1]
+            Write-Output ('Restoring {0}' -f $variableName)
+            $secretValue = az keyvault secret show --vault-name maps-apps-var-backup --name $secretKey | ConvertFrom-Json
+            netlify env:set $variableName $secretValue.value --context $context --filter $siteName
+        }
