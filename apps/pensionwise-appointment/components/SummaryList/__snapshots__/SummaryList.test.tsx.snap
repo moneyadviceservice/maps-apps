@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryList component renders correctly 1`] = `
+<div
+  class="mb-10"
+  data-testid="summary-list"
+>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl"
+    data-testid="information-callout"
+  >
+    <div
+      class="p-4 pb-4 md:p-8"
+    >
+      <div
+        class="flex items-center mb-4 align-middle"
+      >
+        <span
+          class="flex justify-center items-center shrink-0 bg-pink-600 text-white rounded-full w-[50px] h-[50px]"
+        >
+          <svgr-mock
+            classname=""
+          />
+        </span>
+        <h4
+          class="md:text-2xl text-gray-800 font-bold text-[22px] mb-0 ml-4"
+          data-testid="summary-list-title"
+        >
+          Test title
+        </h4>
+      </div>
+      <ul
+        class="pl-2"
+      >
+        <li
+          class="ml-4 list-disc"
+          data-testid="summary-list-item-0"
+        >
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            Ask your provider if you need to take your pension by a certain date.
+          </p>
+        </li>
+        <li
+          class="ml-4 list-disc"
+          data-testid="summary-list-item-1"
+        >
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            Ask if there are any fees for delaying taking your pension.
+          </p>
+        </li>
+        <li
+          class="ml-4 list-disc"
+          data-testid="summary-list-item-2"
+        >
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            Ask your provider if your pot has any special features, like a guaranteed annuity rate.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

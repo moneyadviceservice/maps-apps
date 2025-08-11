@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Save and return component renders correctly 1`] = `
+<a
+  class="inline-flex items-center gap-2 text-pink-600 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+  data-testid="save-return-test"
+  href="/path-to-save-page?language=en"
+>
+  <svgr-mock
+    classname=""
+  />
+   
+  Save and come back later
+</a>
+`;

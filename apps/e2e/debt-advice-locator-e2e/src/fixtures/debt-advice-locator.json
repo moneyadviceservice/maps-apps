@@ -1,0 +1,2228 @@
+{
+  "livingCountry": {
+    "title": "Find free debt advice",
+    "heading": "Where do you live?",
+    "expandableSection": "Why are we asking?",
+    "ExpandableSectionText": "Where to get free debt advice depends on where you live."
+  },
+
+  "selfEmployedDetails": {
+    "title": "Find free debt advice",
+    "heading": "Are you a small business owner or self-employed?"
+  },
+
+  "results": {
+    "england": {
+      "selfEmployed": {
+        "title": "Find free debt advice",
+        "heading": "Advice providers for small business owners or self-employed",
+        "subHeading": "Selected advice",
+        "content": "Here's where you can get free debt advice if you're a small business owner or self-employed.",
+        "sections": [
+          {
+            "heading": "Business Debtline (England and Wales)",
+            "content": "Business Debtline is a charity run by the Money Advice Trust. We are a free debt advice service for the self-employed and small businesses in England, Wales and Scotland. We have helped thousands of people deal with their debts. Our team of expert debt advisers care about improving your situation and will help you to take control of your debts.",
+            "address": "Tricorn House, 51 - 53 Hagley Road, Edgbaston, Birmingham, B16 8TP",
+            "phone": "0800 197 6026",
+            "website": "https://www.businessdebtline.org/",
+            "linkText": "Business Debtline (England and Wales) (opens in a new tab)"
+          }
+        ]
+      },
+      "employed": {
+        "title": "Find free debt advice",
+        "online": {
+          "heading": "Where to get free debt advice online",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice online. This usually includes self-help tools and the option to speak to an adviser using live chat.You can also go back to view debt advice options by phone or in person.",
+          "sections": [
+            {
+              "heading": "Debt Advice Foundation",
+              "content": "Debt Advice Foundation is a national debt advice and education charity offering free, confidential support and advice to anyone worried about debt.",
+              "website": "https://www.debtadvicefoundation.org/maps02",
+              "linkText": "Debt Advice Foundation (opens in a new tab)"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s online debt solution tool, PlanFinder, can give you a personalised debt solution in as little as 15 minutes. They also offer free live chat and email support for immediate help.",
+              "website": "https://www.payplan.com/free-online-debt-help",
+              "linkText": "PayPlan (opens in a new tab)"
+            },
+            {
+              "heading": "Money Wellness",
+              "content": "At Money Wellness, we offer confidential debt advice and ongoing support. There are lots of ways we help our customers, from budgeting tips to negotiating lower monthly payments with lenders to getting unaffordable debt written off. With 30 years of experience, we can help you live more and stress less.",
+              "website": "http://www.moneywellness.com",
+              "linkText": "Money Wellness (opens in a new tab)"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "National Debtline offers free debt advice online through its digital advice tool and its web guides, fact sheets and sample letters.",
+              "website": "https://tools.nationaldebtline.org/dat-reg",
+              "linkText": "National Debtline (opens in a new tab)"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Debt happens. Let’s deal with it. In our 30 years, StepChange have helped over five million people through challenging times. Use our free and flexible online advice service with expert debt advisors on-hand to help you explore your options to pay, manage or write off debt.",
+              "website": "https://www.stepchange.org/setting-expectations.aspx?utm_source=MAS&utm_medium=referral&utm_campaign=Debt_locator",
+              "linkText": "StepChange Debt Charity (opens in a new tab)"
+            }
+          ]
+        },
+        "telephone": {
+          "heading": "Where to get free debt advice by telephone",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice over the phone. Advisers are often available Monday to Saturday, including evenings.You can also go back to view debt advice options online or in person.",
+          "sections": [
+            {
+              "heading": "Debt Advice Foundation",
+              "content": "Debt Advice Foundation is a national debt advice and education charity offering free, confidential support and advice to anyone worried about debt.",
+              "phone": "0800 622 61 51"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s supportive, non-judgemental team of advisers help thousands of people beat their debts every year, and treat all of their calls with the strictest confidence.",
+              "phone": "0800 280 2816"
+            },
+            {
+              "heading": "Youth Legal and Resource Centre",
+              "content": "No advice provided for Wales",
+              "phone": "0203 195 1906"
+            },
+            {
+              "heading": "Money Wellness",
+              "content": "At Money Wellness, we offer confidential debt advice and ongoing support. There are lots of ways we help our customers, from budgeting tips to negotiating lower monthly payments with lenders to getting unaffordable debt written off. With 30 years of experience, we can help you live more and stress less.",
+              "phone": "0161 518 8282",
+              "website": "http://www.moneywellness.com",
+              "linkText": "Money Wellness (opens in a new tab)"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "National Debtline has helped millions of people with their debts. They’ll talk you through options and give clear advice on how to take back control.",
+              "phone": "0808 808 4000"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Call the UK’s leading debt charity. We help change the lives of thousands of people every week. Get free, confidential advice and practical solutions to help you deal with your debts.",
+              "phone": "0800 138 1111"
+            },
+            {
+              "heading": "Citizens Advice",
+              "content": "If you’re having issues with money or debt, you can: talk to us online about a debt problem using chat - we can usually help between 9am and 8pm Monday to Friday and between 9.30am and 1pm Saturday call our debt helpline - it's available 9am to 8pm Monday to Friday and 9.30am to 1pm Saturday Debt helpline: 0800 240 4420 Relay UK - if you can't hear or speak on the phone, you can type what you want to say: 18001 then 0800 240 4420 You can use Relay UK with an app or a textphone. There's no extra charge to use it. Find out how to use Relay UK on the Relay UK website. The debt helpline is not available on public holidays. Calls are free from mobiles and landlines.",
+              "phone": "0800 240 4420"
+            }
+          ]
+        },
+        "faceToFace": {
+          "heading": "Where to get local debt advice",
+          "subHeading": "Results for “Oxford”",
+          "content": "Here's where you can get free help from local debt advisers face-to-face. We list the eight closest to the location you entered, with the nearest first.You can also go back to view debt advice options online or by phone.",
+          "sections": [
+            {
+              "heading": "Oxford Citizens Advice Bureau",
+              "address": "OX1 2DH",
+              "phone": "0808 27 87 909",
+              "website": "https://citizensadviceoxford.org.uk/",
+              "linkText": "Oxford Citizens Advice Bureau (opens in a new tab)"
+            },
+            {
+              "heading": "CAP Oxford St. Ebbe's Debt Centre",
+              "content": "We are a charity that provides free face to face debt advice in your own home, with ongoing support available by telephone. Give our friendly team a call on 0800 328 0006 or visit capuk.org to find out more.",
+              "address": "OX1 1QE",
+              "phone": "0800 328 0006",
+              "website": "https://capuk.org/i-want-help",
+              "linkText": "CAP Oxford St. Ebbe's Debt Centre (opens in a new tab)"
+            }
+          ]
+        }
+      }
+    },
+    "scotland": {
+      "selfEmployed": {
+        "title": "Find free debt advice",
+        "heading": "Advice providers for small business owners or self-employed",
+        "subHeading": "Selected advice",
+        "content": "Here's where you can get free debt advice if you're a small business owner or self-employed.",
+        "sections": [
+          {
+            "heading": "Business Debtline (Scotland)",
+            "content": "Business Debtline is a charity run by the Money Advice Trust. We are a free debt advice service for the self-employed and small businesses in England, Wales and Scotland. We have helped thousands of people deal with their debts. Our team of expert debt advisers care about improving your situation and will help you to take control of your debts.",
+            "address": "Tricorn House, 51 - 53 Hagley Road, Edgbaston, Birmingham, B16 8TP",
+            "phone": "0800 197 6026",
+            "website": "https://businessdebtline.org/scotland-debt-advice-/",
+            "linkText": "Business Debtline (Scotland) (opens in a new tab)"
+          }
+        ]
+      },
+      "employed": {
+        "title": "Find free debt advice",
+        "online": {
+          "heading": "Where to get free debt advice online",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice online. This usually includes self-help tools and the option to speak to an adviser using live chat.You can also go back to view debt advice options by phone or in person.",
+          "sections": [
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s online debt solution tool, PlanFinder, can give you a personalised debt solution in as little as 15 minutes. They also offer free live chat and email support for immediate help.",
+              "website": "https://www.payplan.com/free-online-debt-help",
+              "linkText": "PayPlan (opens in a new tab)"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "National Debtline offers free debt advice online through its digital advice tool and its web guides, fact sheets and sample letters.",
+              "website": "https://tools.nationaldebtline.org/dat-reg",
+              "linkText": "National Debtline (opens in a new tab)"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Debt happens. Let’s deal with it. In our 30 years, StepChange have helped over five million people through challenging times. Use our free and flexible online advice service with expert debt advisors on-hand to help you explore your options to pay, manage or write off debt.",
+              "website": "https://www.stepchange.org/setting-expectations.aspx?utm_source=MAS&utm_medium=referral&utm_campaign=Debt_locator",
+              "linkText": "StepChange Debt Charity (opens in a new tab)"
+            }
+          ]
+        },
+        "telephone": {
+          "heading": "Where to get free debt advice by telephone",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice over the phone. Advisers are often available Monday to Saturday, including evenings.You can also go back to view debt advice options online or in person.",
+          "sections": [
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s supportive, non-judgemental team of advisers help thousands of people beat their debts every year, and treat all of their calls with the strictest confidence.",
+              "phone": "0800 280 2816"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "National Debtline has helped millions of people with their debts. They’ll talk you through options and give clear advice on how to take back control.",
+              "phone": "0808 808 4000"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Call the UK’s leading debt charity. We help change the lives of thousands of people every week. Get free, confidential advice and practical solutions to help you deal with your debts.",
+              "phone": "0800 138 1111"
+            }
+          ]
+        }
+      }
+    },
+    "wales": {
+      "selfEmployed": {
+        "title": "Find free debt advice",
+        "heading": "Advice providers for small business owners or self-employed",
+        "subHeading": "Selected advice",
+        "content": "Here's where you can get free debt advice if you're a small business owner or self-employed.",
+        "sections": [
+          {
+            "heading": "Business Debtline (England and Wales)",
+            "content": "Business Debtline is a charity run by the Money Advice Trust. We are a free debt advice service for the self-employed and small businesses in England, Wales and Scotland. We have helped thousands of people deal with their debts. Our team of expert debt advisers care about improving your situation and will help you to take control of your debts.",
+            "address": "Tricorn House, 51 - 53 Hagley Road, Edgbaston, Birmingham, B16 8TP",
+            "phone": "0800 197 6026",
+            "website": "https://www.businessdebtline.org/",
+            "linkText": "Business Debtline (England and Wales) (opens in a new tab)"
+          }
+        ]
+      },
+      "employed": {
+        "title": "Find free debt advice",
+        "online": {
+          "heading": "Where to get free debt advice online",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice online. This usually includes self-help tools and the option to speak to an adviser using live chat.You can also go back to view debt advice options by phone or in person.",
+          "sections": [
+            {
+              "heading": "Debt Advice Foundation",
+              "content": "Debt Advice Foundation is a national debt advice and education charity offering free, confidential support and advice to anyone worried about debt.",
+              "website": "https://www.debtadvicefoundation.org/maps02",
+              "linkText": "Debt Advice Foundation (opens in a new tab)"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s online debt solution tool, PlanFinder, can give you a personalised debt solution in as little as 15 minutes. They also offer free live chat and email support for immediate help.",
+              "website": "https://www.payplan.com/free-online-debt-help",
+              "linkText": "PayPlan (opens in a new tab)"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "",
+              "website": "https://tools.nationaldebtline.org/dat-reg",
+              "linkText": "National Debtline (opens in a new tab)"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Debt happens. Let’s deal with it. In our 30 years, StepChange have helped over five million people through challenging times. Use our free and flexible online advice service with expert debt advisors on-hand to help you explore your options to pay, manage or write off debt.",
+              "website": "https://www.stepchange.org/setting-expectations.aspx?utm_source=MAS&utm_medium=referral&utm_campaign=Debt_locator",
+              "linkText": "StepChange Debt Charity (opens in a new tab)"
+            }
+          ]
+        },
+        "telephone": {
+          "heading": "Where to get free debt advice by telephone",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice over the phone. Advisers are often available Monday to Saturday, including evenings.You can also go back to view debt advice options online or in person.",
+          "sections": [
+            {
+              "heading": "Debt Advice Foundation",
+              "content": "Debt Advice Foundation is a national debt advice and education charity offering free, confidential support and advice to anyone worried about debt.",
+              "phone": "0800 622 61 51"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s supportive, non-judgemental team of advisers help thousands of people beat their debts every year, and treat all of their calls with the strictest confidence.",
+              "phone": "0800 280 2816"
+            },
+            {
+              "heading": "National Debtline",
+              "content": "",
+              "phone": "0808 808 4000"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Call the UK’s leading debt charity. We help change the lives of thousands of people every week. Get free, confidential advice and practical solutions to help you deal with your debts.",
+              "phone": "0800 138 1111"
+            }
+          ]
+        }
+      }
+    },
+    "northernIreland": {
+      "selfEmployed": {
+        "title": "Find free debt advice",
+        "heading": "Advice providers for small business owners or self-employed",
+        "subHeading": "Selected advice",
+        "content": "Here's where you can get free debt advice if you're a small business owner or self-employed.",
+        "sections": [
+          {
+            "heading": "Advice NI Business Debt Service (Northern Ireland)",
+            "content": "",
+            "address": "Advice NI, Forestview, Purdy's Lane, Newtownbreda, Belfast, BT8 7AR",
+            "phone": "0800 915 4604",
+            "website": "https://www.adviceni.net/money-debt/business-debt",
+            "linkText": "Advice NI Business Debt Service (Northern Ireland) (opens in a new tab)"
+          }
+        ]
+      },
+      "employed": {
+        "title": "Find free debt advice",
+        "online": {
+          "heading": "Where to get free debt advice online",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice online. This usually includes self-help tools and the option to speak to an adviser using live chat.You can also go back to view debt advice options by phone or in person.",
+          "sections": [
+            {
+              "heading": "Advice NI",
+              "content": "Advice NI also delivers a range of advice services to the public including Debt and Money, Tax and Benefits, EU Settlement Scheme and Business Debt.",
+              "website": "http://www.adviceni.net/advice/debt",
+              "linkText": "Advice NI (opens in a new tab)"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s online debt solution tool, PlanFinder, can give you a personalised debt solution in as little as 15 minutes. They also offer free live chat and email support for immediate help.",
+              "website": "https://www.payplan.com/free-online-debt-help",
+              "linkText": "PayPlan (opens in a new tab)"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Debt happens. Let’s deal with it. In our 30 years, StepChange have helped over five million people through challenging times. Use our free and flexible online advice service with expert debt advisors on-hand to help you explore your options to pay, manage or write off debt.",
+              "website": "https://www.stepchange.org/setting-expectations.aspx?utm_source=MAS&utm_medium=referral&utm_campaign=Debt_locator",
+              "linkText": "StepChange Debt Charity (opens in a new tab)"
+            }
+          ]
+        },
+        "telephone": {
+          "heading": "Where to get free debt advice by telephone",
+          "subHeading": "Selected advice",
+          "content": "Here's where you can get free debt advice over the phone. Advisers are often available Monday to Saturday, including evenings.You can also go back to view debt advice options online or in person.",
+          "sections": [
+            {
+              "heading": "Advice NI",
+              "content": "Advice NI also delivers a range of advice services to the public including Debt and Money, Tax and Benefits, EU Settlement Scheme and Business Debt.",
+              "phone": "0800 915 4604",
+              "website": "http://www.adviceni.net/advice/debt",
+              "linkText": "Advice NI (opens in a new tab)"
+            },
+            {
+              "heading": "PayPlan",
+              "content": "PayPlan’s supportive, non-judgemental team of advisers help thousands of people beat their debts every year, and treat all of their calls with the strictest confidence.",
+              "phone": "0800 280 2816"
+            },
+            {
+              "heading": "StepChange Debt Charity",
+              "content": "Call the UK’s leading debt charity. We help change the lives of thousands of people every week. Get free, confidential advice and practical solutions to help you deal with your debts.",
+              "phone": "0800 138 1111"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "employeeDetails": {
+    "title": "Find free debt advice",
+    "heading": "How would you like to get debt advice?",
+    "fields": {
+      "online": {
+        "label": "Online self-help tools",
+        "hint": "Access resources and guides to help you manage your debt at your own pace. The tools available will vary based on your selected service."
+      },
+      "telephone": {
+        "label": "By phone",
+        "hint": "Speak directly with an advisor over the phone for advice and assistance."
+      },
+      "faceToFace": {
+        "label": "Face-to-face near you",
+        "hint": "Meet with a trained advisor in person for personalised support. You can schedule a meeting at a time that suits you."
+      }
+    }
+  },
+
+  "face2FaceLocation": {
+    "title": "Find free debt advice",
+    "heading": "What is your location?",
+    "fieldLabel": "City, town, or postcode",
+    "hint": "Why are we asking?",
+    "hintDetail": "Where to get local in-person debt advice depends on your location."
+  },
+
+  "face2FaceNoResults": {
+    "title": "Find free debt advice",
+    "heading": "Where to get local debt advice",
+    "subHeading": "No results for “Vijgunt”",
+    "content": "You can also go back to view debt advice options online or by phone.",
+    "locationLink": "Choose a different location",
+    "goBackLink": "go back to view debt advice options online or by phone."
+  },
+
+  "errorMessages": {
+    "errorSummaryHeading": "There is a problem",
+    "selectCountry": "Select which country you live in.",
+    "selfEmployed": "Select yes if you are a small business owner or self-employed, or no if you're not.",
+    "employeeAdvice": "Select how you'd like to get debt advice - online, by phone or face-to-face",
+    "location": "Enter a valid city, town or postcode to continue."
+  },
+
+  "acdlEntries": {
+    "pageLoadReact|http://localhost:4305/en/question-1": {
+      "page": {
+        "pageName": "DALT--calculator--country",
+        "pageTitle": "Find free debt advice - Where do you live? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolStart|http://localhost:4305/en/question-1": {
+      "page": {
+        "pageName": "DALT--calculator--country",
+        "pageTitle": "Find free debt advice - Where do you live? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "toolCategory": ""
+      },
+      "event": "toolStart"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-1?q-1=undefined&error=q-1": {
+      "page": {
+        "pageName": "DALT--calculator--country",
+        "pageTitle": "Find free debt advice - Where do you live? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-1?q-1=undefined&error=q-1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-1?q-1=undefined&error=q-1": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "Region",
+            "errorMessage": "Error: Select which country you live in."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=0": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=1": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=2": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=3": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=3"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=0&q-2=undefined&error=q-2": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=0&q-2=undefined&error=q-2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-2?q-1=0&q-2=undefined&error=q-2": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "SmallBusinessOwner",
+            "errorMessage": "Error: Select yes if you are a small business owner or self-employed, or no if you're not."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=3&q-2=undefined&error=q-2": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=3&q-2=undefined&error=q-2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-2?q-1=3&q-2=undefined&error=q-2": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "SmallBusinessOwner",
+            "errorMessage": "Error: Select yes if you are a small business owner or self-employed, or no if you're not."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/business-debtline-refer?q-1=0&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=0&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/business-debtline-refer?q-1=0&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=0&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/business-debtline-refer?q-1=1&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=1&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/business-debtline-refer?q-1=1&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=1&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/business-debtline-refer?q-1=2&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=2&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/business-debtline-refer?q-1=2&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=2&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/business-debtline-refer?q-1=3&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=3&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/business-debtline-refer?q-1=3&q-2=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-business",
+        "pageTitle": "Find free debt advice - Advice providers for small business owners or self-employed - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/business-debtline-refer?q-1=3&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "Advice providers for small business owners or self-employed",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=0&q-2=0": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=0&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=1&q-2=0": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=1&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=2&q-2=0": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=2&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-2?q-1=3&q-2=0": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-2?q-1=3&q-2=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=0&q-2=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=0&q-2=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=1&q-2=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=1&q-2=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=2&q-2=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=2&q-2=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=3&q-2=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=3&q-2=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=undefined&error=q-3": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=undefined&error=q-3"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=undefined&error=q-3": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "AdviceType",
+            "errorMessage": "Error: Select how you'd like to get debt advice - online, by phone or face-to-face"
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=undefined&error=q-3": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=undefined&error=q-3"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=undefined&error=q-3": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "AdviceType",
+            "errorMessage": "Error: Select how you'd like to get debt advice - online, by phone or face-to-face"
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=undefined&error=q-3": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=undefined&error=q-3"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=undefined&error=q-3": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "AdviceType",
+            "errorMessage": "Error: Select how you'd like to get debt advice - online, by phone or face-to-face"
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=undefined&error=q-3": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=undefined&error=q-3"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=undefined&error=q-3": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionRadioButton",
+            "reactCompName": "AdviceType",
+            "errorMessage": "Error: Select how you'd like to get debt advice - online, by phone or face-to-face"
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--advice-providers-online",
+        "pageTitle": "Find free debt advice - Where to get free debt advice online - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice online",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=0": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=0"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=0&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=1&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=2&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--advice-providers-telephone",
+        "pageTitle": "Find free debt advice - Where to get free debt advice by telephone - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/debtline-refer?q-1=3&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "4",
+        "stepName": "Where to get free debt advice by telephone",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=1": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=1"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2&q-4=&error=q-4": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2&q-4=&error=q-4"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2&q-4=&error=q-4": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionInputText",
+            "reactCompName": "Location",
+            "errorMessage": "Error: Enter a valid city, town or postcode to continue."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2&q-4=&error=q-4": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2&q-4=&error=q-4"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2&q-4=&error=q-4": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionInputText",
+            "reactCompName": "Location",
+            "errorMessage": "Error: Enter a valid city, town or postcode to continue."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2&q-4=&error=q-4": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2&q-4=&error=q-4"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2&q-4=&error=q-4": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionInputText",
+            "reactCompName": "Location",
+            "errorMessage": "Error: Enter a valid city, town or postcode to continue."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2&q-4=&error=q-4": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2&q-4=&error=q-4"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2&q-4=&error=q-4": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionInputText",
+            "reactCompName": "Location",
+            "errorMessage": "Error: Enter a valid city, town or postcode to continue."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/face-to-face-debtline-refer?q-1=1&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=1&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/face-to-face-debtline-refer?q-1=1&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=1&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/face-to-face-debtline-refer?q-1=2&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=2&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/face-to-face-debtline-refer?q-1=2&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=2&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/face-to-face-debtline-refer?q-1=3&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=3&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/face-to-face-debtline-refer?q-1=3&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=3&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=0&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=1&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=2&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--what-is-your-location",
+        "pageTitle": "Find free debt advice - What is your location? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-4?q-1=3&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=0&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=1&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=2&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=2&q-4=Vijgunt": {
+      "page": {
+        "pageName": "DALT--select-debt-advice",
+        "pageTitle": "Find free debt advice - How would you like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/question-3?q-1=3&q-2=1&q-3=2&q-4=Vijgunt"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "3",
+        "stepName": "How would you like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Oxford": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Oxford"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletion|http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Oxford": {
+      "page": {
+        "pageName": "DALT--advice-providers-face-to-face",
+        "pageTitle": "Find free debt advice - Where to get local debt advice - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator",
+        "url": "http://localhost:4305/en/face-to-face-debtline-refer?q-1=0&q-2=1&q-3=2&q-4=Oxford"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "6",
+        "stepName": "Where to get local debt advice",
+        "toolCategory": ""
+      },
+      "event": "toolCompletion"
+    }
+  }
+}

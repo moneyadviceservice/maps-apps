@@ -1,0 +1,42 @@
+{
+  "core": {
+    "heading": "Estimate what you’d get after tax",
+    "incomeLabel": "What is your yearly income?",
+    "incomeText": "Include money you get from work, State Pension and any other taxable income you have. Find out more information on what other income is taxable (opens in new tab)",
+    "potText": "How much is in your pot?",
+    "callOutText": "If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension. Find a retirement adviser (opens in new tab)",
+    "resultsTitle": "Your results",
+    "potLabel": "If you take your whole £%POT_VALUE% pot in one go, you could get:",
+    "estimateLabel": "We estimate you'll pay:",
+    "taxAmount": "£%TAX_VALUE% in tax",
+    "resultCalculationInfo": "This calculation assumes you are entitled to 25% of your total pot as a tax-free lump sum.",
+    "resultEstimateInfo": "This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.",
+    "unableSubmitLabel": "Unable to submit the form",
+    "incomeErrorLabel": "What is your yearly income? - Enter a figure",
+    "potErrorLabel": "How much is in your pot? - Enter a figure",
+    "fieldLevelErrorLabel": "Enter a figure"
+  },
+  "tests": [
+    {
+      "label": "income £45,000 and pot £70,000",
+      "income": "45,000",
+      "pot": "70,000",
+      "takeHome": "£50,054",
+      "tax": "19,946"
+    },
+    {
+      "label": "income £99,000 and pot £100,000",
+      "income": "99,000",
+      "pot": "100,000",
+      "takeHome": "£67,557",
+      "tax": "32,443"
+    },
+    {
+      "label": "income £99,999 and pot £100,000",
+      "income": "99,999",
+      "pot": "100,000",
+      "takeHome": "£67,507",
+      "tax": "32,493"
+    }
+  ]
+}

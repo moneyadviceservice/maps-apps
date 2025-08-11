@@ -1,0 +1,22 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/moneyhelper-contact-forms package.json libs/shared"
+
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[dev]
+    targetPort = 4500
+    autoLaunch = false
+    base = '/'
+    command = 'npx nx run moneyhelper-contact-forms:serve'
+
+[[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
