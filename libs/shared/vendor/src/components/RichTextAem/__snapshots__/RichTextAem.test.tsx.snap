@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RichTextAem component renders a negative list variant correctly 1`] = `
+<div
+  class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-cross_red [&_ul>li:before]:w-[15px] [&_ul>li:before]:h-[15px]"
+  data-testid="negative-test-component"
+>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen 
+  </p>
+  <ol
+    class="pl-4"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ol>
+  <ul
+    class="pl-4 list-disc"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`RichTextAem component renders a positive list variant correctly 1`] = `
+<div
+  class="[&_ul]:mb-[1rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_ul]:pl-0 [&_ul>li]:ml-[0px] [&_ul>li]:mb-3 [&_ul>li]:pl-[2rem] [&_ul>li]:list-none [&_ul>li]:relative [&_ul>li:before]:content-[''] [&_ul>li:before]:block [&_ul>li:before]:absolute [&_ul>li:before]:left-0 [&_ul>li:before]:top-2 [&_ul>li:before]:bg-cover [&_ul>li:before]:bg-no-repeat [&_ul>li:before]:bg-tick_green [&_ul>li:before]:w-[20px] [&_ul>li:before]:h-[14px]"
+  data-testid="positive-test-component"
+>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen 
+  </p>
+  <ol
+    class="pl-4"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ol>
+  <ul
+    class="pl-4 list-disc"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`RichTextAem component renders correctly 1`] = `
+<div
+  class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+  data-testid="test-component"
+>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen 
+  </p>
+  <ol
+    class="pl-4"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ol>
+  <ul
+    class="pl-4 list-disc"
+  >
+    <li>
+      uip ex ea commodo consequat. 
+    </li>
+    <li>
+      Duis aute irure dolor in reprehenderit in 
+    </li>
+    <li>
+      voluptate velit esse cillum dolore eu fugiat nu
+    </li>
+  </ul>
+</div>
+`;

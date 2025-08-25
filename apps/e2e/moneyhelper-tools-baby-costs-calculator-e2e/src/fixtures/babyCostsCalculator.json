@@ -1,0 +1,392 @@
+{
+  "dueDate": {
+    "url": "/baby-cost-calculator/1",
+    "title": "Baby Costs Calculator",
+    "subHeading": "When is your baby due?",
+    "primaryInfo": "Don't worry if you don't have a due date or are not pregnant yet, whatever you choose we can help you work out how much money you will have with a bit of budgeting and regular monthly saving.",
+    "selectDropdownLabel": "Your baby is due in:"
+  },
+  "essentials": {
+    "url": "/en/baby-cost-calculator/2?q-baby-due=%MONTHS%",
+    "title": "Baby Costs Calculator",
+    "subHeading": "How much do your essential items cost?",
+    "primaryInfo": "These are the things you'll need after your baby is born. If you think you'll get some as gifts, leave the cost at £0.",
+
+    "cotBedLabel": "Cot (including mattress)",
+    "cotBedMoreAbout": "More about cots",
+    "cotBedDescription": "If you're using a second-hand cot, cot bed or a moses basket, the NHS recommends buying a new mattress. Make sure it's firm, flat, fits well with no gaps, is clean, and waterproof.",
+
+    "beddingLabel": "Bedding, blankets and sleeping bags",
+    "beddingMoreAbout": "More about bedding",
+    "beddingDescription": "You'll need sheets for the mattress. Fitted sheets are convenient but can be pricey, so old sheets can work too. You'll also need light blankets. Tuck sheets and blankets below your baby's shoulder level for safety. Alternatively, baby sleeping bags are also safe.",
+
+    "carSeatLabel": "Car seat",
+    "carSeatMoreAbout": "More about car seats",
+    "carSeatDescription": "Your baby must always travel in a car seat by law. Never use a second-hand car seat unless you're sure it hasn't been in an accident.",
+
+    "pramLabel": "Pram, pushchair or travel system",
+    "pramMoreAbout": "More about prams",
+    "pramDescription": "Prams are for babies who can't sit up, pushchairs for those who can. A travel system is a pushchair that can also hold a car seat or carrycot. Buying second-hand can save money. Consider how and where you'll use it. Larger wheels are useful for rough paths, while a travel system that easily fits in and out of cars or buses may be needed.",
+
+    "sterilisingEquipmentLabel": "Sterilising equipment",
+    "sterilisingEquipmentMoreAbout": "More about sterilising equipment",
+    "sterilisingEquipmentDescription": "Bottles need to be sterilised to prevent harmful bacteria growth. You can boil items in a pan or use a microwave to sterilise them.",
+
+    "clothingLabel": "Essential clothing",
+    "clothingMoreAbout": "More about essential clothing",
+    "clothingDescription": "Babies outgrow clothes very quickly. Look for local baby clubs to swap clothes or get them for free, sometimes even brand new.",
+
+    "nappiesLabel": "Disposable or Reusable nappies",
+    "nappiesMoreAbout": "More about nappies",
+    "nappiesDescription": "Newborns usually need 10 to 12 nappy changes a day.",
+
+    "bottlesLabel": "Baby bottles and teats",
+    "bottlesMoreAbout": "More about bottles",
+    "bottlesDescription": "If you're bottle feeding your baby, you'll need baby bottles, teats and bottle brushes. These items are essential for feeding and keeping the bottles clean."
+  },
+  "nonEssentials": {
+    "url": "/en/baby-cost-calculator/3?q-baby-due=%MONTHS%",
+    "title": "Baby Costs Calculator",
+    "subHeading": "How much do your non-essential items cost?",
+    "primaryInfo": "From here on, this is a list of non-essential items which are nice to have but you could do without. Don't feel pressured into buying them because many parents say that they are a waste of money.",
+
+    "babyBedroom": "Baby's bedroom",
+
+    "changingTableLabel": "Changing table",
+    "changingTableMoreAbout": "More about changing tables",
+    "changingTableDescription": "Many parents regret buying this because it takes up space and is rarely used.",
+
+    "babyMonitorLabel": "Baby monitor",
+    "babyMonitorMoreAbout": "More about baby monitors",
+    "babyMonitorDescription": "Some parents find using a baby monitor reassuring, while others never use it. If you live in a small home and can hear your baby, you might not need one.",
+
+    "babyMobileLabel": "Baby mobile",
+    "babyMobileMoreAbout": "More about mobiles",
+    "babyMobileDescription": "A cheap cot or crib baby mobile can entertain and calm your baby.",
+
+    "roomThermometerLabel": "Room thermometer",
+    "roomThermometerMoreAbout": "More about room thermometers",
+    "roomThermometerDescription": "A room thermometer can tell you if your baby's room is too hot, and you don't need to spend a lot on it.",
+
+    "nightLightLabel": "Nightlight",
+    "nightLightMoreAbout": "More about nightlights",
+    "nightLightDescription": "Some parents find it helps their baby fall asleep.",
+
+    "travelCotLabel": "Travel cot",
+    "travelCotMoreAbout": "More about travel cots",
+    "travelCotDescription": "You only need a travel cot if you plan to stay overnight away from home with your baby.",
+
+    "babyCarrierLabel": "Baby carrier or sling",
+    "babyCarrierMoreAbout": "More about baby carriers",
+    "babyCarrierDescription": "Many parents feel a fancy carrier or sling isn't worth the money. It's a good idea to try different brands before you buy one.",
+
+    "changingBagLabel": "Baby changing bag",
+    "changingBagMoreAbout": "More about baby changing bags",
+    "changingBagDescription": "You can use any bag as a changing bag. You might already have one that fits a few nappies and baby-changing essentials.",
+
+    "playMatLabel": "Playmat",
+    "playMatMoreAbout": "More about playmats",
+    "playMatDescription": "Not essential, but great for your newborn to get some exercise and playtime.",
+
+    "babyBouncerLabel": "Baby bouncer or rocker",
+    "babyBouncerMoreAbout": "More about baby bouncers",
+    "babyBouncerDescription": "Some babies love them, some don't. They can be helpful if you need free hands for a few minutes.",
+
+    "rattlesLabel": "Rattles, teether and other toys",
+    "rattlesMoreAbout": "More about baby toys",
+    "rattlesDescription": "You might get these as gifts or make your own. You could also look at swapping toys with friends for variety.",
+
+    "Feeding": "Feeding",
+
+    "breastPumpLabel": "Breast pump",
+    "breastPumpMoreAbout": "More about breast pumps",
+    "breastPumpDescription": "Electric pumps are usually more expensive than manual ones. You might also be able to rent a pump from your local breastfeeding clinic.",
+
+    "maternityBraLabel": "Maternity bras",
+    "maternityBraMoreAbout": "More about maternity bras",
+    "maternityBraDescription": "Maternity bras cost more than regular ones but can be more comfortable for long-term breastfeeding. Some women prefer using large, non-wired bras instead.",
+
+    "muslinClothLabel": "Muslin cloths and bibs",
+    "muslinClothMoreAbout": "More about muslin cloths and bibs",
+    "muslinClothDescription": "You can use old towels or other fabric items as substitutes.",
+
+    "nursingPillowLabel": "Nursing pillow",
+    "nursingPillowMoreAbout": "More about nursing pillows",
+    "nursingPillowDescription": "Old towels or pillows and cushions can also be used instead of a nursing pillow.",
+
+    "dummiesLabel": "Dummies",
+    "dummiesMoreAbout": "More about dummies",
+    "dummiesDescription": "Using dummies is a personal choice. Some babies don't need them.",
+
+    "highchairLabel": "Highchair",
+    "highchairMoreAbout": "More about highchairs",
+    "highchairDescription": "A highchair might be useful when your baby gets older.",
+
+    "weaningLabel": "Weaning accessories",
+    "weaningMoreAbout": "More about weaning",
+    "weaningDescription": "When transitioning your baby to solid foods, you might need items like weaning spoons, bowls, and bottles.",
+
+    "clothingBathing&Changing": "Clothing, bathing, and changing",
+
+    "babyBathLabel": "Baby bath",
+    "babyBathMoreAbout": "More about baby baths",
+    "babyBathDescription": "A baby bath is nice to have, but lots of parents say that they bought one, yet never used them, preferring to wash their baby in the bath.",
+
+    "babyTowelLabel": "Baby towel",
+    "babyTowelMoreAbout": "More about baby towels",
+    "babyTowelDescription": "There is no need to go out and buy towels specifically made for babies, as any towel will dry your little one.",
+
+    "bathThermometerLabel": "Bath thermometer",
+    "bathThermometerMoreAbout": "More about bath thermometers",
+    "bathThermometerDescription": "Many parents use their elbow to test how warm the water is but if you want one, a baby bath thermometer can cost as little as a few pounds.",
+
+    "babyGroomingLabel": "Baby grooming items ",
+    "babyGroomingMoreAbout": "More about grooming items",
+    "babyGroomingDescription": "This includes nail clippers, brush or comb, toothbrush and any other grooming essentials you need."
+  },
+  "yourBudget": {
+    "title": "Your budget",
+    "primaryInfo": "Now that you have a list of items and their estimated costs for your new baby, it's time to see if it fits within your budget.",
+    "subHeading": "How much money do you have now?",
+
+    "moneyLabel": "Money in the bank",
+    "moneySecondaryLabel": "Check your current savings and funds.",
+    "moneyMoreAbout": "More about your budget",
+    "moneyDescription": "Consider the money in your bank and your budget for baby items. If you're over budget, you can cut back on non-essential items.",
+
+    "savingsLabel": "How much will you be able to save before the baby arrives?",
+    "savingsMoreAbout": "More about your savings",
+    "savingsDescription": "Look at any non-essential spending you can reduce. For example, giving up a daily hot drink could save you £60 a month. Find out how much you can save in our guide Managing your money."
+  },
+  "results": {
+    "title": "Your results",
+    "calloutTitle": "Your baby costs leave you with:",
+    "calloutNegativeInfo": "It looks like you're planning to spend more than you can save before your baby arrived, leaving you -£%MONEY_LEFT% out of pocket. Is there anything you can do without? Or could you cut costs by buying second-hand?",
+    "calloutPositiveInfo": "Good news! It looks like you can afford everything you want to buy for your baby - you'll even have £%MONEY_LEFT% left over."
+  },
+  "summary": {
+    "summaryTitle": "Summary so far",
+    "resultSummaryTitle": "Summary total",
+    "babyDue": "Baby due in%MONTHS% months",
+    "essentials": "Essentials%ESSENTIALS%",
+    "nonEssentials": "Non-Essentials%NON-ESSENTIALS%",
+    "yourBudget": "Your Budget%YOUR_BUDGET%",
+    "result": "Result%RESULT%"
+  },
+
+  "tests": [
+    {
+      "label": "positive result with per day scenario",
+      "months": 3,
+      "essentials": {
+        "cotBed": "300",
+        "bedding": "344",
+        "carSeat": "344",
+        "pram": "344",
+        "sterilisingEquipment": "344",
+        "clothing": "344",
+        "nappies": "344",
+        "bottles": "344"
+      },
+      "nonEssentials": {
+        "changingTable": "344",
+        "babyMonitor": "344",
+        "babyMobile": "344",
+        "roomThermometer": "344",
+        "nightLight": "344",
+        "travelCot": "344",
+        "babyCarrier": "344",
+        "changingBag": "344",
+        "playMat": "344",
+        "babyBouncer": "344",
+        "rattles": "344",
+        "breastPump": "344",
+        "maternityBra": "344",
+        "muslinCloth": "344",
+        "nursingPillow": "344",
+        "dummies": "344",
+        "highchair": "344",
+        "weaning": "344",
+        "babyBath": "344",
+        "babyTowel": "344",
+        "bathThermometer": "344",
+        "babyGrooming": "344"
+      },
+      "budget": {
+        "moneyInBank": "1500",
+        "saving": "100",
+        "savingFrequency": "1"
+      },
+      "summary": {
+        "essentials": "£2,708.00",
+        "nonEssentials": "£7,568.00",
+        "yourBudget": "£10,500.00",
+        "result": 224
+      }
+    },
+    {
+      "label": "negative result with per week scenario",
+      "months": 3,
+      "essentials": {
+        "cotBed": "300",
+        "bedding": "344",
+        "carSeat": "344",
+        "pram": "344",
+        "sterilisingEquipment": "344",
+        "clothing": "344",
+        "nappies": "344",
+        "bottles": "344"
+      },
+      "nonEssentials": {
+        "changingTable": "344",
+        "babyMonitor": "344",
+        "babyMobile": "344",
+        "roomThermometer": "344",
+        "nightLight": "344",
+        "travelCot": "344",
+        "babyCarrier": "344",
+        "changingBag": "344",
+        "playMat": "344",
+        "babyBouncer": "344",
+        "rattles": "344",
+        "breastPump": "344",
+        "maternityBra": "344",
+        "muslinCloth": "344",
+        "nursingPillow": "344",
+        "dummies": "344",
+        "highchair": "344",
+        "weaning": "344",
+        "babyBath": "344",
+        "babyTowel": "344",
+        "bathThermometer": "344",
+        "babyGrooming": "344"
+      },
+      "budget": {
+        "moneyInBank": "1500",
+        "saving": "100",
+        "savingFrequency": "7"
+      },
+      "summary": {
+        "essentials": "£2,708.00",
+        "nonEssentials": "£7,568.00",
+        "yourBudget": "£2,785.71",
+        "result": -7490.29
+      }
+    },
+    {
+      "label": "negative result with only partial entries with 2 weeks scenario",
+      "months": 3,
+      "essentials": {
+        "clothing": "300.99",
+        "nappies": "29.99",
+        "bottles": "12.09"
+      },
+      "nonEssentials": {
+        "breastPump": "2300",
+        "maternityBra": "8909",
+        "muslinCloth": "12.09",
+        "nursingPillow": "0.99",
+        "weaning": "200.09"
+      },
+      "budget": {
+        "moneyInBank": "8000",
+        "saving": "300",
+        "savingFrequency": "14"
+      },
+      "summary": {
+        "essentials": "£343.07",
+        "nonEssentials": "£11,422.17",
+        "yourBudget": "£9,928.57",
+        "result": -1836.67
+      }
+    },
+    {
+      "label": "negative result with partial entries  per 4 weeks scenario",
+      "months": 3,
+      "essentials": {
+        "sterilisingEquipment": "1000"
+      },
+      "nonEssentials": {
+        "travelCot": "1000.09"
+      },
+      "budget": {
+        "moneyInBank": "900",
+        "saving": "1",
+        "savingFrequency": "28"
+      },
+      "summary": {
+        "essentials": "£1,000.00",
+        "nonEssentials": "£1,000.09",
+        "yourBudget": "£903.21",
+        "result": -1096.88
+      }
+    }
+  ],
+  "editJourney": [
+    {
+      "label": "for essential items",
+      "months": 6,
+      "essentials": {
+        "sterilisingEquipment": "200"
+      },
+      "nonEssentials": {
+        "changingTable": "149",
+        "travelCot": "1000.09"
+      },
+      "budget": {
+        "moneyInBank": "900",
+        "saving": "1",
+        "savingFrequency": "28"
+      },
+      "summary": {
+        "essentials": "£200.00",
+        "nonEssentials": "£1,149.09",
+        "yourBudget": "£906.43",
+        "result": -442.66
+      },
+      "editJourney": "Essential Items",
+      "updatedEssentials": {
+        "cotBed": "300"
+      },
+      "updatedSummary": {
+        "essentials": "£500.00",
+        "nonEssentials": "£1,149.09",
+        "yourBudget": "£906.43",
+        "result": -742.66
+      }
+    },
+    {
+      "label": "for non-essential items",
+      "months": 6,
+      "essentials": {
+        "sterilisingEquipment": "200"
+      },
+      "nonEssentials": {
+        "changingTable": "149",
+        "travelCot": "1000.09"
+      },
+      "budget": {
+        "moneyInBank": "900",
+        "saving": "1",
+        "savingFrequency": "28"
+      },
+      "summary": {
+        "essentials": "£200.00",
+        "nonEssentials": "£1,149.09",
+        "yourBudget": "£906.43",
+        "result": -442.66
+      },
+      "editJourney": "Travel and Playtime",
+      "updatedNonEssentials": {
+        "travelCot": "300",
+        "rattles": "50"
+      },
+      "updatedSummary": {
+        "essentials": "£200.00",
+        "nonEssentials": "£499.00",
+        "yourBudget": "£906.43",
+        "result": 207.43
+      }
+    }
+  ]
+}

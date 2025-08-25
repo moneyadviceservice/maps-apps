@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryCardList component renders correctly 1`] = `
+<ul
+  class="m-0 md:grid md:grid-cols-2 md:gap-6 xl:gap-y-10 md:auto-rows-fr"
+  data-testid="summary-card-list"
+>
+  <li
+    class="p-0 pb-6 m-0 md:p-0 md:flex"
+    data-testid="summary-card-0"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl w-full px-4 py-6 md:flex md:flex-col md:justify-between md:px-7"
+      data-testid="information-callout"
+    >
+      <div>
+        <h4
+          class="md:text-2xl text-gray-800 font-bold mb-4 text-xl"
+          data-testid="summary-card-title"
+        >
+          Generate a summary
+        </h4>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Generate a summary of the pension options to refer back to.
+        </p>
+      </div>
+      <p
+        class="text-sm text-right"
+        data-testid="summary-card-duration"
+      >
+        (
+        approximately
+         
+        <span
+          class="font-bold"
+        >
+          2
+           
+          minutes
+          )
+        </span>
+      </p>
+    </div>
+  </li>
+  <li
+    class="p-0 pb-6 m-0 md:p-0 md:flex"
+    data-testid="summary-card-1"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl w-full px-4 py-6 md:flex md:flex-col md:justify-between md:px-7"
+      data-testid="information-callout"
+    >
+      <div>
+        <h4
+          class="md:text-2xl text-gray-800 font-bold mb-4 text-xl"
+          data-testid="summary-card-title"
+        >
+          Update your beneficiary
+        </h4>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Update your beneficiary
+        </p>
+      </div>
+      <p
+        class="text-sm text-right"
+        data-testid="summary-card-duration"
+      >
+        (
+        approximately
+         
+        <span
+          class="font-bold"
+        >
+          15
+           
+          minutes
+          )
+        </span>
+      </p>
+    </div>
+  </li>
+  <li
+    class="p-0 pb-6 m-0 md:p-0 md:flex"
+    data-testid="summary-card-2"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl w-full px-4 py-6 md:flex md:flex-col md:justify-between md:px-7"
+      data-testid="information-callout"
+    >
+      <div>
+        <h4
+          class="md:text-2xl text-gray-800 font-bold mb-4 text-xl"
+          data-testid="summary-card-title"
+        >
+          Get regulated advice
+        </h4>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          Get some regulated advice
+        </p>
+      </div>
+      <p
+        class="text-sm text-right"
+        data-testid="summary-card-duration"
+      >
+        (
+        approximately
+         
+        <span
+          class="font-bold"
+        >
+          2
+           
+          minutes
+          )
+        </span>
+      </p>
+    </div>
+  </li>
+</ul>
+`;

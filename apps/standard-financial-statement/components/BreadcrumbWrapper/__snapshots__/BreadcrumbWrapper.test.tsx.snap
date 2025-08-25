@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreadcrumbWrapper component renders breadcumbs correctly 1`] = `
+<div
+  class="px-0 bg-gray-300"
+  data-testid="breadcrumb-wrapper"
+>
+  <div
+    class="container-auto m-0 p-0 md:m-auto md:px-4 max-w-[1272px]"
+  >
+    <div
+      class="[&_a]:text-blue-600 [&_p]:text-blue-600 [&_ul]:px-0 [&_ul]:py-3.5 [&_path]:fill-blue-600"
+    >
+      <a
+        class="print:hidden md:hidden outline-none t-breadcrumb-mobile pl-2.5 flex items-center py-1 relative z-1 border-1 border-white shadow-box-link hover:border-1 hover:border-pink-800 focus:bg-yellow-200 focus:shadow-box-link-focus focus:border-2 focus:border-purple-700 focus:border-opacity-100"
+        data-testid="breadcrumb-mobile"
+        href="/en/use-the-sfs"
+      >
+        <chevron-left.svg
+          classname="w-4"
+        />
+        <div
+          class="pl-2"
+        >
+          <p
+            class="text-base"
+          >
+            SFS
+          </p>
+          <p
+            class="text-base font-semibold text-pink-600 hover:text-pink-900 focus:text-gray-800"
+          >
+            Spending guidelines
+          </p>
+        </div>
+      </a>
+      <nav
+        aria-label="breadcrumbs"
+        class="hidden md:block"
+        data-testid="breadcrumb-desktop"
+      >
+        <ul
+          class="flex px-4 py-4 t-breadcrumb-desktop"
+        >
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-pink-600 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-200 focus:shadow-link-focus outline-none"
+              href="/en"
+            >
+              Home
+            </a>
+            <chevron-right.svg
+              classname="w-4 pl-2"
+            />
+          </li>
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-pink-600 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-200 focus:shadow-link-focus outline-none"
+              href="/en/use-the-sfs"
+            >
+              SFS
+            </a>
+            <chevron-right.svg
+              classname="w-4 pl-2"
+            />
+          </li>
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-pink-600 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-200 focus:shadow-link-focus outline-none"
+              href="/en/spending-guidelines"
+            >
+              Spending guidelines
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Running lint-staged..."
+npx lint-staged --concurrent false --relative
+echo "Running tests..."
+npm run test:all

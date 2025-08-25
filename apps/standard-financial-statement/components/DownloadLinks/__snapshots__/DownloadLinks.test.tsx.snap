@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DownloadLinks component renders multiple downloads correctly 1`] = `
+<div
+  class="mt-10"
+  data-testid="downloads"
+>
+  <h4
+    class="text-xl md:text-2xl font-bold mb-6 text-blue-600"
+    data-testid="downloads-heading"
+  >
+    <span>
+      Download files 
+    </span>
+  </h4>
+  <div
+    class="flex items-center mb-7"
+  >
+    <a
+      class="inline-flex items-center visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button gap-0 px-0 mx-0 text-magenta-700 text-[18px] font-bold"
+      href="test/content/dam/sfs/assets/sfs-code-of-conduct/MAS0126_SFS_Code_of_Conduct_A_v1.pdf"
+      target="_blank"
+    >
+      <span />
+      Download the SFS Code of Conduct
+      <span>
+        <download.svg
+          class="ml-2"
+        />
+      </span>
+    </a>
+    <div
+      class="ml-2 text-gray-500"
+    >
+      <span
+        class="uppercase"
+      >
+        (
+        pdf
+        ,
+      </span>
+       
+      <span
+        data-testid="file"
+      >
+        81 KB
+        )
+      </span>
+    </div>
+  </div>
+  <div
+    class="flex items-center mb-7"
+  >
+    <a
+      class="inline-flex items-center visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button gap-0 px-0 mx-0 text-magenta-700 text-[18px] font-bold"
+      href="test/content/dam/sfs/assets/sfs-code-of-conduct/MAS0126_SFS_Code_of_Conduct_A_v1.pdf"
+      target="_blank"
+    >
+      <span />
+      Download the SFS Code of Conduct
+      <span>
+        <download.svg
+          class="ml-2"
+        />
+      </span>
+    </a>
+    <div
+      class="ml-2 text-gray-500"
+    >
+      <span
+        class="uppercase"
+      >
+        (
+        pdf
+        ,
+      </span>
+       
+      <span
+        data-testid="file"
+      >
+        81 KB
+        )
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DownloadLinks component renders single download correctly 1`] = `
+<div
+  class="mt-10"
+  data-testid="downloads"
+>
+  <h4
+    class="text-xl md:text-2xl font-bold mb-6 text-blue-600"
+    data-testid="downloads-heading"
+  >
+    <span>
+      Download file
+    </span>
+  </h4>
+  <div
+    class="flex items-center mb-7"
+  >
+    <a
+      class="inline-flex items-center visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-200 focus:shadow-link-focus focus-within:outline-0 underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button gap-0 px-0 mx-0 text-magenta-700 text-[18px] font-bold"
+      href="test/content/dam/sfs/assets/sfs-code-of-conduct/MAS0126_SFS_Code_of_Conduct_A_v1.pdf"
+      target="_blank"
+    >
+      <span />
+      Download the SFS Code of Conduct
+      <span>
+        <download.svg
+          class="ml-2"
+        />
+      </span>
+    </a>
+    <div
+      class="ml-2 text-gray-500"
+    >
+      <span
+        class="uppercase"
+      >
+        (
+        pdf
+        ,
+      </span>
+       
+      <span
+        data-testid="file"
+      >
+        81 KB
+        )
+      </span>
+    </div>
+  </div>
+</div>
+`;
