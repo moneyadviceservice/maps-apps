@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormErrorCallout should render with errors 1`] = `
+<div
+  class="border-4 border-red-700 rounded p-7"
+  data-testid="error-callout"
+>
+  <p
+    class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+  >
+    common.error-callout.title
+  </p>
+  <div
+    class="ml-10"
+  >
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="list-disc marker:text-pink-800 marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug"
+        data-testid="error-callout-list"
+        start="-1"
+      >
+        <li>
+          <span
+            class="text-red-700 underline"
+            data-testid="error-callout-field-1"
+          >
+            components.mock-step.form.Field 1 is required.error
+          </span>
+        </li>
+        <li>
+          <span
+            class="text-red-700 underline"
+            data-testid="error-callout-field-2"
+          >
+            components.mock-step.form.Field 2 is required.error
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

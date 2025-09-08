@@ -1,0 +1,25 @@
+{
+  "income": {
+    "statePension": {
+      "title": "State Pension When You Retire",
+      "description": "Please note that this will only become payable on your State Retirement Age.",
+      "link": {
+        "url": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/state-pension-an-overview",
+        "text": "For further information on State Pension "
+      }
+    },
+    "definedBenefit": {
+      "title": "Defined Benefit Pension",
+      "description": "You get a defined benefit pension from a workplace scheme that promises you a certain amount of pension at retirement.",
+      "buttonLabel": "Add Pension Pot"
+    },
+    "definedContributionIncome": {
+      "title": "Defined Contribution Pension Income",
+      "description": "You may have built up a fund within a workplace pension or through a personal pension.",
+      "buttonLabel": "Add Pension Pot"
+    },
+    "additionalItems": {
+      "title": "Other additional retirement income"
+    }
+  }
+}

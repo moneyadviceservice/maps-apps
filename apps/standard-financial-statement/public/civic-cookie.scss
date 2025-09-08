@@ -1,0 +1,39 @@
+#ccc-notify-accept,
+#ccc-notify-reject,
+#ccc-recommended-settings,
+#ccc-reject-settings,
+#ccc-dismiss-button {
+  border: 0px !important;
+  background-color: #b0ca35 !important;
+  color: #000b3b !important;
+}
+
+#ccc-notify-accept:after,
+#ccc-recommended-settings:after,
+#ccc-reject-settings:after,
+#ccc-dismiss-button:after {
+  content: none !important;
+}
+
+#ccc-notify-accept > span,
+#ccc-notify-reject > span,
+#ccc-recommended-settings > span,
+#ccc-reject-settings > span,
+.ccc-notify-button#ccc-dismiss-button > span,
+#ccc-dismiss-button > span {
+  color: #000b3b !important;
+}
+.ccc-notify-link > span {
+  color: #000b3b !important;
+}
+
+.checkbox-toggle--slider input:checked ~ .checkbox-toggle-toggle {
+  background-color: #b0ca35 !important;
+}
+
+.ccc-panel h3 > a:visited:not(:focus):not(:hover),
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover),
+.ccc-panel p > a:visited:not(:focus):not(:hover),
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) {
+  color: #000b3b !important;
+}

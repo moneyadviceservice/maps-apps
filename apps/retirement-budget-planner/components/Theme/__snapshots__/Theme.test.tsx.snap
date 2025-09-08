@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Theme component should render the component in green 1`] = `
+<div>
+  <div
+    class="bg-green-200 p-8 rounded-bl-3xl"
+  >
+    Content
+  </div>
+</div>
+`;
+
+exports[`Test Theme component should render the component in yellow 1`] = `
+<div>
+  <div
+    class="bg-yellow-180 p-8 rounded-bl-3xl"
+  >
+    Content
+  </div>
+</div>
+`;

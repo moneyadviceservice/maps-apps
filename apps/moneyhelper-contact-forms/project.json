@@ -1,0 +1,84 @@
+{
+  "name": "moneyhelper-contact-forms",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/moneyhelper-contact-forms",
+  "projectType": "application",
+  "implicitDependencies": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/moneyhelper-contact-forms",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public",
+            "output": "./"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/moneyhelper-contact-forms"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "moneyhelper-contact-forms:build",
+        "dev": true,
+        "port": 4500
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "moneyhelper-contact-forms:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "moneyhelper-contact-forms:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "moneyhelper-contact-forms:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/moneyhelper-contact-forms/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/moneyhelper-contact-forms/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/moneyhelper-contact-forms",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

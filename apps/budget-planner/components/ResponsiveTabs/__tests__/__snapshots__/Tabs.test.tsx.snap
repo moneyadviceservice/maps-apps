@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component renders correctly 1`] = `
+<div
+  class="relative print:hidden"
+>
+  <nav
+    class="mb-6 max-sm:mb-0 flex flex-wrap sm:flex max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-4"
+    id="slideNav"
+  >
+    <button
+      class="t-button t-step-navigation__button p-3 border-b-3 border-[4c6272] snap-start leading-4 flex-none font-bold text-pink-800 !gap-0 underline whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+      role="tab"
+    >
+      Income
+    </button>
+    <button
+      aria-selected="true"
+      class="t-button t-step-navigation__button p-3 snap-start leading-4 flex-none font-bold !gap-0 whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab border-b-3 border-blue-800 text-blue-800 no-underline focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+      role="tab"
+    >
+      Bills
+    </button>
+    <button
+      class="t-button t-step-navigation__button p-3 border-b-3 border-[4c6272] snap-start leading-4 flex-none font-bold text-pink-800 !gap-0 underline whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+      role="tab"
+    >
+      Family
+    </button>
+    <button
+      class="t-button t-step-navigation__button p-3 border-b-3 border-[4c6272] snap-start leading-4 flex-none font-bold text-pink-800 !gap-0 underline whitespace-nowrap hover:bg-gray-100 hover:no-underline max-sm:w-full max-sm:text-center max-sm:flex max-sm:justify-center tool-nav-tab focus:bg-yellow-200 focus:outline-none focus:text-blue-800 focus:border-purple-800 focus:no-underline active:bg-yellow-200"
+      role="tab"
+    >
+      Travel
+    </button>
+  </nav>
+</div>
+`;
