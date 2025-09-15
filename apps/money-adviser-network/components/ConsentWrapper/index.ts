@@ -1,0 +1,1 @@
+export { ConsentWrapper } from './ConsentWrapper';
