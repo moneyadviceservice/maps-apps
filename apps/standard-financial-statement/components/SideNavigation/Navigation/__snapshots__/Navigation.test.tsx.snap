@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component renders unnested nav correctly 1`] = `
+<div>
+  <nav
+    class="bg-white min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+  >
+    <ul
+      class="lg:border-1 lg:border-slate-400 lg:border-r-r lg:rounded-bl-[24px] pb-4 lg:pb-0"
+    >
+      <li>
+        <a
+          class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline focus:bg-yellow-400 relative focus:shadow-transparent z-1 bg-green-300 font-bold after:content-none hover:bg-green-300 hover:no-underline"
+          href="/en/what-is-the-sfs"
+        >
+          <span
+            class="max-w-[90%]"
+          >
+            What is the Standard Financial Statement?
+          </span>
+          <chevron.svg
+            class="ml-auto"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+          href="/en/what-is-the-sfs/find-free-debt-advice"
+        >
+          <span
+            class="max-w-[90%]"
+          >
+            Find debt advice
+          </span>
+          <chevron.svg
+            class="ml-auto"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

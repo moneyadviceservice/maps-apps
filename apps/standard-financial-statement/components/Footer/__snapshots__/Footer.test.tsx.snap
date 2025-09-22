@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly 1`] = `
+<footer
+  class="relative z-1"
+  data-testid="footer"
+>
+  <div
+    class="flex flex-col py-8 bg-gray-500 md:flex-row md:py-6"
+  >
+    <div
+      class="container-auto flex flex-col text-white md:flex-row max-w-[1272px]"
+    >
+      <img
+        alt="sfs logo"
+        data-nimg="1"
+        decoding="async"
+        height="53"
+        loading="lazy"
+        src="/_next/image?url=%2Ffooter-logo&w=384&q=75"
+        srcset="/_next/image?url=%2Ffooter-logo&w=256&q=75 1x, /_next/image?url=%2Ffooter-logo&w=384&q=75 2x"
+        style="color: transparent;"
+        width="167"
+      />
+      <ul
+        class="relative flex flex-row flex-wrap mt-8 md:ml-auto md:mt-0"
+      >
+        <li
+          class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+        >
+          <a
+            class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline"
+            href="/en/accessibility"
+          >
+            Accessibility
+          </a>
+        </li>
+        <li
+          class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+        >
+          <a
+            class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline"
+            href="/en/cookies"
+          >
+            Cookies
+          </a>
+        </li>
+        <li
+          class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+        >
+          <a
+            class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline"
+            href="/en/privacy"
+          >
+            Privacy
+          </a>
+        </li>
+        <li
+          class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+        >
+          <a
+            class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline after:hidden"
+            href="/en/sitemap"
+          >
+            Sitemap
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+`;

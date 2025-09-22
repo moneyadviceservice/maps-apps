@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NestedNavigation component renders nested nav correctly 1`] = `
+<div>
+  <nav
+    class="bg-white min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+  >
+    <div
+      class="lg:border-1 lg:border-slate-400 lg:border-r-r lg:rounded-bl-[24px] pb-4 lg:pb-0 mb-8"
+    >
+      <ul>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            href="/en/use-the-sfs"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Use the SFS
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+      <h5
+        class="text-lg md:text-xl text-gray-800 font-bold pt-6 pb-3 mx-5 border-b-1 border-b-slate-400"
+      >
+        Spending Guidelines
+      </h5>
+      <ul>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            href="/en/use-the-sfs/spending-guidelines"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Spending Guidelines 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+            href="/en/use-the-sfs/commentary-for"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Commentary for 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`SideNavigationWrapper component renders wrapper component with nested children correctly 1`] = `
+<div>
+  <div
+    class="sticky bottom-0 z-10 order-2 left-4 right-4 lg:hidden"
+  >
+    <details
+      class="relative h-screen overflow-y-scroll bg-white rounded-t-lg group z-3 max-h-fit"
+    >
+      <summary
+        class="open relative z-20 bg-blue-600 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-[18px]"
+        data-testid="side-nav-toggle"
+        title="Explore this topic"
+      >
+        <div
+          class="flex items-center p-4 h-[55px]"
+        >
+          <span
+            class="text-green-300"
+          >
+            Explore this topic
+          </span>
+          <div
+            class="ml-auto text-white -rotate-90 group-open:hidden"
+          >
+            <chevron.svg
+              class="text-green-300"
+            />
+          </div>
+          <div
+            class="items-center hidden ml-auto group-open:flex"
+          >
+            <burger-close.svg
+              classname="w-[20px] h-[20px] text-white"
+            />
+            <span
+              class="text-[14px]"
+            >
+              Close
+            </span>
+          </div>
+        </div>
+      </summary>
+    </details>
+  </div>
+  <div
+    class="hidden lg:block"
+  >
+    <nav
+      class="bg-white min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+    >
+      <ul
+        class="lg:border-1 lg:border-slate-400 lg:border-r-r lg:rounded-bl-[24px] pb-4 lg:pb-0"
+      >
+        <li>
+          <a
+            class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            href="/cyundefined"
+          >
+            <span
+              class="max-w-[90%]"
+            />
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+            href="/cyundefined"
+          >
+            <span
+              class="max-w-[90%]"
+            />
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`SideNavigationWrapper component renders wrapper component with unnested children correctly 1`] = `
+<div>
+  <div
+    class="sticky bottom-0 z-10 order-2 left-4 right-4 lg:hidden"
+  >
+    <details
+      class="relative h-screen overflow-y-scroll bg-white rounded-t-lg group z-3 max-h-fit"
+    >
+      <summary
+        class="open relative z-20 bg-blue-600 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-[18px]"
+        data-testid="side-nav-toggle"
+        title="Explore this topic"
+      >
+        <div
+          class="flex items-center p-4 h-[55px]"
+        >
+          <span
+            class="text-green-300"
+          >
+            Explore this topic
+          </span>
+          <div
+            class="ml-auto text-white -rotate-90 group-open:hidden"
+          >
+            <chevron.svg
+              class="text-green-300"
+            />
+          </div>
+          <div
+            class="items-center hidden ml-auto group-open:flex"
+          >
+            <burger-close.svg
+              classname="w-[20px] h-[20px] text-white"
+            />
+            <span
+              class="text-[14px]"
+            >
+              Close
+            </span>
+          </div>
+        </div>
+      </summary>
+    </details>
+  </div>
+  <div
+    class="hidden lg:block"
+  >
+    <nav
+      class="bg-white min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+    >
+      <ul
+        class="lg:border-1 lg:border-slate-400 lg:border-r-r lg:rounded-bl-[24px] pb-4 lg:pb-0"
+      >
+        <li>
+          <a
+            class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline focus:bg-yellow-400 relative focus:shadow-transparent z-1 bg-green-300 font-bold after:content-none hover:bg-green-300 hover:no-underline"
+            href="/en/what-is-the-sfs"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              What is the Standard Financial Statement?
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+            href="/en/what-is-the-sfs/find-free-debt-advice"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Find debt advice
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

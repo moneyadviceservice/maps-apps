@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmbedPageLayout renders correctly 1`] = `
+<div>
+  <div>
+    <script
+      async=""
+      src="/iframeResizer.contentWindow.js"
+    />
+    <div
+      class="flex-col items-center justify-start p-4 mb-3 space-y-3 bg-white sm:space-y-0"
+    >
+      <div
+        class="flex-grow text-3xl font-bold text-blue-700 md:text-4xl"
+      >
+        test title
+      </div>
+      <a
+        class="cursor-pointer t-powered-by focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 active:bg-transparent active:shadow-none"
+        href="https://www.moneyhelper.org.uk/en"
+        target="_blank"
+      >
+        <div
+          class="text-base text-gray-900"
+        >
+          Powered by
+        </div>
+        <div>
+          <div
+            class="flex items-center mx-auto"
+          >
+            <svg
+              class="text-pink-800"
+              height="32"
+              viewBox="0 0 24 24"
+              width="32"
+            >
+              <path
+                d="M3 3h4v7.5c0 1.93 1.57 3.5 3.5 3.5H13v-4l7 6l-7 6v-4h-2.5C6.36 18 3 14.64 3 10.5V3Z"
+                fill="currentColor"
+              />
+            </svg>
+            <div
+              class="font-bold text-blue-700 "
+            >
+              MoneyHelper
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    test content
+  </div>
+</div>
+`;
+
+exports[`EmbedPageLayout renders correctly with no title 1`] = `
+<div>
+  <div>
+    <script
+      async=""
+      src="/iframeResizer.contentWindow.js"
+    />
+    test content
+  </div>
+</div>
+`;

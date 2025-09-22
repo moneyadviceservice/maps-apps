@@ -1,0 +1,84 @@
+{
+  "name": "retirement-budget-planner",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/retirement-budget-planner",
+  "projectType": "application",
+  "implicitDependencies": ["retirement-budget-planner-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/retirement-budget-planner",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public",
+            "output": "./"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/retirement-budget-planner"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "retirement-budget-planner:build",
+        "dev": true,
+        "port": 4300
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "retirement-budget-planner:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "retirement-budget-planner:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "retirement-budget-planner:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/retirement-budget-planner/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/retirement-budget-planner/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/retirement-budget-planner",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

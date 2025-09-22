@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput component renders correctly 1`] = `
+<input
+  aria-invalid="false"
+  class="px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+  id="text-input"
+  type="text"
+/>
+`;
+
+exports[`TextInput component renders correctly for type number input 1`] = `
+<input
+  aria-invalid="false"
+  class="px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+  id="text-input"
+  type="number"
+/>
+`;
+
+exports[`TextInput component renders correctly with a hint 1`] = `
+<p
+  class="mb-4 text-gray-400"
+  data-testid="text-input-hint"
+>
+  some hint
+</p>
+`;
+
+exports[`TextInput component renders correctly with a label 1`] = `
+<label
+  class="block pb-2 text-lg"
+  for="text-input"
+>
+  some input
+</label>
+`;
+
+exports[`TextInput component renders correctly with an error 1`] = `
+<p
+  class="mb-4 text-red-700"
+  data-testid="text-input-error"
+  id="text-input-error"
+>
+  some error
+</p>
+`;
+
+exports[`TextInput component renders correctly with an error and a hint 1`] = `
+<p
+  class="text-gray-400 mb-2"
+  data-testid="text-input-hint"
+>
+  some hint
+</p>
+`;

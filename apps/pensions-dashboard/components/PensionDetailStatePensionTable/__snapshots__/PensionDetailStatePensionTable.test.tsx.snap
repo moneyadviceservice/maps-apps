@@ -1,0 +1,911 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionDetailStatePensionTable displays estimate row 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <div
+      class="hidden md:block"
+    >
+      <div
+        class="mt-14 md:mt-16"
+      >
+        <h2
+          class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+          data-testid="table-section-heading"
+        />
+        <table
+          class="w-full max-md:leading-6 max-md:block table-fixed"
+          data-testid="table-section-content"
+        >
+          <thead>
+            <tr>
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+            </tr>
+          </thead>
+          <tbody
+            class="max-md:block"
+          >
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-estimate-today"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-estimate-today"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-estimate-today"
+              >
+                23 February 2042
+              </td>
+            </tr>
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-forecast"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-forecast"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-forecast"
+              >
+                23 February 2042
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="md:hidden mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailStatePensionTable displays estimate row with no data 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <div
+      class="hidden md:block"
+    >
+      <div
+        class="mt-14 md:mt-16"
+      >
+        <h2
+          class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+          data-testid="table-section-heading"
+        />
+        <table
+          class="w-full max-md:leading-6 max-md:block table-fixed"
+          data-testid="table-section-content"
+        >
+          <thead>
+            <tr>
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+            </tr>
+          </thead>
+          <tbody
+            class="max-md:block"
+          >
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-estimate-today"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-estimate-today"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-estimate-today"
+              >
+                --
+              </td>
+            </tr>
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-forecast"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-forecast"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-forecast"
+              >
+                --
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="md:hidden mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailStatePensionTable displays forecast row 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <div
+      class="hidden md:block"
+    >
+      <div
+        class="mt-14 md:mt-16"
+      >
+        <h2
+          class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+          data-testid="table-section-heading"
+        />
+        <table
+          class="w-full max-md:leading-6 max-md:block table-fixed"
+          data-testid="table-section-content"
+        >
+          <thead>
+            <tr>
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+            </tr>
+          </thead>
+          <tbody
+            class="max-md:block"
+          >
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-estimate-today"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-estimate-today"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-estimate-today"
+              >
+                23 February 2042
+              </td>
+            </tr>
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-forecast"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-forecast"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-forecast"
+              >
+                23 February 2042
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="md:hidden mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailStatePensionTable displays forecast row with no data 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <div
+      class="hidden md:block"
+    >
+      <div
+        class="mt-14 md:mt-16"
+      >
+        <h2
+          class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+          data-testid="table-section-heading"
+        />
+        <table
+          class="w-full max-md:leading-6 max-md:block table-fixed"
+          data-testid="table-section-content"
+        >
+          <thead>
+            <tr>
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+            </tr>
+          </thead>
+          <tbody
+            class="max-md:block"
+          >
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-estimate-today"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-estimate-today"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-estimate-today"
+              >
+                --
+              </td>
+            </tr>
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-forecast"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-forecast"
+              >
+                --
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-forecast"
+              >
+                --
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="md:hidden mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            --
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            --
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionDetailStatePensionTable renders correctly 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <div
+      class="hidden md:block"
+    >
+      <div
+        class="mt-14 md:mt-16"
+      >
+        <h2
+          class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+          data-testid="table-section-heading"
+        />
+        <table
+          class="w-full max-md:leading-6 max-md:block table-fixed"
+          data-testid="table-section-content"
+        >
+          <thead>
+            <tr>
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400 w-1/3"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+              <th
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block border-b-1 border-b-slate-400"
+              />
+            </tr>
+          </thead>
+          <tbody
+            class="max-md:block"
+          >
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-estimate-today"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-estimate-today"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-estimate-today"
+              >
+                23 February 2042
+              </td>
+            </tr>
+            <tr
+              class="max-md:block border-b-1 border-b-slate-400"
+            >
+              <td
+                class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+              />
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="monthly-forecast"
+              >
+                £958.50 a month
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="yearly-forecast"
+              >
+                £11,502 a year
+              </td>
+              <td
+                class="pb-3 md:pt-[14px] md:pb-4 text-left align-top max-md:block"
+                data-testid="payable-date-forecast"
+              >
+                23 February 2042
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="md:hidden mt-14 md:mt-16"
+    >
+      <h2
+        class="text-3xl text-gray-800 font-bold max-md:mb-4 md:text-5xl md:mb-4"
+        data-testid="table-section-heading"
+      />
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-estimate-today-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-md:mb-8 *:border-b-1 *:border-b-slate-400 *:py-2"
+      >
+        <h3
+          class="text-2xl md:text-4xl text-gray-800 font-semibold"
+        />
+        <div
+          class=""
+        >
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £958.50 a month
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            £11,502 a year
+          </div>
+        </div>
+        <div>
+          <div
+            class="font-bold"
+          />
+          <div
+            data-testid="current-forecast-mobile"
+          >
+            23 February 2042
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

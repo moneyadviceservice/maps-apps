@@ -1,0 +1,35 @@
+import { saveDataToBlob } from './handleCSPViolationBlob';
+
+describe('Handle CSP violations blob', () => {
+  it('should call netlify functions and return response', async () => {
+    global.fetch = jest.fn().mockImplementationOnce(() =>
+      Promise.resolve({
+        status: 200,
+        ok: true,
+        text: () =>
+          Promise.resolve('The CSP violations are saved to Netlify Blobs'),
+        json: () =>
+          Promise.resolve('The CSP violations are saved to Netlify Blobs'),
+      }),
+    );
+    const response = await saveDataToBlob('Data');
+    expect(response).toBe('The CSP violations are saved to Netlify Blobs');
+  });
+
+  it('should fail to call netlify functions and return response', async () => {
+    global.fetch = jest.fn().mockImplementation(() => {
+      return Promise.resolve({
+        status: 404,
+        ok: false,
+        text: () => Promise.resolve('Error in saving the data to Blob'),
+      });
+    });
+    try {
+      await saveDataToBlob('data');
+    } catch (e) {
+      expect(e.message).toBe(
+        'Status code 404 -  Error in saving the data to Blob',
+      );
+    }
+  });
+});

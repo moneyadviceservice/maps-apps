@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisations component renders search input, select, and table 1`] = `
+<div>
+  <form
+    class="my-6"
+    method="GET"
+  >
+    <div
+      class="grid grid-cols-1 gap-4 md:grid-cols-2"
+    >
+      <div>
+        <input
+          data-testid="search-input"
+          value=""
+        />
+      </div>
+      <div>
+        <select
+          data-testid="select-input"
+        >
+          <option
+            value=""
+          >
+            Select
+          </option>
+          <option
+            value="type1"
+          >
+            Type 1
+          </option>
+        </select>
+      </div>
+    </div>
+    <noscript />
+  </form>
+  <p
+    class="mb-4 text-xl font-bold text-blue-600"
+    data-testid="paragraph"
+    role="status"
+  >
+    1
+     
+    organisations
+  </p>
+  <table
+    aria-live="polite"
+    class="w-full border-collapse"
+    id="table"
+  >
+    <thead>
+      <tr
+        class="font-normal text-left text-white align-top bg-blue-600 border-b"
+      >
+        <th
+          class="p-3 font-normal"
+        >
+          Organisation Name
+        </th>
+        <th
+          class="p-3 font-normal"
+        >
+          Organisation Type
+        </th>
+        <th
+          class="p-3 font-normal"
+        >
+          Membership number
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b even:bg-gray-50"
+      >
+        <td
+          class="p-3"
+        >
+          Test Org
+        </td>
+        <td
+          class="p-3"
+        >
+          Test Type
+        </td>
+        <td
+          class="p-3"
+        >
+          123
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form
+    action="undefined#table"
+    method="GET"
+  >
+    <input
+      name="name"
+      type="hidden"
+      value=""
+    />
+    <input
+      name="type"
+      type="hidden"
+      value=""
+    />
+    <div
+      class="flex items-center justify-between p-4"
+    >
+      <button
+        class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button font-semibold disabled:opacity-0 text-magenta-800"
+        data-testid="prev-button"
+        disabled=""
+        name="page"
+        type="submit"
+        value="0"
+      >
+        <span>
+          <chevron-left.svg
+            classname="fill-magenta-800 [&_path]:magenta-800"
+          />
+        </span>
+        Previous
+        <span />
+      </button>
+      <span
+        aria-live="polite"
+        class="pr-4 text-magenta-800"
+      >
+        Page
+         
+        1
+         
+        of
+         
+        1
+      </span>
+      <button
+        class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button font-semibold disabled:opacity-0 text-magenta-800"
+        data-testid="next-button"
+        disabled=""
+        name="page"
+        type="submit"
+        value="2"
+      >
+        <span />
+        Next
+        <span>
+          <chevron-right.svg
+            classname="fill-magenta-800 [&_path]:fill-magenta-800"
+          />
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;
