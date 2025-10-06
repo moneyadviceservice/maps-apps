@@ -1,0 +1,84 @@
+{
+  "name": "evidence-hub",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/evidence-hub",
+  "projectType": "application",
+  "implicitDependencies": ["evidence-hub-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/evidence-hub"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/evidence-hub",
+          "assets": [
+            {
+              "glob": "**/*",
+              "input": "libs/shared/ui/src/public/footer",
+              "output": "./footer"
+            }
+          ]
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "evidence-hub:build",
+        "dev": true,
+        "port": 4312
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "evidence-hub:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "evidence-hub:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "evidence-hub:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/evidence-hub/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/evidence-hub/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/evidence-hub",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

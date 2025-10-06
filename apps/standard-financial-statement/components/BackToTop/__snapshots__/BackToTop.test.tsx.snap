@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackToTop component renders correctly 1`] = `
+<div
+  class="flex items-center justify-center py-8 mt-12 border-t-1 border-b-1 border-slate-400"
+  data-testid="top"
+>
+  <div
+    class="flex gap-4 mr-auto"
+  >
+    <button
+      class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+      data-testid="print"
+      type="submit"
+    >
+      <span />
+      Print
+      <span />
+    </button>
+    <a
+      class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+      href="mailto:?body=url"
+    >
+      Email
+    </a>
+  </div>
+  <div
+    class="flex items-center justify-center gap-2 ml-auto"
+  >
+    <a
+      class="items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-blue-600 visited:text-blue-600"
+      href="#main"
+    >
+      Back to top
+    </a>
+    <arrow-up.svg
+      classname=""
+      fill="text-blue-600"
+    />
+  </div>
+</div>
+`;
+
+exports[`BackToTop component renders correctly with click to print action 1`] = `
+<div
+  class="flex items-center justify-center py-8 mt-12 border-t-1 border-b-1 border-slate-400"
+  data-testid="top"
+>
+  <div
+    class="flex gap-4 mr-auto"
+  >
+    <button
+      class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+      data-testid="print"
+      type="submit"
+    >
+      <span />
+      Print
+      <span />
+    </button>
+    <a
+      class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+      href="mailto:?body=url"
+    >
+      Email
+    </a>
+  </div>
+  <div
+    class="flex items-center justify-center gap-2 ml-auto"
+  >
+    <a
+      class="items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-blue-600 visited:text-blue-600"
+      href="#main"
+    >
+      Back to top
+    </a>
+    <arrow-up.svg
+      classname=""
+      fill="text-blue-600"
+    />
+  </div>
+</div>
+`;

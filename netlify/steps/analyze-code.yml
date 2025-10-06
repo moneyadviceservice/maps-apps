@@ -1,0 +1,126 @@
+parameters:
+  - name: SONARCLOUD_NAME
+    type: string
+  - name: SONARCLOUD_ORGANISATION
+    type: string
+  - name: SONARCLOUD_PROJECTKEY
+    type: string
+  - name: SONARCLOUD_PROJECTNAME
+    type: string
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: keyvaultname
+    type: string
+  - name: AKS_SPN_ID
+    type: string
+  - name: AKS_SPN_KEY
+    type: string
+  - name: TENANT_ID
+    type: string
+  - name: npm_config_cache
+    type: string
+    default: $(Pipeline.Workspace)/.npm
+
+steps:
+  - checkout: self
+    clean: true
+    persistCredentials: true
+    fetchDepth: 10
+    displayName: Check out source code from main repository
+
+  - script: |
+      git fetch origin main:refs/remotes/origin/main
+    displayName: Fetch the latest history for main branch
+
+  - template: install-node.yml
+
+  - task: Cache@2
+    name: npmCache
+    displayName: Cache npm shared cache
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: ${{ parameters.npm_config_cache }}
+
+  - script: npm ci --prefer-offline --no-audit --cache=${{ parameters.npm_config_cache }}
+    displayName: 'Install Dependencies'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+         git fetch origin main:main
+         git fetch origin main:refs/remotes/origin/main
+      else
+         git fetch  --depth=2 origin main:main
+         git fetch  --depth=2 origin main:refs/remotes/origin/main
+      fi
+    displayName: 'Fetch branch to compare'
+
+  - script: |
+      keyvaultname="${{ parameters.keyvaultname }}"
+      az login --service-principal --username ${{ parameters.AKS_SPN_ID }} --password ${{ parameters.AKS_SPN_KEY }} --tenant ${{ parameters.TENANT_ID }}
+
+      echo "Fetching secrets from Key Vault: $keyvaultname"
+      secrets=$(az keyvault secret list --vault-name $keyvaultname --query "[].name" -o tsv)
+      echo "Secrets found: $secrets"
+
+      for secretName in $secrets; do
+          secretValue=$(az keyvault secret show --name $secretName --vault-name $keyvaultname --query "value" -o tsv)
+
+          # Replace dashes with underscores in secret names to form valid environment variable names
+          secretName="${secretName//-/_}"
+
+          # Set the environment variable for the pipeline
+          echo "##vso[task.setvariable variable=$secretName]$secretValue"
+      done
+
+    displayName: 'Export Environment variables from Key Vault'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+          npx nx run-many -t lint
+      else
+          npx nx affected:lint --base=HEAD~1 --head=HEAD
+      fi
+    displayName: 'Run lint checks'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+          npx nx run-many -t typecheck
+      else
+          npx nx affected --target=typecheck --base=HEAD~1 --head=HEAD
+      fi
+    displayName: 'Run typecheck'
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+          npx nx run-many -t test --code-coverage
+      else
+          npx nx run-many -t test --code-coverage --base=HEAD~1 --head=HEAD
+      fi
+    displayName: 'Run unit tests with nx and coverage flag'
+
+  - script: |
+      if ls coverage/maps-apps/*/*/lcov.info 1> /dev/null 2>&1; then
+        echo "Found coverage files. Merging..."
+        npm run test:merge:coverage
+      else
+        echo "No coverage files found. Skipping merge."
+      fi
+    displayName: 'Check and Merge Coverage Report'
+
+  - task: SonarCloudPrepare@3
+    inputs:
+      SonarCloud: ${{ parameters.SONARCLOUD_NAME }}
+      organization: ${{ parameters.SONARCLOUD_ORGANISATION }}
+      scannerMode: 'CLI'
+      configMode: 'file'
+      configFile: './sonarqube/sonar-project.properties'
+      projectName: ${{ parameters.SONARCLOUD_PROJECTNAME }}
+      cliProjectKey: ${{ parameters.SONARCLOUD_PROJECTKEY }}
+
+  - task: SonarCloudAnalyze@3
+
+  - task: SonarCloudPublish@3
+    inputs:
+      pollingTimeoutSec: '300'

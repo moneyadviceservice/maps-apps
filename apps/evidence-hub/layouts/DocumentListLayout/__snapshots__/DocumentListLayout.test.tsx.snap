@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentListLayout renders list of documents when provided 1`] = `
+<div>
+  <div
+    class="mt-8 lg:mt-12 flex flex-col lg:flex-row lg:gap-8"
+  >
+    <nav
+      data-testid="side-navigation"
+    >
+      1
+       tags
+    </nav>
+    <div
+      class="flex-1"
+    >
+      <div
+        class="max-w-4xl"
+      >
+        <div
+          class="space-y-8"
+        >
+          <div
+            class="mb-8"
+          >
+            <p
+              class="text-xl font-bold text-gray-600"
+            >
+              1
+               document
+               found
+            </p>
+          </div>
+          <div
+            data-testid="document-summary"
+          >
+            Sample Doc
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

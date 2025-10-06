@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionArrangementCallout renders correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl px-4 py-6 pb-2 mt-6 md:py-7 md:px-5 md:mt-9"
+    data-testid="information-callout"
+  >
+    <h4
+      class="text-xl md:text-2xl text-blue-700 font-bold flex gap-4 mb-4 md:mb-5"
+    >
+      <svgr-mock
+        classname="w-[30px] h-[30px] fill-red-700"
+      />
+      State Pension
+    </h4>
+    <p
+      class="mb-4 md:mb-5"
+      data-testid="paragraph"
+    >
+      pages.pensions-that-need-action.card.description
+    </p>
+    <div
+      class="mb-3 md:mb-5"
+    >
+      <p
+        class="mb-0 font-bold"
+        data-testid="paragraph"
+      >
+        pages.pensions-that-need-action.card.reference
+      </p>
+      <p
+        class="mb-0"
+        data-testid="pension-contact-reference"
+      >
+        REF123
+      </p>
+    </div>
+    <div
+      class="py-2 mb:py-4 border-slate-400 border-t-1"
+    >
+      <details
+        class="group tool-expand"
+        data-testid="expandable-section"
+      >
+        <summary
+          class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+        >
+          <svgr-mock
+            classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+          />
+          <div
+            class="block"
+            data-testid="summary-block-title"
+          >
+            pages.pensions-that-need-action.card.contact-heading-open
+          </div>
+        </summary>
+        <div
+          class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+        >
+          <div
+            class="p-4 pb-9 lg:p-14 lg:pt-13 lg:rounded-bl-[40px] xl:w-10/12 2xl:w-9/12 !w-full !p-0 mb-0 bg-white rounded-none [&>dl>dt:last-of-type]:border-b-0 [&>dl>dd:last-of-type]:border-b-0"
+          >
+            <dl
+              class="md:grid md:grid-cols-[36%_64%]"
+              data-testid="definition-list"
+            >
+              <dt
+                class="block pt-2 pb-2 max-sm:leading-[1.6] md:border-b-1 md:border-slate-400 md:py-4 lg:pl-2 font-bold"
+                data-testid="dt-contact-telephone"
+              >
+                common.contact.telephone
+              </dt>
+              <dd
+                class="block pb-2 leading-[1.6] border-b-1 border-slate-400 md:py-4"
+                data-testid="dd-contact-telephone"
+              >
+                <p
+                  class="font-bold"
+                >
+                  (common.contact.preferred)
+                   
+                  WhatsApp: +123 1111111111
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;

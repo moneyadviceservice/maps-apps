@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateOfBirth Component renders the component with no errors 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form for Step: mock-step"
+  class="pt-4 md:max-w-xl"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class=""
+    data-testid="errors"
+  >
+    <p
+      class="mb-4 text-gray-400"
+      data-testid="date-of-birth-hint"
+    >
+      components.date-of-birth.hint
+    </p>
+    <input
+      aria-invalid="false"
+      class="px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+      id="text-input"
+      type="hidden"
+    />
+  </div>
+  <div
+    class="flex gap-5 mb-2"
+  >
+    <div
+      class=" max-w-16"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="day"
+      >
+        components.date-of-birth.form.day.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-day"
+        id="day"
+        max="31"
+        min="1"
+        name="day"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="max-w-16"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="month"
+      >
+        components.date-of-birth.form.month.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-month"
+        id="month"
+        max="12"
+        min="1"
+        name="month"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="max-w-24"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="year"
+      >
+        components.date-of-birth.form.year.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-year"
+        id="year"
+        max="2025"
+        min="1900"
+        name="year"
+        type="number"
+        value=""
+      />
+    </div>
+  </div>
+  <details
+    class="group tool-expand"
+    data-testid="expandable-section"
+  >
+    <summary
+      class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+    >
+      <svgr-mock
+        classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+      />
+      <div
+        class="block"
+        data-testid="summary-block-title"
+      >
+        components.date-of-birth.expandable-section.title
+      </div>
+    </summary>
+    <div
+      class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+    >
+      <p
+        class="mb-4"
+        data-testid="paragraph"
+      >
+        components.date-of-birth.expandable-section.content
+      </p>
+    </div>
+  </details>
+  <button
+    class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full mt-10 mb-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.form.button.continue-text
+    <span />
+  </button>
+</form>
+`;
+
+exports[`DateOfBirth Component renders the generic error for dates when there is an error 1`] = `
+<form
+  action="/api/form-handler"
+  aria-label="Contact form for Step: mock-step"
+  class="pt-4 md:max-w-xl"
+  method="POST"
+  novalidate=""
+>
+  <input
+    name="lang"
+    type="hidden"
+    value=""
+  />
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+    data-testid="errors"
+  >
+    <p
+      class="mb-4 text-gray-400"
+      data-testid="date-of-birth-hint"
+    >
+      components.date-of-birth.hint
+    </p>
+    <p
+      class="mb-4 text-red-700"
+      data-testid="text-input-error"
+      id="text-input-error"
+    >
+      components.date-of-birth.form.generic.error
+    </p>
+    <input
+      aria-describedby="text-input-error"
+      aria-invalid="true"
+      class="px-3 m-px w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+      id="text-input"
+      type="hidden"
+    />
+  </div>
+  <div
+    class="flex gap-5 mb-2"
+  >
+    <div
+      class=" max-w-16"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="day"
+      >
+        components.date-of-birth.form.day.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-day"
+        id="day"
+        max="31"
+        min="1"
+        name="day"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="max-w-16"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="month"
+      >
+        components.date-of-birth.form.month.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-month"
+        id="month"
+        max="12"
+        min="1"
+        name="month"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="max-w-24"
+    >
+      <label
+        class="block pb-2 text-lg"
+        for="year"
+      >
+        components.date-of-birth.form.year.label
+      </label>
+      <input
+        aria-invalid="false"
+        class="obfuscate px-3 m-px w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+        data-testid="input-year"
+        id="year"
+        max="2025"
+        min="1900"
+        name="year"
+        type="number"
+        value=""
+      />
+    </div>
+  </div>
+  <details
+    class="group tool-expand"
+    data-testid="expandable-section"
+  >
+    <summary
+      class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+    >
+      <svgr-mock
+        classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+      />
+      <div
+        class="block"
+        data-testid="summary-block-title"
+      >
+        components.date-of-birth.expandable-section.title
+      </div>
+    </summary>
+    <div
+      class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+    >
+      <p
+        class="mb-4"
+        data-testid="paragraph"
+      >
+        components.date-of-birth.expandable-section.content
+      </p>
+    </div>
+  </details>
+  <button
+    class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full mt-10 mb-4 md:w-auto"
+    data-testid="continue-button"
+    type="submit"
+  >
+    <span />
+    common.form.button.continue-text
+    <span />
+  </button>
+</form>
+`;
