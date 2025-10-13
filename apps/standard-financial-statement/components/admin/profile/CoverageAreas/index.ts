@@ -1,0 +1,1 @@
+export { CoverageAreas } from './CoverageAreas';

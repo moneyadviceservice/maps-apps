@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Embedded Tool component renders correctly 1`] = `
+<iframe
+  class="mas-iframe"
+  data-testid="test-component"
+  id="leave-pot-untouched"
+  src="https://dev-moneyhelper-tools.azurewebsites.net/en/leave-pot-untouched"
+  style="width: 100%; height: 100%; left: 0px; position: absolute; top: 0px; border: 0px;"
+  title="leave-pot-untouched"
+/>
+`;
+
+exports[`Embedded Tool component renders correctly with default id 1`] = `
+<iframe
+  class="mas-iframe"
+  data-testid="iframe"
+  id="leave-pot-untouched"
+  src="https://dev-moneyhelper-tools.azurewebsites.net/en/leave-pot-untouched"
+  style="width: 100%; height: 100%; left: 0px; position: absolute; top: 0px; border: 0px;"
+  title="leave-pot-untouched"
+/>
+`;

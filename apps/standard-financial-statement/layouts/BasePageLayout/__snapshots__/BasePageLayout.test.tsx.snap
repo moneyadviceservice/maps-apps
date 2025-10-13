@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasePageLayout renders correctly 1`] = `
+<div>
+  <div
+    id="top"
+  >
+    <div
+      aria-hidden="true"
+    >
+      <header
+        data-testid="header"
+      >
+        <a
+          class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+          href="#main"
+        >
+          Skip to content
+        </a>
+        <div
+          class="hidden lg:block"
+        >
+          <div
+            class="relative bg-blue-600 print:hidden lg:bg-gray-150 lg:h-[101px]"
+          >
+            <div
+              class="container-auto flex items-center justify-center lg:justify-normal max-w-[1272px]"
+            >
+              <a
+                aria-label="SFS"
+                class="max-h-[64px] max-w-[116px] lg:max-w-[186px] lg:max-h-[102px]"
+                href="/en"
+              >
+                <img
+                  alt="SFS"
+                  data-nimg="1"
+                  decoding="async"
+                  height="102"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest.png&w=384&q=75"
+                  srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+                  style="color: transparent;"
+                  width="186"
+                />
+              </a>
+              <div
+                class="items-center hidden ml-auto lg:flex"
+              >
+                <profile.svg
+                  class="h-[18px] w-[18px] mr-2"
+                />
+                <nav>
+                  <ul
+                    class="flex"
+                  >
+                    <li
+                      class=""
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-500 visited:text-gray-500"
+                        href="/en/test"
+                      >
+                        test
+                      </a>
+                      <span
+                        class="px-1"
+                      >
+                        /
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+                <nav
+                  aria-label="Language switcher"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+                        href="/cy"
+                        hreflang="cy"
+                        lang="cy"
+                        rel="alternate"
+                      >
+                        <span
+                          aria-describedby="lang-description"
+                          class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                        >
+                          Cymraeg
+                        </span>
+                      </a>
+                      <span
+                        class="sr-only"
+                        id="lang-description"
+                      >
+                        Newid yr iaith ir Gymraeg
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul
+                    class="flex mr-6"
+                  >
+                    <li>
+                      <a
+                        class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-500 visited:text-gray-500 text-sm"
+                        href="/en/test"
+                      >
+                        test
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <form
+                  action="/en/search"
+                  class="flex lg:my-4 lg:w-[266px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                  data-testid="search-form"
+                  role="search"
+                >
+                  <input
+                    aria-label="Search"
+                    class="w-full p-2 rounded-l"
+                    id="q"
+                    name="q"
+                    required=""
+                    type="text"
+                  />
+                  <button
+                    aria-label="Search"
+                    class="p-1 bg-green-300 rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                    type="submit"
+                  >
+                    <search.svg
+                      aria-hidden="true"
+                      class=""
+                    />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden text-white bg-blue-600 lg:block shadow-bottom-gray"
+          >
+            <div
+              class="container-auto max-w-[1272px]"
+            >
+              <nav>
+                <ul
+                  class="flex h-[40px] items-center"
+                >
+                  <li>
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative mr-8 h-[40px] text-sm hover:text-green-300 hover:no-underline"
+                      href="/en/test"
+                    >
+                      test
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative z-20 flex items-center px-4 bg-blue-600 lg:hidden print:hidden"
+        >
+          <div
+            class="container-auto w-auto p-0 m-0"
+          >
+            <details
+              class="relative group w-[31px]"
+            >
+              <summary
+                class="open cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+                data-testid="nav-toggle"
+                title="Open menu"
+              >
+                <div
+                  class="group-open:hidden flex flex-col h-[38px] w-[38px] text-left"
+                >
+                  <burger-curved.svg
+                    classname=""
+                  />
+                  <span
+                    class="relative text-xs font-bold top-1"
+                  >
+                    menu
+                  </span>
+                </div>
+                <div
+                  class="hidden text-center group-open:block"
+                >
+                  <div
+                    class="flex flex-col"
+                  >
+                    <burger-close.svg
+                      classname="w-[30px]"
+                    />
+                    <span
+                      class="relative text-xs -top-1"
+                    >
+                      close
+                    </span>
+                  </div>
+                </div>
+              </summary>
+              <div
+                class="bg-white absolute z-10 w-[320px] -left-4 top-[60px] h-screen"
+              >
+                <div
+                  class="pb-8 bg-white"
+                >
+                  <nav
+                    class="mb-6"
+                  >
+                    <ul>
+                      <li
+                        class="border-b border-slate-400"
+                      >
+                        <a
+                          class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 w-full hover:text-green-300 hover:no-underline no-underline text-lg font-bold text-blue-600 visited:text-blue-600"
+                          href="/en/test"
+                        >
+                          test
+                          <chevron.svg
+                            class="ml-auto text-blue-600"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div
+                    class="flex mx-4"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <profile.svg
+                        class="h-[18px] w-[18px] mr-2"
+                      />
+                      <nav>
+                        <ul
+                          class="flex"
+                        >
+                          <li
+                            class=""
+                          >
+                            <a
+                              class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-500 visited:text-gray-500 font-bold"
+                              href="/en/test"
+                            >
+                              test
+                            </a>
+                            <span
+                              class="px-1"
+                            >
+                              /
+                            </span>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <nav
+                      aria-label="Language switcher"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+                            href="/cy"
+                            hreflang="cy"
+                            lang="cy"
+                            rel="alternate"
+                          >
+                            <span
+                              aria-describedby="lang-description"
+                              class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                            >
+                              Cymraeg
+                            </span>
+                          </a>
+                          <span
+                            class="sr-only"
+                            id="lang-description"
+                          >
+                            Newid yr iaith ir Gymraeg
+                          </span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <nav
+                    class="mx-4 mt-4 mb-6"
+                  >
+                    <ul
+                      class="flex mr-6"
+                    >
+                      <li>
+                        <a
+                          class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-500 visited:text-gray-500 text-sm font-bold"
+                          href="/en/test"
+                        >
+                          test
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </details>
+          </div>
+          <a
+            aria-label="SFS"
+            class="mx-auto h-[64px]"
+            href="/en"
+          >
+            <img
+              alt="SFS"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Ftest.png&w=384&q=75"
+              srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+              style="color: transparent;"
+              width="146"
+            />
+          </a>
+          <div
+            class="container-auto w-auto p-0 m-0"
+          >
+            <details
+              class="group"
+            >
+              <summary
+                class="open cursor-pointer list-none [&::-webkit-details-marker]:hidden  text-white rounded flex"
+                data-testid="search-toggle"
+                title="Open search"
+              >
+                <span
+                  class="h-9 w-9 border-1 border-gray-300 items-center justify-center rounded-[4px] hidden"
+                >
+                  <chevron-down-icon.svg
+                    classname="h-6 w-6 rotate-180"
+                    fill="#ffffff"
+                  />
+                </span>
+                <span
+                  class="h-9 w-9 border-1 border-green-300 bg-green-300 flex items-center justify-center rounded-[4px]"
+                >
+                  <search.svg
+                    class="text-blue-600"
+                  />
+                </span>
+              </summary>
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-blue-600 top-full"
+              >
+                <div
+                  class="p-4 pt-2 bg-blue-600"
+                >
+                  <form
+                    action="/en/search"
+                    class="flex lg:my-4 lg:w-[266px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                    data-testid="search-form"
+                    role="search"
+                  >
+                    <input
+                      aria-label="Search"
+                      class="w-full p-2 rounded-l"
+                      id="q"
+                      name="q"
+                      required=""
+                      type="text"
+                    />
+                    <button
+                      aria-label="Search"
+                      class="p-1 bg-green-300 rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                      type="submit"
+                    >
+                      <search.svg
+                        aria-hidden="true"
+                        class=""
+                      />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </header>
+      <main
+        id="main"
+      >
+        test content
+      </main>
+      <footer
+        class="relative z-1"
+        data-testid="footer"
+      >
+        <div
+          class="flex flex-col py-8 bg-gray-500 md:flex-row md:py-6"
+        >
+          <div
+            class="container-auto flex flex-col text-white md:flex-row max-w-[1272px]"
+          >
+            <img
+              alt="test"
+              data-nimg="1"
+              decoding="async"
+              height="53"
+              loading="lazy"
+              src="/_next/image?url=%2Ftest&w=384&q=75"
+              srcset="/_next/image?url=%2Ftest&w=256&q=75 1x, /_next/image?url=%2Ftest&w=384&q=75 2x"
+              style="color: transparent;"
+              width="167"
+            />
+            <ul
+              class="relative flex flex-row flex-wrap mt-8 md:ml-auto md:mt-0"
+            >
+              <li
+                class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+              >
+                <a
+                  class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline after:hidden"
+                  href="/en/test"
+                >
+                  test
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+`;

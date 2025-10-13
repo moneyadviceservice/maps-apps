@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyBanner component renders warning icon 1`] = `
+<div
+  class="mt-3 p-2 flex items-start px-4 md:px-0  "
+  data-testid="emergency-banner"
+>
+  <svgr-mock
+    aria-hidden="true"
+    classname="ml-3 mr-3 flex-shrink-0 text-pink-600"
+    style="max-width: 32px; max-height: 39px; min-width: 32px; min-height: 39px;"
+  />
+  <div
+    class="flex-1 pl-1"
+  >
+    <div
+      data-testid="react-markdown"
+    >
+      This is an emergency message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmergencyBanner component renders with JSON content (English) 1`] = `
+<div
+  class="mt-3 p-2 flex items-start px-4 md:px-0  "
+  data-testid="emergency-banner"
+>
+  <svgr-mock
+    aria-hidden="true"
+    classname="ml-3 mr-3 flex-shrink-0 text-pink-600"
+    style="max-width: 32px; max-height: 39px; min-width: 32px; min-height: 39px;"
+  />
+  <div
+    class="flex-1 pl-1"
+  >
+    <div
+      data-testid="react-markdown"
+    >
+      This is an 
+      <strong>
+        emergency
+      </strong>
+       message with 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="#"
+      >
+        link
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmergencyBanner component renders with JSON content with markdown formatting 1`] = `
+<div
+  class="mt-3 p-2 flex items-start px-4 md:px-0  "
+  data-testid="emergency-banner"
+>
+  <svgr-mock
+    aria-hidden="true"
+    classname="ml-3 mr-3 flex-shrink-0 text-pink-600"
+    style="max-width: 32px; max-height: 39px; min-width: 32px; min-height: 39px;"
+  />
+  <div
+    class="flex-1 pl-1"
+  >
+    <div
+      data-testid="react-markdown"
+    >
+      - First item
+- Second item
+
+Additional text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmergencyBanner component renders with text content correctly 1`] = `
+<div
+  class="mt-3 p-2 flex items-start px-4 md:px-0  "
+  data-testid="emergency-banner"
+>
+  <svgr-mock
+    aria-hidden="true"
+    classname="ml-3 mr-3 flex-shrink-0 text-pink-600"
+    style="max-width: 32px; max-height: 39px; min-width: 32px; min-height: 39px;"
+  />
+  <div
+    class="flex-1 pl-1"
+  >
+    <div
+      data-testid="react-markdown"
+    >
+      This is an emergency message
+    </div>
+  </div>
+</div>
+`;

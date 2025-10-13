@@ -1,0 +1,16 @@
+import { StoryFn } from '@storybook/react';
+import { <%= name %>, <%= name %>Props } from '.';
+
+const StoryProps = {
+  title: 'Components/<%= name %>',
+  component: <%= name %>,
+};
+
+const Template: StoryFn<<%= name %>Props> = (args) => <<%= name %> {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  children: '<%= name %> contents',
+};
+
+export default StoryProps;

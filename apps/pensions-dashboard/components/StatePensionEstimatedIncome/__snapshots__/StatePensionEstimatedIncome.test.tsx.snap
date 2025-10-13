@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatePensionEstimatedIncome renders correctly 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <h2
+      class="text-gray-800 mt-10 mb-4 text-3xl font-bold md:text-5xl"
+    >
+      pages.pension-details.headings.estimated-income
+    </h2>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      pages.pension-details.estimated-income.ap
+    </p>
+    <div
+      class="relative w-full h-10 overflow-hidden bg-blue-700/20 "
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+      <div
+        class="absolute inset-0 flex items-center px-2 text-base font-bold"
+      >
+        <span
+          class="absolute inset-0 flex items-center px-2 text-white"
+          style="clip-path: inset(0 calc(100% - 100%) 0 0);"
+        >
+          £958.50 common.a-month
+        </span>
+        <span
+          aria-hidden="true"
+          class="absolute inset-0 flex items-center px-2 text-blue-700"
+          style="clip-path: inset(0 0 0 100%);"
+        >
+          £958.50 common.a-month
+        </span>
+      </div>
+    </div>
+    <p
+      class="mb-4 mt-4"
+      data-testid="paragraph"
+    >
+      pages.pension-details.estimated-income.eri
+    </p>
+    <div
+      class="relative w-full h-10 overflow-hidden bg-blue-700/20 "
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+      <div
+        class="absolute inset-0 flex items-center px-2 text-base font-bold"
+      >
+        <span
+          class="absolute inset-0 flex items-center px-2 text-white"
+          style="clip-path: inset(0 calc(100% - 100%) 0 0);"
+        >
+          £958.50 common.a-month
+        </span>
+        <span
+          aria-hidden="true"
+          class="absolute inset-0 flex items-center px-2 text-blue-700"
+          style="clip-path: inset(0 0 0 100%);"
+        >
+          £958.50 common.a-month
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

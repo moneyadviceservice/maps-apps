@@ -1,0 +1,96 @@
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+
+import { Header } from '.';
+
+import '@testing-library/jest-dom';
+
+jest.mock('next/router', () => ({
+  useRouter: jest.fn().mockReturnValue({
+    query: {},
+  }),
+}));
+
+const handleLogout = jest.fn();
+
+describe('Header component', () => {
+  beforeEach(() => {
+    HTMLDialogElement.prototype.show = jest.fn();
+    HTMLDialogElement.prototype.showModal = jest.fn();
+    HTMLDialogElement.prototype.close = jest.fn();
+    jest.clearAllMocks();
+    cleanup();
+  });
+
+  it('renders correctly', () => {
+    render(<Header handleLogout={handleLogout} />);
+    const header = screen.getByTestId('header');
+    expect(header).toMatchSnapshot();
+  });
+
+  it('does not render the log out option if not a logged in page excluded', () => {
+    render(<Header handleLogout={handleLogout} isLoggedInPage={false} />);
+    const logoutLink = screen.queryByTestId('log-out-link');
+    expect(logoutLink).not.toBeInTheDocument();
+  });
+
+  it('renders correctly when the nav is opened with a click', () => {
+    render(<Header handleLogout={handleLogout} />);
+    const header = screen.getByTestId('header');
+    const navToggle = screen.getByTestId('nav-toggle');
+    fireEvent.click(navToggle);
+    expect(header).toMatchSnapshot();
+  });
+
+  it('renders correctly when the nav is opened by a Space keypress', () => {
+    render(<Header handleLogout={handleLogout} />);
+    const header = screen.getByTestId('header');
+    const navToggle = screen.getByTestId('nav-toggle');
+    fireEvent.keyDown(navToggle, { key: ' ' });
+    expect(header).toMatchSnapshot();
+  });
+
+  it('renders correctly when the nav is opened by an Enter keypress', () => {
+    render(<Header handleLogout={handleLogout} />);
+    const header = screen.getByTestId('header');
+    const navToggle = screen.getByTestId('nav-toggle');
+    fireEvent.keyDown(navToggle, { key: 'Enter' });
+    expect(header).toMatchSnapshot();
+  });
+
+  it('fires handleLogout when log out link is clicked', () => {
+    render(<Header handleLogout={handleLogout} isLoggedInPage={true} />);
+    const logoutLink = screen.getByTestId('logout-link');
+    fireEvent.click(logoutLink);
+    expect(handleLogout).toHaveBeenCalled();
+  });
+
+  it('fires handleLogout when log out link is activated by a keypress', () => {
+    render(<Header handleLogout={handleLogout} isLoggedInPage={true} />);
+    const logoutLink = screen.getByTestId('logout-link');
+    fireEvent.keyDown(logoutLink, { key: 'Enter' });
+    expect(handleLogout).toHaveBeenCalled();
+  });
+
+  it('closes the modal when the cancel button is clicked', () => {
+    render(<Header handleLogout={handleLogout} isLogoutModalOpen={true} />);
+    const cancelButton = screen.getByTestId('logout-no');
+    fireEvent.click(cancelButton);
+    expect(cancelButton).toBeInTheDocument();
+  });
+
+  it('does not show the language switcher when turned off', () => {
+    render(
+      <Header handleLogout={handleLogout} showLanguageSwitchers={false} />,
+    );
+    const languageSwitcher = screen.queryByTestId('language-switcher');
+    expect(languageSwitcher).not.toBeInTheDocument();
+  });
+
+  it('does not show the language switcher button in the nav when turned off', () => {
+    render(
+      <Header handleLogout={handleLogout} showLanguageSwitchers={false} />,
+    );
+    const languageSwitcherBtn = screen.queryByTestId('language-switcher-btn');
+    expect(languageSwitcherBtn).not.toBeInTheDocument();
+  });
+});

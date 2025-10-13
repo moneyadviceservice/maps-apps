@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PieChart component renders correctly 1`] = `
+<div
+  class="h-0 pt-[100%] overflow-hidden relative flex-none my-10 w-full"
+>
+  <div
+    class="after:absolute after:bg-white after:rounded-full after:top-2/4 after:left-2/4 after:-translate-y-2/4 after:-translate-x-2/4 after:h-[55%] after:w-[55%] rounded-full w-full h-full absolute left-0 right-0 top-0 bottom-0"
+  />
+</div>
+`;

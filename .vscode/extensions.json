@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    //* Workspace specific - required
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "heybourn.headwind",
+    //* Team-specific - recommended
+    "nrwl.angular-console",
+    "vivaxy.vscode-conventional-commits",
+    //* Personal development tools / optional
+    "WallabyJs.wallaby-vscode",
+    "firsttris.vscode-jest-runner",
+    "aaron-bond.better-comments",
+    "Gruntfuggly.todo-tree",
+    "austenc.tailwind-docs",
+    "figma.figma-vscode-extension",
+    "johnpapa.vscode-peacock",
+    "ms-playwright.playwright"
+  ]
+}

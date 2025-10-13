@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component renders correctly 1`] = `
+<div>
+  <div
+    class="p-3 space-y-4 border"
+    id="Test"
+  >
+    <h2
+      class="text-3xl md:text-5xl text-blue-700 font-bold"
+    >
+      test one
+    </h2>
+    <hr />
+    <div
+      class="text-lg text-gray-700"
+    >
+      test
+    </div>
+    <div
+      class="space-y-4"
+    >
+      <ul>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/en/Test"
+          >
+            English home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/cy/Test"
+          >
+            Cymraeg home page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=en&name=Test"
+          >
+            English
+             Example page
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-lg"
+            href="/api/test-embed?origin=https%3A%2F%2Fadviser.moneyhelper.org.uk&language=cy&name=Test"
+          >
+            Cymraeg
+             Example page
+          </a>
+        </li>
+      </ul>
+      <div
+        class="border shadow"
+      >
+        <div
+          class="px-3 py-2 border-b"
+        >
+          <div>
+            <label
+              class="block mb-1 text-lg font-bold text-gray-700"
+              for=":r0:"
+            >
+              1. Choose a language
+            </label>
+            <div
+              class="max-w-sm"
+            >
+              <div
+                class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+              >
+                <span
+                  class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                >
+                  <svgr-mock
+                    classname="h-full"
+                  />
+                </span>
+                <select
+                  class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md h-10 pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white"
+                  data-testid="language-select"
+                  id=":r0:"
+                  name="language"
+                >
+                  <option
+                    value="en"
+                  >
+                    English
+                  </option>
+                  <option
+                    value="cy"
+                  >
+                    Cymraeg
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

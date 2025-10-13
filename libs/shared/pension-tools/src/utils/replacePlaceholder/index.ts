@@ -1,0 +1,1 @@
+export { replacePlaceholder } from './replacePlaceholder';

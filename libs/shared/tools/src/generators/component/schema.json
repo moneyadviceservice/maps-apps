@@ -1,0 +1,40 @@
+{
+  "cli": "nx",
+  "id": "component",
+  "type": "object",
+  "title": "Create a React Component",
+  "description": "Create a React Component for Nx.",
+  "examples": [
+    {
+      "command": "nx generate @maps-react/tools:component --dry-run",
+      "description": "Generate a component using the cli prompts, first doing a dry run."
+    },
+    {
+      "command": "nx generate @maps-react/tools:component --name=SomeComponent",
+      "description": "Generate a component in the shared ui component library"
+    },
+    {
+      "command": "nx generate @maps-react/tools:component --name=SomeAppComoponent --targetPath=apps/pensionwise-triage/components",
+      "description": "Generate a component in a specific directory (eg, the `pensionwise-triage` app)"
+    }
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the component (use PascalCase, eg SomeComponent)",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the component?",
+      "x-priority": "important"
+    },
+    "targetPath": {
+      "type": "string",
+      "description": "The location of the component (defaults to shared/ui/src/components).",
+      "x-prompt": "Where would you like the component created?",
+      "x-priority": "important"
+    }
+  },
+  "required": []
+}

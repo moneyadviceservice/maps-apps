@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Details component should render Details component 1`] = `
+<details
+  class="text-sm group"
+  data-testid="details"
+>
+  <summary
+    class="[&::-webkit-details-marker]:hidden [&::marker]:content-none w-fit items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+  >
+    <div
+      class="flex items-center"
+    >
+      <svgr-mock
+        classname="w-5 mr-2 group-open:rotate-[-180deg]"
+      />
+      <span>
+        Details title
+      </span>
+    </div>
+  </summary>
+  <div
+    class="py-4"
+  >
+     
+    <div>
+      The customer’s unique reference number can be found on the summary page or save and come back later email after completing an appointment. A unique reference number won't be provided for partially completed appointments
+    </div>
+  </div>
+</details>
+`;

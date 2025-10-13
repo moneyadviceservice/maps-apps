@@ -1,0 +1,38 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "target": "es2015",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": ["jest", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@maps-react/hooks/*": ["../../libs/shared/hooks/src/*"],
+      "@maps-react/layouts/*": ["../../libs/shared/layouts/src/*"],
+      "@maps-react/form/*": ["../../libs/shared/form/src/*"],
+      "@maps-react/common/*": ["../../libs/shared/ui/src/*"],
+      "@maps-react/core/*": ["../../libs/shared/core/src/*"],
+      "@maps-react/vendor/*": ["../../libs/shared/vendor/src/*"],
+      "@maps-react/utils/*": ["../../libs/shared/utils/src/*"],
+      "@maps-react/redis/*": ["../../libs/shared/redis/src/*"],
+      "@maps-react/netlify-functions/*": [
+        "../../libs/shared/netlify-functions/src/*"
+      ]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "exclude": ["node_modules", "jest.config.ts"]
+}

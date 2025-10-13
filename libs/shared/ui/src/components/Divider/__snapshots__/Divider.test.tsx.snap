@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component renders correctly 1`] = `
+<hr
+  class="my-6 h-px border-0 bg-slate-400"
+  data-testid="divider"
+/>
+`;

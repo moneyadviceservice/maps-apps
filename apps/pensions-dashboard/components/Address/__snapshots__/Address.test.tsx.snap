@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address renders full address correctly 1`] = `
+<div>
+  <p>
+    The House
+  </p>
+  <p>
+    Line 1
+  </p>
+  <p>
+    Line 2
+  </p>
+  <p>
+    Line 3
+  </p>
+  <p>
+    Line 4
+  </p>
+  <p>
+    Line 5
+  </p>
+  <p>
+    TN1 1AA
+  </p>
+  <p>
+    United Kingdom
+  </p>
+</div>
+`;
+
+exports[`Address renders minimal address correctly 1`] = `
+<div>
+  <p>
+    The House
+  </p>
+  <p>
+    Line 1
+  </p>
+  <p>
+    TN1 1AA
+  </p>
+  <p>
+    United Kingdom
+  </p>
+</div>
+`;
+
+exports[`Address renders preferred text if address is preferred contact method 1`] = `
+<div>
+  <p>
+    (preferred) 
+    The House
+  </p>
+  <p>
+    Line 1
+  </p>
+  <p>
+    Line 2
+  </p>
+  <p>
+    Line 3
+  </p>
+  <p>
+    Line 4
+  </p>
+  <p>
+    Line 5
+  </p>
+  <p>
+    TN1 1AA
+  </p>
+  <p>
+    United Kingdom
+  </p>
+</div>
+`;

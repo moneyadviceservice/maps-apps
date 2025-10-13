@@ -1,0 +1,1 @@
+export { generatePageTitle } from './generatePageTitle';

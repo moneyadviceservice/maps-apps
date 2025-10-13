@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentSummary renders document title, description, and link 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl p-6 pb-8 border-gray-95 border-3"
+    data-testid="information-callout"
+  >
+    <h2
+      class="text-2xl md:text-4xl font-bold mb-4 text-blue-700"
+    >
+      Sample Document
+    </h2>
+    <div
+      class="block mb-6 text-gray-600 sm:hidden"
+    />
+    <div
+      class="justify-between block pb-4 border-b-2 sm:flex md:mb-6"
+    >
+      <a
+        class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none mb-3 text-pink-600 sm:mb-0"
+        href="/en/evidence-hub/report/sample-document"
+      >
+        <span
+          class="sm:hidden"
+        >
+          View full summary
+        </span>
+        <span
+          class="hidden sm:inline"
+        >
+          View evidence summary
+        </span>
+      </a>
+      <p
+        class="mb-0"
+        data-testid="paragraph"
+      >
+        <span
+          class="font-bold"
+        >
+          Year of publication
+        </span>
+         
+        2023
+      </p>
+    </div>
+    <div
+      class="hidden mb-6 text-gray-600 sm:block"
+    />
+    <div
+      class="grid-cols-1 sm:grid-cols-4 grid text-sm text-gray-700 py-2 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-200"
+    >
+      <div
+        class="sm:px-2 pt-2 pb-7"
+      >
+        <p
+          class="mb-2 font-semibold"
+        >
+          Evidence type
+        </p>
+        <div
+          class="pl-2"
+        >
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+              start="-1"
+            >
+              <li>
+                Report
+              </li>
+              <li>
+                JSON
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:px-2 pt-2 pb-7"
+      >
+        <p
+          class="mb-2 font-semibold"
+        >
+          Topics
+        </p>
+        <div
+          class="pl-2"
+        >
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+              start="-1"
+            >
+              <li>
+                Health
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:px-2 pt-2 pb-7"
+      >
+        <p
+          class="mb-2 font-semibold"
+        >
+          Country
+        </p>
+        <div
+          class="pl-2"
+        >
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+              start="-1"
+            >
+              <li>
+                USA
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:px-2 pt-2 pb-7"
+      >
+        <p
+          class="mb-2 font-semibold"
+        >
+          Population Group
+        </p>
+        <div
+          class="pl-2"
+        >
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+              start="-1"
+            >
+              <li>
+                Government
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
