@@ -1,4 +1,4 @@
-// tailwind-typography.js
+//tailwind-typography.js
 
 module.exports = {
   xs: [
