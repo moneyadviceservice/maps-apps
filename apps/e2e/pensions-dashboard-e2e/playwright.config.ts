@@ -1,0 +1,42 @@
+import * as path from 'path';
+import { workspaceRoot } from '@nx/devkit';
+import { nxE2EPreset } from '@nx/playwright/preset';
+import { defineConfig } from '@playwright/test';
+
+import { ENV } from './src/e2e/data/environmentVariables';
+
+const resolveE2EPath = (relativePath: string) =>
+  path.join(workspaceRoot, `apps/e2e/${projectName}-e2e/${relativePath}`);
+
+const commonTimeout = 100_000;
+const baseURL = ENV.BASE_URL;
+
+const projectName = process.env['PROJECT_NAME'] || 'pensions-dashboard';
+const reportDir = resolveE2EPath('playwright-report');
+const testDir = resolveE2EPath('src/e2e/tests');
+
+export default defineConfig({
+  timeout: commonTimeout,
+  ...nxE2EPreset(__filename, { testDir }),
+
+  reporter: process.env.CI ? [['html', { outputFolder: reportDir }]] : 'list',
+  retries: 2,
+
+  use: {
+    baseURL,
+    javaScriptEnabled: true,
+    actionTimeout: commonTimeout,
+    navigationTimeout: commonTimeout,
+  },
+
+  webServer: {
+    command: `npx nx run ${projectName}:serve`,
+    url: baseURL,
+    reuseExistingServer: !process.env.CI,
+    cwd: workspaceRoot,
+  },
+
+  expect: {
+    timeout: commonTimeout,
+  },
+});

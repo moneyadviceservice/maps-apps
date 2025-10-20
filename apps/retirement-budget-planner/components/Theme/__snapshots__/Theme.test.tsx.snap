@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Theme component should render the component in light grey 1`] = `
+<div>
+  <div
+    class="p-1.5 rounded-bl-3xl bg-slate-200 md:p-3"
+  >
+    Content
+  </div>
+</div>
+`;
+
+exports[`Test Theme component should render the component without colour 1`] = `
+<div>
+  <div
+    class="p-1.5 md:p-0 rounded-bl-3xl"
+  >
+    Content
+  </div>
+</div>
+`;

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomepageLayout renders dom elements correctly 1`] = `
+<div>
+  <div
+    class="container-auto pb-8 max-w-[1272px] bg-right mt-8"
+    style="background-image: url(/asset-path/image-src); background-color: rgba(255, 255, 255, 0.33); background-blend-mode: lighten; width: auto; height: 100%; background-repeat: no-repeat; background-position-x: 100%; background-position-y: 0;"
+  >
+    <div
+      class="lg:max-w-[840px] space-y-8 pb-6 pt-4"
+    >
+      <h1
+        class="text-4xl md:text-6xl text-gray-800 font-bold"
+        data-testid="homepage-heading"
+      >
+        Hero title
+      </h1>
+      <div
+        class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+        data-testid="rich-text"
+      />
+      <a
+        class="border-0 t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white text-blue-600 bg-green-300 hover:text-blue-600 active:text-blue-600 hover:bg-green-500 active:bg-green-500 active:outline-blue-600"
+        data-testid="homepage-primary-link"
+        href="en/url/route"
+        title="Description of link"
+      >
+        Link Text
+      </a>
+    </div>
+  </div>
+  <div
+    class="w-full pt-8 pb-8 bg-blue-600"
+  >
+    <div
+      class="container-auto pb-8 max-w-[1272px]"
+    >
+      <div
+        class="w-full space-y-8 pt-8"
+      >
+        <div
+          class="space-y-5"
+        >
+          <div
+            class="md:grid-cols-3 grid grid-cols-1 gap-8"
+          >
+            <a
+              class="t-teaser flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden bg-white hover:outline-pink-800 hover:decoration-pink-800 hover:underline focus:bg-yellow-400 focus:!text-gray-800 focus:!no-underline focus:outline focus:!outline-purple-800 focus:outline-[4px] focus:outline-offset-0 focus:shadow-none active:bg-gray-200 active:text-gray-800 active:no-underline active:outline active:outline-purple-800 active:shadow-none active:outline-[4px] active:outline-offset-0 text-magenta-800 hover:text-magenta-800 hover:border-magenta-800"
+              data-testid="teaserCard"
+              href="teaser-link"
+              target="_top"
+            >
+              <img
+                alt=""
+                class="object-cover h-full w-full"
+                data-nimg="1"
+                decoding="async"
+                height="125"
+                loading="lazy"
+                src="/_next/image?url=%2Fasset-path%2Fimage-src&w=256&q=75"
+                srcset="/_next/image?url=%2Fasset-path%2Fimage-src&w=128&q=75 1x, /_next/image?url=%2Fasset-path%2Fimage-src&w=256&q=75 2x"
+                style="color: transparent;"
+                width="125"
+              />
+              <div
+                class="p-5 space-y-3 group"
+              >
+                <h5
+                  class="md:text-xl text-xl font-bold text-inherit"
+                >
+                  Teaser Title
+                </h5>
+                <p
+                  class="inline-block w-full text-base text-gray-800 no-underline"
+                >
+                  Teaser description
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

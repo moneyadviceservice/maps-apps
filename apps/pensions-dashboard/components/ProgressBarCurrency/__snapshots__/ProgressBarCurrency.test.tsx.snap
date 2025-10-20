@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBarCurrency renders correctly 1`] = `
+<div>
+  <div
+    class="relative w-full h-10 overflow-hidden bg-blue-700/20 "
+  >
+    <div
+      class="h-full bg-blue-700"
+      style="width: 12.345%;"
+    />
+    <div
+      class="absolute inset-0 flex items-center px-2 text-base font-bold"
+    >
+      <span
+        class="absolute inset-0 flex items-center px-2 text-white"
+        style="clip-path: inset(0 calc(100% - 12.345%) 0 0);"
+      >
+        £123.45 a month
+      </span>
+      <span
+        aria-hidden="true"
+        class="absolute inset-0 flex items-center px-2 text-blue-700"
+        style="clip-path: inset(0 0 0 12.345%);"
+      >
+        £123.45 a month
+      </span>
+    </div>
+  </div>
+</div>
+`;

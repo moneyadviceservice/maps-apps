@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormTypeSelector renders correctly as new org 1`] = `
+<div>
+  <fieldset
+    class="relative"
+  >
+    <legend
+      class="mb-4 text-2xl text-gray-900"
+    >
+      Is your organisation a member of SFS?
+    </legend>
+    <div
+      class="mb-4"
+    >
+      <div
+        class="relative flex flex-wrap items-center text-base"
+        data-testid="radio-button"
+      >
+        <input
+          class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+          id="active"
+          name="sfs-status"
+          type="radio"
+          value="active"
+        />
+        <label
+          class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-disabled:active:after:border-gray-200 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 peer-checked:after:border-green-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-green-500 peer-focus:active:after:border-green-500 peer-checked:hover:after:border-green-500 peer-focus:hover:after:border-green-500""
+          for="active"
+        >
+          Yes
+        </label>
+      </div>
+    </div>
+    <div
+      class="mb-4"
+    >
+      <div
+        class="relative flex flex-wrap items-center text-base"
+        data-testid="radio-button"
+      >
+        <input
+          checked=""
+          class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+          id="new"
+          name="sfs-status"
+          type="radio"
+          value="new"
+        />
+        <label
+          class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-disabled:active:after:border-gray-200 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 peer-checked:after:border-green-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-green-500 peer-focus:active:after:border-green-500 peer-checked:hover:after:border-green-500 peer-focus:hover:after:border-green-500""
+          for="new"
+        >
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

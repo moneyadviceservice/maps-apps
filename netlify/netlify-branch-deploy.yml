@@ -1,0 +1,115 @@
+name: Deploy branch to Netlify
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+
+  - name: environmentVariables
+    displayName: 'Copy Environment Variables'
+    type: string
+    values:
+      - 'deploy-preview'
+      - 'branch-deploy'
+      - 'branch:test'
+      - 'branch:staging'
+      - 'production'
+
+  - name: deploySite
+    displayName: Deploy
+    type: boolean
+    default: false
+
+steps:
+  - checkout: self
+  - template: steps/install-node.yml
+  - script: |
+      npm install
+    displayName: 'NPM Install'
+  - template: templates/match-site.yml
+    parameters:
+      projectName: ${{ parameters.appname }}
+  - script: |
+
+      echo "Site ID: $NETLIFY_SITE_ID"
+      echo "Site Filter: $NETLIFY_SITE_FILTER"
+
+      branchname="$(Build.SourceBranch)"
+      branchname="${branchname#refs/heads/}"
+      branchname="${branchname//\//-}"
+      branchname="${branchname//./-}"
+      branchname="${branchname//_/-}"      
+      echo "Branch name is: $branchname"
+
+      deployContext="branch:$branchname"
+      alias="$branchname"
+      echo "Alias is: $alias"
+
+      echo "Fetching environment variables for context ${{ parameters.environmentVariables }}"
+      env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context=${{ parameters.environmentVariables }} --json --filter=$NETLIFY_SITE_FILTER)
+
+      echo "$env_vars_json" | jq -r 'to_entries | .[] | "\(.key): \(.value)"' | while IFS=: read -r key value; do
+        echo "Setting $key for context $deployContext"
+        netlify env:set $key $value --context $deployContext --filter $NETLIFY_SITE_FILTER > /dev/null 2>&1
+      done
+    
+    displayName: 'Setting Up Environment Variables for ${{ parameters.appname }}'
+
+  - ${{ if eq(parameters['deploySite'], 'true' ) }}:
+    - script: |
+
+        echo "Site ID: $NETLIFY_SITE_ID"
+        echo "Site Filter: $NETLIFY_SITE_FILTER"
+
+        branchname="$(Build.SourceBranch)"
+        branchname="${branchname#refs/heads/}"
+        branchname="${branchname//\//-}"
+        branchname="${branchname//./-}"
+        branchname="${branchname//_/-}"      
+        echo "Branch name is: $branchname"
+
+        deployContext="branch:$branchname"
+        alias="$branchname"
+        echo "Alias is: $alias"
+
+        echo "Deploying $NETLIFY_SITE_FILTER using context $deployContext to alias $alias"
+        netlify deploy --filter=$NETLIFY_SITE_FILTER --context=$deployContext --auth=$(NETLIFY_AUTH_TOKEN) --alias $alias
+
+      displayName: 'Deploy ${{ parameters.appname }} to Netlify'

@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppointmentType Component renders component correctly 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="Contact form for Step: mock-step"
+    class="md:max-w-xl pt-1"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        data-testid="question-radio"
+      >
+        <div
+          class="flex flex-col gap-4 mt-3"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="flow-0"
+                name="flow"
+                required=""
+                type="radio"
+                value="mock-value"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                for="flow-0"
+              >
+                mock-text
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full mt-10 mb-4 md:w-auto"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`AppointmentType Component renders component with errors 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="Contact form for Step: mock-step"
+    class="md:max-w-xl pt-1"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="lang"
+      type="hidden"
+      value=""
+    />
+    <div
+      class=""
+      data-testid="errors"
+    >
+      <div
+        data-testid="question-radio"
+      >
+        <div
+          class="flex flex-col gap-4 mt-3"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="relative flex flex-wrap items-center text-base"
+              data-testid="radio-button"
+            >
+              <input
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                id="flow-0"
+                name="flow"
+                required=""
+                type="radio"
+                value="mock-value"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                for="flow-0"
+              >
+                mock-text
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full mt-10 mb-4 md:w-auto"
+      data-testid="continue-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;

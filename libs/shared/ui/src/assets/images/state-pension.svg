@@ -1,0 +1,9 @@
+<svg aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle cx="9" cy="1.5" r="1" stroke="currentColor"/>
+    <circle cx="1.5" cy="5.5" r="1" stroke="currentColor"/>
+    <circle cx="16.5" cy="5.5" r="1" stroke="currentColor"/>
+    <path d="M16 17H2V14H16V17Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M1.5 9L2.02941 14H16.0294L16.5 9L13 9.5L9 4.5L5 9.5L1.5 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>
