@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@commands/*": ["libs/shared/utils/src/e2e/support/*"]
+    },
+    "jsx": "react-jsx",
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ],
+  "extends": "../../../tsconfig.base.json"
+}

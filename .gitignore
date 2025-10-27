@@ -1,0 +1,83 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+dist
+tmp
+/out-tsc
+
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/.vscode
+.tool-versions
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libs/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# reports
+playwright-report/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Next.js
+.next
+
+# local env files
+.env*.local
+*.env
+
+# Terraform files
+*.terraform*
+*.tfstate*
+
+# CI uses NPM, ignore yarn lock to prevent duplicate lock files breaking the build
+yarn.lock
+
+#mp4 files
+/apps/**/cypress/videos
+/apps/**/cypress/screenshots
+
+# Sonarqube
+/.scannerwork
+/sonarqube
+.nx
+
+#storybook
+build-storybook.log
+
+# tsc/typescript
+**/tsconfig.tsbuildinfo
+
+# cypress
+apps/e2e/**/cypress/downloads
+
+# Playwright
+test-results/
+
+# Local Netlify folder
+.netlify
+
+# Lambda test
+.lambdatest
+lambdatest_run.json
+*.log

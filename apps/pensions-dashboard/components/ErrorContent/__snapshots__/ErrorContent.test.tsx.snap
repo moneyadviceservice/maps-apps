@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorContent Component renders component correctly 1`] = `
+<div>
+  <div
+    class="t-tool-intro border-l-[6px] border-teal-400 pl-6 text-gray-800 font-normal my-6 text-lg md:text-2xl md:mt-12 md:mb-10 md:max-w-4xl"
+    data-testid="tool-intro"
+  >
+    pages.error.intro
+  </div>
+  <h2
+    class="text-3xl md:text-5xl text-gray-800 font-bold mb-2"
+  >
+    pages.error.what-you-can-do.title
+  </h2>
+  <div
+    class="flex items-center"
+    data-testid="list-element"
+  >
+    <ul
+      class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug marker:text-gray-800 mt-6 ml-8 list-disc text-md md:mt-0"
+      start="-1"
+    >
+      <li>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          list item 1
+        </p>
+      </li>
+      <li>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          list item 2
+        </p>
+      </li>
+      <li>
+        <p
+          class="mb-4"
+          data-testid="paragraph"
+        >
+          list item 3
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnconfirmedPensionsCallout does not render when there are no unconfirmed pensions 1`] = `<div />`;
+
+exports[`UnconfirmedPensionsCallout renders correctly when there are unconfirmed pensions 1`] = `
+<div>
+  <div
+    class="relative min-h-[95px] rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-red-100 before:bg-red-700 p-8 pt-6 mt-4"
+    data-testid="callout-negative"
+  >
+    <div
+      class="flex items-center mb-4"
+    >
+      <h4
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Important
+      </h4>
+    </div>
+    <div>
+      <p
+        class="mb-4 md:mb-0"
+        data-testid="paragraph"
+      >
+        You have 3 pensions that need you to provide more information or contact the pension provider.
+      </p>
+      <a
+        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        data-testid="need-action-link"
+        href="/en/pensions-that-need-action"
+      >
+        See pensions that need action
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UnconfirmedPensionsCallout renders correctly when there is only 1 unconfirmed pensions 1`] = `
+<div>
+  <div
+    class="relative min-h-[95px] rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-red-100 before:bg-red-700 p-8 pt-6 mt-4"
+    data-testid="callout-negative"
+  >
+    <div
+      class="flex items-center mb-4"
+    >
+      <h4
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Important
+      </h4>
+    </div>
+    <div>
+      <p
+        class="mb-4 md:mb-0"
+        data-testid="paragraph"
+      >
+        You have 1 pension that needs you to provide more information or contact the pension provider.
+      </p>
+      <a
+        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        data-testid="need-action-link"
+        href="/en/pensions-that-need-action"
+      >
+        See pensions that need action
+      </a>
+    </div>
+  </div>
+</div>
+`;

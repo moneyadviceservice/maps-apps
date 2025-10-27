@@ -1,0 +1,68 @@
+{
+  "Income": {
+    "Pay": {
+      "PayAfterTax": "1234",
+      "Income from self-employment": "0"
+    },
+    "BenefitsTaxCredit": {
+      "income-universal-credit": "200"
+    },
+    "Pension": {},
+    "OtherIncome": {
+      "income-rent-or-board": "745"
+    },
+    "YourAdditionalItems": {}
+  },
+  "Household bills": {
+    "Mortgage & rent": {
+      "household-bills-mortgage": "457"
+    },
+    "Buildings insurance": {
+      "household-bills-buildings-insurance": "30",
+      "household-bills-contents-insurance": "26"
+    },
+    "Utilities": {
+      "household-bills-council-tax": "115",
+      "household-bills-gas": "60",
+      "household-bills-electricity": "25"
+    }
+  },
+  "Living costs": {
+    "Food & drink": {
+      "living-costs-grocery-shopping": "300"
+    },
+    "Work": {
+      "living-costs-lunches-snacks": "170"
+    }
+  },
+  "Finance & insurance": {
+    "Insurance": {
+      "finance-insurance-life-insurance": "26",
+      "finance-insurance-income-protection-insurance": "25"
+    },
+    "Savings and investments": {
+      "finance-insurance-payments-isa": "100"
+    }
+  },
+  "Family & friends": {
+    "Children": {
+      "family-friends-pocket-money": "50"
+    },
+    "Pets": {
+      "family-friends-pet-insurance": "26"
+    }
+  },
+  "Travel": {
+    "Car insurance": {
+      "travel-car-insurance": "45"
+    }
+  },
+  "Leisure": {
+    "Entertainment": {
+      "leisure-cinema-theatre-trips": "25"
+    },
+    "Holidays": {
+      "leisure-holidays": "500"
+    }
+  }
+}

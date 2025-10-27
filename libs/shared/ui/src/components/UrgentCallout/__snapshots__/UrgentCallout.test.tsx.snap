@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrgentCallout component adds className and style correctly 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="urgent-callout"
+  style="color: blue;"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname="fill-pink-800"
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders null when variant is invalid 1`] = `<div />`;
+
+exports[`UrgentCallout component renders null when variant is null 1`] = `<div />`;
+
+exports[`UrgentCallout component renders null when variant is undefined 1`] = `<div />`;
+
+exports[`UrgentCallout component renders with a calculator 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with a calculator and teal border 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-teal-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with a mortgage variant 1`] = `
+<div
+  class="t-urgent-callout border-teal-400 border-[16px] rounded-bl-3xl p-8 flex testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex-grow gap-4 sm:gap-6"
+  >
+    <div
+      class="text-gray-800"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with a warning 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname="fill-pink-800"
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with a warning and teal border 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-teal-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname="fill-pink-800"
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with an arrow 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-3 sm:gap-6"
+  >
+    <div
+      class="text-pink-800 sm:hidden -ml-8"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div
+      class="text-pink-800 hidden sm:block -mt-12 -ml-4"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with an arrow and teal border 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-teal-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-3 sm:gap-6"
+  >
+    <div
+      class="text-pink-800 sm:hidden -ml-8"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div
+      class="text-pink-800 hidden sm:block -mt-12 -ml-4"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with complex children correctly 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="urgent-callout"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname=""
+      />
+    </div>
+    <div>
+      <div
+        data-testid="complex-child"
+      >
+        <h3>
+          Title
+        </h3>
+        <p>
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UrgentCallout component renders with custom testId 1`] = `
+<div
+  class="t-urgent-callout border-8 rounded-bl-3xl py-10 pl-6 pr-8 sm:p-10 flex border-yellow-400 testClassName"
+  data-testid="custom-test-id"
+>
+  <div
+    class="flex gap-4 sm:gap-6"
+  >
+    <div
+      class="text-pink-800"
+    >
+      <svgr-mock
+        classname="fill-pink-800"
+      />
+    </div>
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;

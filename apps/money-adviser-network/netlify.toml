@@ -1,0 +1,11 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/money-adviser-network package.json libs/shared"
+
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"

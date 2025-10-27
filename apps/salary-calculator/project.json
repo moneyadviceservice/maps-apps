@@ -1,0 +1,84 @@
+{
+  "name": "salary-calculator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/salary-calculator",
+  "projectType": "application",
+  "implicitDependencies": ["salary-calculator-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/salary-calculator",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public/footer",
+            "output": "./footer"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/salary-calculator"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "salary-calculator:build",
+        "dev": true,
+        "port": 4390
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "salary-calculator:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "salary-calculator:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "salary-calculator:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/salary-calculator/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/salary-calculator/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/salary-calculator",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

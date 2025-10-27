@@ -1,0 +1,635 @@
+name: Deploy to Netlify
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+
+  # The envrionment to deploy, these are the standard options and will use the test/staging environment variables unless otherwise specified below.
+  - name: context
+    displayName: Environment
+    type: string
+    default: test
+    values:
+      - test
+      - staging
+      - custom
+
+  # If value entered, will use the value as the domain alias for the deployment (https://<alias>--<appname>.netlify.app).
+  - name: customEnvironmentAlias
+    displayName: Custom Environment
+    type: string
+    default: ' '
+    values: []
+
+  # Environment variables to use for the deployment
+  - name: environmentVariables
+    displayName: 'Environment Variables'
+    type: string
+    default: 'Match environment'
+    values:
+      - 'Match environment'
+      - 'deploy-preview'
+      - 'test'
+      - 'staging'
+
+  # Custom environment variables, format key=value, multiple variables can be specified by separating with a comma.
+  - name: customEnvironmentVariables
+    displayName: 'Custom Environment Variables'
+    type: string
+    default: ' '
+    values: []
+
+  # Whether to run e2e tests or not
+  - name: e2etests
+    displayName: Run e2e tests
+    type: boolean
+    default: false
+
+variables:
+  HEAD_SHA: $(git rev-parse HEAD)
+  context: branch-deploy
+  ${{ if eq(parameters.context, 'custom') }}:
+    customenv: true
+  ${{ if ne(parameters.context, 'custom') }}:
+    customenv: false
+
+stages:
+  - stage: CheckConfig
+    displayName: 'Check Config'
+    jobs:
+      - job: CheckConfig
+        displayName: 'Checking ${{ parameters.appname }} Configuration'
+        steps:
+          - script: |
+              echo "Appname: ${{ parameters.appname }}"
+              echo "Context: ${{ parameters.context }}"
+              echo "Environment: ${{ parameters.context }}"
+              echo "Is a custom environment: ${{ variables.customenv }}"
+              echo "Custom environment alias: ${{ parameters.customEnvironmentAlias }}"
+              echo "Environment variables to use: ${{ parameters.environmentVariables }}"
+              if [ "${{ variables.customenv }}" = "true" ] && [ "${{ parameters.environmentVariables }}" = "Match environment" ]; then
+                echo "Error: 'Match environment' is not a supported option for 'Environment variables' when deploying custom environments"
+                exit 1
+              fi
+            displayName: 'Check Setup'
+          - script: |
+              echo "Checking if any provided custom environment variables are already set in Netlify"
+              customEnvironmentVariables=$(echo "${{ parameters.customEnvironmentVariables }}" | tr -d '[:space:]')
+              if [ -n "$customEnvironmentVariables" ]; then
+                echo "Custom environment variables provided"
+                netlify link --filter=${{ parameters.appname }} --name=${{ parameters.appname }}
+                IFS=',' read -ra PAIRS <<< "$customEnvironmentVariables"
+                for pair in "${PAIRS[@]}"; do
+                  key="${pair%%=*}"
+                  echo "Checking if $key already exists in Netlify"
+                  netlify_var=$(netlify env:get $key --context ${{ parameters.context }} --filter ${{ parameters.appname }})
+                  if [[ "$netlify_var" == *"No value set"* ]]; then
+                    echo "$key does not exist in Netlify, will be set during deployment"
+                  else
+                    echo "Returned from netlify: $netlify_var"
+                    echo "Variable $key already exists in Netlify"
+                    echo "Please remove it from the custom environment variables or update it in Netlify"
+                    exit 1
+                  fi
+                done
+                echo "Export custom environment variables to be used in the deployment"
+                echo "##vso[task.setvariable variable=CUSTOM_ENV_VARS;isOutput=true]$customEnvironmentVariables"
+              else
+                echo "No custom environment variables provided"
+              fi
+            name: CheckCustomEnvVars
+            displayName: 'Check Existing Variables'
+
+      - job: CheckSubdomainLength
+        displayName: 'Checking URL length for custom alias'
+        condition: eq('${{ variables.customenv }}', 'true')
+        steps:
+          - script: |
+              echo "Checking URL length for custom alias"
+              max_length=63
+              url_subdomain="${{ parameters.customEnvironmentAlias }}--${{ parameters.appname }}"
+              url_subdomain_length=${#url_subdomain}
+              echo "Expected URL: $url_subdomain.netlify.app"
+              if [ "$url_subdomain_length" -gt "$max_length" ]; then
+                echo "The character length of the subdomain for this build exceeds the maximum allowed"
+                echo "Currently $url_subdomain_length characters, maximum is $max_length"
+                exit 1
+              else
+                echo "The character length of the subdomain for this build is within the maximum allowed ($max_length)"
+              fi
+            displayName: 'Check URL Length'
+
+  - ${{ if eq(parameters['e2etests'], 'true' ) }}:
+      - stage: Test
+        condition: succeeded('CheckConfig')
+        variables:
+          CUSTOM_ENV_VARS: $[ stageDependencies.CheckConfig.CheckConfig.outputs['CheckCustomEnvVars.CUSTOM_ENV_VARS'] ]
+        displayName: 'Run e2e Tests'
+        jobs:
+          - job: test_baby_cost_calculator
+            displayName: 'baby-cost-calculator'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'baby-cost-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: baby-cost-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+          - job: test_baby_money_timeline
+            displayName: 'baby-money-timeline'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'baby-money-timeline'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: baby-money-timeline-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+          - job: test_pensionwise_triage
+            displayName: 'pensionwise-triage'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'pensionwise-triage'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: pensionwise-triage-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_pensionwise_appointment
+            displayName: 'pensionwise-appointment'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'pensionwise-appointment'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: pensionwise-appointment-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_budget_planner
+            displayName: 'budget-planner-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'budget-planner'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: budget-planner-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test__adjustable_income_calculator
+            displayName: 'adjustable-income-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'adjustable-income-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: adjustable-income-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_cash_in_chunks
+            displayName: 'cash-in-chunks-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'cash-in-chunks'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: cash-in-chunks-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_moneyhelper_contact_forms
+            displayName: 'moneyhelper-contact-forms-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'moneyhelper-contact-forms'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: moneyhelper-contact-forms-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+          - job: test_compare_accounts
+            displayName: 'compare-accounts-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'compare-accounts'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: compare-accounts-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_credit_rejection
+            displayName: 'credit-rejection-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'credit-rejection'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: credit-rejection-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_guaranteed_income_estimator
+            displayName: 'guaranteed-income-estimator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'guaranteed-income-estimator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: guaranteed-income-estimator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_moneyhelper_tools_pension_type
+            displayName: 'tools-pension-type-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'moneyhelper-tools'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: moneyhelper-tools-pension-type-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_leave_pot_untouched
+            displayName: 'leave-pot-untouched-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'leave-pot-untouched'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: leave-pot-untouched-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_savings_calculator
+            displayName: 'tools-savings-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'savings-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: savings-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_moneyhelper_tools_workplace_pension_calculator
+            displayName: 'tools-workplace-pension-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'moneyhelper-tools'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: moneyhelper-tools-workplace-pension-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_mortgage_calculator
+            displayName: 'mortgage-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'mortgage-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: mortgage-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_tools_index
+            displayName: 'tools-index-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'tools-index'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: tools-index-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_mortgage_affordability
+            displayName: 'mortgage-affordability-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'mortgage-affordability'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: mortgage-affordability-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_redundancy_pay_calculator
+            displayName: 'redundancy-pay-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'redundancy-pay-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: redundancy-pay-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_pensions_dashboard
+            displayName: 'pensions-dashboard'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'pensions-dashboard'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: pensions-dashboard-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+          - job: test_money_adviser_network
+            displayName: 'money-adviser-network'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'money-adviser-network'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: money-adviser-network-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_retirement_budget_planner
+            displayName: 'retirement-budget-planner'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'retirement-budget-planner'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: retirement-budget-planner-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_standard_financial_statement
+            displayName: 'standard-financial-statement'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'standard-financial-statement'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: standard-financial-statement-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+          - job: test_take_whole_pot
+            displayName: 'take-whole-pot-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'take-whole-pot'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: take-whole-pot-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_debt_advice_locator
+            displayName: 'debt-advice-locator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'debt-advice-locator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: debt-advice-locator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_stamp_duty_calculator
+            displayName: 'stamp-duty-calculator-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'stamp-duty-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: stamp-duty-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_credit_options
+            displayName: 'credit-options-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'credit-options'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: credit-options-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: cypress
+
+          - job: test_evidence_hub
+            displayName: 'evidence-hub-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'evidence-hub'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: evidence-hub-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+          - job: test_midlife_mot
+            displayName: 'midlife-mot-e2e'
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'midlife-mot'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: midlife-mot-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+          - job: test_salary_calculator
+            displayName: "salary-calculator-e2e"
+            condition: and(succeeded(), eq('${{ parameters.appname }}', 'salary-calculator'))
+            steps:
+              - template: steps/run-tests.yml
+                parameters:
+                  projectName: ${{ parameters.appname }}
+                  testtorun: salary-calculator-e2e
+                  environment: ${{ parameters.context }}
+                  environmentVariables: ${{ parameters.environmentVariables }}
+                  customEnvironmentVariables: $CUSTOM_ENV_VARS
+                  context: ${{ variables.context }}
+                  compareWithTargetBranch: false
+                  testrunner: playwright
+
+  - stage: Deploy
+    condition: succeeded('CheckConfig')
+    dependsOn: CheckConfig
+    variables:
+      CUSTOM_ENV_VARS: $[ stageDependencies.CheckConfig.CheckConfig.outputs['CheckCustomEnvVars.CUSTOM_ENV_VARS'] ]
+    displayName: 'Deploy to Netlify'
+    jobs:
+      - job: Build_selected_app
+        displayName: ${{ parameters.appname }}
+        steps:
+          - template: templates/manual-deploy.yml
+            parameters:
+              appname: ${{ parameters.appname }}
+              environment: ${{ parameters.context }}
+              customEnvironment: ${{ variables.customenv }}
+              customEnvironmentAlias: ${{ parameters.customEnvironmentAlias }}
+              context: ${{ variables.context }}
+              environmentVariables: ${{ parameters.environmentVariables }}
+              customEnvironmentVariables: $CUSTOM_ENV_VARS
+              branchname: $(Build.SourceBranchName)
+              authtoken: $(NETLIFY_AUTH_TOKEN)

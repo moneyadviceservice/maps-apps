@@ -1,0 +1,840 @@
+{
+  "site": {
+    "title": "MoneyHelper Pensions Dashboard",
+    "header": {
+      "logo": "Pensions Dashboard",
+      "links": {
+        "exit": "Exit and log out"
+      }
+    },
+    "back": "Back",
+    "back-to-top": "Back to top",
+    "help-and-support-link-text": "Help and support",
+    "hm-gov-logo-alt": "H.M. Government logo",
+    "feedback-link": "https://forms.office.com/Pages/ResponsePage.aspx?id=MhDku86PQk26tUTiFRCIbQWmPIAsJ39Jk_BmPtD78jJUM1ZQTk8zMEFUVllJRTNHOTcwRkU3UENCVy4u",
+    "help-and-support": {
+      "title": "Help and support",
+      "feedback-link": "Give us feedback",
+      "card-1": {
+        "title": "Explore the Pensions Dashboard",
+        "description": "Don’t know where to start? Learn how to get the most out of your Pensions Dashboard and get answers for common questions."
+      },
+      "card-2": {
+        "title": "Understand your pensions",
+        "description": "Unsure about your next steps? Our free, impartial guidance can help you understand your pensions and plan for a comfortable retirement."
+      },
+      "card-3": {
+        "title": "Report a technical problem",
+        "description": "Is something not working? Tell us if there’s an issue with your Pensions Dashboard or if you’re experiencing any technical problems."
+      }
+    },
+    "logout": {
+      "about-to-leave": "You’re about to leave",
+      "we-will-redirect": "We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.",
+      "are-you-sure": "Are you sure you want to leave?",
+      "yes-exit": "Yes, exit the Dashboard"
+    }
+  },
+  "common": {
+    "a-month": "a month",
+    "a-year": "a year",
+    "or": "or",
+    "date-unavailable": "Date unavailable",
+    "amount-unavailable": "£unavailable",
+    "scheme": "Scheme name",
+    "employer": "Employer",
+    "provider": "Pension provider",
+    "retirement-date": "Expected retirement date",
+    "state-pension-date": "State Pension date",
+    "estimated-income": "Estimated income",
+    "lump-sum": "Lump sum",
+    "details-link": "See details",
+    "progress-complete": "complete",
+    "close": "Close",
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "contact": {
+      "preferred": "preferred",
+      "telephone": "Phone number",
+      "telephone-main": "Main telephone",
+      "telephone-whatsapp": "WhatsApp",
+      "email": "Email",
+      "email-address": "Email address",
+      "website": "Website",
+      "address": "Address",
+      "postal-address": "Postal Address",
+      "phone": "Phone"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "no-data": "Unavailable",
+    "pension-opened": "Pension opened",
+    "guide-title": "What’s in this guide",
+    "months": "months",
+    "year": "year",
+    "years": "years",
+    "hours": "hours",
+    "minute": "minute",
+    "minutes": "minutes",
+    "immediate": "Immediate"
+  },
+  "pages": {
+    "error": {
+      "title": "Sorry we couldn’t find the page you’re looking for",
+      "intro": "We’re still building and improving our service. Something went wrong but we will try to fix it.",
+      "what-you-can-do": {
+        "title": "What you can do:",
+        "items": [
+          "Click the Back button in your browser to check if you’re in the right place.",
+          "[Report a technical problem.](/en/support/report-a-technical-problem)"
+        ]
+      }
+    },
+    "link-access-error": {
+      "page-title": "Access error",
+      "title": "Sorry we couldn’t find the page you’re looking for",
+      "intro": "We’re still building and improving our service. This link has expired and cannot be used to access the Pensions Dashboard.",
+      "items": [
+        "Click the Back button in your browser to check if you’re in the right place.",
+        "Send us an email to tell us what went wrong at [researchpanel@maps.org.uk](mailto:researchpanel@maps.org.uk)"
+      ]
+    },
+    "start": {
+      "hero-text": "See your pensions in one place with our free and secure government-backed service.",
+      "form-button": "Start",
+      "section-you-can": {
+        "title": "You can",
+        "items": [
+          "See your pensions all together in one place - including workplace pensions, personal pensions, your State Pension and any you might have lost.",
+          "See how much you could get when you retire."
+        ]
+      },
+      "section-how-it-works": {
+        "title": "How it works",
+        "items": [
+          "Prove your identity using **GOV.UK One Login**. You can set up an account with One Login as part of this service.",
+          "Enter your **National Insurance number**, if you have one. You can still proceed without one.",
+          "See all the pensions that match your details, including your estimated income when you retire.",
+          "Come back any time to view your Pensions Dashboard and latest figures."
+        ]
+      },
+      "section-you-need": {
+        "title": "You’ll need",
+        "items": [
+          "a mobile phone",
+          "your current address",
+          "photo ID, if it’s your first time using GOV.UK One Login",
+          "your National Insurance number, if you have one"
+        ]
+      },
+      "section-your-data": {
+        "title": "Your data",
+        "description": "We’ll share the information that you or GOV.UK One Login give us with pension providers, schemes, and the Department for Work and Pensions (DWP) to find your pensions."
+      },
+      "more-about-your-data": {
+        "title": "More about how we use your data",
+        "items": [
+          "When we get your information back from pension providers, schemes or the DWP, we’ll only store it while you are using the Pensions Dashboard. We’ll delete all your pensions information within an hour of your session (or less, if you close the session).",
+          "We do securely store some pseudonymised data in order to make the service work. This is when your data is given codes or tokens, so you cannot be directly identified.",
+          "Learn more in [our privacy notice_target=_self](/en/dashboard-privacy-notice)."
+        ]
+      },
+      "some-pensions-may-not-be-included": {
+        "title": "Some pensions may not be included",
+        "text": "We’re still connecting new pension schemes on a regular basis. However, you will not see pension schemes that:",
+        "items": [
+          "you’ve already taken or you’re receiving money from, including those in pension drawdown",
+          "are workplace schemes with fewer than 100 scheme members, unless the provider connects to the Pensions Dashboard voluntarily",
+          "are not registered with the Pension Regulator",
+          "are administered outside the United Kingdom",
+          "were set up for the Secret Intelligence Service or the Security Service",
+          "are managed by the Pension Protection Fund (PPF), including the Financial Assistance Scheme (FAS)."
+        ],
+        "note-1": "You will not see your State Pension if you’ve passed State Pension age, even if you have not claimed it yet.",
+        "note-2": "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+      }
+    },
+    "welcome": {
+      "title": "Welcome to the MoneyHelper Pensions Dashboard",
+      "heading": "Important information",
+      "form-button": "I understand",
+      "intro": "Don't make decisions about your money and pensions based solely on the information in your Pensions Dashboard.",
+      "content": "The values are for illustration only and are based on some assumptions, such as your retirement age. Always check with your pension providers for the most up-to-date information, and consider speaking to a regulated financial adviser before making decisions about your pensions.",
+      "values": {
+        "title": "All pension values:",
+        "items": [
+          "are estimated and not guaranteed",
+          "are shown before tax, as pension tax depends on your income and circumstances",
+          "could go up or down based on factors such as investment performance and your contributions."
+        ]
+      },
+      "excluded": {
+        "title": "Some information may not be included.",
+        "items": [
+          "You will not see pensions you’ve already taken money from, pensions administered outside the United Kingdom or pensions with very few scheme members.",
+          "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+        ]
+      }
+    },
+    "searching-for-your-pension": {
+      "title": "Loading your pensions",
+      "description": "This can take up to {duration} seconds. Thanks for your patience.",
+      "refresh": "Do not refresh or close this page.",
+      "progress": "{progress}% complete",
+      "carousel": {
+        "heading": "Did you know?",
+        "text-1": "There is £31.1 billion in lost or unclaimed pension pots in the UK.",
+        "subtext-1": "(Lost Pensions Survey, Pensions Policy Institute, 2024)",
+        "text-2": "Eight out of ten savers don’t know how much they’ll need in retirement.",
+        "subtext-2": "(Retirement Living Standards, Pensions and Lifetime Savings Association)",
+        "text-3": "You usually need 35 qualifying years of National Insurance credits to get the full State Pension."
+      }
+    },
+    "your-pension-breakdown": {
+      "page-title": "Your Pension Breakdown",
+      "title": "Your pensions",
+      "confirmed-pensions": {
+        "heading": "Pensions in your estimate",
+        "no-income-link": "See pensions [not included_target=_self](#no-income) in your estimate."
+      },
+      "confirmed-pensions-no-income": {
+        "heading": "Not in your estimate",
+        "heading-no-pensions-with-income": "Pensions without an estimated income",
+        "accordion-title": "Why pensions might not show in your estimate",
+        "accordion-content": "Pensions still waiting for data from your pension providers and those with values less than £5,000 won’t show in your estimate.\n\nIf any other pensions are missing, see [Pensions not showing_target=_self](/en/pensions-not-showing)."
+      },
+      "scam-warning": {
+        "heading": "Beware of scams",
+        "description": {
+          "items": [
+            "Your Pensions Dashboard contains sensitive and valuable information. Think carefully before sharing your information with a third party.",
+            "Scammers play on our sense of fear. If you’ve been contacted without warning and told you need to move your pensions to a safe place, this is a scam."
+          ]
+        },
+        "action": {
+          "heading": "If you’re worried about scams, you can:",
+          "items": [
+            "Read our guidance on [spotting pension scams](https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam)",
+            "Call our financial crimes and scams unit on [0800 015 4402](tel:08000154402)"
+          ]
+        }
+      }
+    },
+    "your-pensions-timeline": {
+      "page-title": "Your pensions timeline",
+      "title": "Your pensions",
+      "heading": "Timeline",
+      "intro": "The timeline shows how your total estimated pension income could change over time based on each pension’s retirement date",
+      "intro-2": "These values are not guaranteed and may go down as well as up.",
+      "intro-3": "Your actual income will depend on how and when you take your pensions.",
+      "accordion-title": "About these values",
+      "accordion": {
+        "items": [
+          "These values are based on the pensions we have estimated incomes for so far - they might not include all your pensions. They’re not guaranteed, and may go down as well as up. The incomes and timeline are also based on expected retirement dates from your pension providers. See each pension’s details page for more information.",
+          "All values are shown before tax. Learn more about [tax and pensions](/en/support/understand-your-pensions)."
+        ]
+      },
+      "view-pensions": "View pensions",
+      "hide-pensions": "Hide pensions",
+      "key": {
+        "title": "Key",
+        "accordion-open": "View key",
+        "accordion-close": "Hide key",
+        "items": {
+          "SP": "State Pension",
+          "DB": "Defined benefit",
+          "DC": "Defined contribution",
+          "LU": "Lump sum"
+        }
+      }
+    },
+    "pension-details": {
+      "title": "{name} summary",
+      "state-pension": "State Pension",
+      "summary-page-title": "Pension Details - Pension Summary",
+      "income-values-page-title": "Pension Details - Income and values",
+      "about-page-title": "Pension Details - About this pension",
+      "contact-page-title": "Pension Details - Contact pension provider",
+      "estimate-DC": "You could receive **{income}** a month from the first payable date of **{date}**.",
+      "estimate-DB": "from the first payable date of **{date}**.",
+      "lump-sum": "Plus an estimated lump sum payment of **{amount}** on **{date}**.",
+      "toolIntro": {
+        "estimate-SP": "You will reach State Pension age {tooltip} on **{date}**. Your forecast is **{monthly}** a month, based on your National Insurance `tooltip:: **National Insurance (NI)** is a type of tax you pay to qualify for State Pension and some types of benefits. You usually need 35 qualifying years of NI contributions to get the full State Pension, and ten qualifying years to get anything. [Learn more](/en/support/understand-your-pensions)` record.\n\n State Pension is paid every **4 weeks** rather than the same date each month, so your payment will be lower than the monthly amount."
+      },
+      "details": {
+        "title": "Pension details",
+        "current-value": "Current value",
+        "estimate-at-retirement": "Estimate at retirement",
+        "latest-value": "Latest value",
+        "forecast": "Forecast",
+        "mobile-current": "Now",
+        "estimate-today": "Estimate today",
+        "mobile-retirement": "At retirement",
+        "annual-amount": "Annual amount",
+        "yearly-amount": "Yearly amount",
+        "monthly-amount": "Monthly amount",
+        "pot-value": "Pot value",
+        "tax-free-lump-sum": "Tax-free lump sum",
+        "lump-sum": "Lump sum",
+        "payable-date": "Payable date",
+        "last-updated": "Information last updated",
+        "you-could-receive": "You could receive",
+        "in-this-pension-pot": "In this pension pot"
+      },
+      "header": {
+        "plan-reference": "Plan reference number",
+        "retirement-date": "Retirement date",
+        "summary": "Summary",
+        "income-and-values": "Income & values",
+        "about-this-pension": "About this pension",
+        "contact-provider": "Contact provider"
+      },
+      "pension-provider": {
+        "heading": "Contact your provider",
+        "provider": "Pension provider",
+        "preferred": "Preferred contact method"
+      },
+      "headings": {
+        "state-pension": "About your State Pension forecast",
+        "pot": "Pot value",
+        "employer": "Employer",
+        "employment-dates": "Dates of employment",
+        "plan-details": "Plan details",
+        "additional-data": "Additional data",
+        "other-details": "Other details",
+        "estimated-income": "Estimated income",
+        "more-information": "More information",
+        "more-information-sub": "Find out more about this pension scheme, including the charges and how it’s managed.",
+        "about-this-pension": "About this pension",
+        "income-and-values": "Income and values",
+        "income-and-values-sub": "These charts show the value of your pension now (or from the latest available date) and what it could be worth in the future.",
+        "contact-sub": "Have your plan reference number and personal details ready when you contact your provider. You’ll usually get a quicker reply using the preferred contact method(s). But you can choose the best option for you."
+      },
+      "information": {
+        "about": {
+          "title": "About these values",
+          "description": "Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up.",
+          "sp-description": "How much you’ll get in your State Pensions depends on how many years you’ve made National Insurance contributions. When you reach State Pension age, you usually need 35 qualifying years to get the full State Pension, and ten qualifying years to get anything. [Learn more](/en/support/understand-your-pensions)"
+        },
+        "how-estimate-is-calculated": {
+          "title": "How these values are calculated",
+          "dc": "Estimates for this defined contribution pension are based on you buying a guaranteed income for life (an annuity), which starts paying from the expected retirement date. They’re also based on the provider’s assumptions about inflation, investment performance, and future contribution levels.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now.",
+          "db": "Estimates for this defined benefit pension are based on your salary and years you’ve been a scheme member, as well as the expected retirement date. They’re also based on the provider’s assumptions about inflation and whether the scheme is active.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now."
+        }
+      },
+      "status": {
+        "active": "This pension is active. This means it’s being paid into.",
+        "inactive": "This pension is inactive."
+      },
+      "estimated-income": {
+        "ap": "Estimate based on your National Insurance record up to {date}",
+        "eri": "Forecast if you continue to make National Insurance contributions"
+      },
+      "claiming-your-state-pension": {
+        "heading": "Claiming your State Pension",
+        "items": [
+          "You won’t get your State Pension automatically - you have to claim it.",
+          "You’ll get a letter no later than two months before you reach State Pension age, telling you what to do. If you don’t get a letter, you can still make a claim.",
+          "After you’ve claimed it, it’s paid every **4 weeks** rather than the same date each month."
+        ]
+      },
+      "other-details": {
+        "calculation-method": "Calculation method",
+        "amount-type": "Amount type",
+        "last-payment-date": "Last payment date",
+        "increase": "Increase",
+        "survivor-benefit": "Survivor benefit",
+        "safeguarded-benefit": "Safeguarded benefit",
+        "warning": "Warning"
+      },
+      "plan-details": {
+        "plan-reference": "Plan reference number",
+        "pension-start-date": "Pension start date",
+        "active-contributions": "Active contributions",
+        "employer-name": "Employer name",
+        "employer-status": "Employer status",
+        "retirement-date": "Pension retirement date",
+        "employment-start-date": "Employment start date",
+        "employment-end-date": "Employment end date",
+        "most-recent": "(most recent)",
+        "data-illustration-date": "Data illustration date",
+        "pension-origin": "Pension origin",
+        "employer-status-details": {
+          "C": "Current employer",
+          "H": "Former employer"
+        }
+      }
+    },
+    "pending-pensions": {
+      "title": "Pending pensions",
+      "description": "**You don't need to do anything.** These pensions are waiting for more information from your pension providers. See the pension’s details for more information.\n\n They'll automatically show up in ‘Your pensions’ once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "Pensions that need action",
+      "tool-intro": "You might need to provide more information to confirm whether a pension belongs to you, or there could be another issue the provider needs to speak to you about.",
+      "to-do": {
+        "heading": "What you need to do",
+        "item-1": "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to sign in again with GOV.UK One Login to return.",
+        "item-1-logout-link": "Exit the Pensions Dashboard and start again to enter your National Insurance number.",
+        "item-2": "Contact the pension provider(s) using the contact information below."
+      },
+      "card": {
+        "description": "Contact {pensionAdministrator} and give them your reference number if it’s available.",
+        "reference": "Reference number",
+        "contact-heading-open": "Contact information",
+        "details-link": "See pension details"
+      },
+      "scam-warning": {
+        "heading": "Beware of scams",
+        "description": "A pension provider will **never contact you first** to ask for your personal information about a pension they say might belong to you. You must contact the pension provider with your reference number or other identifying details to confirm if a pension is yours."
+      }
+    },
+    "your-pension-search-results": {
+      "page-title": "Your Pension Search Results",
+      "title": "Pensions found",
+      "heading": "We found {totalPensions} pensions",
+      "heading-single": "We found 1 pension",
+      "channels": {
+        "confirmed": {
+          "title": "Confirmed pensions ({confirmedPensions})",
+          "cta": "See your pensions"
+        },
+        "incomplete": {
+          "title": "Pending pensions ({incompletePensions})",
+          "sub-title": "We’re waiting for more information from the pension provider(s). You don’t need to do anything.",
+          "cta": "See pending pensions"
+        },
+        "unconfirmed": {
+          "title": "Pensions that need action ({unconfirmedPensions})",
+          "sub-title": "You might need to provide more information or contact the provider.",
+          "cta": "See pensions that need action"
+        },
+        "unsupported": {
+          "title": "Unsupported pensions found",
+          "text": "We found 1 or more pensions that could belong to you that we can’t display yet. We’re still building and improving our service, so check back again soon."
+        }
+      },
+      "common-links": {
+        "pensions-not-showing": "Are you expecting to see other pensions?"
+      }
+    },
+    "no-pensions-found": {
+      "title": "No pensions found",
+      "heading": "What you can do:",
+      "tooltip": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "to-do": {
+        "item-1": "Check back later to see if your pensions are showing.",
+        "item-2": "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to sign in again with GOV.UK One Login to return.",
+        "item-2-logout-link": "Exit the Pensions Dashboard and start again to enter your National Insurance number.",
+        "item-3": "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "item-4": "If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "item-5": "If you still cannot see your pensions, [report a technical problem](/en/support/report-a-technical-problem).",
+        "item-6": "If you had a workplace pension from 1988 or earlier, or if you worked for an employer for less than two years, check if your pension contributions were refunded. [Learn more about refunded pensions.](/en/support/explore-the-pensions-dashboard)"
+      }
+    },
+    "pensions-not-showing": {
+      "title": "Pensions not showing",
+      "intro": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "heading": "What you can do:",
+      "to-do": {
+        "item-1": "Check back later to see if your pensions are showing.",
+        "item-2": "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to sign in again with GOV.UK One Login to return.",
+        "item-2-logout-link": "Exit the Pensions Dashboard and start again to enter your National Insurance number.",
+        "item-3": "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "item-4": "If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "item-5": "If you had a workplace pension from 1988 or earlier, or if you worked for an employer for less than two years, check if your pension contributions were refunded. [Learn more about refunded pensions.](/en/support/explore-the-pensions-dashboard)"
+      }
+    },
+    "support": {
+      "back-text": "Exit help and support",
+      "callout": {
+        "title": "Not what you’re looking for?",
+        "content": "If you can’t find the answer you were looking for try our other guides or get in touch"
+      },
+      "explore-the-pensions-dashboard": {
+        "title": "Explore the Pensions Dashboard",
+        "link": "explore-the-pensions-dashboard",
+        "heading": "General questions",
+        "description": "Get support for common questions and learn how to make the most of your Pensions Dashboard."
+      },
+      "understand-your-pensions": {
+        "title": "Understand your pensions",
+        "link": "understand-your-pensions",
+        "heading": "General questions",
+        "description": "Get support for common questions about pensions.",
+        "further-guidance": {
+          "title": "Further guidance",
+          "description": "Whether you’re just starting to think about pensions or you’re about to retire, MoneyHelper has guidance to help you plan.",
+          "links": [
+            {
+              "title": "Pensions explained",
+              "text": "Starting a pension, types of pension, understanding pensions",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics"
+            },
+            {
+              "title": "State Pension",
+              "text": "How it works, what you might get, National Insurance",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension"
+            },
+            {
+              "title": "Pension problems and changes",
+              "text": "Complaints, financial help when retired, changes to schemes",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems"
+            },
+            {
+              "title": "Taking your pension",
+              "text": "Ways to draw your pension, when can you retire, Pension Wise appointments",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension"
+            },
+            {
+              "title": "Building your pension",
+              "text": "How much do you need, ways to build your pot, transferring and merging",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot"
+            },
+            {
+              "title": "Tax and pensions",
+              "text": "All guidance, including how to use the Pension Wise service",
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement"
+            },
+            {
+              "title": "Tools",
+              "text": "Useful tools, including; Pension calculator, Find a retirement advisor and Money Midlife MOT",
+              "href": "https://www.moneyhelper.org.uk/en/tools-and-calculators"
+            }
+          ]
+        }
+      },
+      "report-a-technical-problem": {
+        "title": "Report a technical problem",
+        "link": "report-a-technical-problem",
+        "intro": "We are still building and improving our service. Please tell us what technical issue you are experiencing in as much detail as possible.",
+        "content": "Thanks for helping improve the MoneyHelper Pensions Dashboard.",
+        "embeded-form-title": "Report a technical problem form"
+      }
+    },
+    "privacy-policy": {
+      "title": "Privacy notice",
+      "seo-title": "Dashboard privacy notice",
+      "title1": "Who we are",
+      "paragraph1-1": "We are the Money and Pensions Service (MaPS) - an arm’s-length body sponsored by the Department for Work and Pensions (DWP). Our contact details are:",
+      "items1-1": [
+        "email: [contact@maps.org.uk_target=_self](mailto:contact@maps.org.uk)",
+        "post: Money and Pensions Service, Bedford Borough Hall, 138 Cauldwell Street, Bedford, MK42 9AP"
+      ],
+      "paragraph1-2": "More information about MaPS can be found on the MaPS [website](https://maps.org.uk/en).",
+      "paragraph1-3": "MaPS’ Data Protection Officer contact details are:",
+      "items1-2": [
+        "email: [dpo@maps.org.uk_target=_self](mailto:dpo@maps.org.uk)",
+        "telephone: 020 7943 0500"
+      ],
+      "paragraph1-4": "**It will take you about 10-15 minutes to read this notice.**",
+      "title2": "Privacy notice",
+      "paragraph2-1": "This notice covers our processing of your personal information as a user of the Find your pensions service (Find Service) and the MoneyHelper Pensions Dashboard (MHPD). It explains why, and how, we collect and use your personal information as part of operating the Find Service and the MHPD.",
+      "paragraph2-2": "The Find Service is the central service provided by MaPS that enables you to search for pensions, manage registrations for pensions that are matched to you, and authorise access to information about them via the MHPD.",
+      "paragraph2-3": "The MHPD is a digital service that allows you to view the information about all of your pensions in one secure place online and on a device of your choosing (mobile, tablet, laptop, desktop). This includes information on your State Pension, occupational pensions and personal pensions, including accrued values and the estimated income they could provide in retirement.",
+      "paragraph2-4": "Where you use other services MaPS provides, you should ensure you review the privacy notices which relate to those services. This includes the privacy notice provided on the Money Helper website.",
+      "paragraph2-5": "Where you are a test user, you should ensure you read the test user privacy notice issued to you.",
+      "paragraph2-6": "**Not covered**",
+      "paragraph2-7": "GOV.UK One Login (the identity service for pensions dashboards) will process your personal information to verify your identity for us. They have their own privacy notice: [https://www.sign-in.service.gov.uk/privacy-policy](https://www.sign-in.service.gov.uk/privacy-policy).",
+      "title3": "What personal information do we collect?",
+      "paragraph3-1": "“Personal information” means information relating to an identified or identifiable living individual.",
+      "paragraph3-2": "To deliver the Find Service and the MHPD, we collect and use these items of personal information:",
+      "items3-1": [
+        "Personal information we receive from GOV.UK One Login once you have verified your identity:"
+      ],
+      "items3-1-1": [
+        "first name",
+        "last name",
+        "date of birth",
+        "email address",
+        "mobile phone number (if you have used a mobile phone for two-factor authentication)",
+        "address",
+        "identity account identifier."
+      ],
+      "items3-2": [
+        "Any additional personal information you provide to us to increase the likelihood of being matched to your pensions. This could include:"
+      ],
+      "items3-2-1": [
+        "your National Insurance number",
+        "alternate names, addresses, emails and phone numbers."
+      ],
+      "items3-3": [
+        "Several pseudonymised identifiers and tokens we create or which are issued by GOV.UK One Login – these are codes which cannot directly identify you, but represent you and your authorisations. These allow us to link you to your requests to find pensions, pensions registered in response, and your authorisations to view information about these pensions, to enable the service to operate.",
+        "Pseudonymised identifiers and tokens we receive from pension providers, schemes and DWP if they match you to a pension: where they match you to a pension, they provide a unique identifier, which is used by MHPD to request your pensions information for you from the pension provider, scheme or DWP.",
+        "Pensions information from pension providers, schemes and DWP, where you wish to view this information in MHPD. This may include policy reference numbers, pension types and latest value or projected retirement income (depending on the type of pension). The exact details which will be provided will vary slightly depending on the provider or scheme."
+      ],
+      "paragraph3-3": "No sensitive or special category information, such as information relating to gender, sexuality or religion for example, is processed by us. We do not knowingly collect personal information relating to children.",
+      "title4": "Why we need your personal information",
+      "paragraph4-1": "We need to process your personal information:",
+      "items4-1": [
+        "So that we can provide the Find Service and the MHPD - without this processing, you would not be able to search for, or view, your pensions.  The legal basis for this processing is ‘public task’ – that is, we are undertaking it in the exercise of official authority.",
+        "On occasion, if there is a re-organisation of MaPS, a transfer of its functions to another body or MaPS delegates provision of the Find Service or the MHPD to another body, and we need to transfer your information as part of that.  If we needed to do this, the legal basis for the processing would also be a public task.",
+        "On occasion, to comply with legal obligations we are subject to.  If we needed to do this, the legal basis for this processing would be ‘legal obligations’."
+      ],
+      "title5": "Who do we share your personal information with?",
+      "paragraph5-1": "We may share your personal information where necessary with the parties set out below for the purposes set out in the section entitled **Why we need your personal information**.",
+      "items5-1": [
+        "Our IT and digital service providers including Capgemini UK. They process your personal information on our behalf.",
+        "The Department for Work and Pensions, to allow them to check your details against the state pension records.",
+        "Pension providers and schemes connected to the dashboards ecosystem.  This is expected to be around 100 providers and schemes at the start of testing, and around 3,000 by the time the public dashboards service starts."
+      ],
+      "paragraph5-2": "Our IT and digital service providers process your personal information on our behalf, and as such the details relating to the processing of your personal information by them is set out in this notice.  We do not allow our third-party service providers to use your personal information for their own purposes and only permit them to process your personal information for specified purposes and in accordance with our instructions.",
+      "paragraph5-3": "The other organisations listed are controllers, which means they do not process personal information on our behalf and are responsible for the processing they undertake. They will be able to provide their own privacy information to you.",
+      "paragraph5-4": "Other than the above, we will never share your personal information. We will never share your personal information with anyone for marketing purposes.",
+      "title6": "How long do we keep your personal information?",
+      "paragraph6-1": "We distribute your identity or biographical information (the categories of personal information under section 1 and 2 of **What personal information do we collect**) to pension providers, schemes and DWP for matching, but, having done that, we don’t store that information ourselves.",
+      "paragraph6-2": "We only store the pseudonymised identifiers and tokens used to deliver the Find Service and link you to your pensions and authorisations. We retain them for the periods set out in [section 14 of our data protection impact assessment.](https://www.pensionsdashboardsprogramme.org.uk/connection/consumer-protection/data-protection-impact-assessment)",
+      "paragraph6-3": "We will keep your Find Service user account active, with found pensions remaining registered, and consents (allowing dashboards to access your Find Service user account) remaining valid until you revoke them, for as long as you wish to use the Find Service. This involves retaining the pseudonymised identifiers and tokens representing these found pensions, and your authorisations, for as long as you are active. If you do not access your Find Service user account for 5 years, we will delete your account, removing all your personal information.",
+      "paragraph6-4": "When we receive pensions information from pension providers, schemes or DWP your information will only be retained within the MHPD during your search session. All personal information is deleted within 60 minutes of your session (or less if you close the session). Sessions are active for 60 minutes and are closed at this point, meaning all data will expire and be deleted 60 minutes after initiating the session.",
+      "title7": "Where do we store your information?",
+      "paragraph7-1": "We store all information in the UK only.",
+      "title8": "How do we keep your personal information secure?",
+      "paragraph8-1": "We are committed to doing all we can to ensure your information is kept secure. We have set up systems and processes to protect it from loss, misuse and unauthorised access or disclosure – for example, we protect your personal information using encryption. Our systems have been designed and developed based on National Cyber Security Centre best practice guidance.",
+      "paragraph8-2": "We have data processing agreements with our suppliers to make sure your personal information is secure and protected. Our employees and suppliers are all subject to a duty of confidentiality.",
+      "paragraph8-3": "We also run regular IT testing and scanning activities to ensure the security of our systems and hold a valid CyberEssentials Plus certification.",
+      "title9": "Cookie policy",
+      "paragraph9-1": "[Read our cookie policy.](/en/dashboard-cookie-policy)",
+      "title10": "Your rights",
+      "paragraph10-1": "We respect your right to privacy and the protection of your personal information. We have a responsibility to protect this information and ensure its confidentiality, integrity and availability. We also want you to be in control of your personal information and respect your data protection rights. You have the right to:",
+      "items10-1": [
+        "Be informed – we will always explain to you why, and how, personal information about you is being processed.",
+        "Access your personal information – you can request access to the personal information we process about you on the details below. You can also access your Find Service user account at any time, which allows you to review and revoke your consents.",
+        "Rectify any errors with your personal information- though we may need to verify the accuracy of the new personal information you provide to us. For the purpose of personal information we display from pension schemes, providers or DWP, rectification of any errors will be the responsibility of the personal information provider as the MHPD only displays the personal information it is provided with.",
+        "Request restriction of processing of your personal information in certain circumstances.",
+        "Object to us processing your personal information in certain circumstances."
+      ],
+      "paragraph10-2": "You can exercise your rights by contacting using the contact details set out in this notice.",
+      "paragraph10-3": "We do not use automated decision-making and we do not profile people.",
+      "paragraph10-4": "You will not have to pay a fee to access your personal information (or to exercise any of your other UK GDPR rights). However, we may charge a reasonable fee if we think your request is unfounded, repetitive or excessive. Alternatively, we could refuse to comply with your request in these circumstances.",
+      "title11": "Complaints",
+      "paragraph11-1": "If you have any queries about how we use your personal information that are not answered here, or if you wish to complain to our Data Protection Officer, please contact us on the details set out at the beginning of this notice.",
+      "paragraph11-2": "We hope that we can address any concerns you may have, but you can always contact the [Information Commissioner’s Office](https://ico.org.uk/) (ICO)."
+    },
+    "cookie-policy": {
+      "title": "Cookie policy for the MoneyHelper Pensions Dashboard and the Find your pensions service",
+      "seo-title": "Dashboard cookie policy",
+      "session-expiry": "Session expiry",
+      "table-headings": {
+        "name": "Name",
+        "purpose": "Purpose",
+        "expires": "Expires"
+      },
+      "table-rows": {
+        "codeVerifier": "This cookie helps the website confirm that the part you see (the front end) is properly connected to the behind-the-scenes services (the back end).",
+        "mhpdSessionConfig": "Maintains a secure session for the service and controls time-limited access to your pension data during the journey.",
+        "beaconId": "This cookie is used to identify the session anonymously and check that your device is allowed to access the service.",
+        "beaconIdExpiry": "This cookie expires automatically after 90 days.",
+        "userSessionId": "This cookie tracks the individual session identity of the user.",
+        "redirectUrl": "This cookie is used to redirect the user to the Find service from One Login.",
+        "currentUrl": "This cookie is used to keep track of the current page the user is on to enable the user to use the back links.",
+        "supportCurrentUrl": "This cookie is used to track the page the user is on to enable the user to use the back links on the support pages.",
+        "channel": "This cookie is used to track the page the user is on to enable the user to use the back links when they access different channels of information from the pensions found page.",
+        "pensionId": "This cookie is used to track the pension the user is viewing when they access a pension details page.",
+        "iPlanetDirectoryPro": "Gives you access to the service without needing to log in again.",
+        "findExpires120": "When you close your browser window, after 120 minutes, or after 15 minutes of inactivity, whichever occurs first.",
+        "findExpires15": "15 minutes from when you re-enter the service from GOV.UK One Login, or when you close your browser window.",
+        "findExpires5": "5 minutes from when you enter the service or when you close your browser window.",
+        "amlbcookie": "Ensures that your entire session is handled by the same server.",
+        "route": "Ensures that your requests all go to the same server.",
+        "reentry": "Tracks your journey after you log in with GOV.UK OneLogin.",
+        "oAuthRequestAttributes": "This is needed when you are directed to the service from an authorised dashboard.",
+        "clck": "Stores a unique ID and your preferences so the website can anonymously track how people use the site and make improvements based on that behaviour.",
+        "clsk": "Links together the different pages you visit during one visit, so your activity can be viewed as a single session to better understand how people use the site.",
+        "clid": "Identifies the first-time Clarity saw this user on any site using Clarity.",
+        "anonchk": "Checks if a unique ID used for advertising is being shared, but since this site doesn’t use that advertising feature, the setting is always turned off.",
+        "mr": "Indicates whether to refresh MUID (Microsoft User ID).",
+        "muid": "Identifies unique web browsers visiting Microsoft sites. These cookies are used for advertising, site analytics, and other operational purposes.",
+        "sm": "Used in synchronizing the MUID across Microsoft domains.",
+        "ga": "Used by Google Analytics to recognise returning visitors by assigning a unique ID, helping us understand how people use our website over time.",
+        "gid": "Used by Google Analytics to identify visitors but only tracks activity within a single day.",
+        "gaContainerId": "Used by Google Analytics to identify and track an individual session with a user device.",
+        "gatGtagContainerId": "Used by Google Analytics to limit requests to its service.",
+        "utma": "Used by Google Analytics to track visitor behaviour and measure site performance.",
+        "gatUa": "Used by Google to limit collection of data on high traffic sites.",
+        "clss": "Session identifying cookie. It also indicates if the visitor is new or existing.",
+        "clsv": "Visitor identifying cookie.",
+        "bc": "Enables recording of user sessions across subdomains.",
+        "secid": "Stores a unique Experience Cloud ID, which helps link your visits and activity across different parts of the website for analytics purposes.",
+        "scc": "Determines if cookies are enabled. Set by JavaScript.",
+        "ssq": "Used by Activity Map. It contains information about the previous link clicked by the visitor.",
+        "svi": "Stores a unique visitor ID and timestamp.",
+        "sfid": "Stores the fallback unique visitor ID and timestamp",
+        "sac": "Helps set other cookies correctly and is deleted right after it’s used.",
+        "mbox": "Stores a few values, including your session ID and settings, to help the website work properly.",
+        "atcheck": "Temporary cookie to check if the cookie read/write capability is enabled on the browser"
+      },
+      "intro": "This sets out information about the cookies we use when you visit the MoneyHelper Pensions Dashboard and the Find your pensions service (the site). This is separate from the MoneyHelper website cookie policy.",
+      "title1": "What are cookies?",
+      "paragraph1-1": "Cookies are small files that websites save on your phone, tablet or computer to help them remember your preferences and improve your experience. These files can include things like pixels, beacons and local storage.",
+      "paragraph1-2": "We currently use two types of cookies:",
+      "items1-2": [
+        "strictly necessary cookies, which are required for the site to work",
+        "analytics cookies, which collect information about how you use the service to help us improve it."
+      ],
+      "paragraph1-3": "The MoneyHelper Pensions Dashboard and Find your pensions service are intended for UK-based users so for cookies we follow UK law, including the Data (Use and Access) Act 2025.",
+      "paragraph1-4": "We’ve recently updated our approach to cookies to improve your experience on our website. In line with the Data (Use and Access) Act 2025, we won’t have to ask you to accept analytics cookies, which help us improve our services. But you can still reject these cookies using the ‘Cookie preferences’ link in the footer of this site.",
+      "paragraph1-5": "Find out [how to manage cookies](https://ico.org.uk/for-the-public/online/cookies) from the Information Commissioner's Office.",
+      "title2": "Strictly necessary cookies",
+      "paragraph2-1": "Essential cookies are needed to make the site work, and to keep your information secure. If you do not want us to use them, you can turn off cookies in your web browser, but the service may not work properly. We will not set any essential cookies until you access the website and start using the service.",
+      "title2-1": "Security cookies",
+      "title2-2": "Functional cookies",
+      "title3": "Find your pensions service – essential cookies only",
+      "paragraph3-1": "We only use cookies that are essential to make the Find your pensions service work. Because of this, you cannot disable them. They do not store any personal data. They expire as shown in the table below.",
+      "title3-1": "Essential cookies",
+      "title4": "Cookies that measure website use (analytics)",
+      "paragraph4-1": "We use analytics cookies to collect information about how you use the MoneyHelper Pensions Dashboard and Find your pensions service, for example what pages you visit and what you click on.",
+      "paragraph4-2": "This helps us understand how we can improve the services.",
+      "paragraph4-3": "We do not share this data or allow anyone else to use it.",
+      "title4-1": "Analytics cookies we use",
+      "title5": "Cookies that help with our communications and marketing",
+      "paragraph5-1": "These cookies may be set by third party websites.",
+      "paragraph5-2": "We don't currently use any cookies in this category.",
+      "title6": "How can I control my cookies?",
+      "paragraph6-1": "You can change your cookie preferences at any time using the ‘Cookie preferences’ link in the footer of this site. Alternatively, most web browsers allow some control of most cookies through the browser settings.",
+      "paragraph6-2": "There is more information on [how to manage cookies](https://ico.org.uk/for-the-public/online/cookies) on the Information Commissioner's Office website."
+    }
+  },
+  "components": {
+    "unconfirmed-pensions-callout": {
+      "heading": "Important",
+      "description": "You have {number} pensions that need you to provide more information or contact the pension provider.",
+      "description-single": "You have {number} pension that needs you to provide more information or contact the pension provider."
+    },
+    "pension-card": {
+      "type": {
+        "DB": "Defined benefit",
+        "DC": "Defined contribution",
+        "SP": "State Pension"
+      }
+    },
+    "summary-sentence": {
+      "title": "Your estimated income",
+      "state-pension-age": "You'll reach State Pension age {tooltip} in **{statePensionYear}**. How much could you get from your pensions that year (before tax)?",
+      "annually": "This adds up to around **{annualTotal}** a year.",
+      "snapshot": "**This is just a snapshot – it doesn't include pensions without an estimated income or that are due to start paying after {statePensionYear}**. As you start or stop taking your pensions, your income may go up or down.",
+      "view-timeline": "View full timeline of your pensions",
+      "accordion-title": "About these values",
+      "accordion-content": [
+        "This income is based on the pensions we have estimates for so far - it might not include all your pensions. Pension providers usually update these estimates at least once a year, and make calculations based on each pension’s contribution levels and expected retirement date. They’re not guaranteed, and may go down as well as up. See the pension details for more information.",
+        "Most estimated incomes show you how much your pension would be worth in today’s money. All values are shown before tax. Learn more about [tax and pensions](/en/support/understand-your-pensions)."
+      ],
+      "no-state-pension-1": "**You might start taking each of your pensions at different times**. As they start or stop, your income may go up or down.",
+      "no-state-pension-2": "To help you see how much money you could have when you retire, we've put the available estimated incomes into a timeline."
+    }
+  },
+  "data": {
+    "pensions": {
+      "unavailable-reasons": {
+        "ANO": "Your provider is waiting for information from a third party and needs more time to send us information. You do not to do anything at this point.",
+        "DB": "Placeholder text for code DB.",
+        "DBC": "Your provider needs more time to calculate an estimated income. **This can take 10 working days. Check back again soon.**",
+        "DCC": "Your provider needs more time to calculate an estimated income. **This can take 3 working days. Check back again soon.**",
+        "DCHA": "The value of this pension is less than £5,000. Pension providers can choose whether to send data for pensions under this amount.",
+        "DCHP": "The pension's retirement date is less than 2 years away. Contact your provider for your pension details.",
+        "DCSM": "Placeholder text for code DCSM.",
+        "MEM": "Placeholder text for code MEM.",
+        "NEW": "Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "NET": "Your provider needs more time to send us data. You do not need to take any action at this point.",
+        "PPF": "The pension scheme is currently in a Pension Protection Fund assessment period. Contact your provider for your pension details.",
+        "TRN": "There's a transaction affecting the value of this pension. Contact your provider for the most up-to-date information.",
+        "WU": "Contact {pensionProvider} and give them your reference number. They'll help you resolve any issues with this pension.",
+        "SML": "The estimated income for this pension is less than £120 a year. No data will be available unless the pension value increases.",
+        "SYS_MATCHTYPE": "There's an issue with the data from your pension provider. You do not need to take any action at this point.",
+        "NEW_MATCHTYPE": "This is a new pension. Your provider needs more time to send us data."
+      },
+      "additional-types": {
+        "C_AND_C": "Costs and charges",
+        "SIP": "Investment principles",
+        "IMP": "Implementation statement",
+        "ANR": "Annual Report",
+        "SP": "Additional State Pension Information"
+      },
+      "calculation-method": {
+        "BS": "benefit-specific method based on pension provider/scheme rules",
+        "CBI": "cash balance illustration methodology from ASTM1 for calculating income fund only and/or benefit-specific method based on pension provider/scheme rules for calculating fund value",
+        "SMPI": "statutory money purchase illustration methodology from ASTM1"
+      },
+      "amount-type": {
+        "INC": "recurring income",
+        "INCL": "recurring income alternative calculated using the LEGACY pension provider/scheme basis",
+        "INCN": "recurring income alternative calculated using the NEW pension provider/scheme basis",
+        "CSH": "a separately accrued lump sum",
+        "CSHL": "a separately accrued lump sum alternative calculated using the LEGACY pension provider/scheme basis",
+        "CSHN": "a separately accrued lump sum alternative calculated using the NEW pension provider/scheme basis"
+      },
+      "employer-status": {
+        "C": "Current",
+        "H": "Historical"
+      },
+      "pension-origin": {
+        "A": "Deferred annuity",
+        "PC": "Pension provider: Pension credit",
+        "PM": "Pension provider - Active or deferred",
+        "PT": "Pension provider - Deferred transfer in",
+        "WC": "Occupational pension scheme - Pension credit",
+        "WM": "Occupational pension scheme - Active or deferred",
+        "WT": "Occupational pension scheme - Deferred transfer in"
+      },
+      "types": {
+        "DB": "defined benefit",
+        "DC": "defined contribution"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "increasing": "This income will rise after a set number of years.",
+      "safeguarded": "This pension has a safeguarded benefit. Contact your provider for more details.",
+      "survivor-benefit": "This benefit includes any pension paid to a spouse, civil partner or other dependants after you die. Contact your provider for more details.",
+      "warnings": {
+        "PSO-title": "This scheme has a pension sharing order",
+        "PSO-description": "A pension sharing order (sometimes called ‘splitting’) means some or all of this pension will be transferred to your ex-spouse or ex-civil partner. Values shown could be before or after the order is applied. The Court order will state the percentage or amount.",
+        "PEO-title": "This scheme has a pension attachment or earmarking order",
+        "PEO-description": "A pension attachment or earmarking order means some or all of this pension will be paid to your ex-spouse or ex-civil partner.",
+        "PNR-title": "This pension’s retirement date is in the past",
+        "PNR-description": "We cannot show an estimated income because the pension’s retirement date is in the past. You do not have to retire or take your pension on this date - you can usually change it by contacting your provider.",
+        "SCP-title": "This scheme pays any annual allowance tax charge",
+        "SCP-description": "The scheme will pay any annual allowance tax charge if it applies to you, and adjust your pot value or benefits.",
+        "FAS-title": "This scheme is supplemented by the Financial Assistance Scheme",
+        "FAS-description": "Some or all of the income or other benefits you get from this scheme will be supplemented by the Financial Assistance Scheme (FAS).",
+        "UNP-description": "This part of your pension has an underpin. This guarantees you a minimum pension income, which could be lower than the estimates from your provider.",
+        "TVI-description": "This benefit includes a transferred-in element.",
+        "CUR-description": "These values are normally calculated in a non-sterling currency.",
+        "DEF-description": "Your estimated income was calculated when this pension was active."
+      }
+    }
+  },
+  "timeout": {
+    "keep-me-signed-in": "Keep me signed in",
+    "log-me-out": "Log me out",
+    "return-to-start": "Return to start page",
+    "been-inactive": "You’ve been inactive for a while",
+    "to-return-to-dashboard": "To return to your Pensions Dashboard, you’ll need to sign in again using GOV.UK One Login.",
+    "exited-the-dashboard": "You’ve exited the Pensions Dashboard",
+    "sign-in-again": "You’ll need to sign in again using GOV.UK One Login to view your pensions.",
+    "automatic-expiry": "Your Pensions Dashboard session automatically expires after {totalTimeout} minutes of inactivity. This is to protect your personal information.",
+    "protect-your-information": "This is to protect your personal information.",
+    "session-expired": "Your session has expired",
+    "session-will-timeout": "Your Pensions Dashboard session will time out after **{totalTimeout} minutes**.",
+    "modal-session-timeout": "Your Pensions Dashboard session will time out in ",
+    "minutes": "minutes",
+    "minute": "minute",
+    "seconds": "seconds",
+    "second": "second",
+    "what-did-you-think": "What did you think of this service?",
+    "takes-2-mins": "(Takes 2 minutes)"
+  },
+  "tooltips": {
+    "pension-origin": "`tooltip:: The **pension origin** is where this pension scheme comes from, such as a current or former job, a transfer, or an annuity you’ve already bought.::center`",
+    "retirement-date": "`tooltip:: The **pension retirement date** is the date your provider expects you to start taking money from this pension scheme. You don’t have to retire or take your pension on this date - you can usually change it by contacting them.::center`",
+    "costs-and-charges": "`tooltip:: **Costs and charges** are paid to your pension provider to cover the costs of managing your money. They’re usually paid automatically out of your pension scheme.::center`",
+    "illustration-date": "`tooltip:: This is the date the pension provider calculated your estimated income.::`",
+    "pot-value": "`tooltip:: The **pot value** is how much money has built up in this pension scheme. It’s a combination of your contributions, your employer’s contributions (if it’s a workplace pension), and any investment growth.::`",
+    "lump-sum": "`tooltip:: This defined benefit pension has a **lump sum**. This is a one-time sum of money paid in addition to your pension income, usually when you retire. It’s based on your salary and number of years you’ve been in the pension scheme.::`",
+    "state-pension-age": "`tooltip:: The **State Pension age** is the earliest age you can claim State Pension. You don’t have to start taking your State Pension at this age - you can also defer it.::center`",
+    "status-active": "`tooltip:: If this pension is **active**, you and/or your employer are making contributions (paying into it).::`",
+    "status-inactive": "`tooltip:: If this pension is **inactive**, it’s no longer being paid into but your money is still being managed by the pension provider.::`",
+    "type-DB": "`tooltip::A **defined benefit** pension is a workplace pension where your income is based on your salary and years you've been a scheme member. [Learn more](/en/support/understand-your-pensions)::`",
+    "type-DC": "`tooltip::A **defined contribution** pension is a pot of money that you (and sometimes your employer) pay into for your retirement. It’s an investment, so your income depends the investment’s performance and how you choose to take your pension at retirement. [Learn more](/en/support/understand-your-pensions)::`"
+  }
+}

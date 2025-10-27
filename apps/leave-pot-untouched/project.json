@@ -1,0 +1,84 @@
+{
+  "name": "leave-pot-untouched",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/leave-pot-untouched",
+  "projectType": "application",
+  "implicitDependencies": ["leave-pot-untouched-e2e"],
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/leave-pot-untouched",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public/footer",
+            "output": "./footer"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/leave-pot-untouched"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "leave-pot-untouched:build",
+        "dev": true,
+        "port": 4322
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "leave-pot-untouched:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "leave-pot-untouched:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "leave-pot-untouched:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/leave-pot-untouched/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/leave-pot-untouched/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/leave-pot-untouched",
+        "forwardAllArgs": false
+      }
+    }
+  }
+}

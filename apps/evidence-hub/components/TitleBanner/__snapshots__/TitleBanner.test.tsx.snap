@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleBanner component renders correctly 1`] = `
+<div
+  class="bg-blue-700"
+  data-testid="title-banner"
+>
+  <div
+    class="container-auto max-w-[1272px] py-4"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold text-white"
+    >
+      TitleBanner
+    </h1>
+  </div>
+</div>
+`;

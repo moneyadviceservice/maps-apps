@@ -1,0 +1,84 @@
+{
+  "name": "pensions-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/pensions-dashboard",
+  "projectType": "application",
+  "implicitDependencies": ["pensions-dashboard-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/pensions-dashboard",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public",
+            "output": "./"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/pensions-dashboard"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pensions-dashboard:build",
+        "dev": true,
+        "port": 4100
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pensions-dashboard:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pensions-dashboard:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "pensions-dashboard:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/pensions-dashboard/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/pensions-dashboard/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/pensions-dashboard",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,237 @@
+{
+  "errorSummary": {
+    "title": "There is a problem",
+    "text": "It looks like you haven’t filled anything yet , Please enter the required information."
+  },
+  "income": {
+    "title": "Expected retirement income",
+    "description": "If you reached State Pension age before 6 April 2016, you need to claim the basic State Pension instead. If you're over 80, you might also be able to make a claim for the over 80 pension.",
+    "statePension": {
+      "title": "Your Income",
+      "netIncome": {
+        "title": "Income from work",
+        "moreInfo": "Net income information"
+      },
+      "stateBenefits": {
+        "title": "State Benefits",
+        "moreInfo": "State benefits information"
+      },
+      "statePension": {
+        "title": "State Pension",
+        "moreInfo": "State pension information"
+      }
+    },
+    "estimatedIncome": {
+      "title": "Estimated Retirement Income",
+      "description": "Use this section to combine your different pension pots and see how much income they may give you in retirement.",
+      "buttonLabel": "Add Pension Pot"
+    },
+    "additionalItems": {
+      "title": "Other additional retirement income"
+    }
+  },
+  "essentialOutgoings": {
+    "title": "Essential Outgoings",
+    "moreInfoTitle": "More information",
+    "housingCost": {
+      "title": "Housing costs",
+      "mortgageRepayment": {
+        "labelText": "Mortgage Repayment",
+        "moreInfo": "More information about housing costs"
+      },
+      "rent": {
+        "labelText": "Rent",
+        "moreInfo": "More information about rent"
+      },
+      "groundRent": {
+        "labelText": "Ground rent",
+        "moreInfo": "More information about ground rent"
+      },
+      "serviceCharge": {
+        "labelText": "Service charge",
+        "moreInfo": "More information about service charge"
+      }
+    },
+    "utilities": {
+      "title": "Utilities",
+      "councilTax": {
+        "labelText": "Council Tax",
+        "moreInfo": "More information about Council Tax"
+      },
+      "tvLicence": {
+        "labelText": "TV licence",
+        "moreInfo": "More information about TV licence"
+      },
+      "heating": {
+        "labelText": "Heating",
+        "moreInfo": "More information about heating"
+      },
+      "electric": {
+        "labelText": "Electric",
+        "moreInfo": "More information about electric"
+      },
+      "phone": {
+        "labelText": "Phone",
+        "moreInfo": "More information about phone"
+      },
+      "water": {
+        "labelText": "Water",
+        "moreInfo": "More information about water"
+      },
+      "internet": {
+        "labelText": "Internet",
+        "moreInfo": "More information about internet"
+      }
+    },
+    "travelCosts": {
+      "title": "Travel costs",
+      "publicTransport": {
+        "labelText": "Public transport",
+        "moreInfo": "More information about public transport"
+      },
+      "sessionTickets": {
+        "labelText": "Session tickets",
+        "moreInfo": "More information about session tickets"
+      },
+      "car": {
+        "labelText": "Car (lease costs/tax/insurance)",
+        "moreInfo": "More information about car costs"
+      },
+      "petrol": {
+        "labelText": "Petrol",
+        "moreInfo": "More information about petrol costs"
+      }
+    },
+    "lending": {
+      "title": "Lending",
+      "loans": {
+        "labelText": "Loan/credit cards",
+        "moreInfo": "More information about loan/credit card repayments"
+      },
+      "buyNowPayLater": {
+        "labelText": "Buy Now Pay Later",
+        "moreInfo": "More information about buy now pay later schemes"
+      }
+    },
+    "insurance": {
+      "title": "Insurance",
+      "homeContentInsurance": {
+        "labelText": "Home and Contents Insurance",
+        "moreInfo": "More information about home and contents insurance"
+      },
+      "lifeFuneralInsurance": {
+        "labelText": "Life and Funeral Insurance",
+        "moreInfo": "More information about life and funeral insurance"
+      },
+      "petInsurance": {
+        "labelText": "Pet Insurance",
+        "moreInfo": "More information about pet insurance"
+      }
+    },
+    "householdExpenses": {
+      "title": "Household expenses",
+      "food": {
+        "labelText": "Food",
+        "moreInfo": "More information about food costs"
+      },
+      "cleaning": {
+        "labelText": "Cleaning",
+        "moreInfo": "More information about cleaning costs"
+      },
+      "personalItems": {
+        "labelText": "Personal items",
+        "moreInfo": "More information about personal item costs"
+      }
+    },
+    "personal": {
+      "title": "Personal",
+      "medication": {
+        "labelText": "Medication",
+        "moreInfo": "More information about medication costs"
+      },
+      "pets": {
+        "labelText": "Pets",
+        "moreInfo": "More information about pet costs"
+      },
+      "otherPersonal": {
+        "labelText": "Other",
+        "moreInfo": "More information about other personal care"
+      }
+    },
+    "essentailsAdditionalItems": {
+      "title": "Your additional items"
+    }
+  },
+  "summaryTotal": {
+    "title": "Joint summary total (monthly)",
+    "income": "Retirement income",
+    "spending": "Your spending",
+    "balance": "Balance"
+  },
+  "aboutYou": {
+    "title": "About you",
+    "name": {
+      "labelText": "Edit name",
+      "editButton": "Done",
+      "editLink": "Edit name"
+    },
+    "dob": {
+      "labelText": "What is your date of birth?",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "gender": {
+      "labelText": "What is your gender?",
+      "male": "Male",
+      "female": "Female"
+    },
+    "retireAge": {
+      "labelText": "I would like to retire at the age of:",
+      "suffix": "years"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why do we need your date of birth and gender?",
+      "infoText": "To calculate your State Pension age "
+    },
+    "addPartner": {
+      "title": "Would you like to add someone else?",
+      "buttonLabel": "Add another person"
+    },
+    "removePartner": {
+      "buttonLabel": "Remove partner"
+    },
+    "errors": {
+      "name-generic": "Enter a valid name",
+      "dob-empty": "Enter a valid day, month and year",
+      "day-empty": "Enter a valid day",
+      "month-empty": "Enter a valid month",
+      "year-empty": "Enter a valid year",
+      "dob-age-range": "Your age must be between 18 and 74.",
+      "gender-generic": "Please enter your gender to continue.",
+      "retire-age-empty": "Your retire age can’t be blank",
+      "retire-age-range": "Your retirement age must be between 55 and 99."
+    }
+  },
+  "saveAndComeBack": {
+    "title": "Save and come back later",
+    "description": "Enter your email below and we’ll send you a link to access your saved progress. Use the link to return to your online appointment any time.",
+    "userEmailLabelText": "Your email address",
+    "partnerEmailLabelText": "Partner email address",
+    "emailHint": "We’ll only use this to send you a link to access your saved progress.",
+    "buttonLabel": "Save and send email",
+    "backButtonLink": "Back",
+    "errors": {
+      "email-generic": "Error: Enter an email address in the correct format, like name@example.com",
+      "email-error": "There was a problem sending the email, please try again."
+    }
+  },
+  "progressSaved": {
+    "title": "Progress saved",
+    "subtitle": "What happens next",
+    "description": "We’ve sent you an email. It’ll come from xxxx. Make sure to check your spam folder if you haven’t received it.",
+    "description2": "Click the link in the email to return to your Budget.",
+    "primaryButtonLabel": "Return to your budget planner",
+    "secondaryButtonLabel": "Resend email"
+  }
+}

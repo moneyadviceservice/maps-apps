@@ -1,0 +1,13 @@
+ <svg
+    width="8"
+    height="15"
+    viewBox="0 0 8 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+		aria-hidden="true"
+    >
+    <path
+      d="M2 0.5L8.74228e-08 2.5L3.9 6.4C4.5 7 4.5 7.9 3.9 8.5L5.24537e-07 12.5L2 14.5L6.2 10.3C7.8 8.7 7.8 6.2 6.2 4.6L2 0.5Z"
+      fill="#db7bb4 "
+    />
+  </svg>

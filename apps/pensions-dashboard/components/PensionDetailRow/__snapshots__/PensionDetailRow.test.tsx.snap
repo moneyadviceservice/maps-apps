@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailRow Component renders correctly 1`] = `
+<div>
+  <tr
+    class="max-md:block border-b-1 border-b-slate-400"
+  >
+    <td
+      class="text-left align-top font-bold pt-[10px] pb-[2px] md:pt-[14px] md:pb-4 max-md:block md:w-1/2 lg:w-2/5"
+    >
+      Test Heading
+    </td>
+    <td>
+      Test Content
+    </td>
+  </tr>
+</div>
+`;

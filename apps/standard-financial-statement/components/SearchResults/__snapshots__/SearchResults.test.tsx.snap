@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults component renders 0 results correctly 1`] = `
+<div
+  data-testid="search-results"
+>
+  <p
+    class="my-10"
+  >
+    You searched for
+     
+    <span
+      class="font-bold text-gray-500"
+    />
+     
+    and got
+     
+    <span
+      class="font-bold text-gray-500"
+    >
+      0
+       
+    </span>
+    <span>
+      result
+      .
+    </span>
+  </p>
+  <ul
+    class="max-w-[840px] mb-16"
+  />
+</div>
+`;
+
+exports[`SearchResults component renders 1 results correctly 1`] = `
+<div
+  data-testid="search-results"
+>
+  <p
+    class="my-10"
+  >
+    You searched for
+     
+    <span
+      class="font-bold text-gray-500"
+    />
+     
+    and got
+     
+    <span
+      class="font-bold text-gray-500"
+    >
+      1
+       
+    </span>
+    <span>
+      result
+      .
+    </span>
+  </p>
+  <ul
+    class="max-w-[840px] mb-16"
+  >
+    <li
+      class="pt-6 pb-7 border-t border-slate-400"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="mb-2 text-[22px] font-semibold text-magenta-800 underline hover:no-underline"
+          href="/test-link"
+        >
+          Test Title
+        </a>
+        <p
+          class="text-[18px] text-gray-500"
+        >
+          Test Description
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`SearchResults component renders 2 results correctly 1`] = `
+<div
+  data-testid="search-results"
+>
+  <p
+    class="my-10"
+  >
+    You searched for
+     
+    <span
+      class="font-bold text-gray-500"
+    />
+     
+    and got
+     
+    <span
+      class="font-bold text-gray-500"
+    >
+      2
+       
+    </span>
+    <span>
+      result
+      .
+    </span>
+  </p>
+  <ul
+    class="max-w-[840px] mb-16"
+  >
+    <li
+      class="pt-6 pb-7 border-t border-slate-400"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="mb-2 text-[22px] font-semibold text-magenta-800 underline hover:no-underline"
+          href="/test-link-1"
+        >
+          Test Title 1
+        </a>
+        <p
+          class="text-[18px] text-gray-500"
+        >
+          Test Description 1
+        </p>
+      </div>
+    </li>
+    <li
+      class="pt-6 pb-7 border-t border-slate-400"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="mb-2 text-[22px] font-semibold text-magenta-800 underline hover:no-underline"
+          href="/test-link-2"
+        >
+          Test Title 2
+        </a>
+        <p
+          class="text-[18px] text-gray-500"
+        >
+          Test Description 2
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`SearchResults component renders error excludedWords 1`] = `
+<div
+  data-testid="search-results"
+>
+  <p
+    class="my-10"
+  >
+    Your search term included common words that are not allowed to be searched.
+  </p>
+</div>
+`;
+
+exports[`SearchResults component renders error min length 1`] = `
+<div
+  data-testid="search-results"
+>
+  <p
+    class="my-10"
+  >
+    Search terms must be at least 3 characters in length.
+  </p>
+</div>
+`;

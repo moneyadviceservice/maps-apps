@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionsList renders correctly 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+    >
+      <span
+        class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </span>
+      State Pension
+    </li>
+    <li
+      class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+    >
+      <span
+        class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </span>
+      Your Pension DC Master Trust
+    </li>
+  </ul>
+</div>
+`;

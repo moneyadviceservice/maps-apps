@@ -1,0 +1,55 @@
+{
+  "name": "MaPS Monorepo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2.5.4": {
+      "installZsh": true,
+      "username": "node",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": false,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": false
+    }
+  },
+
+  "forwardPorts": [
+    4100, 4200, 4201, 4250, 4251, 4300, 4301, 4305, 4307, 4310, 4312, 4321,
+    4322, 4330, 4335, 4337, 4340, 4345, 4350, 4380, 4390, 4395, 4396, 4500, 6006
+  ],
+
+  "postCreateCommand": "sudo usermod -aG sudo node && echo 'node ALL=(ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/node && npm install && npm install -g nx@latest netlify-cli@latest",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "typescript.preferences.includePackageJsonAutoImports": "auto",
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      },
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+
+  "remoteUser": "node",
+
+  "containerEnv": {
+    "NODE_ENV": "development"
+  }
+}

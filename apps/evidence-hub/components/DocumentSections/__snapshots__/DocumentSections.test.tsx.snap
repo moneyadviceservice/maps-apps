@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentSections component renders correctly 1`] = `
+<div
+  class="mt-6 lg:mt-10"
+  data-testid="section"
+>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal pb-2"
+    data-testid="rich-text"
+  >
+    <h2
+      class="text-3xl md:text-5xl text-gray-800 font-bold mb-4"
+      id="test"
+    >
+      testid
+    </h2>
+    <h2
+      class="text-xl md:text-2xl text-gray-800 font-bold mt-10 mb-4"
+    >
+      testingheader
+    </h2>
+    <p
+      class="mb-4"
+      data-testid="paragraph"
+    >
+      test
+    </p>
+  </div>
+  <div
+    class="flex justify-start justify-items-start mb-4"
+  >
+    <div
+      class="flex items-start justify-start gap-2"
+    >
+      <a
+        class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-500 visited:text-magenta-500"
+        href="#top"
+      >
+        <svgr-mock
+          classname="text-magenta-500"
+        />
+        <span>
+          Back to top
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

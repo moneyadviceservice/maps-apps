@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component renders an empty table correctly 1`] = `
+<div
+  class="py-6"
+>
+  <table
+    class="table-auto w-full "
+  >
+    <thead>
+      <tr
+        class="border-b border-slate-400"
+      />
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Table component renders correctly as numeric variant 1`] = `
+<div
+  class="py-6"
+>
+  <table
+    class="table-auto w-full "
+  >
+    <thead>
+      <tr
+        class="border-b border-slate-400"
+      />
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 pl-[105px] xl:pl-[115px]"
+        >
+          Row 1, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 pl-[105px] xl:pl-[115px]"
+        >
+          Row 2, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 pl-[105px] xl:pl-[115px]"
+        >
+          Row 3, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table component renders correctly with title and data 1`] = `
+<div
+  class="py-6"
+>
+  <h6
+    class="text-base text-gray-800 font-bold text-left"
+  >
+    Sample Table
+  </h6>
+  <table
+    class="table-auto w-full mt-2"
+  >
+    <thead>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 1
+        </th>
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 2
+        </th>
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 3
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table component renders correctly without headings 1`] = `
+<div
+  class="py-6"
+>
+  <table
+    class="table-auto w-full "
+  >
+    <thead>
+      <tr
+        class="border-b border-slate-400"
+      />
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table component renders correctly without title 1`] = `
+<div
+  class="py-6"
+>
+  <table
+    class="table-auto w-full "
+  >
+    <thead>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 1
+        </th>
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 2
+        </th>
+        <th
+          class="py-2 pl-2 text-left "
+        >
+          Column 3
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 1, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 2, Col 3
+        </td>
+      </tr>
+      <tr
+        class="border-b border-slate-400"
+      >
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 1
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 2
+        </td>
+        <td
+          class="py-2 pl-2 "
+        >
+          Row 3, Col 3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation Component handles missing email gracefully 1`] = `
+<div
+  class="flex flex-col gap-8"
+>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold mb-4 text-white"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.callout.title
+    </h1>
+  </div>
+  <p
+    class="mb-2"
+    data-testid="paragraph"
+  >
+    Generic content
+  </p>
+  <div>
+    <h2
+      class="text-4xl md:text-6xl font-bold mb-4 text-blue-700"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.title
+    </h2>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-gray-800 mt-4 ml-8 obfuscate"
+        data-testid="confirmation-items"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            We’ll send you an email to  to confirm that we’ve received your enquiry
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            If you don’t get this email, check your spam or junk mail folder
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.confirmation.privacy-notice
+  </p>
+</div>
+`;
+
+exports[`Confirmation Component renders the component 1`] = `
+<div
+  class="flex flex-col gap-8"
+>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold mb-4 text-white"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.callout.title
+    </h1>
+  </div>
+  <p
+    class="mb-2"
+    data-testid="paragraph"
+  >
+    Generic content
+  </p>
+  <div>
+    <h2
+      class="text-4xl md:text-6xl font-bold mb-4 text-blue-700"
+      data-testid="confirmation-title"
+    >
+      components.confirmation.title
+    </h2>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-gray-800 mt-4 ml-8 obfuscate"
+        data-testid="confirmation-items"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            We’ll send you an email to test@example.com to confirm that we’ve received your enquiry
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4"
+            data-testid="paragraph"
+          >
+            If you don’t get this email, check your spam or junk mail folder
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p
+    class="mb-4"
+    data-testid="paragraph"
+  >
+    components.confirmation.privacy-notice
+  </p>
+</div>
+`;
