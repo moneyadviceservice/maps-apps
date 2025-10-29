@@ -1,0 +1,148 @@
+name: Run Tests
+
+on:
+  workflow_call:
+    inputs:
+      compareWithTargetBranch:
+        required: false
+        type: boolean
+      testtorun:
+        required: false
+        type: string
+      projectName:
+        required: true
+        type: string
+      context:
+        required: false
+        type: string
+      environment:
+        required: false
+        type: string
+      npm_config_cache:
+        required: false
+        type: string
+      testrunner:
+        required: false
+        type: string
+      environmentVariables:
+        required: false
+        type: string
+      customEnvironmentVariables:
+        required: false
+        type: string
+      AKS_SPN_ID:
+        required: true
+        type: string
+      AKS_SPN_KEY:
+        required: true
+        type: string
+      TENANT_ID:
+        required: true
+        type: string
+      NETLIFY_AUTH_TOKEN:
+        required: true
+        type: string
+
+jobs:
+  test_runs:
+    runs-on: ubuntu-latest
+    env:
+      AKS_SPN_ID: ${{ inputs.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ inputs.AKS_SPN_KEY }}
+      TENANT_ID: ${{ inputs.TENANT_ID }}
+      COMPARE_WITH_TARGET: ${{ inputs.compareWithTargetBranch }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} #built in 
+      TEST_TO_RUN: ${{ inputs.testtorun }}
+      GITHUB_PR_NUMBER: ${{ github.event.pull_request.number || '' }}
+      ENVIRONMENT: ${{ inputs.environment }}
+      CONTEXT: ${{ inputs.context }}
+      ENVIRONMENT_VARIABLES: ${{ inputs.environmentVariables }}
+      CUSTOM_ENV_VARS: ${{ inputs.customEnvironmentVariables }}
+      NETLIFY_AUTH_TOKEN: ${{ inputs.NETLIFY_AUTH_TOKEN }}
+      PROJECT_NAME: ${{ inputs.projectName }}
+      NPM_CACHE: ${{ github.workspace }}/.npm
+
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
+      
+      - name: 'Fetch branch to compare'
+        run: |
+          chmod +x netlify/github-scripts/shared/fetch-branch-to-compare.sh
+          ./netlify/github-scripts/shared/fetch-branch-to-compare.sh
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+      
+      - name: Install Dependencies
+        run: npm ci --prefer-offline --no-audit --cache=$NPM_CACHE
+      
+      - name: Set Pipeline Identifier
+        run: |
+          chmod +x netlify/github-scripts/run-tests/set-pipeline-identifier.sh
+          ./netlify/github-scripts/run-tests/set-pipeline-identifier.sh
+
+      - name: Match Netlify Site
+        run: |
+          chmod +x netlify/github-scripts/run-tests/match-site.sh
+          ./netlify/github-scripts/run-tests/match-site.sh
+      
+      - name: Install xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+      
+      - name: Run affected E2E tests
+        run: |
+          chmod +x netlify/github-scripts/run-tests/run-affected-e2e-tests.sh
+          ./netlify/github-scripts/run-tests/run-affected-e2e-tests.sh
+      
+      - name: Install Playwright Dependencies
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: npx playwright install-deps
+
+      - name: Check Playwright Report
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: | 
+          chmod +x netlify/github-scripts/run-tests/check-playwright-report.sh
+          ./netlify/github-scripts/run-tests/check-playwright-report.sh
+
+      - name: Ensure Storage Container Exists
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: | 
+          chmod +x netlify/github-scripts/run-tests/ensure-storage-container-exists.sh
+          ./netlify/github-scripts/run-tests/ensure-storage-container-exists.sh
+
+      - name: Upload Playwright Report and Generate SAS URL
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: | 
+          chmod +x netlify/github-scripts/run-tests/upload-playwright-report.sh
+          ./netlify/github-scripts/run-tests/upload-playwright-report.sh
+
+      - name: Post playwright report URL to Github Pull Request
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: | 
+          chmod +x netlify/github-scripts/run-tests/post-playwright-url-to-pr.sh
+          ./netlify/github-scripts/run-tests/post-playwright-url-to-pr.sh
+
+      - name: Cleanup Old Playwright Reports
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: | 
+          chmod +x netlify/github-scripts/run-tests/cleanup-old-playwright-reports.sh
+          ./netlify/github-scripts/run-tests/cleanup-old-playwright-reports.sh
+
+      - name: Print Playwright Report URL
+        if: ${{ inputs.testrunner == 'playwright' }}
+        run: echo "Playwright report available at: $PLAYWRIGHT_REPORT_URL"
+
+      - name: Fail pipeline if E2E tests failed
+        if: ${{ always() }}
+        run: |
+          chmod +x netlify/github-scripts/run-tests/fail-if-e2e-failed.sh
+          ./netlify/github-scripts/run-tests/fail-if-e2e-failed.sh

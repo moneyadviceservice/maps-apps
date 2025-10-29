@@ -1,0 +1,133 @@
+name: Test Affected Apps
+
+on:
+  workflow_call:
+    inputs:
+      compareWithTargetBranch:
+        required: false
+        type: boolean
+        default: false
+      envstodeploy:
+        required: true
+        type: string
+      context:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+
+jobs:
+  test-affected:
+    name: Run E2E tests for affected apps
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: baby-cost-calculator
+            test: baby-cost-calculator-e2e
+            runner: cypress
+          - name: baby-money-timeline
+            test: baby-money-timeline-e2e
+            runner: cypress
+          - name: pensionwise-triage
+            test: pensionwise-triage-e2e
+            runner: cypress
+          - name: pensionwise-appointment
+            test: pensionwise-appointment-e2e
+            runner: cypress
+          - name: adjustable-income-calculator
+            test: adjustable-income-calculator-e2e
+            runner: cypress
+          - name: budget-planner
+            test: budget-planner-e2e
+            runner: cypress
+          - name: cash-in-chunks
+            test: cash-in-chunks-e2e
+            runner: cypress
+          - name: moneyhelper-contact-forms
+            test: moneyhelper-contact-forms-e2e
+            runner: playwright
+          - name: compare-accounts
+            test: compare-accounts-e2e
+            runner: playwright
+          - name: credit-rejection
+            test: credit-rejection-e2e
+            runner: cypress
+          - name: guaranteed-income-estimator
+            test: guaranteed-income-estimator-e2e
+            runner: cypress
+          - name: leave-pot-untouched
+            test: leave-pot-untouched-e2e
+            runner: cypress
+          - name: moneyhelper-tools
+            test: moneyhelper-tools-pension-type-e2e
+            runner: cypress
+          - name: moneyhelper-tools
+            test: moneyhelper-tools-workplace-pension-calculator-e2e
+            runner: cypress
+          - name: mortgage-calculator
+            test: mortgage-calculator-e2e
+            runner: cypress
+          - name: pensions-dashboard
+            test: pensions-dashboard-e2e
+            runner: playwright
+          - name: money-adviser-network
+            test: money-adviser-network-e2e
+            runner: cypress
+          - name: savings-calculator
+            test: savings-calculator-e2e
+            runner: cypress
+          - name: standard-financial-statement
+            test: standard-financial-statement-e2e
+            runner: playwright
+          - name: debt-advice-locator
+            test: debt-advice-locator-e2e
+            runner: cypress
+          - name: tools-index
+            test: tools-index-e2e
+            runner: cypress
+          - name: mortgage-affordability
+            test: mortgage-affordability-e2e
+            runner: cypress
+          - name: redundancy-pay-calculator
+            test: redundancy-pay-calculator-e2e
+            runner: cypress
+          - name: retirement-budget-planner
+            test: retirement-budget-planner-e2e
+            runner: cypress
+          - name: take-whole-pot
+            test: take-whole-pot-e2e
+            runner: cypress
+          - name: stamp-duty-calculator
+            test: stamp-duty-calculator-e2e
+            runner: cypress
+          - name: credit-options
+            test: credit-options-e2e
+            runner: cypress
+          - name: evidence-hub
+            test: evidence-hub-e2e
+            runner: playwright
+          - name: midlife-mot
+            test: midlife-mot-e2e
+            runner: cypress
+          - name: salary-calculator
+            test: salary-calculator-e2e
+            runner: playwright
+
+    if: contains(inputs.envstodeploy, matrix.name)
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run tests for ${{ matrix.name }}
+        uses: moneyadviceservice/maps-apps/.github/workflows/run-tests.yml@main
+        with:
+          compareWithTargetBranch: ${{ inputs.compareWithTargetBranch }}
+          testtorun: ${{ matrix.test }}
+          projectName: ${{ matrix.name }}
+          context: ${{ inputs.context }}
+          environment: ${{ inputs.environment }}
+          testrunner: ${{ matrix.runner }}

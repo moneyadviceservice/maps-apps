@@ -1,0 +1,114 @@
+name: Analyze Code
+
+on:
+  workflow_call:
+    inputs:
+      SONARCLOUD_NAME:
+        required: true
+        type: string
+      SONARCLOUD_ORGANISATION:
+        required: true
+        type: string
+      SONARCLOUD_PROJECTKEY:
+        required: true
+        type: string
+      SONARCLOUD_PROJECTNAME:
+        required: true
+        type: string
+      compareWithTargetBranch:
+        required: true
+        type: boolean
+      keyvaultname:
+        required: true
+        type: string
+      AKS_SPN_ID:
+        required: true
+        type: string
+      AKS_SPN_KEY:
+        required: true
+        type: string
+      TENANT_ID:
+        required: true
+        type: string
+
+jobs:
+  code_analysis:
+    runs-on: ubuntu-latest
+    env:
+      KEYVAULT_NAME: ${{ inputs.keyvaultname }}
+      AKS_SPN_ID: ${{ inputs.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ inputs.AKS_SPN_KEY }}
+      TENANT_ID: ${{ inputs.TENANT_ID }}
+      COMPARE_WITH_TARGET: ${{ inputs.compareWithTargetBranch }}
+      RUN_ALL_SONAR: ${{ inputs.RUN_ALL_SONAR }}
+      NPM_CACHE: ${{ github.workspace }}/.npm
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci --prefer-offline --no-audit --cache=$NPM_CACHE
+
+      - name: Install the Azure CLI
+      - uses: azure/setup-azure-cli@v3
+        with:
+          version: '2.70.0'
+      
+      - name: Determine Sonar Scope
+        run: |
+          chmod +x netlify/github-scripts/shared/determine-sonar-scope.sh
+          ./netlify/github-scripts/shared/determine-sonar-scope.sh
+      
+      - name: Set Sonar Scope
+        run: |
+          chmod +x netlify/github-scripts/shared/set-sonar-scope.sh
+          ./netlify/github-scripts/shared/set-sonar-scope.sh
+
+      - name: Fetch branch to compare
+        run: |
+          chmod +x netlify/github-scripts/shared/fetch-branch-to-compare.sh
+          ./netlify/github-scripts/shared/fetch-branch-to-compare.sh
+
+      - name: Export Environment variables from Key Vault
+        run: |
+          chmod +x netlify/github-scripts/shared/export-env-var-keyvault.sh
+          ./netlify/github-scripts/shared/export-env-var-keyvault.sh
+
+      - name: Run lint checks
+        run: |
+          chmod +x netlify/github-scripts/shared/run-lint-checks.sh
+          ./netlify/github-scripts/shared/run-lint-checks.sh
+      
+      - name: Run typecheck
+        run: |
+          chmod +x netlify/github-scripts/shared/run-typecheck.sh
+          ./netlify/github-scripts/shared/run-typecheck.sh
+
+      - name: Run unit tests with nx and coverage flag
+        run: |
+          chmod +x netlify/github-scripts/shared/run-unit-tests.sh
+          ./netlify/github-scripts/shared/run-unit-tests.sh
+
+      - name: Check and Merge Coverage Report
+        run: |
+          chmod +x netlify/github-scripts/shared/check-and-merge-report.sh
+          ./netlify/github-scripts/shared/check-and-merge-report.sh
+      
+      - name: Run SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectBaseDir: .
+          args: >
+            -Dproject.settings=./sonarqube/sonar-project.properties
+            -Dsonar.qualitygate.wait=true

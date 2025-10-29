@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+      - 'feature/*'
+      - 'release/*'
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  determine_affected:
+      name: Determine Affected Apps
+      runs-on: ubuntu-latest
+      outputs:
+        envstodeploy: ${{ steps.determine.outputs.envstodeploy }}
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          clean: true
+          persist-credentials: true
+          fetch-depth: 0
+      
+      - name: Echo Parameters
+        run: |
+          echo "the params are build_id: $GITHUB_RUN_ID, source_version: $GITHUB_SHA, tag: dev-$GITHUB_RUN_ID"
+  
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci --prefer-offline --no-audit --cache=$NPM_CACHE
+
+      - name: Run E2E Runner Script
+        run: |
+          chmod +x netlify/github-scripts/shared/run-all-e2e-mark-checker.sh
+          ./netlify/github-scripts/shared/run-all-e2e-mark-checker.sh 
+
+      - name: Determine Affected
+        id: determine
+        run: |
+          chmod +x netlify/github-scripts/shared/determine-affected-projects.sh
+          ./netlify/github-scripts/shared/determine-affected-projects.sh
+
+  code_analysis:
+    name: Analyse Code
+    uses: moneyadviceservice/maps-apps/.github/workflows/analyze-code.yml@main
+    with:
+      SONARCLOUD_NAME: 'MAPS-SonarCloud'
+      SONARCLOUD_ORGANISATION: ${{ secrets.ORGANISATION_KEY }}
+      SONARCLOUD_PROJECTKEY: ${{ secrets.PROJECT_KEY }}
+      SONARCLOUD_PROJECTNAME: 'maps-apps'
+      compareWithTargetBranch: false
+      keyvaultname: MapsAppsDev
+      AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
+
+  test:
+    name: Test Affected Apps
+    runs-on: ubuntu-latest
+    needs: determine_affected
+    uses: moneyadviceservice/maps-apps/.github/workflows/test-affected.yml@main
+    with:
+      compareWithTargetBranch: false
+      envstodeploy: ${{ needs.determine_affected.outputs.envstodeploy }}
+      context: deploy-preview
+      environment: develop
+      AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
