@@ -48,7 +48,7 @@ jobs:
 
   code_analysis:
     name: Analyse Code
-    uses: moneyadviceservice/maps-apps/.github/workflows/analyze-code.yml@main
+    uses: moneyadviceservice/maps-apps/.github/workflows/analyze-code-gh.yml@main
     with:
       SONARCLOUD_NAME: 'MAPS-SonarCloud'
       SONARCLOUD_ORGANISATION: ${{ vars.ORGANISATION_KEY }}
@@ -63,7 +63,7 @@ jobs:
   test:
     name: Test Affected Apps
     needs: determine_affected
-    uses: moneyadviceservice/maps-apps/.github/workflows/test-affected.yml@main
+    uses: moneyadviceservice/maps-apps/.github/workflows/test-affected-gh.yml@main
     with:
       compareWithTargetBranch: false
       envstodeploy: ${{ needs.determine_affected.outputs.envstodeploy }}
