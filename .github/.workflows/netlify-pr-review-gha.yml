@@ -62,7 +62,6 @@ jobs:
 
   test:
     name: Test Affected Apps
-    runs-on: ubuntu-latest
     needs: determine_affected
     uses: moneyadviceservice/maps-apps/.github/workflows/test-affected.yml@main
     with:
