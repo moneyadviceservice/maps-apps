@@ -21,6 +21,7 @@ on:
       keyvaultname:
         required: true
         type: string
+    secrets:
       AKS_SPN_ID:
         required: true
         type: string
@@ -30,15 +31,18 @@ on:
       TENANT_ID:
         required: true
         type: string
+      SONAR_TOKEN:
+        required: true
+        type: string
 
 jobs:
   code_analysis:
     runs-on: ubuntu-latest
     env:
       KEYVAULT_NAME: ${{ inputs.keyvaultname }}
-      AKS_SPN_ID: ${{ inputs.AKS_SPN_ID }}
-      AKS_SPN_KEY: ${{ inputs.AKS_SPN_KEY }}
-      TENANT_ID: ${{ inputs.TENANT_ID }}
+      AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
       COMPARE_WITH_TARGET: ${{ inputs.compareWithTargetBranch }}
       RUN_ALL_SONAR: ${{ inputs.RUN_ALL_SONAR }}
       NPM_CACHE: ${{ github.workspace }}/.npm
