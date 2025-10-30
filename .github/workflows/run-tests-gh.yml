@@ -139,7 +139,8 @@ jobs:
 
       - name: Print Playwright Report URL
         if: ${{ inputs.testrunner == 'playwright' }}
-        run: echo "Playwright report available at: $PLAYWRIGHT_REPORT_URL"
+        run: |
+          echo "Playwright report available at: $PLAYWRIGHT_REPORT_URL"
 
       - name: Fail pipeline if E2E tests failed
         if: ${{ always() }}
