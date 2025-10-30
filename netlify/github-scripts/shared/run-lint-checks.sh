@@ -2,7 +2,7 @@
 set -eu
 
 # Convert template parameter to Bash variable
-COMPARE_WITH_TARGET="${COMPARE_WITH_TARGET_ENV,,}"  # lowercase
+COMPARE_WITH_TARGET="${COMPARE_WITH_TARGET,,}"  # lowercase
 echo "COMPARE_WITH_TARGET = '$COMPARE_WITH_TARGET'"
 echo "runAll= '$RUN_ALL'"
 
