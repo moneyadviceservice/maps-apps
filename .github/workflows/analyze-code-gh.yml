@@ -57,11 +57,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci --prefer-offline --no-audit --cache=$NPM_CACHE
-
-      - name: Install the Azure CLI
-      - uses: azure/setup-azure-cli@v3
-        with:
-          version: '2.70.0'
       
       - name: Determine Sonar Scope
         run: |
