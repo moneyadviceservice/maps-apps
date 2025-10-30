@@ -1,3 +1,22 @@
+name: Test Affected Apps
+
+on:
+  workflow_call:
+    inputs:
+      compareWithTargetBranch:
+        required: false
+        type: boolean
+        default: false
+      envstodeploy:
+        required: true
+        type: string
+      context:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+
 jobs:
   determine-affected:
     runs-on: ubuntu-latest
@@ -62,6 +81,7 @@ jobs:
       testrunner: ${{ matrix.runner }}
       context: ${{ inputs.context }}
       environment: ${{ inputs.environment }}
+      compareWithTargetBranch: ${{ inputs.compareWithTargetBranch }}
     secrets:
       AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
       AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
