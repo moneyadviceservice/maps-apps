@@ -16,22 +16,17 @@ on:
       environment:
         required: true
         type: string
-      NETLIFY_AUTH_TOKEN:
-        required: true
-        type: string
     secrets:
       AKS_SPN_ID:
         required: true
-        type: string
       AKS_SPN_KEY:
         required: true
-        type: string
       TENANT_ID:
         required: true
-        type: string
       SONAR_TOKEN:
         required: true
-        type: string
+      NETLIFY_AUTH_TOKEN:
+        required: true
 
 jobs:
   test-affected:
@@ -147,10 +142,11 @@ jobs:
           context: ${{ inputs.context }}
           environment: ${{ inputs.environment }}
           testrunner: ${{ matrix.runner }}
-          NETLIFY_AUTH_TOKEN: ${{ inputs.NETLIFY_AUTH_TOKEN }}
         secrets:
           AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
           AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
           TENANT_ID: ${{ secrets.TENANT_ID }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
 

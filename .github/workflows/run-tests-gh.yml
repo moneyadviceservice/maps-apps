@@ -32,22 +32,17 @@ on:
         required: false
         type: string
         default: ''
-      NETLIFY_AUTH_TOKEN:
-        required: true
-        type: string
     secrets:
       AKS_SPN_ID:
         required: true
-        type: string
       AKS_SPN_KEY:
         required: true
-        type: string
       TENANT_ID:
         required: true
-        type: string
       SONAR_TOKEN:
         required: true
-        type: string
+      NETLIFY_AUTH_TOKEN:
+        required: true
 
 jobs:
   test_runs:
@@ -61,7 +56,7 @@ jobs:
       CONTEXT: ${{ inputs.context }}
       ENVIRONMENT_VARIABLES: ${{ inputs.environmentVariables }}
       CUSTOM_ENV_VARS: ${{ inputs.customEnvironmentVariables }}
-      NETLIFY_AUTH_TOKEN: ${{ inputs.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       PROJECT_NAME: ${{ inputs.projectName }}
       NPM_CACHE: ${{ github.workspace }}/.npm
       AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
