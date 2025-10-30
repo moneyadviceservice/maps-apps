@@ -29,9 +29,9 @@ on:
         required: true
 
 jobs:
-  test-affected:
-    name: Run E2E tests for affected apps
-    runs-on: ubuntu-latest
+  run-tests:
+    name: Run tests for affected apps
+    if: contains(fromJson(inputs.envstodeploy), matrix.name)
     strategy:
       fail-fast: false
       matrix:
@@ -127,26 +127,17 @@ jobs:
             test: salary-calculator-e2e
             runner: playwright
 
-    if: contains(inputs.envstodeploy, matrix.name)
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Run tests for ${{ matrix.name }}
-        uses: moneyadviceservice/maps-apps/.github/workflows/run-tests-gh.yml@main
-        with:
-          compareWithTargetBranch: ${{ inputs.compareWithTargetBranch }}
-          testtorun: ${{ matrix.test }}
-          projectName: ${{ matrix.name }}
-          context: ${{ inputs.context }}
-          environment: ${{ inputs.environment }}
-          testrunner: ${{ matrix.runner }}
-        secrets:
-          AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
-          AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
-          TENANT_ID: ${{ secrets.TENANT_ID }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
-
+    uses: moneyadviceservice/maps-apps/.github/workflows/run-tests-gh.yml@main
+    with:
+      compareWithTargetBranch: ${{ inputs.compareWithTargetBranch }}
+      testtorun: ${{ matrix.test }}
+      projectName: ${{ matrix.name }}
+      context: ${{ inputs.context }}
+      environment: ${{ inputs.environment }}
+      testrunner: ${{ matrix.runner }}
+    secrets:
+      AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
+      AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
