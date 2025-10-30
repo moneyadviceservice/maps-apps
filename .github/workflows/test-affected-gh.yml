@@ -16,6 +16,15 @@ on:
       environment:
         required: true
         type: string
+    secrets:
+      AKS_SPN_ID:
+        required: true
+      AKS_SPN_KEY:
+        required: true
+      TENANT_ID:
+        required: true
+      NETLIFY_AUTH_TOKEN:
+        required: true
 
 jobs:
   determine-affected:
@@ -86,5 +95,4 @@ jobs:
       AKS_SPN_ID: ${{ secrets.AKS_SPN_ID }}
       AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
       TENANT_ID: ${{ secrets.TENANT_ID }}
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

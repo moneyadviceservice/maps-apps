@@ -39,8 +39,6 @@ on:
         required: true
       TENANT_ID:
         required: true
-      SONAR_TOKEN:
-        required: true
       NETLIFY_AUTH_TOKEN:
         required: true
 
