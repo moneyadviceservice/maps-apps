@@ -60,13 +60,13 @@ jobs:
       
       - name: Determine Sonar Scope
         run: |
-          chmod +x netlify/github-scripts/shared/determine-sonar-scope.sh
-          ./netlify/github-scripts/shared/determine-sonar-scope.sh
+          chmod +x netlify/github-scripts/sonar/determine-sonar-scope.sh
+          ./netlify/github-scripts/sonar/determine-sonar-scope.sh
       
       - name: Set Sonar Scope
         run: |
-          chmod +x netlify/github-scripts/shared/set-sonar-scope.sh
-          ./netlify/github-scripts/shared/set-sonar-scope.sh
+          chmod +x netlify/github-scripts/sonar/set-sonar-scope.sh
+          ./netlify/github-scripts/sonar/set-sonar-scope.sh
 
       - name: Fetch branch to compare
         run: |
