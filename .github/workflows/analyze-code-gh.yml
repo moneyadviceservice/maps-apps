@@ -40,7 +40,6 @@ jobs:
       AKS_SPN_KEY: ${{ secrets.AKS_SPN_KEY }}
       TENANT_ID: ${{ secrets.TENANT_ID }}
       COMPARE_WITH_TARGET: ${{ inputs.compareWithTargetBranch }}
-      RUN_ALL_SONAR: ${{ inputs.RUN_ALL_SONAR }}
       NPM_CACHE: ${{ github.workspace }}/.npm
 
     steps:
