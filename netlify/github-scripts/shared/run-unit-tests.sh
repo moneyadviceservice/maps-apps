@@ -2,7 +2,7 @@
 set -eu
 
 # Convert template parameter to Bash variable
-COMPARE_WITH_TARGET="${COMPARE_WITH_TARGET_ENV,,}"  # lowercase
+COMPARE_WITH_TARGET="${COMPARE_WITH_TARGET,,}"  # lowercase
 echo "runAll= '$RUN_ALL_SONAR'"
 
 if [ "$COMPARE_WITH_TARGET" = "true" ] || [ "$RUN_ALL_SONAR" = "true" ]; then
