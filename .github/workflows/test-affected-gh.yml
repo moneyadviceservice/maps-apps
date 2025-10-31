@@ -74,7 +74,7 @@ jobs:
           targets=$(echo "${{ inputs.envstodeploy }}" | jq -R -s 'split("\n") | map(select(length > 0))')
 
           # Filter matrix
-          filtered=$(echo "$matrix" | jq --argjson targets "$targets" '[.[] | select($targets | index(.name))]')
+          filtered=$(echo "$matrix" | jq --argjson targets "$targets" '[.[] | select(.name as $n | $targets | index($n))]')
 
           # Output matrix for next job
           echo "matrix={\"include\":$filtered}" >> $GITHUB_OUTPUT
