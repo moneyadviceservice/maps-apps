@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentMetaGrid renders all four columns when data is present 1`] = `
+<div>
+  <div
+    class="grid-cols-1 sm:grid-cols-4 grid text-sm text-gray-700 py-2 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-200"
+  >
+    <div
+      class="sm:px-2 pt-2 pb-7"
+    >
+      <p
+        class="mb-2 font-semibold"
+      >
+        Evidence type
+      </p>
+      <div
+        class="pl-2"
+      >
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+            start="-1"
+          >
+            <li>
+              Page Report
+            </li>
+            <li>
+              Data Report
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:px-2 pt-2 pb-7"
+    >
+      <p
+        class="mb-2 font-semibold"
+      >
+        Topics
+      </p>
+      <div
+        class="pl-2"
+      >
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+            start="-1"
+          >
+            <li>
+              Health
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:px-2 pt-2 pb-7"
+    >
+      <p
+        class="mb-2 font-semibold"
+      >
+        Country
+      </p>
+      <div
+        class="pl-2"
+      >
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+            start="-1"
+          >
+            <li>
+              USA
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:px-2 pt-2 pb-7"
+    >
+      <p
+        class="mb-2 font-semibold"
+      >
+        Population Group
+      </p>
+      <div
+        class="pl-2"
+      >
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pl-4"
+            start="-1"
+          >
+            <li>
+              Adults
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

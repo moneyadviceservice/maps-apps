@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Usage Usage in read mode matches snapshot 1`] = `
+<div>
+  <div
+    class="w-full"
+  >
+    <div
+      class=" w-full px-6 py-3 bg-slate-200 lg:grid lg:grid-cols-2 border-b border-slate-300 rounded-t-md p-0"
+    >
+      SFS Usage
+    </div>
+    <div
+      class="p-6"
+    >
+      <div
+        class="mb-6"
+      >
+        <p
+          class="break-words text-gray-450 mb-0"
+          data-testid="paragraph"
+        >
+          Intended use of SFS
+        </p>
+        <p
+          class="mb-4 break-words font-bold"
+          data-testid="usage-intended"
+        >
+          To support debt advice processes.
+        </p>
+      </div>
+      <div
+        class="mb-6"
+      >
+        <p
+          class="break-words text-gray-450 mb-0"
+          data-testid="paragraph"
+        >
+          How do you deliver debt advice?
+        </p>
+        <p
+          class="mb-4 break-words font-bold flex"
+          data-testid="usage-delivery-channel"
+        >
+          <span
+            class="mb-0 mr-4"
+          >
+            <span
+              data-testid="mock-icon"
+            />
+            <span
+              class="ml-2"
+            >
+              Online
+            </span>
+          </span>
+          <span
+            class="mb-0 mr-4"
+          >
+            <span
+              data-testid="mock-icon"
+            />
+            <span
+              class="ml-2"
+            >
+              Phone
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        class="mb-6"
+      >
+        <p
+          class="break-words text-gray-450 mb-0"
+          data-testid="paragraph"
+        >
+          SFS Launch date (or estimated launch date)
+        </p>
+        <p
+          class="mb-4 break-words font-bold"
+          data-testid="usage-launch-date"
+        >
+          01/01/2025
+        </p>
+      </div>
+      <div
+        class="mb-6"
+      >
+        <p
+          class="break-words text-gray-450 mb-0"
+          data-testid="paragraph"
+        >
+          Case management software used
+        </p>
+        <p
+          class="mb-4 break-words font-bold"
+          data-testid="usage-software"
+        >
+          AdvicePro
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

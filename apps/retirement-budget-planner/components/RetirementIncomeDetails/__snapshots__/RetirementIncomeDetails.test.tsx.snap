@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Retirement income component should render the component 1`] = `
+<div>
+  <div
+    class="space-y-6 md:space-y-14"
+  >
+    <div
+      class="p-1.5 md:p-0 rounded-bl-3xl"
+    >
+      <input
+        name="partnerIndex"
+        type="hidden"
+        value="p1"
+      />
+      <h4
+        class="text-xl md:text-2xl font-bold text-magenta-500"
+      >
+        Partner 1
+      </h4>
+      <div
+        class="text-2xl font-bold no-underline"
+      >
+        <details
+          class="group border-t-1 mb-[-1px] border-slate-400 tool-collapse border-b-0"
+          data-testid="expandable-section"
+          open=""
+        >
+          <summary
+            class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+          >
+            <svgr-mock
+              classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+            />
+            <div
+              class="block"
+              data-testid="summary-block-title"
+            >
+              State pension title
+            </div>
+          </summary>
+          <div
+            class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+          >
+            <p
+              class="mb-4 break-words font-normal"
+              data-testid="paragraph"
+            >
+              <p>
+                State pension
+                 description
+              </p>
+            </p>
+            <div
+              class="space-y-5"
+            >
+              <div
+                class="flex gap-6 justify-items-end font-normal"
+              >
+                <div
+                  class="space-y-2"
+                >
+                  <div
+                    class="flex flex-col space-y-2"
+                  >
+                    <div
+                      class="flex gap-6"
+                    >
+                      <div
+                        class="flex"
+                      >
+                        <div
+                          class="relative"
+                        >
+                          <input
+                            class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                            data-testid="statePensionId"
+                            id=":r0:"
+                            inputmode="numeric"
+                            name="statePension"
+                            type="text"
+                            value="0"
+                          />
+                          <span
+                            aria-hidden="true"
+                            class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                          >
+                            £
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                      >
+                        <span
+                          class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                        >
+                          <svgr-mock
+                            classname="h-full"
+                          />
+                        </span>
+                        <select
+                          class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                          data-testid="statePensionFrequency"
+                          name="statePensionFrequency"
+                        >
+                          <option
+                            value="day"
+                          >
+                            Per day
+                          </option>
+                          <option
+                            value="week"
+                          >
+                            Per week
+                          </option>
+                          <option
+                            value="twoweeks"
+                          >
+                            Per 2 weeks
+                          </option>
+                          <option
+                            value="fourweeks"
+                          >
+                            Per 4 weeks
+                          </option>
+                          <option
+                            value="month"
+                          >
+                            Per month
+                          </option>
+                          <option
+                            value="quarter"
+                          >
+                            Per quarter
+                          </option>
+                          <option
+                            value="sixmonths"
+                          >
+                            Per 6 months
+                          </option>
+                          <option
+                            value="year"
+                          >
+                            Per year
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div
+        class="text-2xl font-bold no-underline"
+      >
+        <details
+          class="group border-t-1 mb-[-1px] border-slate-400 tool-expand border-b-0"
+          data-testid="expandable-section"
+        >
+          <summary
+            class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+          >
+            <svgr-mock
+              classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+            />
+            <div
+              class="block"
+              data-testid="summary-block-title"
+            >
+              Benefits pension title
+            </div>
+          </summary>
+          <div
+            class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+          >
+            <p
+              class="mb-4 break-words font-normal"
+              data-testid="paragraph"
+            >
+              <p>
+                Benefits pension
+                 description
+              </p>
+            </p>
+            <div
+              class="space-y-5"
+            >
+              <div
+                class="flex gap-6 justify-items-end font-normal"
+              >
+                <div
+                  class="space-y-2"
+                >
+                  <div
+                    class="flex flex-col space-y-2"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="px-3 m-px h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full mb-4"
+                      data-testid="benefitPensionLabel"
+                      id="benefitPensionLabel"
+                      name="benefitPensionLabel"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="flex gap-6"
+                    >
+                      <div
+                        class="flex"
+                      >
+                        <div
+                          class="relative"
+                        >
+                          <input
+                            class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                            data-testid="benefitPensionId"
+                            id=":r1:"
+                            inputmode="numeric"
+                            name="benefitPension"
+                            type="text"
+                            value="0"
+                          />
+                          <span
+                            aria-hidden="true"
+                            class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                          >
+                            £
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                      >
+                        <span
+                          class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                        >
+                          <svgr-mock
+                            classname="h-full"
+                          />
+                        </span>
+                        <select
+                          class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                          data-testid="benefitPensionFrequency"
+                          name="benefitPensionFrequency"
+                        >
+                          <option
+                            value="day"
+                          >
+                            Per day
+                          </option>
+                          <option
+                            value="week"
+                          >
+                            Per week
+                          </option>
+                          <option
+                            value="twoweeks"
+                          >
+                            Per 2 weeks
+                          </option>
+                          <option
+                            value="fourweeks"
+                          >
+                            Per 4 weeks
+                          </option>
+                          <option
+                            value="month"
+                          >
+                            Per month
+                          </option>
+                          <option
+                            value="quarter"
+                          >
+                            Per quarter
+                          </option>
+                          <option
+                            value="sixmonths"
+                          >
+                            Per 6 months
+                          </option>
+                          <option
+                            value="year"
+                          >
+                            Per year
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex gap-6 justify-items-end font-normal"
+              >
+                <div
+                  class="space-y-2"
+                >
+                  <div
+                    class="flex flex-col space-y-2"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="px-3 m-px h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full mb-4"
+                      data-testid="benefitPensionLabel1"
+                      id="benefitPensionLabel1"
+                      name="benefitPensionLabel1"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="flex gap-6"
+                    >
+                      <div
+                        class="flex"
+                      >
+                        <div
+                          class="relative"
+                        >
+                          <input
+                            class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                            data-testid="benefitPension1Id"
+                            id=":r2:"
+                            inputmode="numeric"
+                            name="benefitPension1"
+                            type="text"
+                            value="0"
+                          />
+                          <span
+                            aria-hidden="true"
+                            class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                          >
+                            £
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                      >
+                        <span
+                          class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                        >
+                          <svgr-mock
+                            classname="h-full"
+                          />
+                        </span>
+                        <select
+                          class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                          data-testid="benefitPensionFrequency1"
+                          name="benefitPensionFrequency1"
+                        >
+                          <option
+                            value="day"
+                          >
+                            Per day
+                          </option>
+                          <option
+                            value="week"
+                          >
+                            Per week
+                          </option>
+                          <option
+                            value="twoweeks"
+                          >
+                            Per 2 weeks
+                          </option>
+                          <option
+                            value="fourweeks"
+                          >
+                            Per 4 weeks
+                          </option>
+                          <option
+                            value="month"
+                          >
+                            Per month
+                          </option>
+                          <option
+                            value="quarter"
+                          >
+                            Per quarter
+                          </option>
+                          <option
+                            value="sixmonths"
+                          >
+                            Per 6 months
+                          </option>
+                          <option
+                            value="year"
+                          >
+                            Per year
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  name="itemIndex"
+                  type="hidden"
+                  value="1"
+                />
+                <button
+                  class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button self-end"
+                  formaction="/api/remove-fields?sectionName=benefitPension&id=1&sessionId=AUHJK"
+                  type="submit"
+                >
+                  <span />
+                  Remove
+                  <span />
+                </button>
+              </div>
+            </div>
+            <button
+              class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-5 hidden"
+              formaction="/api/add-fields?sectionName=benefitPension&sessionId=AUHJK"
+              type="submit"
+            >
+              <span />
+              Add pension pot
+              <span />
+            </button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+`;

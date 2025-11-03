@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RealTimeSummary component renders correctly 1`] = `
+<div
+  data-testid="real-time-summary"
+  role="status"
+>
+  <div
+    class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pb-4"
+  >
+    <div
+      class="flex items-center justify-center px-1 py-4 text-center md:flex-col lg:flex-row print:text-left print:p-2"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Your progress
+      </h3>
+      <span
+        class="ml-1 text-lg"
+      >
+        (monthly)
+      </span>
+    </div>
+    <table
+      class="w-full border-collapse"
+    >
+      <thead
+        class="sr-only"
+      >
+        <tr>
+          <th
+            class="hidden"
+          />
+          <th>
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="flex flex-col mx-1"
+      >
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Income
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,000
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spending
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £2,200
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spare cash
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £1,800
+            </b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`RealTimeSummary component should render summary total column in green background colour when is positive number 1`] = `
+<div
+  data-testid="real-time-summary"
+  role="status"
+>
+  <div
+    class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pb-4"
+  >
+    <div
+      class="flex items-center justify-center px-1 py-4 text-center md:flex-col lg:flex-row print:text-left print:p-2"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Your progress
+      </h3>
+      <span
+        class="ml-1 text-lg"
+      >
+        (monthly)
+      </span>
+    </div>
+    <table
+      class="w-full border-collapse"
+    >
+      <thead
+        class="sr-only"
+      >
+        <tr>
+          <th
+            class="hidden"
+          />
+          <th>
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="flex flex-col mx-1"
+      >
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Income
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,000
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spending
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £2,200
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-green-700 text-white"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spare cash
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £1,800
+            </b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`RealTimeSummary component should render summary total column in grey background colour when is balance 1`] = `
+<div
+  data-testid="real-time-summary"
+  role="status"
+>
+  <div
+    class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pb-4"
+  >
+    <div
+      class="flex items-center justify-center px-1 py-4 text-center md:flex-col lg:flex-row print:text-left print:p-2"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Your progress
+      </h3>
+      <span
+        class="ml-1 text-lg"
+      >
+        (monthly)
+      </span>
+    </div>
+    <table
+      class="w-full border-collapse"
+    >
+      <thead
+        class="sr-only"
+      >
+        <tr>
+          <th
+            class="hidden"
+          />
+          <th>
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="flex flex-col mx-1"
+      >
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Income
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,000
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spending
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,000
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-slate-600 text-white"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Balance
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £0
+            </b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`RealTimeSummary component should render summary total column in red background colour when is negative number 1`] = `
+<div
+  data-testid="real-time-summary"
+  role="status"
+>
+  <div
+    class="flex flex-col print:border-none border border-slate-400 rounded-[4px] px-1 pb-4"
+  >
+    <div
+      class="flex items-center justify-center px-1 py-4 text-center md:flex-col lg:flex-row print:text-left print:p-2"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+      >
+        Your progress
+      </h3>
+      <span
+        class="ml-1 text-lg"
+      >
+        (monthly)
+      </span>
+    </div>
+    <table
+      class="w-full border-collapse"
+    >
+      <thead
+        class="sr-only"
+      >
+        <tr>
+          <th
+            class="hidden"
+          />
+          <th>
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="flex flex-col mx-1"
+      >
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Income
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,000
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-gray-100"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Spending
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £4,060
+            </b>
+          </td>
+        </tr>
+        <tr
+          class="flex justify-between print:border-none border w-full h-full rounded-[4px] mb-2 py-5 px-4 bg-red-600 text-white"
+          data-testid="summary-total-item-value"
+        >
+          <th
+            class="text-lg font-normal"
+          >
+            Overspend
+          </th>
+          <td
+            class="text-md"
+            data-testid="item-value"
+          >
+            <b>
+              £60
+            </b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

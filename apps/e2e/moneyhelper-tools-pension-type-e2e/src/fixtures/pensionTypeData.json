@@ -1,0 +1,17 @@
+{
+  "headings": {
+    "en": [
+      "In most cases you’ll have a defined contribution pension",
+      "From what you’ve told us you have a defined contribution pension",
+      "You might have a defined contribution pension"
+    ]
+  },
+  "questions": {
+    "en": [
+      "Was your pension set up by your employer?",
+      "Did your pension come from working for one of the following:",
+      "Is your pension provider one of the following:",
+      "When did you start this pension?"
+    ]
+  }
+}

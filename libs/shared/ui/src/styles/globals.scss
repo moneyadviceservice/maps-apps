@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './fonts.scss';
+@import './civic-cookie.scss';
+
+@layer components {
+  .container-auto {
+    @apply container mx-auto px-4;
+  }
+}
+
+@layer components {
+  /* General styles */
+  input[type='range'] {
+    @apply h-2 appearance-none cursor-grabbing rounded-[6px] border border-gray-400 bg-white;
+  }
+  /* Chrome & Safari */
+  input[type='range']::-webkit-slider-thumb {
+    @apply h-7 w-7 appearance-none rounded-full bg-magenta-500;
+    box-shadow: 0px 3px 0px rgba(0, 11, 59, 0.25);
+  }
+
+  /* Firefox */
+  input[type='range']::-moz-range-thumb {
+    @apply h-7 w-7 appearance-none rounded-full bg-magenta-500;
+    box-shadow: 0px 3px 0px rgba(0, 11, 59, 0.25);
+  }
+
+  /* Edge */
+  input[type='range']::-ms-thumb {
+    @apply h-7 w-7 appearance-none rounded-full bg-magenta-500;
+    box-shadow: 0px 3px 0px rgba(0, 11, 59, 0.25);
+  }
+}
+
+.leaflet-container {
+  width: 595px;
+  height: 632px;
+
+  @media (min-width: 1280px) {
+    width: 624px;
+    height: 632px;
+    border-radius: 5px;
+  }
+}
+
+/* CSS overide for links in the hero component */
+@layer components {
+  .hero {
+    a {
+      @apply text-pink-400;
+
+      &:active,
+      &:visited {
+        @apply text-slate-400;
+      }
+    }
+  }
+}

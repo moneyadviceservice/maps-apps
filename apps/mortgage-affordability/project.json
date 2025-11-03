@@ -1,0 +1,84 @@
+{
+  "name": "mortgage-affordability",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mortgage-affordability",
+  "projectType": "application",
+  "implicitDependencies": ["mortgage-affordability-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/mortgage-affordability",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public/footer",
+            "output": "./footer"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/mortgage-affordability"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mortgage-affordability:build",
+        "dev": true,
+        "port": 4305
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mortgage-affordability:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "mortgage-affordability:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "mortgage-affordability:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/mortgage-affordability/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/mortgage-affordability/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/mortgage-affordability",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,28 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/tools-index package.json libs/shared"
+
+# stop-build plugin
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+# clear-cache plugin
+[[context.production.plugins]]
+  package = "/netlify/tools/plugins/clear-cache"
+
+[[context.deploy-preview.plugins]]
+  package = "/netlify/tools/plugins/clear-cache"
+
+[[context.develop.plugins]]
+  package = "/netlify/tools/plugins/clear-cache"
+
+[dev]
+  base = "/"
+  command = "npx nx run tools-index:serve"
+  targetPort = 4390
+  autoLaunch = false

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders correctly for yearsWorked < 2 and unknown contractual redundancy 1`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders correctly when statutory redundancy pay is higher than contractual redundancy 1`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 1`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 2`] = `
+<div
+  class="pt-2 pb-6"
+/>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 3`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 4`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 5`] = `
+<div
+  class="pt-2 pb-6"
+/>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 6`] = `
+<div
+  class="pt-2 pb-6"
+/>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 7`] = `
+<div
+  class="pt-2 pb-6"
+/>
+`;
+
+exports[`Redundancy pay calculator AdditionalInfo Component renders the component with provided props 8`] = `
+<div
+  class="pt-2 pb-6"
+>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Check your employment contract or staff handbook to find out about your contractual pay. You can also ask your employer for the amount.
+  </p>
+</div>
+`;

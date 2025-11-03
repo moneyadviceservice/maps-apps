@@ -1,0 +1,42 @@
+{
+  "name": "credit-options-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/credit-options-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/credit-options-e2e/cypress.config.ts",
+        "devServerTarget": "credit-options:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4395
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "credit-options:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/credit-options-e2e/cypress.config.ts",
+        "devServerTarget": "credit-options:serve",
+        "testingType": "e2e",
+        "port": 4395
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "credit-options:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["credit-options"]
+}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionPage renders single radio options for online flow question 1 1`] = `
+<div
+  data-testid="questions-component"
+>
+  Mocked Questions Component
+</div>
+`;
+
+exports[`QuestionPage renders single radio options for start flow question 1 1`] = `
+<div
+  data-testid="questions-component"
+>
+  Mocked Questions Component
+</div>
+`;
+
+exports[`QuestionPage renders single radio options for telephone flow question 4 1`] = `
+<div
+  data-testid="questions-component"
+>
+  Mocked Questions Component
+</div>
+`;
+
+exports[`QuestionPage renders single radio options for telephone flow question 5 1`] = `
+<div
+  data-testid="questions-component"
+>
+  Mocked Questions Component
+</div>
+`;

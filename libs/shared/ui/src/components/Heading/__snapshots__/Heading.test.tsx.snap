@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component H1 renders correctly 1`] = `
+<h1
+  class="text-4xl md:text-6xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h1>
+`;
+
+exports[`Heading component H2 renders correctly 1`] = `
+<h2
+  class="text-3xl md:text-5xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h2>
+`;
+
+exports[`Heading component H3 renders correctly 1`] = `
+<h3
+  class="text-2xl md:text-4xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h3>
+`;
+
+exports[`Heading component H4 renders correctly 1`] = `
+<h4
+  class="text-xl md:text-2xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h4>
+`;
+
+exports[`Heading component H5 renders correctly 1`] = `
+<h5
+  class="text-lg md:text-xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h5>
+`;
+
+exports[`Heading component H6 renders correctly 1`] = `
+<h6
+  class="text-base text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h6>
+`;
+
+exports[`Heading component renders correctly 1`] = `
+<h1
+  class="text-4xl md:text-6xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h1>
+`;
+
+exports[`Heading component renders correctly with custom props 1`] = `
+<h3
+  class="text-2xl md:text-4xl text-red-700 font-[300]"
+  data-testid="heading"
+>
+  Heading
+</h3>
+`;
+
+exports[`Heading component renders with different component 1`] = `
+<h2
+  class="text-4xl md:text-6xl text-gray-800 font-bold"
+  data-testid="heading"
+>
+  Heading
+</h2>
+`;

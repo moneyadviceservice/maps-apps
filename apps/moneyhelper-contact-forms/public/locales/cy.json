@@ -1,0 +1,572 @@
+{
+  "site": {
+    "title": "Money Helper Contact Form",
+    "back": "Yn ôl"
+  },
+  "layout": {
+    "title": "Arweiniad arian a phensiynau am ddim",
+    "content": "Rydym yn anelu at ymateb o fewn dau ddydd gwaith. Am ymateb cyflymach, defnyddiwch ein [gwe-sgwrs](https://www.moneyhelper.org.uk/cy/pensions-chat). Mae ar agor dydd Llun i ddydd Gwener, 9am i 5pm.",
+    "money-management": {
+      "title": "Rheoli eich arian"
+    },
+    "scams": {
+      "title": "Sgamiau ariannol, twyll a cham-werthu"
+    },
+    "debt-advice": {
+      "title": "Delio â dyled"
+    },
+    "insurance-type": {
+      "title": "Yswiriant"
+    },
+    "insurance-travel": {
+      "title": "Yswiriant"
+    },
+    "insurance-other": {
+      "title": "Yswiriant"
+    },
+    "pension-type": {
+      "title": "Pensiynau ac Ymddeoliad"
+    },
+    "pensions-state-pension": {
+      "title": "Siarad am eich Pensiwn y Wladwriaeth"
+    },
+    "pensions-tracing": {
+      "title": "Dod o hyd i hen bensiynau neu bensiynau coll"
+    },
+    "mhpd": {
+      "title": "Dangosfwrdd Pensiynau HelpwrArian"
+    },
+    "appointment-type": {
+      "title": "Trefnu neu newid apwyntiad pensiynau"
+    },
+    "appointment-pension-wise": {
+      "title": "Apwyntiad Pension Wise"
+    },
+    "appointment-divorce": {
+      "title": "Apwyntiad pensiynau ac ysgariad neu ddiddymiad"
+    },
+    "pensions-guidance": {
+      "title": "Gofyn cwestiwn am eich pensiwn(pensiynau)"
+    }
+  },
+  "components": {
+    "guidance": {
+      "title": "Cysylltwch â ni",
+      "sub-title": "Defnyddiwch y ffurflen hon i ofyn cwestiwn neu ddarganfod mwy am arian a phensiynau. Nid ydym yn darparu cyngor ariannol rheoledig.",
+      "sections": [
+        {
+          "title": "Sut gallem helpu",
+          "content": "Rydym yn cynnig gwybodaeth ac arweiniad am ddim a diduedd i’ch cefnogi i wneud dewisiadau gwybodus am eich arian a phensiynau.\n\nEfallai byddwn yn gofyn am eich sefyllfa bersonol neu ariannol fel y gallem esbonio eich opsiynau a rhoi arweiniad sy’n gweddu i’ch anghenion."
+        },
+        {
+          "title": "Ni allem roi cyngor ariannol i chi",
+          "content": "Nid ydym wedi ein rheoleiddio gan yr Awdurdod Ymddygiad Ariannol, felly nid ydym yn gallu:",
+          "items": [
+            "rhoi cyngor ariannol neu gyfreithiol rheoledig",
+            "awgrymu cynnyrch ariannol penodol",
+            "cael mynediad at eich cofnod ariannol, gan gynnwys manylion cyfrifon banc a phensiynau."
+          ],
+          "footer": "Os ydych eisiau cyngor penodol neu awgrymiadau cynnyrch, bydd angen i chi siarad ag ymgynghorydd ariannol rheoledig neu arbenigwr y gyfraith."
+        },
+        {
+          "title": "Pwysig",
+          "content": "Peidiwch â rhoi gwybodaeth sensitif i ni fel manylion banc, eich rhif Yswiriant Gwladol, neu rifau cyfrif pensiwn.\n\nDarllenwch ein [Hysbysiad Preifatrwydd](https://www.moneyhelper.org.uk/cy/about-us/privacy-notice) i ddysgu pa ddata rydym yn ei gasglu a sut rydym yn ei ddefnyddio."
+        }
+      ]
+    },
+    "enquiry-type": {
+      "title": "Beth hoffech chi gael help gyda?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Pensiynau ac ymddeoliad",
+              "value": "pensions-and-retirement"
+            },
+            {
+              "text": "Rheoli eich arian (gan gynnwys budd-daliadau, morgeisi a chwestiynau cyffredinol am arian)",
+              "value": "money-management"
+            },
+            {
+              "text": "Delio â dyled",
+              "value": "debt-advice"
+            },
+            {
+              "text": "Yswiriant",
+              "value": "insurance"
+            },
+            {
+              "text": "Pryderon am sgamiau ariannol, twyll neu gam-werthu",
+              "value": "scams"
+            }
+          ],
+          "error": "Rhowch y fath o ymholiad yr hoffech chi ei wneud."
+        }
+      }
+    },
+    "insurance-type": {
+      "title": "Pa fath o yswiriant sydd o ddiddordeb i chi?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Yswiriant teithio os oes gennych gyflwr meddygol difrifol neu anabledd",
+              "value": "insurance-travel"
+            },
+            {
+              "text": "Pob math arall o yswiriant",
+              "value": "insurance-other"
+            }
+          ],
+          "error": "Rhowch y fath o ymholiad yr hoffech chi ei wneud."
+        }
+      }
+    },
+    "pension-type": {
+      "title": "Beth hoffech chi ei wneud",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Archwilio sut mae Pensiwn y Wladwriaeth yn gweithio",
+              "value": "pensions-state-pension"
+            },
+            {
+              "text": "Gofyn cwestiwn am bensiynau",
+              "value": "pensions-guidance"
+            },
+            {
+              "text": "Trefnu neu newid apwyntiad pensiynau",
+              "value": "pensions-appointments"
+            },
+            {
+              "text": "Gofyn am ddod o hyd i hen bensiynau neu bensiynau coll",
+              "value": "pensions-tracing"
+            },
+            {
+              "text": "Cael help gyda Dangosfwrdd Pensiynau HelpwrArian",
+              "value": "mhpd"
+            }
+          ],
+          "error": "Rhowch y fath o ymholiad yr hoffech chi ei wneud."
+        }
+      }
+    },
+    "appointment-type": {
+      "title": "Pa apwyntiad pensiwn ydych chi’n chwilio amdano?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Apwyntiad Pension Wise",
+              "value": "appointment-pension-wise"
+            },
+            {
+              "text": "Apwyntiad pensiynau ac ysgariad neu ddiddymiad",
+              "value": "appointment-divorce"
+            }
+          ],
+          "error": "Rhowch y fath o ymholiad yr hoffech chi ei wneud."
+        }
+      }
+    },
+    "name": {
+      "title": "Beth yw eich enw?",
+      "form": {
+        "first-name": {
+          "label": "Enw cyntaf",
+          "error": "Rhowch eich enw cyntaf"
+        },
+        "last-name": {
+          "label": "Cyfenw",
+          "error": "Rhowch eich cyfenw"
+        }
+      }
+    },
+    "date-of-birth": {
+      "title": "Pryd cawsoch eich geni?",
+      "hint": "Rhowch ddydd dau ddigid, mis dau ddigid a blwyddyn pedwar digid. Er enghraifft: 15 03 1960",
+      "form": {
+        "day": {
+          "label": "Dydd"
+        },
+        "month": {
+          "label": "Mis"
+        },
+        "year": {
+          "label": "Blwyddyn"
+        },
+        "generic": {
+          "error": "Rhowch ddyddiad dilys"
+        }
+      },
+      "expandable-section": {
+        "title": "Pam ydyn ni’n gofyn hwn?",
+        "content": "Rydym eisiau sicrhau bod yr arweiniad rydym yn ei rhoi i chi’n berthnasol i’ch oedran.",
+        "appointment-pension-wise": {
+          "content": "Rhaid i chi fod yn 50 oed neu’n hŷn i drefnu apwyntiad Pension Wise.\n\nRydym eisiau sicrhau bod yr arweiniad rydym yn ei rhoi yn berthnasol i’ch oedran."
+        }
+      }
+    },
+    "contact-details": {
+      "title": "Beth yw eich manylion cyswllt?",
+      "form": {
+        "email": {
+          "label": "Cyfeiriad e-bost",
+          "hint": "Byddwn yn defnyddio hwn i ymateb, felly osgowch ddefnyddio e-bost a rhennir.",
+          "error": "Rhowch gyfeiriad e-bost dilys"
+        },
+        "phone-number": {
+          "label": "Rhif ffôn",
+          "hint": "Os nad ydych yn y DU, dylech gynnwys cod y wlad. Er enghraifft, +44 795555 5555.",
+          "error": "Rhowch rif ffôn dilys",
+          "optional": {
+            "label": "Rhif ffôn (dewisol)"
+          }
+        },
+        "post-code": {
+          "label": "Cod post cartref (dewisol)",
+          "hint": "Er enghraifft, EC1N 2TD.",
+          "error": "Rhowch god post dilys"
+        }
+      },
+      "expandable-section": {
+        "title": "Pam ydyn ni’n gofyn hwn?",
+        "content": "Byddwn yn defnyddio eich e-bost neu rif ffôn i ymateb i chi. Ni fyddem yn ei ddefnyddio ar gyfer marchnata.\n\nMae cod post yn ein galluogi i awgrymu unrhyw wasanaethau defnyddiol yn eich ardal. Efallai gallai hyn hefyd cael ei ddefnyddio i ddadansoddi tueddiadau yn ôl lleoliad."
+      }
+    },
+    "enquiry": {
+      "title": "Beth ydych chi angen help gyda? ",
+      "form": {
+        "text-area": {
+          "money-management": {
+            "label": "Dywedwch wrthym am eich sefyllfa. Po fwyaf o fanylder rydych yn ei rhoi, yr haws y bydd i ni eich helpu, ond peidiwch â chynnwys unrhyw fanylion ariannol sensitif, fel eich rhifau cyfrif banc. Mae hefyd yn ddefnyddiol i roi gwybod i ni os ydych angen cymorth ychwanegol, fel os ydych yn profi trafferthion iechyd meddwl, mae gennych anghenion dysgu ychwanegol neu rydych yn cael trafferth wrth gael mynediad at wasanaethau."
+          },
+          "scams": {
+            "label": "Defnyddiwch y ffurflen hon i ddweud wrthym beth sydd wedi digwydd neu beth rydych yn ansicr ohono. Po fwyaf o fanylder rydych yn ei rhoi, yr haws y bydd i ni eich helpu, felly dylech gynnwys a ydych yn poeni am sgam, twyll, cam-werthu neu rywbeth arall. Yna byddwn yn eich arwain ar beth i’w wneud nesaf."
+          },
+          "debt-advice": {
+            "label": "Rhowch wybod i ni am unrhyw gwestiynau neu drafferthion rydych yn eu cael gyda’r teclyn Lleolwr cyngor ar ddyledion. Os oes angen i chi siarad ag ymgynghorydd dyled nawr, cysylltwch â [National Debtline](https://nationaldebtline.org/)."
+          },
+          "insurance-other": {
+            "label": "Defnyddiwch y ffurflen hon i ofyn cwestiwn yswiriant cyffredinol i’n harbenigwyr. Ni allem roi dyfynbris i chi, ond gallwn esbonio’r gwahanol fathau o yswiriant, sut i ddod o hyd i’r fargen orau a phwy allai ddarparu yswiriant sy’n cwrdd â’ch anghenion."
+          },
+          "pensions-state-pension": {
+            "label": "Nid oes gennym fynediad i’ch cofnodion Pensiwn y Wladwriaeth, ond gallwch ofyn ein harbenigwyr am arweiniad cyffredinol am Bensiwn y Wladwriaeth a’ch rhagolwg. Peidiwch â chynnwys unrhyw fanylion ariannol sensitif, fel eich rhifau cyfrifon banc."
+          },
+          "pensions-tracing": {
+            "label": "Defnyddiwch y ffurflen hon os oes angen help arnoch i ddefnyddio gwasanaethau olrhain pensiwn neu mae gennych gwestiwn cyffredinol am ein harbenigwyr ar sut i ddod o hyd i bensiynau coll. Ni allem gyrchu cofnodion eich darparwr pensiwn neu chwilio am bensiynau ar eich rhan. Peidiwch â chynnwys unrhyw fanylion ariannol sensitif, fel eich rhifau cyfrifon banc."
+          },
+          "mhpd": {
+            "label": "Defnyddiwch y ffurflen hon i roi gwybod am broblem gyda’r dangosfwrdd, gofyn sut i’w ddefnyddio, neu anfon cwestiwn atom. Nid oes gennym fynediad i’ch cofnodion Pensiwn y Wladwriaeth neu bensiynau preifat, ond gall ein harbenigwyr cynnig arweiniad pensiynau cyffredinol. Peidiwch â chynnwys unrhyw fanylion ariannol sensitif, fel rhifau cyfrifon banc."
+          },
+          "appointment-pension-wise": {
+            "label": "Defnyddiwch y ffurflen hon i drefnu, newid neu ganslo apwyntiad Pension Wise. Os ydych yn trefnu, cadarnhewch fod gennych gronfa bensiwn cyfraniadau wedi’u diffinio y DU, rydych wedi etifeddu cronfa bensiwn neu gallwch gymryd eich pensiwn yn gynnar oherwydd iechyd gwael. Mae hwn yn ein helpu i wirio a ydych yn gymwys am apwyntiad Pension Wise."
+          },
+          "appointment-divorce": {
+            "label": "Dywedwch wrthym os ydych eisiau trefnu, newid neu ganslo apwyntiad. Os ydych yn trefnu, gadewch i ni wybod os yw’ch ysgariad neu ddiddymiad wedi’i gynnwys yn gyfraith Cymru, Lloegr, yr Alban neu Ogledd Iwerddon. Os nad ydych yn siŵr, fel arfer mae’n seiliedig ar ble roeddech yn byw gyda’ch gilydd fel cwpl diwethaf."
+          },
+          "pensions-guidance": {
+            "label": "Defnyddiwch y ffurflen hon i ofyn ein harbenigwyr am arweiniad cyffredinol ar bensiynau ac ymddeoliad. Nid oes gennym fynediad i’ch cofnodion pensiwn personol neu Bensiwn y Wladwriaeth ac ni allwn roi cyngor ariannol, ond gallwn eich helpu i ddeall eich cronfa bensiwn a’r opsiynau sydd ar gael am gynllunio ar gyfer ymddeoliad. Peidiwch â chynnwys unrhyw fanylion ariannol sensitif, fel eich rhifau cyfrifon banc."
+          },
+          "error": "Rhaid i’ch ymholiad bod rhwng 50 a 4,000 nod"
+        },
+        "booking-reference": {
+          "label": "Cyfeirnod trefnu (dewisol)",
+          "hint": "Os oes eisoes gennych apwyntiad gyda ni, cafodd eich cyfeirnod trefnu ei hanfon yn eich e-bost cadarnhad.",
+          "error": "Rhowch gyfeirnod trefnu dilys"
+        }
+      }
+    },
+    "about-scams": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Nid oes angen i chi deimlo’n chwithig os ydych wedi cael eich twyllo – rydym yma i’ch cefnogi. Ni allem adfer eich arian, ond gallwn wrando a’ch arwain ar beth i’w wneud nesaf.",
+      "sections": [
+        {
+          "content": "Rydym yn gwybod bod cael eich targedu gan sgamwyr neu golli arian yn drallodus, ond rydych yn gwneud y peth iawn gan gysylltu â ni.\n\nByddwn:",
+          "items": [
+            "byth yn eich barnu neu wneud i chi deimlo’n wael am eich sefyllfa",
+            "yn trin popeth rydych yn ei ddweud yn gyfrinachol",
+            "yn eich cyfeirio at sefydliadau dibynadwy a allai eich helpu",
+            "yn rhoi camau nesaf ymarferol i chi."
+          ]
+        },
+        {
+          "title": "Os ydych chi angen help nawr",
+          "content": "Ffoniwch ni ar [0800 011 3797](tel:08000113797) neu defnyddiwch [we-sgwrs](https://www.moneyhelper.org.uk/cy/pensions-chat) (Dydd Llun-Dydd Gwener, 9am i 5pm. Ar gau ar wyliau banc)"
+        },
+        {
+          "title": "Gwiriwch a yw rhywbeth yn sgam",
+          "content": "Wedi gweld rhywbeth amheus ar-lein, mewn e-bost neu neges destun? [Defnyddiwch wiriwr sgamiau Cyngor ar Bopeth](https://www.citizensadvice.org.uk/cymraeg/Defnyddwyr/scams/Gweld-os-allai-rhywbeth-fod-yn-sgam/)."
+        },
+        {
+          "title": "Rhoi gwybod am dwyll ariannol neu sgam",
+          "items": [
+            "Yng Nghymru, Lloegr neu Ogledd Iwerddon, ewch i [Action Fraud](https://www.actionfraud.police.uk/welsh) neu ffoniwch [0300 123 2040](tel:03001232040).",
+            "Yn yr Alban, cysylltwch â [Police Scotland](https://www.scotland.police.uk/contact-us/) ar [101](tel:101)."
+          ]
+        },
+        {
+          "title": "Mae HelpwrArian wastad am ddim",
+          "content": "Os yw rhywun yn cysylltu â chi yn honni ni ydyn nhw (neu’r Gwasanaeth Arian a Phensiynau) ac maent yn gofyn am arian, sgam ydyw."
+        },
+        {
+          "content": "Defnyddiwch y ffurflen hon i ofyn ein harbenigwyr am fwy o wybodaeth ar sgamiau, twyll neu gam-werthu."
+        }
+      ]
+    },
+    "about-debt": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Ni allem roi cyngor ariannol, ond gallwn eich helpu i ddod o hyd i ymgynghorydd dyled am ddim a allai eich helpu.",
+      "sections": [
+        {
+          "content": "Os ydych yn cael trafferth gyda dyled, nid ydych ar eich pen eich hun. Mae cyngor ar gael, ac mae am ddim.\n\nSiaradwch ag ymgynghorydd dyled a fyddai’n:",
+          "items": [
+            "esbonio eich opsiynau a’ch cynghori ar beth i’w wneud nesaf",
+            "gwirio am unrhyw fudd-daliadau gallech fod â hawl iddynt",
+            "awgrymu ffyrdd i reoli eich arian",
+            "eich helpu i ddod allan o ddyled yn gyflymach."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Darganfyddwch gyngor ar ddyledion diduedd, am ddim ar-lein, dros y ffôn neu yn eich ardal gan ddefnyddio ein teclyn",
+        "button": {
+          "text": "Lleolwr cyngor ar ddyledion",
+          "url": "https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator"
+        }
+      },
+      "footer": {
+        "content": "Gallwch hefyd cysylltu â’n partner dibynadwy, National Debtline, ffoniwch 0808 8084000 neu [sgwrsiwch ar-lein](https://www.moneyhelper.org.uk/cy/pensions-chat).\n\nDefnyddiwch y ffurflen hon os oes angen cyngor arnoch i ddefnyddio ein teclyn lleolwr cyngor ar ddyledion."
+      }
+    },
+    "about-insurance": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Ni allem ddarparu dyfynbrisiau yswiriant, ond gallem eich cyfeirio at gwmnïau arbenigol a allai eich helpu.",
+      "sections": [
+        {
+          "content": "Gall dod o hyd i yswiriant teithio bod yn anoddach os oes gennych gyflwr meddygol difrifol neu anabledd.\n\nMae ein cyfeirlyfr yn rhestru cwmnïau arbenigol a allai gynnig yswiriant a rhoi dyfynbris i chi."
+        }
+      ],
+      "callout": "Defnyddiwch ein [Cyfeirlyfr yswiriant teithio](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/use-our-travel-insurance-directory)",
+      "footer": {
+        "content": "Mae cwmnïau yn y cyfeirlyfr wedi’u hawdurdodi a’u rheoleiddio gan yr Awdurdod Ymddygiad Ariannol (FCA).\n\nDysgwch fwy am [Yswiriant](https://www.moneyhelper.org.uk/cy/everyday-money/insurance)"
+      }
+    },
+    "about-state-pension": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Defnyddiwch y ffurflen hon i ofyn am eich rhagolwg Pensiwn y Wladwriaeth neu gwestiynau cyffredinol eraill.",
+      "sections": [
+        {
+          "content": "Nid ydym yn gallu cael mynediad at eich cofnodion Pensiwn y Wladwriaeth, ond os ydych yn gwirio eich rhagolwg ar GOV.UK, gall ein harbenigwyr:",
+          "items": [
+            "eich helpu i ddeall beth mae’n ei olygu",
+            "esbonio sut mae Pensiwn y Wladwriaeth yn gweithio",
+            "cynnig arweiniad cyffredinol ar bensiynau ac ymddeoliad."
+          ]
+        },
+        {
+          "content": "Defnyddiwch [Gwirio eich rhagolwg Pensiwn y Wladwriaeth ar GOV.UK](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth) i weld:",
+          "items": [
+            "faint gallwch ei gael",
+            "pryd gallwch chi hawlio",
+            "sut i roi hwb i’ch Pensiwn y Wladwriaeth os nad ydych ar y trywydd i gael y swm llawn."
+          ]
+        },
+        {
+          "content": "Gallwch hefyd ddefnyddio [GOV.UK](https://www.gov.uk/browse/working/state-pension) i:",
+          "items": [
+            "ddod o hyd i fanylion eich Pensiwn y Wladwriaeth",
+            "gofyn cwestiynau am eich pensiwn eich hun",
+            "rhoi gwybod am newid."
+          ]
+        }
+      ]
+    },
+    "about-pension-tracing": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Ni allem ddod o hyd i hen bensiynau neu bensiynau coll ar eich rhan, ond gallem ddangos i chi sut i’w holrhain eich hunain.",
+      "sections": [
+        {
+          "content": "Nid oes gennym fynediad at gofnodion darparwyr pensiynau, ond gallwch chi chwilio am eich manylion pensiwn mewn ychydig o gamau.\n\nDechreuwch gyda’n canllaw, [Sut i ddod o hyd i hen bensiynau neu bensiynau coll](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/tracing-and-finding-lost-pensions).\n\nGallwch hefyd ddefnyddio gwasanaethau olrhain pensiwn fel:",
+          "items": [
+            " Y Gwasanaeth Olrhain Pensiwn, sy’n eich galluogi i [Ddod o hyd i fanylion cyswllt pensiwn ar GOV.UK](https://www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn)",
+            "[Gretel](https://www.gretel.co.uk/), gwasanaeth am ddim i olrhain pensiynau coll."
+          ]
+        },
+        {
+          "content": "Defnyddiwch y ffurflen hon os oes angen cymorth neu arweiniad pellach arnoch wrth ddefnyddio gwasanaethau olrhain hen bensiynau neu bensiynau coll."
+        }
+      ]
+    },
+    "about-mhpd": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Defnyddiwch y ffurflen hon i roi gwybod am broblem gyda Dangosfwrdd Pensiynau HelpwrArian, gofyn sut i’w ddefnyddio, neu anfon cwestiwn pensiynau atom.",
+      "sections": [
+        {
+          "content": "Mae Dangosfwrdd Pensiynau HelpwrArian yn wasanaeth am ddim, diogel, sydd wedi’i chefnogi gan y llywodraeth.\n\nGallwch weld eich holl fanylion pensiwn gyda’i gilydd mewn un lle – gan gynnwys pensiynau gweithle, pensiynau personol, eich Pensiwn y Wladwriaeth ac unrhyw rai gallech fod wedi’u colli.\n\nOs oes angen help arnoch gyda’r Dangosfwrdd Pensiynau, defnyddiwch y ffurflen hon i:",
+          "items": [
+            "roi gwybod am broblem neu rywbeth sydd ar goll",
+            "darganfod sut i’w ddefnyddio",
+            "cael arweiniad ar beth mae’ch gwybodaeth pensiwn yn ei olygu."
+          ]
+        },
+        {
+          "content": "Am wybodaeth fwy cyffredinol, darllenwch ein canllawiau ar [Bensiynau ac Ymddeoliad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement)."
+        }
+      ]
+    },
+    "about-money-management": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Gofynnwch ein harbenigwyr am gyngor diduedd, am ddim ar bob math o faterion ariannol.",
+      "sections": [
+        {
+          "content": "Ni allem gynnig cyngor ariannol, ond gallwn eich helpu i ddeall eich opsiynau a’ch cyfeirio at unrhyw declynnau a chymorth defnyddiol.\n\nCysylltwch i ofyn am:",
+          "items": [
+            "**fudd-daliadau** gallwch fod â hawl iddynt",
+            "**arian bob dydd** fel cyllidebu, bancio, credyd a chostau car",
+            "**costau teulu** a gofal, gan gynnwys magu plant, profedigaeth, salwch, ysgariad a gofal hir dymor",
+            "**cartrefi**, fel morgeisi neu rentu",
+            "**problemau ariannol**, gan gynnwys cymorth gyda chostau byw",
+            "**cynilion** a buddsoddiadau",
+            "**gwaith a chyflogaeth** gan gynnwys diswyddo, treth a hunangyflogaeth."
+          ]
+        },
+        {
+          "content": "Defnyddiwch y ffurflen hon i ddweud wrthym beth rydych angen help gyda."
+        }
+      ]
+    },
+    "about-pension-wise": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Defnyddiwch y ffurflen hon i drefnu, newid neu ganslo apwyntiad ffôn, neu ofyn am fwy o wybodaeth.",
+      "sections": [
+        {
+          "content": "Mae apwyntiadau Pension Wise yn cynnig arweiniad diduedd, am ddim os oes gennych bensiwn cyfraniadau wedi’u diffinio y DU ac rydych:",
+          "items": [
+            "50 oed neu’n hŷn",
+            "o dan 50 oed ac yn ymddeol yn gynnar oherwydd iechyd gwael, neu",
+            "o dan 50 oed ac wedi etifeddu pensiwn."
+          ]
+        },
+        {
+          "content": "Dewiswch rhwng apwyntiad ar-lein neu dros y ffôn..\n\nMae [apwyntiadau hunan arweiniad ar-lein](https://prd-pwtriage.moneyhelper.org.uk/cy/pension-wise-triage/start) ar gael i’w trefnu unrhyw bryd. Mae eich manylion yn cael eu harbed felly gallwch ei wneud ar eich cyflymder eich hun.\n\nTrefnu neu newid eich apwyntiad ffôn 1 awr am ddim gan ddefnyddio [ffurflen trefnu apwyntiad Pension Wise](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment) neu ffonio 0800 138 3944.\n\nOs na allwch ddefnyddio’r ffurflen trefnu neu ffonio, cwblhewch y ffurflen hon a gallwn eich helpu."
+        }
+      ],
+      "expandable-section": {
+        "title": "Beth os nad ydw i’n gymwys am apwyntiad Pension Wise?",
+        "content": "Os nad ydych yn gymwys am apwyntiad Pension Wise, gallwn eich helpu o hyd. Ewch yn ôl i’r dudalen flaenorol a dewiswch ‘Gofyn cwestiwn am bensiynau’."
+      }
+    },
+    "about-pension-divorce": {
+      "title": "Sut gallem helpu",
+      "sub-title": "Defnyddiwch y ffurflen hon i drefnu, newid neu ganslo apwyntiad ffôn, neu ofyn am fwy o wybodaeth.",
+      "sections": [
+        {
+          "content": "Os ydych chi’n mynd trwy ysgariad neu’n dod â phartneriaeth sifil i ben (diddymiad), gallem eich helpu i ddeall beth mae hyn yn ei olygu i’ch pensiwn.\n\nMae apwyntiad Pensiynau ac ysgariad neu ddiddymiad yn eich galluogi i siarad ag un o’n harbenigwyr pensiynau a byddant yn:",
+          "items": [
+            "esbonio’r opsiynau pensiwn sydd ar gael yn ystod ysgariad/diddymiad",
+            "eich helpu i ddeall beth i’w hystyried a’r cwestiynau i’w gofyn",
+            "eich arwain ar eich camau nesaf, gan gynnwys ble i ddod o hyd i help ychwanegol a sut i gyrchu cyngor ariannol rheoledig os oes angen."
+          ]
+        }
+      ]
+    },
+    "confirmation": {
+      "callout": {
+        "title": "Diolch am gysylltu",
+        "content": "Eich cyfeirnod yw **{referenceNumber}**."
+      },
+      "title": "Beth sy’n digwydd nesaf?",
+      "content": "Rydym yn anelu at ymateb o fewn dau ddydd gwaith. Os ydych angen ymateb yn gyflymach, defnyddiwch ein [gwe-sgwrs](https://www.moneyhelper.org.uk/cy/pensions-chat). Mae ar agor dydd Llun i ddydd Gwener, 9am i 5pm.",
+      "items": [
+        "Byddwn yn anfon e-bost cadarnhad at {email} i roi gwybod i chi ein bod wedi derbyn eich ymholiad.",
+        "Os nad ydych yn derbyn ein e-bost, gwiriwch eich ffolder sbam neu sothach."
+      ],
+      "pensions-state-pension": {
+        "items": [
+          "Os nad ydych wedi eisoes, gweler ein teclynnau a chanllawiau i ddysgu mwy am [Bensiwn y Wladwriaeth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension)."
+        ]
+      },
+      "appointment-pension-wise": {
+        "content": "Rydym yn anelu at ymateb o fewn dau ddydd gwaith.",
+        "items": [
+          "Os nad ydych wedi eisoes, gweler ein teclynnau a chanllawiau i ddysgu mwy am [Bensiynau ac ymddeoliad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement).",
+          "Byddwn yn eich ffonio o’r rhif yma: (+44) 0800 113797."
+        ]
+      },
+      "appointment-divorce": {
+        "content": "Rydym yn anelu at ymateb o fewn dau ddydd gwaith.",
+        "items": ["Byddwn yn eich ffonio o’r rhif yma: (+44) 0800 113797."]
+      },
+      "pensions-tracing": {
+        "items": [
+          "Os nad ydych wedi eisoes, gweler ein teclynnau a chanllawiau i ddysgu mwy am [Bensiynau ac ymddeoliad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement) "
+        ]
+      },
+      "pensions-guidance": {
+        "items": [
+          "Os nad ydych wedi eisoes, gweler ein teclynnau a chanllawiau i ddysgu mwy am [Bensiynau ac ymddeoliad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement) "
+        ]
+      },
+      "money-management": {
+        "items": [
+          "Os nad ydych eisoes wedi, gweler ein teclynnau a chanllawiau ar [HelpwrArian](https://www.moneyhelper.org.uk/cy)"
+        ]
+      },
+      "debt-advice": {
+        "items": [
+          "Os nad ydych eisoes, gweler ein teclynnau a chanllawiau ar [Ddelio â dyled](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt)."
+        ]
+      },
+      "insurance-other": {
+        "items": [
+          "Os nad ydych wedi eisoes, gweler ein teclynnau a chanllawiau ar [Yswiriant](https://www.moneyhelper.org.uk/cy/everyday-money/insurance)."
+        ]
+      },
+      "scams": {
+        "items": [
+          "byddwn yn eich ffonio o’r rhif hwn: (+44) 0800 011 3797.",
+          "Os ydych wedi colli arian, rhowch wybod i Action Fraud (Cymru, Lloegr neu Ogledd Iwerddon) trwy ffonio [0300 123 2040](tel:03001232040). Yn yr Alban, ffoniwch Police Scotland ar [101](tel:101).",
+          "Os ydych wedi anfon arian at sgamiwr gan ddefnyddio trosglwyddiad banc, [gwnewch gais am ad-daliad twyll APP](https://www.psr.org.uk/information-for-consumers/app-fraud-reimbursement-protections/).",
+          "Os nad ydych wedi eisoes, ewch i’n [hadran Sgamiau](https://www.moneyhelper.org.uk/cy/money-troubles/scams) neu [Sgamiau ar Gyngor ar Bopeth] am fwy o wybodaeth a chanllawiau(https://www.citizensadvice.org.uk/consumer/scams/)."
+        ]
+      },
+      "privacy-notice": "Darllenwch ein [Hysbysiad Preifatrwydd](https://www.moneyhelper.org.uk/cy/about-us/privacy-notice) i ddysgu pa ddata rydym yn ei gasglu a sut rydym yn ei ddefnyddio.",
+      "button": {
+        "text": "Cau",
+        "url": "https://www.moneyhelper.org.uk/cy"
+      }
+    },
+    "error": {
+      "title": "Aeth rhywbeth o’i le",
+      "sections": [
+        {
+          "content": "Roedd problem wrth anfon eich neges."
+        },
+        {
+          "content": "Beth allwch chi ei wneud:",
+          "items": [
+            "[Rhowch gynnig arall](/cy/guidance)",
+            "Defnyddiwch ddull arall i [gysylltu â ni](https://www.moneyhelper.org.uk/en/contact-us)",
+            "Ewch i’n [hafan](https://www.moneyhelper.org.uk/en)"
+          ]
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "Parhau",
+        "send-text": "Anfon"
+      }
+    },
+    "error-callout": {
+      "title": "Roedd problem"
+    },
+    "loading": {
+      "title": "Yn llwytho"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelCallout renders correctly 1`] = `
+<div>
+  <div
+    class="relative min-h-[95px] rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-green-100 before:bg-green-700 p-8 pt-6 mb-8 lg:mb-12"
+    data-testid="callout-positive"
+  >
+    <h4
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+    >
+      Test Title
+    </h4>
+    <p
+      class="break-words mb-5 lg:mb-3"
+      data-testid="paragraph"
+    >
+      Test Description
+    </p>
+    <ul>
+      <li
+        class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+      >
+        <span
+          class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Scheme 1
+      </li>
+      <li
+        class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+      >
+        <span
+          class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Scheme 2
+      </li>
+      <li
+        class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+      >
+        <span
+          class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Scheme 3
+      </li>
+      <li
+        class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+      >
+        <span
+          class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Scheme 4
+      </li>
+      <li
+        class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+      >
+        <span
+          class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+        >
+          <svgr-mock
+            classname="test-icon-class"
+            data-testid="icon"
+          />
+        </span>
+        Scheme 5
+      </li>
+    </ul>
+    <a
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white mt-8 max-lg:text-center max-lg:block max-lg:w-full lg:mt-6 lg:w-auto"
+      href="/en/test-link"
+    >
+      Test Link Text
+    </a>
+  </div>
+</div>
+`;

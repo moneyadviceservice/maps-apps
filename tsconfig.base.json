@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "allowJs": true,
+    "module": "esnext",
+    "lib": ["es2020", "dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@maps-digital/shared/hooks": ["libs/shared/hooks/index.ts"],
+      "@maps-digital/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@maps-react/common/*": ["libs/shared/ui/src/*"],
+      "@maps-react/core/*": ["libs/shared/core/src/*"],
+      "@maps-react/csp-policy/*": ["libs/shared/csp-policy/src/*"],
+      "@maps-react/form/*": ["libs/shared/form/src/*"],
+      "@maps-react/hooks/*": ["libs/shared/hooks/src/*"],
+      "@maps-react/layouts/*": ["libs/shared/layouts/src/*"],
+      "@maps-react/netlify-functions/*": [
+        "libs/shared/netlify-functions/src/*"
+      ],
+      "@maps-react/pension-tools/*": ["libs/shared/pension-tools/src/*"],
+      "@maps-react/pwd/*": ["libs/shared/pwd/src/*"],
+      "@maps-react/redis/*": ["libs/shared/redis/src/*"],
+      "@maps-react/tools": ["libs/shared/tools/src/index.ts"],
+      "@maps-react/utils/*": ["libs/shared/utils/src/*"],
+      "@maps-react/vendor/*": ["libs/shared/vendor/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

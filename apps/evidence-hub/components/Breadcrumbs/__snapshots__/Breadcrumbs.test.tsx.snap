@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs renders with original mock data and matches snapshot 1`] = `
+<div>
+  <div
+    class="-ml-2"
+  >
+    <div
+      class="[&_path]:fill-magenta-500"
+    >
+      <a
+        class="print:hidden md:hidden outline-none t-breadcrumb-mobile pl-2.5 flex items-center py-1 relative z-1 border-1 border-white shadow-box-link hover:border-1 hover:border-pink-800 focus:bg-yellow-400 focus:shadow-box-link-focus focus:border-2 focus:border-purple-700 focus:border-opacity-100"
+        data-testid="breadcrumb-mobile"
+        href="/en/tool"
+      >
+        <svgr-mock
+          classname="w-4"
+        />
+        <div
+          class="pl-2"
+        >
+          <p
+            class="text-base"
+          >
+            Tools and research
+          </p>
+          <p
+            class="text-base font-semibold text-magenta-500 hover:text-pink-900 focus:text-gray-800"
+          >
+            Evidence Library
+          </p>
+        </div>
+      </a>
+      <nav
+        aria-label="breadcrumbs"
+        class="hidden md:block"
+        data-testid="breadcrumb-desktop"
+      >
+        <ul
+          class="flex px-4 py-4 t-breadcrumb-desktop"
+        >
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+              href="https://maps.org.uk/"
+            >
+              Home
+            </a>
+            <svgr-mock
+              classname="w-4 pl-2"
+            />
+          </li>
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+              href="/en/tool"
+            >
+              Tools and research
+            </a>
+            <svgr-mock
+              classname="w-4 pl-2"
+            />
+          </li>
+          <li
+            class="flex items-center pr-2"
+          >
+            <a
+              class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+              href="/en/evidence-hub"
+            >
+              Evidence Library
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkipLinks component renders correctly 1`] = `
+<div
+  class="sr-only focus-within:not-sr-only focus-within:absolute focus-within:top-1 focus-within:left-1 focus-within:z-20"
+>
+  <a
+    class="relative outline-none font-bold text-sm p-3 pr-6 pl-6 rounded bg-magenta-500 text-white shadow-bottom-gray mr-2 top-1 focus:text-gray-800 focus:bg-yellow-400 focus:border-b-purple-800 focus:border-b-4 hover:bg-white hover:border-none hover:text-blue-700"
+    data-testid="test-link-1"
+    href="#link1"
+  >
+    Link 1
+  </a>
+</div>
+`;
+
+exports[`SkipLinks component renders with multiple skip links 1`] = `
+<div
+  class="sr-only focus-within:not-sr-only focus-within:absolute focus-within:top-1 focus-within:left-1 focus-within:z-20"
+>
+  <a
+    class="relative outline-none font-bold text-sm p-3 pr-6 pl-6 rounded bg-magenta-500 text-white shadow-bottom-gray mr-2 top-1 focus:text-gray-800 focus:bg-yellow-400 focus:border-b-purple-800 focus:border-b-4 hover:bg-white hover:border-none hover:text-blue-700"
+    data-testid="test-link-1"
+    href="#link1"
+  >
+    Link 1
+  </a>
+  <a
+    class="relative outline-none font-bold text-sm p-3 pr-6 pl-6 rounded bg-magenta-500 text-white shadow-bottom-gray mr-2 top-1 focus:text-gray-800 focus:bg-yellow-400 focus:border-b-purple-800 focus:border-b-4 hover:bg-white hover:border-none hover:text-blue-700"
+    data-testid="test-link-2"
+    href="#link2"
+  >
+    Link 2
+  </a>
+</div>
+`;

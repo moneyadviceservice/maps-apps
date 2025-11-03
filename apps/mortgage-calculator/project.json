@@ -1,0 +1,84 @@
+{
+  "name": "mortgage-calculator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/mortgage-calculator",
+  "projectType": "application",
+  "implicitDependencies": ["mortgage-calculator-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/mortgage-calculator",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public/footer",
+            "output": "./footer"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/mortgage-calculator"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mortgage-calculator:build",
+        "dev": true,
+        "port": 4390
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mortgage-calculator:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "mortgage-calculator:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "mortgage-calculator:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/mortgage-calculator/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/mortgage-calculator/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/mortgage-calculator",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

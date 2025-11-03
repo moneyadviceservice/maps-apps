@@ -1,0 +1,1 @@
+export { getPostLogoutRedirectUri } from './getPostLogoutRedirectUri';

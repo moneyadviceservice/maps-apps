@@ -1,0 +1,319 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+  - name: testtorun
+    type: string
+  - name: projectName
+    type: string
+  - name: context
+    type: string
+  - name: environment
+    type: string
+  - name: npm_config_cache
+    type: string
+    default: $(Pipeline.Workspace)/.npm
+  - name: testrunner
+    type: string
+    default: 'cypress'
+  - name: environmentVariables
+    type: string
+    default: 'deploy-preview'
+  - name: customEnvironmentVariables
+    type: string
+    default: ''
+
+steps:
+  - checkout: self
+    clean: true
+    persistCredentials: true
+    fetchDepth: 10
+    displayName: Check out source code from main repository
+
+  - script: |
+      git fetch origin main:refs/remotes/origin/main
+    displayName: Fetch the latest history for main branch
+
+  - script: |
+      if [ ${{ parameters.compareWithTargetBranch }} == true ]; then
+         git fetch origin main:main
+         git fetch origin main:refs/remotes/origin/main
+      else
+         git fetch  --depth=2 origin main:main
+         git fetch  --depth=2 origin main:refs/remotes/origin/main
+      fi
+    displayName: 'Fetch branch to compare'
+
+  - template: install-node.yml
+
+  - task: Cache@2
+    name: npmCache
+    displayName: Cache npm shared cache
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: ${{ parameters.npm_config_cache }}
+
+  - script: |
+      npm ci --prefer-offline --no-audit --cache=${{ parameters.npm_config_cache }}
+    displayName: 'Install Dependencies'
+
+  - ${{ if eq(parameters['testrunner'], 'playwright' ) }}:
+      - script: |
+          npx playwright install-deps
+        displayName: 'Install Playwright Dependencies'
+
+  - script: |
+      echo "Determining pipeline identifier..."
+
+      if [ -n "$(System.PullRequest.PullRequestId)" ]; then
+        PIPELINE_ID="pr-$(System.PullRequest.PullRequestId)"
+      else
+        PIPELINE_ID="$(Build.SourceBranchName)"
+      fi
+
+      echo "Using Pipeline ID: $PIPELINE_ID"
+      echo "##vso[task.setvariable variable=PIPELINE_ID]$PIPELINE_ID"
+    displayName: 'Set Pipeline Identifier'
+
+  - template: ../templates/match-site.yml
+    parameters:
+      projectName: ${{ parameters.projectName }}
+
+  - script: |
+      echo "Retrieving and exporting environment variables from Netlify for app $NETLIFY_SITE_FILTER, site ID $NETLIFY_SITE_ID, using context: ${{ parameters.context }}"
+
+      if [ "${{ parameters.environmentVariables }}" = "Match environment" ] || \
+         [ "${{ parameters.environmentVariables }}" = "test" ] || \
+         [ "${{ parameters.environmentVariables }}" = "staging" ]; then
+        echo "Fetching branch specific environment variables for ${{ parameters.environment }}"
+        env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context=branch:${{ parameters.environment }} --json --filter="$NETLIFY_SITE_FILTER")
+      else
+        echo "Fetching context specific environment variables for context ${{ parameters.environmentVariables }}"
+        env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context=${{ parameters.environmentVariables }} --json --filter="$NETLIFY_SITE_FILTER" )
+      fi
+
+      if [[ -z "$env_vars_json" ]]; then
+          echo "Error: Failed to retrieve environment variables."
+          exit 1
+      fi
+      echo "Parsing and export each environment variable"
+      for s in $(echo $env_vars_json | jq -r "to_entries|map(\"\(.key)=\(.value|tostring)\")|.[]" ); do
+          export $s
+      done
+
+      echo "Checking for and setting custom environment variables"
+      if [ -n "${{ parameters.customEnvironmentVariables }}" ]; then
+        echo "Exporting custom environment variables"
+        IFS=',' read -ra CUSTOM_VARS <<< "${{ parameters.customEnvironmentVariables }}"
+        for var in "${CUSTOM_VARS[@]}"; do
+          if [[ "$var" == *"="* ]]; then
+            echo "Exporting custom environment variable: $var"
+            export "$var"
+          else
+            echo "Skipping invalid custom environment variable: $var"
+          fi
+        done
+      else
+        echo "No custom environment variables provided."
+      fi
+
+      set -e
+
+      startPort=3000
+      endPort=3500
+      portnum=""
+
+      IFS=',' read -ra ENVS <<< "${{ parameters.testtorun }}"
+      if [ ${#ENVS[@]} -eq 0 ]; then
+        echo "No environments to deploy. Exiting."
+        exit 0
+      fi
+
+      for env in "${ENVS[@]}"; do
+        echo "======================================================================="
+        echo "Running end-to-end tests for $env"
+        echo "======================================================================="
+
+        for port in $(seq $startPort $endPort); do
+          lockFile="/tmp/.X${port}-lock"
+          if [ -f $lockFile ]; then
+            echo "Removing existing lock file: $lockFile"
+            rm -f $lockFile
+          fi
+          if ! nc -z localhost $port; then
+            portnum=$port
+            startPort=$((portnum + 1))
+            break
+          fi
+        done
+
+        if [ -z "$portnum" ]; then
+          echo "No free port found. Exiting with error."
+          exit 1
+        fi
+
+        echo "Starting Xvfb on port: $portnum"
+        Xvfb :$portnum -screen 0 1280x1024x24 &
+        XVFB_PID=$!
+        export DISPLAY=:$portnum
+
+        echo "Running E2E tests for environment: $env"
+
+        echo "Setting E2E Failed to true by default"
+        echo "##vso[task.setvariable variable=E2E_FAILED]true"
+
+        status=0
+        npm run test:e2e-ci $env ${{ parameters.testrunner }} --port='cypress-auto' || status=$?
+
+        if [ -n "$status" ] && [ "$status" -ne 0 ]; then
+            echo "E2E tests failed for environment: $env"
+        else
+            echo "E2E tests passed for environment: $env"
+            echo "##vso[task.setvariable variable=E2E_FAILED]false"
+        fi
+
+        echo "Terminating Xvfb with PID: $XVFB_PID"
+        kill $XVFB_PID
+      done
+    displayName: 'Run affected E2E tests'
+
+  - ${{ if eq(parameters['testrunner'], 'playwright' ) }}:
+      - script: |
+          REPORT_DIR="apps/e2e/${{ parameters.projectName }}-e2e/playwright-report"
+          if [ -d "$REPORT_DIR" ]; then
+            echo "Playwright report found for ${{ parameters.projectName }}."
+          else
+            echo "No Playwright report found for ${{ parameters.projectName }}, skipping upload."
+            exit 0
+          fi
+        displayName: 'Check Playwright Report'
+        condition: always()
+
+      - script: |
+          az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+          STORAGE_ACCOUNT="mapsplaywrightreports"
+          CONTAINER_NAME="${{ parameters.projectName }}"
+          ACCOUNT_KEY=$(az storage account keys list --account-name "$STORAGE_ACCOUNT" --query "[0].value" --output tsv)
+
+          echo "Ensuring storage container $CONTAINER_NAME exists in $STORAGE_ACCOUNT..."
+          EXISTS=$(az storage container exists --account-name "$STORAGE_ACCOUNT" --account-key "$ACCOUNT_KEY" --name "$CONTAINER_NAME" --auth-mode key --query exists --output tsv)
+
+          if [ "$EXISTS" != "true" ]; then
+            echo "Creating storage container: $CONTAINER_NAME"
+            az storage container create --account-name "$STORAGE_ACCOUNT" --account-key "$ACCOUNT_KEY" --name "$CONTAINER_NAME" --auth-mode key
+          else
+            echo "Storage container $CONTAINER_NAME already exists."
+          fi
+        displayName: 'Ensure Storage Container Exists'
+        condition: always()
+
+      - script: |
+          az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+
+          STORAGE_ACCOUNT="mapsplaywrightreports"
+          ACCOUNT_KEY=$(az storage account keys list --account-name "$STORAGE_ACCOUNT" --query "[0].value" --output tsv)
+          CONTAINER_NAME="${{ parameters.projectName }}"
+          REPORT_DIR="apps/e2e/${{ parameters.projectName }}-e2e/playwright-report"
+          BLOB_PREFIX="playwright-reports/${PIPELINE_ID}/"
+
+          echo "Uploading Playwright report for ${{ parameters.projectName }}..."
+
+          find "$REPORT_DIR" -type f | while read -r file; do
+            RELATIVE_PATH="${file#$REPORT_DIR/}"
+            BLOB_NAME="${BLOB_PREFIX}${RELATIVE_PATH}"
+
+            echo "Uploading $file to $BLOB_NAME..."
+            az storage blob upload \
+              --account-name "$STORAGE_ACCOUNT" \
+              --account-key "$ACCOUNT_KEY" \
+              --container-name "$CONTAINER_NAME" \
+              --name "$BLOB_NAME" \
+              --file "$file" \
+              --content-type "text/html" \
+              --overwrite
+          done
+
+          echo "Generating SAS URL for Playwright report..."
+          SAS_TOKEN=$(az storage blob generate-sas \
+            --account-name "$STORAGE_ACCOUNT" \
+            --account-key "$ACCOUNT_KEY" \
+            --container-name "$CONTAINER_NAME" \
+            --name "${BLOB_PREFIX}index.html" \
+            --permissions r \
+            --expiry $(date -u -d "+7 days" '+%Y-%m-%dT%H:%M:%SZ') \
+            --output tsv)
+
+          BLOB_URL="https://$STORAGE_ACCOUNT.blob.core.windows.net/$CONTAINER_NAME/${BLOB_PREFIX}index.html?$SAS_TOKEN"
+          echo "Playwright Report URL: $BLOB_URL"
+
+          echo "##vso[task.setvariable variable=PLAYWRIGHT_REPORT_URL;]$BLOB_URL"
+        displayName: 'Upload Playwright Report and Generate SAS URL'
+        condition: always()
+
+      - script: |
+          if [ -n "$(System.PullRequest.PullRequestId)" ]; then
+            COMMENT=$(echo "<h2>Playwright report available</h2><p>Playwright report for ${{ parameters.testtorun }} <a href='$(PLAYWRIGHT_REPORT_URL)' target='_blank'>available here</a></p>")
+            ADO_API=$(echo "https://dev.azure.com/moneyandpensionsservice/MaPS%20Digital/_apis/git/repositories/$(Build.Repository.Name)/pullrequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1")
+
+            echo "Comment to post: $COMMENT"
+            echo "Posting comment to Azure DevOps Pull Request: $ADO_API"
+
+            PR_COMMENT=$(jq --arg comment "$COMMENT" '.comments[0].content = $comment' <<< '{"comments": [{"parentCommentId": 0,"content": "","commentType": 1}],"status": "fixed"}')
+            curl -X POST "$ADO_API" \
+            --header "Content-Type: application/json" \
+            --header "Accept: application/json" \
+            --header "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+            --data "$PR_COMMENT" \
+            --verbose
+          else
+            echo "No Pull Request ID found, skipping comment posting."
+          fi
+        displayName: 'Post playwright report URL to Azure DevOps Pull Request'
+        env:
+          SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+      - script: |
+          az login --service-principal --username $(AKS_SPN_ID) --password $(AKS_SPN_KEY) --tenant $(TENANT_ID)
+          STORAGE_ACCOUNT="mapsplaywrightreports"
+          CONTAINER_NAME="${{ parameters.projectName }}"
+          ACCOUNT_KEY=$(az storage account keys list --account-name "$STORAGE_ACCOUNT" --query "[0].value" --output tsv)
+          EXPIRY_DATE=$(date -u -d '14 days ago' '+%Y-%m-%dT%H:%M:%SZ')
+
+          echo "Cleaning up Playwright reports older than 14 days in $CONTAINER_NAME..."
+
+          OLD_BLOBS=$(az storage blob list \
+            --account-name "$STORAGE_ACCOUNT" \
+            --account-key "$ACCOUNT_KEY" \
+            --container-name "$CONTAINER_NAME" \
+            --query "[?properties.lastModified < '$EXPIRY_DATE'].name" \
+            --output tsv)
+
+          for blob in $OLD_BLOBS; do
+              echo "Deleting old report: $blob"
+              az storage blob delete \
+                --account-name "$STORAGE_ACCOUNT" \
+                --account-key "$ACCOUNT_KEY" \
+                --container-name "$CONTAINER_NAME" \
+                --name "$blob"
+          done
+
+          echo "Cleanup complete!"
+        displayName: 'Cleanup Old Playwright Reports'
+        condition: always()
+
+      - script: |
+          echo "Playwright report available at: $(PLAYWRIGHT_REPORT_URL)"
+        condition: always()
+        displayName: 'Print Playwright Report URL'
+
+  - script: |
+      echo "E2E_FAILED value is: $E2E_FAILED"
+      if [ "$E2E_FAILED" = "true" ]; then
+        echo "E2E tests failed. Failing pipeline."
+        exit 1
+      else
+        echo "E2E tests passed successfully."
+      fi
+    displayName: 'Fail pipeline if E2E tests failed'
+    condition: always()

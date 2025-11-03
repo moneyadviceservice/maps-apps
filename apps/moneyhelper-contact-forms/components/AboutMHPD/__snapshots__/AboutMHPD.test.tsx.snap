@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMHPD Component renders component correctly 1`] = `
+<div
+  class="flex flex-col gap-4"
+>
+  <p
+    class="text-xl md:text-2xl text-gray-800 pt-4 mb-2 font-light"
+    data-testid="about-mhpd-sub-title"
+  >
+    components.about-mhpd.sub-title
+  </p>
+  <section
+    class="flex flex-col gap-4"
+  >
+    <h2
+      class="text-2xl md:text-4xl text-gray-800 font-bold"
+      data-testid="components-about-debt-title-0"
+    >
+      mock-title
+    </h2>
+    <p
+      class="break-words mb-2"
+      data-testid="paragraph"
+    >
+      mock-content
+    </p>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-3 ml-8"
+        data-testid="about-debt-list-0"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4 break-words"
+            data-testid="paragraph"
+          >
+            mock-item
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4 break-words"
+            data-testid="paragraph"
+          >
+            mock-item
+          </p>
+        </li>
+      </ul>
+    </div>
+    <p
+      class="mb-4 break-words"
+      data-testid="components-about-debt-footer-0"
+    >
+      mock-footer
+    </p>
+  </section>
+</div>
+`;

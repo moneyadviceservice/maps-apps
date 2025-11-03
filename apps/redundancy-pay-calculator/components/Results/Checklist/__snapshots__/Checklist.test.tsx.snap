@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redundancy pay calculator AdditionalInfo Component Render correctly 1`] = `
+<div>
+  <p
+    class="pb-[8px]"
+  >
+    Checklist
+  </p>
+  <div
+    class="flex items-center"
+    data-testid="list-element"
+  >
+    <ul
+      class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-none w-full"
+      start="-1"
+    >
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svgr-mock
+            classname="mr-2"
+            style="max-width: 24px; min-width: 24px;"
+          />
+          item 1
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svgr-mock
+            classname="mr-2"
+            style="max-width: 24px; min-width: 24px;"
+          />
+          item 2
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svgr-mock
+            classname="mr-2"
+            style="max-width: 24px; min-width: 24px;"
+          />
+          item 3
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svgr-mock
+            classname="mr-2"
+            style="max-width: 24px; min-width: 24px;"
+          />
+          item 4
+        </span>
+      </li>
+      <li>
+        <span
+          class="flex flex-row py-[4px]"
+        >
+          <svgr-mock
+            classname="mr-2"
+            style="max-width: 24px; min-width: 24px;"
+          />
+          item 5
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
