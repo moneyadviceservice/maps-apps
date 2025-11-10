@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScamWarning renders correctly 1`] = `
+<div>
+  <div
+    class="t-urgent-callout border-8 rounded-bl-3xl sm:p-10 flex border-teal-400 px-6 py-8 mt-6 md:mt-8 md:px-10"
+    data-testid="urgent-callout"
+  >
+    <div
+      class="flex gap-3 sm:gap-6"
+    >
+      <div
+        class="text-pink-800 sm:hidden -ml-8"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div
+        class="text-pink-800 hidden sm:block -mt-12 -ml-4"
+      >
+        <svgr-mock
+          classname=""
+        />
+      </div>
+      <div>
+        <h3
+          class="text-gray-800 mb-4 md:mb-6 text-xl font-semibold md:!leading-8 md:text-4xl"
+        >
+          test
+        </h3>
+        test
+      </div>
+    </div>
+  </div>
+</div>
+`;

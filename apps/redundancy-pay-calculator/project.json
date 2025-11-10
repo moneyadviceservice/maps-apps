@@ -1,0 +1,77 @@
+{
+  "name": "redundancy-pay-calculator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/redundancy-pay-calculator",
+  "projectType": "application",
+  "implicitDependencies": ["redundancy-pay-calculator-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/redundancy-pay-calculator"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/redundancy-pay-calculator"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "redundancy-pay-calculator:build",
+        "dev": true,
+        "port": 4395
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "redundancy-pay-calculator:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "redundancy-pay-calculator:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "redundancy-pay-calculator:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/redundancy-pay-calculator/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/redundancy-pay-calculator/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/redundancy-pay-calculator",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pension Status component should render active status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4 mb-4"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-green-700 min-w-4 min-h-4"
+    />
+    <span
+      class=""
+    >
+      pages.pension-details.status.active
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render inactive status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4 mb-4"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-gray-650 min-w-4 min-h-4"
+    />
+    <span
+      class=""
+    >
+      pages.pension-details.status.inactive
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render short active status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-green-700 w-[12px] h-[12px]"
+    />
+    <span
+      class=""
+    >
+      data.pensions.status.active
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render short inactive status message 1`] = `
+<div>
+  <div
+    class="flex items-baseline gap-4"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-gray-650 w-[12px] h-[12px]"
+    />
+    <span
+      class=""
+    >
+      data.pensions.status.inactive
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render tooltip for active status 1`] = `
+<div>
+  <div
+    class="flex mb-4 gap-7 px-5 items-center"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-green-700 min-w-4 min-h-4"
+    />
+    <span
+      class="flex items-center"
+    >
+      pages.pension-details.status.active
+      <span
+        class="ml-5 font-normal"
+      >
+        tooltips.status-active
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Pension Status component should render tooltip for inactive status 1`] = `
+<div>
+  <div
+    class="flex mb-4 gap-7 px-5 items-center"
+    data-testid="pension-status"
+  >
+    <div
+      class="rounded-full bg-gray-650 min-w-4 min-h-4"
+    />
+    <span
+      class="flex items-center"
+    >
+      pages.pension-details.status.inactive
+      <span
+        class="ml-5 font-normal"
+      >
+        tooltips.status-inactive
+      </span>
+    </span>
+  </div>
+</div>
+`;

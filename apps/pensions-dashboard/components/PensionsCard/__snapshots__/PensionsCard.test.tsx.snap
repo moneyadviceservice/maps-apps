@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionsCard renders confirmed card correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-blue-700 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-blue-700 flex items-center px-2 md:px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[18px] h-[18px] mr-3"
+      />
+      components.pension-card.type.SP
+    </h3>
+    <div
+      class="px-4 pt-4 md:pt-5 md:px-6 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-700 font-bold flex gap-2 my-0 break-all items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <div
+        class="pb-4 mt-4 border-b-1 border-slate-400"
+      >
+        <img
+          alt="site.hm-gov-logo-alt"
+          data-nimg="1"
+          decoding="async"
+          height="28"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fhm-gov-logo.png&w=384&q=75 2x"
+          style="color: transparent;"
+          width="188"
+        />
+      </div>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.state-pension-date
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.estimated-income
+        :
+      </p>
+      <p
+        class="mb-4 break-words pb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-monthly-amount"
+      >
+        <strong
+          class="mr-2 text-[24px]"
+        >
+          --
+        </strong>
+        common.a-month
+      </p>
+      <form
+        method="POST"
+      >
+        <input
+          name="pensionId"
+          type="hidden"
+          value="12345"
+        />
+        <input
+          name="locale"
+          type="hidden"
+          value="en"
+        />
+        <input
+          name="pensionType"
+          type="hidden"
+          value="SP"
+        />
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full md:w-auto"
+          data-testid="details-link"
+          formaction="/api/set-pension-id"
+          type="submit"
+        >
+          <span />
+          common.details-link
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders confirmed no income card correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-700 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-700 flex items-center px-2 md:px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[18px] h-[18px] mr-3"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-4 pt-4 md:pt-5 md:px-6 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-700 font-bold flex gap-2 my-0 break-all items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        27 March 2051
+      </p>
+      <div
+        class="flex gap-3 my-5"
+      >
+        <svgr-mock
+          classname="w-[30px] h-[30px] shrink-0 fill-gray-800"
+          fill="true"
+        />
+        <p
+          class="break-words mb-0 text-gray-650"
+          data-testid="pension-card-unavailable-reason"
+        >
+          <span>
+            data.pensions.unavailable-reasons.DCHA
+          </span>
+        </p>
+      </div>
+      <form
+        method="POST"
+      >
+        <input
+          name="pensionId"
+          type="hidden"
+          value="12345"
+        />
+        <input
+          name="locale"
+          type="hidden"
+          value="en"
+        />
+        <input
+          name="pensionType"
+          type="hidden"
+          value="DC"
+        />
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full md:w-auto"
+          data-testid="details-link"
+          formaction="/api/set-pension-id"
+          type="submit"
+        >
+          <span />
+          common.details-link
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders pending card for NEW correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-700 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-700 flex items-center px-2 md:px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[18px] h-[18px] mr-3"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-4 pt-4 md:pt-5 md:px-6 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-700 font-bold flex gap-2 my-0 break-all items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.expected-income-at-retirement
+        :
+      </p>
+      <p
+        class="mb-4 break-words pb-2 font-bold border-b-1 border-slate-400"
+        data-testid="pension-card-expected-income"
+      >
+        common.pending
+      </p>
+      <form
+        method="POST"
+      >
+        <input
+          name="pensionId"
+          type="hidden"
+          value="12345"
+        />
+        <input
+          name="locale"
+          type="hidden"
+          value="en"
+        />
+        <input
+          name="pensionType"
+          type="hidden"
+          value="DC"
+        />
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full md:w-auto"
+          data-testid="details-link"
+          formaction="/api/set-pension-id"
+          type="submit"
+        >
+          <span />
+          common.details-link
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionsCard renders pending card for SYS correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout rounded-bl-3xl border-teal-700 border-2"
+    data-testid="information-callout"
+  >
+    <h3
+      class="text-white bg-teal-700 flex items-center px-2 md:px-6 pt-1 pb-2 mb-0 text-base font-normal tracking-[0.01125rem] md:text-base"
+      data-testid="pension-card-type"
+    >
+      <svgr-mock
+        classname="w-[18px] h-[18px] mr-3"
+      />
+      components.pension-card.type.DC
+    </h3>
+    <div
+      class="px-4 pt-4 md:pt-5 md:px-6 pb-7"
+    >
+      <h4
+        class="text-xl md:text-2xl text-blue-700 font-bold flex gap-2 my-0 break-all items-top"
+        data-testid="pension-card-scheme-name"
+      >
+        Test Scheme
+      </h4>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.provider
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-administrator-name"
+      >
+        Admin Name
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.employer
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-employer-name"
+      >
+        Employer 1
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.retirement-date
+        :
+      </p>
+      <p
+        class="break-words pb-2 mb-2 border-b-1 border-slate-400"
+        data-testid="pension-card-retirement-date"
+      >
+        1 January 2025
+      </p>
+      <p
+        class="break-words mt-2 mb-0 text-gray-650"
+        data-testid="paragraph"
+      >
+        common.expected-income-at-retirement
+        :
+      </p>
+      <p
+        class="mb-4 break-words pb-2 font-bold border-b-1 border-slate-400"
+        data-testid="pension-card-expected-income"
+      >
+        common.pending
+      </p>
+      <form
+        method="POST"
+      >
+        <input
+          name="pensionId"
+          type="hidden"
+          value="12345"
+        />
+        <input
+          name="locale"
+          type="hidden"
+          value="en"
+        />
+        <input
+          name="pensionType"
+          type="hidden"
+          value="DC"
+        />
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full md:w-auto"
+          data-testid="details-link"
+          formaction="/api/set-pension-id"
+          type="submit"
+        >
+          <span />
+          common.details-link
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,357 @@
+name: Deploy branch to Netlify
+
+trigger: none
+
+resources:
+  repositories:
+  - repository: ado-templates
+    type: github
+    ref: refs/heads/main
+    name: moneyadviceservice/ado-templates
+    endpoint: 'mhpd-github'
+
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+
+  - name: environmentVariables
+    displayName: 'Copy Environment Variables'
+    type: string
+    values:
+      - 'deploy-preview'
+      - 'branch-deploy'
+      - 'branch:test'
+      - 'branch:staging'
+      - 'production'
+
+variables:
+- group: Netlify-TF-Credentials
+- name: agentPool
+  value: ubuntu-22.04
+- name: timeoutInMinutes
+  value: 60
+
+stages:
+- stage: BuildApp
+  displayName: 'Build Application'
+  jobs:
+  - job: BuildApp
+    displayName: 'Configure Build and Deploy Application'
+    pool:
+      vmImage: ${{ variables.agentPool }}
+    timeoutInMinutes: ${{ variables.timeoutInMinutes }}
+    steps:
+    - checkout: self
+
+    - task: PowerShell@2
+      displayName: 'Determine ${{ parameters.appname }} Deploy Type'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $siteName = '${{ parameters.appname }}'
+          $branchName = $env:BUILD_SOURCEBRANCH
+          $branchName = $branchName -replace '^refs/heads/', ''
+
+          Write-Output ("Site Name: {0}" -f $siteName)
+          Write-Output ("Source Branch Name: {0}" -f $branchName)
+
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+          try {
+            Write-Output ("Fetching netlify site: {0}" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          } catch {
+            Write-Output ("Failed to find netlify site: {0}" -f $siteName)
+            Write-Output ("Fetching netlify site: maps-{0}" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/maps-{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          }
+
+          $siteId = $siteDetails.id
+          Write-Output ("Site Id: {0}" -f $siteId)
+
+          # Publish branches
+          $isNetlifyBranchDeploy = $siteDetails.build_settings.allowed_branches.Contains($branchName)
+          Write-Output ('Branch is configured in Netlify under Branch Deploy: {0}' -f $isNetlifyBranchDeploy)
+          Write-Output ('Target environment: ${{ parameters.environmentVariables }}')
+          $isNetlifyBranchDeploy = $isNetlifyBranchDeploy -or ("${{ parameters.environmentVariables }}" -eq "production")
+          if ($isNetlifyBranchDeploy) {
+            Write-Host "##vso[task.setvariable variable=isNetlifyBranchDeploy;]True"
+          } else {
+            Write-Host "##vso[task.setvariable variable=isNetlifyBranchDeploy;]False"
+          }
+
+    - template: steps/install-node.yml
+    - script: |
+        npm install
+      displayName: 'NPM Install'
+      condition:  and(succeeded(), ne(variables['isNetlifyBranchDeploy'], 'True'))
+    - template: templates/match-site.yml
+      parameters:
+        projectName: ${{ parameters.appname }}
+    - script: |
+        echo "Site ID: $NETLIFY_SITE_ID"
+        echo "Site Filter: $NETLIFY_SITE_FILTER"
+
+        branchname="$(Build.SourceBranch)"
+        branchname="${branchname#refs/heads/}"
+        branchname="${branchname//\//-}"
+        branchname="${branchname//./-}"
+        branchname="${branchname//_/-}"      
+        echo "Branch name is: $branchname"
+
+        deployContext="branch:$branchname"
+        alias="$branchname"
+        echo "Alias is: $alias"
+
+        echo "Fetching environment variables for context ${{ parameters.environmentVariables }}"
+        env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context=${{ parameters.environmentVariables }} --json --filter=$NETLIFY_SITE_FILTER)
+
+        echo "$env_vars_json" | jq -r 'to_entries | .[] | "\(.key): \(.value)"' | while IFS=: read -r key value; do
+          echo "Setting $key for context $deployContext"
+          netlify env:set $key $value --context $deployContext --filter $NETLIFY_SITE_FILTER > /dev/null 2>&1
+        done
+      displayName: 'Setting Up Environment Variables for ${{ parameters.appname }}'
+      condition: and(succeeded(), ne('${{ parameters.environmentVariables }}', 'production'))
+
+    - task: PowerShell@2
+      displayName: 'Set Netlify Production Branch for ${{ parameters.appname }}'
+      condition: and(succeeded(), eq('${{ parameters.environmentVariables }}', 'production'))
+      inputs:
+        targetType: 'inline'
+        script: |
+          $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+          $siteName = '${{ parameters.appname }}'
+          $branchName = $env:BUILD_SOURCEBRANCH
+          $branchName = $branchName -replace '^refs/heads/', ''
+
+          Write-Output ("Site Name: {0}" -f $siteName)
+          Write-Output ("Source Branch Name: {0}" -f $branchName)
+
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+          try {
+            Write-Output ("Fetching netlify site for {0}" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          } catch {
+            Write-Output ("Failed to find netlify site for '{0}'" -f $siteName)
+            Write-Output ("Fetching netlify site for 'maps-{0}'" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/maps-{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          }
+
+          $siteId = $siteDetails.id
+          Write-Output ("Site Id: {0}" -f $siteId)
+
+          if (!$siteDetails.build_settings.allowed_branches.Contains($branchName)) {
+              $siteDetails.build_settings.allowed_branches += $branchName
+          }
+
+          $updateBody =  
+          [PSCustomObject]@{ build_settings =
+              [PSCustomObject]@{ 
+                  allowed_branches = $siteDetails.build_settings.allowed_branches
+                  branch = $branchName
+                  skip_prs = $null
+              }
+          }
+
+          $bodyJson = ConvertTo-Json -InputObject $updateBody -Compress
+
+          Invoke-WebRequest -UseBasicParsing -Uri ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}' -f $siteId ) `
+          -Method "PUT" `
+          -Headers $headers `
+          -ContentType "application/json" `
+          -Body $bodyJson;
+
+    - task: PowerShell@2
+      displayName: 'Deploy ${{ parameters.appname }} to Netlify'
+      condition:  and(succeeded(), ne(variables['isNetlifyBranchDeploy'], 'True'))
+      inputs:
+        targetType: 'inline'
+        script: |
+          $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+          $branchName = $env:BUILD_SOURCEBRANCH
+          $branchName = $branchName -replace '^refs/heads/', ''
+
+          Write-Output ("Source Branch Name: {0}" -f $branchName)
+
+          # Get branch name and sanitize it
+          $branchName = $branchName -replace '/', '-'
+          $branchName = $branchName -replace '\.', '-'
+          $branchName = $branchName -replace '_', '-'
+
+          Write-Output ("Branch name is: {0}" -f $branchName)
+
+          # Set deploy context and alias
+          $deployContext = "branch:$branchName"
+          $alias = $branchname
+          
+          Write-Output ("Branch name is: {0}" -f $branchName)    
+          Write-Output ("Deploy Context is: {0}" -f $deployContext)
+
+          Write-Host "Deploying $($env:NETLIFY_SITE_FILTER) using context $deployContext to alias $alias"
+          netlify deploy --filter=$env:NETLIFY_SITE_FILTER --context=$deployContext --auth=$env:NETLIFY_AUTH_TOKEN --alias=$alias
+
+    - task: PowerShell@2
+      displayName: 'Deploy ${{ parameters.appname }} to Netlify'
+      condition:  and(succeeded(), eq(variables['isNetlifyBranchDeploy'], 'True'))
+      inputs:
+        targetType: 'inline'
+        script: |
+          $siteName = '${{ parameters.appname }}'
+          $branchName = $env:BUILD_SOURCEBRANCH
+          $branchName = $branchName -replace '^refs/heads/', ''
+
+          Write-Output ("Site Name: {0}" -f $siteName)
+          Write-Output ("Source Branch Name: {0}" -f $branchName)
+
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+          try {
+            Write-Output ("Fetching netlify site for {0}" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          } catch {
+            Write-Output ("Failed to find netlify site for '{0}'" -f $siteName)
+            Write-Output ("Fetching netlify site for 'maps-{0}'" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/maps-{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          }
+
+          $siteId = $siteDetails.id
+          Write-Output ("Site Id: {0}" -f $siteId)
+
+          # Publish branches
+          Write-Output "Branch is configured for netlify branch deploy. Deplyoing using build hook"
+
+          $siteBuildHooks = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}/build_hooks' -f $siteId ) -Method 'GET' -Headers $headers
+          $branchBuildHookUrl = ($siteBuildHooks | where { $_.branch -eq $branchName } | Select-Object -First 1).url
+          
+          if ($branchBuildHookUrl) {
+            Invoke-RestMethod $branchBuildHookUrl -Method 'POST'
+            
+            $builds = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}/deploys?page=1&per_page=5' -f $siteId ) -Method 'GET' -Headers $headers
+            $build = ($builds | where-object { $_.branch -eq $branchName -and $_.title -and $_.title.startsWith('Deploy triggered by hook')  } | Select-Object -First 1)
+
+            Write-Output ('Build Triggered {0}' -f $build.id)
+
+            $state = $build.state
+            while ($state -ne 'ready' -and $state -ne 'error') {
+                Start-Sleep -Seconds 5
+                $builds = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}/deploys?page=1&per_page=5' -f $siteId ) -Method 'GET' -Headers $headers
+                $state = ($builds | where-object { $_.id -eq $build.id  } | Select-Object -First 1).state
+                Write-Output ('Build State {0}' -f $state)
+                if ($state -eq 'error') {
+                  Write-Error ('Build Failed: {0}' -f $build.id)
+                }
+            }
+          } else {
+              Write-Error ('Missing Build Hook for Branch {0}' -f $branchName)
+          }
+
+- stage: ManualApproval
+  displayName: 'Wait for Approval to Publish'
+  pool: server
+  dependsOn: BuildApp
+  condition: and(succeeded(), eq('${{ parameters.environmentVariables }}', 'production'))
+  jobs:
+    - job: FetchSecrets
+      displayName: 'Fetch approvers list from Key Vault'
+      pool:
+        vmImage: 'ubuntu-latest' 
+      steps:
+        - task: AzureKeyVault@2
+          displayName: 'Get approvers list'
+          inputs:
+            azureSubscription: 'ADO-PWD-Connection'
+            KeyVaultName:  'mhpd-prod'
+            SecretsFilter: 'ado-approvers-list' 
+
+        - script: |
+            echo "##vso[task.setvariable variable=ADO_APPROVERS_LIST;isOutput=true]$(ado-approvers-list)"
+            echo "$(ado-approvers-list)"
+          name: SetOutputVar
+
+    - job: WaitForApproval
+      dependsOn: FetchSecrets
+      displayName: 'Approval Pending'
+      variables:
+        ADO_APPROVERS_LIST: $[ dependencies.FetchSecrets.outputs['SetOutputVar.ADO_APPROVERS_LIST'] ]
+      steps:
+        - template: pipeline-templates/approval-gate.yml@ado-templates
+          parameters:
+            notificationGroup: '$(ADO_APPROVERS_LIST)'
+
+
+
+- stage: PublishApp
+  dependsOn: ManualApproval
+  condition: and(succeeded(), eq('${{ parameters.environmentVariables }}', 'production'))
+  jobs:
+  - job: PublishApp
+    displayName: 'Publish Deployment'
+    pool:
+      vmImage: ${{ variables.agentPool }}
+    timeoutInMinutes: ${{ variables.timeoutInMinutes }}
+    steps:
+    - task: PowerShell@2
+      displayName: 'Publishing ${{ parameters.appname }} to Production'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $siteName = '${{ parameters.appname }}'
+          $branchName = $env:BUILD_SOURCEBRANCH
+          $branchName = $branchName -replace '^refs/heads/', '-'
+
+          Write-Output ("Site Name: {0}" -f $siteName)
+          Write-Output ("Source Branch Name: {0}" -f $branchName)
+
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+          try {
+            Write-Output ("Fetching netlify site for {0}" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          } catch {
+            Write-Output ("Failed to find netlify site for '{0}'" -f $siteName)
+            Write-Output ("Fetching netlify site for 'maps-{0}'" -f $siteName)
+            $siteDetails = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/maps-{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+          }
+
+          $siteId = $siteDetails.id
+          Write-Output ("Site Id: {0}" -f $siteId)
+
+          $builds = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/sites/{0}/deploys?page=1&per_page=5' -f $siteId ) -Method 'GET' -Headers $headers
+          $build = ($builds | where-object { $_.branch -eq $branchName -and $_.title -and $_.title.startsWith('Deploy triggered by hook')  } | Select-Object -First 1)
+
+          Write-Output ('Publishing Build {0}' -f $build.id)
+          $publish = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/deploys/68f0c2f4141fca3dcac3962a/restore' -f $build.id ) -Method 'POST' -Headers $headers

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly 1`] = `
+<footer
+  class="relative z-1"
+  data-testid="footer"
+>
+  <div
+    class="flex flex-col py-8 bg-gray-800 md:py-6"
+  >
+    <div
+      class="container-auto max-w-[1272px]"
+    >
+      <nav
+        aria-label="Footer navigation"
+        class="grid grid-cols-1 gap-8 md:grid-cols-3"
+      />
+      <div
+        class="pt-4 pb-10 mt-6 text-center border-t border-white"
+      >
+        <p
+          class="break-words m-0 text-white"
+          data-testid="paragraph"
+        >
+          Copyright
+           
+          2025 Money & Pensions Service, Borough Hall, Cauldwell Street, Bedford, MK42 9AB.
+        </p>
+        <p
+          class="mb-4 break-words text-white"
+          data-testid="paragraph"
+        >
+          All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

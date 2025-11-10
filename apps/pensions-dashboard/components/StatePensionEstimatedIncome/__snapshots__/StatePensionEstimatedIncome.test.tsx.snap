@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatePensionEstimatedIncome renders correctly 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+  >
+    <h2
+      class="text-gray-800 mt-10 mb-4 text-3xl font-bold md:text-5xl md:mb-10"
+    >
+      pages.pension-details.headings.estimated-income
+    </h2>
+    <p
+      class="mb-4 break-words leading-[1.6] md:mb-2"
+      data-testid="sp-estimated-income-ap"
+    >
+      pages.pension-details.estimated-income.ap
+    </p>
+    <p
+      class="mb-4 break-words text-base font-bold text-blue-700 md:mb-2"
+      data-testid="sp-progress-bar-ap"
+    >
+      £958.50 common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+    </div>
+    <p
+      class="mb-4 break-words mt-4 md:mt-6 leading-[1.6] md:mb-2"
+      data-testid="sp-estimated-income-eri"
+    >
+      pages.pension-details.estimated-income.eri
+    </p>
+    <p
+      class="mb-4 break-words text-base font-bold text-blue-700 md:mb-2"
+      data-testid="sp-progress-bar-eri"
+    >
+      £958.50 common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+    </div>
+  </div>
+</div>
+`;

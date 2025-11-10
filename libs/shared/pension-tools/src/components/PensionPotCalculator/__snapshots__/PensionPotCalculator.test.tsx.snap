@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PensionPotCalculator component should not fail when query is emtpy 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px]"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-bold mb-6 text-blue-700 md:mb-8"
+      >
+        Pension Pot Calculator
+      </h1>
+      <div
+        aria-describedby="error-summary-heading"
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      >
+        <div
+          class="t-error-summary border-4 w-full border-red-600 md:p-8 p-6 outline-none mb-6"
+          data-testid="error-records"
+        >
+          <h2
+            class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+            data-testid="error-summary-heading"
+            id="error-summary-heading"
+          >
+            There's been a problem
+          </h2>
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 marker:leading-snug list-disc text-red-600 space-y-4 marker:text-red-600 pl-6 ml-4 mb-6"
+              start="-1"
+            >
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-0"
+                  href="#pot"
+                >
+                  How much is in your pot?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-1"
+                  href="#age"
+                >
+                  How old are you?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form
+        action="api/pension-pot-calculator"
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="false"
+        />
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+            </p>
+            <div
+              aria-describedby="pot"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <div
+                class="relative mr-2 max-w-[360px]"
+              >
+                <input
+                  aria-label="How much is in your pot? In pounds."
+                  aria-required="true"
+                  class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                  data-testid="pot"
+                  id="pot"
+                  inputmode="numeric"
+                  name="pot"
+                  type="text"
+                  value=""
+                />
+                <span
+                  aria-hidden="true"
+                  class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                >
+                  £
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="age"
+            >
+              How old are you?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Age description
+            </p>
+            <div
+              aria-describedby="age"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <input
+                aria-label="How old are you? In years."
+                aria-required="true"
+                class="tool-field w-full border pl-2 focus:outline-none focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+                data-testid="age"
+                id="age"
+                inputmode="numeric"
+                name="age"
+                type="text"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+              >
+                Years
+              </span>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Calculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            Callout message
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component should render PensionPotCalculator component 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px]"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-bold mb-6 text-blue-700 md:mb-8"
+      >
+        Pension Pot Calculator
+      </h1>
+      <div
+        aria-describedby="error-summary-heading"
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      >
+        <div
+          class="t-error-summary border-4 w-full border-red-600 md:p-8 p-6 outline-none mb-6"
+          data-testid="error-records"
+        >
+          <h2
+            class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+            data-testid="error-summary-heading"
+            id="error-summary-heading"
+          >
+            There's been a problem
+          </h2>
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 marker:leading-snug list-disc text-red-600 space-y-4 marker:text-red-600 pl-6 ml-4 mb-6"
+              start="-1"
+            >
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-0"
+                  href="#pot"
+                >
+                  How much is in your pot?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-1"
+                  href="#age"
+                >
+                  How old are you?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form
+        action="api/pension-pot-calculator"
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="false"
+        />
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+            </p>
+            <div
+              aria-describedby="pot"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <div
+                class="relative mr-2 max-w-[360px]"
+              >
+                <input
+                  aria-label="How much is in your pot? In pounds."
+                  aria-required="true"
+                  class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                  data-testid="pot"
+                  id="pot"
+                  inputmode="numeric"
+                  name="pot"
+                  type="text"
+                  value="100,000"
+                />
+                <span
+                  aria-hidden="true"
+                  class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                >
+                  £
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="age"
+            >
+              How old are you?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Age description
+            </p>
+            <div
+              aria-describedby="age"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <input
+                aria-label="How old are you? In years."
+                aria-required="true"
+                class="tool-field w-full border pl-2 focus:outline-none focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+                data-testid="age"
+                id="age"
+                inputmode="numeric"
+                name="age"
+                type="text"
+                value="57"
+              />
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+              >
+                Years
+              </span>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Calculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            Callout message
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PensionPotCalculator component should render embed version of PensionPotCalculator 1`] = `
+<div>
+  <div
+    class="container-auto lg:max-w-[960px] m-0 p-0"
+  >
+    <div
+      class="bg-blue-100 p-5 md:p-10 mb-8 rounded-bl-[24px]"
+    >
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-6 text-blue-700 md:mb-8"
+      >
+        Pension Pot Calculator
+      </h2>
+      <div
+        aria-describedby="error-summary-heading"
+        aria-relevant="all"
+        data-testid="error-summary-container"
+        id="error-summary-container"
+        role="alert"
+        tabindex="-1"
+      >
+        <div
+          class="t-error-summary border-4 w-full border-red-600 md:p-8 p-6 outline-none mb-6"
+          data-testid="error-records"
+        >
+          <h2
+            class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+            data-testid="error-summary-heading"
+            id="error-summary-heading"
+          >
+            There's been a problem
+          </h2>
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 marker:leading-snug list-disc text-red-600 space-y-4 marker:text-red-600 pl-6 ml-4 mb-6"
+              start="-1"
+            >
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-0"
+                  href="#pot"
+                >
+                  How much is in your pot?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+              <li
+                class="underline text-base decoration-solid text-red-600 break-words"
+              >
+                <a
+                  class="whitespace-pre-wrap"
+                  data-testid="error-link-1"
+                  href="#age"
+                >
+                  How old are you?
+                   - 
+                  Enter a figure
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form
+        action="api/pension-pot-calculator"
+        novalidate=""
+      >
+        <input
+          name="isEmbed"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="pot"
+            >
+              How much is in your pot?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+            </p>
+            <div
+              aria-describedby="pot"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <div
+                class="relative mr-2 max-w-[360px]"
+              >
+                <input
+                  aria-label="How much is in your pot? In pounds."
+                  aria-required="true"
+                  class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                  data-testid="pot"
+                  id="pot"
+                  inputmode="numeric"
+                  name="pot"
+                  type="text"
+                  value=""
+                />
+                <span
+                  aria-hidden="true"
+                  class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                >
+                  £
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="border-0 border-l-4 border-red-600 border-solid pl-4"
+          data-testid="errors"
+        >
+          <fieldset
+            class="mb-4"
+          >
+            <label
+              class="text-2xl font-medium text-gray-800 inline-flex mb-0"
+              for="age"
+            >
+              How old are you?
+            </label>
+            <p
+              class="text-base text-gray-400 mb-2"
+            >
+              Age description
+            </p>
+            <div
+              aria-describedby="age"
+              class="mb-2 text-red-700"
+            >
+              Enter a figure
+            </div>
+            <div
+              class="flex"
+            >
+              <input
+                aria-label="How old are you? In years."
+                aria-required="true"
+                class="tool-field w-full border pl-2 focus:outline-none focus:shadow-focus-outline border-gray-600 border-r-0 h-[49px] ml-0 max-w-[307px]"
+                data-testid="age"
+                id="age"
+                inputmode="numeric"
+                name="age"
+                type="text"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="bg-gray-100 py-2 px-3.5 rounded-r border-gray-400 border border-solid min-w-[92px] mr-2 flex items-center"
+              >
+                Years
+              </span>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-10 text-base leading-normal mb-14 md:mt-12 md:mb-16 md:leading-6"
+          id="submit"
+          name="submit"
+          type="submit"
+          value="true"
+        >
+          <span />
+          Calculate
+          <span />
+        </button>
+        <div
+          class="mb-8 text-base"
+        >
+          <p>
+            Callout message
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

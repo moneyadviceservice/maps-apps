@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Component renders component correctly 1`] = `
+<svgr-mock
+  classname="w-[90px] h-[90px] animate-spin mx-auto my-10 text-magenta-500"
+  data-testid="nonjs-spinner"
+/>
+`;

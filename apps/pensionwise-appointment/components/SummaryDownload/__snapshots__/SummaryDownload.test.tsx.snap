@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryDownload component renders minimal options correctly in English 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/en/summary-document/download"
+  data-testid="summary-download-form"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="false"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="false"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="false"
+  />
+  <input
+    id="download_appointment_summary_appointment_type"
+    name="appointment_summary[appointment_type]"
+    type="hidden"
+    value="50_54"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Download your summary (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
+
+exports[`SummaryDownload component renders minimal options correctly in Welsh 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/cy/explore-your-options/welsh-summary"
+  data-testid="summary-download-form-welsh"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="false"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="false"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="false"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Lawrlwytho crynodeb (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
+
+exports[`SummaryDownload component renders not sure answers correctly in English 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/en/summary-document/download"
+  data-testid="summary-download-form"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_appointment_type"
+    name="appointment_summary[appointment_type]"
+    type="hidden"
+    value="standard"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Download your summary (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
+
+exports[`SummaryDownload component renders not sure answers correctly in Welsh 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/cy/explore-your-options/welsh-summary"
+  data-testid="summary-download-form-welsh"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="true"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Lawrlwytho crynodeb (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
+
+exports[`SummaryDownload component renders yes answers correctly in English 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/en/summary-document/download"
+  data-testid="summary-download-form"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_appointment_type"
+    name="appointment_summary[appointment_type]"
+    type="hidden"
+    value="standard"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Download your summary (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
+
+exports[`SummaryDownload component renders yes answers correctly in Welsh 1`] = `
+<form
+  action="https://staging-embedded-journeys.moneyhelper.org.uk/cy/explore-your-options/welsh-summary"
+  data-testid="summary-download-form-welsh"
+  method="POST"
+  target="_blank"
+>
+  <input
+    id="download_appointment_summary_urn"
+    name="appointment_summary[urn]"
+    type="hidden"
+    value=""
+  />
+  <input
+    id="download_appointment_summary_supplementary_benefits"
+    name="appointment_summary[supplementary_benefits]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_debt"
+    name="appointment_summary[supplementary_debt]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_ill_health"
+    name="appointment_summary[supplementary_ill_health]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_defined_benefit_pensions"
+    name="appointment_summary[supplementary_defined_benefit_pensions]"
+    type="hidden"
+    value="true"
+  />
+  <input
+    id="download_appointment_summary_supplementary_pension_transfers"
+    name="appointment_summary[supplementary_pension_transfers]"
+    type="hidden"
+    value="true"
+  />
+  <button
+    class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-secondary-button"
+    type="submit"
+  >
+    <span />
+    Lawrlwytho crynodeb (PDF)
+    <span>
+      <svgr-mock
+        classname=""
+      />
+    </span>
+  </button>
+</form>
+`;
