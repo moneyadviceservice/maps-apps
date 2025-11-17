@@ -1,0 +1,1 @@
+export { SalaryCalculatorResults } from './Results';

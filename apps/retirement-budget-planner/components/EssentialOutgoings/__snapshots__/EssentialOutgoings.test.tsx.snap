@@ -1,0 +1,1270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Essential outgoings component should render component 1`] = `
+<div>
+  <div
+    class="text-2xl font-bold border-b-1 border-slate-400 p-2"
+  >
+    <details
+      class="group tool-collapse"
+      data-testid="expandable-section"
+      open=""
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Hhousing
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <div
+          class="space-y-3.5"
+        >
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="mortgage"
+                >
+                  mortgage
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="mortgageId"
+                        id=":r0:"
+                        inputmode="numeric"
+                        name="mortgage"
+                        type="text"
+                        value="40"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="mortgageFrequency"
+                      name="mortgageFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about mortgage
+                </div>
+              </details>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="rent"
+                >
+                  rent
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="rentId"
+                        id=":r1:"
+                        inputmode="numeric"
+                        name="rent"
+                        type="text"
+                        value="60"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="rentFrequency"
+                      name="rentFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about rent
+                </div>
+              </details>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="service"
+                >
+                  service
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="serviceId"
+                        id=":r2:"
+                        inputmode="numeric"
+                        name="service"
+                        type="text"
+                        value="80"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="serviceFrequency"
+                      name="serviceFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about service
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+  <div
+    class="text-2xl font-bold border-b-1 border-slate-400 p-2"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Uutilities
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <div
+          class="space-y-3.5"
+        >
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="coucilTax"
+                >
+                  coucilTax
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="coucilTaxId"
+                        id=":r3:"
+                        inputmode="numeric"
+                        name="coucilTax"
+                        type="text"
+                        value="100"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="coucilTaxFrequency"
+                      name="coucilTaxFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about coucilTax
+                </div>
+              </details>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="tv"
+                >
+                  tv
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="tvId"
+                        id=":r4:"
+                        inputmode="numeric"
+                        name="tv"
+                        type="text"
+                        value="120"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="tvFrequency"
+                      name="tvFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about tv
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+  <div
+    class="text-2xl font-bold border-b-1 border-slate-400 p-2"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Ttravel
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <div
+          class="space-y-3.5"
+        >
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="transport"
+                >
+                  transport
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="transportId"
+                        id=":r5:"
+                        inputmode="numeric"
+                        name="transport"
+                        type="text"
+                        value="140"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="transportFrequency"
+                      name="transportFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about transport
+                </div>
+              </details>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="tickets"
+                >
+                  tickets
+                </label>
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="ticketsId"
+                        id=":r6:"
+                        inputmode="numeric"
+                        name="tickets"
+                        type="text"
+                        value="160"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="ticketsFrequency"
+                      name="ticketsFrequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about tickets
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+  <div
+    class="text-2xl font-bold border-b-1 border-slate-400 p-2"
+  >
+    <details
+      class="group tool-expand"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+      >
+        <svgr-mock
+          classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Aadditional
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <div
+          class="space-y-3.5"
+        >
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="additionalInput1"
+                >
+                  additionalInput1
+                </label>
+                <input
+                  aria-invalid="false"
+                  class="px-3 m-px h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full mb-4"
+                  data-testid="additionalInput1Label"
+                  id="additionalInput1Label"
+                  name="additionalInput1Label"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="additionalInput1Id"
+                        id=":r7:"
+                        inputmode="numeric"
+                        name="additionalInput1"
+                        type="text"
+                        value="180"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="additionalInput1Frequency"
+                      name="additionalInput1Frequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about additionalInput1
+                </div>
+              </details>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 justify-items-end font-normal"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex flex-col space-y-2"
+              >
+                <label
+                  class="text-base font-bold"
+                  for="additionalInput2"
+                >
+                  additionalInput2
+                </label>
+                <input
+                  aria-invalid="false"
+                  class="px-3 m-px h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full mb-4"
+                  data-testid="additionalInput2Label"
+                  id="additionalInput2Label"
+                  name="additionalInput2Label"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="flex gap-6"
+                >
+                  <div
+                    class="flex"
+                  >
+                    <div
+                      class="relative"
+                    >
+                      <input
+                        class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+                        data-testid="additionalInput2Id"
+                        id=":r8:"
+                        inputmode="numeric"
+                        name="additionalInput2"
+                        type="text"
+                        value="200"
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+                      >
+                        £
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+                  >
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+                    >
+                      <svgr-mock
+                        classname="h-full"
+                      />
+                    </span>
+                    <select
+                      class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+                      data-testid="additionalInput2Frequency"
+                      name="additionalInput2Frequency"
+                    >
+                      <option
+                        value="day"
+                      >
+                        Per day
+                      </option>
+                      <option
+                        value="week"
+                      >
+                        Per week
+                      </option>
+                      <option
+                        value="twoweeks"
+                      >
+                        Per 2 weeks
+                      </option>
+                      <option
+                        value="fourweeks"
+                      >
+                        Per 4 weeks
+                      </option>
+                      <option
+                        value="month"
+                      >
+                        Per month
+                      </option>
+                      <option
+                        value="quarter"
+                      >
+                        Per quarter
+                      </option>
+                      <option
+                        value="sixmonths"
+                      >
+                        Per 6 months
+                      </option>
+                      <option
+                        value="year"
+                      >
+                        Per year
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <details
+                class="group/nested tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    More information
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  More info about additionalInput2
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
+`;

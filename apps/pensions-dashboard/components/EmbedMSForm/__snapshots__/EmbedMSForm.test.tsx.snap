@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmbedMSForm applies custom props correctly 1`] = `
+<div>
+  <div
+    data-testid="embed-layout"
+  >
+    <iframe
+      class="w-full border-0 custom-class"
+      data-testid="frame-1"
+      id="frame-id"
+      loading="lazy"
+      src="https://another.example"
+      style="min-height: 600px;"
+      title="Custom"
+    />
+  </div>
+</div>
+`;
+
+exports[`EmbedMSForm renders iframe with default props and is wrapped by EmbedPageLayout 1`] = `
+<div>
+  <div
+    data-testid="embed-layout"
+  >
+    <iframe
+      class="w-full border-0"
+      data-testid="embedded-ms-form"
+      id="embedded-ms-form"
+      loading="lazy"
+      src="https://example.com"
+      style="min-height: 400px;"
+      title="Test embed"
+    />
+  </div>
+</div>
+`;

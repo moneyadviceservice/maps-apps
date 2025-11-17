@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageSectionLayout renders correctly 1`] = `
+<div>
+  <div
+    class="container-auto max-w-[1272px]"
+  >
+    <div
+      class="mt-8 lg:mt-16 flex flex-col lg:flex-row lg:gap-16"
+    >
+      <div
+        class="sticky bottom-0 z-10 order-2 left-4 right-4 lg:hidden"
+      >
+        <details
+          class="relative h-screen overflow-y-scroll bg-white rounded-t-lg group z-3 max-h-fit"
+        >
+          <summary
+            class="open relative z-20 bg-blue-600 cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-[18px]"
+            data-testid="side-nav-toggle"
+            title="Explore this topic"
+          >
+            <div
+              class="flex items-center p-4 h-[55px]"
+            >
+              <span
+                class="text-green-300"
+              >
+                Explore this topic
+              </span>
+              <div
+                class="ml-auto text-white -rotate-90 group-open:hidden"
+              >
+                <chevron.svg
+                  class="text-green-300"
+                />
+              </div>
+              <div
+                class="items-center hidden ml-auto group-open:flex"
+              >
+                <burger-close.svg
+                  classname="w-[20px] h-[20px] text-white"
+                />
+                <span
+                  class="text-[14px]"
+                >
+                  Close
+                </span>
+              </div>
+            </div>
+          </summary>
+        </details>
+      </div>
+      <div
+        class="hidden lg:block"
+      >
+        <nav
+          class="bg-white min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+        >
+          <ul
+            class="lg:border-1 lg:border-slate-400 lg:border-r-r lg:rounded-bl-[24px] pb-4 lg:pb-0"
+          >
+            <li>
+              <a
+                class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+                href="/en/what-is-the-sfs/find-free-debt-advice"
+              >
+                <span
+                  class="max-w-[90%]"
+                >
+                  Find debt advice
+                </span>
+                <chevron.svg
+                  class="ml-auto"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="pb-16 basis-2/3"
+      >
+        <h1
+          class="text-4xl md:text-6xl text-gray-800 font-bold"
+        >
+          test
+        </h1>
+        <ul
+          class="mt-8"
+        >
+          <li
+            class="mb-4"
+          >
+            <a
+              class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 font-bold visited:text-magenta-800"
+              href="#Whoweare"
+            >
+              Who we are
+            </a>
+          </li>
+        </ul>
+        <div
+          class="mt-6 lg:mt-10"
+          data-testid="section"
+        >
+          <div
+            class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_h2]:text-3xl [&_h2]:lg:text-5xl [&_h2]:line-height-[1.5] [&_h3]:lg:text-4xl [&_h3]:line-height-[1.5] mt-8 lg:mt-12 [&_ul>li]:pb-[16px] [&_a]:text-magenta-800 [&_a]:font-bold [&_a]:visited:text-magenta-800 [&_details]:!border-t-1 [&_details]:!border-slate-400 [&_details>a]:!text-slate-400 [&_details>summary>div]:!text-slate-600 [&_details>summary>summary]:!no-underline [&_details>summary>svg]:!text-slate-600 [&_details>summary]:!text-slate-600 [&_table>tbody>tr>th]:py-2 [&_table>tbody>tr>th]:px-4 [&_table>tbody>tr>td]:py-2 [&_table>tbody>tr>td]:px-4 [&_table>tbody>tr>th]:w-auto [&_table>tbody>tr>td]:w-auto [&_table>tbody>tr>th]:break-words [&_table>tbody>tr>td]:break-words [&_table]:border-1 [&_table]:border-slate-400 [&_table]:tr:border-1 [&_table]:w-full [&_table]:md:table-fixed [&_table>tbody>tr]:border-b-1 [&_table>tbody>tr]:border-b-slate-400 [&_table>tbody>tr>th]:bg-blue-600 [&_table>tbody>tr>th]:text-white [&_table>tbody>tr>th]:text-left [&_table>tbody>tr>th]:border-r-1 [&_table>tbody>tr>th]:border-r-slate-400 [&_table>tbody>tr>td]:border-r-1 [&_table>tbody>tr>td]:border-r-slate-400 [&_table>tbody>tr:nth-child(even)]:bg-gray-150"
+            data-testid="rich-text"
+          >
+            <h2
+              class="text-3xl md:text-5xl text-gray-800 font-bold mb-4"
+              id="Whoweare"
+            >
+              Who we are
+            </h2>
+            <div
+              class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+              data-testid="rich-text"
+            >
+              <p
+                class="mb-4 break-words"
+                data-testid="paragraph"
+              >
+                It provides a single format for financial statements, allowing the debt advice sector and creditors to work together to achieve the right outcomes for people struggling with their finances.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center py-8 mt-12 border-t-1 border-b-1 border-slate-400"
+          data-testid="top"
+        >
+          <div
+            class="flex gap-4 mr-auto"
+          >
+            <button
+              class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+              data-testid="print"
+              type="submit"
+            >
+              <span />
+              Print
+              <span />
+            </button>
+            <a
+              class="active:outline-yellow-400 t-button relative px-3 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white text-blue-600 bg-transparent border-blue-600 border-1 py-1 hover:border-green-500 focus::not-active:bg-magenta-800 active:not-focus:bg-blue-600 hover:bg-blue-300 active:bg-slate-300 active:text-blue-600"
+              href="mailto:?body=http://localhost:3000/en/test"
+            >
+              Email
+            </a>
+          </div>
+          <div
+            class="flex items-center justify-center gap-2 ml-auto"
+          >
+            <a
+              class="items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-blue-600 visited:text-blue-600"
+              href="#main"
+            >
+              Back to top
+            </a>
+            <arrow-up.svg
+              classname=""
+              fill="text-blue-600"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

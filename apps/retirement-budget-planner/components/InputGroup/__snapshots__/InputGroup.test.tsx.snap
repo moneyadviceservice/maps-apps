@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input group component should render the component correctly 1`] = `
+<div>
+  <div
+    class="space-y-2"
+  >
+    <div
+      class="flex flex-col space-y-2"
+    >
+      <div
+        class="flex gap-6"
+      >
+        <div
+          class="flex"
+        >
+          <div
+            class="relative"
+          >
+            <input
+              class="tool-field w-full ml-0 h-auto focus:outline-none focus:shadow-focus-outline peer border-gray-400 border py-[8px] pl-[43px] rounded focus:border-blue-700"
+              data-testid="yourIncomeId"
+              id=":r0:"
+              inputmode="numeric"
+              name="yourIncome"
+              type="text"
+              value="0"
+            />
+            <span
+              aria-hidden="true"
+              class="absolute bg-gray-100 top-0 left-0 py-2 px-3 rounded-l border-gray-400 border border-solid leading-[31px] text-[18px] h-full peer-focus:border-blue-700 peer-focus:border-r-gray-400"
+            >
+              £
+            </span>
+          </div>
+        </div>
+        <div
+          class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700"
+        >
+          <span
+            class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+          >
+            <svgr-mock
+              classname="h-full"
+            />
+          </span>
+          <select
+            class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white h-full"
+            data-testid="yourIncomeFrequency"
+            name="yourIncomeFrequency"
+          >
+            <option
+              value="day"
+            >
+              Per day
+            </option>
+            <option
+              value="week"
+            >
+              Per week
+            </option>
+            <option
+              value="twoweeks"
+            >
+              Per 2 weeks
+            </option>
+            <option
+              value="fourweeks"
+            >
+              Per 4 weeks
+            </option>
+            <option
+              value="month"
+            >
+              Per month
+            </option>
+            <option
+              value="quarter"
+            >
+              Per quarter
+            </option>
+            <option
+              value="sixmonths"
+            >
+              Per 6 months
+            </option>
+            <option
+              value="year"
+            >
+              Per year
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

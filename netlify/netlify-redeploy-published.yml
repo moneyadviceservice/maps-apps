@@ -1,0 +1,136 @@
+name: Deploy branch to Netlify
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+parameters:
+  - name: appName
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+
+  - name: commitReference
+    displayName: Override Commit Reference - If empty will use the last published commit for the selected app.
+    type: string
+    default: ' '
+
+steps:
+  - checkout: self
+    persistCredentials: 'true'
+    fetchDepth: 2000
+
+  - task: PowerShell@2
+    inputs:
+      targetType: inline
+      script: |
+        $commitRef = '${{ parameters.commitReference }}'.Trim();
+        if (!$commitRef) {
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+          $site = Invoke-RestMethod 'https://api.netlify.com/api/v1/sites/${{ parameters.appName }}.netlify.app' -Method 'GET' -Headers $headers
+
+          Write-Output ('Published Branch: {0}' -f $site.published_deploy.branch)
+          Write-Output ('Published Commit: {0}' -f $site.published_deploy.commit_ref)
+          $branchToDeploy = 're-release/{0}' -f $site.published_deploy.branch
+          
+          if ($site.published_deploy.commit_ref) {
+            $commitRef = $site.published_deploy.commit_ref
+            $branchToDeploy += '@{0}' -f $site.published_deploy.commit_ref.Substring(0,7)
+          }
+        }
+        else {
+          $branchToDeploy = 're-release/{0}' -f $commitRef.Substring(0,7)
+        }
+
+        git fetch --all
+        if ($commitRef) {            
+            Write-Output ('Creating branch: {0}' -f $branchToDeploy)
+            git checkout -b $branchToDeploy $commitRef
+            git push -u "origin" $branchToDeploy
+        }
+        else {
+            $remoteBranches = git branch -r
+            $matchingBranches = $remoteBranches | Where-Object { $_.Trim().EndsWith($site.published_deploy.branch) }
+            if ($matchingBranches.Count -eq 1) {
+                $branchToDeploy = ($matchingBranches | Select -First 1).replace('origin/', '').Trim()
+            }
+            else {
+                Write-Output 'Found Branches'
+                Write-Output $matchingBranches
+                throw 'Multiple potential branches found that match {0}' -f $site.published_deploy.branch
+            }
+        }
+
+        Write-Output ('Deployment of pensions-dashboard using branch {0}' -f $branchToDeploy)
+        echo "##vso[task.setvariable variable=branchToDeploy]$branchToDeploy";
+    displayName: 'Create new release branch'
+
+  - template: steps/install-node.yml
+  - script: |
+      npm install
+    displayName: 'NPM Install'
+  - template: templates/match-site.yml
+    parameters:
+      projectName: ${{ parameters.appName }}
+  - script: |
+
+      echo "Site ID: $NETLIFY_SITE_ID"
+      echo "Site Filter: $NETLIFY_SITE_FILTER"
+
+      branchname="$(branchToDeploy)"
+      echo "Branch name is: $branchname"
+
+      deployContext="branch:$branchname"
+
+      alias="${branchname//\//-}"
+      alias="${branchname//./-}"
+      echo "Alias is: $alias"
+
+      echo "Fetching environment variables for context production"
+      env_vars_json=$(NETLIFY_AUTH_TOKEN=$(NETLIFY_AUTH_TOKEN) netlify env:list --context=production --json --filter=$NETLIFY_SITE_FILTER)
+
+      echo "$env_vars_json" | jq -r 'to_entries | .[] | "\(.key): \(.value)"' | while IFS=: read -r key value; do
+        echo "Setting $key for context $deployContext"
+        netlify env:set $key $value --context $deployContext --filter $NETLIFY_SITE_FILTER > /dev/null 2>&1
+      done
+
+      echo "Deploying ${{ parameters.appName }} using context $deployContext to alias $alias"
+      netlify deploy --filter=$NETLIFY_SITE_FILTER --context=$deployContext --auth=$(NETLIFY_AUTH_TOKEN) --alias $alias
+
+    displayName: 'Deploy ${{ parameters.appName }} to Netlify'
