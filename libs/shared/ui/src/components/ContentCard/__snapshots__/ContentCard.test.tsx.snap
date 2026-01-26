@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentCard component renders correctly 1`] = `
+<div
+  class="border-1 border-slate-400 rounded-bl-[36px] print:border-none print:shadow-none print:w-full "
+  data-testid="content-card"
+>
+  <img
+    alt="some alt text"
+    class="print:hidden"
+    data-nimg="1"
+    decoding="async"
+    height="204"
+    loading="lazy"
+    src="/_next/image?url=%2Fimages%2Fnext-steps-control.png&w=828&q=75"
+    srcset="/_next/image?url=%2Fimages%2Fnext-steps-control.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fnext-steps-control.png&w=828&q=75 2x"
+    style="color: transparent;"
+    width="408"
+  />
+  <h3
+    class="text-lg md:text-xl text-gray-800 font-bold m-4"
+  >
+    test title
+  </h3>
+  <div
+    class="pb-4 mx-4 text-lg text-gray-800"
+  >
+    Test content
+  </div>
+</div>
+`;
+
+exports[`ContentCard component renders correctly with no image source 1`] = `
+<div
+  class="border-1 border-slate-400 rounded-bl-[36px] print:border-none print:shadow-none print:w-full "
+  data-testid="content-card"
+>
+  <h3
+    class="text-lg md:text-xl text-gray-800 font-bold m-4"
+  >
+    test title
+  </h3>
+  <div
+    class="pb-4 mx-4 text-lg text-gray-800"
+  >
+    Test content
+  </div>
+</div>
+`;

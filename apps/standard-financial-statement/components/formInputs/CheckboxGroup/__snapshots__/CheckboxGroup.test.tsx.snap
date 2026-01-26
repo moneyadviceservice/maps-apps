@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup matches snapshot 1`] = `
+<div>
+  <fieldset
+    class="mt-3"
+  >
+    <legend
+      class="sr-only"
+    >
+      Sector
+    </legend>
+    <div
+      class="grid space-y-4 sm:grid-cols-2 lg:block"
+    >
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          class="peer hidden"
+          id="education"
+          name="education"
+          type="checkbox"
+        />
+        <label
+          class="flex items-center cursor-pointer"
+          for="education"
+        >
+          <span
+            class="w-8 h-8 flex items-center justify-center rounded-sm border-2 border-gray-400"
+          >
+            <svg
+              class="w-8 h-8 text-white hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Education
+          </span>
+        </label>
+      </div>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          checked=""
+          class="peer hidden"
+          id="health"
+          name="health"
+          type="checkbox"
+        />
+        <label
+          class="flex items-center cursor-pointer"
+          for="health"
+        >
+          <span
+            class="w-8 h-8 flex items-center justify-center rounded-sm border-2 border-gray-400 bg-magenta-800"
+          >
+            <svg
+              class="w-8 h-8 text-white block"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Health
+          </span>
+        </label>
+      </div>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          class="peer hidden"
+          id="arts"
+          name="arts"
+          type="checkbox"
+        />
+        <label
+          class="flex items-center cursor-pointer"
+          for="arts"
+        >
+          <span
+            class="w-8 h-8 flex items-center justify-center rounded-sm border-2 border-gray-400"
+          >
+            <svg
+              class="w-8 h-8 text-white hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Arts
+          </span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

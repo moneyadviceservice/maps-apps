@@ -1,0 +1,20 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/midlife-mot package.json libs/shared"
+
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[functions]
+  included_files = ["apps/midlife-mot/public/*.ttf", "apps/midlife-mot/public/*.png"]
+
+[dev]
+    base = "/"
+    command = "npx nx run midlife-mot:serve"
+    targetPort = 4395
+    autoLaunch = false

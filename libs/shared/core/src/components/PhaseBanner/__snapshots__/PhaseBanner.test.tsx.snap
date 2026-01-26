@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Phase banner component renders alpha correctly 1`] = `
+<div
+  class="mt-3 pb-4 border-b-1 border-slate-400 flex items-center leading-[23px]"
+  data-testid="phase-banner"
+>
+  <span
+    class="mr-3 py-[5px] px-[8px] uppercase text-sm font-bold bg-magenta-500 text-white"
+  >
+    alpha
+  </span>
+  <span>
+    This is a new service - your
+     
+    feedback
+     
+    will help us to improve it.
+  </span>
+</div>
+`;
+
+exports[`Phase banner component renders beta correctly 1`] = `
+<div
+  class="mt-3 pb-4 border-b-1 border-slate-400 flex items-center leading-[23px]"
+  data-testid="phase-banner"
+>
+  <span
+    class="mr-3 py-[5px] px-[8px] uppercase text-sm font-bold bg-magenta-500 text-white"
+  >
+    beta
+  </span>
+  <span>
+    This is a new service - your
+     
+    feedback
+     
+    will help us to improve it.
+  </span>
+</div>
+`;
+
+exports[`Phase banner component renders with custom text correctly 1`] = `
+<div
+  class="mt-3 pb-4 border-b-1 border-slate-400 flex items-center leading-[23px]"
+  data-testid="phase-banner"
+>
+  <span
+    class="mr-3 py-[5px] px-[8px] uppercase text-sm font-bold bg-magenta-500 text-white"
+  >
+    beta
+  </span>
+  <span>
+    This is a new service. We’re still building and improving it.
+  </span>
+</div>
+`;

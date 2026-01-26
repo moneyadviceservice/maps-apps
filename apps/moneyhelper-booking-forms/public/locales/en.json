@@ -1,0 +1,242 @@
+{
+  "site": {
+    "title": "Money Helper Booking Form",
+    "back": "Back"
+  },
+  "layout": {
+    "title": "Book an appointment"
+  },
+  "components": {
+    "appointment-type": {
+      "title": "What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Pension Wise",
+              "value": "pension-wise",
+              "hint": "Explains the options for taking money from your defined contribution pension."
+            },
+            {
+              "text": "Divorce and separation",
+              "value": "pension-wise",
+              "hint": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            },
+            {
+              "text": "Self-employed pensions",
+              "value": "pension-wise",
+              "hint": "Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+            },
+            {
+              "text": "Pension loss",
+              "value": "pension-wise",
+              "hint": "For people who have lost pension money due to a scam or fraud and need support."
+            }
+          ],
+          "error": "Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "when you can access your pension pots",
+            "the different ways you can take money from your pension",
+            "how each option is usually taxed",
+            "how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "eligibility-defined-contribution": {
+      "title": "Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-dc-pass"
+            },
+            {
+              "text": "No, I have a different type of pension",
+              "value": "eligibility-pension-wise-fail"
+            },
+            {
+              "text": "Not sure",
+              "value": "eligibility-dc-pass"
+            }
+          ],
+          "error": "Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-over-50-pass"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-over-50-fail"
+            }
+          ],
+          "error": "Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-uk-pensions-pass"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-pension-wise-fail"
+            }
+          ],
+          "error": "Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "You have inherited someone else’s pension",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "You are retiring early due to poor health",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "Your pension scheme allows early access (protected pension age)",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "None of these apply",
+              "value": "eligibility-pension-wise-fail"
+            }
+          ],
+          "error": "Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "You’re not eligible for a Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "sidebar": {
+      "help": {
+        "title": "Need Help?",
+        "sections": [
+          {
+            "content": "Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+          }
+        ]
+      },
+      "information": {
+        "title": "Important information"
+      }
+    },
+    "error": {
+      "title": "Something went wrong",
+      "sections": [
+        {
+          "content": "There was a problem."
+        },
+        {
+          "content": "What you can do",
+          "items": ["[Try again](/en/appointment-type)"]
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "Continue",
+        "send-text": "Send",
+        "pension-wise-appointment": "Book your free appointment"
+      }
+    },
+    "error-callout": {
+      "title": "There was a problem"
+    },
+    "loading": {
+      "title": "Loading"
+    }
+  }
+}

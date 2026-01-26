@@ -1,0 +1,427 @@
+parameters:
+  - name: compareWithTargetBranch
+    type: boolean
+    default: false
+  - name: envstodeploy
+    type: string
+  - name: context
+    type: string
+  - name: environment
+    type: string
+
+jobs:
+  - job: test_baby_cost_calculator_if_affected
+    displayName: 'baby-cost-calculator'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'baby-cost-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: baby-cost-calculator-e2e
+          projectName: 'baby-cost-calculator'
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_baby_money_timeline_if_affected
+    displayName: 'baby-money-timeline'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'baby-money-timeline'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: baby-money-timeline-e2e
+          projectName: 'baby-money-timeline'
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_pensionwise_triage_if_affected
+    displayName: 'pensionwise-triage'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensionwise-triage'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: pensionwise-triage-e2e
+          projectName: 'pensionwise-triage'
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_pensionwise_appointment_if_affected
+    displayName: 'pensionwise-appointment'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensionwise-appointment'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          testtorun: pensionwise-appointment-e2e
+          projectName: 'pensionwise-appointment'
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_adjustable_income_calculator_if_affected
+    displayName: 'adjustable-income-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'adjustable-income-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'adjustable-income-calculator'
+          testtorun: adjustable-income-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_budget_planner_if_affected
+    displayName: 'budget-planner-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'budget-planner'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'budget-planner'
+          testtorun: budget-planner-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_cash_in_chunks_if_affected
+    displayName: 'cash-in-chunks-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'cash-in-chunks'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'cash-in-chunks'
+          testtorun: cash-in-chunks-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_moneyhelper_booking_forms_if_affected
+    displayName: 'moneyhelper-booking-forms-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-booking-forms'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-booking-forms'
+          testtorun: moneyhelper-booking-forms-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_moneyhelper_contact_forms_if_affected
+    displayName: 'moneyhelper-contact-forms-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-contact-forms'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-contact-forms'
+          testtorun: moneyhelper-contact-forms-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_compare_accounts_if_affected
+    displayName: 'compare-accounts-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'compare-accounts'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'compare-accounts'
+          testtorun: compare-accounts-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_credit_rejection_if_affected
+    displayName: 'credit-rejection-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'credit-rejection'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'credit-rejection'
+          testtorun: credit-rejection-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_guaranteed_income_estimator_if_affected
+    displayName: 'guaranteed-income-estimator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'guaranteed-income-estimator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'guaranteed-income-estimator'
+          testtorun: guaranteed-income-estimator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_leave_pot_untouched_if_affected
+    displayName: 'leave-pot-untouched-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'leave-pot-untouched'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'leave-pot-untouched'
+          testtorun: leave-pot-untouched-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_moneyhelper_tools_pension_type_if_affected
+    displayName: 'tools-pension-type-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-pension-type-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_moneyhelper_tools_workplace_pension_calculator_if_affected
+    displayName: 'tools-workplace-pension-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'moneyhelper-tools'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'moneyhelper-tools'
+          testtorun: moneyhelper-tools-workplace-pension-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_mortgage_calculator_if_affected
+    displayName: 'mortgage-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'mortgage-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'mortgage-calculator'
+          testtorun: mortgage-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_pensions_dashboard_if_affected
+    displayName: 'pensions-dashboard'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'pensions-dashboard'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'pensions-dashboard'
+          testtorun: pensions-dashboard-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_money_adviser_network_if_affected
+    displayName: 'money-adviser-network'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'money-adviser-network'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'money-adviser-network'
+          testtorun: money-adviser-network-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_savings_calculator_if_affected
+    displayName: 'savings-calculator'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'savings-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'savings-calculator'
+          testtorun: savings-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_standard_financial_statement_if_affected
+    displayName: 'standard-financial-statement-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'standard-financial-statement'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'standard-financial-statement'
+          testtorun: standard-financial-statement-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_debt_advice_locator_if_affected
+    displayName: 'debt-advice-locator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'debt-advice-locator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'debt-advice-locator'
+          testtorun: debt-advice-locator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_tools_index_if_affected
+    displayName: 'tools-index-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'tools-index'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'tools-index'
+          testtorun: tools-index-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_travel_insurance_directory_if_affected
+    displayName: 'travel-insurance-directory-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'travel-insurance-directory'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'travel-insurance-directory'
+          testtorun: travel-insurance-directory-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_mortgage_affordability_if_affected
+    displayName: 'mortgage-affordability-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'mortgage-affordability'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'mortgage-affordability'
+          testtorun: mortgage-affordability-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_redundancy_pay_calculator_if_affected
+    displayName: 'redundancy-pay-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'redundancy-pay-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'redundancy-pay-calculator'
+          testtorun: redundancy-pay-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_retirement_budget_planner_if_affected
+    displayName: 'retirement-budget-planner-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'retirement-budget-planner'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'retirement-budget-planner'
+          testtorun: retirement-budget-planner-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_take_whole_pot_if_affected
+    displayName: 'take-whole-pot-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'take-whole-pot'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'take-whole-pot'
+          testtorun: take-whole-pot-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_stamp_duty_calculator_if_affected
+    displayName: 'stamp-duty-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'stamp-duty-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'stamp-duty-calculator'
+          testtorun: stamp-duty-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_credit_options_if_affected
+    displayName: 'credit-options-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'credit-options'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'credit-options'
+          testtorun: credit-options-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_evidence_hub_if_affected
+    displayName: 'evidence-hub-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'evidence-hub'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'evidence-hub'
+          testtorun: evidence-hub-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright
+
+  - job: test_midlife_mot_if_affected
+    displayName: 'midlife-mot-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'midlife-mot'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'midlife-mot'
+          testtorun: midlife-mot-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: cypress
+
+  - job: test_salary_calculator_if_affected
+    displayName: 'salary-calculator-e2e'
+    condition: and(succeeded(), contains(${{ parameters.envstodeploy }}, 'salary-calculator'))
+    steps:
+      - template: ../steps/run-tests.yml
+        parameters:
+          compareWithTargetBranch: ${{ parameters.compareWithTargetBranch }}
+          projectName: 'salary-calculator'
+          testtorun: salary-calculator-e2e
+          context: ${{ parameters.context }}
+          environment: ${{ parameters.environment }}
+          testrunner: playwright

@@ -1,0 +1,362 @@
+import numeral from 'numeral';
+
+import { Link } from '@maps-react/common/components/Link';
+import { Paragraph } from '@maps-react/common/components/Paragraph';
+import { ToolIntro } from '@maps-react/common/components/ToolIntro';
+import { UrgentCallout } from '@maps-react/common/components/UrgentCallout';
+import useTranslation from '@maps-react/hooks/useTranslation';
+
+import {
+  CalculatorConfig,
+  PropertyTaxCalculatorInput,
+  PropertyTaxCalculatorResult,
+} from '../../components/BaseCalculator';
+import { LinkList } from '../../components/LinkList';
+import { TaxExplainer } from '../../components/TaxExplainer/TaxExplainer';
+import type { BuyerType as StandardBuyerType } from '../rates/LBTTRates';
+import { createStampDutyFields } from '../sharedFields';
+import { HaveYouTried } from 'components/HaveYouTried';
+import { calculateLandAndBuildingsTransactionTax } from '../../utils/calculations';
+import { validateStampDutyFormWithFieldErrors } from '../../utils/validation';
+
+export type LandTransactionTaxInput = PropertyTaxCalculatorInput;
+export type LandTransactionTaxResult = PropertyTaxCalculatorResult;
+
+type TranslationFunction = (options: { en: any; cy: any }, params?: any) => any;
+
+export const landBuildingsTransactionTaxConfig: CalculatorConfig<
+  LandTransactionTaxInput,
+  LandTransactionTaxResult
+> = {
+  name: 'LBTT Calculator',
+  title: 'Land and Buildings Transaction Tax Calculator',
+  analyticsToolName: 'LBTT Calculator',
+  analyticsSteps: {
+    calculate: 'Calculate',
+    results: 'Results',
+  },
+  socialShareTitle: {
+    en: 'Land and Buildings Transaction Tax calculator - See how much tax you’ll pay',
+    cy: 'Cyfrifiannell Treth Trafodiadau Tir ac Adeiladau – Gweler faint o dreth y byddwch yn ei thalu',
+  },
+
+  introduction: (isEmbedded: boolean, z: TranslationFunction) => (
+    <>
+      {z({
+        en: (
+          <>
+            <ToolIntro>
+              Calculate the Land and Buildings Transaction Tax on your
+              residential property in Scotland
+            </ToolIntro>
+            <div className="hidden sm:block">
+              Our calculator lets you know the amount of{' '}
+              <Link
+                href="https://www.moneyhelper.org.uk/en/homes/buying-a-home/land-and-buildings-transaction-tax-everything-you-need-to-know"
+                target={isEmbedded ? '_blank' : ''}
+              >
+                Land and Buildings Transaction Tax
+              </Link>{' '}
+              you&apos;ll be liable to pay. It&apos;ll work out how much
+              you&apos;ll owe, whether you&apos;re a{' '}
+              <Link
+                href="https://www.moneyhelper.org.uk/en/homes/buying-a-home/first-time-buyer-money-tips"
+                target={isEmbedded ? '_blank' : ''}
+              >
+                first-time buyer
+              </Link>
+              , moving home, or buying an additional property.
+            </div>
+          </>
+        ),
+        cy: (
+          <>
+            <ToolIntro>
+              Cyfrifwch y Dreth Trafodion Tir ac Adeiladau ar eich eiddo preswyl
+              yn yr Alban
+            </ToolIntro>
+            <div className="hidden sm:block">
+              Mae ein cyfrifiannell yn rhoi gwybod am y swm o{' '}
+              <Link
+                href="https://www.moneyhelper.org.uk/cy/homes/buying-a-home/land-and-buildings-transaction-tax-everything-you-need-to-know"
+                target={isEmbedded ? '_blank' : ''}
+              >
+                Dreth Trafodiadau Tir ac Adeiladau
+              </Link>{' '}
+              bydd angen i chi ei dalu. Bydd yn cyfrifo faint bydd yn ddyledus
+              gennych, os ydych yn{' '}
+              <Link
+                href="https://www.moneyhelper.org.uk/cy/homes/buying-a-home/first-time-buyer-money-tips"
+                target={isEmbedded ? '_blank' : ''}
+              >
+                brynwr tro cyntaf
+              </Link>
+              , symud cartref, neu&apos;n prynu eiddo ychwanegol.
+            </div>
+          </>
+        ),
+      })}
+    </>
+  ),
+
+  fields: createStampDutyFields,
+
+  fieldOptions: {
+    buyerType: (z: TranslationFunction) => [
+      {
+        value: 'firstTimeBuyer',
+        text: z({ en: 'my first home', cy: 'fy nghartref cyntaf' }),
+      },
+      {
+        value: 'nextHome',
+        text: z({ en: 'my next home', cy: 'fy nghartref nesaf' }),
+      },
+      {
+        value: 'additionalHome',
+        text: z({
+          en: 'my additional property or second home',
+          cy: 'eiddo ychwanegol neu ail gartref',
+        }),
+      },
+    ],
+  },
+
+  calculate: (input: LandTransactionTaxInput) => {
+    const price = Number(input.price);
+    if (!price || !input.buyerType || !input.purchaseDate) return null;
+    return calculateLandAndBuildingsTransactionTax(
+      price * 100,
+      input.buyerType as StandardBuyerType,
+      input.purchaseDate,
+    );
+  },
+
+  formatResult: (
+    result: LandTransactionTaxResult,
+    input: LandTransactionTaxInput,
+    z: TranslationFunction,
+  ) => (
+    <>
+      <Paragraph className="mb-4 text-5xl font-bold break-all t-result-tax">
+        £{numeral(result.tax / 100).format('0,0.00')}
+      </Paragraph>
+      <Paragraph className="mb-6 text-xl text-gray-700">
+        {z(
+          {
+            en: 'Based on purchase date of {purchaseDate}',
+            cy: 'Yn seiliedig ar ddyddiad prynu {purchaseDate}',
+          },
+          {
+            purchaseDate: result.purchaseDate.replace(/-/g, '/'),
+          },
+        )}
+      </Paragraph>
+      <Paragraph className="text-xl text-gray-700 t-result-rate">
+        {z(
+          {
+            en: 'Effective tax rate is {tax}',
+            cy: 'Y raddfa dreth effeithiol yw {tax}',
+          },
+          { tax: `${result.percentage.toFixed(2)}%` },
+        )}
+      </Paragraph>
+    </>
+  ),
+
+  resultTitle: (input: LandTransactionTaxInput, z: TranslationFunction) => {
+    const { buyerType } = input;
+
+    return (
+      (buyerType === 'firstTimeBuyer' &&
+        z({
+          en: 'Land and Buildings Transaction Tax on your first home is',
+          cy: 'Treth Trafodiadau Tir ac Adeiladau ar eich cartref cyntaf yw',
+        })) ||
+      (buyerType === 'nextHome' &&
+        z({
+          en: 'Land and Buildings Transaction Tax on your next home is',
+          cy: 'Treth Trafodiadau Tir ac Adeiladau ar eich cartref nesaf yw',
+        })) ||
+      (buyerType === 'additionalHome' &&
+        z({
+          en: 'Land and Buildings Transaction Tax on your additional home is',
+          cy: 'Treth Trafodiadau Tir ac Adeiladau ar eich cartref ychwanegol yw',
+        }))
+    );
+  },
+
+  validateForm: (input: LandTransactionTaxInput, z: TranslationFunction) =>
+    validateStampDutyFormWithFieldErrors(input, z),
+
+  howIsItCalculated: (input: LandTransactionTaxInput, _isEmbedded: boolean) => (
+    <TaxExplainer
+      buyerType={input.buyerType as StandardBuyerType}
+      purchaseDate={input.purchaseDate}
+      taxType="LBTT"
+    />
+  ),
+
+  didYouKnow: (isEmbedded: boolean, z: TranslationFunction) => (
+    <UrgentCallout variant="arrow">
+      <h3 className="text-lg font-bold text-gray-800">
+        {z({ en: 'Did you know?', cy: 'A wyddech chi?' })}
+      </h3>
+      <div className="text-gray-800 text-md">
+        <Paragraph>
+          {z({
+            en: (
+              <>
+                You might have to pay Land and Buildings Transaction Tax (LBTT)
+                on residential and non-residential land and property
+                transactions. It is the responsibility of the taxpayer to
+                complete and submit an accurate LBTT return, where required, and
+                pay any tax due. LBTT returns can be submitted using Revenue
+                Scotland’s{' '}
+                <Link
+                  href="https://revenue.scot/taxes/scottish-electronic-tax-system-sets"
+                  target={isEmbedded ? '_blank' : ''}
+                >
+                  online portal
+                </Link>{' '}
+                or a{' '}
+                <Link
+                  href="https://revenue.scot/taxes/land-buildings-transaction-tax/paper-lbtt-forms/paper-lbtt-return-forms"
+                  target={isEmbedded ? '_blank' : ''}
+                >
+                  LBTT form
+                </Link>
+                . Further information can be found on:
+              </>
+            ),
+            cy: (
+              <>
+                Efallai bydd yn rhaid i chi dalu Treth Trafodiadau Tir ac
+                Adeiladau (LBTT) ar drafodion tir ac eiddo preswyl ac amhreswyl.
+                Cyfrifoldeb y trethdalwr yw cwblhau a chyflwyno ffurflen LBTT
+                gywir, lle bo angen, a thalu unrhyw dreth sy’n ddyledus. Gellir
+                cyflwyno ffurflenni LBTT gan ddefnyddio porth ar-lein neu
+                ffurflen LBTT Refeniw’r Alban. Gellir dod o hyd i fwy o
+                wybodaeth ar:
+              </>
+            ),
+          })}
+        </Paragraph>
+      </div>
+      <div>
+        <Link
+          href={z({
+            en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/everything-you-need-to-know-about-stamp-duty',
+            cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/everything-you-need-to-know-about-stamp-duty',
+          })}
+          target={isEmbedded ? '_blank' : ''}
+        >
+          {z({
+            en: 'Land and Buildings Transaction Tax (LBTT) - Everything you need to know',
+            cy: 'Treth Trafodiadau Tir ac Adeiladau (LBTT) - Popeth y mae angen i chi wybod',
+          })}
+        </Link>
+      </div>
+    </UrgentCallout>
+  ),
+
+  findOutMore: (
+    input: LandTransactionTaxInput,
+    isEmbedded: boolean,
+    z: TranslationFunction,
+  ) => (
+    <div className="lg:max-w-4xl">
+      <LinkList
+        title={z({ en: 'Find out more:', cy: 'Darganfyddwch fwy:' })}
+        description={undefined}
+        links={[
+          {
+            title: z({
+              en: 'The cost of buying a house and moving',
+              cy: 'Y gost o brynu tŷ a symud',
+            }),
+            href: z({
+              en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/estimate-your-overall-buying-and-moving-costs',
+              cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/estimate-your-overall-buying-and-moving-costs',
+            }),
+          },
+          {
+            title: z({
+              en: 'Mortgage-related fees and costs',
+              cy: 'Ffioedd a chostau cysylltiedig â morgais',
+            }),
+            href: z({
+              en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-related-fees-and-costs-at-a-glance',
+              cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/mortgage-related-fees-and-costs-at-a-glance',
+            }),
+          },
+          {
+            title: z({
+              en: 'Homebuyer surveys and costs',
+              cy: 'Arolygon a chostau prynwyr tai',
+            }),
+            href: z({
+              en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/a-guide-to-homebuyer-surveys-and-costs',
+              cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/a-guide-to-homebuyer-surveys-and-costs',
+            }),
+          },
+        ]}
+        isEmbedded={isEmbedded}
+      />
+    </div>
+  ),
+
+  relatedLinks: (isEmbedded: boolean, z: TranslationFunction) => {
+    const title = z({
+      en: 'Buying in England, Northern Ireland or Wales?',
+      cy: 'Prynu yng Nghymru, Lloegr neu Ogledd Iwerddon?',
+    });
+
+    const description = z({
+      en: 'If you are buying a property in any of these countries, then use the appropriate calculator to work out how much you will pay',
+      cy: "Os ydych chi'n prynu yn unrhyw un o'r gwledydd hyn, yna defnyddiwch y gyfrifiannell briodol i gyfrifo faint fyddwch chi'n ei dalu:",
+    });
+
+    const links = [
+      {
+        title: z({
+          en: 'Calculate Stamp Duty in England or Northern Ireland',
+          cy: 'Cyfrifwch Dreth Stamp yng Nghymru, Lloegr neu Ogledd Iwerddon',
+        }),
+        href: z({
+          en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/stamp-duty-calculator',
+          cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/stamp-duty-calculator',
+        }),
+      },
+      {
+        title: z({
+          en: 'Calculate Land Transaction Tax for Wales',
+          cy: 'Cyfrifwch Dreth Trafodiadau Tir ar gyfer Cymru',
+        }),
+        href: z({
+          en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/land-transaction-tax-calculator-wales',
+          cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/land-transaction-tax-calculator-wales',
+        }),
+      },
+    ];
+
+    return (
+      <LinkList
+        title={title}
+        description={description}
+        links={links}
+        isEmbedded={isEmbedded}
+      />
+    );
+  },
+
+  haveYouTried: (
+    isEmbedded: boolean,
+    z: ReturnType<typeof useTranslation>['z'],
+  ) => <HaveYouTried isEmbedded={isEmbedded} z={z} />,
+
+  pagePath: (z: TranslationFunction) =>
+    z({
+      en: 'https://www.moneyhelper.org.uk/en/homes/buying-a-home/land-and-buildings-transaction-tax-calculator-scotland',
+      cy: 'https://www.moneyhelper.org.uk/cy/homes/buying-a-home/land-and-buildings-transaction-tax-calculator-scotland',
+    }),
+};

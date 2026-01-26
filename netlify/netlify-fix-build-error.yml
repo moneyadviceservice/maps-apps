@@ -1,0 +1,28 @@
+name: Fix package build error for Netlify sites
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - script: |
+      pip install requests
+    displayName: 'Install requests package'
+
+  - script: |
+      python netlify/scripts/build-error-fix.py
+    displayName: 'Re-build with cleared cache for each site'
+    env:
+      NETLIFY_TOKEN: $(NETLIFY_TOKEN)
+
+  - script: |
+      echo "Waiting for builds to complete..."
+      sleep 2700
+    displayName: 'Waiting for builds to complete'
+  
+  - script: |
+      python netlify/scripts/reset-force-build-netlify.py
+    displayName: 'Reset FORCE_BUILD env variable for each site'
+    env:
+      NETLIFY_TOKEN: $(NETLIFY_TOKEN)

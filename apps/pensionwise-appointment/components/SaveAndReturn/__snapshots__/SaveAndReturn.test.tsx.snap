@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Save and return component should display the component correctly 1`] = `
+<div>
+  <div>
+    <h1
+      class="text-4xl md:text-6xl text-gray-800 font-bold mt-10 mb-6"
+      data-testid="section-title"
+    >
+      Save and return
+    </h1>
+    <div
+      class="mb-6"
+    >
+      <p
+        class="mb-4 break-words"
+        data-testid="paragraph"
+      >
+        Save your data
+      </p>
+    </div>
+    <form
+      method="POST"
+      novalidate=""
+    >
+      <input
+        name="language"
+        type="HIDDEN"
+        value="en"
+      />
+      <input
+        name="slug"
+        type="hidden"
+        value="save-and-return"
+      />
+      <div
+        class=""
+        data-testid="errors"
+      >
+        <label
+          class="block mb-1 text-lg"
+          for="email"
+        >
+          Input email
+        </label>
+        <p
+          class="mb-1 text-gray-400"
+          id="email-hint"
+        >
+          Add your email
+        </p>
+        <input
+          aria-describedby="email-hint "
+          class="px-3 m-px mt-1 w-full h-10 rounded border border-gray-400 focus:outline-none focus:shadow-focus-outline md:w-80 obfuscate"
+          data-testid="email"
+          id="email"
+          name="email"
+          type="email"
+        />
+      </div>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-6 w-full md:w-auto"
+        data-testid="save-and-return"
+        formaction="/api/save-and-return"
+        type="submit"
+      >
+        <span />
+        Send email
+        <span />
+      </button>
+    </form>
+  </div>
+</div>
+`;

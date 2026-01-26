@@ -1,0 +1,254 @@
+{
+  "tabs": {
+    "about-you": "About you",
+    "income": "Retirement income",
+    "essential-outgoings": "Retirement costs",
+    "summary": "Results"
+  },
+  "pageTitle": "Retirement Budget Planner",
+  "backButton": "Back",
+  "continueButton": "Continue",
+  "saveAndComeBackButton": "Save and come back later",
+  "errorSummary": {
+    "title": "There is a problem",
+    "text": "It looks like you haven’t filled anything yet. Please enter the required information."
+  },
+  "income": {
+    "title": "Expected retirement income",
+    "description": "If you reached State Pension age before 6 April 2016, you need to claim the basic State Pension instead. If you're over 80, you might also be able to make a claim for the over 80 pension.",
+    "statePension": {
+      "title": "Your Income",
+      "netIncome": {
+        "title": "Income from work",
+        "moreInfo": "Net income information"
+      },
+      "stateBenefits": {
+        "title": "State Benefits",
+        "moreInfo": "State benefits information"
+      },
+      "statePension": {
+        "title": "State Pension",
+        "moreInfo": "State pension information"
+      }
+    },
+    "estimatedIncome": {
+      "title": "Estimated Retirement Income",
+      "description": "Use this section to combine your different pension pots and see how much income they may give you in retirement.",
+      "buttonLabel": "Add Pension Pot"
+    },
+    "additionalItems": {
+      "title": "Other additional retirement income"
+    }
+  },
+  "essentialOutgoings": {
+    "title": "Retirement costs",
+    "moreInfoTitle": "More information",
+    "housingCost": {
+      "title": "Housing",
+      "mortgageRepayment": {
+        "labelText": "Mortgage repayment",
+        "moreInfo": "More information about housing costs"
+      },
+      "rent": {
+        "labelText": "Rent or Care home fees",
+        "moreInfo": "More information about rent"
+      },
+      "groundRent": {
+        "labelText": "Ground rent",
+        "moreInfo": "More information about ground rent"
+      },
+      "serviceCharge": {
+        "labelText": "Service or factoring charge",
+        "moreInfo": "More information about service or factoring charge"
+      }
+    },
+    "utilities": {
+      "title": "Household bills",
+      "councilTax": {
+        "labelText": "Council Tax or Rates",
+        "moreInfo": "More information about Council Tax"
+      },
+      "tvLicence": {
+        "labelText": "TV licence",
+        "moreInfo": "More information about TV licence"
+      },
+      "electric": {
+        "labelText": "Energy (gas, electricity and other household fuels)",
+        "moreInfo": "More information about energy"
+      },
+      "phone": {
+        "labelText": "Broadband and home phone",
+        "moreInfo": "More information about broadband and home phone"
+      },
+      "mobilePhone": {
+        "labelText": "Mobile phone",
+        "moreInfo": "More information about mobile phone"
+      },
+      "water": {
+        "labelText": "Water",
+        "moreInfo": "More information about water"
+      },
+      "internet": {
+        "labelText": "Paid-for TV and streaming services",
+        "moreInfo": "More information about paid-for TV and streaming services"
+      }
+    },
+    "travelCosts": {
+      "title": "Travel",
+      "publicTransport": {
+        "labelText": "Public transport",
+        "moreInfo": "More information about public transport"
+      },
+      "petrol": {
+        "labelText": "Petrol, diesel or electric charging",
+        "moreInfo": "More information about petrol, diesel or electric charging"
+      },
+      "roadTax": {
+        "labelText": "Road tax",
+        "moreInfo": "More information about road tax"
+      },
+      "otherVehicle": {
+        "labelText": "Other vehicle running costs (MOT and services)",
+        "moreInfo": "More information about other vehicle costs"
+      }
+    },
+    "lending": {
+      "title": "Borrowing",
+      "loans": {
+        "labelText": "Credit card repayments",
+        "moreInfo": "More information about loan/credit card repayments"
+      },
+      "buyNowPayLater": {
+        "labelText": "Loan or car finance repayments",
+        "moreInfo": "More information about buy now pay later schemes"
+      }
+    },
+    "insurance": {
+      "title": "Insurance",
+      "homeContentInsurance": {
+        "labelText": "Home",
+        "moreInfo": "More information about home insurance"
+      },
+      "lifeFuneralInsurance": {
+        "labelText": "Life and funeral plans",
+        "moreInfo": "More information about life and funeral plans"
+      },
+      "petInsurance": {
+        "labelText": "Pet",
+        "moreInfo": "More information about pet insurance"
+      },
+      "carVanMotorbike": {
+        "labelText": "Car, van or motorbike",
+        "moreInfo": "More information about car, van or motorbike insurance"
+      }
+    },
+    "householdExpenses": {
+      "title": "Living costs",
+      "food": {
+        "labelText": "Food and groceries",
+        "moreInfo": "More information about food costs"
+      },
+      "healthBeauty": {
+        "labelText": "Health and beauty (toiletries, hairdressing, eye and dental care)",
+        "moreInfo": "More information about personal item costs"
+      },
+      "medication": {
+        "labelText": "Prescriptions and medication",
+        "moreInfo": "More information about prescription and medication costs"
+      },
+      "petEssentials": {
+        "labelText": "Pets (food, vet bills and grooming)",
+        "moreInfo": "More information about pet essentials costs"
+      },
+      "clothesShoes": {
+        "labelText": "Clothes and shoes",
+        "moreInfo": "More information about clothes and shoes costs"
+      }
+    },
+    "essentailsAdditionalItems": {
+      "title": "Other essential outgoings",
+      "placeholder": "Your essential items"
+    }
+  },
+  "summaryTotal": {
+    "title": "Joint summary total (monthly)",
+    "income": "Retirement income",
+    "spending": "Your spending",
+    "balance": "Balance"
+  },
+  "aboutYou": {
+    "title": "About you",
+    "dob": {
+      "labelText": "What’s your date of birth?",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "gender": {
+      "labelText": "What’s your sex?",
+      "male": "Male",
+      "female": "Female"
+    },
+    "retireAge": {
+      "labelText": "When would you like to retire?",
+      "suffix": "years"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why do we need this information?",
+      "infoText": "We need your date of birth and sex to work out the earliest you can claim the State Pension – and if this is before or after your planned retirement date."
+    },
+    "errors": {
+      "dob-empty": "Enter a valid day, month and year",
+      "day-invalid": "Enter a valid day",
+      "month-invalid": "Enter a valid month",
+      "year-invalid": "Enter a valid year",
+      "dob-age-range": "You must be at least 18 years old",
+      "dob-invalid": "Enter a valid date of birth",
+      "gender-generic": "Please enter your gender",
+      "retire-age-empty": "Enter the age you'd like to retire",
+      "retire-age-range": "Your retirement age must be between 55 and 99",
+      "retire-age-less-than-current-age": "The earliest retirement age you can enter is the same as your current age"
+    }
+  },
+  "saveAndComeBack": {
+    "title": "Save and come back later",
+    "description": "Enter your email below and we’ll send you a link to access your saved progress. Use the link to return to your online appointment any time.",
+    "userEmailLabelText": "Your email address",
+    "emailHint": "We’ll only use this to send you a link to access your saved progress.",
+    "buttonLabel": "Save and send email",
+    "backButtonLink": "Back",
+
+    "errorSummary": {
+      "title": "There is a problem",
+      "email-generic": "Enter an email address in the correct format"
+    },
+    "errorLink": "About you",
+
+    "errors": {
+      "email-generic": "Error: Enter an email address in the correct format, like name@example.com",
+      "email-error": "There was a problem sending the email, please try again."
+    }
+  },
+  "progressSaved": {
+    "title": "Progress saved",
+    "subtitle": "What happens next",
+    "description": "We’ve sent you an email. It’ll come from xxxx. Make sure to check your spam folder if you haven’t received it.",
+    "description2": "Click the link in the email to return to your Budget.",
+    "primaryButtonLabel": "Return to your budget planner",
+    "secondaryButtonLabel": "Resend email"
+  },
+  "errorPage": {
+    "title": "We were unable to save your details",
+    "description": "Something went wrong when saving your data.",
+    "listOfOptions": {
+      "description": "You can:",
+      "goBackToTool": {
+        "text": "return to our Retirement budget planner"
+      },
+      "contactSupport": {
+        "linkText": "contact us for support",
+        "rest": "if you continue to have issues."
+      }
+    }
+  }
+}

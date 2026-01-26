@@ -1,0 +1,9 @@
+#!/bin/sh
+BRANCH=`git rev-parse --abbrev-ref HEAD`
+PROTECTED_BRANCHES="^(test|staging)"
+
+if [[ "$BRANCH" =~ $PROTECTED_BRANCHES ]]
+then
+  echo -e "\n🚫 Cannot push to remote $BRANCH branch, test and staging are reserved branch names."
+  exit 1
+fi

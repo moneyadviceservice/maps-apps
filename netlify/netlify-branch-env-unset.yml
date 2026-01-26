@@ -1,0 +1,76 @@
+name: Remove Netlify Environment Variables for Branch Context
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+parameters:
+  - name: appName
+    displayName: App to Clean
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-booking-forms
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - savings-calculator
+      - salary-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+      - travel-insurance-directory
+
+  - name: branchName
+    displayName: 'Branch Name'
+    type: string
+
+steps:
+  - script: |
+      npm install
+    displayName: 'NPM Install'
+  - template: templates/match-site.yml
+    parameters:
+      projectName: ${{ parameters.appName }}
+  - script: |
+      echo "Site ID: $NETLIFY_SITE_ID"
+      echo "Site Filter: $NETLIFY_SITE_FILTER"
+
+      branchname="${{ parameters.branchName }}"
+      deployContext="branch:$branchname"
+      echo "Branch name is: $branchname"
+
+      export NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+      env_vars_json=$(netlify env:list --context="$deployContext" --json --filter="$NETLIFY_SITE_FILTER")
+
+      # Extract keys and unset each
+      echo "$env_vars_json" | jq -r 'keys[]' | while read key; do
+        echo "Removing $key from context $deployContext"
+        netlify env:unset "$key" --context="$deployContext" --filter="$NETLIFY_SITE_FILTER"
+      done
+    displayName: 'Remove Netlify Environment Variables for ${{ parameters.appName }} : ${{ parameters.branchName }}'

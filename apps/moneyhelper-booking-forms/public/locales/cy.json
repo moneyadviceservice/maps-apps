@@ -1,0 +1,242 @@
+{
+  "site": {
+    "title": "--WELSH Money Helper Booking Form",
+    "back": "--WELSH Back"
+  },
+  "layout": {
+    "title": "--WELSH Book an appointment"
+  },
+  "components": {
+    "appointment-type": {
+      "title": "--WELSH What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Pension Wise",
+              "value": "--WELSH pension-wise",
+              "hint": "--WELSH Explains the options for taking money from your defined contribution pension."
+            },
+            {
+              "text": "--WELSH Divorce and separation",
+              "value": "--WELSH pension-wise",
+              "hint": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            },
+            {
+              "text": "--WELSH Self-employed pensions",
+              "value": "--WELSH pension-wise",
+              "hint": "--WELSH Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+            },
+            {
+              "text": "--WELSH Pension loss",
+              "value": "--WELSH pension-wise",
+              "hint": "--WELSH For people who have lost pension money due to a scam or fraud and need support."
+            }
+          ],
+          "error": "--WELSH Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "--WELSH Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH when you can access your pension pots",
+            "--WELSH the different ways you can take money from your pension",
+            "--WELSH how each option is usually taxed",
+            "--WELSH how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "eligibility-defined-contribution": {
+      "title": "--WELSH Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "--WELSH This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "--WELSH eligibility-dc-pass"
+            },
+            {
+              "text": "--WELSH No, I have a different type of pension",
+              "value": "--WELSH eligibility-pension-wise-fail"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "--WELSH eligibility-dc-pass"
+            }
+          ],
+          "error": "--WELSH Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "--WELSH Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "--WELSH eligibility-over-50-pass"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "--WELSH eligibility-over-50-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "--WELSH Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "--WELSH You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "--WELSH eligibility-uk-pensions-pass"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "--WELSH eligibility-pension-wise-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "--WELSH Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "--WELSH You have inherited someone else’s pension",
+              "value": "--WELSH eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH You are retiring early due to poor health",
+              "value": "--WELSH eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH Your pension scheme allows early access (protected pension age)",
+              "value": "--WELSH eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH None of these apply",
+              "value": "--WELSH eligibility-pension-wise-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "--WELSH You’re not eligible for a Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "--WELSH You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "sidebar": {
+      "help": {
+        "title": "--WELSH Need Help?",
+        "sections": [
+          {
+            "content": "--WELSH Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+          }
+        ]
+      },
+      "information": {
+        "title": "--WELSH Important information"
+      }
+    },
+    "error": {
+      "title": "--WELSH Something went wrong",
+      "sections": [
+        {
+          "content": "--WELSH There was a problem."
+        },
+        {
+          "content": "--WELSH What you can do",
+          "items": ["--WELSH [Try again](/en/appointment-type)"]
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "--WELSH Continue",
+        "send-text": "--WELSH Send",
+        "pension-wise-appointment": "--WELSH Book your free appointment"
+      }
+    },
+    "error-callout": {
+      "title": "--WELSH There was a problem"
+    },
+    "loading": {
+      "title": "--WELSH Loading"
+    }
+  }
+}
