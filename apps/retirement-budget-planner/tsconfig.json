@@ -1,0 +1,50 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    // "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": ["jest", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@maps-react/common/*": ["../../libs/shared/ui/src/*"],
+      "@maps-react/layouts/*": ["../../libs/shared/layouts/src/*"],
+      "@maps-digital/shared/ui/*": ["../../libs/shared/ui/src/*"],
+      "@maps-react/core/*": ["../../libs/shared/core/src/*"],
+      "@maps-react/hooks/*": ["../../libs/shared/hooks/src/*"],
+      "@maps-react/vendor/*": ["../../libs/shared/vendor/src/*"],
+      "@maps-react/pension-tools/*": ["../../libs/shared/pension-tools/src/*"],
+      "@maps-react/form/*": ["../../libs/shared/form/src/*"],
+      "@maps-react/redis/*": ["../../libs/shared/redis/src/*"],
+      "@maps-react/utils/*": ["../../libs/shared/utils/src/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "next-env.d.ts",
+    "../../libs/shared/utils/src/types/**/*.d.ts",
+    "layout/RetirementPlannerLayout"
+  ],
+  "exclude": [
+    "node_modules",
+    "jest.config.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ]
+}

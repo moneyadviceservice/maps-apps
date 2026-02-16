@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders the cons list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug"
+    start="-1"
+  >
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        First line
+      </p>
+    </li>
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the error list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 marker:leading-snug list-disc text-red-600 space-y-4 marker:text-red-600"
+    start="-1"
+  >
+    <li
+      class="underline text-base decoration-solid text-red-600 break-words"
+    >
+      <p>
+        First line
+      </p>
+    </li>
+    <li
+      class="underline text-base decoration-solid text-red-600 break-words"
+    >
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li
+      class="underline text-base decoration-solid text-red-600 break-words"
+    >
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the pros list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug"
+    start="-1"
+  >
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        First line
+      </p>
+    </li>
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li
+      class="flex items-start gap-2 list-none"
+    >
+      <span
+        class="mt-[2px] mr-2 shrink-0"
+      >
+        <svgr-mock
+          classname=""
+          style="max-width: 22px; max-height: 22px; min-width: 22px; min-height: 22px;"
+        />
+      </span>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the tick-green list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-none"
+    start="-1"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the unordered blue list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700"
+    start="-1"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the unordered blue list correctly 2`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ol
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-decimal marker:text-blue-700"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`List component renders the unordered dark list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-gray-800"
+    start="-1"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the unordered dark list correctly 2`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ol
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-decimal marker:text-gray-800"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`List component renders the unordered magenta list correctly 1`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ul
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-pink-800"
+    start="-1"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List component renders the unordered magenta list correctly 2`] = `
+<div
+  class="flex items-center"
+  data-testid="list-element"
+>
+  <ol
+    class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-decimal marker:text-pink-800"
+  >
+    <li>
+      <p>
+        First line
+      </p>
+    </li>
+    <li>
+      <p>
+        Second Line
+      </p>
+    </li>
+    <li>
+      <p>
+        Third Line
+      </p>
+    </li>
+  </ol>
+</div>
+`;

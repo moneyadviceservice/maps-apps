@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormErrorCallout should render with errors 1`] = `
+<div
+  aria-describedby="error-summary-heading"
+  aria-relevant="all"
+  data-testid="error-summary-container"
+  id="error-summary-container"
+  role="alert"
+  tabindex="-1"
+>
+  <div
+    class="t-error-summary border-4 w-full border-red-600 md:p-8 p-6 outline-none"
+    data-testid="error-records"
+  >
+    <h2
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-3"
+      data-testid="error-summary-heading"
+      id="error-summary-heading"
+    >
+      common.error-callout.title
+    </h2>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 marker:leading-snug list-disc text-red-600 space-y-4 marker:text-red-600 pl-6 ml-4 mb-6"
+        start="-1"
+      >
+        <li
+          class="underline text-base decoration-solid text-red-600 break-words"
+        >
+          <a
+            class="whitespace-pre-wrap"
+            data-testid="error-link-0"
+            href="#field-1"
+          >
+            components.step-0.form.Field 1 is required.error
+          </a>
+        </li>
+        <li
+          class="underline text-base decoration-solid text-red-600 break-words"
+        >
+          <a
+            class="whitespace-pre-wrap"
+            data-testid="error-link-1"
+            href="#field-2"
+          >
+            components.step-0.form.Field 2 is required.error
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

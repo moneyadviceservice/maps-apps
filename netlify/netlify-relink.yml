@@ -1,0 +1,113 @@
+name: Relink netlify app
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: projectNames
+    type: object
+    default: ['sandbox']
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - maps-shopping-list
+      - money-adviser-network
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+      - travel-insurance-directory
+
+stages:
+  - stage: Relink
+    jobs:
+      - ${{ each project in parameters.projectNames }}:
+          # 1. Extract settings
+          - job: Extract_${{ replace(project, '-', '_') }}
+            displayName: 'Extract settings for ${{ project }}'
+            pool:
+              vmImage: ubuntu-latest
+            steps:
+              - checkout: self
+
+              - script: |
+                  chmod +x netlify/scripts/get-site-id.sh
+                  ./netlify/scripts/get-site-id.sh
+                displayName: 'Get Site ID'
+                name: getSiteId
+                env:
+                  PROJECT_NAME: '${{ project }}'
+
+              - script: python netlify/scripts/get-netlify-config.py
+                env:
+                  NETLIFY_TOKEN: $(NETLIFY_TOKEN)
+                  NETLIFY_SITE_ID: $(getSiteId.NETLIFY_SITE_ID)
+                displayName: 'Extract Netlify settings'
+
+              - task: PublishPipelineArtifact@1
+                displayName: 'Upload Test Artifacts (Failures)'
+                inputs:
+                  targetPath: 'netlify_settings.json'
+                  artifactName: 'netlify_config_${{ project }}'
+                  publishLocation: 'pipeline'
+
+          # 2. Manual approval
+          - job: Approve_${{ replace(project, '-', '_') }}
+            dependsOn: Extract_${{ replace(project, '-', '_') }}
+            displayName: 'Approve relink for ${{ project }}'
+            pool: server # required for ManualValidation
+            steps:
+              - task: ManualValidation@0
+                timeoutInMinutes: 1440
+                inputs:
+                  instructions: 'Please relink ${{ project }} in Netlify UI'
+
+          # 3. Apply settings
+          - job: Apply_${{ replace(project, '-', '_') }}
+            dependsOn:
+              - Extract_${{ replace(project, '-', '_') }}
+              - Approve_${{ replace(project, '-', '_') }}
+            variables:
+              varFromExtract: $[ dependencies.Extract_${{ replace(project, '-', '_') }}.outputs['getSiteId.NETLIFY_SITE_ID'] ]
+            displayName: 'Apply settings for ${{ project }}'
+            pool:
+              vmImage: ubuntu-latest
+            steps:
+              - checkout: self
+
+              - task: DownloadPipelineArtifact@2
+                displayName: 'Download Netlify settings artifact'
+                inputs:
+                  artifact: 'netlify_config_${{ project }}'
+                  path: '$(Pipeline.Workspace)/netlify_config'
+
+              - script: python netlify/scripts/update-netlify-config.py
+                env:
+                  NETLIFY_TOKEN: $(NETLIFY_TOKEN)
+                  NETLIFY_SITE_ID: $(varFromExtract)
+                  NETLIFY_ARTIFACT_DIR: $(Pipeline.Workspace)
+                displayName: 'Apply Netlify settings'

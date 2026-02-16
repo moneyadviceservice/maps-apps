@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Real Time Summary component should render the component 1`] = `
+<div>
+  <div
+    class="basis-4/12"
+  >
+    <div
+      class="md:sticky md:top-4 px-2 pt-6 pb-4 space-y-2 border rounded border-slate-400 h-fit"
+      data-testid="summary-total"
+    >
+      <h6
+        class="text-gray-800 font-bold pb-2 pl-2 text-xl"
+      >
+        summaryTotal.title
+      </h6>
+      <div
+        class="py-[22px] pl-4 pr-6 rounded text-lg grid grid-cols-3 bg-gray-100"
+      >
+        <p
+          class="break-words col-span-2 m-0"
+          data-testid="paragraph"
+        >
+          summaryTotal.income
+        </p>
+        <span
+          class="justify-self-end"
+        >
+          £1,000
+        </span>
+      </div>
+      <div
+        class="py-[22px] pl-4 pr-6 rounded text-lg grid grid-cols-3 bg-gray-100"
+      >
+        <p
+          class="break-words col-span-2 m-0"
+          data-testid="paragraph"
+        >
+          summaryTotal.spending
+        </p>
+        <span
+          class="justify-self-end"
+        >
+          £500
+        </span>
+      </div>
+      <div
+        class="py-[22px] pl-4 pr-6 rounded text-lg grid grid-cols-3 text-white bg-green-700"
+      >
+        <p
+          class="break-words col-span-2 m-0"
+          data-testid="paragraph"
+        >
+          summaryTotal.balance
+        </p>
+        <span
+          class="justify-self-end"
+        >
+          £500
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

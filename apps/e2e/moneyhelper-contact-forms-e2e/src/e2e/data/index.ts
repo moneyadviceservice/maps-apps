@@ -1,0 +1,1 @@
+// Shared test data and constants for E2E tests. While the tests are designed to be language agnostic, some values may be used for assertions or form interactions and should be consistent with the test environment setup (e.g., test forms, translations).

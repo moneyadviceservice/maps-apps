@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RichTextWrapper renders the children with class 1`] = `
+<div>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal pb-2 className"
+    data-testid="rich-text"
+  >
+     Test Content
+  </div>
+</div>
+`;
+
+exports[`RichTextWrapper renders the component 1`] = `
+<div>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal pb-2"
+    data-testid="rich-text"
+  >
+    Test Content
+  </div>
+</div>
+`;

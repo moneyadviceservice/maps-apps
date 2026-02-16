@@ -1,0 +1,1 @@
+export { NoScriptSwitcher } from './NoScriptSwitcher';

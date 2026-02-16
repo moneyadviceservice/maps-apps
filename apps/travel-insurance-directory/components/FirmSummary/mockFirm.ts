@@ -1,0 +1,110 @@
+import { TravelInsuranceFirmDocument } from 'types/travel-insurance-firm';
+
+export const createMockFirm = (
+  overrides?: Partial<TravelInsuranceFirmDocument>,
+): TravelInsuranceFirmDocument => {
+  return {
+    fca_number: 123456,
+    registered_name: 'Holiday Extras Cover Limited',
+    website_address: 'https://www.holidayextras.com',
+    approved_at: '2023-01-15T00:00:00Z',
+    created_at: '2023-01-01T00:00:00Z',
+    updated_at: '2023-12-01T00:00:00Z',
+    hidden_at: null,
+    reregistered_at: null,
+    reregister_approved_at: null,
+    confirmed_disclaimer: true,
+    status: 'active',
+    covered_by_ombudsman_question: 'Yes',
+    medical_coverage: {
+      covers_medical_condition_question: 'all',
+      risk_profile_approach_question: 'questionaire',
+      specialised_medical_conditions_covers_all: true,
+      will_not_cover_some_medical_conditions: false,
+      will_cover_undergoing_treatment: true,
+      terminal_prognosis_cover: true,
+      specific_conditions: {
+        metastatic_breast_cancer: 'true',
+        ulceritive_colitis_and_anaemia: 'true',
+        heart_attack_with_hbp_and_high_cholesterol: 'true',
+        copd_with_respiratory_infection: 'true',
+        motor_neurone_disease: 'false',
+        hodgkin_lymphoma: 'true',
+        acute_myeloid_leukaemia: 'true',
+        guillain_barre_syndrome: 'true',
+        heart_failure_and_arrhytmia: 'true',
+        stroke_with_hbp: 'true',
+        peripheral_vascular_disease: 'true',
+        schizophrenia: 'true',
+        lupus: 'true',
+        sickle_cell_and_renal: 'true',
+        sub_arachnoid_haemorrhage_and_epilepsy: 'true',
+        prostate_cancer: 'true',
+        type_one_diabetes: 'true',
+        parkinsons_disease: 'true',
+        hiv: 'true',
+      },
+      likely_not_cover_medical_condition: null,
+      cover_undergoing_treatment: null,
+    },
+    service_details: {
+      offers_telephone_quote: true,
+      cover_for_specialist_equipment: 3000,
+      medical_screening_company: 'Verisk',
+      how_far_in_advance_trip_cover: 'up_to_12_month',
+      covid19_medical_repatriation: true,
+      covid19_cancellation_cover: true,
+      will_cover_specialist_equipment: true,
+      supplies_documentation_when_needed_question: true,
+    },
+    trip_covers: [],
+    medical_specialisms: null,
+    offices: [
+      {
+        address: {
+          line_one: '2nd Floor, 1 Tower View',
+          line_two: 'Kings Hill',
+          town: 'West Malling',
+          county: 'Kent',
+          postcode: 'ME19 4UY',
+        },
+        contact: {
+          email_address: 'insurancewithenquiries@holidayextras.com',
+          telephone_number: '0333 999 2679',
+          website: 'https://www.holidayextras.com',
+        },
+        location: {
+          latitude: 51.275916,
+          longitude: 0.401099,
+        },
+        disabled_access: false,
+        opening_times: [
+          {
+            weekday: {
+              opening: '09:00:00',
+              closing: '17:00:00',
+            },
+            saturday: {
+              opening: '09:00:00',
+              closing: '17:00:00',
+            },
+            sunday: {
+              opening: null,
+              closing: null,
+            },
+          },
+        ],
+        created_at: '2023-01-01T00:00:00Z',
+        updated_at: '2023-12-01T00:00:00Z',
+      },
+    ],
+    principals: [],
+    trading_names: [],
+    searchable: {
+      registered_name_lower: 'holiday extras cover limited',
+      fca_number_string: '123456',
+      keywords: ['holiday', 'extras', 'cover', 'travel', 'insurance'],
+    },
+    ...overrides,
+  };
+};

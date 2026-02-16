@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactFormsLayout renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      aria-hidden="false"
+      class="flex flex-col h-screen"
+      data-testid="main-content"
+      id="main-content"
+    >
+      <header
+        data-testid="header"
+      >
+        <a
+          class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:z-20 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4"
+          href="#main"
+        >
+          Skip to content
+        </a>
+        <div
+          class="bg-blue-700 shadow-bottom-gray t-header print:hidden"
+        >
+          <div
+            class="relative z-10 flex items-center p-4 container-auto"
+          >
+            <details
+              class="relative group"
+            >
+              <summary
+                class="t-header-menu-open cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+                data-testid="nav-toggle"
+                title="Open menu"
+              >
+                <div>
+                  <div
+                    class="group-open:hidden"
+                  >
+                    <svgr-mock
+                      classname=""
+                    />
+                    <span>
+                      menu
+                    </span>
+                  </div>
+                  <div
+                    class="hidden group-open:block"
+                  >
+                    <svgr-mock
+                      classname=""
+                    />
+                    <span>
+                      close
+                    </span>
+                  </div>
+                </div>
+              </summary>
+              <nav
+                class="absolute z-10 flex pt-4 text-gray-900 t-header-navigation w-80 md:w-96"
+              >
+                <div
+                  class="w-full pb-3 space-y-4 bg-white border"
+                >
+                  <ul
+                    class="divide-y"
+                  >
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/benefits"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Benefits
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/everyday-money"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Everyday money
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/family-and-care"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Family & care
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/homes"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Homes
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/money-troubles"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Money troubles
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/pensions-and-retirement"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Pensions & retirement
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/savings"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Savings
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="px-3 py-2"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://www.moneyhelper.org.uk/en/work"
+                      >
+                        <div
+                          class="flex items-center"
+                        >
+                          <div>
+                            Work
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            width="32"
+                          >
+                            <path
+                              d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div
+                    class="px-3 t-header-navigation-button"
+                    data-testid="nav-lang-link-container"
+                  >
+                    <a
+                      class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white"
+                      data-testid="nav-lang-link"
+                      href="/?language=cy"
+                      lang="cy"
+                    >
+                      Cymraeg
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </details>
+            <div
+              class="mx-auto t-header-logo"
+            >
+              <a
+                aria-label="Money helper"
+                href="https://moneyhelper.org.uk/"
+              >
+                <span
+                  class="hidden md:inline"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                </span>
+                <span
+                  class="md:hidden"
+                >
+                  <svgr-mock
+                    classname="w-[99px] h-[51px]"
+                  />
+                </span>
+              </a>
+            </div>
+            <nav
+              aria-label="Language switcher"
+              class="hidden md:block absolute right-[70px]"
+              data-testid="language-switcher"
+            >
+              <ul>
+                <li
+                  class="inline-block after:content-[''] after:inline-block after:h-6 after:relative after:top-2 after:border-white after:border-r-1"
+                >
+                  <span
+                    aria-current="true"
+                    class="p-2 px-4 text-white"
+                  >
+                    English
+                  </span>
+                </li>
+                <li
+                  class="inline-block"
+                >
+                  <a
+                    class="group p-2 px-4 inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="/?language=cy"
+                    hreflang="cy"
+                    lang="cy"
+                    rel="alternate"
+                  >
+                    <span
+                      aria-describedby="lang-description"
+                      class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                    >
+                      Cymraeg
+                    </span>
+                  </a>
+                  <span
+                    class="sr-only"
+                    id="lang-description"
+                  >
+                    Newid yr iaith ir Gymraeg
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <details
+              class="group"
+            >
+              <summary
+                class="t-header-search-open cursor-pointer list-none [&::-webkit-details-marker]:hidden bg-magenta-500 text-white rounded p-1 flex"
+                data-testid="search-toggle"
+                title="Open search"
+              >
+                <svgr-mock
+                  classname="group-open:hidden"
+                />
+                <svgr-mock
+                  classname="hidden group-open:block"
+                />
+              </summary>
+              <form
+                action="https://www.moneyhelper.org.uk/en/search-results.html"
+                class="absolute left-0 right-0 flex px-4 pb-6 bg-blue-700 t-header-search-form top-full shadow-bottom-gray"
+                method="get"
+              >
+                <label
+                  class="sr-only"
+                  for="q"
+                >
+                  Search MoneyHelper
+                </label>
+                <input
+                  class="w-full p-2 rounded-l"
+                  id="q"
+                  name="q"
+                  placeholder="How can we help you today?"
+                  required=""
+                  type="text"
+                />
+                <button
+                  class="p-1 text-white rounded-r bg-magenta-500"
+                  title="Search MoneyHelper"
+                >
+                  <svgr-mock
+                    classname=""
+                  />
+                </button>
+              </form>
+            </details>
+          </div>
+        </div>
+      </header>
+      <main
+        class="my-2 flex-grow mt-8 mb-0 md:mb-8 text-gray-800"
+        data-testid="main"
+        id="main"
+      >
+        <div
+          class="container-auto"
+        >
+          <div
+            class="flex flex-col gap-6 mb-6 md:mb-8 md:gap-8 md:max-w-4xl"
+          />
+          <div>
+            <section
+              class="text-base flex-1 md:max-w-4xl"
+            >
+              <h1
+                class="text-4xl md:text-6xl text-gray-800 font-bold mb-2 md:mb-4 lg:pr-20"
+                data-testid="step-0-title"
+              >
+                components.step-0.title
+              </h1>
+              test content
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="border-t border-gray-100 t-footer mt-8"
+        data-testid="footer"
+      >
+        <div
+          class="t-footer-primary"
+        >
+          <div
+            class="lg:hidden"
+          >
+            <div
+              class="container-auto"
+            >
+              <div
+                class="t-footer-branding md:flex md:space-x-8"
+              >
+                <div
+                  class="pt-10 pb-8 t-footer-gov md:py-12"
+                >
+                  <a
+                    aria-label="Money and Pensions Service logo"
+                    class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                    href="https://www.moneyhelper.org.uk/en"
+                  >
+                    <svgr-mock
+                      alt=""
+                      aria-label="Money and Pensions Service logo"
+                      classname="relative w-[150px] h-[86px]"
+                    />
+                  </a>
+                </div>
+                <hr
+                  class=""
+                />
+                <div
+                  class="pt-8 pb-10 md:py-12"
+                >
+                  <div
+                    class="flex-grow space-y-4 text-sm t-footer-maps"
+                  >
+                    <img
+                      alt=""
+                      aria-label="HM Government logo"
+                      class="md:pt-6"
+                      data-nimg="1"
+                      decoding="async"
+                      height="62"
+                      loading="lazy"
+                      src="/footer/gov.svg"
+                      style="color: transparent;"
+                      width="188"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-100"
+            >
+              <div
+                class="container-auto"
+              >
+                <div
+                  class="py-8 space-y-8 md:flex md:items-end md:gap-8"
+                >
+                  <div
+                    class="flex items-end gap-4"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://plainnumbers.org.uk/community"
+                    >
+                      <img
+                        alt="Plain Numbers Working Together logo"
+                        class=""
+                        data-nimg="1"
+                        decoding="async"
+                        height="68"
+                        loading="lazy"
+                        src="/footer/wwp-logo.svg"
+                        style="color: transparent;"
+                        width="128"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden lg:block"
+          >
+            <div
+              class="container-auto"
+            >
+              <div
+                class="grid grid-cols-2"
+              >
+                <div
+                  class="grid grid-cols-3 gap-2 py-12 t-footer-branding"
+                >
+                  <div
+                    class="t-footer-gov"
+                  >
+                    <a
+                      aria-label="Money and Pensions Service logo"
+                      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en"
+                    >
+                      <svgr-mock
+                        alt=""
+                        aria-label="Money and Pensions Service logo"
+                        classname="relative w-[150px] h-[86px]"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="col-span-2 space-y-4 t-footer-maps text-md"
+                  >
+                    <img
+                      alt=""
+                      aria-label="HM Government logo"
+                      class="pt-5 h-[86px]"
+                      data-nimg="1"
+                      decoding="async"
+                      height="62"
+                      loading="lazy"
+                      src="/footer/gov.svg"
+                      style="color: transparent;"
+                      width="188"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex pl-4 bg-gray-100"
+                >
+                  <div
+                    class="flex-grow"
+                  />
+                  <div
+                    class="flex items-end gap-8 space-y-8"
+                  >
+                    <div
+                      class="flex items-end gap-4 pt-10 pb-12"
+                    >
+                      <a
+                        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                        href="https://plainnumbers.org.uk/community"
+                      >
+                        <img
+                          alt="Plain Numbers Working Together logo"
+                          class=""
+                          data-nimg="1"
+                          decoding="async"
+                          height="68"
+                          loading="lazy"
+                          src="/footer/wwp-logo.svg"
+                          style="color: transparent;"
+                          width="128"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="t-footer-secondary flex flex-col lg:flex-row pt-[50px] pb-12 bg-gray-800 border-b-1 border-b-gray-400"
+        >
+          <div
+            class="container-auto flex flex-col lg:flex-row"
+          >
+            <nav
+              aria-label="Footer navigation"
+              class="flex flex-col lg:flex-row"
+            >
+              <section>
+                <ul
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-[2px]"
+                >
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  border-t-1 sm:border-t-none border-t-gray-400"
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/about-us"
+                    >
+                      About us
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  border-t-none sm:border-t-1 sm:border-t-gray-400"
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/getting-help-and-advice"
+                    >
+                      Getting help and advice
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  border-t-none md:border-t-1 md:border-t-gray-400"
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/contact-us"
+                    >
+                      Contact us
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  "
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/about-us/partnerships"
+                    >
+                      Partners
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  "
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/tools-and-calculators"
+                    >
+                      Tools and calculators
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  "
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/contact-us/feedback"
+                    >
+                      Give feedback
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400  "
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/about-us/welsh-language-scheme"
+                    >
+                      Welsh language scheme
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="text-white hover:text-pink-400 text-sm cursor-pointer hover:underline
+                    border-b-1 border-b-gray-400 md:col-start-3 lg:col-start-2 "
+                  >
+                    <a
+                      class="gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none flex items-center justify-between w-full py-2"
+                      href="https://www.moneyhelper.org.uk/en/blog"
+                    >
+                      Blog
+                      <svgr-mock
+                        classname="ml-2 mr-[6px]"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section
+                aria-labelledby="social-media-heading"
+                class="flex flex-col pt-6 mt-6 text-sm text-white lg:mt-0 lg:pt-0 lg:ml-8 lg:w-1/4 sm:flex-row lg:flex-col sm:items-start"
+              >
+                <p
+                  class="mb-4 sm:w-1/6 lg:w-full sm:mb-0 lg:mb-4"
+                  id="social-media-heading"
+                >
+                  Follow us:
+                </p>
+                <ul
+                  class="flex gap-4 sm:w-1/2 lg:w-full sm:mt-1 lg:mt-0"
+                >
+                  <li
+                    class="group w-24 lg:w-40 relative flex"
+                  >
+                    <a
+                      aria-label="Facebook link. Opens in new tab"
+                      class="inline-flex gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full items-center justify-center text-center border border-gray-400 rounded-md px-4 py-2 hover:border-pink-400 cursor-pointer undefined"
+                      href="https://www.facebook.com/MoneyHelperUK"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svgr-mock
+                        classname="fill-white group-hover:fill-pink-400"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="group w-24 lg:w-40 relative flex"
+                  >
+                    <a
+                      aria-label="Twitter link. Opens in new tab"
+                      class="inline-flex gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full items-center justify-center text-center border border-gray-400 rounded-md px-4 py-2 hover:border-pink-400 cursor-pointer undefined"
+                      href="https://x.com/MoneyHelperUK"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svgr-mock
+                        classname="fill-white group-hover:fill-pink-400"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="group w-24 lg:w-40 relative flex"
+                  >
+                    <a
+                      aria-label="YouTube link. Opens in new tab"
+                      class="inline-flex gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline active:text-gray-800 active:underline active:bg-transparent active:shadow-none w-full items-center justify-center text-center border border-gray-400 rounded-md px-4 py-2 hover:border-pink-400 cursor-pointer undefined"
+                      href="https://www.youtube.com/channel/UCDwjX78G1j_m2zWvPhZSTcw"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svgr-mock
+                        classname="fill-white group-hover:fill-pink-400"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="pt-6 pb-24 bg-gray-800 t-footer-secondary md:pb-6"
+        >
+          <div
+            class="container-auto"
+          >
+            <div
+              class="space-y-3"
+            >
+              <div
+                class="text-sm text-white t-footer-copy"
+              >
+                © 2026 Money and Pensions Service, Bedford Borough Hall, 138 Cauldwell Street, Bedford, MK42 9AB. All rights reserved.
+              </div>
+              <div>
+                <ul
+                  class="flex flex-wrap"
+                >
+                  <li
+                    class="flex items-center pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/about-us/terms-and-conditions"
+                    >
+                      Terms & conditions
+                    </a>
+                    <span
+                      class="inline-block pl-2 sm:pl-2 border-r border-gray-400 h-[15px] sm:border-r-1"
+                    />
+                  </li>
+                  <li
+                    class="flex items-center pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/about-us/privacy-notice"
+                    >
+                      Privacy notice
+                    </a>
+                    <span
+                      class="inline-block pl-2 sm:pl-2 border-r border-gray-400 h-[15px] sm:border-r-1"
+                    />
+                  </li>
+                  <li
+                    class="flex items-center pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/about-us/accessibility"
+                    >
+                      Accessibility statement
+                    </a>
+                    <span
+                      class="inline-block pl-2 sm:pl-2 border-r border-gray-400 h-[15px] sm:border-r-1"
+                    />
+                  </li>
+                  <li
+                    class="flex items-center pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/sitemap"
+                    >
+                      Sitemap
+                    </a>
+                    <span
+                      class="inline-block pl-2 sm:pl-2 border-r border-gray-400 h-[15px] sm:border-r-1"
+                    />
+                  </li>
+                  <li
+                    class="flex items-center pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                      href="https://www.moneyhelper.org.uk/en/about-us/cookie-policy"
+                    >
+                      Cookies
+                    </a>
+                    <span
+                      class="inline-block pl-2 sm:pl-2 border-r border-gray-400 h-[15px] sm:border-r-1"
+                    />
+                  </li>
+                  <li
+                    class="inline pl-0 pr-2 text-sm text-white first:pl-0"
+                  >
+                    <button
+                      class="text-white no-underline hover:text-pink-400 visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-whiteLink-button t-footer-cookie-preferences"
+                      data-testid="cookie-button"
+                      type="submit"
+                    >
+                      <span />
+                      Cookie preferences
+                      <span />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+`;

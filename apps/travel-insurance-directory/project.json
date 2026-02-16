@@ -1,0 +1,84 @@
+{
+  "name": "travel-insurance-directory",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/travel-insurance-directory",
+  "projectType": "application",
+  "implicitDependencies": ["travel-insurance-directory-e2e"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/travel-insurance-directory"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/travel-insurance-directory",
+          "assets": [
+            {
+              "glob": "**/*",
+              "input": "libs/shared/ui/src/public/footer",
+              "output": "./footer"
+            }
+          ]
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "travel-insurance-directory:build",
+        "dev": true,
+        "port": 4313
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "travel-insurance-directory:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "travel-insurance-directory:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "travel-insurance-directory:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/travel-insurance-directory/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/travel-insurance-directory/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/travel-insurance-directory",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,90 @@
+trigger: none
+name: Dependabot Pipeline
+
+schedules:
+  - cron: '0 2 * * 1'
+    always: true
+    branches:
+      include:
+        - main
+    batch: true
+    displayName: Weekly Dependency & OWASP Check
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - group: Dependabot-Variables
+  - name: AZURE_ACCESS_TOKEN
+    value: $(access-token)
+  - name: DEPENDABOT_OPEN_PULL_REQUESTS_LIMIT
+    value: '30'
+  - name: AZURE_COLLECTION_URI
+    value: $(System.CollectionUri)
+  - name: AZURE_PROJECT_ENCODED
+    value: $[replace(variables['System.TeamProject'], ' ', '%20')]
+  - name: AZURE_REPOSITORY
+    value: $(Build.Repository.Name)
+  - name: DEPENDABOT_PACKAGE_MANAGER
+    value: 'npm'
+  - name: DEPENDABOT_DIRECTORY
+    value: '/'
+  - name: DEPENDABOT_IGNORE_CONDITIONS
+    value: '[{"dependency-name":"*","update-types":["version-update:semver-patch"]}]'
+
+jobs:
+  - job: Dependabot
+    displayName: Run Dependabot (Docker v1-style)
+    timeoutInMinutes: 120
+    steps:
+      - checkout: self
+        persistCredentials: true
+
+      - script: |
+          echo "Pull v1 Dependabot image..."
+          docker pull ghcr.io/tinglesoftware/dependabot-updater-npm:1.45
+        displayName: Pull Dependabot Docker image
+
+      - script: |
+          echo "Running Dependabot update script..."
+          docker run --rm -i \
+            -e DEPENDABOT_PACKAGE_MANAGER="${DEPENDABOT_PACKAGE_MANAGER}" \
+            -e DEPENDABOT_OPEN_PULL_REQUESTS_LIMIT="${DEPENDABOT_OPEN_PULL_REQUESTS_LIMIT}" \
+            -e DEPENDABOT_DIRECTORY="${DEPENDABOT_DIRECTORY}" \
+            -e DEPENDABOT_IGNORE_CONDITIONS="${DEPENDABOT_IGNORE_CONDITIONS}" \
+            -e AZURE_ORGANIZATION="$(echo ${SYSTEM_COLLECTIONURI} | cut -d'/' -f4)" \
+            -e AZURE_PROJECT="${AZURE_PROJECT_ENCODED}" \
+            -e AZURE_REPOSITORY="${AZURE_REPOSITORY}" \
+            -e AZURE_ACCESS_TOKEN="$(System.AccessToken)" \
+            -e AZURE_MERGE_STRATEGY="squash" \
+            -e GITHUB_ACCESS_TOKEN="$(GITHUB_ACCESS_TOKEN)" \
+            ghcr.io/tinglesoftware/dependabot-updater-npm:1.45 update_script
+        displayName: Run Dependabot updater
+
+  - job: OWASP
+    displayName: OWASP Dependency-Check
+    steps:
+      - task: UseNode@1
+        displayName: 'Install Node.js'
+        inputs:
+          version: '20.9.0'
+
+      - script: npm install
+        displayName: 'npm install'
+
+      - task: dependency-check-build-task@6
+        displayName: 'OWASP Dependency-Check'
+        inputs:
+          projectName: 'MaPS Apps'
+          scanPath: 'package-lock.json'
+          format: 'HTML, JUNIT'
+          warnOnCVSSViolation: true
+          nvdApiKey: $(nvdApiKey)
+          nvdApiDelay: '8000'
+
+      - task: PublishTestResults@2
+        displayName: 'Publish OWASP Results'
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: 'dependency-check/*junit.xml'
+          searchFolder: '$(Common.TestResultsDirectory)'

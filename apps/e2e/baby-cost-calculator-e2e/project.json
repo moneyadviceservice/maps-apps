@@ -1,0 +1,42 @@
+{
+  "name": "baby-cost-calculator-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/baby-cost-calculator-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/baby-cost-calculator-e2e/cypress.config.ts",
+        "devServerTarget": "baby-cost-calculator:serve:development",
+        "watch": true,
+        "testingType": "e2e",
+        "port": 4310
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "baby-cost-calculator:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/e2e/baby-cost-calculator-e2e/cypress.config.ts",
+        "devServerTarget": "baby-cost-calculator:serve",
+        "testingType": "e2e",
+        "port": 4310
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "baby-cost-calculator:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["baby-cost-calculator"]
+}

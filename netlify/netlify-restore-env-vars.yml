@@ -1,0 +1,86 @@
+name: Restore Netlify App Environment Variables from Azure Key Vault
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+parameters:
+  - name: appName
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-booking-forms
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+      - travel-insurance-directory
+  - name: context
+    displayName: EnvironmentContext
+    type: string
+
+steps:
+  - checkout: none
+  - task: AzureCLI@2
+    displayName: 'Backup Netlify Environment Variables to Azure Key Vault'
+    inputs:
+      azureSubscription: 'ADO-PWD-Connection'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        $siteName = '${{ parameters.appname }}'
+        $context =  '${{ parameters.context }}'.Replace('_', '-US-').Replace(':', '-CLN-').Replace('.', '-DOT-').Replace('/', '-FSLSH-')
+
+        $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+        netlify link --filter=$siteName --name=$siteName
+
+        $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+        $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+        $site = Invoke-RestMethod ('https://api.netlify.com/api/v1/sites/{0}.netlify.app' -f $siteName) -Method 'GET' -Headers $headers
+                
+        $existingSecrets = az keyvault secret list --vault-name maps-apps-var-backup | ConvertFrom-Json
+        $appContextSecrets = $existingSecrets | where { $_.name -like ('{0}---*---{1}' -f $site.id.Split('-')[0],$context) } | foreach { $_.name }
+        foreach ($secretKey in $appContextSecrets) {
+            $secretKeySplit = $secretKey.Replace('-US-', '_').Replace('-CLN-', ':').Replace('-DOT-', '.').Replace('-FSLSH-', '/') -split '---'
+            $variableName = $secretKeySplit[1]
+            Write-Output ('Restoring {0}' -f $variableName)
+            $secretValue = az keyvault secret show --vault-name maps-apps-var-backup --name $secretKey | ConvertFrom-Json
+            if ($context -like '*:*') {
+              $context = $context.split(':')[1]
+            }
+            if ($context -eq 'all') {
+              netlify env:set $variableName $secretValue.value --filter $siteName --force
+            } else {
+              netlify env:set $variableName $secretValue.value --context $context --filter $siteName --force
+            }
+        }

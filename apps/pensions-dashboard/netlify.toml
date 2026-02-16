@@ -1,0 +1,20 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/pensions-dashboard package.json libs/shared"
+
+[[plugins]]
+  package = "@netlify/plugin-csp-nonce"
+  [plugins.inputs]
+    reportOnly = true
+
+[[context.develop.plugins]]
+  package = "/netlify/tools/plugins/stop-build"
+
+[[context.production.plugins]]
+  package = "@netlify/plugin-csp-nonce"
+  [context.production.plugins.inputs]
+    reportOnly = false
+
+[[context."branch:staging".plugins]]
+  package = "@netlify/plugin-csp-nonce"
+  [context."branch:staging".plugins.inputs]
+    reportOnly = false

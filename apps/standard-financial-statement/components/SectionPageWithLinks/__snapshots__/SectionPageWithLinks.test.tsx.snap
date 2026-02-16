@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionPageWithLinks component renders correctly 1`] = `
+<div
+  class="mt-6 lg:mt-10"
+  data-testid="section"
+>
+  <div
+    class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal [&_h2]:text-3xl [&_h2]:lg:text-5xl [&_h2]:line-height-[1.5] [&_h3]:lg:text-4xl [&_h3]:line-height-[1.5] mt-8 lg:mt-12 [&_ul>li]:pb-[16px] [&_a]:text-magenta-800 [&_a]:font-bold [&_a]:visited:text-magenta-800 [&_details]:!border-t-1 [&_details]:!border-slate-400 [&_details>a]:!text-slate-400 [&_details>summary>div]:!text-slate-600 [&_details>summary>summary]:!no-underline [&_details>summary>svg]:!text-slate-600 [&_details>summary]:!text-slate-600 [&_table>tbody>tr>th]:py-2 [&_table>tbody>tr>th]:px-4 [&_table>tbody>tr>td]:py-2 [&_table>tbody>tr>td]:px-4 [&_table>tbody>tr>th]:w-auto [&_table>tbody>tr>td]:w-auto [&_table>tbody>tr>th]:break-words [&_table>tbody>tr>td]:break-words [&_table]:border-1 [&_table]:border-slate-400 [&_table]:tr:border-1 [&_table]:w-full [&_table]:md:table-fixed [&_table>tbody>tr]:border-b-1 [&_table>tbody>tr]:border-b-slate-400 [&_table>tbody>tr>th]:bg-blue-600 [&_table>tbody>tr>th]:text-white [&_table>tbody>tr>th]:text-left [&_table>tbody>tr>th]:border-r-1 [&_table>tbody>tr>th]:border-r-slate-400 [&_table>tbody>tr>td]:border-r-1 [&_table>tbody>tr>td]:border-r-slate-400 [&_table>tbody>tr:nth-child(even)]:bg-gray-150"
+    data-testid="rich-text"
+  >
+    <h2
+      class="text-3xl md:text-5xl text-gray-800 font-bold mb-4"
+      id="test"
+    >
+      test
+    </h2>
+    <div
+      class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal"
+      data-testid="rich-text"
+    >
+      <h2
+        class="text-xl md:text-2xl text-gray-800 font-bold mt-10 mb-4"
+      >
+        test
+      </h2>
+    </div>
+    <div
+      class="[&_ul]:mb-[1rem] [&_ul>li]:pl-[0.5rem] [&_ul>li]:ml-[0.5rem] [&_ul>li::marker]:text-[0.6em] [&_ol]:mb-[1rem] [&_ol>li]:ml-[0.5rem] [&_ol>li]:pl-[0.5rem] [&_ol]:list-decimal overflow-x-scroll"
+      data-testid="rich-text"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              Browser
+            </th>
+            <th>
+              Guidance
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Internet Explorer
+            </td>
+            <td>
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://support.microsoft.com/en-gb/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc"
+              >
+                Microsoft help – How to delete cookie files in Internet Explorer
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Chrome
+            </td>
+            <td>
+              Chrome help – Manage cookies
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

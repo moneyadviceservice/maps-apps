@@ -1,0 +1,11 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { <%= name %> } from '.';
+
+describe('<%= name %> component', () => {
+  it('renders correctly', () => {
+    render(<<%= name %> testId="test-component"><%= name %></<%= name %>>);
+    const container = screen.getByTestId('test-component');
+    expect(container).toMatchSnapshot();
+  });
+});

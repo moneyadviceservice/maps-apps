@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasePageLayout renders correctly 1`] = `
+<div>
+  <div
+    id="top"
+  >
+    <header
+      data-testid="header"
+    >
+      <a
+        class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+        href="#main"
+      >
+        Skip to content
+      </a>
+      <div
+        class="relative z-20 flex items-center px-4 lg:hidden print:hidden"
+      >
+        <a
+          aria-label="Money and Pensions Service Website"
+          class="min-w-[149px] absolute top-4 left-4"
+          href="https://maps.org.uk/en"
+        >
+          <img
+            alt="Evidence Hub Logo"
+            class="h-[74px] w-auto"
+            data-nimg="1"
+            decoding="async"
+            height="74"
+            loading="lazy"
+            src="/_next/image?url=%2Ftest.png&w=384&q=75"
+            srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+            style="color: transparent;"
+            width="149"
+          />
+        </a>
+        <div
+          class="container-auto m-0 flex p-0 max-w-[1200px]"
+        >
+          <details
+            class="group/mobile-menu w-full min-h-[115px]"
+          >
+            <summary
+              class="open h-[40px] w-[40px] ml-auto list-none [&::-webkit-details-marker]:hidden text-center text-sm relative top-[40px] cursor-pointer"
+              data-testid="toggle-nav"
+              title="Open menu"
+            >
+              <div
+                class="group-open/mobile-menu:hidden flex flex-col h-[40px] w-[40px] text-left absolute align-middle justify-center items-center flex"
+              >
+                <svgr-mock
+                  classname="text-gray-800"
+                />
+              </div>
+              <div
+                class="hidden text-center group-open/mobile-menu:block rounded-[6px] bg-magenta-500 text-white"
+              >
+                <div
+                  class="flex h-[40px] w-[40px] justify-center items-center flex"
+                >
+                  <svgr-mock
+                    classname="w-[30px]"
+                  />
+                </div>
+              </div>
+            </summary>
+            <div
+              class="bg-white pt-[70px] w-full left-0"
+            >
+              <div
+                class="pb-10 mt-4"
+              >
+                <div
+                  class="mb-2"
+                >
+                  <form
+                    action="https://maps.org.uk/en/search-results.html"
+                    class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                    data-testid="form-search"
+                    role="search"
+                  >
+                    <input
+                      aria-label="Search"
+                      class="w-full p-2 rounded-l"
+                      id="q"
+                      name="q"
+                      required=""
+                      type="text"
+                    />
+                    <button
+                      aria-label="Search"
+                      class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                      type="submit"
+                    >
+                      <svgr-mock
+                        aria-hidden="true"
+                        classname=""
+                      />
+                    </button>
+                  </form>
+                </div>
+                <nav
+                  class="mb-4 mt-4"
+                >
+                  <ul>
+                    <li
+                      class="block"
+                    >
+                      <details
+                        class="group mb-[-1px] border-slate-400 tool-expand border-0 px-0"
+                        data-testid="expandable-section"
+                      >
+                        <summary
+                          class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-between"
+                        >
+                          <div
+                            class="block"
+                            data-testid="summary-block-title"
+                          >
+                            Evidence Hub
+                          </div>
+                          <svgr-mock
+                            classname="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-6"
+                          />
+                        </summary>
+                        <div
+                          class="text-gray-800 text-base leading-[28px] tracking-[0.18px] mb-0 pt-0"
+                        >
+                          <ul
+                            class="mb-4 pt-2"
+                          >
+                            <li
+                              class="block"
+                            >
+                              <details
+                                class="group/nested mb-[-1px] border-slate-400 tool-expand border-0 pl-8"
+                                data-testid="expandable-section"
+                              >
+                                <summary
+                                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-between"
+                                >
+                                  <div
+                                    class="block"
+                                    data-testid="summary-block-title"
+                                  >
+                                    Topic Overview
+                                  </div>
+                                  <svgr-mock
+                                    classname="group-open/nested:rotate-[-180deg] text-magenta-500 shrink-0 w-6"
+                                  />
+                                </summary>
+                                <div
+                                  class="text-gray-800 text-base leading-[28px] tracking-[0.18px] mb-0 pt-0"
+                                >
+                                  <ul
+                                    class="mb-4 pt-2 pl-4"
+                                  >
+                                    <li>
+                                      <a
+                                        class="gap-2 text-magenta-500 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none py-2 w-full relative flex items-center no-underline visited:text-magenta-500 text-base font-semibold pl-4"
+                                        href="/overview"
+                                      >
+                                        Overview
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="gap-2 text-magenta-500 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none py-2 w-full relative flex items-center no-underline visited:text-magenta-500 text-base font-semibold pl-4"
+                                        href="/guidance"
+                                      >
+                                        Guidance & Tools
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="gap-2 text-magenta-500 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none py-2 w-full relative flex items-center no-underline visited:text-magenta-500 text-base font-semibold pl-4"
+                                        href="/case-studies"
+                                      >
+                                        Case Studies
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </details>
+                            </li>
+                            <li>
+                              <a
+                                class="gap-2 text-magenta-500 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none py-2 w-full relative flex items-center no-underline visited:text-magenta-500 text-base font-semibold pl-8"
+                                href="/metrics"
+                              >
+                                Metrics
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="gap-2 text-magenta-500 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none py-2 w-full relative flex items-center no-underline visited:text-magenta-500 text-base font-semibold pl-8"
+                                href="/datasets"
+                              >
+                                Datasets
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </details>
+                    </li>
+                  </ul>
+                </nav>
+                <div
+                  class="flex"
+                >
+                  <a
+                    class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 p-0 underline text-sm font-bold"
+                    href="/cy"
+                    hreflang="cy"
+                    lang="cy"
+                    rel="alternate"
+                  >
+                    <span
+                      aria-describedby="lang-description"
+                      class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                    >
+                      Cymraeg
+                    </span>
+                  </a>
+                  <span
+                    class="sr-only"
+                    id="lang-description"
+                  >
+                    Newid yr iaith ir Gymraeg
+                  </span>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div
+        class="hidden lg:block"
+      >
+        <div
+          class="relative print:hidden"
+        >
+          <div
+            class="container-auto flex items-center justify-center lg:justify-normal max-w-[1200px] pt-5 pb-4"
+          >
+            <a
+              aria-label="Money and Pensions Service Website"
+              class="h-[94px]"
+              href="https://maps.org.uk/en"
+            >
+              <img
+                alt=""
+                class="h-[94px] w-auto"
+                data-nimg="1"
+                decoding="async"
+                height="94"
+                loading="lazy"
+                src="/_next/image?url=%2Ftest.png&w=384&q=75"
+                srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+                style="color: transparent;"
+                width="149"
+              />
+            </a>
+            <div
+              class="items-center hidden ml-auto lg:flex"
+            >
+              <a
+                class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+                href="/cy"
+                hreflang="cy"
+                lang="cy"
+                rel="alternate"
+              >
+                <span
+                  aria-describedby="lang-description"
+                  class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                >
+                  Cymraeg
+                </span>
+              </a>
+              <span
+                class="sr-only"
+                id="lang-description"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+              <form
+                action="https://maps.org.uk/en/search-results.html"
+                class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                data-testid="form-search"
+                role="search"
+              >
+                <input
+                  aria-label="Search"
+                  class="w-full p-2 rounded-l"
+                  id="q"
+                  name="q"
+                  required=""
+                  type="text"
+                />
+                <button
+                  aria-label="Search"
+                  class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                  type="submit"
+                >
+                  <svgr-mock
+                    aria-hidden="true"
+                    classname=""
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden lg:block"
+        >
+          <div
+            class="container-auto max-w-[1200px]"
+          >
+            <nav
+              aria-label="Primary navigation"
+              class="mb-2.5"
+            >
+              <ul
+                class="flex items-center"
+              >
+                <li
+                  class="nav-item relative"
+                  role="none"
+                >
+                  <div
+                    class="group relative"
+                  >
+                    <button
+                      aria-controls="menu-evidence-hub-0"
+                      aria-haspopup="true"
+                      class="relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 group/button nav-button flex items-center whitespace-nowrap"
+                      id="nav-button-0"
+                      role="menuitem"
+                      type="button"
+                    >
+                      Evidence Hub
+                      <svgr-mock
+                        aria-hidden="true"
+                        classname="nav-chevron ml-1 group-focus-within:rotate-180 min-w-4"
+                      />
+                    </button>
+                    <ul
+                      aria-label="Evidence Hub submenu"
+                      class="dropdown absolute left-0 top-full z-50 mt-1 min-w-[244px] max-w-[calc(100vw-2rem)] rounded-lg bg-white p-2 shadow-[0_20px_30px_0_rgba(28,30,35,0.2),0_-7px_40px_0_rgba(28,30,35,0.2)] opacity-0 invisible pointer-events-none translate-y-1 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:pointer-events-auto group-focus-within:translate-y-[4px] sm:before:content-[""] sm:before:absolute sm:before:z-[1] sm:before:left-[15px] sm:before:top-[4px] sm:before:-translate-y-full sm:before:w-0 sm:before:h-0 sm:before:border-b-[16px] sm:before:border-b-white sm:before:border-l-[16px] sm:before:border-l-transparent sm:before:border-r-[16px] sm:before:border-r-transparent sm:group-focus-within/submenu:before:opacity-100 sm:group-focus-within/submenu:before:left-[2px] sm:group-focus-within/submenu:before:!z-[1]"
+                      id="menu-evidence-hub-0"
+                    >
+                      <li
+                        class="dropdown-item relative"
+                        role="none"
+                      >
+                        <div
+                          class="group/submenu relative"
+                        >
+                          <button
+                            aria-controls="menu-topic-overview-0"
+                            aria-haspopup="true"
+                            class="relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 group/button dropdown-button flex w-full items-center justify-between sm:before:content-[""] sm:before:absolute sm:before:z-[1] sm:before:top-1/2 sm:before:-translate-y-1/2 sm:before:w-0 sm:before:h-0 sm:before:border-t-[16px] sm:before:right-[-8px] sm:before:border-b-[16px] sm:before:border-r-[16px] sm:before:border-t-transparent sm:before:border-b-transparent sm:before:border-r-white sm:before:opacity-0 sm:group-focus-within/submenu:before:opacity-100 sm:group-focus-within/submenu:before:right-[-24px] sm:group-focus-within/submenu:before:!z-[1]"
+                            role="menuitem"
+                            type="button"
+                          >
+                            Topic Overview
+                            <svgr-mock
+                              aria-hidden="true"
+                              classname="nav-chevron min-w-4 w-4 rotate-[-90deg] group-focus-within/submenu:rotate-90"
+                            />
+                          </button>
+                          <ul
+                            aria-label="Topic Overview submenu"
+                            class="submenu absolute min-w-[244px] max-w-[calc(100vw-2rem)] rounded-lg bg-white p-2 shadow-[0_20px_30px_0_rgba(28,30,35,0.2),0_-7px_40px_0_rgba(28,30,35,0.2)] z-2 sm:left-full sm:top-0 left-0 top-full group-focus-within/submenu:ml-4 opacity-0 invisible pointer-events-none translate-x-1 group-focus-within/submenu:opacity-100 group-focus-within/submenu:visible group-focus-within/submenu:pointer-events-auto group-focus-within/submenu:translate-x-0 group-focus-within/submenu:translate-y-0"
+                            id="menu-topic-overview-0"
+                          >
+                            <li
+                              role="none"
+                            >
+                              <a
+                                class="items-center gap-2 visited:text-purple-700 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 [&:focus]:!bg-yellow-400 [&:focus]:!text-blue-900 [&:focus:hover]:!bg-yellow-400 [&:focus:hover]:!text-blue-900 focus:shadow-none [&:focus]:!shadow-none [&:focus]:after:!content-[""] [&:focus]:after:!absolute [&:focus]:after:!bottom-0 [&:focus]:after:!left-0 [&:focus]:after:!right-0 [&:focus]:after:!h-1 [&:focus]:after:!bg-blue-700 [&:focus:hover]:after:!content-[""] [&:focus:hover]:after:!absolute [&:focus:hover]:after:!bottom-0 [&:focus:hover]:after:!left-0 [&:focus:hover]:after:!right-0 [&:focus:hover]:after:!h-1 [&:focus:hover]:after:!bg-blue-700 block"
+                                href="/overview"
+                                role="menuitem"
+                              >
+                                Overview
+                              </a>
+                            </li>
+                            <li
+                              role="none"
+                            >
+                              <a
+                                class="items-center gap-2 visited:text-purple-700 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 [&:focus]:!bg-yellow-400 [&:focus]:!text-blue-900 [&:focus:hover]:!bg-yellow-400 [&:focus:hover]:!text-blue-900 focus:shadow-none [&:focus]:!shadow-none [&:focus]:after:!content-[""] [&:focus]:after:!absolute [&:focus]:after:!bottom-0 [&:focus]:after:!left-0 [&:focus]:after:!right-0 [&:focus]:after:!h-1 [&:focus]:after:!bg-blue-700 [&:focus:hover]:after:!content-[""] [&:focus:hover]:after:!absolute [&:focus:hover]:after:!bottom-0 [&:focus:hover]:after:!left-0 [&:focus:hover]:after:!right-0 [&:focus:hover]:after:!h-1 [&:focus:hover]:after:!bg-blue-700 block"
+                                href="/guidance"
+                                role="menuitem"
+                              >
+                                Guidance & Tools
+                              </a>
+                            </li>
+                            <li
+                              role="none"
+                            >
+                              <a
+                                class="items-center gap-2 visited:text-purple-700 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 [&:focus]:!bg-yellow-400 [&:focus]:!text-blue-900 [&:focus:hover]:!bg-yellow-400 [&:focus:hover]:!text-blue-900 focus:shadow-none [&:focus]:!shadow-none [&:focus]:after:!content-[""] [&:focus]:after:!absolute [&:focus]:after:!bottom-0 [&:focus]:after:!left-0 [&:focus]:after:!right-0 [&:focus]:after:!h-1 [&:focus]:after:!bg-blue-700 [&:focus:hover]:after:!content-[""] [&:focus:hover]:after:!absolute [&:focus:hover]:after:!bottom-0 [&:focus:hover]:after:!left-0 [&:focus:hover]:after:!right-0 [&:focus:hover]:after:!h-1 [&:focus:hover]:after:!bg-blue-700 block"
+                                href="/case-studies"
+                                role="menuitem"
+                              >
+                                Case Studies
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li
+                        class="dropdown-item relative"
+                        role="none"
+                      >
+                        <a
+                          class="items-center gap-2 visited:text-purple-700 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 [&:focus]:!bg-yellow-400 [&:focus]:!text-blue-900 [&:focus:hover]:!bg-yellow-400 [&:focus:hover]:!text-blue-900 focus:shadow-none [&:focus]:!shadow-none [&:focus]:after:!content-[""] [&:focus]:after:!absolute [&:focus]:after:!bottom-0 [&:focus]:after:!left-0 [&:focus]:after:!right-0 [&:focus]:after:!h-1 [&:focus]:after:!bg-blue-700 [&:focus:hover]:after:!content-[""] [&:focus:hover]:after:!absolute [&:focus:hover]:after:!bottom-0 [&:focus:hover]:after:!left-0 [&:focus:hover]:after:!right-0 [&:focus:hover]:after:!h-1 [&:focus:hover]:after:!bg-blue-700 block"
+                          href="/metrics"
+                          role="menuitem"
+                        >
+                          Metrics
+                        </a>
+                      </li>
+                      <li
+                        class="dropdown-item relative"
+                        role="none"
+                      >
+                        <a
+                          class="items-center gap-2 visited:text-purple-700 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 text-[18px] font-bold text-magenta-500 text-left transition-colors duration-300 [&:visited:not(:hover)]:!text-magenta-500 no-underline hover:bg-magenta-500 hover:text-white focus:outline-none focus:bg-yellow-400 focus:text-blue-900 focus:hover:bg-yellow-400 focus:hover:text-blue-900 [&:focus]:bg-yellow-400 [&:focus]:text-blue-900 focus:after:content-[""] focus:after:absolute focus:after:bottom-0 focus:after:left-0 focus:after:right-0 focus:after:h-1 focus:after:bg-blue-700 focus:hover:after:content-[""] focus:hover:after:absolute focus:hover:after:bottom-0 focus:hover:after:left-0 focus:hover:after:right-0 focus:hover:after:h-1 focus:hover:after:bg-blue-700 [&:focus]:after:content-[""] [&:focus]:after:absolute [&:focus]:after:bottom-0 [&:focus]:after:left-0 [&:focus]:after:right-0 [&:focus]:after:h-1 [&:focus]:after:bg-blue-700 [&:focus]:!bg-yellow-400 [&:focus]:!text-blue-900 [&:focus:hover]:!bg-yellow-400 [&:focus:hover]:!text-blue-900 focus:shadow-none [&:focus]:!shadow-none [&:focus]:after:!content-[""] [&:focus]:after:!absolute [&:focus]:after:!bottom-0 [&:focus]:after:!left-0 [&:focus]:after:!right-0 [&:focus]:after:!h-1 [&:focus]:after:!bg-blue-700 [&:focus:hover]:after:!content-[""] [&:focus:hover]:after:!absolute [&:focus:hover]:after:!bottom-0 [&:focus:hover]:after:!left-0 [&:focus:hover]:after:!right-0 [&:focus:hover]:after:!h-1 [&:focus:hover]:after:!bg-blue-700 block"
+                          href="/datasets"
+                          role="menuitem"
+                        >
+                          Datasets
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      id="main"
+    >
+      <div
+        class="bg-blue-700"
+        data-testid="title-banner"
+      >
+        <div
+          class="container-auto max-w-[1200px] py-4"
+        >
+          <h1
+            class="text-4xl md:text-6xl font-bold text-white"
+            tabindex="0"
+          >
+            test
+          </h1>
+        </div>
+      </div>
+      <div
+        class="container-auto max-w-[1200px] pt-6"
+      >
+        <div
+          class="-ml-2"
+        >
+          <div
+            class="[&_path]:fill-magenta-500"
+          >
+            <a
+              class="print:hidden md:hidden outline-none t-breadcrumb-mobile pl-2.5 flex items-center py-1 relative z-1 border-1 border-white shadow-box-link hover:border-1 hover:border-pink-800 focus:bg-yellow-400 focus:shadow-box-link-focus focus:border-2 focus:border-purple-700 focus:border-opacity-100"
+              data-testid="breadcrumb-mobile"
+              href="/en/test"
+            >
+              <svgr-mock
+                classname="w-4"
+              />
+              <div
+                class="pl-2"
+              >
+                <p
+                  class="text-base"
+                >
+                  test
+                </p>
+                <p
+                  class="text-base font-semibold text-magenta-500 hover:text-pink-900 focus:text-gray-800"
+                >
+                  test2
+                </p>
+              </div>
+            </a>
+            <nav
+              aria-label="breadcrumbs"
+              class="hidden md:block"
+              data-testid="breadcrumb-desktop"
+            >
+              <ul
+                class="flex px-4 py-4 t-breadcrumb-desktop"
+              >
+                <li
+                  class="flex items-center pr-2"
+                >
+                  <a
+                    class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+                    href="/en/test"
+                  >
+                    test
+                  </a>
+                  <svgr-mock
+                    classname="w-4 pl-2"
+                  />
+                </li>
+                <li
+                  class="flex items-center pr-2"
+                >
+                  <a
+                    class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+                    href="https://www.maps.org.uk"
+                  >
+                    test2
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        test content
+      </div>
+    </main>
+    <footer
+      class="relative z-1"
+      data-testid="footer"
+    >
+      <div
+        class="flex flex-col py-8 bg-gray-800 md:py-6"
+      >
+        <div
+          class="container-auto max-w-[1200px]"
+        >
+          <nav
+            aria-label="Footer navigation"
+            class="grid grid-cols-1 gap-8 md:grid-cols-3"
+          >
+            <div
+              class="flex flex-col"
+            >
+              <h3
+                class="mb-4 text-lg font-semibold text-white"
+              >
+                test
+              </h3>
+              <ul
+                class="flex flex-col pl-6 space-y-1 text-white list-disc"
+              >
+                <li>
+                  <a
+                    class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                    href="/test"
+                  >
+                    test
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                    href="/test2"
+                  >
+                    test2
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div
+            class="pt-4 pb-10 mt-6 text-center border-t border-white"
+          >
+            <p
+              class="break-words m-0 text-white"
+              data-testid="paragraph"
+            >
+              Copyright
+               
+              2026 Money & Pensions Service, Borough Hall, Cauldwell Street, Bedford, MK42 9AB.
+            </p>
+            <p
+              class="mb-4 break-words text-white"
+              data-testid="paragraph"
+            >
+              All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

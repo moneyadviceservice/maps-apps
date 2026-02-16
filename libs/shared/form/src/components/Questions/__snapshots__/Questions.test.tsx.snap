@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Questions Component renders radio question correctly with provided props 1`] = `
+<div>
+  <div
+    class="container-auto"
+  >
+    <div
+      class="flex items-center text-magenta-500 group"
+    >
+      <svgr-mock
+        aria-hidden="true"
+        classname="text-magenta-500 group-hover:text-pink-800 w-[8px] h-[15px]"
+      />
+      <a
+        class="ml-2 underline tool-nav-prev group-hover:text-pink-800 group-hover:no-underline"
+        href="/back"
+      >
+        Back
+      </a>
+    </div>
+    <form
+      data-testid="form"
+      method="POST"
+    >
+      <input
+        name="isEmbed"
+        type="hidden"
+        value="false"
+      />
+      <input
+        name="language"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="savedData"
+        type="hidden"
+        value=""
+      />
+      <input
+        name="dataPath"
+        type="hidden"
+        value="mid-life-mot"
+      />
+      <div
+        class="mt-8 lg:max-w-[840px]"
+      >
+        <div>
+          <input
+            name="question"
+            type="hidden"
+            value="q-1"
+          />
+          <input
+            name="type"
+            type="hidden"
+            value="single"
+          />
+          <input
+            name="subType"
+            type="hidden"
+            value=""
+          />
+          <input
+            name="target"
+            type="hidden"
+            value=""
+          />
+          <fieldset>
+            <div
+              class="mb-8"
+            >
+              <legend>
+                <h1
+                  class="text-4xl md:text-6xl text-gray-800 font-bold pb-4"
+                >
+                  Question 1
+                </h1>
+              </legend>
+              <div />
+            </div>
+            <div
+              class=""
+              data-testid="error-1"
+              id="q-1"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <div
+                  class="mb-6"
+                >
+                  <input
+                    name="score"
+                    type="hidden"
+                    value="1"
+                  />
+                  <div
+                    class="relative text-base"
+                    data-testid="radio-button"
+                  >
+                    <div
+                      class="flex flex-wrap items-center"
+                    >
+                      <input
+                        aria-label="Option 1"
+                        class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                        data-testid="radio-input-0"
+                        id="id-0"
+                        name="answer"
+                        type="radio"
+                        value="0"
+                      />
+                      <label
+                        class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                        data-testid="radio-button-label"
+                        for="id-0"
+                      >
+                        Option 1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class=""
+                >
+                  <input
+                    name="score"
+                    type="hidden"
+                    value="1"
+                  />
+                  <div
+                    class="relative text-base"
+                    data-testid="radio-button"
+                  >
+                    <div
+                      class="flex flex-wrap items-center"
+                    >
+                      <input
+                        aria-label="Option 2"
+                        class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                        data-testid="radio-input-1"
+                        id="id-1"
+                        name="answer"
+                        type="radio"
+                        value="1"
+                      />
+                      <label
+                        class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                        data-testid="radio-button-label"
+                        for="id-1"
+                      >
+                        Option 2
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button mt-8 w-full sm:w-auto"
+        data-testid="step-container-submit-button"
+        formaction="/api/call"
+        type="submit"
+      >
+        <span />
+        Continue
+        <span />
+      </button>
+    </form>
+  </div>
+</div>
+`;

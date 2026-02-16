@@ -1,0 +1,148 @@
+trigger: none
+pr: none
+
+schedules:
+  - cron: '0 3 * * *'
+    displayName: Daily vulnerability scan at 3am
+    branches:
+      include:
+        - main
+    always: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  nodeVersion: '20.x'
+
+stages:
+  - stage: Security
+    displayName: 'Security Scan Stage'
+    jobs:
+      - job: VulnerabilityScan
+        displayName: 'OSV Dependency Scan'
+        steps:
+          - task: NodeTool@0
+            displayName: 'Install Node.js'
+            inputs:
+              versionSpec: $(nodeVersion)
+
+          - script: |
+              curl -L https://github.com/google/osv-scanner/releases/latest/download/osv-scanner_linux_amd64 -o osv-scanner
+              chmod +x osv-scanner
+            displayName: 'Install OSV Scanner'
+
+          - script: |
+              ./osv-scanner --lockfile=package-lock.json --format json --output osv-results.json || true
+              ./osv-scanner --lockfile=package-lock.json || echo "Vulnerabilities detected"
+            displayName: 'Run OSV vulnerability scan'
+            continueOnError: true
+
+          - script: |
+              echo "============================================"
+              echo "     VULNERABILITY SCAN SUMMARY"
+              echo "============================================"
+              echo ""
+
+              if [ -f osv-results.json ]; then
+                # Count total packages across all results
+                PKG_COUNT=$(jq '[.results[]?.packages[]?] | length' osv-results.json 2>/dev/null || echo "0")
+                
+                # Count vulnerabilities across all packages
+                VULN_COUNT=$(jq '[.results[]?.packages[]?.vulnerabilities[]?] | length' osv-results.json 2>/dev/null || echo "0")
+                
+                echo "📦 Total packages scanned: $PKG_COUNT"
+                echo "🔍 Total vulnerabilities found: $VULN_COUNT"
+                echo ""
+                
+                if [ "$VULN_COUNT" -gt 0 ]; then
+                  echo "⚠️  VULNERABILITIES DETECTED:"
+                  echo ""
+                  jq -r '.results[]?.packages[]? | select(.vulnerabilities | length > 0) | "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📦 Package: \(.package.name)@\(.package.version)\n🔴 Vulnerabilities: \(.vulnerabilities | length)\n" + (.vulnerabilities[] | "  🆔 \(.id // "Unknown")\n  ⚡ Severity: \(if .database_specific.severity then .database_specific.severity else (.severity // "UNKNOWN") end)\n")' osv-results.json 2>/dev/null || echo "See detailed report in artifacts"
+                else
+                  echo "✅ No vulnerabilities detected!"
+                fi
+              else
+                echo "❌ Scan results not found"
+              fi
+
+            displayName: 'Display scan summary'
+            condition: always()
+
+          - script: |
+              if [ ! -f osv-results.json ]; then
+                echo "No scan results found, skipping Teams notification"
+                exit 0
+              fi
+
+              VULN_COUNT=$(jq '[.results[]?.packages[]?.vulnerabilities[]?] | length' osv-results.json 2>/dev/null || echo "0")
+
+              # Count HIGH and CRITICAL vulnerabilities only
+              HIGH_CRIT_COUNT=$(jq '[.results[]?.packages[]?.vulnerabilities[]? | select((.database_specific.severity // .severity // "") | ascii_upcase | test("HIGH|CRITICAL"))] | length' osv-results.json 2>/dev/null || echo "0")
+
+              if [ "$HIGH_CRIT_COUNT" -gt 0 ]; then
+                echo "🔔 Posting HIGH/CRITICAL vulnerability alert to Teams..."
+                
+                PKG_COUNT=$(jq '[.results[]?.packages[]?] | length' osv-results.json 2>/dev/null || echo "0")
+                
+                # Build vulnerable packages summary - ALL HIGH and CRITICAL vulnerabilities
+                VULNERABLE_PACKAGES=$(jq -r '[.results[]?.packages[]? | select(.vulnerabilities | length > 0) | {name: .package.name, version: .package.version, vulns: [.vulnerabilities[] | select((.database_specific.severity // .severity // "") | ascii_upcase | test("HIGH|CRITICAL"))]} | select(.vulns | length > 0)] | map("- **\(.name)@\(.version)**: \(.vulns | length) \(if (.vulns | length) == 1 then "vulnerability" else "vulnerabilities" end) (\(.vulns | map(.database_specific.severity // .severity // "UNKNOWN") | join(", ")))" ) | join("\n")' osv-results.json 2>/dev/null || echo "See detailed report")
+                
+                # Build JSON payload for Teams
+                PAYLOAD=$(cat <<EOF
+              {
+                "@type": "MessageCard",
+                "@context": "https://schema.org/extensions",
+                "summary": "Vulnerability Scan Alert",
+                "themeColor": "FF0000",
+                "title": "⚠️ Security Vulnerabilities Detected",
+                "sections": [{
+                  "activityTitle": "OSV Dependency Scan Results",
+                  "activitySubtitle": "$(date -u +"%Y-%m-%d %H:%M:%S UTC")",
+                  "facts": [
+                    {
+                      "name": "Repository:",
+                      "value": "maps-apps"
+                    },
+                    {
+                      "name": "Branch:",
+                      "value": "$(Build.SourceBranchName)"
+                    },
+                    {
+                      "name": "Total Packages Scanned:",
+                      "value": "$PKG_COUNT"
+                    },
+                    {
+                      "name": "Total Vulnerabilities:",
+                      "value": "$VULN_COUNT"
+                    },
+                    {
+                      "name": "HIGH/CRITICAL Vulnerabilities:",
+                      "value": "$HIGH_CRIT_COUNT"
+                    }
+                  ],
+                  "text": "### HIGH and CRITICAL Severity Packages\n\n$VULNERABLE_PACKAGES"
+                }],
+                "potentialAction": [{
+                  "@type": "OpenUri",
+                  "name": "View Pipeline Run",
+                  "targets": [{
+                    "os": "default",
+                    "uri": "$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)"
+                  }]
+                }]
+              }
+              EOF
+                )
+                
+                # Send to Teams webhook
+                curl -H "Content-Type: application/json" -d "$PAYLOAD" "$(TEAMS_WEBHOOK_URL)"
+                
+                echo "✅ Teams notification sent (HIGH/CRITICAL vulnerabilities: $HIGH_CRIT_COUNT)"
+              else
+                echo "✅ No HIGH or CRITICAL vulnerabilities to report"
+              fi
+            displayName: 'Post to Teams if vulnerabilities detected'
+            condition: always()
+            env:
+              TEAMS_WEBHOOK_URL: $(TEAMS_WEBHOOK_URL)

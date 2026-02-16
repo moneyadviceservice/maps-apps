@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOrgInput renders input and button elements 1`] = `
+<div>
+  <label
+    class="block mb-2"
+    for="name"
+  >
+    Search organisations
+  </label>
+  <div
+    class="flex max-w-[458px]"
+  >
+    <input
+      class="w-full p-2 border border-gray-400 border-r-0 rounded-l "
+      id="name"
+      name="name"
+      placeholder="Search by name or membership code"
+      value=""
+    />
+    <button
+      class="p-2 bg-green-300 rounded-r"
+      title="Search name"
+      type="submit"
+    >
+      <span
+        data-testid="search-icon"
+      />
+    </button>
+  </div>
+</div>
+`;

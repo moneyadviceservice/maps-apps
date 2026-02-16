@@ -1,0 +1,425 @@
+{
+  "tabs": {
+    "about-you": "About you",
+    "income": "Retirement income",
+    "essential-outgoings": "Retirement costs",
+    "summary": "Results"
+  },
+  "pageTitle": "Retirement Budget Planner",
+  "backButton": "Back",
+  "continueButton": "Continue",
+  "saveAndComeBackButton": "Save and come back later",
+  "errorSummary": {
+    "title": "There is a problem",
+    "text": "It looks like you haven’t filled anything yet. Please enter the required information."
+  },
+  "income": {
+    "title": "Expected retirement income",
+    "description": "If you reached State Pension age before 6 April 2016, you need to claim the basic State Pension instead. If you're over 80, you might also be able to make a claim for the over 80 pension.",
+    "privatePension": {
+      "title": "Private (personal) pension",
+      "description": "This is the income you plan to take from a pension that you set up. To find out how much your pension could pay you, you can usually log in to your provider’s online account or use the last annual statement you received.",
+      "buttonLabel": "Add Pension Pot",
+      "label": "Pension"
+    },
+    "workplacePension": {
+      "title": "Workplace Pensions",
+      "description": {
+        "text": "Defined contribution pensions pay an income based on how much is paid it, how well the investments perform and how and when you choose to take the money. Find out more in our guide ",
+        "linkText": "What can I do with my pension pot?",
+        "linkUrl": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/pension-pot-options"
+      },
+      "buttonLabel": "Add Pension Pot",
+      "definedContributionLabel": "Defined contribution",
+      "definedBenefitLabel": "Defined benefit"
+    },
+    "statePension": {
+      "title": "State Pension",
+      "description": "You can check your State Pension forecast on GOV.UK to see how much you’re on track to get and if there are ways to boost it. The amount you qualify for depends on your National Insurance record.",
+      "statePay": {
+        "title": "State pension payments"
+      }
+    },
+    "otherRetirementIncome": {
+      "title": "Other retirement income",
+      "workPay": {
+        "title": "Pay from work (before tax)",
+        "infoType": "text",
+        "moreInfo": "This is the income you plan to get from an employer or self-employment. If you’re self-employed, enter your expected annual 'net profit' (your business income minus your expenses)."
+      },
+      "benefitsPay": {
+        "title": "Benefit payments",
+        "infoType": "html",
+        "moreInfo": "This is the income you expect to receive from the government, such as Universal Credit or Pension Credit. You can use our <a href=\"https://www.moneyhelper.org.uk/en/benefits/benefits-calculator\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">Benefits calculator</a> to check you’re claiming everything you’re entitled to."
+      },
+
+      "householdIncome": {
+        "title": "Income from other household members",
+        "infoType": "text",
+        "moreInfo": "This is any income you plan to have from other members of your household, like your partner or children."
+      },
+      "otherIncome": {
+        "title": "Other income",
+        "infoType": "text",
+        "moreInfo": "Enter any other income you plan to have, such as from savings, investments and renting out a property."
+      }
+    },
+    "additionalItems": {
+      "title": "Other retirement income"
+    }
+  },
+  "essentialOutgoings": {
+    "title": "Retirement costs",
+    "moreInfoTitle": "More information",
+    "housingCost": {
+      "title": "Housing",
+      "mortgageRepayment": {
+        "labelText": "Mortgage repayment",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any mortgage repayment you’ll still need to pay."
+      },
+      "rent": {
+        "labelText": "Rent or Care home fees",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any rent or care home fees you’ll have in retirement."
+      },
+      "groundRent": {
+        "labelText": "Ground rent",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any ground rent on your property. You’ll often pay ground rent if you own a leasehold property in England, Wales or Northern Ireland, like a flat or maisonette."
+      },
+      "serviceCharge": {
+        "labelText": "Service or factoring charge",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any service or factoring charges you need to pay to live in your property. You’ll often pay a service charge if you own a leasehold property in England, Wales or Northern Ireland, like a flat or maisonette. In Scotland, it’s called a factoring charge."
+      }
+    },
+    "utilities": {
+      "title": "Household bills",
+      "councilTax": {
+        "labelText": "Council Tax or Rates",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any Council Tax or Rates you’ll need to pay to live in your home."
+      },
+      "tvLicence": {
+        "labelText": "TV licence",
+        "infoType": "html",
+        "moreInfo": "<p>Enter your share of any TV licence you’ll need to pay. You can find out <a href=\"https://www.tvlicensing.co.uk/cs/pay-for-your-tv-licence/index.app\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\"> how much a TV licence costs</a> and if you qualify for a <a href=\"https://www.tvlicensing.co.uk/reducedfee\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">free or reduced fee TV licence</a> on the TV licensing website.</p>"
+      },
+      "electric": {
+        "labelText": "Energy (gas, electricity and other household fuels)",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any energy bills you’ll have, including gas, electricity, oil, coal and wood."
+      },
+      "phone": {
+        "labelText": "Broadband and home phone",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any broadband and/or home phone bills. "
+      },
+      "mobilePhone": {
+        "labelText": "Mobile phone",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any mobile phone bills you’ll pay. If the cost of your handset is not covered in your regular payment and you plan to change it regularly, you could divide its cost by the number of months you plan to keep it and add it to your regular amount.  "
+      },
+      "water": {
+        "labelText": "Water",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any water bills you’ll need to pay."
+      },
+      "internet": {
+        "labelText": "Paid-for TV and streaming services",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any TV or streaming subscriptions you plan to have."
+      }
+    },
+    "travelCosts": {
+      "title": "Travel",
+      "publicTransport": {
+        "labelText": "Public transport",
+        "infoType": "text",
+        "moreInfo": "<p>Enter your estimated spend on public transport, including trains and buses. For details of when you qualify for a free bus pass, see our guide <a href=\"https://www.moneyhelper.org.uk/en/benefits/benefits-in-later-life/benefits-in-retirement#Travel-and-TV-benefits\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\"> benefits in retirement.</a></p>"
+      },
+      "petrol": {
+        "labelText": "Petrol, diesel or electric charging",
+        "infoType": "text",
+        "moreInfo": "Enter your estimated spend on petrol, diesel or electric charging."
+      },
+      "roadTax": {
+        "labelText": "Road tax",
+        "infoType": "text",
+        "moreInfo": "<p>Enter the amount you expect to pay for road tax. You can see current <a href=\"https://www.gov.uk/vehicle-tax-rate-tables\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\"> vehicle tax rates</a> on GOV.UK.</p>"
+      },
+      "otherVehicle": {
+        "labelText": "Other vehicle running costs (MOT and services)",
+        "infoType": "text",
+        "moreInfo": "Enter an amount to cover the other costs you might have to run a vehicle, including servicing and an annual MOT."
+      }
+    },
+    "lending": {
+      "title": "Borrowing",
+      "loans": {
+        "labelText": "Credit card repayments",
+        "infoType": "text",
+        "moreInfo": "Enter the estimated credit card repayments you expect to have."
+      },
+      "buyNowPayLater": {
+        "labelText": "Loan or car finance repayments",
+        "infoType": "text",
+        "moreInfo": "Enter any repayments for a loan, Buy Now Pay Later or car finance, including car leasing."
+      }
+    },
+    "insurance": {
+      "title": "Insurance",
+      "homeContentInsurance": {
+        "labelText": "Home",
+        "infoType": "text",
+        "moreInfo": "Enter your share of any home insurance you might have."
+      },
+      "lifeFuneralInsurance": {
+        "labelText": "Life and funeral plans",
+        "infoType": "text",
+        "moreInfo": "Enter the amount you expect to pay for life or funeral insurance."
+      },
+      "petInsurance": {
+        "labelText": "Pet",
+        "infoType": "text",
+        "moreInfo": "Enter your estimated pet insurance costs. Pet insurance is typically more expensive the older your pet gets, so you might pay more than you do now. "
+      },
+      "carVanMotorbike": {
+        "labelText": "Car, van or motorbike",
+        "infoType": "text",
+        "moreInfo": "Enter your share of the insurance you’ll need to own and drive a car, van or motorbike."
+      }
+    },
+    "householdExpenses": {
+      "title": "Living costs",
+      "food": {
+        "labelText": "Food and groceries",
+        "infoType": "text",
+        "moreInfo": "Enter the amount you expect to spend on groceries, including food, drink and cleaning products."
+      },
+      "healthBeauty": {
+        "labelText": "Health and beauty (toiletries, hairdressing, eye and dental care)",
+        "infoType": "text",
+        "moreInfo": "Enter your estimated health and beauty costs, including toiletries, hairdressing, eye and dental care."
+      },
+      "medication": {
+        "labelText": "Prescriptions and medication",
+        "infoType": "text",
+        "moreInfo": "Enter the amount you expect to pay on medicine and prescriptions."
+      },
+      "petEssentials": {
+        "labelText": "Pets (food, vet bills and grooming)",
+        "infoType": "text",
+        "moreInfo": "Enter your estimated costs to own a pet, including their food, vet bills and any grooming costs."
+      },
+      "clothesShoes": {
+        "labelText": "Clothes and shoes",
+        "infoType": "text",
+        "moreInfo": "Enter the amount you expect to spend on clothes and shoes."
+      }
+    },
+    "essentialsAdditionalItems": {
+      "title": "Other essential outgoings",
+      "placeholder": "Your essential items"
+    }
+  },
+  "summaryTotal": {
+    "title": "Joint summary total (monthly)",
+    "income": "Retirement income",
+    "spending": "Your spending",
+    "balance": "Balance"
+  },
+  "aboutYou": {
+    "title": "About you",
+    "dob": {
+      "labelText": "What’s your date of birth?",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "gender": {
+      "labelText": "What’s your sex?",
+      "male": "Male",
+      "female": "Female"
+    },
+    "retireAge": {
+      "labelText": "When would you like to retire?",
+      "suffix": "years"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why do we need this information?",
+      "infoText": "We need your date of birth and sex to work out the earliest you can claim the State Pension – and if this is before or after your planned retirement date."
+    },
+    "errors": {
+      "dob-empty": "Enter a valid day, month and year",
+      "day-invalid": "Enter a valid day",
+      "month-invalid": "Enter a valid month",
+      "year-invalid": "Enter a valid year",
+      "dob-age-range": "You must be at least 18 years old",
+      "dob-invalid": "Enter a valid date of birth",
+      "gender-generic": "Please enter your gender",
+      "retire-age-empty": "Enter the age you'd like to retire",
+      "retire-age-range": "Your retirement age must be between 55 and 99",
+      "retire-age-less-than-current-age": "The earliest retirement age you can enter is the same as your current age"
+    }
+  },
+  "summaryPage": {
+    "title": "Your results",
+    "heading": "From your State Pension Age of **67**, your retirement income could be **£40,092** a year after tax.",
+    "disclaimer": {
+      "taxRates": "This is based the current Income Tax rates for England, Wales and Northern Ireland. You can see the [Scottish Income Tax rates](https://www.gov.uk/scottish-income-tax) on GOV.UK.<br/>Find out more in our guides [tax and pensions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement).",
+      "alreadyRetired": "If you’ve already retired, our full [Budget planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) will give you a more detailed breakdown of your finances."
+    },
+    "incomeCallout": {
+      "costsLowerThanIncome": {
+        "title": "You should have money left over",
+        "content": "Your costs are lower than your estimated retirement income, so you should have money left over.\n\nThe [Retirement Living Standards](https://retirementlivingstandards.org.uk/) can give you an idea of the lifestyle you might be able to afford."
+      },
+      "costsHigherThanIncome": {
+        "title": "Your estimated retirement income is unlikely to cover your costs",
+        "content": "Your costs are higher than the retirement income you’re estimated to receive.\n\nFor help, see our guides about [benefits in retirement](https://www.moneyhelper.org.uk/en/benefits/benefits-in-later-life/benefits-in-retirement) and [ways to boost your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      }
+    },
+    "chart": {
+      "title": "Your retirement income and costs",
+      "description": "Based on the information you gave us, here’s how your estimated retirement income compares to your costs."
+    },
+    "retirementCallout": {
+      "lifeExpectancy": {
+        "title": "Your retirement income might need to last for over X years",
+        "content": "Based on average life expectancies, you’ll likely need to budget to make sure your retirement income lasts until you’re at least xx (84 for men, 87 for women).\n\nThis means you should be careful not to run out of money too soon.  \nYou can use the Office for National Statistics [life expectancy calculator](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/articles/lifeexpectancycalculator/2019-06-07) to find out the average life expectancy for someone of your age and sex."
+      },
+      "statePensionAge": {
+        "title": "You plan to retire before you can claim the State Pension",
+        "content": "You’ll reach your State Pension age after your planned retirement date.  \nThis means you:",
+        "listItems": [
+          "Will not be able to claim the State Pension when you first plan to retire",
+          "Need to make sure you can afford to live off income from other sources until you can claim the State Pension."
+        ]
+      }
+    },
+    "nextStepsCallout": {
+      "genderGap": {
+        "title": "Check if you’re affected by the gender pensions gaps",
+        "content": "Many women retire with up to half as much retirement savings as men, often due to caring responsibilities and working lower paid jobs.\n\nFor help, see our guide about [ways to close the gender pensions gap.](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot)"
+      },
+      "benefits": {
+        "title": "Check you’re claiming everything you’re entitled to",
+        "content": "See all the help that’s available in our guide about [benefits in retirement](https://www.moneyhelper.org.uk/en/benefits/benefits-in-later-life/benefits-in-retirement).\n\nYou can also use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to check if taking your pension will affect the benefits you currently receive."
+      },
+      "statePension": {
+        "title": "Check if you can boost your State Pension",
+        "content": "You’re currently not on track to receive the full amount of State Pension, but there might be ways to increase the amount you get.\n\nFor more information, see our guides about [boosting your State Pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension)."
+      },
+      "debts": {
+        "title": "Consider free help clearing your debts",
+        "content": "Repaying debt can affect how comfortable your retirement is. For help finding free debt advice and other steps you can take, see [help if you’re struggling with debt](https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/help-if-youre-struggling-with-debt)."
+      },
+      "mortgage": {
+        "title": "Consider how you’ll repay your mortgage in retirement",
+        "content": "There are often fewer mortgage options after you retire, so it’s a good idea to repay your mortgage as early as you can afford to. If you have an interest-only mortgage, your lender or a financial adviser can help you plan how to repay the borrowed amount.\n\nIf you’re considering using equity release or a retirement interest-only mortgage, see our guide [Should I downsize my home to fund my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "borrowing": {
+        "title": "Plan to reduce your borrowing after you retire",
+        "content": "If you currently use credit cards or loans to pay for things, you might find you cannot borrow as much after you retire. This means you might need to budget to use your income instead, in addition to repaying the debt.\n\nIf you think you’ll struggle to make your repayments on time, or you cannot afford to pay your essential costs, see our guide about [how to reduce borrowing](https://www.moneyhelper.org.uk/en/everyday-money/credit/should-i-save-or-pay-off-debt)."
+      },
+      "socialHousing": {
+        "title": "Check if you qualify for social housing in retirement",
+        "content": "If you’re planning on renting after you retire, make sure to budget for potential rent increases and costs to adapt your home.\n\nIt’s also worth checking if you’re eligible to move into social housing, which is usually cheaper than private rent and typically offers more security against eviction. Find out more about [renting and social housing on Age UK](https://www.ageuk.org.uk/information-advice/care/housing-options/renting-social-housing/)."
+      }
+    },
+    "cta": {
+      "save": "Save results",
+      "restart": "Start again"
+    },
+    "checklist": {
+      "title": "Retirement planning checklist",
+      "pension": {
+        "title": "Plan how and when to take your pension",
+        "content": "When and how to take your pension can affect how comfortable your retirement is. It’s a good idea to understand your options and start planning at least ten years before you plan to retire, so you have time to save more if you need to.\n\nFor step-by-step help, including how to get free guidance, see our guide [How to take your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/how-to-take-your-pension)."
+      },
+      "income": {
+        "title": "Check for ways to boost your retirement income",
+        "listItems": [
+          "Paying more into your pension – your employer might also match your contributions",
+          "Checking you’re getting all the tax relief you’re eligible for",
+          "Making sure you’re on track for the maximum State Pension",
+          "Delaying your retirement date."
+        ],
+        "content": "For more information, see our guide [Ways to boost your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "scams": {
+        "title": "Watch out for pension scams designed to steal your money",
+        "content": "Never access your pension or transfer any money to a pension provider because of a cold call, visit, email or text. It’s likely a scam designed to steal your money.\n\nYou might lose all your retirement savings and have to pay an expensive tax bill. For more information, see our guide [How to spot a pension scam](https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam)."
+      }
+    },
+    "tools": {
+      "title": "Other tools to try",
+      "budgetPlanner": {
+        "title": "Budget planner",
+        "content": "Keep track of your current household spending, plus tips to improve your finances."
+      },
+      "pensionCalculator": {
+        "title": "Pension calculator",
+        "content": "Find out how much you might need to save for retirement and the income you’re on track to get."
+      },
+      "benefitsCalculator": {
+        "title": "Benefits calculator",
+        "content": "Check if you’re entitled to any extra payments or grants, including Universal Credit and Pension Credit."
+      }
+    },
+    "feedback": {
+      "title": "Was this information useful?",
+      "positive": "Yes",
+      "negative": "No",
+      "report": "Report a problem with this page"
+    },
+    "share": {
+      "title": "Share this calculator",
+      "subject": "Example subject",
+      "xTitle": "Example X title"
+    }
+  },
+  "saveAndComeBack": {
+    "title": "Save and come back later",
+    "description": "Enter your email below and we’ll send you a link to access your saved progress. Use the link to return to your online appointment any time.",
+    "userEmailLabelText": "Your email address",
+    "emailHint": "We’ll only use this to send you a link to access your saved progress.",
+    "buttonLabel": "Save and send email",
+    "backButtonLink": "Back",
+
+    "errorSummary": {
+      "title": "There is a problem",
+      "email-generic": "Enter an email address in the correct format"
+    },
+    "errorLink": "About you",
+
+    "errors": {
+      "email-generic": "Error: Enter an email address in the correct format, like name@example.com",
+      "email-error": "There was a problem sending the email, please try again."
+    }
+  },
+  "progressSaved": {
+    "title": "Progress saved",
+    "subtitle": "What happens next",
+    "description": "We’ve sent you an email. It’ll come from xxxx. Make sure to check your spam folder if you haven’t received it.",
+    "description2": "Click the link in the email to return to your Budget.",
+    "primaryButtonLabel": "Return to your budget planner",
+    "secondaryButtonLabel": "Resend email"
+  },
+  "errorPage": {
+    "title": "We were unable to save your details",
+    "description": "Something went wrong when saving your data.",
+    "listOfOptions": {
+      "description": "You can:",
+      "goBackToTool": {
+        "text": "return to our Retirement budget planner"
+      },
+      "contactSupport": {
+        "linkText": "contact us for support",
+        "rest": "if you continue to have issues."
+      }
+    }
+  }
+}

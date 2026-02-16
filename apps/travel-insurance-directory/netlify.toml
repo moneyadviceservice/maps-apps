@@ -1,0 +1,23 @@
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/travel-insurance-directory package.json libs/shared"
+
+[[context.production.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.deploy-preview.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[[context.develop.plugins]]
+    package = "/netlify/tools/plugins/stop-build"
+
+[dev]
+    targetPort = 4313
+    autoLaunch = false
+    base = "/"
+    command = "npx nx run travel-insurance-directory:serve"
+
+[[redirects]]
+    from = "/fn/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
+

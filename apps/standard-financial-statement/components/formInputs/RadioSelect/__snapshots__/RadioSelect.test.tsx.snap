@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioSelect renders all radio options with correct labels 1`] = `
+<div>
+  <fieldset
+    class="mt-4"
+  >
+    <legend
+      class="sr-only"
+    >
+      Select an option
+    </legend>
+    <div
+      class="space-y-6"
+    >
+      <div
+        class="relative text-base"
+        data-testid="radio-button"
+      >
+        <div
+          class="flex flex-wrap items-center"
+        >
+          <input
+            class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+            data-testid="radio-button-input"
+            id="fieldName-a"
+            name="test-field"
+            type="radio"
+            value="a"
+          />
+          <label
+            class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-disabled:active:after:border-gray-200 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 mr-4 peer-checked:after:border-green-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-green-500 peer-focus:active:after:border-green-500 peer-checked:hover:after:border-green-500 peer-focus:hover:after:border-green-500""
+            data-testid="radio-button-label"
+            for="fieldName-a"
+          >
+            Option A
+          </label>
+        </div>
+      </div>
+      <div
+        class="relative text-base"
+        data-testid="radio-button"
+      >
+        <div
+          class="flex flex-wrap items-center"
+        >
+          <input
+            class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+            data-testid="radio-button-input"
+            id="fieldName-b"
+            name="test-field"
+            type="radio"
+            value="b"
+          />
+          <label
+            class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-disabled:active:after:border-gray-200 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 mr-4 peer-checked:after:border-green-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-green-500 peer-focus:active:after:border-green-500 peer-checked:hover:after:border-green-500 peer-focus:hover:after:border-green-500""
+            data-testid="radio-button-label"
+            for="fieldName-b"
+          >
+            Option B
+          </label>
+        </div>
+      </div>
+      <div
+        class="relative text-base"
+        data-testid="radio-button"
+      >
+        <div
+          class="flex flex-wrap items-center"
+        >
+          <input
+            class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+            data-testid="radio-button-input"
+            id="fieldName-c"
+            name="test-field"
+            type="radio"
+            value="c"
+          />
+          <label
+            class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-disabled:active:after:border-gray-200 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 mr-4 peer-checked:after:border-green-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-green-500 peer-focus:active:after:border-green-500 peer-checked:hover:after:border-green-500 peer-focus:hover:after:border-green-500""
+            data-testid="radio-button-label"
+            for="fieldName-c"
+          >
+            Option C
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
