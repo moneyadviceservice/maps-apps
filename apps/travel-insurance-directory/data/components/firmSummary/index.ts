@@ -1,0 +1,1 @@
+export { firmSummary } from './firmSummary';

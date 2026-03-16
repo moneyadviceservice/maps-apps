@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SummaryResultsShare component should render the component 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-6 py-6 border-t xl:justify-between xl:flex-row border-slate-400 print:hidden"
+  >
+    <h2
+      class="text-base text-gray-800 font-bold mb-4 md:mb-0 sm:mt-2"
+      data-testid="share-tool-title"
+    >
+      Share this calculator
+    </h2>
+    <div
+      class="grid grid-flow-row gap-4 md:grid-cols-3"
+    >
+      <a
+        class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white inline t-social-sharing__button t-social-sharing__button--email"
+        href="mailto:?subject=Example subject&body=Example email body text%0D%0A%0D%0Ahttps://retirement-budget-planner.moneyhelper.org.uk"
+        rel="noreferrer"
+        target="_blank"
+        title="email"
+      >
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <svgr-mock
+            classname=""
+            fill="fill-current"
+          />
+          <hr
+            class="h-[26px] bg-[#DB7BB4] w-[1px] ml-2 border-0"
+            data-testid="social-divider"
+          />
+          <p
+            class="pl-2"
+          >
+            Email
+          </p>
+        </div>
+      </a>
+      <a
+        class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white inline t-social-sharing__button t-social-sharing__button--facebook"
+        href="https://www.facebook.com/sharer.php?u=https://retirement-budget-planner.moneyhelper.org.uk"
+        rel="noreferrer"
+        target="_blank"
+        title="facebook"
+      >
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <svgr-mock
+            classname=""
+            fill="#3B5998"
+          />
+          <hr
+            class="h-[26px] bg-[#DB7BB4] w-[1px] ml-2 border-0"
+            data-testid="social-divider"
+          />
+          <p
+            class="pl-2"
+          >
+            Facebook
+          </p>
+        </div>
+      </a>
+      <a
+        class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white inline t-social-sharing__button t-social-sharing__button--X"
+        href="https://twitter.com/intent/tweet?text=Example X title&url=https://retirement-budget-planner.moneyhelper.org.uk"
+        rel="noreferrer"
+        target="_blank"
+        title="X"
+      >
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <svgr-mock
+            classname=""
+            style="max-width: 27px; max-height: 22px; min-width: 27px; min-height: 22px;"
+          />
+          <hr
+            class="h-[26px] bg-[#DB7BB4] w-[1px] ml-2 border-0"
+            data-testid="social-divider"
+          />
+          <p
+            class="pl-2"
+          >
+            X
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

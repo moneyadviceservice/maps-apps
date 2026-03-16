@@ -1,0 +1,32 @@
+{
+  "name": "travel-insurance-directory-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/e2e/travel-insurance-directory-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["travel-insurance-directory"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/travel-insurance-directory-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "travel-insurance-directory:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/travel-insurance-directory-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

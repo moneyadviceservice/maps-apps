@@ -1,0 +1,161 @@
+parameters:
+  - name: appname
+    type: string
+  - name: context
+    type: string
+  - name: branchname
+    type: string
+  - name: authtoken
+    type: string
+  - name: environment
+    type: string
+  - name: customEnvironment
+    type: string
+  - name: customEnvironmentAlias
+    type: string
+  - name: environmentVariables
+    type: string
+  - name: customEnvironmentVariables
+    type: string
+
+steps:
+  - checkout: self
+  - template: ../steps/install-node.yml
+  - template: match-site.yml
+    parameters:
+      projectName: ${{ parameters.appname }}
+  - script: |
+      echo "Setting up environment variables for Azure build..."
+
+      environmentAlias=$(echo "${{ parameters.customEnvironmentAlias }}" | tr -d '[:space:]')
+      if [ -z "$environmentAlias" ]; then
+        echo "Custom environment alias not provided, using default alias: ${{ parameters.environment }}"
+      else
+        echo "Custom environment alias provided: $environmentAlias"
+      fi
+
+      if [ "${{ parameters.environment }}" = "test" ] || [ "${{ parameters.environment }}" = "staging" ]; then
+        echo "${{ parameters.environment }} environment selected"
+        
+        if [ "${{ parameters.environmentVariables }}" = "Match environment" ]; then
+          echo "Using branch:${{ parameters.environment }} context for ${{ parameters.environment }}"
+          deployContext="branch:${{ parameters.environment }}"
+        elif [ "${{ parameters.environmentVariables }}" = "test" ] || [ "${{ parameters.environmentVariables }}" = "staging" ]; then
+          echo "Using branch:${{ parameters.environmentVariables }} context for ${{ parameters.environment }}"
+          deployContext="branch:${{ parameters.environmentVariables }}"
+        else
+          echo "Using ${{ parameters.environmentVariables }} context for ${{ parameters.context }}"
+          deployContext="${{ parameters.environmentVariables }}"
+        fi
+      else
+        if [ "${{ parameters.environmentVariables }}" = "test" ] || [ "${{ parameters.environmentVariables }}" = "staging" ]; then
+          deployContext="branch:${{ parameters.environmentVariables }}"
+        else
+          deployContext="${{ parameters.environmentVariables }}"
+        fi
+      fi
+      echo "Deploy context set to: $deployContext"
+
+      # Get environment variables from Netlify and set them in Azure build environment
+      echo "Fetching environment variables from Netlify for context: $deployContext"
+      env_vars_json=$(netlify env:list --json --filter=$NETLIFY_SITE_FILTER --context=$deployContext)
+
+      # Export variables for the build
+      echo "Setting environment variables for Azure build..."
+      for key in $(echo "$env_vars_json" | jq -r 'keys[]'); do
+        value=$(echo "$env_vars_json" | jq -r --arg k "$key" '.[$k]')
+        echo "Setting $key for build"
+        export $key="$value"
+        echo "##vso[task.setvariable variable=$key]$value"
+      done
+
+      # Store deploy context for later use
+      echo "##vso[task.setvariable variable=deployContext;isOutput=true]$deployContext"
+      echo "##vso[task.setvariable variable=environmentAlias;isOutput=true]$environmentAlias"
+
+    displayName: 'Setup Environment Variables'
+    name: 'SetupVars'
+  - script: |
+      npm install
+    displayName: 'NPM Install'
+  - script: |
+      echo "Deploying with environment variables already set during build..."
+      echo "Site ID: $NETLIFY_SITE_ID"
+      echo "Site Filter: $NETLIFY_SITE_FILTER"
+      echo "Deploy context: $(SetupVars.deployContext)"
+      echo "Environment alias: $(SetupVars.environmentAlias)"
+
+      deployContext="$(SetupVars.deployContext)"
+      environmentAlias="$(SetupVars.environmentAlias)"
+
+      if [ -n "${{ parameters.customEnvironmentVariables }}" ]; then
+        echo "Setting custom environment variables in Netlify..."
+        IFS=',' read -ra PAIRS <<< "${{ parameters.customEnvironmentVariables }}"
+        for pair in "${PAIRS[@]}"; do
+          key="${pair%%=*}"
+          value="${pair#*=}"
+          if [[ -z "$value" ]]; then
+            echo "Error: Value empty for $key"
+            exit 1
+          else
+            echo "Setting custom variable $key"
+            netlify env:set $key $value --context $deployContext --filter=$NETLIFY_SITE_FILTER
+          fi
+        done
+      else
+        echo "No custom environment variables provided"
+      fi
+
+      if [ "${{ parameters.customEnvironment }}" = "true" ]; then
+        echo "Deploying $NETLIFY_SITE_FILTER to custom alias $environmentAlias"
+        deploy_command="netlify deploy --filter=$NETLIFY_SITE_FILTER --context=$deployContext --auth=${{ parameters.authtoken }} --alias $environmentAlias"
+      else
+        echo "Deploying $NETLIFY_SITE_FILTER to ${{ parameters.environment }}"
+        deploy_command="netlify deploy --filter=$NETLIFY_SITE_FILTER --context=$deployContext --auth=${{ parameters.authtoken }} --alias ${{ parameters.environment }}"
+      fi
+      eval "$deploy_command"
+
+      echo ".--------------------------."
+      echo "| 🚀 Deployment Summary 🚀 |"
+      echo "'--------------------------'"
+
+      env_vars_json=$(netlify env:list --json --filter=$NETLIFY_SITE_FILTER --context=$deployContext)
+      OMIT_KEYS_RAW=$(cat '$(Build.SourcesDirectory)/netlify/secrets_to_omit.txt')
+      IFS=',' read -ra OMIT_KEYS <<< "$OMIT_KEYS_RAW"
+
+      echo "Environment variables for $deployContext"
+      echo "----------------------------------------"
+      for key in $(echo "$env_vars_json" | jq -r 'keys[]'); do
+        value=$(echo "$env_vars_json" | jq -r --arg k "$key" '.[$k]')
+        match=false
+        for omit in "${OMIT_KEYS[@]}"; do
+          if [[ "$key" == "$omit" ]]; then
+            match=true
+            # Obfuscate value: show only last 3 chars if length > 3, else all asterisks
+            if [ ${#value} -gt 3 ]; then
+              obfuscated="******${value: -3}"
+            else
+              obfuscated="******"
+            fi
+            echo "$key=$obfuscated"
+          fi
+        done
+        if [ "$match" = false ]; then
+          echo "$key=$value"
+        fi
+      done
+
+      if [ -n "${{ parameters.customEnvironmentVariables }}" ]; then
+        echo "Custom environment variables provided, deleting them"
+        IFS=',' read -ra PAIRS <<< "${{ parameters.customEnvironmentVariables }}"
+        for pair in "${PAIRS[@]}"; do
+          key="${pair%%=*}"
+          value="${pair#*=}"
+          echo "Deleting custom variable $key"
+          netlify env:unset $key --context $deployContext --filter $NETLIFY_SITE_FILTER
+        done
+      else
+        echo "No custom environment variables to delete"
+      fi
+
+    displayName: 'Deploy ${{ parameters.appname }}'

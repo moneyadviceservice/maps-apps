@@ -1,0 +1,179 @@
+name: Deploy to Netlify
+
+trigger: none
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: pensions-dashboard
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - guaranteed-income-estimator
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network
+      - moneyhelper-booking-forms
+      - moneyhelper-contact-forms
+      - moneyhelper-tools
+      - mortgage-affordability
+      - mortgage-calculator
+      - pensions-dashboard
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - sandbox
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - tools-index
+      - travel-insurance-directory
+
+  # The envrionment to deploy, these are the standard options and will use the test/staging environment variables unless otherwise specified below.
+  - name: context
+    displayName: Environment
+    type: string
+    default: test
+    values:
+      - test
+      - staging
+      - custom
+
+  # If value entered, will use the value as the domain alias for the deployment (https://<alias>--<appname>.netlify.app).
+  - name: customEnvironmentAlias
+    displayName: Custom Environment
+    type: string
+    default: ' '
+    values: []
+
+  # Environment variables to use for the deployment
+  - name: environmentVariables
+    displayName: 'Environment Variables'
+    type: string
+    default: 'Match environment'
+    values:
+      - 'Match environment'
+      - 'deploy-preview'
+      - 'test'
+      - 'staging'
+
+  # Custom environment variables, format key=value, multiple variables can be specified by separating with a comma.
+  - name: customEnvironmentVariables
+    displayName: 'Custom Environment Variables'
+    type: string
+    default: ' '
+    values: []
+
+variables:
+  HEAD_SHA: $(git rev-parse HEAD)
+  context: branch-deploy
+  ${{ if eq(parameters.context, 'custom') }}:
+    customenv: true
+  ${{ if ne(parameters.context, 'custom') }}:
+    customenv: false
+
+stages:
+  - stage: CheckConfig
+    displayName: 'Check Config'
+    jobs:
+      - job: CheckConfig
+        displayName: 'Checking ${{ parameters.appname }} Configuration'
+        steps:
+          - script: |
+              echo "Appname: ${{ parameters.appname }}"
+              echo "Context: ${{ parameters.context }}"
+              echo "Environment: ${{ parameters.context }}"
+              echo "Is a custom environment: ${{ variables.customenv }}"
+              echo "Custom environment alias: ${{ parameters.customEnvironmentAlias }}"
+              echo "Environment variables to use: ${{ parameters.environmentVariables }}"
+              if [ "${{ variables.customenv }}" = "true" ] && [ "${{ parameters.environmentVariables }}" = "Match environment" ]; then
+                echo "Error: 'Match environment' is not a supported option for 'Environment variables' when deploying custom environments"
+                exit 1
+              fi
+            displayName: 'Check Setup'
+          - script: |
+              echo "Checking if any provided custom environment variables are already set in Netlify"
+              customEnvironmentVariables=$(echo "${{ parameters.customEnvironmentVariables }}" | tr -d '[:space:]')
+              if [ -n "$customEnvironmentVariables" ]; then
+                echo "Custom environment variables provided"
+                netlify link --filter=${{ parameters.appname }} --name=${{ parameters.appname }}
+                IFS=',' read -ra PAIRS <<< "$customEnvironmentVariables"
+                for pair in "${PAIRS[@]}"; do
+                  key="${pair%%=*}"
+                  echo "Checking if $key already exists in Netlify"
+                  netlify_var=$(netlify env:get $key --context ${{ parameters.context }} --filter ${{ parameters.appname }})
+                  if [[ "$netlify_var" == *"No value set"* ]]; then
+                    echo "$key does not exist in Netlify, will be set during deployment"
+                  else
+                    echo "Returned from netlify: $netlify_var"
+                    echo "Variable $key already exists in Netlify"
+                    echo "Please remove it from the custom environment variables or update it in Netlify"
+                    exit 1
+                  fi
+                done
+                echo "Export custom environment variables to be used in the deployment"
+                echo "##vso[task.setvariable variable=CUSTOM_ENV_VARS;isOutput=true]$customEnvironmentVariables"
+              else
+                echo "No custom environment variables provided"
+              fi
+            name: CheckCustomEnvVars
+            displayName: 'Check Existing Variables'
+
+      - job: CheckSubdomainLength
+        displayName: 'Checking URL length for custom alias'
+        condition: eq('${{ variables.customenv }}', 'true')
+        steps:
+          - script: |
+              echo "Checking URL length for custom alias"
+              max_length=63
+              url_subdomain="${{ parameters.customEnvironmentAlias }}--${{ parameters.appname }}"
+              url_subdomain_length=${#url_subdomain}
+              echo "Expected URL: $url_subdomain.netlify.app"
+              if [ "$url_subdomain_length" -gt "$max_length" ]; then
+                echo "The character length of the subdomain for this build exceeds the maximum allowed"
+                echo "Currently $url_subdomain_length characters, maximum is $max_length"
+                exit 1
+              else
+                echo "The character length of the subdomain for this build is within the maximum allowed ($max_length)"
+              fi
+            displayName: 'Check URL Length'
+
+  - stage: Deploy
+    condition: succeeded('CheckConfig')
+    dependsOn: CheckConfig
+    variables:
+      CUSTOM_ENV_VARS: $[ stageDependencies.CheckConfig.CheckConfig.outputs['CheckCustomEnvVars.CUSTOM_ENV_VARS'] ]
+    displayName: 'Deploy to Netlify'
+    jobs:
+      - job: Build_selected_app
+        displayName: ${{ parameters.appname }}
+        steps:
+          - template: templates/manual-deploy.yml
+            parameters:
+              appname: ${{ parameters.appname }}
+              environment: ${{ parameters.context }}
+              customEnvironment: ${{ variables.customenv }}
+              customEnvironmentAlias: ${{ parameters.customEnvironmentAlias }}
+              context: ${{ variables.context }}
+              environmentVariables: ${{ parameters.environmentVariables }}
+              customEnvironmentVariables: $CUSTOM_ENV_VARS
+              branchname: $(Build.SourceBranchName)
+              authtoken: $(netlify-auth-token)

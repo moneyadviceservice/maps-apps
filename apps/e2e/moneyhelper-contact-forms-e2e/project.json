@@ -1,0 +1,32 @@
+{
+  "name": "moneyhelper-contact-forms-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/moneyhelper-contact-forms-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["moneyhelper-contact-forms"],
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/moneyhelper-contact-forms-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "moneyhelper-contact-forms:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/moneyhelper-contact-forms-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

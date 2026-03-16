@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SummaryResultsOtherTools component should render the component 1`] = `
+<div>
+  <div>
+    <h2
+      class="text-3xl md:text-5xl font-bold mt-2 mb-8 text-blue-700"
+    >
+      Other tools to try
+    </h2>
+    <div
+      class="grid grid-cols-1 gap-6 lg:grid-cols-3"
+    >
+      <a
+        class="t-teaser flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden text-magenta-500 bg-white hover:outline-pink-800 hover:text-pink-800 hover:decoration-pink-800 hover:underline focus:bg-yellow-400 focus:!text-gray-800 focus:!no-underline focus:outline focus:!outline-purple-800 focus:outline-[4px] focus:outline-offset-0 focus:shadow-none active:bg-gray-200 active:text-gray-800 active:no-underline active:outline active:outline-purple-800 active:shadow-none active:outline-[4px] active:outline-offset-0"
+        data-testid="teaserCard"
+        href="https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"
+        target="_top"
+      >
+        <img
+          alt=""
+          class="object-cover w-full h-auto aspect-video"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/_next/image?url=%2Ftest-image.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Ftest-image.jpg&w=128&q=75 1x, /_next/image?url=%2Ftest-image.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="100"
+        />
+        <div
+          class="p-5 space-y-3 group"
+        >
+          <h3
+            class="md:text-xl text-xl font-bold text-inherit"
+          >
+            Budget planner
+          </h3>
+          <p
+            class="inline-block w-full text-base text-gray-800 no-underline"
+          >
+            Keep track of your current household spending, plus tips to improve your finances.
+          </p>
+        </div>
+      </a>
+      <a
+        class="t-teaser flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden text-magenta-500 bg-white hover:outline-pink-800 hover:text-pink-800 hover:decoration-pink-800 hover:underline focus:bg-yellow-400 focus:!text-gray-800 focus:!no-underline focus:outline focus:!outline-purple-800 focus:outline-[4px] focus:outline-offset-0 focus:shadow-none active:bg-gray-200 active:text-gray-800 active:no-underline active:outline active:outline-purple-800 active:shadow-none active:outline-[4px] active:outline-offset-0"
+        data-testid="teaserCard"
+        href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator"
+        target="_top"
+      >
+        <img
+          alt=""
+          class="object-cover w-full h-auto aspect-video"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/_next/image?url=%2Ftest-image.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Ftest-image.jpg&w=128&q=75 1x, /_next/image?url=%2Ftest-image.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="100"
+        />
+        <div
+          class="p-5 space-y-3 group"
+        >
+          <h3
+            class="md:text-xl text-xl font-bold text-inherit"
+          >
+            Pension calculator
+          </h3>
+          <p
+            class="inline-block w-full text-base text-gray-800 no-underline"
+          >
+            Find out how much you might need to save for retirement and the income you’re on track to get.
+          </p>
+        </div>
+      </a>
+      <a
+        class="t-teaser flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden text-magenta-500 bg-white hover:outline-pink-800 hover:text-pink-800 hover:decoration-pink-800 hover:underline focus:bg-yellow-400 focus:!text-gray-800 focus:!no-underline focus:outline focus:!outline-purple-800 focus:outline-[4px] focus:outline-offset-0 focus:shadow-none active:bg-gray-200 active:text-gray-800 active:no-underline active:outline active:outline-purple-800 active:shadow-none active:outline-[4px] active:outline-offset-0"
+        data-testid="teaserCard"
+        href="https://www.moneyhelper.org.uk/en/benefits/benefits-calculator"
+        target="_top"
+      >
+        <img
+          alt=""
+          class="object-cover w-full h-auto aspect-video"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/_next/image?url=%2Ftest-image.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Ftest-image.jpg&w=128&q=75 1x, /_next/image?url=%2Ftest-image.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="100"
+        />
+        <div
+          class="p-5 space-y-3 group"
+        >
+          <h3
+            class="md:text-xl text-xl font-bold text-inherit"
+          >
+            Benefits calculator
+          </h3>
+          <p
+            class="inline-block w-full text-base text-gray-800 no-underline"
+          >
+            Check if you’re entitled to any extra payments or grants, including Universal Credit and Pension Credit.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelpSidebar Component renders component correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl shadow-1md p-6 md:w-[300px]"
+    data-testid="help-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="help-sidebar-title"
+    >
+      components.sidebar.help.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="help-sidebar-content"
+    >
+      components.sidebar.help.content
+    </p>
+  </div>
+</div>
+`;

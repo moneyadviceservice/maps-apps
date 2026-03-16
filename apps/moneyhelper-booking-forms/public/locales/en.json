@@ -1,0 +1,566 @@
+{
+  "site": {
+    "title": "Money Helper Booking Form",
+    "back": "Back"
+  },
+  "layout": {
+    "title": "Book an appointment"
+  },
+  "components": {
+    "appointment-type": {
+      "title": "What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Pension Wise",
+              "value": "pension-wise",
+              "hint": "Explains the options for taking money from your defined contribution pension."
+            },
+            {
+              "text": "Divorce and separation",
+              "value": "divorce-separation",
+              "hint": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            },
+            {
+              "text": "Self-employed pensions",
+              "value": "self-employed",
+              "hint": "Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+            },
+            {
+              "text": "Pension loss",
+              "value": "pension-loss",
+              "hint": "For people who have lost pension money due to a scam or fraud and need support."
+            }
+          ],
+          "error": "Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "when you can access your pension pots",
+            "the different ways you can take money from your pension",
+            "how each option is usually taxed",
+            "how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-appointment": {
+      "title": "Self-employed appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "If you’re self-employed, pension options can feel complicated and hard to compare. This appointment helps you understand how pensions work when you work for yourself, and what your choices are."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "the types of pensions available to self-employed people",
+            "how contributions work and what you can afford to save",
+            "how tax relief is applied and what you could get back",
+            "what to consider when choosing a pension provider or scheme",
+            "how to check your state pension forecast",
+            "how to spot risks and avoid pension scams",
+            "where to get free, impartial guidance if you need more help"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a Self-employed appointment if:",
+            "items": ["you aren’t self-employed"]
+          }
+        ]
+      }
+    },
+    "divorce-appointment": {
+      "title": "Divorce and separation appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "Our divorce and separation section is here to give you all the guidance you need when it comes to managing your finances during a relationship break-up.\n\nIt doesn’t matter what your situation is. You may be divorcing or separating; have children or not; own your home or rent; or live in England, Scotland, Wales or Northern Ireland. We have guides that will cover your specific situation."
+        },
+        {
+          "content": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier.\n\nDuring your appointment, you'll speak with one of our pension specialists who will:",
+          "items": [
+            "explain the pension options available during a divorce/dissolution",
+            "help you understand what to consider and the questions to ask",
+            "guide you on your next steps, including where to find additional help and how to access regulated financial advice if needed."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a divorce and separation appointment if: ",
+            "items": [
+              "you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-loss-appointment": {
+      "title": "Pension loss appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.\n\nThat’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "what has happened to your pension and what it means for you",
+            "what common scam-related pension terms and acronyms refer to",
+            "what options you may have to recover some of the money you’ve lost",
+            "what to expect next, including possible investigations or follow-up steps"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a pension loss appointment if: ",
+            "items": [
+              "you have not been the victim of a suspected or confirmed pension scam"
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-pre-appointment": {
+      "title": "What you need for your self-employed pensions appointment",
+      "sections": [
+        {
+          "content": "You do not need to have everything, but bringing any of the following will help us give you clearer guidance:",
+          "items": [
+            "any pension statements you already have",
+            "details of pension schemes you’ve paid into before",
+            "information about any savings or investments linked to your retirement",
+            "your State Pension forecast, if you have one"
+          ]
+        }
+      ]
+    },
+    "divorce-pre-appointment": {
+      "title": "What you need for your divorce and separation appointment",
+      "sections": [
+        {
+          "content": "So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances. You’ll usually benefit more from a divorce and separation appointment if, before your appointment, you:"
+        },
+        {
+          "content": "Ask each of your pension providers:",
+          "items": [
+            "how much your pension is currently worth",
+            "if your pension has any special features, like a guaranteed pot value or annuity rate."
+          ]
+        },
+        {
+          "content": "Check your State Pension forecast:",
+          "items": [
+            "[online on GOV.UK (opens in a new tab)](https://www.gov.uk/check-state-pension)",
+            "call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+          ]
+        },
+        {
+          "content": "Have details of your other finances, like:",
+          "items": ["savings and investments", "debts and repayments."]
+        },
+        {
+          "content": "Think about your plans for retirement, such as:",
+          "items": [
+            "when you’d like to stop working",
+            "what type of pension income you’d like."
+          ]
+        },
+        {
+          "content": "On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+        }
+      ]
+    },
+    "pension-loss-pre-appointment": {
+      "title": "What you need for your pension loss appointment",
+      "sections": [
+        {
+          "content": "You do not need to have everything listed, but bringing any of the following can help us understand your situation more quickly:",
+          "items": [
+            "Any letters, emails or messages you received about the pension investment or transfer",
+            "Copies of forms you signed, including transfer or investment paperwork",
+            "Statements from your pension provider showing recent activity or transactions",
+            "Screenshots of adverts, websites or social media posts linked to the scam",
+            "The name and contact details of anyone you dealt with",
+            "Any references, policy numbers or pension scheme details you have",
+            "Notes about what happened and when, including dates of calls or messages"
+          ]
+        }
+      ]
+    },
+    "eligibility-defined-contribution": {
+      "title": "Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-dc-pass"
+            },
+            {
+              "text": "No, I have a different type of pension",
+              "value": "eligibility-pw-fail"
+            },
+            {
+              "text": "Not sure",
+              "value": "eligibility-dc-pass"
+            }
+          ],
+          "error": "Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-over-50-pass"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-over-50-fail"
+            }
+          ],
+          "error": "Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-uk-pensions-pass"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-pw-fail"
+            }
+          ],
+          "error": "Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "You have inherited someone else’s pension",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "You are retiring early due to poor health",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "Your pension scheme allows early access (protected pension age)",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "None of these apply",
+              "value": "eligibility-pw-fail"
+            }
+          ],
+          "error": "Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "eligibility-business-state": {
+      "title": "What is your business status?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Sole trader (declare income through Self Assessment)",
+              "value": "sole-trader"
+            },
+            {
+              "text": "Partner in a business partnership (declare income through Self Assessment)",
+              "value": "business-partnership"
+            },
+            {
+              "text": "Director of a limited company",
+              "value": "director-limited-company"
+            },
+            {
+              "text": "Other (please specify)",
+              "value": "other"
+            }
+          ],
+          "error": "Select what type of self-employed status you have."
+        }
+      }
+    },
+    "eligibility-financial-settlement": {
+      "title": "Has a financial settlement already been agreed?",
+      "sections": [
+        {
+          "content": "You cannot book a divorce and separation appointment if a financial settlement has been agreed."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Has a financial settlement already been agreed?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-fs-fail"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-fs-pass"
+            },
+            {
+              "text": "Not sure",
+              "value": "eligibility-fs-pass"
+            }
+          ],
+          "error": "Please select whether a financial settlement has already been agreed."
+        }
+      }
+    },
+    "eligibility-pension-loss": {
+      "title": "Have you lost pension money because of a scam or fraud?",
+      "sections": [
+        {
+          "content": "This appointment is only for people who have been the victim of pension fraud."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Have you lost pension money because of a scam or fraud?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "eligibility-pl-pass"
+            },
+            {
+              "text": "No",
+              "value": "eligibility-pl-fail"
+            },
+            {
+              "text": "Not sure",
+              "value": "eligibility-pl-pass"
+            }
+          ],
+          "error": "Please select whether you have lost pension money because of a scam or fraud."
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "You’re not eligible for a Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "pension-loss-not-eligible": {
+      "title": "You’re not eligible for a pension loss appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a pension loss appointment if:",
+            "items": ["&nbsp;"]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        }
+      ]
+    },
+    "divorce-not-eligible": {
+      "title": "You’re not eligible for a divorce and separation appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a divorce and separation appointment if:",
+            "items": [
+              "you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "sidebar": {
+      "help": {
+        "title": "Need Help?",
+        "content": "Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+      },
+      "information": {
+        "pension-wise": {
+          "title": "Pension Wise appointment",
+          "content": "Explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        "self-employed": {
+          "title": "Self-employed pensions appointment",
+          "content": "Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+        },
+        "divorce-separation": {
+          "title": "Divorce and separation appointment",
+          "content": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+        },
+        "pension-loss": {
+          "title": "Pension loss appointment",
+          "content": "For people who have lost pension money due to a scam or fraud and need support."
+        },
+        "duration": {
+          "label": "Duration",
+          "value": {
+            "oneHour": "About 1 hour",
+            "oneToTwoHours": "About 1 to 2 hours"
+          }
+        },
+        "appointment-format": {
+          "label": "Appointment format",
+          "value": "Telephone call"
+        },
+        "adjustment-request": {
+          "label": "Adjustment request",
+          "value": {
+            "welshSpeakingRequest": "A Welsh-speaking pension specialist",
+            "foreignLanguageRequest": "Foreign language interpreter - (selected language)",
+            "reviewNoticeRequest": "Our team will review your request and make any arrangements needed before your appointment.",
+            "britishSignLanguageRequest": "A British Sign Language interpreter",
+            "someoneToAttendRequest": "Someone to attend the appointment with you"
+          }
+        }
+      }
+    },
+    "error": {
+      "title": "Something went wrong",
+      "sections": [
+        {
+          "content": "There was a problem."
+        },
+        {
+          "content": "What you can do",
+          "items": ["[Try again](/)"]
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "Continue",
+        "send-text": "Send",
+        "pension-wise-appointment": "Book your free appointment",
+        "self-employed-appointment": "Book your free appointment"
+      }
+    },
+    "error-callout": {
+      "title": "There was a problem"
+    },
+    "loading": {
+      "title": "Loading"
+    }
+  }
+}

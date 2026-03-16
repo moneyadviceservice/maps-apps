@@ -1,0 +1,26 @@
+/**
+ * Length-of-trip visibility: show .single / .multi when trip_type radio is checked.
+ * Form must have id="filter-menu". Radio ids: #filters-trip_type-single-trip, #filters-trip_type-annual-multi-trip.
+ * CSS-only, no JavaScript state.
+ */
+
+#filter-menu .single,
+#filter-menu .multi {
+  display: none;
+  pointer-events: none;
+}
+
+#filter-menu:has(#filters-trip_type-single-trip:checked) .single {
+  display: block;
+  pointer-events: auto;
+}
+
+#filter-menu:has(#filters-trip_type-annual-multi-trip:checked) .multi {
+  display: block;
+  pointer-events: auto;
+}
+
+#filter-menu:has(#filters-trip_type-single-trip:checked) .length-placeholder,
+#filter-menu:has(#filters-trip_type-annual-multi-trip:checked) .length-placeholder {
+  display: none;
+}
