@@ -1,0 +1,101 @@
+{
+  "name": "pensions-dashboard-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/pensions-dashboard-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["pensions-dashboard"],
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensions-dashboard:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.config.ts"
+      }
+    },
+    "e2e-qa": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.qa.config.ts"
+      }
+    },
+    "lambdatest-prelaunch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/e2e/pensions-dashboard-e2e",
+        "command": "tsx src/lambda-test/pre-launch-script.ts"
+      }
+    },
+    "e2e-lambdatest": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["lambdatest-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.lambdatest.config.ts"
+      }
+    },
+    "e2e-lambdatest:windows": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["lambdatest-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.lambdatest.config.ts",
+        "project": [
+          "chrome:latest:Windows 11@lambdatest",
+          "pw-firefox:latest:Windows 10@lambdatest",
+          "MicrosoftEdge:latest:Windows 11@lambdatest"
+        ]
+      }
+    },
+    "e2e-lambdatest:mac": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["lambdatest-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.lambdatest.config.ts",
+        "project": [
+          "pw-webkit:latest:MacOS Ventura@lambdatest",
+          "MicrosoftEdge:latest:MacOS Sequoia@lambdatest",
+          "pw-firefox:latest:MacOS Tahoe@lambdatest",
+          "chrome:latest:MacOS Ventura@lambdatest"
+        ]
+      }
+    },
+    "e2e-lambdatest:android": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["lambdatest-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.lambdatest.config.ts",
+        "project": [
+          "Galaxy.*:12:android@lambdatest",
+          "Galaxy.*:15:android@lambdatest",
+          "Galaxy.*:14:android@lambdatest",
+          "Pixel.*:15:android@lambdatest"
+        ]
+      }
+    },
+    "e2e-lambdatest:ios": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["lambdatest-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.lambdatest.config.ts",
+        "project": [
+          "pw-webkit:latest:MacOS Ventura@lambdatest (iPhone 12)",
+          "pw-webkit:latest:MacOS Ventura@lambdatest (iPhone 15 Pro Max)"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Real Time Summary component should render the component 1`] = `
+<div>
+  <div
+    class="basis-4/12"
+  >
+    <div
+      class="px-2 pt-6 pb-4 space-y-4 border rounded h-fit border-gray-300 md:sticky md:top-4"
+      data-testid="summary-total"
+    >
+      <h2
+        class="text-gray-800 font-bold pl-2 text-xl leading-7"
+      >
+        <span>
+          Summary total
+        </span>
+        <span
+          class="pl-2 text-xl font-normal"
+        >
+          (monthly)
+        </span>
+      </h2>
+      <div
+        class="space-y-2"
+      >
+        <div
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+        >
+          <p
+            class="break-words m-0 grow"
+            data-testid="paragraph"
+          >
+            Retirement income
+          </p>
+          <span
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            £1,000.00
+          </span>
+        </div>
+        <div
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+        >
+          <p
+            class="break-words m-0 grow"
+            data-testid="paragraph"
+          >
+            Retirement costs
+          </p>
+          <span
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            £500.00
+          </span>
+        </div>
+        <div
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 text-white bg-green-700"
+        >
+          <p
+            class="break-words m-0 grow"
+            data-testid="paragraph"
+          >
+            Balance
+          </p>
+          <span
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            £500.00
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

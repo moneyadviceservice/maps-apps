@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Component renders component correctly 1`] = `
+<div
+  class="mx-auto text-center max-w-[636px] mb-40"
+>
+  <svgr-mock
+    classname="w-[90px] h-[90px] animate-spin mx-auto my-10 text-magenta-500"
+    data-testid="nonjs-spinner"
+  />
+  <h3
+    class="text-2xl md:text-4xl text-gray-800 font-bold mt-16"
+  >
+    common.loading.content
+  </h3>
+</div>
+`;

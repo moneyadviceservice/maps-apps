@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea Component renders component 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a character counter 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a default value 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a hint 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with an error message 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with both hint and error message 1`] = `
+<label
+  class="block mb-4"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;

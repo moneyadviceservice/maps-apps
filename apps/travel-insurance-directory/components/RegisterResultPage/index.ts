@@ -1,0 +1,1 @@
+export { RegisterResultPage } from './RegisterResultPage';

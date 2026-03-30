@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InformationSidebar Component renders component correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.duration.label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.duration.value.oneHour
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.appointment-format.label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.appointment-format.value
+      </p>
+    </div>
+  </div>
+</div>
+`;

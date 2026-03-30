@@ -1,0 +1,569 @@
+{
+  "site": {
+    "title": "--WELSH Money Helper Booking Form",
+    "back": "--WELSH Back"
+  },
+  "layout": {
+    "title": "--WELSH Book an appointment"
+  },
+  "components": {
+    "appointment-type": {
+      "title": "--WELSH What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Pension Wise",
+              "value": "pension-wise",
+              "hint": "--WELSH Explains the options for taking money from your defined contribution pension."
+            },
+            {
+              "text": "--WELSH Divorce and separation",
+              "value": "divorce-separation",
+              "hint": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            },
+            {
+              "text": "--WELSH Self-employed pensions",
+              "value": "self-employed",
+              "hint": "--WELSH Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+            },
+            {
+              "text": "--WELSH Pension loss",
+              "value": "pension-loss",
+              "hint": "--WELSH For people who have lost pension money due to a scam or fraud and need support."
+            }
+          ],
+          "error": "--WELSH Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "--WELSH Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH when you can access your pension pots",
+            "--WELSH the different ways you can take money from your pension",
+            "--WELSH how each option is usually taxed",
+            "--WELSH how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-appointment": {
+      "title": "--WELSH Self-employed appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH If you’re self-employed, pension options can feel complicated and hard to compare. This appointment helps you understand how pensions work when you work for yourself, and what your choices are."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH the types of pensions available to self-employed people",
+            "--WELSH how contributions work and what you can afford to save",
+            "--WELSH how tax relief is applied and what you could get back",
+            "--WELSH what to consider when choosing a pension provider or scheme",
+            "--WELSH how to check your state pension forecast",
+            "--WELSH how to spot risks and avoid pension scams",
+            "--WELSH where to get free, impartial guidance if you need more help"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a Self-employed appointment if:",
+            "items": ["--WELSH you aren’t self-employed"]
+          }
+        ]
+      }
+    },
+    "divorce-appointment": {
+      "title": "--WELSH Divorce and separation appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH Our divorce and separation section is here to give you all the guidance you need when it comes to managing your finances during a relationship break-up.\n\nIt doesn’t matter what your situation is. You may be divorcing or separating; have children or not; own your home or rent; or live in England, Scotland, Wales or Northern Ireland. We have guides that will cover your specific situation."
+        },
+        {
+          "content": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier.\n\nDuring your appointment, you'll speak with one of our pension specialists who will:",
+          "items": [
+            "--WELSH explain the pension options available during a divorce/dissolution",
+            "--WELSH help you understand what to consider and the questions to ask",
+            "--WELSH guide you on your next steps, including where to find additional help and how to access regulated financial advice if needed."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a divorce and separation appointment if: ",
+            "items": [
+              "--WELSH you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-loss-appointment": {
+      "title": "--WELSH Pension loss appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.\n\nThat’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH what has happened to your pension and what it means for you",
+            "--WELSH what common scam-related pension terms and acronyms refer to",
+            "--WELSH what options you may have to recover some of the money you’ve lost",
+            "--WELSH what to expect next, including possible investigations or follow-up steps"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a pension loss appointment if: ",
+            "items": [
+              "--WELSH you have not been the victim of a suspected or confirmed pension scam"
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-pre-appointment": {
+      "title": "--WELSH What you need for your self-employed pensions appointment",
+      "sections": [
+        {
+          "content": "--WELSH You do not need to have everything, but bringing any of the following will help us give you clearer guidance:",
+          "items": [
+            "--WELSH any pension statements you already have",
+            "--WELSH details of pension schemes you’ve paid into before",
+            "--WELSH information about any savings or investments linked to your retirement",
+            "--WELSH your State Pension forecast, if you have one"
+          ]
+        }
+      ]
+    },
+    "divorce-pre-appointment": {
+      "title": "--WELSH What you need for your divorce and separation appointment",
+      "sections": [
+        {
+          "content": "--WELSH So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances. You’ll usually benefit more from a divorce and separation appointment if, before your appointment, you:"
+        },
+        {
+          "content": "--WELSH Ask each of your pension providers:",
+          "items": [
+            "--WELSH how much your pension is currently worth",
+            "--WELSH if your pension has any special features, like a guaranteed pot value or annuity rate."
+          ]
+        },
+        {
+          "content": "--WELSH Check your State Pension forecast:",
+          "items": [
+            "--WELSH [online on GOV.UK (opens in a new tab)](https://www.gov.uk/check-state-pension)",
+            "--WELSH call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+          ]
+        },
+        {
+          "content": "--WELSH Have details of your other finances, like:",
+          "items": [
+            "--WELSH savings and investments",
+            "--WELSH debts and repayments."
+          ]
+        },
+        {
+          "content": "--WELSH Think about your plans for retirement, such as:",
+          "items": [
+            "--WELSH when you’d like to stop working",
+            "--WELSH what type of pension income you’d like."
+          ]
+        },
+        {
+          "content": "--WELSH On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+        }
+      ]
+    },
+    "pension-loss-pre-appointment": {
+      "title": "--WELSH What you need for your pension loss appointment",
+      "sections": [
+        {
+          "content": "--WELSH You do not need to have everything listed, but bringing any of the following can help us understand your situation more quickly:",
+          "items": [
+            "--WELSH Any letters, emails or messages you received about the pension investment or transfer",
+            "--WELSH Copies of forms you signed, including transfer or investment paperwork",
+            "--WELSH Statements from your pension provider showing recent activity or transactions",
+            "--WELSH Screenshots of adverts, websites or social media posts linked to the scam",
+            "--WELSH The name and contact details of anyone you dealt with",
+            "--WELSH Any references, policy numbers or pension scheme details you have",
+            "--WELSH Notes about what happened and when, including dates of calls or messages"
+          ]
+        }
+      ]
+    },
+    "eligibility-defined-contribution": {
+      "title": "--WELSH Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "--WELSH This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "eligibility-dc-pass"
+            },
+            {
+              "text": "--WELSH No, I have a different type of pension",
+              "value": "eligibility-pw-fail"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "eligibility-dc-pass"
+            }
+          ],
+          "error": "--WELSH Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "--WELSH Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "eligibility-over-50-pass"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "eligibility-over-50-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "--WELSH Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "--WELSH You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "eligibility-uk-pensions-pass"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "eligibility-pw-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "--WELSH Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "--WELSH You have inherited someone else’s pension",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH You are retiring early due to poor health",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH Your pension scheme allows early access (protected pension age)",
+              "value": "eligibility-age-exc-pass"
+            },
+            {
+              "text": "--WELSH None of these apply",
+              "value": "eligibility-pw-fail"
+            }
+          ],
+          "error": "--WELSH Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "eligibility-business-state": {
+      "title": "--WELSH What is your business status?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Sole trader (declare income through Self Assessment)",
+              "value": "sole-trader"
+            },
+            {
+              "text": "--WELSH Partner in a business partnership (declare income through Self Assessment)",
+              "value": "business-partnership"
+            },
+            {
+              "text": "--WELSH Director of a limited company",
+              "value": "director-limited-company"
+            },
+            {
+              "text": "--WELSH Other (please specify)",
+              "value": "other"
+            }
+          ],
+          "error": "--WELSH Select what type of self-employed status you have."
+        }
+      }
+    },
+    "eligibility-financial-settlement": {
+      "title": "--WELSH Has a financial settlement already been agreed?",
+      "sections": [
+        {
+          "content": "--WELSH You cannot book a divorce and separation appointment if a financial settlement has been agreed."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Has a financial settlement already been agreed?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "eligibility-fs-fail"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "eligibility-fs-pass"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "eligibility-fs-pass"
+            }
+          ],
+          "error": "--WELSH Please select whether a financial settlement has already been agreed."
+        }
+      }
+    },
+    "eligibility-pension-loss": {
+      "title": "--WELSH Have you lost pension money because of a scam or fraud?",
+      "sections": [
+        {
+          "content": "--WELSH This appointment is only for people who have been the victim of pension fraud."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Have you lost pension money because of a scam or fraud?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "eligibility-pl-pass"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "eligibility-pl-fail"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "eligibility-pl-pass"
+            }
+          ],
+          "error": "--WELSH Please select whether you have lost pension money because of a scam or fraud."
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "--WELSH You’re not eligible for a Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "--WELSH You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "pension-loss-not-eligible": {
+      "title": "--WELSH You’re not eligible for a pension loss appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a pension loss appointment if:",
+            "items": ["&nbsp;"]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        }
+      ]
+    },
+    "divorce-not-eligible": {
+      "title": "--WELSH You’re not eligible for a divorce and separation appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a divorce and separation appointment if:",
+            "items": [
+              "you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "--WELSH You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "sidebar": {
+      "help": {
+        "title": "--WELSH Need Help?",
+        "content": "--WELSH Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+      },
+      "information": {
+        "pension-wise": {
+          "title": "--WELSH Pension Wise appointment",
+          "content": "--WELSH Explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        "self-employed": {
+          "title": "--WELSH Self-employed pensions appointment",
+          "content": "--WELSH Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+        },
+        "divorce-separation": {
+          "title": "--WELSH Divorce and separation appointment",
+          "content": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+        },
+        "pension-loss": {
+          "title": "--WELSH Pension loss appointment",
+          "content": "--WELSH For people who have lost pension money due to a scam or fraud and need support."
+        },
+        "duration": {
+          "label": "--WELSH Duration",
+          "value": {
+            "oneHour": "--WELSH About 1 hour",
+            "oneToTwoHours": "--WELSH About 1 to 2 hours"
+          }
+        },
+        "appointment-format": {
+          "label": "--WELSH Appointment format",
+          "value": "--WELSH Telephone call"
+        },
+        "adjustment-request": {
+          "label": "--WELSH Adjustment request",
+          "value": {
+            "welshSpeakingRequest": "--WELSH A Welsh-speaking pension specialist",
+            "foreignLanguageRequest": "--WELSH Foreign language interpreter - (selected language)",
+            "reviewNoticeRequest": "--WELSH Our team will review your request and make any arrangements needed before your appointment.",
+            "britishSignLanguageRequest": "--WELSH A British Sign Language interpreter",
+            "someoneToAttendRequest": "--WELSH Someone to attend the appointment with you"
+          }
+        }
+      }
+    },
+    "error": {
+      "title": "--WELSH Something went wrong",
+      "sections": [
+        {
+          "content": "--WELSH There was a problem."
+        },
+        {
+          "content": "--WELSH What you can do",
+          "items": ["--WELSH [Try again](/)"]
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "--WELSH Continue",
+        "send-text": "--WELSH Send",
+        "pension-wise-appointment": "--WELSH Book your free appointment",
+        "self-employed-appointment": "--WELSH Book your free appointment"
+      }
+    },
+    "error-callout": {
+      "title": "--WELSH There was a problem"
+    },
+    "loading": {
+      "title": "--WELSH Loading"
+    }
+  }
+}

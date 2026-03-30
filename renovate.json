@@ -1,0 +1,72 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":preserveSemverRanges"
+  ],
+  "timezone": "Europe/London",
+  "schedule": ["before 10am on monday"],
+  "packageRules": [
+    {
+      "groupName": "Nx packages",
+      "matchPackagePatterns": ["^@nx/", "^@nrwl/", "^nx$"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Next.js packages",
+      "matchPackageNames": ["next"],
+      "matchPackagePatterns": ["^@next/"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "React packages",
+      "matchPackageNames": ["react", "react-dom"],
+      "matchPackagePatterns": ["^@types/react"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "TypeScript packages",
+      "matchPackageNames": ["typescript"],
+      "matchPackagePatterns": ["^@types/", "^ts-"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Testing packages",
+      "matchPackagePatterns": [
+        "^@testing-library/",
+        "^jest",
+        "^@jest/",
+        "^cypress",
+        "^@cypress/",
+        "^playwright"
+      ],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Linting packages",
+      "matchPackagePatterns": ["^eslint", "^@typescript-eslint/", "^prettier"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Tailwind packages",
+      "matchPackagePatterns": ["^tailwind", "^@tailwindcss/", "^postcss"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": false
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 10am on the first day of the month"]
+  },
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "stabilityDays": 3
+}

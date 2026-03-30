@@ -1,0 +1,27 @@
+{
+  "extends": ["plugin:playwright/recommended", "../../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "apps/e2e/retirement-budget-planner-e2e/tsconfig.json"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "rules": {
+        "@typescript-eslint/no-floating-promises": "error",
+        "no-restricted-imports": [
+          "error",
+          {
+            "name": "path",
+            "message": "Please use 'node:path' instead."
+          },
+          {
+            "name": "fs",
+            "message": "Please use 'node:fs' instead."
+          }
+        ]
+      }
+    }
+  ]
+}

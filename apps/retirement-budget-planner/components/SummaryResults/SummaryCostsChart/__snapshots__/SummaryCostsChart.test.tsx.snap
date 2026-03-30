@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SummaryCostsChart component should render component correctly 1`] = `
+<div>
+  <div
+    class="lg:shadow-1md flex w-full flex-col gap-4 rounded border border-gray-300 pb-4 pt-6 sm:flex-row sm:px-4 lg:flex-col lg:border-blue-700 xl:flex-row"
+  >
+    <div
+      class="basis-1/2"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold text-center sm:text-start"
+      >
+        Retirement costs mock
+      </h3>
+      <div
+        class="px-10 sm:px-0"
+      >
+        <div
+          class="h-0 pt-[100%] overflow-hidden relative flex-none my-10 w-full"
+        >
+          <div
+            class="after:absolute after:bg-white after:rounded-full after:top-2/4 after:left-2/4 after:-translate-y-2/4 after:-translate-x-2/4 after:h-[55%] after:w-[55%] rounded-full w-full h-full absolute left-0 right-0 top-0 bottom-0"
+          />
+        </div>
+      </div>
+    </div>
+    <dl
+      class="flex basis-1/2 flex-col gap-4 px-10 sm:px-0"
+    >
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(0, 120, 143);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Housing
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £100.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#housingCost"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(230, 112, 50);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Household bills
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £200.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#utilities"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(174, 0, 96);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Travel
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £300.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#travelCosts"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(127, 153, 47);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Borrowing
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £400.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#lending"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(0, 11, 58);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Insurance
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £500.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#insurance"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(142, 42, 158);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Living costs
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £678.90
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#householdExpenses"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(217, 125, 125);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Other costs
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £7,890.12
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#essentialsAdditionalItems"
+        >
+          Edit
+        </a>
+      </div>
+      <div
+        class="grid items-center gap-x-2 [grid-template-areas:'swatch_name_edit''empty_amount_amount'] [grid-template-columns:30px_1fr_auto]"
+      >
+        <span
+          aria-hidden="true"
+          class="mt-1 block h-[30px] w-[30px] flex-none rounded-full [grid-area:swatch] lg:mt-0 print:hidden"
+          style="background-color: rgb(0, 120, 143);"
+        />
+        <dt
+          class="grow [grid-area:name]"
+        >
+          Mock dynamic category
+        </dt>
+        <dd
+          class="font-bold [grid-area:amount]"
+        >
+          <span>
+            £0.00
+          </span>
+        </dd>
+        <a
+          class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none [grid-area:edit]"
+          href="/en/essential-outgoings?language=en#Mock dynamic category"
+        >
+          Edit
+        </a>
+      </div>
+    </dl>
+  </div>
+</div>
+`;

@@ -1,0 +1,695 @@
+{
+  "customerNeed": {
+    "title": "Debt Advice Referral",
+    "heading": "What does the customer need?",
+    "moneyManagementHelp": "Money management help",
+    "moneyManagementHelpText": "Help with day-to-day money management through online tools and guidance.",
+    "debtAdvice": "Debt advice",
+    "debtAdviceText": "Get personalised help on how to manage debt.",
+    "expandableSection": "How to find out what help the customer needs",
+    "ExpandableSectionText": "Ask these questions:Have you already missed a payment?Are you likely to miss an upcoming payment?Are you taking on new debt to pay existing debt?If the answer is 'yes' to any of these, your customer could benefit from debt advice."
+  },
+
+  "customerLinks": {
+    "title": "Debt Advice Referral",
+    "heading": "Refer the customer to the following links",
+    "content": "Please inform the customer of the following:There is information on the MoneyHelper website that you might find helpful. It offers free and impartial guidance for dealing with money troubles:Would you like me to send you more details via email or text or you can just visit MoneyHelper.org.uk?There is a helpful section on benefits https://www.moneyhelper.org.uk/en/benefits (opens in a new tab)The \"Money troubles\" section has useful information to help with cost of living https://www.moneyhelper.org.uk/en/money-troubles (opens in a new tab)Search for budget planner for a really useful tool that will help you create a budget and see where your money is going https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner (opens in a new tab)Copy these details"
+  },
+
+  "customerLive": {
+    "title": "Debt Advice Referral",
+    "heading": "Does the customer live in England?"
+  },
+
+  "customerSelfEmployedDetails": {
+    "title": "Debt Advice Referral",
+    "heading": "Is the customer self-employed or are they a company director?"
+  },
+
+  "customerEmployedDetails": {
+    "title": "Debt Advice Referral",
+    "heading": "How would the customer like to get debt advice?",
+    "fields": {
+      "online": {
+        "label": "Online",
+        "hint": "Get help from a trusted debt advice partner online."
+      },
+      "telephone": {
+        "label": "Telephone",
+        "hint": "Arrange a call with a specialist debt adviser."
+      },
+      "faceToFace": {
+        "label": "Face to face",
+        "hint": "Speak to someone in person at a debt advice service close to them."
+      }
+    }
+  },
+
+  "customerConsent": {
+    "title": "Debt Advice Referral",
+    "heading": "Customer consent",
+    "content": "To make an online referral, please read the following consent information to the customer:'To send you a link to an online debt advice tool, we need your permission to share your name and email address with MoneyHelper. We will receive confirmation that the link has been sent to you.Do you give consent for us to share your information with MoneyHelper?'"
+  },
+
+  "customerOutsideEngland": {
+    "title": "Debt Advice Referral",
+    "heading": "Refer the customer to the debt advice locator",
+    "content": "The Money Adviser Network helps people living in England only. Ask the customer to use the debt advice locator tool:https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator (opens in a new tab)Copy these details"
+  },
+
+  "customerSelfEmployedReferral": {
+    "title": "Debt Advice Referral",
+    "heading": "Refer the customer to Business Debtline",
+    "content": "Ask self-employed customers, business owners or company directors to use Business Debtline - a free service where they can get impartial, non-judgmental help from business debt advice experts.https://www.businessdebtline.org (opens in a new tab)Tel: 0800 197 6026  Monday to Friday: 9am - 8pmCopy these details"
+  },
+
+  "face2FaceReferral": {
+    "title": "Debt Advice Referral",
+    "heading": "Refer the customer to the debt advice locator",
+    "content": "The Money Adviser Network is a telephone and online debt service only.If your customer would prefer to speak to someone face to face, please direct them to the debt advice locator tool.https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator (opens in a new tab)Copy these details"
+  },
+
+  "noConsentReferral": {
+    "title": "Debt Advice Referral",
+    "heading": "You need the customer's consent to make a referral",
+    "content": "Advise the customer that it is not possible to proceed without consentTell the customer they can still access help outside the Money Adviser Network:https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator"
+  },
+
+  "errorMessages": {
+    "errorSummaryHeading": "There is a problem",
+    "newReferral": "Select whether the customer needs help with day-to-day money management or with debt.",
+    "livingPlace": "Select whether the customer lives in England or not.",
+    "employmentType": "Select whether the customer is self employed / a company director (yes) - or neither (no)",
+    "employeeHelp": "Select whether the customer wants help online, by phone or face to face.",
+    "customerConsent": "Select whether the customer gives their consent or not."
+  },
+
+  "acdlEntries": {
+    "toolStart|http://localhost:4301/en/start/q-1": {
+      "page": {
+        "pageName": "money-adviser-network--q-1",
+        "pageTitle": "Money Adviser Network: What does the customer need? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "1",
+        "stepName": "What does the customer need?",
+        "toolCategory": ""
+      },
+      "event": "toolStart"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-1": {
+      "page": {
+        "pageName": "money-adviser-network--q-1",
+        "pageTitle": "Money Adviser Network: What does the customer need? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "1",
+        "stepName": "What does the customer need?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/money-management-refer?q-1=0": {
+      "page": {
+        "pageName": "money-adviser-network--money-management-refer",
+        "pageTitle": "Money Adviser Network: Refer the customer to the following links - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/money-management-refer?q-1=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "2.1",
+        "stepName": "Refer the customer to the following links",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-1?q-1=0": {
+      "page": {
+        "pageName": "money-adviser-network--q-1",
+        "pageTitle": "Money Adviser Network: What does the customer need? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-1?q-1=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "1",
+        "stepName": "What does the customer need?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-2?q-1=1": {
+      "page": {
+        "pageName": "money-adviser-network--q-2",
+        "pageTitle": "Money Adviser Network: Does the customer live in England? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-2?q-1=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "2",
+        "stepName": "Does the customer live in England?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/debt-advice-locator?q-1=1&q-2=1": {
+      "page": {
+        "pageName": "money-adviser-network--debt-advice-locator",
+        "pageTitle": "Money Adviser Network: Refer the customer to the debt advice locator - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/debt-advice-locator?q-1=1&q-2=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "3.1",
+        "stepName": "Refer the customer to the debt advice locator",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-3?q-1=1&q-2=0": {
+      "page": {
+        "pageName": "money-adviser-network--q-3",
+        "pageTitle": "Money Adviser Network: Is the customer self-employed or are they a company director? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-3?q-1=1&q-2=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "3",
+        "stepName": "Is the customer self-employed or are they a company director?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/business-debtline-refer?q-1=1&q-2=0&q-3=0": {
+      "page": {
+        "pageName": "money-adviser-network--business-debtline-refer",
+        "pageTitle": "Money Adviser Network: Refer the customer to Business Debtline - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/business-debtline-refer?q-1=1&q-2=0&q-3=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "4.1",
+        "stepName": "Refer the customer to Business Debtline",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-4?q-1=1&q-2=0&q-3=1": {
+      "page": {
+        "pageName": "money-adviser-network--q-4",
+        "pageTitle": "Money Adviser Network: How would the customer like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-4?q-1=1&q-2=0&q-3=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "4",
+        "stepName": "How would the customer like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/start/q-4?q-1=1&q-2=0&q-3=1&error=q-4": {
+      "page": {
+        "pageName": "money-adviser-network--q-4",
+        "pageTitle": "Money Adviser Network: How would the customer like to get debt advice? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/start/q-4?q-1=1&q-2=0&q-3=1&error=q-4"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "4",
+        "stepName": "How would the customer like to get debt advice?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/in-person/debt-advice-locator?q-1=1&q-2=0&q-3=1&q-4=2": {
+      "page": {
+        "pageName": "money-adviser-network--debt-advice-locator",
+        "pageTitle": "Money Adviser Network: Refer the customer to the debt advice locator - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/in-person/debt-advice-locator?q-1=1&q-2=0&q-3=1&q-4=2"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: In Person",
+        "toolStep": "3.1",
+        "stepName": "Refer the customer to the debt advice locator",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/o-1?q-1=1&q-2=0&q-3=1&q-4=0": {
+      "page": {
+        "pageName": "money-adviser-network--o-1",
+        "pageTitle": "Money Adviser Network: Customer consent - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/o-1?q-1=1&q-2=0&q-3=1&q-4=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "1",
+        "stepName": "Customer consent",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/o-1?q-1=1&q-2=0&q-3=1&q-4=0&error=o-1": {
+      "page": {
+        "pageName": "money-adviser-network--o-1",
+        "pageTitle": "Money Adviser Network: Customer consent - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/o-1?q-1=1&q-2=0&q-3=1&q-4=0&error=o-1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "1",
+        "stepName": "Customer consent",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/consent-rejected?q-1=1&q-2=0&q-3=1&q-4=0": {
+      "page": {
+        "pageName": "money-adviser-network--consent-rejected",
+        "pageTitle": "Money Adviser Network: You need the customer's consent to make a referral - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/consent-rejected?q-1=1&q-2=0&q-3=1&q-4=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "1.1",
+        "stepName": "You need the customer's consent to make a referral",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/o-2?q-1=1&q-2=0&q-3=1&q-4=0": {
+      "page": {
+        "pageName": "money-adviser-network--o-2",
+        "pageTitle": "Money Adviser Network: Your references for updates - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/o-2?q-1=1&q-2=0&q-3=1&q-4=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "2",
+        "stepName": "Your references for updates",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/o-3?q-1=1&q-2=0&q-3=1&q-4=0": {
+      "page": {
+        "pageName": "money-adviser-network--o-3",
+        "pageTitle": "Money Adviser Network: Customer's details - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/o-3?q-1=1&q-2=0&q-3=1&q-4=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "3",
+        "stepName": "Customer's details",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/confirm-answers?q-1=1&q-2=0&q-3=1&q-4=0": {
+      "page": {
+        "pageName": "money-adviser-network--confirm-answers",
+        "pageTitle": "Money Adviser Network: Confirm Details - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/confirm-answers?q-1=1&q-2=0&q-3=1&q-4=0"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "10",
+        "stepName": "Confirm Details",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/online/details-sent": {
+      "page": {
+        "pageName": "money-adviser-network--details-sent",
+        "pageTitle": "Money Adviser Network: Details have been sent - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/details-sent"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "5",
+        "stepName": "Details have been sent",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletionNoInput|http://localhost:4301/en/online/details-sent": {
+      "page": {
+        "pageName": "money-adviser-network--details-sent",
+        "pageTitle": "Money Adviser Network: Details have been sent - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/online/details-sent"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Online",
+        "toolStep": "5",
+        "stepName": "Details have been sent",
+        "toolCategory": ""
+      },
+      "event": "toolCompletionNoInput"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-1?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-1",
+        "pageTitle": "Money Adviser Network: Consent to share customer's contact details with MoneyHelper - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-1?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "1",
+        "stepName": "Consent to share customer's contact details with MoneyHelper",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-2?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-2",
+        "pageTitle": "Money Adviser Network: Consent to share the outcome of the referral with MoneyHelper - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-2?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "2",
+        "stepName": "Consent to share the outcome of the referral with MoneyHelper",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-3?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-3",
+        "pageTitle": "Money Adviser Network: Your references for updates - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-3?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "3",
+        "stepName": "Your references for updates",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-4?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-4",
+        "pageTitle": "Money Adviser Network: When would the customer like to speak to someone? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-4?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "4",
+        "stepName": "When would the customer like to speak to someone?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-5?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-5",
+        "pageTitle": "Money Adviser Network: Select customer's preferred time slot - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-5?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "5",
+        "stepName": "Select customer's preferred time slot",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-6?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-6",
+        "pageTitle": "Money Adviser Network: Customer's details - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-6?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "6",
+        "stepName": "Customer's details",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/t-7?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--t-7",
+        "pageTitle": "Money Adviser Network: Security questions - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/t-7?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "7",
+        "stepName": "Security questions",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/confirm-answers?q-1=1&q-2=0&q-3=1&q-4=1": {
+      "page": {
+        "pageName": "money-adviser-network--confirm-answers",
+        "pageTitle": "Money Adviser Network: Confirm Details - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/confirm-answers?q-1=1&q-2=0&q-3=1&q-4=1"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network: Phone",
+        "toolStep": "10",
+        "stepName": "Confirm Details",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/telephone/call-scheduled": {
+      "page": {
+        "pageName": "money-adviser-network--call-scheduled",
+        "pageTitle": "Money Adviser Network: Call scheduled - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/call-scheduled"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "11",
+        "stepName": "Call scheduled",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "toolCompletionNoInput|http://localhost:4301/en/telephone/call-scheduled": {
+      "page": {
+        "pageName": "money-adviser-network--call-scheduled",
+        "pageTitle": "Money Adviser Network: Call scheduled - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/telephone/call-scheduled"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "11",
+        "stepName": "Call scheduled",
+        "toolCategory": ""
+      },
+      "event": "toolCompletionNoInput"
+    },
+    "pageLoadReact|http://localhost:4301/en/login": {
+      "page": {
+        "pageName": "money-adviser-network",
+        "pageTitle": "Money Adviser Network: Login - Money Adviser Network - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/login"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "0",
+        "stepName": "Login - Money Adviser Network",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "pageLoadReact|http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22required%22%7D%5D": {
+      "page": {
+        "pageName": "money-adviser-network",
+        "pageTitle": "Money Adviser Network: Login - Money Adviser Network - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22required%22%7D%5D"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "0",
+        "stepName": "Login - Money Adviser Network",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22required%22%7D%5D": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "0",
+        "stepName": "Login - Money Adviser Network",
+        "errorDetails": [
+          {
+            "fieldType": "Text field",
+            "fieldName": "Referral Partner ID",
+            "errorMessage": "Referral Partner ID is required."
+          }
+        ]
+      }
+    },
+    "pageLoadReact|http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22invalid%22%7D%5D": {
+      "page": {
+        "pageName": "money-adviser-network",
+        "pageTitle": "Money Adviser Network: Login - Money Adviser Network - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "url": "http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22invalid%22%7D%5D"
+      },
+      "tool": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "0",
+        "stepName": "Login - Money Adviser Network",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "errorMessage|http://localhost:4301/en/login?errors=%5B%7B%22field%22%3A%22referrerId%22%2C%22type%22%3A%22invalid%22%7D%5D": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Money Adviser Network",
+        "toolStep": "0",
+        "stepName": "Login - Money Adviser Network",
+        "errorDetails": [
+          {
+            "fieldType": "Text field",
+            "fieldName": "Referral Partner ID",
+            "errorMessage": "Referral ID is not recognised."
+          }
+        ]
+      }
+    }
+  }
+}

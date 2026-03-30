@@ -1,0 +1,1 @@
+export { buildSalaryQueryParams } from './buildSalaryQueryParams';

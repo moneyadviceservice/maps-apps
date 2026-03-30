@@ -1,0 +1,204 @@
+name: Sbom Generation
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+schedules:
+  - cron: '0 3 * * *'
+    displayName: Daily vulnerability scan at 3am
+    branches:
+      include:
+        - main
+    always: true
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+steps:
+  - bash: |
+      echo "Installing Syft..."
+      curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+
+      echo "Running Syft..."
+      PROJECT_NAME=$(jq -r '.name' package.json)
+      PROJECT_VERSION=$(jq -r '.version' package.json)
+      syft dir:. --source-name="$PROJECT_NAME" --source-version="$PROJECT_VERSION" -o cyclonedx-json > sbom.json
+    displayName: 'Install and Run Syft'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish SBOM'
+    inputs:
+      pathToPublish: sbom.json
+      artifactName: sbom
+
+  - script: |
+      curl -sSfl https://get.anchore.io/grype | sh -s -- -b $(Build.SourcesDirectory)/tools
+      $(Build.SourcesDirectory)/tools/grype version
+
+      # Create reports directory
+      mkdir -p $(Build.SourcesDirectory)/vulnerability-reports
+
+      # Run scan with table output for console
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed
+
+      # Generate JSON report
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed -o json > $(Build.SourcesDirectory)/vulnerability-reports/grype-results.json
+
+      # Generate SARIF report (for security dashboards)
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed -o sarif > $(Build.SourcesDirectory)/vulnerability-reports/grype-results.sarif
+    displayName: 'Run vulnerability scan on SBOM (Grype)'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Grype SARIF report'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)/vulnerability-reports/grype-results.sarif'
+      artifactName: 'CodeAnalysisLogs'
+    condition: always()
+
+  # Format Grype results for Teams notification
+  - bash: |
+      chmod +x .azuredevops/scripts/format-grype-for-teams.sh
+      .azuredevops/scripts/format-grype-for-teams.sh \
+        "$(Build.SourcesDirectory)/vulnerability-reports/grype-results.json" \
+        "$(Build.SourcesDirectory)/teams-grype-message.json"
+    displayName: 'Format Grype results for Teams'
+    condition: always()
+    env:
+      BUILD_BUILDID: $(Build.BuildId)
+      SYSTEM_TEAMFOUNDATIONCOLLECTIONURI: $(System.TeamFoundationCollectionUri)
+      SYSTEM_TEAMPROJECT: $(System.TeamProject)
+      BUILD_REPOSITORY_NAME: $(Build.Repository.Name)
+      BUILD_SOURCEBRANCHNAME: $(Build.SourceBranchName)
+
+  # Post vulnerability scan results to Teams
+  - template: templates/teams-notification.yml
+    parameters:
+      webhookVariable: 'vulnerability-scan-results-webhook'
+      messageTitle: 'Grype Vulnerability Scan'
+      messagePayloadFile: '$(Build.SourcesDirectory)/teams-grype-message.json'
+      condition: 'always()'
+
+  # Generate and publish vulnerability summary
+  - bash: |
+      chmod +x .azuredevops/dashboard-script.sh
+      .azuredevops/dashboard-script.sh
+
+      # Publish to build summary
+      echo "##vso[task.uploadsummary]$(Build.SourcesDirectory)/vulnerability-summary.md"
+    displayName: 'Generate Vulnerability Dashboard Summary'
+    condition: always()
+
+  # Check top level dependencies, requires node_modules
+  - script: |
+      npm ci
+      # Get list of vulnerable packages
+      mapfile -t packages < <(jq -r '.matches[].artifact.name' $(Build.SourcesDirectory)/vulnerability-reports/grype-results.json | sort -u)
+
+      # Initialize JSON output
+      echo '{"vulnerableDependencies": []}' > $(Build.SourcesDirectory)/dependency-trees.json
+
+      for package in "${packages[@]}"
+      do
+          echo "Checking dependency tree for: $package"
+          
+          # Capture npm ls output
+          if npm ls "$package" --all --json > /tmp/npm-tree.json 2>/dev/null; then
+              # Package found - add to results
+              jq --arg pkg "$package" \
+                 --slurpfile tree /tmp/npm-tree.json \
+                 '.vulnerableDependencies += [{package: $pkg, found: true, dependencyTree: $tree[0]}]' \
+                 $(Build.SourcesDirectory)/dependency-trees.json > /tmp/updated.json
+              mv /tmp/updated.json $(Build.SourcesDirectory)/dependency-trees.json
+              
+              # Also display in console
+              npm ls "$package" --all
+          else
+              # Package not in direct dependencies
+              echo "Package not found in direct dependencies"
+              jq --arg pkg "$package" \
+                 '.vulnerableDependencies += [{package: $pkg, found: false, message: "Not found in direct dependencies"}]' \
+                 $(Build.SourcesDirectory)/dependency-trees.json > /tmp/updated.json
+              mv /tmp/updated.json $(Build.SourcesDirectory)/dependency-trees.json
+          fi
+          
+          echo "---------------------------------------"
+      done
+
+      echo "Dependency tree analysis complete. Results saved to dependency-trees.json"
+    displayName: 'Check top level dependencies'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Dependency Trees'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)/dependency-trees.json'
+      artifactName: 'dependency-analysis'
+    condition: always()
+
+  - task: Bash@3
+    displayName: 'Run Renovate CLI'
+    inputs:
+      targetType: inline
+      script: |
+        # Create renovate reports directory
+        mkdir -p $(Build.SourcesDirectory)/renovate-reports
+
+        # Configure git for Renovate
+        git config user.email "renovate@azure-pipelines"
+        git config user.name "Renovate Bot"
+
+        # Run Renovate for specific repository with local config
+        LOG_LEVEL=debug npx renovate --platform=azure "MaPS Digital/maps-apps" 2>&1 | tee $(Build.SourcesDirectory)/renovate-reports/renovate-log.txt
+
+        # Capture exit code
+        RENOVATE_EXIT=$?
+
+        # Generate summary  report
+        cat > $(Build.SourcesDirectory)/renovate-reports/renovate-summary.json <<EOF
+        {
+          "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+          "exitCode": $RENOVATE_EXIT,
+          "platform": "azure",
+          "branchesCreated": []
+        }
+        EOF
+
+        # Check if any renovate branches were created
+        RENOVATE_BRANCHES=$(git branch --list 'renovate/*' | sed 's/^[* ]*//' || echo "")
+        if [ -n "$RENOVATE_BRANCHES" ]; then
+          echo "Renovate branches found:"
+          echo "$RENOVATE_BRANCHES"
+          
+          # Add branches to summary
+          echo "Branches created:" > $(Build.SourcesDirectory)/renovate-reports/branches-created.txt
+          echo "$RENOVATE_BRANCHES" >> $(Build.SourcesDirectory)/renovate-reports/branches-created.txt
+        else
+          echo "No renovate branches created"
+          echo "No branches created - all dependencies may be up to date" > $(Build.SourcesDirectory)/renovate-reports/branches-created.txt
+        fi
+
+        exit $RENOVATE_EXIT
+    env:
+      RENOVATE_TOKEN: $(System.AccessToken)
+      RENOVATE_ENDPOINT: $(System.CollectionUri)
+      RENOVATE_CONFIG_FILE: $(Build.SourcesDirectory)/renovate.json
+    continueOnError: true
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Renovate Reports'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)/renovate-reports'
+      artifactName: 'renovate-reports'
+    condition: always()
+#- script: |
+#    az storage blob upload \
+#    --account-name softwarebillofmaterials \
+#    --container-name sbom \
+#    --name sbom_testpipeline.json \
+#    --file $(Build.SourcesDirectory)/sbom.json \
+#    --account-key $(SBOM_BLOB_KEY)
+#  displayName: 'Upload SBOM to blob storage'
+#  env:
+#    SBOM_BLOB_KEY: $(sbom-blob-key)
+
