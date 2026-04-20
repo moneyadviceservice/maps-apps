@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubTitleRenderer matches snapshot for all sections 1`] = `
+<div>
+  <p
+    class="text-xl md:text-2xl text-gray-800 pt-4 mb-2 font-light"
+    data-testid="test-prefix"
+  >
+    mock-subtitle
+  </p>
+</div>
+`;

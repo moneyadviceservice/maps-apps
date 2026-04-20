@@ -1,0 +1,693 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="relative z-20 flex items-center px-4 lg:hidden print:hidden"
+  >
+    <a
+      aria-label="Money and Pensions Service Website"
+      class="min-w-[149px] absolute top-4 left-4"
+      href="https://maps.org.uk/en"
+    >
+      <img
+        alt="Evidence Hub Logo"
+        class="h-[74px] w-auto"
+        data-nimg="1"
+        decoding="async"
+        height="74"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="149"
+      />
+    </a>
+    <div
+      class="container-auto m-0 flex p-0 max-w-[1200px]"
+    >
+      <details
+        class="group/mobile-menu w-full min-h-[115px]"
+      >
+        <summary
+          class="open h-[40px] w-[40px] ml-auto list-none [&::-webkit-details-marker]:hidden text-center text-sm relative top-[40px] cursor-pointer"
+          data-testid="toggle-nav"
+          title="Open menu"
+        >
+          <div
+            class="group-open/mobile-menu:hidden flex flex-col h-[40px] w-[40px] text-left absolute align-middle justify-center items-center flex"
+          >
+            <svgr-mock
+              classname="text-gray-800"
+            />
+          </div>
+          <div
+            class="hidden text-center group-open/mobile-menu:block rounded-[6px] bg-magenta-500 text-white"
+          >
+            <div
+              class="flex h-[40px] w-[40px] justify-center items-center flex"
+            >
+              <svgr-mock
+                classname="w-[30px]"
+              />
+            </div>
+          </div>
+        </summary>
+        <div
+          class="bg-white pt-[70px] w-full left-0"
+        >
+          <div
+            class="pb-10 mt-4"
+          >
+            <div
+              class="mb-2"
+            >
+              <form
+                action="https://maps.org.uk/en/search-results.html"
+                class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                data-testid="form-search"
+                role="search"
+              >
+                <input
+                  aria-label="Search"
+                  class="w-full p-2 rounded-l"
+                  id="q"
+                  name="q"
+                  required=""
+                  type="text"
+                />
+                <button
+                  aria-label="Search"
+                  class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                  type="submit"
+                >
+                  <svgr-mock
+                    aria-hidden="true"
+                    classname=""
+                  />
+                </button>
+              </form>
+            </div>
+            <nav
+              class="mb-4 mt-4"
+            >
+              <ul />
+            </nav>
+            <div
+              class="flex"
+            >
+              <a
+                class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 p-0 underline text-sm font-bold"
+                href="/cy"
+                hreflang="cy"
+                lang="cy"
+                rel="alternate"
+              >
+                <span
+                  aria-describedby="lang-description"
+                  class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                >
+                  Cymraeg
+                </span>
+              </a>
+              <span
+                class="sr-only"
+                id="lang-description"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div
+    class="hidden lg:block"
+  >
+    <div
+      class="relative print:hidden"
+    >
+      <div
+        class="container-auto flex items-center justify-center lg:justify-normal max-w-[1200px] pt-5 pb-4"
+      >
+        <a
+          aria-label="Money and Pensions Service Website"
+          class="h-[94px]"
+          href="https://maps.org.uk/en"
+        >
+          <img
+            alt=""
+            class="h-[94px] w-auto"
+            data-nimg="1"
+            decoding="async"
+            height="94"
+            loading="lazy"
+            src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+            style="color: transparent;"
+            width="149"
+          />
+        </a>
+        <div
+          class="items-center hidden ml-auto lg:flex"
+        >
+          <a
+            class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+            href="/cy"
+            hreflang="cy"
+            lang="cy"
+            rel="alternate"
+          >
+            <span
+              aria-describedby="lang-description"
+              class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+            >
+              Cymraeg
+            </span>
+          </a>
+          <span
+            class="sr-only"
+            id="lang-description"
+          >
+            Newid yr iaith ir Gymraeg
+          </span>
+          <form
+            action="https://maps.org.uk/en/search-results.html"
+            class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+            data-testid="form-search"
+            role="search"
+          >
+            <input
+              aria-label="Search"
+              class="w-full p-2 rounded-l"
+              id="q"
+              name="q"
+              required=""
+              type="text"
+            />
+            <button
+              aria-label="Search"
+              class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+              type="submit"
+            >
+              <svgr-mock
+                aria-hidden="true"
+                classname=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden lg:block"
+    >
+      <div
+        class="container-auto max-w-[1200px]"
+      >
+        <nav
+          aria-label="Primary navigation"
+          class="mb-2.5"
+        >
+          <ul
+            class="flex items-center"
+          />
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header component renders correctly when the nav is opened with a CLICK 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 z-10 t-menu-overlay"
+  />
+  <div
+    class="relative z-20 flex items-center px-4 lg:hidden print:hidden"
+  >
+    <a
+      aria-label="Money and Pensions Service Website"
+      class="min-w-[149px] absolute top-4 left-4"
+      href="https://maps.org.uk/en"
+    >
+      <img
+        alt="Evidence Hub Logo"
+        class="h-[74px] w-auto"
+        data-nimg="1"
+        decoding="async"
+        height="74"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="149"
+      />
+    </a>
+    <div
+      class="container-auto m-0 flex p-0 max-w-[1200px]"
+    >
+      <details
+        class="group/mobile-menu w-full min-h-[115px]"
+        open=""
+      >
+        <summary
+          class="close h-[40px] w-[40px] ml-auto list-none [&::-webkit-details-marker]:hidden text-center text-sm relative top-[40px] cursor-pointer"
+          data-testid="toggle-nav"
+          title="Close menu"
+        >
+          <div
+            class="group-open/mobile-menu:hidden flex flex-col h-[40px] w-[40px] text-left absolute align-middle justify-center items-center flex"
+          >
+            <svgr-mock
+              classname="text-gray-800"
+            />
+          </div>
+          <div
+            class="hidden text-center group-open/mobile-menu:block rounded-[6px] bg-magenta-500 text-white"
+          >
+            <div
+              class="flex h-[40px] w-[40px] justify-center items-center flex"
+            >
+              <svgr-mock
+                classname="w-[30px]"
+              />
+            </div>
+          </div>
+        </summary>
+        <div
+          class="bg-white pt-[70px] w-full left-0"
+        >
+          <div
+            class="pb-10 mt-4"
+          >
+            <div
+              class="mb-2"
+            >
+              <form
+                action="https://maps.org.uk/en/search-results.html"
+                class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                data-testid="form-search"
+                role="search"
+              >
+                <input
+                  aria-label="Search"
+                  class="w-full p-2 rounded-l"
+                  id="q"
+                  name="q"
+                  required=""
+                  type="text"
+                />
+                <button
+                  aria-label="Search"
+                  class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                  type="submit"
+                >
+                  <svgr-mock
+                    aria-hidden="true"
+                    classname=""
+                  />
+                </button>
+              </form>
+            </div>
+            <nav
+              class="mb-4 mt-4"
+            >
+              <ul />
+            </nav>
+            <div
+              class="flex"
+            >
+              <a
+                class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 p-0 underline text-sm font-bold"
+                href="/cy"
+                hreflang="cy"
+                lang="cy"
+                rel="alternate"
+              >
+                <span
+                  aria-describedby="lang-description"
+                  class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                >
+                  Cymraeg
+                </span>
+              </a>
+              <span
+                class="sr-only"
+                id="lang-description"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div
+    class="hidden lg:block"
+  >
+    <div
+      class="relative print:hidden"
+    >
+      <div
+        class="container-auto flex items-center justify-center lg:justify-normal max-w-[1200px] pt-5 pb-4"
+      >
+        <a
+          aria-label="Money and Pensions Service Website"
+          class="h-[94px]"
+          href="https://maps.org.uk/en"
+        >
+          <img
+            alt=""
+            class="h-[94px] w-auto"
+            data-nimg="1"
+            decoding="async"
+            height="94"
+            loading="lazy"
+            src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+            style="color: transparent;"
+            width="149"
+          />
+        </a>
+        <div
+          class="items-center hidden ml-auto lg:flex"
+        >
+          <a
+            class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+            href="/cy"
+            hreflang="cy"
+            lang="cy"
+            rel="alternate"
+          >
+            <span
+              aria-describedby="lang-description"
+              class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+            >
+              Cymraeg
+            </span>
+          </a>
+          <span
+            class="sr-only"
+            id="lang-description"
+          >
+            Newid yr iaith ir Gymraeg
+          </span>
+          <form
+            action="https://maps.org.uk/en/search-results.html"
+            class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+            data-testid="form-search"
+            role="search"
+          >
+            <input
+              aria-label="Search"
+              class="w-full p-2 rounded-l"
+              id="q"
+              name="q"
+              required=""
+              type="text"
+            />
+            <button
+              aria-label="Search"
+              class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+              type="submit"
+            >
+              <svgr-mock
+                aria-hidden="true"
+                classname=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden lg:block"
+    >
+      <div
+        class="container-auto max-w-[1200px]"
+      >
+        <nav
+          aria-label="Primary navigation"
+          class="mb-2.5"
+        >
+          <ul
+            class="flex items-center"
+          />
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header component renders correctly when the nav opened by a SPACE keypress 1`] = `
+<header
+  data-testid="header"
+>
+  <a
+    class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+    href="#main"
+  >
+    Skip to content
+  </a>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 z-10 t-menu-overlay"
+  />
+  <div
+    class="relative z-20 flex items-center px-4 lg:hidden print:hidden"
+  >
+    <a
+      aria-label="Money and Pensions Service Website"
+      class="min-w-[149px] absolute top-4 left-4"
+      href="https://maps.org.uk/en"
+    >
+      <img
+        alt="Evidence Hub Logo"
+        class="h-[74px] w-auto"
+        data-nimg="1"
+        decoding="async"
+        height="74"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="149"
+      />
+    </a>
+    <div
+      class="container-auto m-0 flex p-0 max-w-[1200px]"
+    >
+      <details
+        class="group/mobile-menu w-full min-h-[115px]"
+        open=""
+      >
+        <summary
+          class="close h-[40px] w-[40px] ml-auto list-none [&::-webkit-details-marker]:hidden text-center text-sm relative top-[40px] cursor-pointer"
+          data-testid="toggle-nav"
+          title="Close menu"
+        >
+          <div
+            class="group-open/mobile-menu:hidden flex flex-col h-[40px] w-[40px] text-left absolute align-middle justify-center items-center flex"
+          >
+            <svgr-mock
+              classname="text-gray-800"
+            />
+          </div>
+          <div
+            class="hidden text-center group-open/mobile-menu:block rounded-[6px] bg-magenta-500 text-white"
+          >
+            <div
+              class="flex h-[40px] w-[40px] justify-center items-center flex"
+            >
+              <svgr-mock
+                classname="w-[30px]"
+              />
+            </div>
+          </div>
+        </summary>
+        <div
+          class="bg-white pt-[70px] w-full left-0"
+        >
+          <div
+            class="pb-10 mt-4"
+          >
+            <div
+              class="mb-2"
+            >
+              <form
+                action="https://maps.org.uk/en/search-results.html"
+                class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+                data-testid="form-search"
+                role="search"
+              >
+                <input
+                  aria-label="Search"
+                  class="w-full p-2 rounded-l"
+                  id="q"
+                  name="q"
+                  required=""
+                  type="text"
+                />
+                <button
+                  aria-label="Search"
+                  class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                  type="submit"
+                >
+                  <svgr-mock
+                    aria-hidden="true"
+                    classname=""
+                  />
+                </button>
+              </form>
+            </div>
+            <nav
+              class="mb-4 mt-4"
+            >
+              <ul />
+            </nav>
+            <div
+              class="flex"
+            >
+              <a
+                class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 p-0 underline text-sm font-bold"
+                href="/cy"
+                hreflang="cy"
+                lang="cy"
+                rel="alternate"
+              >
+                <span
+                  aria-describedby="lang-description"
+                  class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+                >
+                  Cymraeg
+                </span>
+              </a>
+              <span
+                class="sr-only"
+                id="lang-description"
+              >
+                Newid yr iaith ir Gymraeg
+              </span>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div
+    class="hidden lg:block"
+  >
+    <div
+      class="relative print:hidden"
+    >
+      <div
+        class="container-auto flex items-center justify-center lg:justify-normal max-w-[1200px] pt-5 pb-4"
+      >
+        <a
+          aria-label="Money and Pensions Service Website"
+          class="h-[94px]"
+          href="https://maps.org.uk/en"
+        >
+          <img
+            alt=""
+            class="h-[94px] w-auto"
+            data-nimg="1"
+            decoding="async"
+            height="94"
+            loading="lazy"
+            src="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fcontent%2Fdam%2Fsfs%2Fassets%2Flogos%2Fsfs-logo.png&w=384&q=75 2x"
+            style="color: transparent;"
+            width="149"
+          />
+        </a>
+        <div
+          class="items-center hidden ml-auto lg:flex"
+        >
+          <a
+            class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6"
+            href="/cy"
+            hreflang="cy"
+            lang="cy"
+            rel="alternate"
+          >
+            <span
+              aria-describedby="lang-description"
+              class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px] "
+            >
+              Cymraeg
+            </span>
+          </a>
+          <span
+            class="sr-only"
+            id="lang-description"
+          >
+            Newid yr iaith ir Gymraeg
+          </span>
+          <form
+            action="https://maps.org.uk/en/search-results.html"
+            class="flex lg:w-[490px] w-full h-9 border-gray-600 relative z-1 border-1 rounded pr-8"
+            data-testid="form-search"
+            role="search"
+          >
+            <input
+              aria-label="Search"
+              class="w-full p-2 rounded-l"
+              id="q"
+              name="q"
+              required=""
+              type="text"
+            />
+            <button
+              aria-label="Search"
+              class="p-1 bg-magenta-500 text-white rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+              type="submit"
+            >
+              <svgr-mock
+                aria-hidden="true"
+                classname=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden lg:block"
+    >
+      <div
+        class="container-auto max-w-[1200px]"
+      >
+        <nav
+          aria-label="Primary navigation"
+          class="mb-2.5"
+        >
+          <ul
+            class="flex items-center"
+          />
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+`;

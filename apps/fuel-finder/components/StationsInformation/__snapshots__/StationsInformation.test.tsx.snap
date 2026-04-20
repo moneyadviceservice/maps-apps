@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StationsInformation omits the last updated timestamp when fetchedAt is empty 1`] = `
+<div
+  class="t-stations-information text-base text-gray-800 space-y-2.5"
+>
+  <h1
+    class="text-blue-700 text-4xl md:text-6xl font-bold"
+  >
+    {a} stations found near your location for {b}
+  </h1>
+  <a
+    class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+    href="/en"
+  >
+    Change location
+  </a>
+</div>
+`;
+
+exports[`StationsInformation renders heading, change location link and last updated timestamp 1`] = `
+<div
+  class="t-stations-information text-base text-gray-800 space-y-2.5"
+>
+  <h1
+    class="text-blue-700 text-4xl md:text-6xl font-bold"
+  >
+    {a} stations found near your location for {b}
+  </h1>
+  <a
+    class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+    href="/en"
+  >
+    Change location
+  </a>
+  <div>
+    Prices last updated
+     
+    11/4/2026 09:30
+  </div>
+</div>
+`;
+
+exports[`StationsInformation renders singular heading when totalItems is 1 1`] = `
+<div
+  class="t-stations-information text-base text-gray-800 space-y-2.5"
+>
+  <h1
+    class="text-blue-700 text-4xl md:text-6xl font-bold"
+  >
+    {a} station found near your location for {b}
+  </h1>
+  <a
+    class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+    href="/en"
+  >
+    Change location
+  </a>
+  <div>
+    Prices last updated
+     
+    11/4/2026 09:30
+  </div>
+</div>
+`;

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AmenitiesBadges renders a mix of known and unknown amenities 1`] = `
+<div
+  class="flex flex-wrap gap-2"
+  data-testid="amenities-badges"
+>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Car Wash
+  </span>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Charging Point
+  </span>
+</div>
+`;
+
+exports[`AmenitiesBadges renders a single known amenity using AMENITY_LABELS 1`] = `
+<div
+  class="flex flex-wrap gap-2"
+  data-testid="amenities-badges"
+>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Car Wash
+  </span>
+</div>
+`;
+
+exports[`AmenitiesBadges renders an unknown amenity using the title-cased fallback 1`] = `
+<div
+  class="flex flex-wrap gap-2"
+  data-testid="amenities-badges"
+>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Charging Point
+  </span>
+</div>
+`;
+
+exports[`AmenitiesBadges renders multiple known amenities 1`] = `
+<div
+  class="flex flex-wrap gap-2"
+  data-testid="amenities-badges"
+>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Car Wash
+  </span>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    Toilets
+  </span>
+  <span
+    class="border border-slate-400 rounded shadow-bottom-gray px-4 py-1 text-xs text-gray-800"
+  >
+    AdBlue Pumps
+  </span>
+</div>
+`;
+
+exports[`AmenitiesBadges renders the empty state when amenities array is empty 1`] = `
+<p
+  class="text-sm text-gray-600"
+>
+  No amenities listed.
+</p>
+`;

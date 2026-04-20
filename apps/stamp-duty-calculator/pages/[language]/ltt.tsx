@@ -1,0 +1,154 @@
+import { GetServerSideProps } from 'next';
+
+import { constructPurchaseDate } from 'utils/dateUtils/constructPurchaseDate';
+
+import { EmergencyBanner } from '@maps-react/core/components/EmergencyBanner';
+import { useAnalytics } from '@maps-react/hooks/useAnalytics';
+import useTranslation from '@maps-react/hooks/useTranslation';
+import { EmbedPageLayout } from '@maps-react/layouts/EmbedPageLayout';
+import { ToolPageLayout } from '@maps-react/layouts/ToolPageLayout';
+import { getServerSideAppConfig } from '@maps-react/netlify-functions/utils/getAppConfig';
+import { parseEmergencyBanner } from '@maps-react/utils/parseEmergencyBanner';
+
+import { LandTransactionTaxCalculator } from '../../components/LandTransactionTaxCalculator';
+import { landTransactionTaxConfig } from '../../data/ltt/landTransactionTaxConfig';
+
+type Props = {
+  price: string;
+  buyerType: 'firstOrNextHome' | 'additionalHome';
+  calculated: boolean;
+  isEmbed: boolean;
+  emergencyBannerContent?: {
+    en: string;
+    cy: string;
+  } | null;
+  day?: string;
+  month?: string;
+  year?: string;
+};
+
+const Page = ({
+  price,
+  buyerType,
+  calculated,
+  isEmbed,
+  emergencyBannerContent,
+  day,
+  month,
+  year,
+}: Props) => {
+  const { z } = useTranslation();
+  const { addPage } = useAnalytics();
+
+  const toolHref = landTransactionTaxConfig.pagePath;
+
+  const title = z({
+    en: 'Land Transaction Tax Calculator',
+    cy: 'Cyfrifiannell Treth Trafodiadau Tir',
+  });
+
+  const errors =
+    landTransactionTaxConfig.validateForm?.(
+      {
+        price,
+        buyerType,
+        purchaseDate: constructPurchaseDate(day, month, year),
+      },
+      z,
+    )?.errors ?? {};
+
+  const error = Object.values(errors).flat().length > 0;
+
+  const hasResult = calculated && !error;
+
+  let pageTitle;
+  if (calculated && error) {
+    pageTitle = z({
+      en: 'Error, please review your answer',
+      cy: 'Gwall, adolygwch eich ateb',
+    });
+  } else if (hasResult) {
+    pageTitle = z({
+      en: 'Land Transaction Tax Calculator Results',
+      cy: 'Canlyniadau Cyfrifiannell Treth Trafodiadau Tir',
+    });
+  } else {
+    pageTitle = z({
+      en: 'Land Transaction Tax Calculator',
+      cy: 'Cyfrifiannell Treth Trafodiadau Tir',
+    });
+  }
+
+  const initialPageData = {
+    page: {
+      pageName: `ltt-calculator${hasResult ? ' results' : ''}`,
+      pageTitle: pageTitle,
+    },
+    tool: {
+      toolName: 'ltt_calculator',
+      toolStep: hasResult ? '2' : '1',
+      stepName: hasResult ? 'results' : 'details',
+      pagePath: toolHref,
+    },
+  };
+
+  addPage([{ ...initialPageData, event: 'pageLoadReact' }]);
+
+  const children = (
+    <LandTransactionTaxCalculator
+      propertyPrice={price}
+      buyerType={buyerType}
+      calculated={calculated}
+      analyticsData={initialPageData}
+      isEmbedded={isEmbed}
+      day={day}
+      month={month}
+      year={year}
+    />
+  );
+
+  return isEmbed ? (
+    <EmbedPageLayout title={title}>{children}</EmbedPageLayout>
+  ) : (
+    <ToolPageLayout
+      title={title}
+      pageTitle={pageTitle}
+      headingClassName="lg:max-w-4xl"
+      noMargin
+      layout="grid"
+      mainClassName="my-8"
+      topInfoSection={
+        emergencyBannerContent && (
+          <EmergencyBanner content={emergencyBannerContent} />
+        )
+      }
+    >
+      {children}
+    </ToolPageLayout>
+  );
+};
+
+export default Page;
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { query, req } = context;
+  const isEmbed = query.isEmbedded === 'true';
+
+  const appConfig = await getServerSideAppConfig(req);
+  const emergencyBannerContent = parseEmergencyBanner(
+    appConfig.getValue('emergency-banner-ltt'),
+  );
+
+  return {
+    props: {
+      price: query['price'] ? String(query['price']).replace(/,/g, '') : '',
+      buyerType: query['buyerType'] || '',
+      calculated: !!query['calculated'] || false,
+      isEmbed,
+      day: query['day'] ? String(query['day']) : null,
+      month: query['month'] ? String(query['month']) : null,
+      year: query['year'] ? String(query['year']) : null,
+      emergencyBannerContent,
+    },
+  };
+};

@@ -1,0 +1,1285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RefineSearch renders the default refine search form 1`] = `
+<div
+  class="overflow-hidden border rounded-md t-refine-search border-slate-400"
+>
+  <div
+    class="hidden w-full px-6 py-5 text-gray-800 bg-gray-100 lg:flex lg:items-center lg:justify-between"
+  >
+    <div
+      class="text-left font-bold text-xl"
+      data-testid="header-filters"
+    >
+      Filters
+    </div>
+  </div>
+  <button
+    aria-expanded="false"
+    class="flex py-1.5 lg:hidden items-center justify-center w-full bg-gray-100 px-5 lg:px-6 lg:py-5 font-bold text-xl text-gray-900 gap-x-2.5 rounded-md"
+    data-testid="button-filters"
+    tabindex="0"
+    type="button"
+  >
+    <svgr-mock />
+    <div>
+      Filters
+    </div>
+  </button>
+  <div
+    class="p-6 hidden lg:block"
+    data-testid="refine-search"
+    id="refine-search"
+  >
+    <div
+      class="space-y-5"
+    >
+      <div>
+        <label
+          class="block pb-2 text-lg text-gray-800"
+          for="radius"
+        >
+          Distance
+        </label>
+        <div
+          class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700 w-full"
+        >
+          <span
+            class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+          >
+            <svgr-mock
+              classname="h-full"
+            />
+          </span>
+          <select
+            class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md h-10 pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white"
+            id="radius"
+            name="radius"
+          >
+            <option
+              selected=""
+              value="5"
+            >
+              Within 5 miles
+            </option>
+            <option
+              value="10"
+            >
+              Within 10 miles
+            </option>
+            <option
+              value="25"
+            >
+              Within 25 miles
+            </option>
+            <option
+              value="50"
+            >
+              Within 50 miles
+            </option>
+          </select>
+        </div>
+      </div>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Fuel type
+        </legend>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              checked=""
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E10"
+              name="fuelType"
+              type="radio"
+              value="E10"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E10"
+            >
+              Unleaded (E10)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E5"
+              name="fuelType"
+              type="radio"
+              value="E5"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E5"
+            >
+              Super Unleaded (E5)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_STANDARD"
+              name="fuelType"
+              type="radio"
+              value="B7_STANDARD"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_STANDARD"
+            >
+              Diesel
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_PREMIUM"
+              name="fuelType"
+              type="radio"
+              value="B7_PREMIUM"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_PREMIUM"
+            >
+              Premium Diesel
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Station amenities
+        </legend>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="motorway"
+              name="motorway"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Motorway stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="supermarket"
+              name="supermarket"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Supermarket stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="open24h"
+              name="open24h"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Open 24 hours
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="toilets"
+              name="toilets"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Toilets
+            </p>
+          </label>
+        </div>
+      </fieldset>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button tool-nav-submit tool-nav-complete w-full lg:w-auto"
+        data-testid="apply-filters-button"
+        type="submit"
+      >
+        <span />
+        Apply filters
+        <span />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RefineSearch renders with a pre-populated postcode from the router query 1`] = `
+<div
+  class="overflow-hidden border rounded-md t-refine-search border-slate-400"
+>
+  <div
+    class="hidden w-full px-6 py-5 text-gray-800 bg-gray-100 lg:flex lg:items-center lg:justify-between"
+  >
+    <div
+      class="text-left font-bold text-xl"
+      data-testid="header-filters"
+    >
+      Filters
+    </div>
+  </div>
+  <button
+    aria-expanded="false"
+    class="flex py-1.5 lg:hidden items-center justify-center w-full bg-gray-100 px-5 lg:px-6 lg:py-5 font-bold text-xl text-gray-900 gap-x-2.5 rounded-md"
+    data-testid="button-filters"
+    tabindex="0"
+    type="button"
+  >
+    <svgr-mock />
+    <div>
+      Filters
+    </div>
+  </button>
+  <div
+    class="p-6 hidden lg:block"
+    data-testid="refine-search"
+    id="refine-search"
+  >
+    <div
+      class="space-y-5"
+    >
+      <div>
+        <label
+          class="block pb-2 text-lg text-gray-800"
+          for="radius"
+        >
+          Distance
+        </label>
+        <div
+          class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700 w-full"
+        >
+          <span
+            class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+          >
+            <svgr-mock
+              classname="h-full"
+            />
+          </span>
+          <select
+            class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md h-10 pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white"
+            id="radius"
+            name="radius"
+          >
+            <option
+              selected=""
+              value="5"
+            >
+              Within 5 miles
+            </option>
+            <option
+              value="10"
+            >
+              Within 10 miles
+            </option>
+            <option
+              value="25"
+            >
+              Within 25 miles
+            </option>
+            <option
+              value="50"
+            >
+              Within 50 miles
+            </option>
+          </select>
+        </div>
+      </div>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Fuel type
+        </legend>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              checked=""
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E10"
+              name="fuelType"
+              type="radio"
+              value="E10"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E10"
+            >
+              Unleaded (E10)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E5"
+              name="fuelType"
+              type="radio"
+              value="E5"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E5"
+            >
+              Super Unleaded (E5)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_STANDARD"
+              name="fuelType"
+              type="radio"
+              value="B7_STANDARD"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_STANDARD"
+            >
+              Diesel
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_PREMIUM"
+              name="fuelType"
+              type="radio"
+              value="B7_PREMIUM"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_PREMIUM"
+            >
+              Premium Diesel
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Station amenities
+        </legend>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="motorway"
+              name="motorway"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Motorway stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="supermarket"
+              name="supermarket"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Supermarket stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="open24h"
+              name="open24h"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Open 24 hours
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="toilets"
+              name="toilets"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Toilets
+            </p>
+          </label>
+        </div>
+      </fieldset>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button tool-nav-submit tool-nav-complete w-full lg:w-auto"
+        data-testid="apply-filters-button"
+        type="submit"
+      >
+        <span />
+        Apply filters
+        <span />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RefineSearch renders with a pre-selected fuel type and radius from the router query 1`] = `
+<div
+  class="overflow-hidden border rounded-md t-refine-search border-slate-400"
+>
+  <div
+    class="hidden w-full px-6 py-5 text-gray-800 bg-gray-100 lg:flex lg:items-center lg:justify-between"
+  >
+    <div
+      class="text-left font-bold text-xl"
+      data-testid="header-filters"
+    >
+      Filters
+    </div>
+  </div>
+  <button
+    aria-expanded="false"
+    class="flex py-1.5 lg:hidden items-center justify-center w-full bg-gray-100 px-5 lg:px-6 lg:py-5 font-bold text-xl text-gray-900 gap-x-2.5 rounded-md"
+    data-testid="button-filters"
+    tabindex="0"
+    type="button"
+  >
+    <svgr-mock />
+    <div>
+      Filters
+    </div>
+  </button>
+  <div
+    class="p-6 hidden lg:block"
+    data-testid="refine-search"
+    id="refine-search"
+  >
+    <div
+      class="space-y-5"
+    >
+      <div>
+        <label
+          class="block pb-2 text-lg text-gray-800"
+          for="radius"
+        >
+          Distance
+        </label>
+        <div
+          class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700 w-full"
+        >
+          <span
+            class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+          >
+            <svgr-mock
+              classname="h-full"
+            />
+          </span>
+          <select
+            class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md h-10 pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white"
+            id="radius"
+            name="radius"
+          >
+            <option
+              value="5"
+            >
+              Within 5 miles
+            </option>
+            <option
+              value="10"
+            >
+              Within 10 miles
+            </option>
+            <option
+              selected=""
+              value="25"
+            >
+              Within 25 miles
+            </option>
+            <option
+              value="50"
+            >
+              Within 50 miles
+            </option>
+          </select>
+        </div>
+      </div>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Fuel type
+        </legend>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              checked=""
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E10"
+              name="fuelType"
+              type="radio"
+              value="E10"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E10"
+            >
+              Unleaded (E10)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E5"
+              name="fuelType"
+              type="radio"
+              value="E5"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E5"
+            >
+              Super Unleaded (E5)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_STANDARD"
+              name="fuelType"
+              type="radio"
+              value="B7_STANDARD"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_STANDARD"
+            >
+              Diesel
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_PREMIUM"
+              name="fuelType"
+              type="radio"
+              value="B7_PREMIUM"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_PREMIUM"
+            >
+              Premium Diesel
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Station amenities
+        </legend>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="motorway"
+              name="motorway"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Motorway stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="supermarket"
+              name="supermarket"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Supermarket stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="open24h"
+              name="open24h"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Open 24 hours
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="toilets"
+              name="toilets"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Toilets
+            </p>
+          </label>
+        </div>
+      </fieldset>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button tool-nav-submit tool-nav-complete w-full lg:w-auto"
+        data-testid="apply-filters-button"
+        type="submit"
+      >
+        <span />
+        Apply filters
+        <span />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RefineSearch renders with all amenity checkboxes pre-selected from the router query 1`] = `
+<div
+  class="overflow-hidden border rounded-md t-refine-search border-slate-400"
+>
+  <div
+    class="hidden w-full px-6 py-5 text-gray-800 bg-gray-100 lg:flex lg:items-center lg:justify-between"
+  >
+    <div
+      class="text-left font-bold text-xl"
+      data-testid="header-filters"
+    >
+      Filters
+    </div>
+  </div>
+  <button
+    aria-expanded="false"
+    class="flex py-1.5 lg:hidden items-center justify-center w-full bg-gray-100 px-5 lg:px-6 lg:py-5 font-bold text-xl text-gray-900 gap-x-2.5 rounded-md"
+    data-testid="button-filters"
+    tabindex="0"
+    type="button"
+  >
+    <svgr-mock />
+    <div>
+      Filters
+    </div>
+  </button>
+  <div
+    class="p-6 hidden lg:block"
+    data-testid="refine-search"
+    id="refine-search"
+  >
+    <div
+      class="space-y-5"
+    >
+      <div>
+        <label
+          class="block pb-2 text-lg text-gray-800"
+          for="radius"
+        >
+          Distance
+        </label>
+        <div
+          class="relative block focus-within:rounded focus-within:ring-[3px] focus-within:ring-yellow-400 focus-within:ring-offset-4 focus-within:ring-offset-blue-700 w-full"
+        >
+          <span
+            class="absolute inset-y-0 right-0 flex items-center w-10 pl-1 pr-1 text-white bg-magenta-500 rounded-r pointer-events-none print:hidden shadow-bottom-gray focus:shadow-none"
+          >
+            <svgr-mock
+              classname="h-full"
+            />
+          </span>
+          <select
+            class="border-gray-400 border-y border-l print:p-1 text-gray-500 appearance-none w-full block text-md h-10 pl-3 pr-12 bg-white rounded tool-dd outline-none focus:outline-none focus:border-white"
+            id="radius"
+            name="radius"
+          >
+            <option
+              selected=""
+              value="5"
+            >
+              Within 5 miles
+            </option>
+            <option
+              value="10"
+            >
+              Within 10 miles
+            </option>
+            <option
+              value="25"
+            >
+              Within 25 miles
+            </option>
+            <option
+              value="50"
+            >
+              Within 50 miles
+            </option>
+          </select>
+        </div>
+      </div>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Fuel type
+        </legend>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              checked=""
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E10"
+              name="fuelType"
+              type="radio"
+              value="E10"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E10"
+            >
+              Unleaded (E10)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-E5"
+              name="fuelType"
+              type="radio"
+              value="E5"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-E5"
+            >
+              Super Unleaded (E5)
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_STANDARD"
+              name="fuelType"
+              type="radio"
+              value="B7_STANDARD"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_STANDARD"
+            >
+              Diesel
+            </label>
+          </div>
+        </div>
+        <div
+          class="relative text-base"
+          data-testid="radio-button"
+        >
+          <div
+            class="flex flex-wrap items-center"
+          >
+            <input
+              class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+              data-testid="radio-button-input"
+              id="fuelType-B7_PREMIUM"
+              name="fuelType"
+              type="radio"
+              value="B7_PREMIUM"
+            />
+            <label
+              class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+              data-testid="radio-button-label"
+              for="fuelType-B7_PREMIUM"
+            >
+              Premium Diesel
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset
+        class="space-y-4"
+      >
+        <legend
+          class="mb-3 text-lg font-bold text-gray-800"
+        >
+          Station amenities
+        </legend>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="motorway"
+              name="motorway"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Motorway stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="supermarket"
+              name="supermarket"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Supermarket stations
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="open24h"
+              name="open24h"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Open 24 hours
+            </p>
+          </label>
+        </div>
+        <div
+          class="relative flex"
+        >
+          <label
+            class="flex"
+          >
+            <input
+              class="sr-only peer tool-cbox"
+              id="toilets"
+              name="toilets"
+              type="checkbox"
+              value="true"
+            />
+            <div
+              class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+            >
+              <svgr-mock
+                classname="w-6 h-5"
+                role="presentation"
+              />
+            </div>
+            <p
+              class="self-center ml-4"
+            >
+              Toilets
+            </p>
+          </label>
+        </div>
+      </fieldset>
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button tool-nav-submit tool-nav-complete w-full lg:w-auto"
+        data-testid="apply-filters-button"
+        type="submit"
+      >
+        <span />
+        Apply filters
+        <span />
+      </button>
+    </div>
+  </div>
+</div>
+`;

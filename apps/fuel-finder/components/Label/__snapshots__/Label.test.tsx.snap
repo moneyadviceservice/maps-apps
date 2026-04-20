@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label renders correctly with JSX children 1`] = `
+<label
+  class="block pb-2 text-lg text-gray-800"
+  for="postcode"
+>
+  Postcode 
+  <span>
+    (required)
+  </span>
+</label>
+`;
+
+exports[`Label renders correctly with simple text children 1`] = `
+<label
+  class="block pb-2 text-lg text-gray-800"
+  for="email"
+>
+  Email address
+</label>
+`;

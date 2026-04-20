@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component applies error styles when hasError is true 1`] = `
+<label
+  class="flex"
+>
+  <input
+    class="sr-only peer tool-cbox"
+    id="error-id"
+    name="error-name"
+    type="checkbox"
+    value=""
+  />
+  <div
+    class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-focus:border-red-700 peer-focus:bg-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+  >
+    <svgr-mock
+      classname="w-6 h-5"
+      role="presentation"
+    />
+  </div>
+  <p
+    class="self-center ml-4"
+  >
+    Error Checkbox
+  </p>
+</label>
+`;
+
+exports[`Checkbox component renders correctly 1`] = `
+<label
+  class="flex"
+>
+  <input
+    class="sr-only peer tool-cbox"
+    id="test-id"
+    name="test-name"
+    type="checkbox"
+    value=""
+  />
+  <div
+    class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+  >
+    <svgr-mock
+      classname="w-6 h-5"
+      role="presentation"
+    />
+  </div>
+  <p
+    class="self-center ml-4"
+  >
+    Lorem Ipsum
+  </p>
+</label>
+`;

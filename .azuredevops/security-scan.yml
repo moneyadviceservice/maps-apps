@@ -1,0 +1,151 @@
+name: Sbom Generation
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+schedules:
+  - cron: '0 3 * * *'
+    displayName: Daily vulnerability scan at 3am
+    branches:
+      include:
+        - main
+    always: true
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+steps:
+  - bash: |
+      echo "Installing Syft..."
+      curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+
+      echo "Running Syft..."
+      PROJECT_NAME=$(jq -r '.name' package.json)
+      PROJECT_VERSION=$(jq -r '.version' package.json)
+      syft dir:. --source-name="$PROJECT_NAME" --source-version="$PROJECT_VERSION" -o cyclonedx-json > sbom.json
+    displayName: 'Install and Run Syft'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish SBOM'
+    inputs:
+      pathToPublish: sbom.json
+      artifactName: sbom
+
+  - script: |
+      curl -sSfl https://get.anchore.io/grype | sh -s -- -b $(Build.SourcesDirectory)/tools
+      $(Build.SourcesDirectory)/tools/grype version
+
+      # Create reports directory
+      mkdir -p $(Build.SourcesDirectory)/vulnerability-reports
+
+      # Run scan with table output for console
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed
+
+      # Generate JSON report
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed -o json > $(Build.SourcesDirectory)/vulnerability-reports/grype-results.json
+
+      # Generate SARIF report (for security dashboards)
+      $(Build.SourcesDirectory)/tools/grype sbom:$(Build.SourcesDirectory)/sbom.json --only-fixed -o sarif > $(Build.SourcesDirectory)/vulnerability-reports/grype-results.sarif
+    displayName: 'Run vulnerability scan on SBOM (Grype)'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Grype SARIF report'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)/vulnerability-reports/grype-results.sarif'
+      artifactName: 'CodeAnalysisLogs'
+    condition: always()
+
+  # Format Grype results for Teams notification
+  - bash: |
+      chmod +x .azuredevops/scripts/format-grype-for-teams.sh
+      .azuredevops/scripts/format-grype-for-teams.sh \
+        "$(Build.SourcesDirectory)/vulnerability-reports/grype-results.json" \
+        "$(Build.SourcesDirectory)/teams-grype-message.json"
+    displayName: 'Format Grype results for Teams'
+    condition: always()
+    env:
+      BUILD_BUILDID: $(Build.BuildId)
+      SYSTEM_TEAMFOUNDATIONCOLLECTIONURI: $(System.TeamFoundationCollectionUri)
+      SYSTEM_TEAMPROJECT: $(System.TeamProject)
+      BUILD_REPOSITORY_NAME: $(Build.Repository.Name)
+      BUILD_SOURCEBRANCHNAME: $(Build.SourceBranchName)
+
+  # Post vulnerability scan results to Teams
+  - template: templates/teams-notification.yml
+    parameters:
+      webhookVariable: 'vulnerability-scan-results-webhook'
+      messageTitle: 'Grype Vulnerability Scan'
+      messagePayloadFile: '$(Build.SourcesDirectory)/teams-grype-message.json'
+      condition: 'always()'
+
+  # Check top level dependencies, requires node_modules
+  - script: |
+      npm ci
+      # Get list of vulnerable packages
+      mapfile -t packages < <(jq -r '.matches[].artifact.name' $(Build.SourcesDirectory)/vulnerability-reports/grype-results.json | sort -u)
+
+      # Initialize JSON output
+      echo '{"vulnerableDependencies": []}' > $(Build.SourcesDirectory)/dependency-trees.json
+
+      for package in "${packages[@]}"
+      do
+          echo "Checking dependency tree for: $package"
+
+          # Capture npm ls output
+          if npm ls "$package" --all --json > /tmp/npm-tree.json 2>/dev/null; then
+              # Package found - add to results
+              jq --arg pkg "$package" \
+                 --slurpfile tree /tmp/npm-tree.json \
+                 '.vulnerableDependencies += [{package: $pkg, found: true, dependencyTree: $tree[0]}]' \
+                 $(Build.SourcesDirectory)/dependency-trees.json > /tmp/updated.json
+              mv /tmp/updated.json $(Build.SourcesDirectory)/dependency-trees.json
+
+              # Also display in console
+              npm ls "$package" --all
+          else
+              # Package not in direct dependencies
+              echo "Package not found in direct dependencies"
+              jq --arg pkg "$package" \
+                 '.vulnerableDependencies += [{package: $pkg, found: false, message: "Not found in direct dependencies"}]' \
+                 $(Build.SourcesDirectory)/dependency-trees.json > /tmp/updated.json
+              mv /tmp/updated.json $(Build.SourcesDirectory)/dependency-trees.json
+          fi
+
+          echo "---------------------------------------"
+      done
+
+      echo "Dependency tree analysis complete. Results saved to dependency-trees.json"
+    displayName: 'Check top level dependencies'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Dependency Trees'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)/dependency-trees.json'
+      artifactName: 'dependency-analysis'
+    condition: always()
+
+  - bash: |
+      docker run --rm \
+        -v $(Build.SourcesDirectory):/repo \
+        -e RENOVATE_PLATFORM=azure \
+        -e RENOVATE_ENDPOINT=$(System.CollectionUri) \
+        -e RENOVATE_TOKEN=$(System.AccessToken) \
+        -e GITHUB_COM_TOKEN="$GITHUB_TOKEN" \
+        -e RENOVATE_REPOSITORIES='["MaPS Digital/maps-apps"]' \
+        renovate/renovate:latest
+    displayName: 'Run Renovate'
+    env:
+      GITHUB_TOKEN: $(GITHUB-TOKEN)
+    continueOnError: true
+#- script: |
+#    az storage blob upload \
+#    --account-name softwarebillofmaterials \
+#    --container-name sbom \
+#    --name sbom_testpipeline.json \
+#    --file $(Build.SourcesDirectory)/sbom.json \
+#    --account-key $(SBOM_BLOB_KEY)
+#  displayName: 'Upload SBOM to blob storage'
+#  env:
+#    SBOM_BLOB_KEY: $(sbom-blob-key)

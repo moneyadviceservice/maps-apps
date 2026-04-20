@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpeningHours renders 24-hour days using the "24 hours" label 1`] = `
+<div
+  class="space-y-1"
+  data-testid="opening-hours"
+>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Monday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Tuesday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm font-semibold"
+  >
+    <span>
+      Wednesday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Thursday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Friday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Saturday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Sunday
+    </span>
+    <span>
+      24 hours
+    </span>
+  </div>
+</div>
+`;
+
+exports[`OpeningHours renders a full Mon–Sun week with Wednesday highlighted as today 1`] = `
+<div
+  class="space-y-1"
+  data-testid="opening-hours"
+>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Monday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Tuesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm font-semibold"
+  >
+    <span>
+      Wednesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Thursday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Friday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Saturday
+    </span>
+    <span>
+      07:00 – 21:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Sunday
+    </span>
+    <span>
+      08:00 – 20:00
+    </span>
+  </div>
+</div>
+`;
+
+exports[`OpeningHours renders an extra row for bank_holiday hours when provided 1`] = `
+<div
+  class="space-y-1"
+  data-testid="opening-hours"
+>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Monday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Tuesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm font-semibold"
+  >
+    <span>
+      Wednesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Thursday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Friday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Saturday
+    </span>
+    <span>
+      07:00 – 21:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Sunday
+    </span>
+    <span>
+      08:00 – 20:00
+    </span>
+  </div>
+  <div
+    class="pt-2 mt-2 border-t"
+  >
+    <div
+      class="flex justify-between text-sm text-gray-600"
+    >
+      <span>
+        Bank Holiday
+      </span>
+      <span>
+        09:00 – 17:00
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OpeningHours renders bank_holiday as "24 hours" when is_24_hours is true 1`] = `
+<div
+  class="space-y-1"
+  data-testid="opening-hours"
+>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Monday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Tuesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm font-semibold"
+  >
+    <span>
+      Wednesday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Thursday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Friday
+    </span>
+    <span>
+      06:00 – 22:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Saturday
+    </span>
+    <span>
+      07:00 – 21:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Sunday
+    </span>
+    <span>
+      08:00 – 20:00
+    </span>
+  </div>
+  <div
+    class="pt-2 mt-2 border-t"
+  >
+    <div
+      class="flex justify-between text-sm text-gray-600"
+    >
+      <span>
+        Bank Holiday
+      </span>
+      <span>
+        24 hours
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OpeningHours renders the empty state when usual_days is missing 1`] = `
+<p
+  class="text-sm text-gray-600"
+>
+  No opening hours listed.
+</p>
+`;
+
+exports[`OpeningHours skips days that are not present in usual_days 1`] = `
+<div
+  class="space-y-1"
+  data-testid="opening-hours"
+>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Monday
+    </span>
+    <span>
+      08:00 – 18:00
+    </span>
+  </div>
+  <div
+    class="flex justify-between text-sm "
+  >
+    <span>
+      Friday
+    </span>
+    <span>
+      09:00 – 17:00
+    </span>
+  </div>
+</div>
+`;

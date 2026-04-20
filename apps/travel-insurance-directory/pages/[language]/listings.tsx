@@ -1,0 +1,81 @@
+import { GetServerSideProps } from 'next';
+
+import { AnalyticsWrapper } from 'components/Analytics/AnalyticsWrapper';
+import { useListingsFilterForm } from 'hooks';
+import { ListingsLayout } from 'layouts/ListingsLayout';
+import { TravelInsuranceFirmDocument } from 'types/travel-insurance-firm';
+import { appTitle } from 'utils/helper/core/appTitle';
+import { pageTitle } from 'utils/helper/core/pageTitle';
+import { getListingsFirms } from 'utils/listings/getListingsFirms';
+import type { QueryParams } from 'utils/query/queryHelpers';
+
+import { useTranslation } from '@maps-react/hooks/useTranslation';
+import { ToolPageLayout } from '@maps-react/layouts/ToolPageLayout';
+import { type Pagination as PaginationType } from '@maps-react/utils/pagination';
+
+type BaseProps = {
+  lang: 'en' | 'cy';
+  firms: TravelInsuranceFirmDocument[];
+  query: QueryParams;
+  pagination: PaginationType | null;
+};
+
+const Page = ({ lang, firms, query, pagination }: BaseProps) => {
+  const { z } = useTranslation();
+  const { isFilterLoading, onFormChange } = useListingsFilterForm(lang, query);
+  const title = appTitle(z);
+  const showResultsSection = pagination !== null;
+
+  return (
+    <AnalyticsWrapper variant="firmListings">
+      <ToolPageLayout
+        pageTitle={pageTitle(
+          z({
+            en: 'Use our travel insurance directory',
+            cy: 'Defnyddiwch ein cyfeirlyfr yswiriant teithio',
+          }),
+          z,
+        )}
+        title={title}
+        titleTag={'span'}
+        noMargin={true}
+        layout="grid"
+        mainClassName="mb-8 mt-0 text-gray-800 lg:max-w-[1272px] mx-auto"
+        className="pt-8 mb-4"
+      >
+        <ListingsLayout
+          lang={lang}
+          query={query}
+          firms={firms}
+          pagination={pagination}
+          showResultsSection={showResultsSection}
+          isFilterLoading={isFilterLoading}
+          onFormChange={onFormChange}
+        />
+      </ToolPageLayout>
+    </AnalyticsWrapper>
+  );
+};
+
+export default Page;
+
+export const getServerSideProps: GetServerSideProps = async ({
+  params,
+  query,
+}) => {
+  const lang = Array.isArray(params?.language)
+    ? params.language[0]
+    : params?.language ?? 'en';
+
+  const queryParams = (query || {}) as QueryParams;
+  const { firms, pagination } = await getListingsFirms(queryParams);
+
+  return {
+    props: {
+      lang: lang === 'cy' ? 'cy' : 'en',
+      firms,
+      query: queryParams,
+      pagination,
+    },
+  };
+};

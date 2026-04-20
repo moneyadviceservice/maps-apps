@@ -1,0 +1,306 @@
+name: Publish build to production
+
+trigger: none
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+# This should be the name of the app in netlify, not the monorepo folder name
+parameters:
+  - name: appname
+    displayName: App to deploy
+    type: string
+    default: ''
+
+  - name: BuildId
+    displayName: Build ID to publish
+    type: string
+    default: ''
+
+  - name: JIRAArea
+    displayName: JIRA Area (optional)
+    type: string
+    default: 'mapswiki'
+    values:
+      - pdpitservice
+      - mapswiki
+
+  - name: JIRAChangeID
+    displayName: JIRA Change ID (optional)
+    type: string
+    default: ' '
+
+  - name: ReleaseVersion
+    displayName: Release Version (optional)
+    type: string
+    default: ' '
+
+  - name: JIRACustomComment
+    displayName: Custom comment to add to JIRA issue (optional)
+    type: string
+    default: ' '
+
+  - name: ExistingDeploy
+    displayName: Existing deploy (skip publish step)
+    type: boolean
+    default: false
+
+  - name: ChangeFailureStatus
+    displayName: Change Failure (Rollback, Hotfix, Patch, Incident Response)
+    type: boolean
+    default: false
+
+jobs:
+  - job: PublishToProduction
+    condition: ne('${{ parameters.ExistingDeploy }}', 'true')
+    displayName: 'Publishing ${{ parameters.appname }}'
+    steps:
+      - script: |
+          set -euo pipefail
+
+          echo "Publishing deploy ${{ parameters.BuildId }} for site ${{ parameters.appname }} ..."
+          HTTP_STATUS=$(curl -sS -o /tmp/resp.json -w "%{http_code}" \
+            -X POST \
+            -H "Authorization: Bearer ${NETLIFY_TOKEN}" \
+            "https://api.netlify.com/api/v1/sites/${{ parameters.appname }}/deploys/${{ parameters.BuildId }}/restore")
+
+          echo "Netlify response code: $HTTP_STATUS"
+          cat /tmp/resp.json || true
+
+          if [[ "$HTTP_STATUS" != "200" && "$HTTP_STATUS" != "201" ]]; then
+            echo "Failed to restore deploy. HTTP $HTTP_STATUS"
+            exit 1
+          fi
+
+          echo "Deploy published successfully."
+        displayName: 'Publish existing Netlify deploy'
+        env:
+          NETLIFY_TOKEN: $(netlify-token-publish-build)
+
+  - job: NotifyTeams
+    dependsOn: PublishToProduction
+    condition: in(dependencies.PublishToProduction.result, 'Succeeded', 'Skipped')
+    displayName: 'Notifying Teams for ${{ parameters.appname }}'
+    steps:
+      - script: |
+          set -euo pipefail
+          TRIGGERED_BY="$(Build.RequestedFor)"
+          APP_NAME="${{ parameters.appname }}"
+          BUILD_ID="${{ parameters.BuildId }}"
+          NETLIFY_BUILD_URL="https://app.netlify.com/sites/${APP_NAME}/deploys/${BUILD_ID}"
+          if [ -z "${TEAMS_WEBHOOK_URL}" ]; then
+            echo "TEAMS_WEBHOOK_URL is not set. Skipping Teams notification."
+            exit 0
+          fi
+          MESSAGE="{ 
+            \"@type\": \"MessageCard\", 
+            \"@context\": \"http://schema.org/extensions\", 
+            \"summary\": \"Netlify Build Notification\", 
+            \"themeColor\": \"792b9e\", 
+            \"title\": \"Production Deploy\", 
+            \"sections\": 
+              [{ 
+                \"activityTitle\": \"[${APP_NAME}](https://app.netlify.com/projects/${APP_NAME}/overview) Published to Production\",
+                \"facts\": [
+                  {
+                    \"name\": \"Build ID:\", 
+                    \"value\": \"[${BUILD_ID}](${NETLIFY_BUILD_URL})\",
+                  },
+                  {
+                    \"name\": \"Triggered by:\", 
+                    \"value\": \"${TRIGGERED_BY}\" 
+                  }
+                ]
+              }] 
+            }"
+          curl -H "Content-Type: application/json" -d "$MESSAGE" "${TEAMS_WEBHOOK_URL}"
+        displayName: 'Post deployment summary to Teams'
+        env:
+          TEAMS_WEBHOOK_URL: $(teams-webhook-url)
+
+  - job: UpdateJIRA
+    dependsOn: PublishToProduction
+    condition: and(in(dependencies.PublishToProduction.result, 'Succeeded', 'Skipped'), ne('${{ parameters.JIRAChangeID }}', ' '))
+    displayName: 'Updating JIRA ${{ parameters.JIRAChangeID }}'
+    steps:
+      - bash: |
+          JIRA_ID="${{ parameters.JIRAChangeID }}"
+          JIRA_ID="${JIRA_ID// /}"
+          RELEASE_VER="${{ parameters.ReleaseVersion }}"
+          RELEASE_VER="${RELEASE_VER// /}"
+          CUSTOM_COMMENT="${{ parameters.JIRACustomComment }}"
+          TRIGGERED_BY="$(Build.RequestedFor)"
+          APP_NAME="${{ parameters.appname }}"
+          BUILD_ID="${{ parameters.BuildId }}"
+
+          # Construct JIRA_BASE_URL from JIRAArea parameter
+          export JIRA_BASE_URL="https://${{ parameters.JIRAArea }}.atlassian.net"
+
+          netlify/scripts/update-jira.sh "$JIRA_ID" "$RELEASE_VER" "$CUSTOM_COMMENT" "$TRIGGERED_BY" "$APP_NAME" "$BUILD_ID"
+        displayName: 'Update Jira Change Item'
+        env:
+          JIRA_API_TOKEN: $(jira-api-token)
+
+  - job: TrackJIRAMetrics
+    dependsOn: PublishToProduction
+    condition: in(dependencies.PublishToProduction.result, 'Succeeded', 'Skipped')
+    displayName: 'Track Deployment Metrics for ${{ parameters.appname }}'
+    steps:
+      - bash: |
+          set -euo pipefail
+
+          JIRA_ID="${{ parameters.JIRAChangeID }}"
+          JIRA_ID="${JIRA_ID// /}"
+          JIRA_BASE_URL="https://${{ parameters.JIRAArea }}.atlassian.net"
+          APP_NAME="${{ parameters.appname }}"
+          BUILD_ID="${{ parameters.BuildId }}"
+          TRIGGERED_BY="$(Build.RequestedFor)"
+          PIPELINE_RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S%z)"
+          CHANGEFAILURE="${{ parameters.ChangeFailureStatus }}"
+
+          # Azure Storage Table details
+          STORAGE_ACCOUNT="netlifypublishrecord"
+          TABLE_NAME="netlifypublishrecords"
+
+          # Generate unique RowKey (using timestamp + build_id)
+          ROW_KEY="${BUILD_ID}-$(date +%Y%m%d%H%M%S)"
+
+          # Use app_name as PartitionKey for logical grouping
+          PARTITION_KEY="${APP_NAME}"
+
+          echo "Saving metrics to Azure Table Storage..."
+          echo "Storage Account: $STORAGE_ACCOUNT"
+          echo "Table: $TABLE_NAME"
+          echo "PartitionKey: $PARTITION_KEY"
+          echo "RowKey: $ROW_KEY"
+
+          # Check if JIRA ID is provided
+          if [[ -z "$JIRA_ID" ]]; then
+            echo "No JIRA Change ID provided. Saving basic deployment metrics only."
+            
+            # Insert basic entity without JIRA metrics
+            az storage entity insert \
+              --account-name "$STORAGE_ACCOUNT" \
+              --account-key "${AZURE_STORAGE_KEY}" \
+              --table-name "$TABLE_NAME" \
+              --entity \
+                PartitionKey="$PARTITION_KEY" \
+                RowKey="$ROW_KEY" \
+                AppName="$APP_NAME" \
+                BuildId="$BUILD_ID" \
+                PipelineRunDate="$PIPELINE_RUN_DATE" \
+                TriggeredBy="$TRIGGERED_BY" \
+                ChangeFailure="$CHANGEFAILURE"
+          else
+            echo "JIRA Change ID provided: $JIRA_ID. Fetching JIRA data..."
+            
+            # Fetch JIRA created date and changelog for assignee date
+            HTTP_RESPONSE=$(curl -sS \
+              -H "Authorization: Basic ${JIRA_API_TOKEN}" \
+              -H "Accept: application/json" \
+              -w "\n%{http_code}" \
+              "${JIRA_BASE_URL}/rest/api/3/issue/${JIRA_ID}?fields=created&expand=changelog")
+
+            HTTP_CODE=$(echo "$HTTP_RESPONSE" | tail -n 1)
+            RESPONSE_BODY=$(echo "$HTTP_RESPONSE" | sed '$d')
+
+            if [[ "$HTTP_CODE" != "200" ]]; then
+              echo "Failed to fetch JIRA issue for storage upload. HTTP $HTTP_CODE"
+              exit 1
+            fi
+
+            JIRA_CREATED_DATE=$(echo "$RESPONSE_BODY" | jq -r '.fields.created')
+            
+            # Extract first assignee date from changelog
+            JIRA_ASSIGNEE_DATE=$(echo "$RESPONSE_BODY" | jq -r '
+              [.changelog.histories[] | 
+                select(.items[] | select(.field == "assignee" and .to != null)) | 
+                .created] | 
+              sort | 
+              first // empty')
+            
+            if [[ -z "$JIRA_ASSIGNEE_DATE" || "$JIRA_ASSIGNEE_DATE" == "null" ]]; then
+              echo "No assignee date found in JIRA changelog"
+              JIRA_ASSIGNEE_DATE=""
+            else
+              echo "JIRA Assignee Date: $JIRA_ASSIGNEE_DATE"
+            fi
+
+            # Calculate time difference from created date
+            JIRA_TIMESTAMP=$(date -d "$JIRA_CREATED_DATE" +%s 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%S" "$(echo $JIRA_CREATED_DATE | cut -d'.' -f1)" +%s)
+            PIPELINE_TIMESTAMP=$(date +%s)
+            DIFF_SECONDS=$((PIPELINE_TIMESTAMP - JIRA_TIMESTAMP))
+            DIFF_DAYS=$((DIFF_SECONDS / 86400))
+            DIFF_HOURS=$(( (DIFF_SECONDS % 86400) / 3600 ))
+            DIFF_MINUTES=$(( (DIFF_SECONDS % 3600) / 60 ))
+            TIME_DIFF_READABLE="${DIFF_DAYS} days, ${DIFF_HOURS} hours, ${DIFF_MINUTES} minutes"
+
+            # Calculate lead time from assignee date if available
+            if [[ -n "$JIRA_ASSIGNEE_DATE" && "$JIRA_ASSIGNEE_DATE" != "null" ]]; then
+              ASSIGNEE_TIMESTAMP=$(date -d "$JIRA_ASSIGNEE_DATE" +%s 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%S" "$(echo $JIRA_ASSIGNEE_DATE | cut -d'.' -f1)" +%s)
+              LEAD_TIME_SECONDS=$((PIPELINE_TIMESTAMP - ASSIGNEE_TIMESTAMP))
+              LEAD_TIME_DAYS=$((LEAD_TIME_SECONDS / 86400))
+              LEAD_TIME_HOURS=$(( (LEAD_TIME_SECONDS % 86400) / 3600 ))
+              LEAD_TIME_MINUTES=$(( (LEAD_TIME_SECONDS % 3600) / 60 ))
+              LEAD_TIME_READABLE="${LEAD_TIME_DAYS} days, ${LEAD_TIME_HOURS} hours, ${LEAD_TIME_MINUTES} minutes"
+              
+              echo "Lead Time from Assignee: $LEAD_TIME_READABLE"
+              
+              # Insert full entity with JIRA metrics including assignee data
+              az storage entity insert \
+                --account-name "$STORAGE_ACCOUNT" \
+                --account-key "${AZURE_STORAGE_KEY}" \
+                --table-name "$TABLE_NAME" \
+                --entity \
+                  PartitionKey="$PARTITION_KEY" \
+                  RowKey="$ROW_KEY" \
+                  AppName="$APP_NAME" \
+                  BuildId="$BUILD_ID" \
+                  JiraIssueId="$JIRA_ID" \
+                  JiraCreatedDate="$JIRA_CREATED_DATE" \
+                  JiraAssigneeDate="$JIRA_ASSIGNEE_DATE" \
+                  PipelineRunDate="$PIPELINE_RUN_DATE" \
+                  TriggeredBy="$TRIGGERED_BY" \
+                  TimeDifferenceSeconds=$DIFF_SECONDS \
+                  TimeDifferenceDays=$DIFF_DAYS \
+                  TimeDifferenceHours=$DIFF_HOURS \
+                  TimeDifferenceMinutes=$DIFF_MINUTES \
+                  TimeDifferenceReadable="$TIME_DIFF_READABLE" \
+                  LeadTimeSeconds=$LEAD_TIME_SECONDS \
+                  LeadTimeDays=$LEAD_TIME_DAYS \
+                  LeadTimeHours=$LEAD_TIME_HOURS \
+                  LeadTimeMinutes=$LEAD_TIME_MINUTES \
+                  LeadTimeReadable="$LEAD_TIME_READABLE" \
+                  ChangeFailure="$CHANGEFAILURE"
+            else
+              # Insert entity without assignee data
+              az storage entity insert \
+                --account-name "$STORAGE_ACCOUNT" \
+                --account-key "${AZURE_STORAGE_KEY}" \
+                --table-name "$TABLE_NAME" \
+                --entity \
+                  PartitionKey="$PARTITION_KEY" \
+                  RowKey="$ROW_KEY" \
+                  AppName="$APP_NAME" \
+                  BuildId="$BUILD_ID" \
+                  JiraIssueId="$JIRA_ID" \
+                  JiraCreatedDate="$JIRA_CREATED_DATE" \
+                  PipelineRunDate="$PIPELINE_RUN_DATE" \
+                  TriggeredBy="$TRIGGERED_BY" \
+                  TimeDifferenceSeconds=$DIFF_SECONDS \
+                  TimeDifferenceDays=$DIFF_DAYS \
+                  TimeDifferenceHours=$DIFF_HOURS \
+                  TimeDifferenceMinutes=$DIFF_MINUTES \
+                  TimeDifferenceReadable="$TIME_DIFF_READABLE" \
+                  ChangeFailure="$CHANGEFAILURE"
+            fi
+          fi
+
+          echo "Successfully saved metrics to Azure Table Storage"
+        displayName: 'Save Metrics to Azure Storage Table'
+        env:
+          JIRA_API_TOKEN: $(jira-api-token)
+          AZURE_STORAGE_KEY: $(netlify-publish-azure-storage-key)

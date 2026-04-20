@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "platform": "azure",
+  "repositories": ["MaPS Digital/maps-apps"],
+  "dependencyDashboard": false,
+  "branchConcurrentLimit": 5,
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0,
+  "pruneStaleBranches": true,
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "matchPaths": ["**/package.json"]
+    }
+  ]
+}

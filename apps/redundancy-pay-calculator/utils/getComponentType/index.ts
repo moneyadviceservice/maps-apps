@@ -1,0 +1,1 @@
+export { getReactComponentType } from './getComponentType';

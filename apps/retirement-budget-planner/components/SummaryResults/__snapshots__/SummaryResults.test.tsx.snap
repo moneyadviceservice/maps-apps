@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SummaryResults component should render the component 1`] = `
+<div>
+  <div
+    class="space-y-8"
+  >
+    <div
+      data-testid="summary-results-details"
+    >
+      SummaryResultsDetails Mock
+    </div>
+    <div
+      data-testid="summary-results-checklist"
+    >
+      SummaryResultsChecklist Mock
+    </div>
+    <div
+      data-testid="summary-results-other-tools"
+    >
+      SummaryResultsOtherTools Mock
+    </div>
+    <div
+      class="toolFeedbackWidget mt-8"
+      id="informizely-embed-fjguluwfj"
+    />
+    <div
+      data-testid="summary-results-share"
+    >
+      SummaryResultsShare Mock
+    </div>
+  </div>
+</div>
+`;

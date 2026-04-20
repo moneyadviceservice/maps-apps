@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterTag renders with a custom announcementText 1`] = `
+<div
+  class="inline-block px-4 py-1 border rounded t-active-filters-item border-slate-400 shadow-bottom-gray"
+  data-testid="filter-tag"
+>
+  <div
+    class="flex items-center space-x-2 text-pink-800 text-xs"
+  >
+    <div>
+      Supermarket
+    </div>
+    <a
+      aria-label="Remove filter "Supermarket""
+      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+      data-testid="remove-filter"
+      href="/en/fuel-finder?supermarket=true"
+      title="Remove filter "Supermarket""
+    >
+      <svgr-mock />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`FilterTag renders with title, href and description 1`] = `
+<div
+  class="inline-block px-4 py-1 border rounded t-active-filters-item border-slate-400 shadow-bottom-gray"
+  data-testid="filter-tag"
+>
+  <div
+    class="flex items-center space-x-2 text-pink-800 text-xs"
+  >
+    <div>
+      Diesel
+    </div>
+    <a
+      aria-label="Remove filter "Diesel""
+      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+      data-testid="remove-filter"
+      href="/en/fuel-finder?fuelType=B7_STANDARD"
+      title="Remove filter "Diesel""
+    >
+      <svgr-mock />
+    </a>
+  </div>
+</div>
+`;
