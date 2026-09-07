@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["playwright", "node"],
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js"]
+}

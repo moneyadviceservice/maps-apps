@@ -1,0 +1,1 @@
+export { getTaxCodeAndScottishStatus } from './getTaxCodeAndScottishStatus';

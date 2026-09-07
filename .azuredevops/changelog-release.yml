@@ -1,0 +1,225 @@
+# Changelog release pipeline
+#
+# Manually-triggered pipeline that cuts an app release PR so the developer only
+# has to review and approve it:
+#
+#   1. Validates the inputs and creates release/<project>-<version> from the
+#      branch the run was queued against (normally main).
+#   2. Runs `nx generate @maps-react/tools:changelog <project> <version>
+#      --commit` (plus --from when supplied), committing the entry as the
+#      'chore(release): <project> <version>' release marker.
+#   3. Pushes the branch and opens a pull request as the build service
+#      account, titled 'chore(release): <project> <version>', with the
+#      rendered changelog entry in the description.
+#
+# See libs/shared/tools/src/generators/changelog/README.md for how the
+# generator itself works.
+
+name: changelog-release-$(Date:yyyyMMdd)$(Rev:.r)
+
+trigger: none
+
+parameters:
+  - name: project
+    displayName: App to release (Nx project name, e.g. mortgage-calculator)
+    type: string
+  - name: releaseVersion
+    displayName: Release version (e.g. 1.2.0)
+    type: string
+  - name: from
+    displayName: Boundary override passed to --from (tag or SHA). Leave empty to use the last release marker.
+    type: string
+    default: ""
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  # The release commit only touches the app's CHANGELOG.md, so skip husky
+  # hooks (and the hook install during npm ci).
+  HUSKY: "0"
+
+steps:
+  - checkout: self
+    # Keep the build service token so later steps can push the release branch.
+    persistCredentials: true
+    # The generator walks git history to find the last release marker, so a
+    # shallow fetch is not enough.
+    fetchDepth: 0
+
+  - script: |
+      set -euo pipefail
+
+      if ! [[ "$PROJECT" =~ ^[A-Za-z0-9._-]+$ ]]; then
+        echo "##vso[task.logissue type=error]Project '$PROJECT' must only use letters, digits, dots, hyphens and underscores."
+        exit 1
+      fi
+      if ! [[ "$RELEASE_VERSION" =~ ^[A-Za-z0-9._-]+$ ]]; then
+        echo "##vso[task.logissue type=error]Version '$RELEASE_VERSION' must only use letters, digits, dots, hyphens and underscores (e.g. 1.2.0)."
+        exit 1
+      fi
+      if [[ "$FROM_REF" =~ [[:space:]] ]]; then
+        echo "##vso[task.logissue type=error]The from ref must not contain whitespace."
+        exit 1
+      fi
+      case "$BUILD_SOURCEBRANCH" in
+        refs/heads/*) ;;
+        *)
+          echo "##vso[task.logissue type=error]Run this pipeline against a branch (got $BUILD_SOURCEBRANCH); the pull request needs a branch to target."
+          exit 1
+          ;;
+      esac
+
+      echo "##vso[build.updatebuildnumber]changelog $PROJECT $RELEASE_VERSION - $BUILD_BUILDID"
+
+      MARKER="chore(release): $PROJECT $RELEASE_VERSION"
+      BRANCH="release/$PROJECT-$RELEASE_VERSION"
+
+      if [[ -n "$(git log -n 1 --fixed-strings --grep="$MARKER" --format=%H)" ]]; then
+        echo "##vso[task.logissue type=error]A '$MARKER' commit already exists on $BUILD_SOURCEBRANCHNAME. Use a new version number."
+        exit 1
+      fi
+
+      if [[ -n "$(git ls-remote --heads origin "$BRANCH")" ]]; then
+        echo "##vso[task.logissue type=error]Branch $BRANCH already exists. Abandon its pull request and delete the branch, then run again."
+        exit 1
+      fi
+
+      # UseNode@1 cannot read .nvmrc itself, so surface it as a variable.
+      NODE_VERSION=$(cat .nvmrc)
+      echo "##vso[task.setvariable variable=nodeVersion]${NODE_VERSION//[[:space:]]/}"
+
+      echo "Releasing $PROJECT $RELEASE_VERSION from $BUILD_SOURCEBRANCH on branch $BRANCH"
+    displayName: "Validate inputs and preconditions"
+    env:
+      PROJECT: ${{ parameters.project }}
+      RELEASE_VERSION: ${{ parameters.releaseVersion }}
+      FROM_REF: ${{ parameters.from }}
+
+  - task: UseNode@1
+    displayName: "Install Node.js"
+    inputs:
+      # Set from .nvmrc by the validation step.
+      version: $(nodeVersion)
+
+  - script: npm ci
+    displayName: "npm ci"
+
+  - script: |
+      set -euo pipefail
+
+      MARKER="chore(release): $PROJECT $RELEASE_VERSION"
+      BRANCH="release/$PROJECT-$RELEASE_VERSION"
+
+      # Identity recorded on the release commit; the push and the pull
+      # request authenticate as the build service account regardless.
+      git config user.name 'MaPS Digital Build Service'
+      git config user.email 'no-reply@maps.org.uk'
+
+      git checkout -b "$BRANCH"
+
+      GENERATE_ARGS=("$PROJECT" "$RELEASE_VERSION" --commit --no-interactive)
+      if [[ -n "$FROM_REF" ]]; then
+        GENERATE_ARGS+=("--from=$FROM_REF")
+      fi
+      npx nx generate @maps-react/tools:changelog "${GENERATE_ARGS[@]}"
+
+      if [[ "$(git log -n 1 --format=%s)" != "$MARKER" ]]; then
+        echo "##vso[task.logissue type=error]The generator did not create a release commit, most likely because there are no changelog-worthy changes for $PROJECT since the last release. Nothing was pushed."
+        exit 1
+      fi
+
+      # The marker commit touches exactly one file: the app's CHANGELOG.
+      CHANGELOG_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD)
+      echo "Committed $CHANGELOG_PATH as '$MARKER'"
+
+      # Keep the newly added entry for the pull request description.
+      git diff HEAD^ HEAD -- "$CHANGELOG_PATH" \
+        | grep -v '^+++ ' \
+        | sed -n 's/^+//p' \
+        | sed '/^# Changelog$/d' \
+        | sed '/./,$!d' \
+        > "$BUILD_ARTIFACTSTAGINGDIRECTORY/changelog-entry.md"
+
+      git push origin "$BRANCH"
+    displayName: "Generate changelog entry and push release branch"
+    env:
+      PROJECT: ${{ parameters.project }}
+      RELEASE_VERSION: ${{ parameters.releaseVersion }}
+      FROM_REF: ${{ parameters.from }}
+
+  - script: |
+      set -euo pipefail
+
+      MARKER="chore(release): $PROJECT $RELEASE_VERSION"
+      BRANCH="release/$PROJECT-$RELEASE_VERSION"
+      PROJECT_ENC="${SYSTEM_TEAMPROJECT// /%20}"
+      RUN_URL="${SYSTEM_COLLECTIONURI}${PROJECT_ENC}/_build/results?buildId=${BUILD_BUILDID}"
+      CHANGELOG_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD)
+      ENTRY=$(cat "$BUILD_ARTIFACTSTAGINGDIRECTORY/changelog-entry.md")
+
+      # The marker must stay on the first line: Azure DevOps carries the
+      # description into the squash commit body, and the next release greps
+      # for a line starting 'chore(release): <project> '.
+      NL=$'\n\n'
+      DESC="$MARKER"
+      DESC+="${NL}Automated release PR raised by the changelog-release pipeline ([run $BUILD_BUILDID]($RUN_URL)) for **$PROJECT $RELEASE_VERSION**. Completing it records the entry below in \`$CHANGELOG_PATH\`; the resulting commit is the release marker the next release reads as its boundary."
+      if [[ -n "$FROM_REF" ]]; then
+        DESC+="${NL}Boundary override supplied: \`--from=$FROM_REF\`."
+      fi
+      DESC+="${NL}Keep the \`chore(release)\` line at the top of the merge message when completing (the default message keeps it), so the marker survives in the squash commit."
+      DESC+="${NL}---${NL}$ENTRY"
+
+      # Azure DevOps caps pull request descriptions at 4000 characters.
+      if (( ${#DESC} > 3980 )); then
+        DESC="${DESC:0:3900}${NL}*(entry truncated, see the CHANGELOG.md diff for the rest)*"
+      fi
+
+      API_BASE="${SYSTEM_COLLECTIONURI}${SYSTEM_TEAMPROJECTID}/_apis/git/repositories/${BUILD_REPOSITORY_ID}/pullrequests"
+
+      jq -n \
+        --arg src "refs/heads/$BRANCH" \
+        --arg tgt "$BUILD_SOURCEBRANCH" \
+        --arg title "$MARKER" \
+        --arg desc "$DESC" \
+        '{sourceRefName: $src, targetRefName: $tgt, title: $title, description: $desc}' \
+        > "$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-payload.json"
+
+      STATUS=$(curl -sS -o "$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-response.json" -w '%{http_code}' \
+        -X POST "${API_BASE}?api-version=7.1" \
+        -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+        -H 'Content-Type: application/json' \
+        --data-binary @"$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-payload.json")
+
+      if [[ "$STATUS" != "201" ]]; then
+        cat "$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-response.json"
+        echo "##vso[task.logissue type=error]Creating the pull request failed with HTTP $STATUS. The branch $BRANCH was pushed, so the PR can be raised manually. Check the build service account has 'Contribute to pull requests' on the repository."
+        exit 1
+      fi
+
+      PR_ID=$(jq -r '.pullRequestId' "$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-response.json")
+      PR_URL="${SYSTEM_COLLECTIONURI}${PROJECT_ENC}/_git/${BUILD_REPOSITORY_NAME}/pullrequest/${PR_ID}"
+
+      # Best effort: add the developer who ran the pipeline as a reviewer.
+      if [[ -n "${BUILD_REQUESTEDFORID:-}" ]]; then
+        curl -sSf -X PUT "${API_BASE}/${PR_ID}/reviewers/${BUILD_REQUESTEDFORID}?api-version=7.1" \
+          -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+          -H 'Content-Type: application/json' \
+          --data '{"vote": 0}' > /dev/null \
+          || echo "##vso[task.logissue type=warning]Could not add you as a reviewer; add yourself from the PR page."
+      fi
+
+      echo "Created pull request $PR_ID: $PR_URL"
+
+      {
+        echo "## [$MARKER (PR $PR_ID)]($PR_URL)"
+        echo
+        cat "$BUILD_ARTIFACTSTAGINGDIRECTORY/changelog-entry.md"
+      } > "$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-summary.md"
+      echo "##vso[task.uploadsummary]$BUILD_ARTIFACTSTAGINGDIRECTORY/pr-summary.md"
+    displayName: "Create the release pull request"
+    env:
+      PROJECT: ${{ parameters.project }}
+      RELEASE_VERSION: ${{ parameters.releaseVersion }}
+      FROM_REF: ${{ parameters.from }}
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)

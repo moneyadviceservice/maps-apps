@@ -1,0 +1,707 @@
+{
+  "site": {
+    "title": "MoneyHelper Pensions Dashboard",
+    "header": {
+      "logo": "Pensions Dashboard",
+      "links": {
+        "exit": "Exit and log out"
+      }
+    },
+    "back": "Back",
+    "back-to-top": "Back to top",
+    "help-and-support-link-text": "Help and support",
+    "download-pension-information-link-text": "Download pension information",
+    "hm-gov-logo-alt": "HM Government logo",
+    "home": "Home",
+    "feedback": "This is a new service. We're still building and improving it.",
+    "help-and-support": {
+      "title": "Help and support",
+      "feedback-link": "Give us feedback",
+      "contact-us": "Contact us",
+      "card-1": {
+        "title": "Explore the Pensions Dashboard",
+        "description": "Don’t know where to start? Learn how to get the most out of your Pensions Dashboard and get answers for common questions."
+      },
+      "card-2": {
+        "title": "Understand your pensions",
+        "description": "Unsure about your next steps? Our free, impartial guidance can help you understand your pensions and plan for a comfortable retirement."
+      },
+      "card-3": {
+        "title": "Report a technical problem",
+        "description": "Is something not working? Tell us if there’s an issue with your Pensions Dashboard or if you’re experiencing any technical problems."
+      }
+    },
+    "logout": {
+      "about-to-leave": "You’re about to leave",
+      "we-will-redirect": "We’ll redirect you to MoneyHelper. If you exit the service now, you’ll need to sign in again using GOV.UK One Login to view your pensions.",
+      "are-you-sure": "Are you sure you want to leave?",
+      "yes-exit": "Yes, exit the Dashboard"
+    },
+    "dashboard-nav": "Dashboard"
+  },
+  "common": {
+    "a-month": "a month",
+    "a-year": "a year",
+    "or": "or",
+    "on": "on",
+    "date-unavailable": "Date unavailable",
+    "unavailable": "Unavailable",
+    "scheme": "Scheme name",
+    "employer": "Employer",
+    "provider": "Pension provider",
+    "retirement-date": "Expected retirement date",
+    "state-pension-date": "State Pension date",
+    "estimated-income": "Estimated income",
+    "cash-balance": "Cash balance",
+    "lump-sum": "Lump sum",
+    "details-link": "See details",
+    "details-link-sr-only": " for {schemeName}",
+    "progress-complete": "complete",
+    "close": "Close",
+    "more-information": "Show more information",
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "contact": {
+      "preferred": "preferred",
+      "telephone": "Phone number",
+      "telephone-main": "Main telephone",
+      "telephone-whatsapp": "WhatsApp",
+      "telephone-textphone": "Textphone",
+      "telephone-welsh-language": "Welsh language",
+      "telephone-outside-uk": "Outside UK",
+      "email": "Email",
+      "email-address": "Email address",
+      "website": "Website",
+      "address": "Address",
+      "postal-address": "Postal Address",
+      "phone": "Phone"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "pension-opened": "Pension opened",
+    "guide-title": "What’s in this guide",
+    "months": "months",
+    "year": "year",
+    "years": "years",
+    "session": "Session",
+    "hours": "hours",
+    "minute": "minute",
+    "minutes": "minutes",
+    "immediate": "Immediate",
+    "linked-pensions": "Linked pensions",
+    "linked-pension": "Linked pension"
+  },
+  "pages": {
+    "feature-not-available": {
+      "title": "This feature is not available yet",
+      "intro": "Thanks for your interest in a download or export feature. We’re still building the service and testing what would work best.",
+      "survey": "To help us build what you need, please [complete our short survey]({surveyUrl}). We’d be grateful for your feedback.",
+      "provider": "The survey opens in a new window and is provided by Informizely, our research partner."
+    },
+    "error": {
+      "title": "Sorry we couldn’t find the page you’re looking for",
+      "intro": "We’re still building and improving our service. Something went wrong but we will try to fix it.",
+      "what-you-can-do": {
+        "title": "What you can do:",
+        "items": [
+          "Click the Back button in your browser to check if you’re in the right place.",
+          "[Contact us.](/en/contact-us-form)"
+        ]
+      }
+    },
+    "verify-code": {
+      "page-title": "Verify your access",
+      "title": "Enter your verification code",
+      "intro": "We've sent a 6-digit code to your email. Enter it below.",
+      "code-label": "Verification code",
+      "submit": "Continue",
+      "submit-loading": "Verifying...",
+      "resend": "Resend code",
+      "resend-loading": "Sending...",
+      "error-empty": "Enter the 6-digit code we sent you.",
+      "error-invalid-length": "Enter all 6 digits of your code.",
+      "error-invalid": "The code entered is incorrect. Please try again.",
+      "error-too-many-attempts": "Too many failed attempts. Please try again later.",
+      "error-expired": "This code has expired. Please request a new one.",
+      "error-api-failure": "Something went wrong. Please try again.",
+      "resend-success": "A new code has been sent to your email."
+    },
+    "link-access-error": {
+      "page-title": "Access error",
+      "title": "Sorry we couldn’t find the page you’re looking for",
+      "intro": "We're still building and improving our service. This link is inactive and cannot be used to access the Pensions Dashboard at this time.",
+      "items": [
+        "Click the Back button in your browser to check if you’re in the right place.",
+        "Send us an email to tell us what went wrong at [researchpanel@maps.org.uk](mailto:researchpanel@maps.org.uk)"
+      ]
+    },
+    "start": {
+      "hero-text": "See your pensions in one place with our free, secure government-backed service. Plus, see how much you could get when you retire.",
+      "form-button": "Start now",
+      "section-how-it-works": {
+        "title": "How it works",
+        "duration": "It takes you about **10 minutes** to sign in with GOV.UK One Login, or **25 minutes** if it's your first time.",
+        "items": [
+          "Prove your identity using **GOV.UK One Login**. You can set up an account with One Login as part of this service.",
+          "Enter your **National Insurance number**, if you have one. You can still proceed without one.",
+          "See all the pensions that match your details, including your estimated income when you retire."
+        ]
+      },
+      "section-you-need": {
+        "title": "You’ll need",
+        "items": [
+          "your current address",
+          "your National Insurance number, if you have one"
+        ],
+        "easier": "It’s usually easier to prove your identity with GOV.UK One Login if you have:",
+        "easier-items": ["a mobile phone with a working camera", "photo ID"],
+        "other-ways": "But you can prove your identity in other ways. See a full list of [ways to prove your identity with GOV.UK One Login](https://www.gov.uk/using-your-gov-uk-one-login/proving-your-identity)."
+      },
+      "section-your-data": {
+        "title": "Your data",
+        "description": "We’ll share the information that you or GOV.UK One Login give us with pension providers, schemes, and the Department for Work and Pensions (DWP) to find your pensions."
+      },
+      "more-about-your-data": {
+        "title": "More about how we use your data",
+        "items": [
+          "When we get your information back from pension providers, schemes or the DWP, we store it while you are using the Pensions Dashboard and for up to 30 days after that.",
+          "We do securely store some pseudonymised data in order to make the service work. This is when your data is given codes or tokens, so you cannot be directly identified.",
+          "Learn more in [our privacy notice_target=_self](/en/dashboard-privacy-notice)."
+        ]
+      },
+      "some-pensions-may-not-be-included": {
+        "title": "Some pensions may not be included",
+        "text": "We’re still connecting new pension schemes on a regular basis. However, you will not see pension schemes that:",
+        "items": [
+          "you’ve already taken or you’re receiving money from, including those in pension drawdown",
+          "are workplace schemes with fewer than 100 scheme members, unless the provider connects to the Pensions Dashboard voluntarily",
+          "are administered outside the United Kingdom",
+          "are managed by the Pension Protection Fund (PPF), including the Financial Assistance Scheme (FAS)."
+        ],
+        "note-1": "You will not see your State Pension if you’ve passed State Pension age, even if you have not claimed it yet.",
+        "note-2": "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+      }
+    },
+    "welcome": {
+      "title": "Welcome to the MoneyHelper Pensions Dashboard",
+      "heading": "Important information",
+      "form-button": "I understand",
+      "intro": "Don't make decisions about your money and pensions based solely on the information in your Pensions Dashboard.",
+      "content": "The values are for illustration only and are based on some assumptions, such as your retirement age. Always check with your pension providers for the most up-to-date information, and consider speaking to a regulated financial adviser before making decisions about your pensions.",
+      "values": {
+        "title": "All pension values:",
+        "items": [
+          "are estimated and not guaranteed",
+          "are shown before tax, as pension tax depends on your income and circumstances",
+          "could go up or down based on factors such as investment performance and your contributions."
+        ]
+      },
+      "excluded": {
+        "title": "Some information may not be included.",
+        "items": [
+          "You will not see pensions you’ve already taken money from, pensions administered outside the United Kingdom or pensions with very few scheme members.",
+          "Providers may not be able to send us information in certain circumstances. In most cases, the Dashboard will provide more details on why this information isn’t showing."
+        ]
+      }
+    },
+    "searching-for-your-pension": {
+      "title": "Loading your pensions",
+      "description": "This can take up to {duration} seconds. Thanks for your patience.",
+      "refresh": "Do not refresh or close this page.",
+      "progress": "{progress}% complete"
+    },
+    "your-pension-breakdown": {
+      "page-title": "Your Pension Breakdown",
+      "title": "Your pensions",
+      "confirmed-pensions": {
+        "heading": "Pensions in your estimate",
+        "no-income-link": "See pensions [not included_target=_self](#no-income) in your estimate."
+      },
+      "confirmed-pensions-no-income": {
+        "heading": "Pensions without estimated incomes",
+        "description": "Some pensions may not display an estimated income, such as pensions less than 2 years from their expected retirement date or schemes in the process of winding up. See the pension’s details for more information.\n\nIf any other pensions are missing, see [Pensions not showing_target=_self](/en/pensions-not-showing)."
+      },
+      "scam-warning": {
+        "heading": "Beware of scams",
+        "description": {
+          "items": [
+            "Your Pensions Dashboard contains sensitive and valuable information. Think carefully before sharing your information with a third party.",
+            "Scammers play on our sense of fear. If you’ve been contacted without warning and told you need to move your pensions to a safe place, this is a scam."
+          ]
+        },
+        "action": {
+          "heading": "If you’re worried about scams, you can:",
+          "items": [
+            "Read our guidance on [spotting pension scams](https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam)",
+            "Call our Pensions Helpline on [0800 011 3797](tel:08000113797)"
+          ]
+        }
+      },
+      "onward-journey": {
+        "heading": "Understand your next steps",
+        "body": "Get free help with your pension, including ways to boost it, how and when you can take an income and if a pension transfer is a good idea.",
+        "cta": "Get retirement guidance",
+        "cta-href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/make-the-most-of-your-pension"
+      }
+    },
+    "your-pensions-timeline": {
+      "page-title": "Your pensions timeline",
+      "title": "Your pensions",
+      "heading": "Timeline",
+      "intro": "The timeline shows how your total estimated pension income could change over time based on each pension’s retirement date",
+      "intro-2": "These values are not guaranteed and may go down as well as up.",
+      "intro-3": "Your actual income will depend on how and when you take your pensions.",
+      "accordion-title": "About these values",
+      "accordion": {
+        "items": [
+          "These values are based on the pensions we have estimated incomes for so far - they might not include all your pensions. They’re not guaranteed, and may go down as well as up. The incomes and timeline are also based on expected retirement dates from your pension providers. See each pension’s details page for more information.",
+          "All values are shown before tax. Learn more about [tax and pensions](/en/support/understand-your-pensions)."
+        ]
+      },
+      "view-pensions": "View pensions",
+      "hide-pensions": "Hide pensions",
+      "key": {
+        "title": "Key",
+        "accordion-open": "View key",
+        "accordion-close": "Hide key",
+        "items": {
+          "SP": "State Pension",
+          "DB": "Defined benefit",
+          "DC": "Defined contribution",
+          "AVC": "AVC",
+          "LU": "Lump sum",
+          "HYB": "Hybrid",
+          "CDC": "CDC",
+          "CB": "Cash balance",
+          "VAR": "Combination"
+        }
+      }
+    },
+    "pension-details": {
+      "title": "{name} summary",
+      "navigation-label": "Pension Details",
+      "state-pension": "State Pension",
+      "summary-page-title": "Pension Details - Pension Summary",
+      "income-values-page-title": "Pension Details - Income and values",
+      "about-page-title": "Pension Details - About this pension",
+      "contact-page-title": "Pension Details - Contact pension provider",
+      "estimate": "from the first payable date of **{date}**.",
+      "estimate-cash-balance": "on the first payable date of **{date}**.",
+      "lump-sum": "Plus an estimated lump sum payment of **{amount}**",
+      "toolIntro": {
+        "estimate-SP": "You will reach State Pension age {tooltip} on **{date}**. Your forecast is **{monthly}** a month,",
+        "estimate-SP2": "based on your National Insurance {tooltip} record.",
+        "estimate-SP3": "State Pension is paid every **4 weeks** rather than the same date each month, so your payment will be lower than the monthly amount."
+      },
+      "details": {
+        "title": "Pension details",
+        "current-value": "Current value",
+        "estimate-at-retirement": "Estimate at retirement",
+        "latest-value": "Latest value",
+        "forecast": "Forecast",
+        "mobile-current": "Now",
+        "estimate-today": "Estimate today",
+        "mobile-retirement": "At retirement",
+        "annual-amount": "Annual amount",
+        "yearly-amount": "Yearly amount",
+        "monthly-amount": "Monthly amount",
+        "pot-value": "Pot value",
+        "tax-free-lump-sum": "Tax-free lump sum",
+        "lump-sum": "Lump sum",
+        "cash-balance-lump": "Cash balance lump sum",
+        "payable-date": "Payable date",
+        "last-updated": "Calculation date",
+        "you-could-receive": "You could receive",
+        "benefit-stops": "This benefit stops paying on",
+        "cash-balance-you-could-have": "Your cash balance could be"
+      },
+      "header": {
+        "plan-reference": "Plan reference number",
+        "retirement-date": "Retirement date",
+        "summary": "Summary",
+        "income-and-values": "Income & values",
+        "about-this-pension": "About this pension",
+        "contact-provider": "Contact provider"
+      },
+      "chart-sections": {
+        "AVC": "Additional voluntary contributions (AVC)",
+        "DB": "Defined benefit",
+        "DC": "Defined contribution",
+        "HYB": "Hybrid",
+        "CDC": "Collective defined contribution",
+        "CB": "Cash balance"
+      },
+      "headings": {
+        "state-pension": "About your State Pension forecast",
+        "more-information": "More information",
+        "more-information-sub": "Find out more about this pension scheme, including the charges and how it’s managed.",
+        "about-this-pension": "About this pension",
+        "income-and-values": "Income and values",
+        "income-and-values-sub": "These charts show the latest value of your pension sent by your provider, as well as their estimate of what it could be worth in the future.",
+        "income-and-values-sub-dc": "Your actual income will depend on how and when you take your pension. Learn about your options in our guide, [What can I do with my pension pot?]( https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/pension-pot-options)",
+        "income-and-values-warning": "Any information you see might be incorrect. Do not rely on any values until this pension has been confirmed.",
+        "contact-sub": "Have your plan reference number and personal details ready when you contact your provider. You’ll usually get a quicker reply using the preferred contact method(s). But you can choose the best option for you."
+      },
+      "value-illustration-date": {
+        "summary": {
+          "title": "When was this calculated?",
+          "content": [
+            "You can see the calculation date on the Income and values page. This is the latest data your pension provider sent us."
+          ]
+        },
+        "income-and-values": {
+          "title": "About these values",
+          "content": [
+            "The values are based on the calculation date shown below. This is the latest data your pension provider sent us.",
+            "Your pension provider might be able to give you a more up-to-date value."
+          ]
+        }
+      },
+      "information": {
+        "about": {
+          "title": "About these values",
+          "description": "Pension values are based on the latest estimates and expected retirement dates from your pension providers. They’re not guaranteed, and may go down as well as up.",
+          "sp-description": "How much you'll get in your State Pension depends on how many years you've made National Insurance contributions. When you reach State Pension age, you usually need 35 qualifying years to get the full State Pension and 10 qualifying years to get anything. [Learn more](/en/support/understand-your-pensions)"
+        },
+        "how-estimate-is-calculated": {
+          "title": "How these values are calculated",
+          "avc": "Estimates for this pension are based on you buying a guaranteed income for life (an annuity), which starts paying from the expected retirement date. They’re also based on the provider’s assumptions about inflation, investment performance, and future contribution levels.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now.",
+          "dc": "Estimates for this pension are based on you buying a guaranteed income for life (an annuity), which starts paying from the expected retirement date. They’re also based on the provider’s assumptions about inflation, investment performance, and future contribution levels.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now.\n\n[Contact your provider_target=_self](/en/pension-details/contact-pension-provider) for more details on how they calculate your pension values.",
+          "db": "Estimates for this pension are based on your salary and years you’ve been a scheme member, as well as the expected retirement date. They’re also based on the provider’s assumptions about inflation and whether the scheme is active.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now.",
+          "cdc": "Estimates for this pension are based on you getting a one-time lump sum and an income for life that starts paying from the expected retirement date. Your income for life is reviewed and adjusted each year, which means it could go down, as well as up, both before and after you start receiving it. They’re also based on your salary and years you’ve been a scheme member, as well the provider’s assumptions about inflation, investment performance, and future contribution levels.\n\nTo help you understand the impact of inflation, the estimated income is shown in today's money, so you can see what that amount would be worth right now. ",
+          "cb": "Estimates for this pension are based on your salary and years you’ve been a scheme member, as well as the expected retirement date. They’re also based on the provider’s assumptions about inflation and whether the scheme is active.\n\nTo help you understand the impact of inflation, the estimated income is shown in today’s money, so you can see what that amount would be worth right now.",
+          "missing": "The provider has not sent us how they calculated these values."
+        }
+      },
+      "estimated-income": {
+        "ap-heading": "How much you already qualify for",
+        "ap": "Estimate based on your National Insurance record up to {date}",
+        "eri-heading": "If you continue to contribute",
+        "eri": "Forecast if you continue to make National Insurance contributions"
+      },
+      "claiming-your-state-pension": {
+        "heading": "Claiming your State Pension",
+        "items": [
+          "You will not get your State Pension automatically - you have to claim it.",
+          "You’ll get a letter no later than 2 months before you reach State Pension age telling you what to do. If you do not get a letter, you can still make a claim.",
+          "After you’ve claimed it, it’s paid every **4 weeks** rather than the same date each month."
+        ]
+      },
+      "plan-details": {
+        "plan-reference": "Plan reference number",
+        "pension-start-date": "Pension start date",
+        "active-contributions": "Active contributions",
+        "employer-name": "Employer name",
+        "employer-status": "Employer status",
+        "retirement-date": "Pension retirement date",
+        "employment-start-date": "Employment start date",
+        "employment-end-date": "Employment end date",
+        "most-recent": "(most recent)",
+        "data-illustration-date": "Data illustration date",
+        "pension-origin": "Pension origin",
+        "employer-status-details": {
+          "C": "Current employer",
+          "H": "Former employer"
+        }
+      },
+      "state-pension-callout": {
+        "heading": {
+          "keep-contributing": "You need to keep contributing to reach your forecast",
+          "already-qualify": "You already qualify for your full forecast amount"
+        },
+        "text": {
+          "partial-accrued": "You’ve built up enough qualifying years of National Insurance contributions or credits to get some State Pension, but need to keep contributing to reach your forecast amount.",
+          "full-forecast": "You already have enough qualifying years of National Insurance contributions or credits to get your State Pension forecast amount.",
+          "no-accrued": "You usually need at least **10 years** to get any State Pension. You need to keep contributing to qualify for State Pension and reach your forecast amount."
+        }
+      }
+    },
+    "pending-pensions": {
+      "title": "Pending pensions",
+      "sub-title": "Understanding your pending pensions",
+      "description": "**What does 'pending' mean?** Your provider has confirmed the pension is yours. They haven’t sent us all the details yet, so some figures might be missing.\n\n **Do I need to do anything?** No. Pending pensions will automatically move to ‘Your pensions’ once their information is complete."
+    },
+    "pensions-that-need-action": {
+      "title": "Pensions that need action",
+      "tool-intro": "You may need to provide more information to confirm whether a pension belongs to you, or there could be another issue the provider needs to speak to you about.",
+      "what-you-can-do": {
+        "heading": "What you can do",
+        "lead": "Call, email or write to your provider using the details on this page",
+        "body-before": "Contact your provider using the details on the card and let them know you'd like to resolve an issue with a pension on the MoneyHelper Pensions Dashboard. They might ask you for:",
+        "list-items": [
+          "your full name, plus any previous names",
+          "your date of birth",
+          "your current and previous addresses",
+          "your reference number, if there's one on the card",
+          "your National Insurance number (NINO)"
+        ],
+        "body-after": "Once the issue is resolved, the pension will show up in 'Your pensions' or 'Pending pensions'. If it was matched to you by mistake, it will no longer show up on the Pensions Dashboard."
+      },
+      "possible-match": {
+        "heading": "Possible match with your details",
+        "description": "The pension provider needs to make sure your information matches their records."
+      },
+      "more-information": {
+        "heading": "More information, action or decision needed",
+        "description": "The pension provider cannot send any more details until you contact them."
+      },
+      "card": {
+        "description": "Contact {pensionAdministrator} and give them your reference number if it’s available.",
+        "reference": "Reference number",
+        "contact-heading-open": "Contact information",
+        "contact-heading-sr-only": " for {schemeName}",
+        "details-link": "See pension details"
+      },
+      "scam-warning": {
+        "heading": "Beware of scams",
+        "description": "A pension provider will **never contact you first** to ask for your personal information about a pension they say might belong to you. You must contact the pension provider with your reference number or other identifying details to confirm if a pension is yours."
+      }
+    },
+    "your-pension-search-results": {
+      "page-title": "Your Pension Search Results",
+      "title": "Pensions found",
+      "heading": "We found {totalPensions} pensions",
+      "heading-single": "We found 1 pension",
+      "channels": {
+        "confirmed": {
+          "title": "Confirmed pensions ({confirmedPensions})",
+          "cta": "See your pensions"
+        },
+        "incomplete": {
+          "title": "Pending pensions ({incompletePensions})",
+          "sub-title": "We’re waiting for more information from the pension provider(s). You don’t need to do anything.",
+          "cta": "See pending pensions"
+        },
+        "unconfirmed": {
+          "title": "Pensions that need action ({unconfirmedPensions})",
+          "sub-title": "You might need to provide more information or contact the provider.",
+          "cta": "See pensions that need action"
+        }
+      },
+      "unsupported": {
+        "title": "Unsupported pensions found",
+        "text": "We found 1 or more pensions that could belong to you that we can’t display yet. We’re still building and improving our service, so check back again soon."
+      },
+      "error": {
+        "title": "Issue retrieving data for {number} pensions",
+        "title-single": "Issue retrieving data for 1 pension",
+        "text": "We found {number} more pensions but cannot show you the details because there was a problem retrieving the data. Please check back later.",
+        "text-single": "We found 1 more pension but cannot show you the details because there was a problem retrieving the data. Please check back later."
+      },
+      "other-pensions": {
+        "title": "Are you expecting to see other pensions?",
+        "text": "We’re still connecting new pension schemes on a regular basis. If you know you have other pensions, [here’s what you can do._target=_self](/en/pensions-not-showing)"
+      }
+    },
+    "no-pensions-found": {
+      "title": "No pensions found",
+      "heading": "What you can do:",
+      "tooltip": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "to-do": {
+        "item-1": "Check back later to see if your pensions are showing.",
+        "item-2": "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to sign in again with GOV.UK One Login to return.",
+        "item-2-logout-link": "Exit the Pensions Dashboard and start again to enter your National Insurance number.",
+        "item-3": "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "item-4": "If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "item-5": "If you still cannot see your pensions, [report a technical problem](/en/support/report-a-technical-problem).",
+        "item-6": "If you had a workplace pension from 1988 or earlier, or if you worked for an employer for less than two years, check if your pension contributions were refunded. [Learn more about refunded pensions.](/en/support/explore-the-pensions-dashboard)"
+      }
+    },
+    "pensions-not-showing": {
+      "title": "Pensions not showing",
+      "intro": "We’re still building and improving our service. We’re connecting new pension schemes on a regular basis.",
+      "heading": "What you can do:",
+      "to-do": {
+        "item-1": "Check back later to see if your pensions are showing.",
+        "item-2": "Let us know your National Insurance number (NINO) if you haven’t already. You’ll have to sign in again with GOV.UK One Login to return.",
+        "item-2-logout-link": "Exit the Pensions Dashboard and start again to enter your National Insurance number.",
+        "item-3": "If your State Pension is not showing and you think you’re entitled to one, [check your details using your State Pension forecast](https://www.gov.uk/check-state-pension).",
+        "item-4": "If you know the name of your employer(s) or pension provider(s), contact them directly.",
+        "item-5": "If you had a workplace pension from 1988 or earlier, or if you worked for an employer for less than two years, check if your pension contributions were refunded. [Learn more about refunded pensions.](/en/support/explore-the-pensions-dashboard)"
+      }
+    }
+  },
+  "components": {
+    "unconfirmed-pensions-callout": {
+      "heading": "Important",
+      "description": "You have {number} pensions that need you to provide more information or contact the pension provider.",
+      "description-single": "You have {number} pension that needs you to provide more information or contact the pension provider."
+    },
+    "pension-card": {
+      "type": {
+        "AVC": "AVC",
+        "DB": "Defined benefit",
+        "DC": "Defined contribution",
+        "HYB": "Hybrid",
+        "CDC": "CDC",
+        "CB": "Cash balance",
+        "VAR": "Combination",
+        "SP": "State Pension",
+        "UNKNOWN": "Pension type unknown"
+      }
+    },
+    "summary-sentence": {
+      "title": "Your estimated income",
+      "state-pension-age": "In **{statePensionYear}**, how much could you get from your pensions that year (before tax)?",
+      "annually": "This adds up to around **{annualTotal}** a year.",
+      "snapshot": "**This is just a snapshot – it doesn't include pensions without an estimated income or that are due to start paying after {statePensionYear}**. As you start or stop taking your pensions, your income may go up or down.",
+      "view-timeline": "View full pensions timeline",
+      "accordion-title": "About these values",
+      "accordion-content": [
+        "This income is based on the pensions we have estimates for so far - it might not include all your pensions. Pension providers usually update these estimates at least once a year, and make calculations based on each pension’s contribution levels and expected retirement date. They’re not guaranteed, and may go down as well as up. See the pension details for more information.",
+        "Most estimated incomes show you how much your pension would be worth in today’s money. All values are shown before tax. Learn more about [tax and pensions](/en/support/understand-your-pensions)."
+      ],
+      "no-state-pension-1": "**You might start taking each of your pensions at different times**. As they start or stop, your income may go up or down.",
+      "no-state-pension-2": "To help you see how much money you could have when you retire, we've put the available estimated incomes into a timeline.",
+      "mccloud-title": "You have two options",
+      "mccloud-accordion-title": "Why do I have two options?",
+      "mccloud-accordion-content": [
+        "You have a choice between legacy (final salary) and alternative (career average) pension benefits, which are calculated in different ways. The income and lump sums will be different for each option.",
+        "You do not have to choose until you start taking your pension."
+      ],
+      "specific-year-accordion-title": "Why have we used a specific year?",
+      "specific-year-accordion-content": "This is the year you will reach **State Pension age** - the age you can claim your State Pension. You might start taking other pensions before or after this."
+    },
+    "pension-detail-income-values": {
+      "more-details-title": "More details",
+      "features-title": "Features"
+    },
+    "pension-detail-next-steps": {
+      "heading": "Understand your next steps",
+      "intro": "Pensions can be complicated, but we’re here to help you understand your options and next steps. \\\nActions you take now might affect how comfortable your retirement is in the future.",
+      "intro-new-tab": "All these links open in a new tab.",
+      "cards": [
+        {
+          "title": "How can I make the most of my pension?",
+          "text": "Get free help with your pension, including ways to boost it and how and when you can take an income.",
+          "link": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/make-the-most-of-your-pension"
+        },
+        {
+          "title": "How much money will I need in retirement?",
+          "text": "Find out how much retirement income you’ll need to cover your essential costs with our Budget planner.",
+          "link": "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"
+        },
+        {
+          "title": "Will I have enough to live comfortably?",
+          "text": "See how your estimated retirement income might change if you saved more with our Pension calculator.",
+          "link": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator"
+        },
+        {
+          "title": "Should I combine my pensions?",
+          "text": "If you have multiple pensions, find out if transferring or combining your pensions is a good idea.",
+          "link": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation"
+        }
+      ]
+    },
+    "income-timeline": {
+      "multiplicity": "This pension has multiple incomes that could pay out at different times. Some may only be paid for a limited time.",
+      "mccloud": "You have a choice between **legacy** (final salary) and **alternative** (career average) pension benefits, which are calculated in different ways.",
+      "no-state-pension": "**You might start taking each of your pensions at different times**. As they start or stop, your income may go up or down.",
+      "option": "option",
+      "legacy": "Legacy",
+      "alternative": "Alternative",
+      "monthlyText": "From {date}, you could get **{income} a month**",
+      "lumpSumText": "plus a one-time lump sum of **{income}**",
+      "increase": "increase of",
+      "decrease": "decrease of"
+    },
+    "timeline-toggle": {
+      "intro": "For one or more of your pensions, you have a choice between **legacy** (final salary) and **alternative** (career average) pension benefits. Toggle between the options to see the different values in your timeline.",
+      "legacy": "Legacy",
+      "alternative": "Alternative",
+      "option": "option",
+      "view-by": "View by",
+      "current": "Currently viewing"
+    },
+    "pension-pot": {
+      "title": "Latest pot value",
+      "text-dc": "in defined contribution pots",
+      "text-avc": "in an AVC",
+      "text-cbs": "in cash balance pots",
+      "text-dc-avc": "in defined contribution and AVC pots",
+      "text-dc-cbs": "in defined contribution and cash balance pots",
+      "text-avc-cbs": "in cash balance and AVC pots",
+      "text-dc-avc-cbs": "in defined contribution, cash balance and AVC pots",
+      "accordion-title": "What does this mean?",
+      "accordion-dc": "This pension includes one or more **defined contribution (DC)** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-avc": "This pension includes one or more **additional voluntary contribution (AVC)** schemes. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-cbs": "This pension includes one or more **cash balance** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-dc-avc": "This pension includes **defined contribution (DC)** and **additional voluntary contribution (AVC)** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-dc-cbs": "This pension includes **defined contribution (DC)** and **cash balance** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-avc-cbs": "This pension includes **cash balance** and **additional voluntary contribution (AVC)** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details.",
+      "accordion-dc-avc-cbs": "This pension includes **defined contribution (DC)**, **cash balance**, and **additional voluntary contribution (AVC)** pots. These have a pot value and separate estimated income, and could have a different payable date. See the income and values for details."
+    }
+  },
+  "timeout": {
+    "keep-me-signed-in": "Keep me signed in",
+    "log-me-out": "Log me out",
+    "return-to-start": "Return to start page",
+    "been-inactive": "You’ve been inactive for a while",
+    "to-return-to-dashboard": "You can return to your Pensions Dashboard using GOV.UK One Login or use our other free tools to make the most of your pension.",
+    "exited-the-dashboard": "You’ve exited the Pensions Dashboard",
+    "make-the-most": {
+      "heading": "Make the most of your pension",
+      "description": "Our guides can help [make the most of your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/make-the-most-of-your-pension). Find ways to boost your retirement savings, learn if a pension transfer is a good idea and understand how and when you can start taking your pension.",
+      "tools-intro": "You can also use our free tools:",
+      "tools": [
+        "[Budget Planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) to work out all your essential costs in retirement.",
+        "[Pension Calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) to see how your estimated retirement income would change if you save more."
+      ]
+    },
+    "sign-in-again": "You’ll need to sign in again using One Login to view your pensions.",
+    "session-expiry": "Your Pensions Dashboard session automatically expires after **{timeoutMinutes} minutes**. This is to protect your personal information.",
+    "inactivity-expiry": "Your Pensions Dashboard session automatically expires after **{timeoutMinutes} minutes** of inactivity. This is to protect your personal information.",
+    "protect-your-information": "This is to protect your personal information.",
+    "session-expired": "Your session has expired",
+    "session-will-timeout": "Your Pensions Dashboard session will time out after **{totalTimeout} minutes**.",
+    "modal-session-timeout": "Your Pensions Dashboard session will time out in ",
+    "minutes": "minutes",
+    "minute": "minute",
+    "seconds": "seconds",
+    "second": "second",
+    "what-did-you-think": "What did you think of this service?",
+    "takes-2-mins": "(Takes 2 minutes)"
+  },
+  "tooltips": {
+    "pension-origin": "`tooltip:: The **pension origin** is where this pension scheme comes from, such as a current or former job, a transfer, or an annuity you’ve already bought.::center`",
+    "retirement-date": "`tooltip:: The **pension retirement date** is the date your provider expects you to start taking money from this pension scheme. You don’t have to retire or take your pension on this date - you can usually change it by contacting them.::center`",
+    "costs-and-charges": "`tooltip:: **Costs and charges** are paid to your pension provider to cover the costs of managing your money. They’re usually paid automatically out of your pension scheme.::center`",
+    "illustration-date": "`tooltip:: These values are based on the information your provider had on this specific date. Because information is updated at different times, they might be different from what you see on your annual benefit statements or online account.::`",
+    "pot-value": "`tooltip:: The **pot value** is how much money has built up in this pension scheme. It’s a combination of your contributions, your employer’s contributions (if it’s a workplace pension), and any investment growth.::`",
+    "lump-sum": "`tooltip:: A **lump sum** is a one-time sum of money paid in addition to your pension income, usually when you retire. It’s based on your salary and number of years you’ve been in the pension scheme.::`",
+    "state-pension-age": "`tooltip:: The **State Pension age** is the earliest age you can claim State Pension. You don’t have to start taking your State Pension at this age - you can also defer it.::center`",
+    "status-active": "`tooltip:: If this pension is **active**, you and/or your employer are making contributions (paying into it).::`",
+    "status-inactive": "`tooltip:: If this pension is **inactive**, it’s no longer being paid into but your money is still being managed by the pension provider.::`",
+    "linked-pension": "`tooltip:: A pension is **linked** when the pension's benefits come from more than one pension provider or scheme.::`",
+    "type-AVC": "`tooltip::An **AVC (additional voluntary contributions) scheme** is a separate pension pot you pay into on top of your regular workplace pension contributions. AVCs can be managed by the same pension provider as your workplace pension or separately.::`",
+    "type-DB": "`tooltip::A **defined benefit** pension is a workplace pension where your income is based on your salary and years you've been a scheme member. [Learn more](/en/support/understand-your-pensions)::`",
+    "type-DC": "`tooltip::A **defined contribution** pension is a pot of money that you (and sometimes your employer) pay into for your retirement. It’s an investment, so your income depends on the investment’s performance and how you choose to take your pension at retirement. [Learn more](/en/support/understand-your-pensions)::`",
+    "type-HYB": "`tooltip::A **hybrid pension** is a scheme with both defined benefit and defined contribution features. Depending on the scheme, you could either get a combination of these types of incomes or the higher of the two.::`",
+    "type-CDC": "`tooltip::A **collective defined contribution (CDC)** scheme pays you a regular income for life when you retire. The income can rise or fall before and after you start taking it. This depends on many factors, like how well the scheme’s investments have performed. Your money is invested together with the contributions from your employer and other scheme members, so the risk is shared and the pension might grow at a higher rate. [Learn more](/en/support/understand-your-pensions)::`",
+    "type-CB": "`tooltip::A **cash balance** scheme is a workplace pension where the employer guarantees either a lump sum at retirement or that contributions grow at a guaranteed rate for each year you work. They also take responsibility for the investment risk, which means you’ll know the value of your pension pot when you decide to access it. [Learn more](/en/support/understand-your-pensions)::`",
+    "type-CBLUMP": "`tooltip::This **cash balance lump sum** is a guaranteed amount of money when you retire. You can choose how to take it, for example by buying an annuity (a guaranteed regular income) or by choosing more flexible income options.::`",
+    "type-VAR": "`tooltip::This pension includes a **combination** of benefit types. These can be calculated in different ways, have separate incomes and be paid out at different times.::`",
+    "national-insurance": "`tooltip:: **National Insurance (NI)** is a type of tax you pay to qualify for State Pension and some types of benefits. You usually need 35 qualifying years of NI contributions to get the full State Pension and 10 qualifying years to get anything. [Learn more](/en/support/understand-your-pensions)::`",
+    "sr-text": {
+      "national-insurance": "National Insurance",
+      "state-pension-age": "State Pension Age",
+      "pension-origin": "pension origin",
+      "retirement-date": "retirement date",
+      "costs-and-charges": "costs and charges",
+      "calculation-date": "calculation date",
+      "pot-value": "pot value",
+      "lump-sum": "lump sum",
+      "cash-balance-lump-sums": "cash balance lump sums",
+      "status-active": "active pension status",
+      "status-inactive": "inactive pension status",
+      "linked-pensions": "linked pensions",
+      "type-AVC": "additional voluntary contribution schemes",
+      "type-DB": "defined benefit schemes",
+      "type-DC": "defined contribution schemes",
+      "type-HYB": "hybrid schemes",
+      "type-CDC": "collective defined contribution schemes",
+      "type-CB": "cash balance schemes",
+      "type-VAR": "combination schemes"
+    }
+  }
+}

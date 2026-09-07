@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`NoResultsMessage renders the filter-based message with reset link when hasActiveFilters is true 1`] = `
+<output
+  class="flex items-start gap-3 lg:gap-4"
+  data-testid="no-results-message"
+>
+  <div
+    class="shrink-0 mt-0.5 lg:mt-0"
+  >
+    <svgr-mock
+      class="w-8 h-10 lg:w-10 lg:h-10"
+    />
+  </div>
+  <p
+    class="text-lg font-bold leading-relaxed text-gray-900 lg:pt-1"
+  >
+    There are no results that match the filters you selected. Try adjusting these to see more results or 
+    <a
+      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+      href="/search"
+    >
+      reset all.
+    </a>
+  </p>
+</output>
+`;
+
+exports[`NoResultsMessage renders the location-based message when no active filters 1`] = `
+<output
+  class="flex items-start gap-3 lg:gap-4"
+  data-testid="no-results-message"
+>
+  <div
+    class="shrink-0 mt-0.5 lg:mt-0"
+  >
+    <svgr-mock
+      class="w-8 h-10 lg:w-10 lg:h-10"
+    />
+  </div>
+  <p
+    class="text-lg font-bold leading-relaxed text-gray-900 lg:pt-1"
+  >
+    There are no results that match your location. Use the filters on the left to adjust your search, eg by changing the distance to 10 miles.
+  </p>
+</output>
+`;

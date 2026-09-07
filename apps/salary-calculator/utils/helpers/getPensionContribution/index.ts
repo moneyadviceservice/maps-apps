@@ -1,0 +1,1 @@
+export { getPensionContribution } from './getPensionContribution';

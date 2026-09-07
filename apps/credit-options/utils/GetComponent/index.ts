@@ -1,0 +1,1 @@
+export { getComponent } from './getComponent';

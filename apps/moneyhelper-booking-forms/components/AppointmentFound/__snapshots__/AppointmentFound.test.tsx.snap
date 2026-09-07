@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AppointmentFound Component renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-6 md:gap-8"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+      data-testid="information-callout"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-bold mb-4 text-white"
+        data-testid="appointment-found-callout-title"
+      >
+        components.appointment-found.callout.title.mock-flow
+      </h1>
+      <p
+        class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+        data-testid="appointment-found-callout-content"
+      >
+        components.appointment-found.callout.content
+      </p>
+      <div>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              components.appointment-found.callout.details.date.label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              <p
+                class="break-words mb-0 text-white"
+                data-testid="appointment-found-callout-row-date"
+              >
+                components.appointment-found.callout.details.date.value
+              </p>
+            </dd>
+          </div>
+        </dl>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              components.appointment-found.callout.details.time.label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              <p
+                class="break-words mb-0 text-white"
+                data-testid="appointment-found-callout-row-time"
+              >
+                components.appointment-found.callout.details.time.value
+              </p>
+            </dd>
+          </div>
+        </dl>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              common.appointment-details.format-label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              common.appointment-details.format-value
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-4xl md:text-6xl text-gray-800 font-bold"
+        data-testid="StepName.appointment-found-form--title"
+      >
+        components.appointment-found.title
+      </h2>
+      <form
+        action="/api/form-handler"
+        aria-label="form"
+        class="pt-6 md:pt-8 lg:max-w-3xl"
+        method="POST"
+        novalidate=""
+      >
+        <input
+          name="locale"
+          type="hidden"
+        />
+        <input
+          name="currentStep"
+          type="hidden"
+          value="step-0"
+        />
+        <div
+          class="pb-6 md:pb-8"
+        >
+          <div
+            class="text-base"
+            data-testid="question-radio"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="question-radio-legend"
+            >
+              components.step-0.title
+            </legend>
+            <div
+              class="flex flex-col gap-6"
+            >
+              <div
+                class=""
+              >
+                <div
+                  class="relative text-base"
+                  data-testid="radio-button"
+                >
+                  <div
+                    class="flex flex-wrap items-center"
+                  >
+                    <input
+                      class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                      data-testid="radio-button-input"
+                      id="appointmentAction-0"
+                      name="appointmentAction"
+                      required=""
+                      type="radio"
+                      value="mock-value"
+                    />
+                    <label
+                      class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                      data-testid="radio-button-label"
+                      for="appointmentAction-0"
+                    >
+                      mock-text
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+          data-testid="form-button"
+          type="submit"
+        >
+          <span />
+          common.form.button.continue-text
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentFound Component renders error state correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-6 md:gap-8"
+  >
+    <div
+      class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+      data-testid="information-callout"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-bold mb-4 text-white"
+        data-testid="appointment-found-callout-title"
+      >
+        components.appointment-found.callout.title.mock-flow
+      </h1>
+      <p
+        class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+        data-testid="appointment-found-callout-content"
+      >
+        components.appointment-found.callout.content
+      </p>
+      <div>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              components.appointment-found.callout.details.date.label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              <p
+                class="break-words mb-0 text-white"
+                data-testid="appointment-found-callout-row-date"
+              >
+                components.appointment-found.callout.details.date.value
+              </p>
+            </dd>
+          </div>
+        </dl>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              components.appointment-found.callout.details.time.label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              <p
+                class="break-words mb-0 text-white"
+                data-testid="appointment-found-callout-row-time"
+              >
+                components.appointment-found.callout.details.time.value
+              </p>
+            </dd>
+          </div>
+        </dl>
+        <dl
+          class="border-b last:border-b-0 py-4 text-white"
+        >
+          <div
+            class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+          >
+            <dt
+              class="md:col-span-5"
+            >
+              common.appointment-details.format-label
+            </dt>
+            <dd
+              class="md:col-span-7"
+            >
+              common.appointment-details.format-value
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-4xl md:text-6xl text-gray-800 font-bold"
+        data-testid="StepName.appointment-found-form--title"
+      >
+        components.appointment-found.title
+      </h2>
+      <form
+        action="/api/form-handler"
+        aria-label="form"
+        class="pt-6 md:pt-8 lg:max-w-3xl"
+        method="POST"
+        novalidate=""
+      >
+        <input
+          name="locale"
+          type="hidden"
+        />
+        <input
+          name="currentStep"
+          type="hidden"
+          value="step-0"
+        />
+        <div
+          class="pb-6 md:pb-8"
+        >
+          <div
+            class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+            data-testid="errors"
+          >
+            <div
+              aria-describedby="question-radio-error"
+              class="text-base"
+              data-testid="question-radio"
+            >
+              <legend
+                class="text-2xl text-gray-800 sr-only"
+                data-testid="question-radio-legend"
+              >
+                components.step-0.title
+              </legend>
+              <p
+                class="break-words mb-0 text-red-700"
+                data-testid="question-radio-error"
+                id="question-radio-error"
+              >
+                components.appointment-found.form.radio-button.error
+              </p>
+              <div
+                class="flex flex-col gap-6 mt-4"
+              >
+                <div
+                  class=""
+                >
+                  <div
+                    class="relative text-base"
+                    data-testid="radio-button"
+                  >
+                    <div
+                      class="flex flex-wrap items-center"
+                    >
+                      <input
+                        class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                        data-testid="radio-button-input"
+                        id="appointmentAction-0"
+                        name="appointmentAction"
+                        required=""
+                        type="radio"
+                        value="mock-value"
+                      />
+                      <label
+                        class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                        data-testid="radio-button-label"
+                        for="appointmentAction-0"
+                      >
+                        mock-text
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+          data-testid="form-button"
+          type="submit"
+        >
+          <span />
+          common.form.button.continue-text
+          <span />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

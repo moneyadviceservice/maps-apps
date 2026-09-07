@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AppointmentSummaryCallout Component renders the callout for the appointment-found step 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold mb-4 text-white"
+      data-testid="appointment-found-callout-title"
+    >
+      Appointment title
+    </h1>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="appointment-found-callout-content"
+    >
+      Your reference number is ABC123.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-date"
+            >
+              Thursday, 23 July 2026
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-time"
+            >
+              10:00
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            Online
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentSummaryCallout Component renders the callout for the confirmation step 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold mb-4 text-white"
+      data-testid="confirmation-callout-title"
+    >
+      Appointment title
+    </h1>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="confirmation-callout-content"
+    >
+      Your reference number is ABC123.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="confirmation-callout-row-date"
+            >
+              Thursday, 23 July 2026
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="confirmation-callout-row-time"
+            >
+              10:00
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            Online
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentSummaryCallout Component uses the access request specific appointment detail keys 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold mb-4 text-white"
+      data-testid="confirmation-callout-title"
+    >
+      Appointment title
+    </h1>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="confirmation-callout-content"
+    >
+      Your reference number is ABC123.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="confirmation-callout-row-date"
+            >
+              Thursday, 23 July 2026
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="confirmation-callout-row-time"
+            >
+              10:00
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Duration
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            common.appointment-details.foreign-language-interpreter.duration-value
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            common.appointment-details.foreign-language-interpreter.format-value
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CheckboxGroup matches snapshot 1`] = `
+<div>
+  <fieldset
+    class="mt-3"
+  >
+    <legend
+      class="sr-only"
+    >
+      Sector
+    </legend>
+    <div
+      class="grid space-y-4 sm:grid-cols-2 lg:block"
+    >
+      <div
+        class="relative flex items-center"
+      >
+        <label
+          class="relative flex items-center cursor-pointer w-full"
+          for="education"
+        >
+          <input
+            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10 m-0"
+            id="education"
+            name="education"
+            type="checkbox"
+          />
+          <span
+            class="w-8 h-8 min-w-8 max-w-8 min-h-8 max-h-8 flex items-center justify-center rounded-sm border-1 border-gray-650 peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-magenta-800"
+          >
+            <svg
+              class="w-8 h-8 text-white hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Education
+          </span>
+        </label>
+      </div>
+      <div
+        class="relative flex items-center"
+      >
+        <label
+          class="relative flex items-center cursor-pointer w-full"
+          for="health"
+        >
+          <input
+            checked=""
+            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10 m-0"
+            id="health"
+            name="health"
+            type="checkbox"
+          />
+          <span
+            class="w-8 h-8 min-w-8 max-w-8 min-h-8 max-h-8 flex items-center justify-center rounded-sm border-1 border-gray-650 peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-magenta-800 bg-magenta-800"
+          >
+            <svg
+              class="w-8 h-8 text-white block"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Health
+          </span>
+        </label>
+      </div>
+      <div
+        class="relative flex items-center"
+      >
+        <label
+          class="relative flex items-center cursor-pointer w-full"
+          for="arts"
+        >
+          <input
+            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10 m-0"
+            id="arts"
+            name="arts"
+            type="checkbox"
+          />
+          <span
+            class="w-8 h-8 min-w-8 max-w-8 min-h-8 max-h-8 flex items-center justify-center rounded-sm border-1 border-gray-650 peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-magenta-800"
+          >
+            <svg
+              class="w-8 h-8 text-white hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13l4 4L19 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span
+            class="ml-3"
+          >
+            Arts
+          </span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

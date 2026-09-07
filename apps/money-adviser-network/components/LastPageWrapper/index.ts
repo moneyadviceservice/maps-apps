@@ -1,0 +1,1 @@
+export { LastPageWrapper } from './LastPageWrapper';

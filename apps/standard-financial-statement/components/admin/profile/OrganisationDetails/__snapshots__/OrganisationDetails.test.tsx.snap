@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`OrganisationDetails OrganisationDetails component in edit mode renders with default values 1`] = `
+<div>
+  <section
+    class="container-auto overflow-hidden border rounded-md mb-8 p-0"
+  >
+    <h2
+      class="text-gray-800 w-full px-6 py-3 bg-slate-200 border-b border-slate-300 font-normal text-md md:text-md"
+    >
+      Organisation details
+    </h2>
+    <div
+      class="p-6 overflow-scroll"
+    >
+      <dl
+        class="w-full grid grid-cols-[repeat(4,minmax(min-content,1fr))]"
+      >
+        <dt
+          class="t-title font-normal leading-[23px] col-start-1 row-start-1 min-w-0 border-slate-300 border-r-2"
+          id="organisation-name-label"
+        >
+          Organisation name
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 pr-6 col-start-1 row-start-2 min-w-0 border-slate-300 border-r-2"
+          data-testid="org-name"
+        >
+          <input
+            aria-labelledby="organisation-name-label"
+            class="w-full border border-gray-650 rounded px-2 py-1 h-[49px]"
+            name="name"
+            value="Open Minds Org"
+          />
+        </dd>
+        <dt
+          class="t-title font-normal leading-[23px] px-6 col-start-2 row-start-1 min-w-0 border-slate-300 border-r-2"
+          id="organisation-type-label"
+        >
+          Organisation type
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 px-6 col-start-2 row-start-2 min-w-0 border-slate-300 border-r-2"
+          data-testid="org-type"
+        >
+          <div
+            data-testid="select-org-type"
+          />
+        </dd>
+        <dt
+          class="t-title font-normal leading-[23px] px-6 col-start-3 row-start-1 min-w-0"
+          id="organisation-website-label"
+        >
+          Website Address
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 px-6 col-start-3 row-start-2 min-w-0"
+          data-testid="org-website"
+        >
+          <input
+            aria-labelledby="organisation-website-label"
+            class="w-full border border-gray-650 rounded px-2 py-1 h-[49px]"
+            name="website"
+            value="https://example.com"
+          />
+        </dd>
+      </dl>
+      <div
+        class="mt-6"
+      >
+        <label
+          class="block pb-2"
+          data-testid="street-address"
+          for="organisation-address-input"
+        >
+          Organisation street address
+        </label>
+        <input
+          class="w-full border border-gray-650 rounded px-2 py-1 h-[49px]"
+          data-testid="street-address-input"
+          id="organisation-address-input"
+          value="42 Peace Avenue, London, W1A 1AA"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`OrganisationDetails OrganisationDetails component in read mode renders organisation name, type, website, and address 1`] = `
+<div>
+  <section
+    class="container-auto overflow-hidden border rounded-md mb-8 p-0"
+  >
+    <h2
+      class="text-gray-800 w-full px-6 py-3 bg-slate-200 border-b border-slate-300 font-normal text-md md:text-md"
+    >
+      Organisation details
+    </h2>
+    <div
+      class="p-6 overflow-scroll"
+    >
+      <dl
+        class="w-full grid grid-cols-[repeat(4,minmax(min-content,1fr))]"
+      >
+        <dt
+          class="t-title font-normal leading-[23px] col-start-1 row-start-1 min-w-0 border-slate-300 border-r-2"
+          id="organisation-name-label"
+        >
+          Organisation name
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 pr-6 col-start-1 row-start-2 min-w-0 border-slate-300 border-r-2 font-semibold"
+          data-testid="org-name"
+        >
+          Open Minds Org
+        </dd>
+        <dt
+          class="t-title font-normal leading-[23px] px-6 col-start-2 row-start-1 min-w-0 border-slate-300 border-r-2"
+          id="organisation-type-label"
+        >
+          Organisation type
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 px-6 col-start-2 row-start-2 min-w-0 border-slate-300 border-r-2 font-semibold"
+          data-testid="org-type"
+        >
+          Charity
+        </dd>
+        <dt
+          class="t-title font-normal leading-[23px] px-6 col-start-3 row-start-1 min-w-0 border-slate-300 border-r-2"
+          id="organisation-website-label"
+        >
+          Organisation website
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 px-6 col-start-3 row-start-2 min-w-0 font-semibold border-slate-300 border-r-2"
+          data-testid="org-website"
+        >
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="https://example.com"
+          >
+            https://example.com
+          </a>
+        </dd>
+        <dt
+          class="t-title font-normal leading-[23px] px-6 col-start-4 row-start-1 min-w-0"
+        >
+          Organisation address
+        </dt>
+        <dd
+          class="t-value text-[19px] leading-[25px] pt-2 px-6 col-start-4 row-start-2  font-semibold"
+          data-testid="org-address"
+        >
+          42 Peace Avenue, London, W1A 1AA
+        </dd>
+      </dl>
+    </div>
+  </section>
+</div>
+`;

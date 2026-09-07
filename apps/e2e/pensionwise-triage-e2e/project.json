@@ -1,0 +1,19 @@
+{
+  "name": "pensionwise-triage-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/pensionwise-triage-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["pensionwise-triage"],
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensionwise-triage-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

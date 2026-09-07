@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "types": ["playwright", "node"],
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@lib/*": ["src/lib/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js"]
+}

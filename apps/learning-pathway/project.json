@@ -1,0 +1,83 @@
+{
+  "name": "learning-pathway",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/learning-pathway",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/learning-pathway"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/learning-pathway",
+          "assets": [
+            {
+              "glob": "**/*",
+              "input": "libs/shared/ui/src/public/footer",
+              "output": "./footer"
+            }
+          ]
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "learning-pathway:build",
+        "dev": true,
+        "port": 4314
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "learning-pathway:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "learning-pathway:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "learning-pathway:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/learning-pathway/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/learning-pathway/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/learning-pathway",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

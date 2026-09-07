@@ -1,0 +1,12 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.153582000000002">
+<testsuite name="tests/homepage.spec.ts" timestamp="2026-08-24T14:21:10.742Z" hostname="default" tests="1" failures="0" skipped="0" time="1.968" errors="0">
+<testcase name="Home Page › Content" classname="tests/homepage.spec.ts" time="1.968">
+<system-out>
+<![CDATA[Cookie banner not found, continuing...
+
+[[ATTACHMENT|../../../dist/.playwright/apps/e2e/pension-calculator-e2e/test-output/tests-homepage-Home-Page-Content-default/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

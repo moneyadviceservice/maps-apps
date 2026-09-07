@@ -1,0 +1,48 @@
+{
+  "core": {
+    "heading": "Savings calculator",
+    "intro": "Are you saving for a future bill? A new TV or car? Or just to have a bit in the bank? The calculator can help you understand how long it will take to save a specific amount, or how much you need to save to have enough by a particular date.",
+    "howMuchIntro": "Know how much you want to save, but not sure how long it will take?",
+    "howLongIntro": "Know when you need your savings and want to see how much you need to save regularly?",
+    "lowInterestMsg": "The interest rate you added looks lower than you could be getting. Shop around for the best savings account for you. (opens in a new window) ",
+    "highInterestMsg": "The interest rate you added looks higher than we'd expect, did you mean to enter %RATE_OF_INTEREST%%? "
+  },
+
+  "howMuch": {
+    "heading": "Savings calculator",
+    "title": "How much do I need to save each week/month to reach my goal?",
+    "savingsGoalLabel": "What is your savings goal?",
+    "savingDate": "When do you need your savings by?",
+    "month": "Month",
+    "year": "Year",
+    "savedAmount": "How much have you saved already? (optional)",
+    "grossInterest": "Gross annual interest rate on your savings (optional)",
+    "note": "This tool gives you an indication of how long it will take to reach your goal, or how much you need to regularly save to have your savings by a specific date. Results are an estimate and should only be used as such.",
+    "nextSteps": [
+      "Use our Budget planner (opens in a new window)  to work out how much you can afford to save.",
+      "Compare the different types of saving and investment options with our Savings guides (opens in a new window) .",
+      "Learn how to set a savings goal (opens in a new window) ."
+    ]
+  },
+
+  "howLong": {
+    "heading": "Savings calculator",
+    "title": "How long will it take to reach my goal amount?",
+    "savingsGoalLabel": "What is your savings goal?",
+    "selectDropdown": "How much can you save?",
+    "savedAmount": "How much have you saved already? (optional)",
+    "grossInterest": "Gross annual interest rate on your savings (optional)",
+    "note": "This tool gives you an indication of how long it will take to reach your goal, or how much you need to regularly save to have your savings by a specific date. Results are an estimate and should only be used as such.",
+    "nextSteps": [
+      "Use our Budget planner (opens in a new window)  to work out how much you can afford to save.",
+      "Compare the different types of saving and investment options with our Savings guides (opens in a new window) .",
+      "Learn how to set a savings goal (opens in a new window) ."
+    ]
+  },
+  "validationMessages": {
+    "savingsGoal": "Your savings goal can’t be blank",
+    "pastDate": "The date you need your savings by cannot be in the past",
+    "currentDate": "The date you need your savings by cannot be in the current month",
+    "amountToSave": "The amount you save can’t be blank"
+  }
+}

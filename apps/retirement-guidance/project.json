@@ -1,0 +1,83 @@
+{
+  "name": "retirement-guidance",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/retirement-guidance",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/retirement-guidance",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/public/footer",
+            "output": "./footer"
+          }
+        ]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/retirement-guidance"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "retirement-guidance:build",
+        "dev": true,
+        "port": 4302
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "retirement-guidance:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "retirement-guidance:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "retirement-guidance:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/retirement-guidance/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/retirement-guidance/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/retirement-guidance",
+        "forwardAllArgs": false
+      }
+    }
+  }
+}

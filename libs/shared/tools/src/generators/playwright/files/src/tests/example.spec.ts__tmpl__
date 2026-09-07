@@ -1,0 +1,11 @@
+import { expect, test } from 'src/lib/test.lib';
+
+test.describe('feature name', () => {
+  /**
+   * @tests 12345 - Each test case that has been automated should be documented above it's test case.
+   */
+  test('should be able to do a thing', async ({ examplePage }) => {
+    await examplePage.goto();
+    expect(1).not.toBe(2);
+  });
+});

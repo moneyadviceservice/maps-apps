@@ -1,0 +1,65 @@
+import { Page } from 'src/lib/test.lib';
+
+interface LoginOptions {
+  rememberMe: boolean;
+}
+
+export class ExamplePage {
+  constructor(private readonly page: Page) {}
+
+  async goto() {
+    await this.page.goto('/example-page');
+  }
+
+  /**
+   * Use getters for generic elements.
+   */
+  get loginButton() {
+    return this.page.locator('#button');
+  }
+
+  /**
+   * Name elements with a similar pattern, ending with its element type.
+   * i.e. callToActionButton, nameField, informationTable
+   */
+  get usernameField() {
+    return this.page.locator('#username');
+  }
+
+  get passwordField() {
+    return this.page.locator('#password');
+  }
+
+  get rememberMeCheckbox() {
+    return this.page.locator('#rememberMe');
+  }
+
+  /**
+   * When asserting something on the page, DO NOT CREATE examplePage.assertThingIsOk() methods.
+   * Assertions should only happen in the test function, not in the POM.
+   *
+   * Export the data from the POM and assert it on the test.
+   */
+  get pageInformation() {
+    return {
+      title: this.page.locator('#title').innerText(),
+      description: this.page.locator('#description').innerText(),
+    };
+  }
+
+  /**
+   * Use public methods for user driven actions, consider seperation of concerns.
+   * Don't do too much in one method, break it down or make it parameterised.
+   */
+  async login(username: string, password: string, options?: LoginOptions) {
+    const { rememberMe = true } = options ?? {}; // Use this to set default parameter values.
+    await this.usernameField.fill(username);
+    await this.passwordField.fill(password);
+
+    if (rememberMe) {
+      await this.rememberMeCheckbox.click();
+    }
+
+    await this.loginButton.click();
+  }
+}

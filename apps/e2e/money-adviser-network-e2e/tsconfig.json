@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["playwright", "node"],
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@pages/*": ["src/pages/*"],
+      "@utils/*": ["src/utils/*"],
+      "@data/*": ["src/data/*"],
+      "@maps-react/playwright/*": [
+        "../../../libs/shared/utils/src/e2e/playwright/*"
+      ]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js"]
+}

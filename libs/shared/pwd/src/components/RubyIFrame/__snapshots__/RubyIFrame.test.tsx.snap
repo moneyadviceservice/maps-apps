@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`RubyIFrame component renders correctly 1`] = `
+<iframe
+  class="w-full"
+  data-testid="test-component"
+  height="0"
+  id="leave-pot-untouched"
+  src="https://embedded-journeys.moneyhelper.org.uk/en/leave-pot-untouched"
+  title="leave-pot-untouched"
+/>
+`;

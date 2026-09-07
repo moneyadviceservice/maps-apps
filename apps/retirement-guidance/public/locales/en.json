@@ -1,0 +1,771 @@
+{
+  "backButton": "Back",
+  "continueButton": "Continue",
+  "seeYourResultsButton": "See your results",
+  "saveAndComeBackButton": "Save and come back later",
+  "heading": "Get retirement guidance",
+  "errorSummaryHeading": "There is a problem",
+  "errorSummaryDescription": "Please select an answer",
+  "landingPage": {
+    "heading": "Get retirement guidance",
+    "paragraph": "Create a retirement action plan with our free tool. We’ll match you to guidance to understand your options and explain the steps you can take to make the most of your pension",
+    "whatYouGetHeading": "What you’ll get",
+    "whatYouGetDescription": "This tool will give you a retirement action plan with:",
+    "whatYouGetList": [
+      "key information to help you understand your options",
+      "suggested steps to make the most of your pension",
+      "useful tools to estimate how much retirement income you might need and if you’re on track to meet your goals",
+      "where you can get help and support with your decisions"
+    ],
+    "whatYouGetAdditionalInfo": "You will not see all your pensions or your exact pension income. You can usually find this information by logging in to your pension provider’s online account or contacting them.",
+    "howItWorksHeading": "How it works",
+    "howItWorksDescription": "We'll ask you for details about you and your future plans, including:",
+    "howItWorksList": [
+      "the types of pension you have",
+      "how far away from retirement you are",
+      "if you’re planning on retiring outside the UK."
+    ],
+    "startButton": "  Start the Get retirement guidance tool",
+    "completionTime": "5 minutes average completion time"
+  },
+  "q1": {
+    "question": "What is the main thing you’d like help with?",
+    "description": "This helps us to prioritise the guidance you’re matched to. Select one option.",
+    "options": {
+      "option1": "How my pension works",
+      "option2": "How much money I need for retirement",
+      "option3": "How to grow my pension",
+      "option4": "How to transfer or combine my pension",
+      "option5": "When and how I can take my pension",
+      "option5Separator": "Or",
+      "option6": "Let us guide you"
+    },
+    "errorSummaryDescription": "Select one option to continue."
+  },
+  "q2": {
+    "question": "Do you plan to retire in the next 10 years?",
+    "options": {
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "I’ve already retired"
+    },
+    "errorSummaryDescription": "Select 'Yes', 'No', or 'I'm already retired' to continue."
+  },
+  "q3": {
+    "question": "Do you have an employer?",
+    "description": "This includes any paid job you currently have. It can be full or part time.",
+    "options": {
+      "option1": "Yes",
+      "option2": "No, I’m self-employed",
+      "option2HintText": "This includes sole traders and directors of limited companies",
+      "option3": "No, I’m not employed"
+    },
+    "errorSummaryDescription": "Select 'Yes', 'No, I'm self-employed', or 'No, I'm not employed' to continue."
+  },
+  "q4": {
+    "question": "Do you currently pay into any pension scheme?",
+    "description": "This includes any pension you pay into, such as a personal or workplace pension. It could be a regular monthly contribution or as and when you can.",
+    "options": {
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Not sure"
+    },
+    "errorSummaryDescription": "Select 'Yes', 'No', or 'Not sure' to continue."
+  },
+  "q5": {
+    "question": "Which types of pension do you have?",
+    "description": "How your pension works, and your options, depends on the types you have.",
+    "options": {
+      "option1": "Defined contribution ",
+      "option1HintText": "A pot of money that you (and sometimes your employer) pay into. Most recent pension schemes are this type.",
+      "option2": "Defined benefit",
+      "option2HintText": "Often called a final salary or career average scheme. A workplace pension where the income is based on your salary and years you’ve been a scheme member.",
+      "option3": "State Pension",
+      "option3HintText": "This is money you can claim from the government when you reach your State Pension age. The amount you’ll get depends on your National Insurance record.",
+      "option4": "Other",
+      "option4HintText": "For example, collective defined contribution, hybrid and cash balance schemes.",
+      "option5": "Not sure",
+      "option5HintText": "If you’re not sure, we’ll show you guidance for all types and explain how to find out."
+    },
+    "errorSummaryDescription": "Select at least one option to continue."
+  },
+  "q6": {
+    "question": "Are you considering bringing multiple pensions together?",
+    "description": "If you have more than one pension scheme, one option is to transfer them to one provider. This is called consolidation and it has pros and cons.",
+    "options": {
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Not sure"
+    },
+    "errorSummaryDescription": "Select 'Yes', 'No', or 'Not sure' to continue."
+  },
+  "q7": {
+    "question": "Do you plan to retire outside the UK?",
+    "description": "You might be affected by different tax and State Pension rules if you plan to retire abroad.",
+    "options": {
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Not sure"
+    },
+    "errorSummaryDescription": "Select 'Yes', 'No', or 'Not sure' to continue."
+  },
+  "q8": {
+    "question": "Are you going through a divorce or ending a civil partnership?",
+    "options": {
+      "option1": "Yes",
+      "option2": "No"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why are we asking this?",
+      "infoText": "You have different options to split your pension if you’re separating from your partner."
+    },
+    "errorSummaryDescription": "Select 'Yes' or 'No' to continue."
+  },
+  "q9": {
+    "question": "What housing costs do you expect to have in retirement?",
+    "description": "This is the cost to live in your home after you retire, based on your current plans.",
+    "options": {
+      "option1": "Rent – private landlord",
+      "option2": "Rent – social housing",
+      "option3": "Mortgage",
+      "option4": "None"
+    },
+    "errorSummaryDescription": "Select one option to continue."
+  },
+  "q10": {
+    "question": "Are you struggling to pay your bills or debts?",
+    "description": "This might include bills for rent, gas, electricity or Council Tax and repayments for a loan, credit card or mortgage.",
+    "options": {
+      "option1": "Yes",
+      "option2": "No"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why are we asking this?",
+      "infoText": "If you’re struggling to cover your costs or are already behind, free debt advice could help you get back on track."
+    },
+    "errorSummaryDescription": "Select 'Yes' or 'No' to continue."
+  },
+  "q11": {
+    "question": "Have you had debt advice?",
+    "options": {
+      "option1": "Yes",
+      "option2": "No"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Why are we asking this?",
+      "infoText": "If you're not already getting debt advice, we can show you how to find free and confidential debt advisers near you."
+    },
+    "errorSummaryDescription": "Select 'Yes' or 'No' to continue."
+  },
+  "checkAnswers": {
+    "heading": "Check your answers",
+    "description": "This is what you've told us. You can change your answers if you need to."
+  },
+  "results": {
+    "heading": "Your tailored pensions and retirement guidance ",
+    "description": "Based on your answers, here's your tailored pensions and retirement guidance. We've listed the actions that could make the most impact first, but you can do them in any order.",
+    "changeAnswersButton": "Change answers",
+    "copyResultsLink": {
+      "default": "Copy link to your results",
+      "confirmation": "Link copied!"
+    },
+    "otherTools": {
+      "heading": "Work out your retirement income and costs",
+      "tool1": {
+        "name": "Check how much is being paid into your workplace pension",
+        "description": "Find out how much you and your employer are paying in each month with our free workplace pension contribution calculator."
+      },
+      "tool2": {
+        "name": "Calculate your retirement costs",
+        "description": "Find out if your estimated retirement income will cover all your essential costs with our free retirement budget planner."
+      },
+      "tool3": {
+        "name": "See your total retirement income",
+        "description": "Estimate your total retirement income with our free pension calculator, including how it would change if you saved more."
+      }
+    },
+    "staticGuidance": {
+      "heading": "What to focus on next",
+      "statePensionEligibilitySGR7": {
+        "title": "Check you're on track to get the full State Pension",
+        "paragraph1": "The amount of [State Pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/state-pension-an-overview) you'll get depends on how many years of National Insurance contributions or credits you have when you reach your State Pension age.",
+        "paragraph2": "You can [check your State Pension forecast](https://www.gov.uk/check-state-pension) on GOV.UK to see what you're on track to get.",
+        "paragraph3": "Provided you will not reach your State Pension age within 30 days, you can also:",
+        "list1": "[call the Future Pension Centre helpline](https://www.gov.uk/future-pension-centre)",
+        "list2": "[apply by post](https://www.gov.uk/government/publications/application-for-a-state-pension-statement).",
+        "paragraph4": "If your forecast shows you might not qualify for the full amount, there are ways to increase your State Pension – including claiming free credits or paying to fill gaps in your record.",
+        "paragraph5": "This can mean you pay hundreds now to get thousands back in extra income later – depending on how long you live.",
+        "paragraph6": "For step-by-step help, see our guide [Increase your State Pension with voluntary National Insurance contributions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/voluntary-national-insurance-contributions-and-the-state-pension)."
+      },
+      "benefitsSGR1": {
+        "title": "Check if you can claim Pension Credit",
+        "paragraph1": "Always check if you’re entitled to [Pension Credit](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/pension-credit) to boost your income. Even if you do not qualify for much extra money, it can make you eligible for other grants and help.",
+        "paragraph2": "You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator)  to see what you’re entitled to."
+      },
+      "preRetirementBenefitsSGR2": {
+        "title": "Check if you can claim Pension Credit, plus other grants and discounts",
+        "paragraph1": "Always check if you’re entitled to [Pension Credit](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/pension-credit) to boost your income. Even if you do not qualify for much extra money, it can make you eligible for other grants and help.",
+        "paragraph2": "You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to see what you’re entitled to.",
+        "paragraph3": "You might also be able to get help paying certain costs. For example:",
+        "list1": "help with your heating bills",
+        "list2": "a free bus pass",
+        "list3": "a free TV licence",
+        "list4": "help with dental treatment.",
+        "paragraph4": "Find out more in our guide about [benefits in retirement](https://www.moneyhelper.org.uk/en/benefits/benefits-in-later-life/benefits-in-retirement)."
+      },
+      "genderPensionGapSGR3": {
+        "title": "Check if you’re affected by the gender pensions gap",
+        "paragraph1": "The gender pensions gap is the difference between men’s and women’s average pension values. On average, women have around half as much saved in a pension as men by age 60.",
+        "paragraph2": "But there are things you can do to help bridge this gap, including topping up a lower-paid partner’s pension and always including pensions in a divorce, dissolution or separation agreement.",
+        "paragraph3": "Find out more in our guide [Ways to close the gender pensions gap](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/ways-to-close-gender-pensions-gap)."
+      },
+      "deathBenefitsSGR4": {
+        "title": "Understand what happens to your pension when you die",
+        "paragraph1": "You can tell your pension provider who you’d like to receive your pension when you die, called your beneficiaries.",
+        "paragraph2": "You usually do this by completing their expression of wish form. It’s important to keep this updated, especially after changes like a divorce or separation.",
+        "paragraph3": "Depending on the type of pension you have, your beneficiaries will usually either receive:",
+        "list1": "your remaining pension pot",
+        "list2": "a portion of your regular income, typically called death benefits",
+        "paragraph4": "For full information, including how the money is taxed, see our guide [What happens to my pension when I die?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/pensions-after-death)"
+      },
+      "deathBenefitsSGR5": {
+        "title": "Understand what happens to your pension when you die",
+        "paragraph1": "You can tell your pension provider who you’d like to receive your pension when you die, called your beneficiaries.",
+        "paragraph2": "You usually do this by completing their expression of wish form. It’s important to keep this updated, especially after changes like a divorce or separation.",
+        "paragraph3": "Depending on the type of pension you have, your beneficiaries will usually either receive:",
+        "list1": "your remaining pension pot",
+        "list2": "a portion of your regular income, typically called death benefits.",
+        "paragraph4": "Any money that’s inherited from your pension is usually added to your beneficiaries' earnings to calculate how much Income Tax they need to pay.",
+        "paragraph5": "If you die before age 75 and leave a defined contribution pension, there’s a tax-free allowance that normally applies for lump sums.",
+        "paragraph6": "For full information, see our guide [What happens to my pension when I die?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/pensions-after-death)",
+        "subHeading": "Your beneficiaries might pay Inheritance Tax",
+        "paragraph7": "Until April 2027, any money you have in your pension pot when you die – or any death benefits your scheme promises to pay – will not usually be counted when calculating Inheritance Tax.",
+        "paragraph8": "From April 2027, any money left in your pension or in death benefits might be counted when calculating Inheritance Tax.",
+        "paragraph9": "For more information, see our guide about [Inheritance Tax in the UK](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/a-guide-to-inheritance-tax)."
+      },
+      "scamsSGR6": {
+        "title": "Never access your pension if you feel pressured or unsafe",
+        "paragraph1": "Do not access your pension or transfer any money to a pension provider because of a cold call, visit, email or text. It’s likely a scam designed to steal your money.",
+        "paragraph2": "You might lose all your retirement savings and have to pay an expensive tax bill.",
+        "paragraph3": "Find out more in our guide [How to spot a pension scam](https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam)."
+      }
+    },
+    "variableGuidance": {
+      "heading": "What to do first",
+      "divorce17": {
+        "title": "Decide how to split your pensions in a divorce or dissolution",
+        "paragraph1": "Always include pensions in a divorce or dissolution settlement, even if you’ve agreed to keep them separate.",
+        "paragraph2": "This is because they might be your biggest assets and can be worth more than your home, so you might not be getting a fair deal.",
+        "paragraph3": "You can usually choose to use one or more of these options:",
+        "list1": [
+          "transfer a portion of one person’s pension to another, called pension sharing",
+          "ask the pension provider to pay a share of the future pension income to each of you, called pension attachment or earmarking",
+          "keep the full pension and let the other partner take other assets of similar value, called pension offsetting."
+        ],
+        "paragraph4": "You’ll normally need to decide how your pensions are split between you – they do not always need to be shared equally. You could consider using a mediator to help you decide.",
+        "paragraph5": "For more information, see [How to split pensions in a divorce or dissolution](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/split-pensions-in-a-divorce-or-dissolution). You can also book a free [Pensions and divorce or dissolution appointment](https://www.moneyhelper.org.uk/en/family-and-care/divorce-and-separation/divorce-dissolution-pensions-appointment) to get impartial guidance on your options from one of our pension specialists."
+      },
+      "debt23": {
+        "title": "Speak with a free and confidential debt adviser",
+        "paragraph1": "It's a good idea to get help with your current finances first. Sorting your debts now can help you have a more comfortable retirement. You're not alone and help is available.",
+        "paragraph2": "Our [Debt advice locator tool](https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator) can help you find free and confidential debt advisers near you, online and by phone."
+      },
+      "debt23a": {
+        "title": "Continue to get free help with your debts",
+        "paragraph1": "It's great that you've already had debt advice. This can help you plan how to organise and repay the money you owe.",
+        "paragraph2": "If you need more support, you can use our [Debt advice locator tool](https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator) to find free and confidential debt advisers near you, online and by phone."
+      },
+      "overseas8": {
+        "title": "Understand your pension options if you move overseas",
+        "description": "If you move overseas, you usually have 2 options for your UK pension – leave it where it is or take it with you",
+        "option1": "Option 1: Leave your pension where it is",
+        "paragraph1": "You must tell your provider you’re moving overseas, but your pension will continue to be managed in the UK.",
+        "paragraph2": "When you’re ready to take your pension, it’s usually paid in pounds and taxed as UK income. If you need it in a different currency, you could transfer the money into a foreign exchange account – many large banks offer these. ",
+        "paragraph3": "The main risk is not knowing how much pension income you’re going to get because:",
+        "list1": "you might need to pay exchange fees",
+        "list2": "exchange rates often change daily.",
+        "paragraph4": "If you plan to continue paying into a UK pension after you move abroad, you might also not qualify for any tax relief on your contributions. ",
+        "paragraph5": "For more information, see [Can I save into a UK pension if I live overseas?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad#Can-I-save-into-a-UK-pension-scheme-if-I-live-overseas)",
+        "option2": "Option 2: Transfer your pension to an overseas scheme ",
+        "paragraph6": "You could consider moving your pension to an overseas scheme to get your pension income: ",
+        "list3": "paid in your local currency ",
+        "list4": "taxed in the country you’re moving to.",
+        "paragraph7": "This can be complicated, so it’s usually a good idea to pay for financial advice in the UK and in the country you’re moving your pension to. ",
+        "paragraph8": "For more information, see our guide [How to move your UK pension overseas.](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/moving-your-uk-pension-overseas)"
+      },
+      "overseas8a": {
+        "title": "Check if your UK State Pension will be affected by moving overseas",
+        "paragraph1": "You can claim the UK [State Pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/state-pension-an-overview) if you move overseas, but you will not qualify for:",
+        "list1": "annual increases - unless the [country you’re moving to is listed on GOV.UK](https://www.gov.uk/government/publications/state-pensions-annual-increases-if-you-live-abroad/countries-where-we-pay-an-annual-increase-in-the-state-pension)",
+        "list2": "[Pension Credit](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/pension-credit).",
+        "paragraph2": "If your State Pension is paid into an international account, you’ll receive it in your local currency. This means the amount you’ll get depends on the exchange rate at the time.",
+        "paragraph3": "For more information, see our guide [What happens to my pension if I retire abroad?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad)"
+      },
+      "overseas8b": {
+        "title": "Decide if you want to move your pension overseas",
+        "description": "If you move overseas, you usually have 2 options for your UK pension – leave it where it is or take it with you. ",
+        "option1": "Option 1: Leave your pension where it is ",
+        "paragraph1": "You must tell your provider you’re moving overseas, but your pension will continue to be managed in the UK. ",
+        "paragraph2": "When you’re ready to take your pension, it’s usually paid in pounds and taxed as UK income. If you need it in a different currency, you could transfer the money into a foreign exchange account – many large banks offer these. ",
+        "paragraph3": "The main risk is not knowing how much pension income you’re going to get because: ",
+        "list1": "you might need to pay exchange fees",
+        "list2": "exchange rates often change daily.",
+        "paragraph4": "If you plan to continue paying into a UK pension after you move abroad, you might also not qualify for any tax relief on your contributions.",
+        "paragraph5": "For more information, see [Can I save into a UK pension if I live overseas?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad#Can-I-save-into-a-UK-pension-scheme-if-I-live-overseas-)",
+        "option2": "Option 2: Transfer your pension to an overseas scheme",
+        "paragraph6": "You could consider moving your pension to an overseas scheme to get your pension income: ",
+        "list3": "paid in your local currency ",
+        "list4": "taxed in the country you’re moving to. ",
+        "paragraph7": "This can be complicated, so it’s usually a good idea to pay for financial advice in the UK and in the country you’re moving your pension to.",
+        "paragraph8": "For more information, see our guide [How to move your UK pension overseas.](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/moving-your-uk-pension-overseas)",
+        "subHeading": "Your UK State Pension might be affected if you move overseas",
+        "paragraph9": "You can claim the UK [State Pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/state-pension-an-overview) if you move overseas, but you will not qualify for: ",
+        "list5": "annual increases – unless the [country you’re moving to is listed on GOV.UK](https://www.gov.uk/government/publications/state-pensions-annual-increases-if-you-live-abroad/countries-where-we-pay-an-annual-increase-in-the-state-pension)",
+        "list6": "[Pension Credit.](https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/pension-credit)",
+        "paragraph10": "If your State Pension is paid into an international account, you’ll receive it in your local currency. This means the amount you’ll get depends on the exchange rate at the time. ",
+        "paragraph11": "For more information, see our guide [What happens to my pension if I retire abroad?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad)"
+      },
+      "consolidation1": {
+        "title": "Check if you’ll be better off transferring or combining your pensions",
+        "paragraph1": "Transferring your pension to a different provider or scheme might mean you can:",
+        "list1": "pay less if the new scheme has lower fees",
+        "list2": "have more options to invest or take your pension",
+        "list3": "bring multiple pension schemes together so you can manage them in one place, called consolidation.",
+        "paragraph2": "You can choose which pensions you want to combine and which you'd like to keep separate – you do not have to combine them all.",
+        "paragraph3": "But with any pension transfer, there's a risk you might:",
+        "list4": "pay more if the new scheme has higher fees",
+        "list5": "lose valuable benefits that only your current provider offers.",
+        "paragraph4": "For example, your current scheme might offer a bonus payment after a certain date or have a protected pension age that lets you access your pension earlier than other new schemes would.",
+        "paragraph5": "Find out more in our guide [Should I transfer or consolidate my pensions?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)"
+      },
+      "consolidation1a": {
+        "title": "You’re usually better off leaving your pension where it is",
+        "paragraph1": "Most people are better off keeping a defined benefit pension, according to the Financial Conduct Authority (FCA) and the Pensions Regulator (TPR).",
+        "paragraph2": "This is because defined benefit pensions offer guaranteed benefits that you cannot get back if you transfer out.",
+        "paragraph3": "If you transfer a defined benefit pension into a defined contribution scheme, you’ll lose the promise of guaranteed retirement income based on your salary and length of service.",
+        "paragraph4": "Instead, the amount you’ll get in retirement depends on how well your invested money performs – so there’s a risk you could get a lot less.",
+        "paragraph5": "You might also need to limit how much you take to make sure it lasts for your full retirement.",
+        "paragraph6": "For full information, see our guide [How to transfer out of a defined benefit pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/transferring-your-defined-benefit-pension)."
+      },
+      "consolidation1b": {
+        "title": "Check if you’ll be better off transferring or combining your pensions",
+        "paragraph1": "Transferring your pension to a different provider or scheme might mean you can:",
+        "list1": "pay less if the new scheme has lower fees",
+        "list2": "have more options to invest or take your pension",
+        "list3": "bring multiple pension schemes together so you can manage them in one place – this is called consolidation.",
+        "paragraph2": "But there's always a risk of losing valuable benefits that only your current provider offers.",
+        "paragraph3": "For example, your current scheme might offer a bonus payment after a certain date or have a protected pension age that lets you access your pension earlier than other new schemes would.",
+        "paragraph4": "Before making a pension transfer, see our guide [Should I transfer or consolidate my pensions?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)"
+      },
+      "consolidation1c": {
+        "title": "Check if you’ll be better off transferring or combining your pensions",
+        "paragraph1": "Transferring your defined contribution pension to a different provider or scheme might mean you can:",
+        "list1": "pay less if the new scheme has lower fees",
+        "list2": "have more options to invest or take your pension",
+        "list3": "bring multiple pension schemes together so you can manage them in one place – this is called consolidation.",
+        "paragraph2": "You can choose which pensions you want to combine and which you’d like to keep separate – you do not have to combine them all.",
+        "paragraph3": "But with any pension transfer, there’s a risk you might:",
+        "list4": "pay more if the new scheme has higher fees",
+        "list5": "lose valuable benefits that only your current provider offers.",
+        "paragraph4": "For example, your current scheme might offer a bonus payment after a certain date or have a protected pension age that lets you access your pension earlier than other new schemes would.",
+        "paragraph5": "Find out more in our guide [Should I transfer or consolidate my pensions?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)",
+        "subheading1": "You’re usually better off leaving your defined benefit pension where it is",
+        "paragraph6": "Most people are better off keeping a defined benefit pension, according to the Financial Conduct Authority (FCA) and the Pensions Regulator (TPR).",
+        "paragraph7": "This is because defined benefit pensions offer guaranteed benefits that you cannot get back if you transfer out.",
+        "paragraph8": "If you transfer a defined benefit pension into a defined contribution scheme, you’ll lose the promise of guaranteed retirement income based on your salary.",
+        "paragraph9": "Instead, the amount you’ll get in retirement depends on how well your invested money performs – so there's a risk you could get a lot less.",
+        "paragraph10": "You might also need to limit how much you take to make sure it lasts for your full retirement.",
+        "paragraph11": "For full information, see our guide [How to transfer out of a defined benefit pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-transfers-consolidation/transferring-your-defined-benefit-pension)."
+      },
+      "findYourPensionType22": {
+        "title": "Find out which types of pension you have",
+        "paragraph1": "The way your pension works, and the options you have, depends on the types you have.",
+        "paragraph2": "You can [find out your pension type](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type) using our tool. Your pension provider can also confirm the exact type and features you have.",
+        "paragraph3": "For more help and information about the different types of pensions, see our [pensions explained](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics) section."
+      },
+      "howMyPensionWorks22a": {
+        "title": "Find out which types of pension you have",
+        "paragraph1": "If you have pensions you've not taken yet, the way they work and your options depend on the type you have.",
+        "paragraph2": "You can [find out your pension type](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type) using our tool. Your pension provider can also confirm the exact type and features you have.",
+        "paragraph3": "For more help and information about the different types of pensions, see our [pensions explained](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics) section."
+      },
+      "howMuchMoneyNeededForRetirement25": {
+        "title": "Find out how much money you'll need for your retirement",
+        "paragraph1": "Our tools can help you work out how much you might need in retirement and how much you're likely to have.",
+        "paragraph2": "Our [Pension calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) can:",
+        "list1": "work out a target retirement income for you, based on your current salary",
+        "list2": "show you how much you're currently on track to get, at the age you'd like to retire.",
+        "paragraph3": "You can also see how your estimated retirement income might change if:",
+        "list3": "you changed your contributions",
+        "list4": "retired at a different age",
+        "list5": "took some as a tax-free lump sum.",
+        "paragraph4": "Our [Retirement budget planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) can help you see how much retirement income you'll need to cover your essential costs.",
+        "paragraph5": "For more information, see our guide [How much money do I need for my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement)"
+      },
+      "howMuchMoneyNeededForRetirement25a": {
+        "title": "Find out how much money you'll need for your retirement",
+        "paragraph1": "Our tools can help you work out how much you might need in retirement and how much you're likely to have.",
+        "paragraph2": "Our [Pension calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) can:",
+        "list1": "work out a target retirement income for you, based on your current salary",
+        "list2": "show you how much you're currently on track to get, at the age you'd like to retire.",
+        "paragraph3": "You can also see how your estimated retirement income might change if:",
+        "list3": "you changed your contributions",
+        "list4": "retired at a different age",
+        "list5": "took some as a tax-free lump sum.",
+        "paragraph4": "Our [Budget Planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) can help you keep track of your money, including ways to improve your finances.",
+        "paragraph5": "If you have a defined contribution pension, you can compare how much income it might give you using our:",
+        "list6": "[Annuity comparison tool](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/compare-annuities) – an annuity lets you convert some or all your pension into a guaranteed income",
+        "list7": "[Investment pathways comparison tool](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/drawdown-investment-pathways) – this lets you take a tax-free lump sum from your pension and keep the rest invested until you need it, called drawdown.",
+        "paragraph6": "For more information, see our guides [How much money do I need for my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement) and [What can I do with my pension pot?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/pension-pot-options)"
+      },
+      "howMuchMoneyNeededForRetirement25b": {
+        "title": "Find out how much money you'll need for the rest of your retirement",
+        "paragraph1": "Our tools can help you work out how much you might need for the rest of your retirement and how much you're likely to have.",
+        "paragraph2": "Our [Budget planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) can help you keep track of your money, including ways to improve your finances.",
+        "paragraph3": "If you have a defined benefit pension that has not started paying out yet, check the date the income will start from and if you have the option to take it earlier or later.",
+        "paragraph4": "If you have a defined contribution pension that you've not decided how to take, you can compare how much income it might give you using our:",
+        "list1": "[Annuity comparison tool](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/compare-annuities) – an annuity lets you convert some or all your pension into a guaranteed income",
+        "list2": "[Investment pathways comparison tool](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/drawdown-investment-pathways) – this lets you take a tax-free lump sum from your pension and keep the rest invested until you need it, called drawdown.",
+        "paragraph5": "For more information, see our guides [How much money do I need for my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement) and [What can I do with my pension pot?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/pension-pot-options)"
+      },
+      "howToGrowMyPensionAlreadyRetired26": {
+        "title": "Check how your pension is invested",
+        "paragraph1": "If you have a defined contribution pension that you haven't accessed yet or only taken some money from, your money will still be invested. This means it can still benefit from investment growth, but its value can rise and fall on a daily basis.",
+        "paragraph2": "Always check how your pension is invested, whether the investment strategy matches your plans and how much you can afford to take out without your pension running out early.",
+        "paragraph3": "For more information, see our guide about [investing your pension in retirement](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/investing-in-retirement)."
+      },
+      "whenAndHowCanITakeMyPension24": {
+        "title": "Check if you’re eligible for a Pension Wise appointment",
+        "paragraph1": "Our step-by-step guide explains [How to take your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/how-to-take-your-pension).",
+        "paragraph2": "We also offer [free Pension Wise appointments](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise) to explain the options for taking a UK-based defined contribution pension. You can get an appointment if you're:",
+        "list1": "50 or over",
+        "list2": "under 50 and:",
+        "sublist1": "have inherited someone else's pension",
+        "sublist2": "are retiring early due to poor health, or",
+        "sublist3": "your scheme lets you take your pension before age 55.",
+        "paragraph3": "You can start an online appointment at any time or book a date and time with one of our pension specialists."
+      },
+      "whenAndHowCanITakeMyPensionAlreadyRetired24a": {
+        "title": "Check if you’re eligible for a Pension Wise appointment",
+        "paragraph1": "If you have pensions you've not accessed yet, our step-by-step guide explains [How to take your pension.](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/how-to-take-your-pension)",
+        "paragraph2": "We also offer [free Pension Wise appointments](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise) to explain the options for taking a UK-based defined contribution pension. You can get an appointment if you're:",
+        "list1": "50 or over",
+        "list2": "under 50 and:",
+        "sublist1": "have inherited someone else's pension",
+        "sublist2": "are retiring early due to poor health, or",
+        "sublist3": "your scheme lets you take your pension before age 55.",
+        "paragraph3": "You can start an online appointment at any time or book a date and time with one of our pension specialists."
+      },
+      "whenAndHowCanITakeMyPension24b": {
+        "title": "Check if you’re eligible for a Pension Wise appointment",
+        "paragraph1": "Our step-by-step guide explains [How to take your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/how-to-take-your-pension).",
+        "paragraph2": "We also offer free Pension Wise appointments to explain the options for taking a UK-based defined contribution pension. You can get an appointment if you’re:",
+        "list1": "50 or over",
+        "list2": "under 50 and:",
+        "sublist1": "have inherited someone else’s pension",
+        "sublist2": "are retiring early due to poor health, or",
+        "sublist3": "your scheme lets you take your pension before age 55.",
+        "paragraph3": "You can start an online appointment at any time or book a date and time with one of our pension specialists."
+      },
+      "whenAndHowCanITakeMyPension24c": {
+        "title": "Check when and how you can take your pension",
+        "paragraph1": "The earliest you can take money from your pension is usually age 55 (rising to 57 from April 2028).",
+        "paragraph2": "This is called the normal minimum pension age (NMPA).",
+        "paragraph3": "But you might be able to take your pension before age 55 if:",
+        "list1": "you need to retire early due to poor health, or",
+        "list2": "your pension provider lists an earlier protected NMPA.",
+        "paragraph4": "Find out more in our guide [When can I take money from my pension?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/when-can-i-take-money-from-my-pension)",
+        "paragraph5": "For help taking your pension, see our step-by-step guides:",
+        "list3": "[How to plan for retirement: Retirement planning checklist](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches)",
+        "list4": "[How to take your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/how-to-take-your-pension)"
+      },
+      "employment02": {
+        "title": "Check if your employer will pay more into your pension",
+        "paragraph1": "Your employer already pays into your pension, but you might not be getting the maximum amount possible.",
+        "paragraph2": "To check, ask your employer if they offer [contribution matching](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/contribution-matching). This means they’ll pay more into your pension if you do too, up to a certain limit.",
+        "paragraph3": "For example, if your employer will match up to 10% of your wages, they’ll typically pay in:",
+        "list1": "5% if you pay in 5%",
+        "list2": "8% if you pay in 8%",
+        "list3": "10% if you pay in 10%.",
+        "paragraph4": "This can add hundreds or thousands of pounds to your pension each year. Our [Workplace pension contribution calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/workplace-pension-calculator) can work out how much you could get.",
+        "paragraph5": "Paying more into your pension might not decrease your take-home pay by as much as you think. This is because you usually get tax relief when you pay into a pension.",
+        "paragraph6": "For example, a £10 contribution into your pension will normally cost you:",
+        "list4": "£8 if you pay basic-rate tax",
+        "list5": "£6 if you pay higher-rate tax.",
+        "paragraph7": "Find out more in our guide [Ways to boost your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "employment02a": {
+        "title": "Check if you can boost your pension by making extra contributions",
+        "paragraph1": "Your [defined benefit pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained) works by giving you a guaranteed retirement income based on your salary and how long you worked for your employer.",
+        "paragraph2": "But you might be able to increase your benefits by making additional voluntary contributions (AVCs).",
+        "paragraph3": "These are extra payments into your pension on top of your standard contributions, which are usually a set amount based on your current salary.",
+        "paragraph4": "Find out more in our guide [Boost your pension with AVCs](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/what-are-avcs-and-fsavcs).",
+        "paragraph5": "If your scheme does not let you make AVCs, you could [start your own defined contribution pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself) for any additional savings."
+      },
+      "employment02b": {
+        "title": "Check if you can boost your pension by making extra contributions",
+        "paragraph1": "For your [defined contribution pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained), ask your employer if they offer [contribution matching](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/contribution-matching). This means they’ll pay more into your pension if you do too, up to a certain limit.",
+        "paragraph2": "This can add hundreds or thousands of pounds to your pension each year. Our [Workplace pension contribution calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/workplace-pension-calculator) can work out how much you could get.",
+        "paragraph3": "For your [defined benefit pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained), , you might be able to increase your benefits by making additional voluntary contributions (AVCs).",
+        "paragraph4": "These are extra payments into your pension on top of your standard contributions, which are usually a set amount based on your current salary.",
+        "paragraph5": "Find out more in our guide [Boost your pension with AVCs](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/what-are-avcs-and-fsavcs).",
+        "paragraph6": "If your scheme does not let you make AVCs, you could [start your own defined contribution pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself) for any additional savings.  "
+      },
+      "employment03": {
+        "title": "Ask to join your employer’s pension scheme",
+        "paragraph1": "You can ask to join your employer’s workplace pension scheme at any time from age 16 to 75. If you previously left the scheme and want to rejoin, some schemes will allow this at any time while others might only allow it once a year.",
+        "paragraph2": "Your employer must also automatically enrol you in a pension scheme if you’re a UK resident and:",
+        "list1": "usually work in the UK",
+        "list2": "are between age 22 and the [State Pension age](https://www.gov.uk/state-pension-age)",
+        "list3": "earn more than £192 a week, £833 a month or £10,000 a year",
+        "list4": "do not already have a suitable workplace pension.",
+        "paragraph3": "This includes if you had previously opted out but still meet the criteria, so you’re likely to be auto-enrolled again within three years of opting out.",
+        "paragraph4": "For more information, see our guide about [pension auto-enrolment](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/automatic-enrolment-an-introduction)."
+      },
+      "employment04": {
+        "title": "Check the cost of increasing your contributions and benefit from extra tax relief",
+        "paragraph1": "Your pension will usually pay you a higher retirement income if you can save over the longest period possible. This is because the amount you’ll get largely depends on:",
+        "list1": "how much you pay in",
+        "list2": "how much is added from investment growth.",
+        "paragraph2": "Our [Pension calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) can help you work out an estimate of your total retirement income, including how much you might need and how it might change if you save more.",
+        "paragraph3": "For example, if you save £200 into a pension each month, at age 65 your pension could be worth around:",
+        "list3": "£158,000 if you start at age 20",
+        "list4": "£112,000 if you start at age 30",
+        "list5": "£73,000 if you start at age 40",
+        "list6": "£40,000 if you start at age 50.",
+        "subHeading1": "You’ll usually benefit from extra tax relief",
+        "paragraph4": "When you pay into a pension, you usually benefit from [tax relief](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/tax-relief-and-your-pension). This is a top-up payment from the government and means the money you’d normally pay in Income Tax goes into your pension instead.",
+        "paragraph5": "For example, for every £100 paid into your pension:",
+        "list7": "a basic-rate taxpayer (20%) pays £80",
+        "list8": "a higher-rate taxpayer (40%) pays £60.",
+        "paragraph6": "The rest comes from tax relief.",
+        "paragraph7": "Each tax year, you can usually get tax relief on your pension contributions up to 100% of your earnings or £60,000 – whichever is lower.",
+        "paragraph8": "If you earn less than £3,600, you can save up to £2,880 into a pension and still get tax relief.",
+        "subHeading2": "You might need to claim some of your tax relief",
+        "paragraph9": "If you pay Income Tax above 20%, you'll usually need to claim the extra tax relief yourself. You can:",
+        "list9": "[claim on GOV.UK](https://www.gov.uk/guidance/claim-tax-relief-on-your-private-pension-payments)",
+        "list10": "[contact HMRC](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees) or",
+        "list11": "complete a [Self Assessment tax return](https://www.gov.uk/register-for-self-assessment).",
+        "paragraph10": "For more information, see our guide about [Self-employed pensions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pensions-for-self-employed-people)."
+      },
+      "employment05": {
+        "title": "Start your own pension",
+        "paragraph1": "By itself, the State Pension is unlikely to give you enough money for a comfortable retirement – even if you qualify for the maximum amount.",
+        "paragraph2": "You’ll also need to wait until [your State Pension age](https://www.gov.uk/state-pension-age) to claim it.",
+        "paragraph3": "Starting your own pension means you’ll normally:",
+        "list1": "have more money to live off in retirement",
+        "list2": "be able to take your pension anytime from age 55 (57 from April 2028)",
+        "list3": "get an income if you need to retire early due to poor health.",
+        "paragraph4": "Many pension providers will let you choose how much you pay in and how often – like a regular amount or one-off payments as and when.",
+        "paragraph5": "For more information, see our guides:",
+        "list4": "[A guide to self-employed pensions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pensions-for-self-employed-people)",
+        "list5": "[How to start your own pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself)"
+      },
+      "employment06": {
+        "title": "Check if you’re saving enough for your retirement",
+        "paragraph1": "If you set up your own pension, your pension provider might have a minimum amount you must pay in each month, like £100. But you typically need to pay in much more than the minimum to save enough for a comfortable retirement.",
+        "paragraph2": "Our [Pension calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) can work out an estimate of your retirement income, including how much you might need and how it could change if you save more.",
+        "paragraph3": "When you pay into a pension, you usually benefit from tax relief. This is a top-up payment from the government and means the money you’d normally pay in Income Tax goes into your pension instead.",
+        "paragraph4": "For example, for every £100 paid into your pension:",
+        "list1": "a basic-rate taxpayer (20%) pays £80",
+        "list2": "a higher-rate taxpayer (40%) pays £60.",
+        "paragraph5": "The rest comes from tax relief.",
+        "paragraph6": "Each tax year, you can usually get tax relief on your pension contributions up to 100% of your earnings or £60,000 – whichever is lower.",
+        "paragraph7": "If you earn less than £3,600, you can save up to £2,880 into a pension and still get tax relief.",
+        "paragraph8": "For more information, see Why should I save into a pension?",
+        "paragraph9": "The Retirement Living Standards also lists how much you might need for a comfortable retirement."
+      },
+      "employment07": {
+        "title": "Start your own pension",
+        "paragraph1": "Even if you qualify for the maximum State Pension, it’s unlikely to give you enough money for a comfortable retirement. You’ll also need to wait until [your State Pension age](https://www.gov.uk/state-pension-age) to claim it.",
+        "paragraph2": "Saving into your own pension means you can:",
+        "list1": "choose to take money from age 55 (57 from April 2028) or younger if you need to [retire due to poor health](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/early-retirement-because-of-illness-sickness-or-disability)",
+        "list2": "still claim the State Pension when you’re old enough.",
+        "paragraph3": "For more information, see:",
+        "list3": "our guide [Why should I save into a pension?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/why-save-into-a-pension)",
+        "list4": "how much you might need for a comfortable retirement on the [Retirement Living Standards](https://www.retirementlivingstandards.org.uk/) website."
+      },
+      "housing09": {
+        "title": "Consider using the value of your home to boost your retirement income",
+        "paragraph1": "There are ways of using the value of your home to increase your income in retirement, including paying for any care costs. For example, you could:",
+        "list1": "move to a cheaper home and save or invest the difference, called downsizing",
+        "list2": "borrow money tied up in your home using a retirement mortgage from age 50 or equity release from age 55.",
+        "paragraph2": "For more information on your options, see our guide [Should I downsize my home to fund my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing09a": {
+        "title": "Consider using the value of your home to boost your retirement income",
+        "paragraph1": "There are ways of using the value of your home to increase your income in retirement, including paying for any care costs. For example, you could:",
+        "list1": "move to a cheaper home and save or invest the difference, called downsizing",
+        "list2": "borrow money tied up in your home using a retirement mortgage from age 50 or equity release from age 55.",
+        "paragraph2": "For more information on your options, see our guide [Should I downsize my home to fund my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing10": {
+        "title": "Consider using the value of your home to boost your retirement income",
+        "paragraph1": "You might be able to use the value of your home to increase your income in retirement, including paying for any care costs. This includes:",
+        "list1": "Moving to a cheaper home and saving or investing the difference, called [downsizing](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement). This can also help make sure your home is suitable for your future needs, such as a bungalow, retirement property or sheltered housing.",
+        "list2": "Accessing the money tied up in your home, either using a mortgage or equity release. ",
+        "paragraph2": "With a [retirement interest-only (RIO) mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/retirement-interest-only-mortgages), you pay a monthly amount to cover the interest and repay the loan when you sell the house, die, move into long-term care or at the end of the mortgage term. This is usually available from age 50.",
+        "paragraph3": "With [equity release](https://www.moneyhelper.org.uk/en/homes/buying-a-home/what-is-equity-release), from age 55, you can normally choose to either:",
+        "list3": "take out a lifetime mortgage with monthly interest payments – the loan is then repaid when you sell, die or move out",
+        "list4": "sell all or part of your home to a home reversion plan provider for less than its market value and stay living there as a tenant for an agreed period with a low amount of rent to pay.",
+        "paragraph4": "You might also be able to [use equity release scheme to fund your care](https://www.moneyhelper.org.uk/en/family-and-care/long-term-care/using-an-equity-release-scheme-to-fund-your-care)."
+      },
+      "housing10a": {
+        "title": "Consider using the value of your home to boost your retirement income",
+        "paragraph1": "You might be able to use the value of your home to increase your income in retirement, including paying for any care costs. This includes:",
+        "list1": "Moving to a cheaper home and saving or investing the difference, called [downsizing](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement). This can also help make sure your home is suitable for your future needs, such as a bungalow, retirement property or sheltered housing.",
+        "list2": "Accessing the money tied up in your home, either using a mortgage or equity release. ",
+        "paragraph2": "With a [retirement interest-only (RIO) mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/retirement-interest-only-mortgages), you pay a monthly amount to cover the interest and repay the loan when you sell the house, die, move into long-term care or at the end of the mortgage term. This is usually available from age 50.",
+        "paragraph3": "With [equity release](https://www.moneyhelper.org.uk/en/homes/buying-a-home/what-is-equity-release), from age 55, you can normally choose to either:",
+        "list3": "take out a lifetime mortgage with monthly interest payments – the loan is then repaid when you sell, die or move out",
+        "list4": "sell all or part of your home to a home reversion plan provider for less than its market value and stay living there as a tenant for an agreed period – with a low amount of rent to pay.",
+        "paragraph4": "You might also be able to [use equity release scheme to fund your care](https://www.moneyhelper.org.uk/en/family-and-care/long-term-care/using-an-equity-release-scheme-to-fund-your-care)."
+      },
+      "housing11": {
+        "title": "Check the mortgage options available after you retire and plan how you'll repay the debt",
+        "paragraph1": "It's usually harder to get a new mortgage as you get closer to retirement age, as you still need to pass lenders' affordability checks. But there are special products you could consider.",
+        "paragraph2": "This includes:",
+        "list1": "A [retirement interest-only (RIO) mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/retirement-interest-only-mortgages), where you pay a monthly amount to cover the interest and repay the loan when you sell the house, die, move into long-term care or at the end of the mortgage term. This is usually available from age 50.",
+        "list2": "An [equity release](https://www.moneyhelper.org.uk/en/homes/buying-a-home/what-is-equity-release) scheme, from age 55, that either lets you:",
+        "sublist1": "take out a lifetime mortgage with monthly interest payments – the loan is then repaid when you sell, die or move out",
+        "sublist2": "sell all or part of your home to a home reversion plan provider for less than its market value and stay living there as a tenant for an agreed period – with a low amount of rent to pay.",
+        "subHeading": "Plan how you'll repay your existing mortgage",
+        "paragraph3": "Unless you already own your home outright, you'll need to plan how you'll repay your mortgage before you'd like to retire.",
+        "paragraph4": "If you have an interest-only mortgage, you'll need to budget to pay off the full amount you owe, as your normal repayments only cover the interest.",
+        "paragraph5": "Avoid relying on repaying your mortgage using a future lump sum that's not guaranteed, such as:",
+        "list3": "money from inheritance or a bonus",
+        "list4": "selling up and buying a cheaper home to use the difference.",
+        "paragraph6": "Instead, contact your lender to understand your options – such as moving to a repayment mortgage. It's also a good idea to find out if there are any penalties for repaying your mortgage early.",
+        "paragraph7": "For more information, see our guides:",
+        "list5": "[Ways of repaying an interest-only mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage)",
+        "list6": "[Should you pay off your mortgage early?](https://www.moneyhelper.org.uk/en/homes/buying-a-home/should-you-pay-off-your-mortgage-early)",
+        "subHeading2": "Consider using the value of your home to boost your retirement income",
+        "paragraph8": "There are ways of using the value of your home to increase your income in retirement, including paying for any care costs.",
+        "paragraph9": "For example, you could move to a cheaper home and save or invest the difference, called downsizing.",
+        "paragraph10": "For more information on your options, see our guide [Should I downsize my home to fund my retirement?](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing12": {
+        "title": "Check the mortgage options available after you retire and plan how you'll repay the debt",
+        "paragraph1": "It's usually harder to get a new mortgage as you get closer to retirement age, as you still need to pass lenders' affordability checks. But there are special products you could consider.",
+        "paragraph2": "This includes:",
+        "list1": "A [retirement interest-only (RIO) mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/retirement-interest-only-mortgages), where you pay a monthly amount to cover the interest and repay the loan when you sell the house, die, move into long-term care or at the end of the mortgage term. This is usually available from age 50.",
+        "list2": "An [equity release](https://www.moneyhelper.org.uk/en/homes/buying-a-home/what-is-equity-release) scheme, from age 55, that either lets you:",
+        "sublist1": "take out a lifetime mortgage with monthly interest payments – the loan is then repaid when you sell, die or move out",
+        "sublist2": "sell all or part of your home to a home reversion plan provider for less than its market value and stay living there as a tenant for an agreed period – with a low amount of rent to pay.",
+        "subHeading": "Plan how you'll repay your existing mortgage",
+        "paragraph3": "Unless you already own your home outright, you'll need to plan how you'll repay your mortgage before you'd like to retire.",
+        "paragraph4": "If you have an interest-only mortgage, you'll need to budget to pay off the full amount you owe, as your normal repayments only cover the interest.",
+        "paragraph5": "Avoid relying on repaying your mortgage using a future lump sum that's not guaranteed, such as:",
+        "list3": "money from inheritance or a bonus",
+        "list4": "selling up and buying a cheaper home to use the difference.",
+        "paragraph6": "Instead, contact your lender to understand your options – such as moving to a repayment mortgage. It's also a good idea to find out if there are any penalties for repaying your mortgage early.",
+        "paragraph7": "For more information, see our guides:",
+        "list5": "[Ways of repaying an interest-only mortgage](https://www.moneyhelper.org.uk/en/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage)",
+        "list6": "[Should you pay off your mortgage early?](https://www.moneyhelper.org.uk/en/homes/buying-a-home/should-you-pay-off-your-mortgage-early)",
+        "subHeading2": "Get help if you're worried about paying your mortgage repayments",
+        "paragraph8": "If you're worried you'll miss a mortgage repayment, or struggle to repay, tell your mortgage lender. They must help you and treat you fairly.",
+        "paragraph9": "For example, they might be able to temporarily lower or stop your payments by:",
+        "list7": "extending your mortgage term",
+        "list8": "letting you only repay the interest",
+        "list9": "giving you a payment holiday – you usually won't need to make any repayments during this period.",
+        "paragraph10": "If you've already missed a payment and are in mortgage arrears, it's best to speak to a debt adviser. Our [Debt advice locator tool](https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator) can help you find free and confidential debt advisers near you, online and by phone."
+      },
+      "housing12a": {
+        "title": "Get help if you're worried about paying your mortgage repayments",
+        "paragraph1": "If you're worried you'll miss a mortgage repayment, or struggle to repay, tell your mortgage lender. They must help you and treat you fairly.",
+        "paragraph2": "For example, they might be able to temporarily lower or stop your payments by:",
+        "list1": "extending your mortgage term",
+        "list2": "letting you only repay the interest",
+        "list3": "giving you a payment holiday – you usually won't need to make any repayments during this period.",
+        "paragraph3": "If you've already missed a payment and are in mortgage arrears, it's best to speak to a debt adviser. Our [Debt advice locator tool](https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator) can help you find free and confidential debt advisers near you, online and by phone."
+      },
+      "housing13": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Council or housing association rent usually increases every April, often in line with inflation or up to an agreed maximum cap for the area you live in.",
+        "paragraph2": "This means you'll need to plan how you'll pay the extra each year.",
+        "paragraph3": "If you get Housing Benefit or the housing element of Universal Credit, check if you qualify for a Discretionary Housing Payment (DHP). This can help you pay your housing costs. Find out more in our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "You can also ask to swap your home if it no longer meets your needs, perhaps because it's too large or does not meet your accessibility needs in retirement. See [your rights if you rent from the council or housing association](https://www.moneyhelper.org.uk/en/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association)."
+      },
+      "housing14": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Council or housing association rent usually increases every April, often in line with inflation or up to an agreed maximum cap for the area you live in.",
+        "paragraph2": "This means you'll need to plan how you'll pay the extra each year.",
+        "paragraph3": "If you get Housing Benefit or the housing element of Universal Credit, check if you qualify for a Discretionary Housing Payment (DHP). This can help you pay your housing costs. Find out more in our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "You can also ask to swap your home if it no longer meets your needs, perhaps because it's too large or does not meet your accessibility needs in retirement. See [your rights if you rent from the council or housing association](https://www.moneyhelper.org.uk/en/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association).",
+        "subHeading": "Taking a tax-free lump sum from your pension can reduce your future income",
+        "paragraph5": "If you take a [tax-free lump sum](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) from your pension, you'll usually reduce the future income it can provide – which you might need to cover your essential costs, including your rent. This means you could be worse off overall. If you [cash your entire pension in](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), you'll typically lose a large chunk of it to Income Tax.",
+        "paragraph6": "If the amount you take from your pension increases your overall income or savings, it might also affect the benefits you're entitled to. You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to check what you're eligible for now and how it might change if your income or savings increased."
+      },
+      "housing14a": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Council or housing association rent usually increases every April, often in line with inflation or up to an agreed maximum cap for the area you live in.",
+        "paragraph2": "This means you'll need to plan how you'll pay the extra each year.",
+        "paragraph3": "If you get Housing Benefit or the housing element of Universal Credit, check if you qualify for a Discretionary Housing Payment (DHP). This can help you pay your housing costs. Find out more in our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "You can also ask to swap your home if it no longer meets your needs, perhaps because it's too large or does not meet your accessibility needs in retirement. See [your rights if you rent from the council or housing association](https://www.moneyhelper.org.uk/en/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association)."
+      },
+      "housing14b": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Council or housing association rent usually increases every April, often in line with inflation or up to an agreed maximum cap for the area you live in.",
+        "paragraph2": "This means you'll need to plan how you'll pay the extra each year.",
+        "paragraph3": "Your guaranteed income from your defined benefit pension will usually increase each year, so this might help cover your rent increase. You can ask your pension provider how much your pension should increase by each year.",
+        "paragraph4": "If you get Housing Benefit or the housing element of Universal Credit, you could also check if you qualify for a Discretionary Housing Payment (DHP). This can help you pay your housing costs. Find out more in our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph5": "You can also ask to swap your home if it no longer meets your needs, perhaps because it's too large or does not meet your accessibility needs in retirement. See [your rights if you rent from the council or housing association](https://www.moneyhelper.org.uk/en/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association).",
+        "subHeading": "Taking a tax-free lump sum from your pension can reduce your future income",
+        "paragraph6": "If you take a [tax-free lump sum](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) from your pension, you'll often reduce the future income it can provide – which you might need to cover your essential costs, including your rent. This means you could be worse off overall. If you [cash your entire pension in](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), you'll typically lose a large chunk of it to Income Tax.",
+        "paragraph7": "If the amount you take from your pension increases your overall income or savings, it might also affect the benefits you're entitled to. You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to check what you're eligible for now and how it might change if your income or savings increased."
+      },
+      "housing15": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "If you're planning on moving to a new rented home after retirement, be aware that you'll usually still need to pass affordability checks. For example, you might need to have an annual income worth 2 or 3 times more than the annual rent.",
+        "paragraph2": "If your regular pension income is below this but you have cash savings, you might be able to show evidence of this instead. But never pay rent in advance as this is illegal.",
+        "paragraph3": "If you cannot afford a rented home that meets your needs, consider downsizing or moving to a cheaper area.",
+        "paragraph4": "You could also apply for social housing. The eligibility criteria depend on where you live, but you might be given priority if you have a low income and are 50 or over.",
+        "paragraph5": "You usually need to apply and join a waiting list, with available homes given to those with the highest priority.",
+        "paragraph6": "Find out more in our guide [How to find a rented home you can afford](https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford)."
+      },
+      "housing15a": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Your landlord can usually only increase your rent once a year and you must be given at least 2 months' notice. If you think any rent increase is above the market rate for your area, you can challenge it and [apply for a market rent determination](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "But the exact rules depend on the type of agreement you have, and where in the UK you rent. For example, your landlord doesn't have to give you notice to increase your rent if you're a lodger. For more information, see our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph3": "If you're planning on moving to a new rented home after retirement, be aware that you'll usually still need to pass affordability checks. For example, you might need to have an annual income worth 2 or 3 times more than the annual rent.",
+        "paragraph4": "If your regular pension income is below this but you have cash savings, you might be able to show evidence of this instead. But never pay rent in advance as this is illegal.",
+        "paragraph5": "If you cannot afford a rented home that meets your needs, consider downsizing or moving to a cheaper area.",
+        "paragraph6": "You could also apply for social housing. The eligibility criteria depends on where you live, but you might be given priority if you have a low income and are 50 or over.",
+        "paragraph7": "You usually need to apply and join a waiting list, with available homes given to those with the highest priority.",
+        "paragraph8": "Find out more in our guide [How to find a rented home you can afford](https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford)."
+      },
+      "housing16": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Your landlord can usually only increase your rent once a year and you must be given at least 2 months' notice. If you think any rent increase is above the market rate for your area, you can challenge it and [apply for a market rent determination](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "But the exact rules depend on the type of agreement you have, and where in the UK you rent. For example, your landlord doesn't have to give you notice to increase your rent if you're a lodger. For more information, see our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "subHeading": "Taking a tax-free lump sum from your pension can reduce your future income",
+        "paragraph3": "If you take a [tax-free lump sum](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) from your pension, you'll often reduce the future income it can provide – which you might need to cover your essential costs, including your rent. This means you could be worse off overall. If you [cash your entire pension in](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), you'll typically lose a large chunk of it to Income Tax.",
+        "paragraph4": "If the amount you take from your pension increases your overall income or savings, it might also affect the benefits you're entitled to. You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to check what you're eligible for now and how it might change if your income or savings increased."
+      },
+      "housing16a": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "Your landlord can usually only increase your rent once a year and you must be given at least 2 months' notice. If you think any rent increase is above the market rate for your area, you can challenge it and [apply for a market rent determination](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "But the exact rules depend on the type of agreement you have, and where in the UK you rent. For example, your landlord doesn't have to give you notice to increase your rent if you're a lodger. For more information, see our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph3": "If you're planning on moving to a new rented home after retirement, be aware that you'll usually still need to pass affordability checks. For example, you might need to have an annual income worth 2 or 3 times more than the annual rent.",
+        "paragraph4": "If your regular pension income is below this but you have cash savings, you might be able to show evidence of this instead. But never pay rent in advance as this is illegal.",
+        "paragraph5": "If you cannot afford a rented home that meets your needs, consider downsizing or moving to a cheaper area.",
+        "paragraph6": "You could also apply for social housing. The eligibility criteria depend on where you live, but you might be given priority if you have a low income and are 50 or over.",
+        "paragraph7": "You usually need to apply and join a waiting list, with available homes given to those with the highest priority.",
+        "paragraph8": "Find out more in our guide [How to find a rented home you can afford](https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford).",
+        "subHeading": "Taking a tax-free lump sum from your pension can reduce your future income",
+        "paragraph9": "If you take a [tax-free lump sum](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) from your pension, you'll often reduce the future income it can provide – which you might need to cover your essential costs, including your rent. This means you could be worse off overall. If you [cash your entire pension in](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), you'll typically lose a large chunk of it to Income Tax.",
+        "paragraph10": "If the amount you take from your pension increases your overall income or savings, you might also affect the benefits you're entitled to. You can use our [Benefits calculator](https://www.moneyhelper.org.uk/en/benefits/benefits-calculator) to check what you're eligible for now and how it might change if your income or savings increased."
+      },
+      "housing16b": {
+        "title": "Plan how you'll pay your rent after you retire, including future rent rises",
+        "paragraph1": "If you're worried you won't be able to afford a rented home that meets your needs, consider downsizing or moving to a cheaper area.",
+        "paragraph2": "You could also apply for social housing. The eligibility criteria depend on where you live, but you might be given priority if you have a low income and are 50 or over.",
+        "paragraph3": "You usually need to apply and join a waiting list, with available homes given to those with the highest priority. Find out more in our guide [How to find a rented home you can afford](https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford).",
+        "paragraph4": "If you stay in a private rented home, be aware that your landlord can usually only increase your rent once a year and you must be given at least 2 months' notice. If you think any rent increase is above the market rate for your area, you can challenge it and [apply for a market rent determination](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph5": "But the exact rules depend on the type of agreement you have, and where in the UK you rent. For example, your landlord doesn't have to give you notice to increase your rent if you're a lodger. For more information, see our guide [Help with rent increases, arrears and if you're struggling to pay](https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph6": "If you're planning on moving to a new private rented home after retirement, be aware that you'll usually still need to pass affordability checks. For example, you might need to have an annual income worth 2 or 3 times more than the annual rent.",
+        "paragraph7": "If your regular pension income is below this but you have cash savings, you might be able to show evidence of this instead. But never pay rent in advance as this is illegal."
+      }
+    }
+  }
+}

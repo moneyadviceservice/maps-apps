@@ -1,0 +1,1315 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Checkbox component (deprecated) applies error styles when hasError is true 1`] = `
+<label
+  class="flex"
+  data-testid="checkbox"
+>
+  <input
+    aria-describedby="checkbox-error"
+    aria-invalid="true"
+    class="sr-only peer tool-cbox"
+    id="error-id"
+    name="error-name"
+    type="checkbox"
+    value=""
+  />
+  <div
+    class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+  >
+    <svgr-mock
+      class="w-6 h-5"
+      role="presentation"
+    />
+  </div>
+  <div
+    class="flex flex-col ml-3"
+  >
+    <p
+      class="flex items-center text-base min-h-10"
+      data-testid="checkbox-children"
+    >
+      Error Checkbox
+    </p>
+  </div>
+</label>
+`;
+
+exports[`Checkbox component (deprecated) renders correctly 1`] = `
+<label
+  class="flex"
+  data-testid="checkbox"
+>
+  <input
+    class="sr-only peer tool-cbox"
+    id="test-id"
+    name="test-name"
+    type="checkbox"
+    value=""
+  />
+  <div
+    class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+  >
+    <svgr-mock
+      class="w-6 h-5"
+      role="presentation"
+    />
+  </div>
+  <div
+    class="flex flex-col ml-3"
+  >
+    <p
+      class="flex items-center text-base min-h-10"
+      data-testid="checkbox-children"
+    >
+      Lorem Ipsum
+    </p>
+  </div>
+</label>
+`;
+
+exports[`CheckboxGroup component renders checkbox group correctly 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders single item 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with all props combined 1`] = `
+<div>
+  <div
+    class="text-base mb-4"
+    data-testid="pizza-toppings"
+  >
+    <fieldset
+      aria-describedby="pizza-toppings-hint pizza-toppings-error"
+    >
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <p
+        class="break-words mb-0 text-gray-600"
+        data-testid="pizza-toppings-hint"
+        id="pizza-toppings-hint"
+      >
+        Select all toppings you want
+      </p>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="pizza-toppings-error"
+        id="pizza-toppings-error"
+      >
+        You must select at least one
+      </p>
+      <label
+        class="flex mt-4"
+        data-testid="pizza-toppings-addCheese"
+      >
+        <input
+          aria-describedby="pizza-toppings-addCheese-hint pizza-toppings-error"
+          aria-invalid="true"
+          checked=""
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="pizza-toppings-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="pizza-toppings-addCheese-hint"
+            id="pizza-toppings-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="pizza-toppings-addOlives"
+      >
+        <input
+          aria-describedby="pizza-toppings-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="pizza-toppings-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="pizza-toppings-addPeppers"
+      >
+        <input
+          aria-describedby="pizza-toppings-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="pizza-toppings-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+    <div
+      class="mt-2"
+    >
+      <p>
+        Note: Extra cheese costs more
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with children content 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+    <div
+      class="mt-2"
+    >
+      <p>
+        Additional information below
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with custom className 1`] = `
+<div>
+  <div
+    class="text-base custom-class"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with custom testId 1`] = `
+<div
+  class="text-base"
+  data-testid="custom-group"
+>
+  <fieldset>
+    <legend
+      class="text-2xl text-gray-800"
+    >
+      Pizza toppings
+    </legend>
+    <label
+      class="flex mt-4"
+      data-testid="custom-group-addCheese"
+    >
+      <input
+        aria-describedby="custom-group-addCheese-hint"
+        class="sr-only peer tool-cbox"
+        name="toppings"
+        type="checkbox"
+        value="addCheese"
+      />
+      <div
+        class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+      >
+        <svgr-mock
+          class="w-6 h-5"
+          role="presentation"
+        />
+      </div>
+      <div
+        class="flex flex-col ml-3"
+      >
+        <p
+          class="flex items-center text-base min-h-10"
+          data-testid="custom-group-addCheese-children"
+        >
+          Add cheese
+        </p>
+        <p
+          class="break-words mb-0 text-base text-gray-600"
+          data-testid="custom-group-addCheese-hint"
+          id="custom-group-addCheese-hint"
+        >
+          Cheese is extra
+        </p>
+      </div>
+    </label>
+    <label
+      class="flex mt-4"
+      data-testid="custom-group-addOlives"
+    >
+      <input
+        class="sr-only peer tool-cbox"
+        name="toppings"
+        type="checkbox"
+        value="addOlives"
+      />
+      <div
+        class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+      >
+        <svgr-mock
+          class="w-6 h-5"
+          role="presentation"
+        />
+      </div>
+      <div
+        class="flex flex-col ml-3"
+      >
+        <p
+          class="flex items-center text-base min-h-10"
+          data-testid="custom-group-addOlives-children"
+        >
+          Add olives
+        </p>
+      </div>
+    </label>
+    <label
+      class="flex mt-4"
+      data-testid="custom-group-addPeppers"
+    >
+      <input
+        class="sr-only peer tool-cbox"
+        name="toppings"
+        type="checkbox"
+        value="addPeppers"
+      />
+      <div
+        class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+      >
+        <svgr-mock
+          class="w-6 h-5"
+          role="presentation"
+        />
+      </div>
+      <div
+        class="flex flex-col ml-3"
+      >
+        <p
+          class="flex items-center text-base min-h-10"
+          data-testid="custom-group-addPeppers-children"
+        >
+          Add peppers
+        </p>
+      </div>
+    </label>
+  </fieldset>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with defaultChecked prefill 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          checked=""
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          checked=""
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with error and hint together 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset
+      aria-describedby="checkbox-group-hint checkbox-group-error"
+    >
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <p
+        class="break-words mb-0 text-gray-600"
+        data-testid="checkbox-group-hint"
+        id="checkbox-group-hint"
+      >
+        Choose all that apply
+      </p>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="checkbox-group-error"
+        id="checkbox-group-error"
+      >
+        At least one option is required
+      </p>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          aria-describedby="checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          aria-describedby="checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with error state 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset
+      aria-describedby="checkbox-group-error"
+    >
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="checkbox-group-error"
+        id="checkbox-group-error"
+      >
+        This field is required
+      </p>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          aria-describedby="checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          aria-describedby="checkbox-group-error"
+          aria-invalid="true"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with hideLabel (sr-only) 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800 sr-only"
+      >
+        Pizza toppings
+      </legend>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component renders with hint text 1`] = `
+<div>
+  <div
+    class="text-base"
+    data-testid="checkbox-group"
+  >
+    <fieldset
+      aria-describedby="checkbox-group-hint"
+    >
+      <legend
+        class="text-2xl text-gray-800"
+      >
+        Pizza toppings
+      </legend>
+      <p
+        class="break-words mb-0 text-gray-600"
+        data-testid="checkbox-group-hint"
+        id="checkbox-group-hint"
+      >
+        Choose all that apply
+      </p>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addCheese"
+      >
+        <input
+          aria-describedby="checkbox-group-addCheese-hint"
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addCheese"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addCheese-children"
+          >
+            Add cheese
+          </p>
+          <p
+            class="break-words mb-0 text-base text-gray-600"
+            data-testid="checkbox-group-addCheese-hint"
+            id="checkbox-group-addCheese-hint"
+          >
+            Cheese is extra
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addOlives"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addOlives"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addOlives-children"
+          >
+            Add olives
+          </p>
+        </div>
+      </label>
+      <label
+        class="flex mt-4"
+        data-testid="checkbox-group-addPeppers"
+      >
+        <input
+          class="sr-only peer tool-cbox"
+          name="toppings"
+          type="checkbox"
+          value="addPeppers"
+        />
+        <div
+          class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+        >
+          <svgr-mock
+            class="w-6 h-5"
+            role="presentation"
+          />
+        </div>
+        <div
+          class="flex flex-col ml-3"
+        >
+          <p
+            class="flex items-center text-base min-h-10"
+            data-testid="checkbox-group-addPeppers-children"
+          >
+            Add peppers
+          </p>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+</div>
+`;

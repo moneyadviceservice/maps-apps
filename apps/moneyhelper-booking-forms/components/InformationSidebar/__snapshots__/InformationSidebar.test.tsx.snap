@@ -1,0 +1,364 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`InformationSidebar Component renders accessRequest block when accessSupportStatus is not none and accessOptionsDetails is provided 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.overview.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.overview.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.details.duration-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.details.duration-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.details.format-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.details.format-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-request-label"
+      >
+        components.sidebar.information.details.request-label
+      </p>
+      <p
+        class="break-words mb-0"
+        data-testid="information-sidebar-appointment-request-value"
+      >
+        components.sidebar.information.details.request-value
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InformationSidebar Component renders adjustment request block when request translation exists 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.overview.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.overview.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.details.duration-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.duration-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.details.format-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.format-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-request-label"
+      >
+        components.sidebar.information.details.request-label
+      </p>
+      <p
+        class="break-words mb-0"
+        data-testid="information-sidebar-appointment-request-value"
+      >
+        Foreign language interpreter - arabic
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InformationSidebar Component renders an empty string for accessLanguage when accessLanguageType is other but accessLanguageOther is not provided 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.overview.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.overview.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.details.duration-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.duration-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.details.format-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.format-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-request-label"
+      >
+        components.sidebar.information.details.request-label
+      </p>
+      <p
+        class="break-words mb-0"
+        data-testid="information-sidebar-appointment-request-value"
+      >
+        Foreign language interpreter - {accessLanguage}
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InformationSidebar Component renders component correctly 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.overview.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.overview.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.details.duration-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.details.duration-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.details.format-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.details.format-value
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InformationSidebar Component renders null when flow is missing 1`] = `<div />`;
+
+exports[`InformationSidebar Component uses accessLanguageOther when accessLanguageType is other 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl p-6 md:w-[350px] bg-slate-300 border-none"
+    data-testid="information-sidebar"
+  >
+    <h5
+      class="text-lg md:text-xl text-gray-800 font-bold mb-4"
+      data-testid="information-sidebar-title"
+    >
+      components.sidebar.information.overview.test-flow.title
+    </h5>
+    <p
+      class="mb-4 break-words"
+      data-testid="information-sidebar-content"
+    >
+      components.sidebar.information.overview.test-flow.content
+    </p>
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-duration-label"
+      >
+        components.sidebar.information.details.duration-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-duration-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.duration-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-format-label"
+      >
+        components.sidebar.information.details.format-label
+      </p>
+      <p
+        class="mb-4 break-words"
+        data-testid="information-sidebar-appointment-format-value"
+      >
+        components.sidebar.information.details.foreign-language-interpreter.format-value
+      </p>
+    </div>
+    <hr
+      class="mb-4 border-slate-500"
+    />
+    <div
+      class="px-2"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="information-sidebar-appointment-request-label"
+      >
+        components.sidebar.information.details.request-label
+      </p>
+      <p
+        class="break-words mb-0"
+        data-testid="information-sidebar-appointment-request-value"
+      >
+        Foreign language interpreter - spanish
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CommunicationPreferences Component renders component correctly 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="confirm-details"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class=""
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+            data-testid="checkbox-group"
+          >
+            <fieldset
+              aria-describedby="checkbox-group-hint"
+            >
+              <legend
+                class="text-2xl text-gray-800"
+              >
+                components.communication-preferences.form.checkbox-preferred-method.label
+              </legend>
+              <p
+                class="break-words mb-0 text-gray-600"
+                data-testid="checkbox-group-hint"
+                id="checkbox-group-hint"
+              >
+                components.communication-preferences.form.checkbox-preferred-method.hint
+              </p>
+              <label
+                class="flex mt-4"
+                data-testid="checkbox-group-mock-value|preferred-method"
+              >
+                <input
+                  class="sr-only peer tool-cbox"
+                  name="preferredMethodOfCommunication"
+                  type="checkbox"
+                  value="mock-value|preferred-method"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                >
+                  <svgr-mock
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <div
+                  class="flex flex-col ml-3"
+                >
+                  <p
+                    class="flex items-center text-base min-h-10"
+                    data-testid="checkbox-group-mock-value|preferred-method-children"
+                  >
+                    mock-text
+                  </p>
+                </div>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          aria-describedby="question-radio-hint"
+          class="text-base"
+          data-testid="question-radio"
+        >
+          <legend
+            class="text-2xl text-gray-800"
+            data-testid="question-radio-legend"
+          >
+            components.communication-preferences.form.radio-button-large-print.label
+          </legend>
+          <p
+            class="break-words mb-0 text-gray-600"
+            data-testid="question-radio-hint"
+            id="question-radio-hint"
+          >
+            components.communication-preferences.form.radio-button-large-print.hint
+          </p>
+          <div
+            class="flex flex-col gap-6 mt-4"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="relative text-base"
+                data-testid="radio-button"
+              >
+                <div
+                  class="flex flex-wrap items-center"
+                >
+                  <input
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    data-testid="radio-button-input"
+                    id="largePrintCommunication-0"
+                    name="largePrintCommunication"
+                    required=""
+                    type="radio"
+                    value="mock-value"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                    data-testid="radio-button-label"
+                    for="largePrintCommunication-0"
+                  >
+                    mock-text
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-describedby="question-radio-hint"
+          class="text-base"
+          data-testid="question-radio"
+        >
+          <legend
+            class="text-2xl text-gray-800"
+            data-testid="question-radio-legend"
+          >
+            components.communication-preferences.form.radio-button-contact-you.label
+          </legend>
+          <p
+            class="break-words mb-0 text-gray-600"
+            data-testid="question-radio-hint"
+            id="question-radio-hint"
+          >
+            components.communication-preferences.form.radio-button-contact-you.hint
+          </p>
+          <div
+            class="flex flex-col gap-6 mt-4"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="relative text-base"
+                data-testid="radio-button"
+              >
+                <div
+                  class="flex flex-wrap items-center"
+                >
+                  <input
+                    class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                    data-testid="radio-button-input"
+                    id="contactYouCommunication-0"
+                    name="contactYouCommunication"
+                    required=""
+                    type="radio"
+                    value="mock-value"
+                  />
+                  <label
+                    class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                    data-testid="radio-button-label"
+                    for="contactYouCommunication-0"
+                  >
+                    mock-text
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`CommunicationPreferences Component renders component correctly with errors 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="confirm-details"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+            data-testid="checkbox-group"
+          >
+            <fieldset
+              aria-describedby="checkbox-group-hint checkbox-group-error"
+            >
+              <legend
+                class="text-2xl text-gray-800"
+              >
+                components.communication-preferences.form.checkbox-preferred-method.label
+              </legend>
+              <p
+                class="break-words mb-0 text-gray-600"
+                data-testid="checkbox-group-hint"
+                id="checkbox-group-hint"
+              >
+                components.communication-preferences.form.checkbox-preferred-method.hint
+              </p>
+              <p
+                class="break-words mb-0 text-red-700"
+                data-testid="checkbox-group-error"
+                id="checkbox-group-error"
+              >
+                components.communication-preferences.form.checkbox-preferred-method.error
+              </p>
+              <label
+                class="flex mt-4"
+                data-testid="checkbox-group-mock-value|preferred-method"
+              >
+                <input
+                  aria-describedby="checkbox-group-error"
+                  aria-invalid="true"
+                  class="sr-only peer tool-cbox"
+                  name="preferredMethodOfCommunication"
+                  type="checkbox"
+                  value="mock-value|preferred-method"
+                />
+                <div
+                  class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white rounded text-white peer-checked:text-white peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 border-4 border-red-700 peer-checked:bg-red-700 peer-checked:border-red-700 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                >
+                  <svgr-mock
+                    class="w-6 h-5"
+                    role="presentation"
+                  />
+                </div>
+                <div
+                  class="flex flex-col ml-3"
+                >
+                  <p
+                    class="flex items-center text-base min-h-10"
+                    data-testid="checkbox-group-mock-value|preferred-method-children"
+                  >
+                    mock-text
+                  </p>
+                </div>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            aria-describedby="question-radio-hint question-radio-error"
+            class="text-base"
+            data-testid="question-radio"
+          >
+            <legend
+              class="text-2xl text-gray-800"
+              data-testid="question-radio-legend"
+            >
+              components.communication-preferences.form.radio-button-large-print.label
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="question-radio-hint"
+              id="question-radio-hint"
+            >
+              components.communication-preferences.form.radio-button-large-print.hint
+            </p>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="question-radio-error"
+              id="question-radio-error"
+            >
+              components.communication-preferences.form.radio-button-large-print.error
+            </p>
+            <div
+              class="flex flex-col gap-6 mt-4"
+            >
+              <div
+                class=""
+              >
+                <div
+                  class="relative text-base"
+                  data-testid="radio-button"
+                >
+                  <div
+                    class="flex flex-wrap items-center"
+                  >
+                    <input
+                      class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                      data-testid="radio-button-input"
+                      id="largePrintCommunication-0"
+                      name="largePrintCommunication"
+                      required=""
+                      type="radio"
+                      value="mock-value"
+                    />
+                    <label
+                      class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                      data-testid="radio-button-label"
+                      for="largePrintCommunication-0"
+                    >
+                      mock-text
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            aria-describedby="question-radio-hint question-radio-error"
+            class="text-base"
+            data-testid="question-radio"
+          >
+            <legend
+              class="text-2xl text-gray-800"
+              data-testid="question-radio-legend"
+            >
+              components.communication-preferences.form.radio-button-contact-you.label
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="question-radio-hint"
+              id="question-radio-hint"
+            >
+              components.communication-preferences.form.radio-button-contact-you.hint
+            </p>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="question-radio-error"
+              id="question-radio-error"
+            >
+              components.communication-preferences.form.radio-button-contact-you.error
+            </p>
+            <div
+              class="flex flex-col gap-6 mt-4"
+            >
+              <div
+                class=""
+              >
+                <div
+                  class="relative text-base"
+                  data-testid="radio-button"
+                >
+                  <div
+                    class="flex flex-wrap items-center"
+                  >
+                    <input
+                      class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer"
+                      data-testid="radio-button-input"
+                      id="contactYouCommunication-0"
+                      name="contactYouCommunication"
+                      required=""
+                      type="radio"
+                      value="mock-value"
+                    />
+                    <label
+                      class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                      data-testid="radio-button-label"
+                      for="contactYouCommunication-0"
+                    >
+                      mock-text
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;

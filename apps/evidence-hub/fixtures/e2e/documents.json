@@ -1,0 +1,1769 @@
+[
+  {
+    "seoTitle": "Changing behaviour around online transactions",
+    "seoDescription": "An RCT testing the efficacy of live assisted digital transactions. Developed by Good Things Foundation and Toynbee Hall and delivered by 18 community organisations to struggling working-age people.",
+    "title": "Changing behaviour around online transactions",
+    "slug": "changing-behaviour-around-online-transactions",
+    "publishDate": "2018-01-01T00:00:00Z",
+    "lastUpdatedDate": "2018-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nDigital exclusion compounds the poverty premium. Individuals who do not make use of online retail and digital financial services are more subject to inflated prices, are less able to compare prices, and are unable to take advantage of online-only savings.\\n\\nCommunity financial inclusion interventions are impactful but rarely focus resource on digital inclusion. Conversely, the fintech sector creates digital tools for financial inclusion without supporting the skills that people need to use those tools. This project sought to create evidence around how to embed digital skills in a financial capability intervention.\\n\\nGood Things Foundation and Toynbee Hall ran this project which was delivered by member organisations of the Online Centres Network. It ran between November 2016 and December 2017 and was delivered to struggling working-age adults in mainly deprived wards across the country. The project tested the efficacy of an assisted digital transaction, by supporting project participants – who used their own money - to conduct a live online transaction."
+      },
+      {
+        "plaintext": "The study\\n\\nThe aim of the evaluation was to create evidence that an assisted digital transaction could change transactive behaviours. It did this by exploring the impact of the intervention in relation to four key outcome areas:\\n\\nAbility to transact online independently\\n\\nUse of online financial products and information\\n\\nAbility to exercise judgement in financial decisions\\n\\nAbility to maximise income\\n\\nThe researchers evaluated the project by structuring it as a Randomised Control Trial (RCT), using a cluster stepped-wedge design. Participants completed pre and post-intervention surveys, which measured self-assessment of financial capability, consumer behaviour, budgeting, self-assessment of financial wellbeing, financial outlook and digital inclusion. Of the 645 participants registered on the course, the researchers collected complete outcome data for 630 participants.\\n\\nAlongside the surveys, the researchers also conducted qualitative interviews with participants in ten of the centres, between May and September 2017."
+      },
+      {
+        "plaintext": "Key findings\\n\\nAssisted digital transactions improve self-rating of financial capability:\\n\\nParticipation in the assisted digital transaction improved scores across six key indicators. The combined score across these indicators increased by 9% from baseline through to post-intervention. This is a statistically significant effect.\\n\\nAssisted digital transactions change transactional behaviour:\\n\\nPeople who were part of the intervention were 6.5 times more likely to transact again if they were supported to transact through the intervention. Again, this was a statistically significantly effect.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological considerations:\\n\\nThere was drop-off in recruitment towards the end of the project, which researchers felt was likely down to exterior factors (such as Ramadan, Eid and the school holidays). A crossover cluster RCT design, rather than a stepped-wedge design, may have better accounted for drop-off towards the end of the project.\\n\\nThe project ran to strict time limits, meaning that they had little flexibility to extend the delivery period to mitigate non-recruitment or poor attendance.\\n\\nIt is not clear how many people were interviewed for the qualitative research, and how they were sampled.\\n\\nTransferability:\\n\\nThe project delivery model provided open-ended support to participants. To make the assisted digital transaction transferable, other agencies need to be aware of the additional support needs that the transaction creates.\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nFinal Report and Appendix"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "An RCT testing the efficacy of live assisted digital transactions. Developed by Good Things Foundation and Toynbee Hall and delivered by 18 community organisations to struggling working-age people."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Changing Behaviour to Provide Innovative Debt Advice Services",
+    "seoDescription": "The Money and Pensions Service (MaPS), developed, tested and evaluated the impacts of three prototypes with service providers, to understand if introducing behavioural changes when giving debt advice made a positive difference to client services, while supporting employees.",
+    "title": "Changing Behaviour to Provide Innovative Debt Advice Services",
+    "slug": "changing-behaviour-to-provide-innovative-debt-advice-services",
+    "publishDate": "2020-01-01T00:00:00Z",
+    "lastUpdatedDate": "2020-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThe project’s aim was to understand if introducing behavioural changes when giving debt advice made a positive difference to client services, while supporting employees.\\n\\nBehavioural change was chosen as the best way to address areas identified by MaPS research as needing improvement because of the potential long-term benefits.\\n\\nThree initiatives were rigorously selected as being the most promising for interventions. The objective was examined by developing behavioural change service prototypes for each initiative. Each service prototype was selected using the Behavioural Change Wheel (BCW) method, which systematically identifies fruitful interventions for behaviour change.\\n\\nThe prototypes were then tested with 12 carefully recruited service providers (participants). The impact on clients and staff was rigorously evaluated, from a quantitative and qualitative perspective. A fundamental part of the project was also to assess the implementation process, informing the best ways to scale up the service prototypes across the debt advice service sector."
+      },
+      {
+        "plaintext": "The study\\n\\nThis research involved the use of both quantitative and qualitative methods for data collection and analysis to evaluate the implementation and impact of each prototype.\\n\\nThe research was commissioned and co-ordinated by MaPS. Interventions were designed by the MaPS innovation team and carried out in partnership with 12 debt advice services across England.\\n\\nExternal agency, Revealing Reality, was appointed to carry out an independent process and implementation evaluation (qualitative staff and client interviews). MaPS used this research on lessons learned to generalise how to scale up the implementation of the prototypes across the sector and make recommendations.\\n\\nA quantitative evaluation (monitoring forms and online surveys) sought to understand the impact of the prototypes on the target behaviour, encompassing both clients and staff. This was conducted internally by MaPS and, for the Savings Prototype, alongside external agency BVA BDRC. For all case studies, MaPS conducted a final round of visits with interviews."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe report is structured around it’s five key findings:\\n\\nThis research provides insights and best practice when implementing behavioural changes within debt advice service organisations. Seen together, the initiatives highlight the need for a pre-implementation phase to pilot the service prototype before rolling it out, engaging staff at all levels as early in the process as possible and for strong governance and clear communication throughout the intervention.\\n\\nThe research also offers specific findings for each initiative put into practice:\\n\\nThe New Communication System (NCS) significantly reduced the number of missed debt advice appointments (no-shows) by almost a quarter (24%). It was also an effective approach when adapted for use in other parts of the debt advise service process, encouraging the return of client information to progress cases.\\n\\nUsing administrative support was proven to be a critical resource in helping debt advisers to better manage un-booked emergency cases, a common challenge in the sector.\\n\\nThe most effective ways to encourage clients to save using the Standard Financial Statement (SFS) or its equivalent form were identified. Building financial resilience against financial shocks and saving for a specific goal in a specific time resonated most with clients as messages.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: In the qualitative strand of research delivered by RR, it was noted that clients who agreed to interview may not be representative of the general client population as they are likely to be more motivated and proactive people generally.Impact evaluation across all three interventions were small scale and and limited by comparability between groups so results should be read with caution\\n\\n\\n\\nRelevance: This report will provide debt advice service providers across the UK with the knowledge needed to try out one or more of the initiatives for the benefit of their staff and clients.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "The Money and Pensions Service (MaPS), developed, tested and evaluated the impacts of three prototypes with service providers, to understand if introducing behavioural changes when giving debt advice made a positive difference to client services, while supporting employees."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Children and Young People Financial Education Innovation and Evaluation Programme: Synthesis Report",
+    "seoDescription": "Ecorys UK, in partnership with the Personal Finance Research Centre (PFRC) at the University of Bristol, was commissioned by The Money and Pensions Service (MaPS) to evaluate the Children and Young People (CYP) Financial Education Innovation and Evaluation Programme. This report synthesises the key findings and learnings for the programme, drawing on the evaluation evidence of all seven pilot projects.",
+    "title": "Children and Young People Financial Education Innovation and Evaluation Programme: Synthesis Report",
+    "slug": "children-and-young-people-financial-education-innovation-and-evaluation-programme--synthesis-report",
+    "publishDate": "2022-01-01T00:00:00Z",
+    "lastUpdatedDate": "2022-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Northern Ireland",
+        "key": "NI"
+      },
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      },
+      {
+        "name": "Scotland",
+        "key": "scotland"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Parents and families",
+        "key": "parents-families"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThe Money and Pensions Service designed the CYP Financial Education Innovation and Evaluation Programme to support delivery of the UK Strategy for Financial Wellbeing, by evaluating new and innovative, or existing but untested, financial education interventions. By doing this, the programme aimed to fill gaps in the understanding of effective financial education, in turn supporting the delivery of one of the Strategy’s five National Goals: to ensure that two million more CYP receive a meaningful financial education by 2030. The programme focused on three priority areas: children under the age of seven years, CYP in vulnerable circumstances, and digital delivery of financial education.\\n\\nThe programme was commissioned, delivered and evaluated between October 2020 and September 2021, during the COVID-19 pandemic. The achievements of the seven pilot projects that took part in the programme need to be understood in this context, with over 10,000 CYP; 354 teachers and other practitioners; 145 schools; and 141 parents/carers engaged in financial education activities over the course of the programme."
+      },
+      {
+        "plaintext": "The study\\n\\nThe seven pilot projects were evaluated individually, as well as the evaluation findings from all pilots being combined in a programme-level synthesis report.\\n\\nWhile the pilot projects used different indicators to measure change, the high-level outcomes in the programme Theory of Change provided a framework by which to analyse the data from individual projects and understand the impact of the overall programme.\\n\\nIn synthesising the evidence, a realist approach was taken to identify what works, for whom, why, how and in what contexts."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe seven pilots were evaluated individually, providing indicative and promising evidence that informed the achievement or otherwise of high-level outcomes in a programme-wide theory of change:\\n\\nShort-term outcomes: For children and young people, there was evidence that the programme achieved the short-term outcome to increase awareness about positive money management.For teachers and practitioners, there was evidence that the programme achieved the short-term outcome to increase confidence in delivering financial education.\\n\\n\\n\\nMedium-term outcomes: It was not possible to measure these within the timeframe of the programme, although the evaluation considered that pilots had put in place the necessary foundations for achieving them, including applying new knowledge and skills, and changing children and young people’s money management behaviour.\\n\\nWhat works:\\n Looking across the seven pilots, the evaluation synthesised evidence about how the projects worked, for whom and why – identifying four particular learnings:\\n\\nStorytelling is an effective way for teachers to deliver financial education for children under seven.\\n\\nTailored and flexible resources are key when designing financial education for specific groups to ensure they are engaging, appropriate and relevant.\\n\\nDigital delivery must be considered as a key component of delivering financial education.\\n\\nSufficient lead-in time (ideally two terms, for schools) is needed for financial education to be incorporated into existing structures and for teachers and practitioners to familiarise and plan their financial education delivery.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: The short timescales for delivery and evaluation meant it was only possible to evaluate short-term outcomes for most of the seven pilots.The sample sizes for both quantitative and qualitative data collection were generally smaller than expected, which limited the conclusions that could be drawn from the data.\\n\\n\\n\\nRelevance: The evaluation is of interest to anyone developing financial education for children and young people, with a specific focus on children younger than seven, vulnerable CYP and the digital delivery of financial education.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Ecorys UK, in partnership with the Personal Finance Research Centre (PFRC) at the University of Bristol, was commissioned by The Money and Pensions Service (MaPS) to evaluate the Children and Young People (CYP) Financial Education Innovation and Evaluation Programme. This report synthesises the key findings and learnings for the programme, drawing on the evaluation evidence of all seven pilot projects."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice Basingtoke - What Works project evaluation report",
+    "seoDescription": "Financial capability training courses delivered to vulnerable young people by Citizens Advice Basingstoke and peer mentors.",
+    "title": "Citizens Advice Basingtoke - What Works project evaluation report",
+    "slug": "citizens-advice-basingtoke-what-works-project-evaluation-report",
+    "publishDate": "2018-01-01T00:00:00Z",
+    "lastUpdatedDate": "2018-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nCitizens Advice Basingstoke secured funding from the ‘What Works Fund’ to design, test and evaluate an intervention aimed at improving the financial capability of vulnerable young adults. This constituted the delivery of a training course over 10 weekly sessions, to three small groups of participants. It was delivered between 2017-2018 in partnership with YMCA Basingstoke and the Basingstoke College of Technology (BCoT).\\n\\nThe topics included were:\\n\\nUnderstanding attitudes to money and spending;\\n\\nBalancing income and spending;\\n\\nWays to live within budget and save;\\n\\nShopping around;\\n\\nBest and cheapest ways to pay bills;\\n\\nFinding accommodation and associated responsibilities;\\n\\nFinancial resilience – planning for life events;\\n\\nUnderstanding bank accounts and credit.\\n\\nKey features of the intervention were the co-design and co-delivery of content by peer mentors and the use of social media to promote engagement and learning.\\n\\nThe overall aim was to understand to what extent an intervention co-created by vulnerable young adults, and supplemented by peer mentoring and social media activity, improve the financial capability of young adults in similar circumstances."
+      },
+      {
+        "plaintext": "The study\\n\\nThe research questions were:Outcome evaluation:\\n\\nDoes this model of financial capability education improve the financial attitudes/ understanding/mindset of young people?\\n\\nDoes this model of financial capability education improve financial outcomes and behaviours for young people?\\n\\nProcess evaluation:\\n\\nHow effective is the use of incentives in encouraging young people to participate in the course (and which incentive is most compelling)?\\n\\nHow effective is the use of a peer education model in financial capability education for young people?\\n\\nWhat are the reactions of young people to creating and sharing content related to financial capability via vlogging and other forms of social media? What are the drivers and barriers to doing so?\\n\\nHow effective is social media in changing attitudes of young people towards financial capability?\\n\\nThe evaluation ran from January 2017 to May 2018 and involved a mix of qualitative and quantitative methods including filmed ethnography, depth interviews, discussion groups and surveys. Administrative records and social media activity were also reviewed.\\n\\n38 participants completed the pre-intervention survey;\\n\\n18 completed the survey at the end of the course;\\n\\nThere were five in-depth interviews;\\n\\n18 participants completed a course feedback survey;\\n\\n19 participants took part in discussion groups.\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nOutcome evaluation:\\n\\nAt the start of the course 52% (n=27) agreed that ‘I tend to buy things even when I can’t really afford them’ while at the end this reduced to 31% (n=13).\\n\\nMore participants agreed they could sort out financial problems independently and ‘without seeking advice’ after the intervention than before (though this is based on a small number of unmatched interviews).\\n\\n85% (n=13), fully understood their bank statements following the intervention, compared to 65% (n=27) beforehand (though again this is based on a small number of unmatched interviews).\\n\\nThe number of participants who understood the concept of shopping around, changing service providers and checking terms and conditions on purchases and financial products increased following the intervention (again based on a small number of unmatched interviews).\\n\\nUnplanned outcomes for some included qualitative evidence of increased self-confidence, mental resilience and healthier eating. However, sustained behavioural and attitudinal change appeared limited.\\n\\nProcess evaluation:\\n\\nSignificant challenges exist in recruiting and retaining vulnerable young adults. Peer mentors can be instrumental in overcoming these.\\n\\nMatched funding schemes can encourage saving and engagement, but eligibility rules need to be clear.\\n\\nMaximum engagement is more likely with the use of free food and interactive games, activities and flexible content co-created by peer mentors.\\n\\nYoung vulnerable adults are cautious about creating and sharing social media material about personal finances.\\n\\nRecruiting, retaining and managing peer mentors is challenging, time consuming and emotionally demanding.\\n\\nMental wellbeing among the peer mentors was a problem, with some peer mentors facing disciplinary issues because of sickness and/or suspected breaches of confidentiality.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations: The small sample size impacted upon the level of statistical analysis that could be completed. The findings are therefore indicative of the perspectives and experience of participants, and not the overall population of vulnerable young adults.\\n\\n**Relevance:**This report is relevant to all stakeholders and policymakers with an interest in financial education interventions among vulnerable young adults.\\n\\nGeneralisability/ transferability: The research, while thorough, is based on small numbers in one geographic region of the United Kingdom. Combined with the lack of statistical testing, its findings cannot be readily generalised to the rest of the UK without further research.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Financial capability training courses delivered to vulnerable young people by Citizens Advice Basingstoke and peer mentors."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice's 'East of England Financial Capability and Inclusion Project'",
+    "seoDescription": "Financial capability training provided to front-line workers and beneficiaries to improve financial inclusion in the East of England.",
+    "title": "Citizens Advice's 'East of England Financial Capability and Inclusion Project'",
+    "slug": "citizens-advice-s-east-of-england-financial-capability-and-inclusion-project",
+    "publishDate": "2011-01-01T00:00:00Z",
+    "lastUpdatedDate": "2011-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      },
+      {
+        "name": "Value for money",
+        "key": "value-for-money"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Parents and families",
+        "key": "parents-families"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThis project delivered financial capability and inclusion training, and job search assistance, to unemployed and economically inactive people (beneficiaries), as well as providing training for the frontline workers who support them. Work was also done to build capacity for delivery of financial capability services by providing accredited training for trainers and relevant forums.\\n\\nThe project provided financial capability training to 930 beneficiaries and 580 front-line workers from 128 organisations. The frontline workers came from a range of organisations, connecting with a wide variety of beneficiary groups, and estimated a collective annual reach of 23,576 people."
+      },
+      {
+        "plaintext": "The study\\n\\nAn independent evaluation of the project was conducted by Rocket Science in 2011. This included:\\n\\nReview of project monitoring data and participant feedback forms.\\n\\nBeneficiary surveys which generated a total of 108 responses (12% of the total).\\n\\nFour focus groups and two online surveys with frontline workers. At the final evaluation stage 21 survey responses were received.\\n\\nSurvey of project delivery partners which generated 13 responses.\\n\\nThe evaluators also considered the impact of the project in terms of its likely financial savings and social benefits, framed by a logic model which drew upon existing research evidence to show the connections between project activity and a range of outcomes/impacts."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe evaluation found positive impacts in relation to the following outcomes:For beneficiaries\\n\\nFinancial behaviour: the follow-up survey found that 60% of participants had created a budget, 10% had talked to a credit union and 16% had sought debt advice; 47% said the topic of budgeting had most impact.\\n\\nFinancial wellbeing: reported benefits included reduced stress (76%) and improved health (25%).\\n\\nFinancial capability (mindset): there was a moderate rise in self-reported general confidence and confidence managing money recorded from the immediate post training feedback forms. Also, at this stage, 45% of participants planned to make a budget, 20% say they would talk to a credit union and 15% said they would seek debt advice.\\n\\nFor front-line workers\\n\\nFinancial capability (mindset): feedback forms revealed increased knowledge about financial capability issues and almost all (96%) said they felt more confident referring clients for help with money issues.  \\n\\nA ROI calculation was also undertaken which estimated that, for every £1 spent on the programme, it generated £4.50 of social value. Assuming that 20% of beneficiaries will act upon the advice received and will continue to do so for at least five years."
+      },
+      {
+        "plaintext": "What are the costs?\\n\\nThe total cost of the training provided was £257,875."
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations:The evaluation design did not include a comparison group.\\n\\nFront-line workers found it challenging to engage their clients with the financial education programme. They suggested that digital approaches could be used more effectively to engage clients and deliver the training. They found it particularly challenging to engage economically inactive people (as opposed to those already engaged with services to support their return to work).\\n\\n\\n\\nGeneralisability/ transferability:The final survey of frontline workers yielded a relatively low number of responses (12). The results should therefore be viewed with caution and should not be used to generalise to the wider population.\\n\\n\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nFull research report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Financial capability training provided to front-line workers and beneficiaries to improve financial inclusion in the East of England."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice's 'Financial Capability Pilot'",
+    "seoDescription": "Group training for front-line workers and face to face workshops and one-to-one sessions for service users, delivered by full time financial capability advisers in the North East of England.",
+    "title": "Citizens Advice's 'Financial Capability Pilot'",
+    "slug": "citizens-advice-s-financial-capability-pilot",
+    "publishDate": "2009-01-01T00:00:00Z",
+    "lastUpdatedDate": "2009-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      },
+      {
+        "name": "Value for money",
+        "key": "value-for-money"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial wellbeing at work",
+        "key": "financial-wellbeing-work"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Northern Ireland",
+        "key": "NI"
+      },
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      },
+      {
+        "name": "Scotland",
+        "key": "scotland"
+      },
+      {
+        "name": "Wales",
+        "key": "wales"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThis programme aimed to improve the financial capability of people who may be excluded from mainstream financial services. It involved a combination of face-to-face workshops and one-to-one sessions delivered directly to service users and group-training sessions for front-line workers from intermediary organisations focused on building the financial capability of their clients. It was hoped that those trained would pass their learning on to friends and colleagues, thereby improving their financial capability and confidence in supporting others to develop theirs.\\n\\nThe front-line workers represented a variety of organisations including credit unions, housing associations, other third sector organisations, education providers and statutory bodies, including local authorities.\\n\\nThe workshops, one-to-one sessions and training were delivered by the equivalent of 7 full-time financial capability advisers across ten Citizens Advice Bureaux in the North East and Yorkshire and Humberside.\\n\\nThe pilot ran from Autumn 2008 to Summer 2009 and was funded by the then Department for Business, Enterprise & Regulatory Reform. During this period, 458 training events were delivered as part of the pilot to 1,083 service users, and 1,433 front-line workers from 111 different organisations (around 2,500 people in total)."
+      },
+      {
+        "plaintext": "The study\\n\\nOne independent impact evaluation of the programme conducted by Bob Widdowson Research and Consulting has been published. This study involved pre-and immediate post-training measurement with 716 front-line workers and 492 service users, and subsequent follow-up interviews with 20 front-line workers and 26 service users. The before and after intervention data is quite limited (as are the pre and post changes recorded). No comparison group was used."
+      },
+      {
+        "plaintext": "What are the outcomes?\\n\\nFinancial behaviour\\n\\nFinancial capability (mindset)\\n\\nOther\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe evaluation found positive changes in relation to the following outcomes:Outcomes for front-line workers\\n\\nConfidence to support clients: the proportion of front-line workers who said they felt very or fairly confident to support service users on financial issues increased from 48% before training to 94% directly afterwards.\\n\\nAlmost all workers (95%) said they would probably or definitely share the information they had gained with their colleagues.\\n\\nOutcomes for service users\\n\\nFinancial behaviour:\\n\\nDirectly after participating in the programme, when asked what financial actions they were likely to take as a result of the training, over 90% of service users said they were intending to take one or more actions. The most commonly cited actions were setting up a budget, followed by claiming extra benefits, changing fuel supplier and changing how they borrowed money.\\n\\nOf those 26 service users who participated in the follow-up interviews, around half said they had gone on to take at least one action as a result of the training, and three-quarters said they would pass on the information they learned to family and friends.\\n\\nFinancial capability (mindset):\\n\\nThe proportion of service users who said they felt very or fairly confident in managing their finances increase from 60% before the training to 89% directly afterwards.\\n\\nBased on an estimate made by the front-line workers involved in the training, the evaluators projected that the project would have knock-on beneficial effects for around 20,000 additional service users in a three-month period."
+      },
+      {
+        "plaintext": "What are the costs?\\n\\nCitizens Advice assessed the cost of delivering this project to the end of May 2009 as £250,000. The figure comprises bureaux costs (£220,000) and central costs such as training and support (£30,000).\\n\\n2,516 people were directly trained, equating to a total unit cost of under £100 per person. If the numbers directly trained are added to the numbers of service users projected to be supported by trained intermediaries – an additional 20,000 people were reached (a unit cost of £11 per person). The longer the programme ran the lower this unit cost would become."
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations:\\n\\nMeeting targets for delivering training to service users proved more difficult than expected. Key reasons cited included reliance within the project on third parties to promote the training to them, the stigma around seeking debt and money advice, and insufficient time to effectively connect and engage with vulnerable groups and those not currently connected to other services.\\n\\nRecommendations made for overcoming this included working with the engaged service users to identify methods for reaching out to other members of their communities; using terms other than ‘education’ and ‘training’ which imply people might need help; and offering more one-to-one sessions for those who are reluctant to discuss money in a group setting. Training materials should be adapted for specific groups (such as those with learning disabilities or people with poor literacy and numeracy skills) to reflect their ability and needs.\\n\\nThe use of skilled trainers experienced in debt and financial capability work was a key success factor for the programme.\\n\\nCare should be taken when interpreting the findings from the follow-up phase due to the very small sample sizes involved.\\n\\nApplicability: This report is applicable to anyone with an interest in financial capability programmes and the evaluations of the schemes."
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Group training for front-line workers and face to face workshops and one-to-one sessions for service users, delivered by full time financial capability advisers in the North East of England."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice's 'MoneyActive'",
+    "seoDescription": "Face-to-face programme aiming to increase the financial confidence and knowledge of front-line workers and volunteers, and ultimately the clients they worked with.",
+    "title": "Citizens Advice's 'MoneyActive'",
+    "slug": "citizens-advice-s-moneyactive",
+    "publishDate": "2012-01-01T00:00:00Z",
+    "lastUpdatedDate": "2012-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Northern Ireland",
+        "key": "NI"
+      },
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      },
+      {
+        "name": "Scotland",
+        "key": "scotland"
+      },
+      {
+        "name": "Wales",
+        "key": "wales"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nFunded by the Nationwide Building Society, MoneyActive was a three-year project that started in 2009. It was delivered by Citizens Advice Bureaux (CAB) through front line-workers and volunteers and aimed to:\\n\\nIncrease the financial confidence and knowledge of front-line workers and volunteers, and ultimately end beneficiaries.\\n\\nImprove financial behaviours by teaching participants how to develop a budget, how to plan, save and borrow better (including explanations of terms such as APR) and how to differentiate between priority and non-priority debts.\\n\\nProgramme targets were to recruit, train and support 1,300 volunteers to deliver financial capability training and reach 100,000 beneficiaries. All targets were exceeded with 1,725 volunteers recruited and an estimated 204,900 people reached directly or through partner organisations."
+      },
+      {
+        "plaintext": "The study\\n\\nAn independent impact evaluation of the programme was undertaken by Rocket Science. This study involved:\\n\\nVolunteers: 1,004 responses to a pre (registration) survey, 348 responses from a post online survey, focus groups;\\n\\nFront-line workers: feedback forms completed after 812 training sessions;\\n\\nBeneficiaries: 2,749 training feedback forms completed at the end of training, 45 telephone interviews one to six months after the training; and\\n\\nMoneyActive coordinators: 96 survey responses, qualitative interviews and focus groups.\\n\\n"
+      },
+      {
+        "plaintext": "What are the outcomes?\\n\\nThe study measured changes in outcomes for both volunteers (mindset and ability) and end-beneficiaries (mindset)."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe evaluation (which involved pre- and post-programme measurement of volunteers, and post-training measurement of beneficiaries immediately after the training) found positive results in relation to the following outcomes:\\n\\nImpact on volunteersFinancial capability (mindset): 84% of volunteers said they felt very or fairly confident giving advice to clients after the training compared to 44% before.\\n\\nFinancial capability (ability): Increased knowledge – 82% had a lot or quite a lot of knowledge on financial matters after the training, rising from 31% before the training.\\n\\nFinancial capability (Ability): Increased knowledge – 82% had a lot or quite a lot of knowledge on financial matters after the training, rising from 31% before the training.\\n\\n\\n\\nImpact on end-beneficiariesFinancial capability (mindset): 65% of end beneficiaries felt very or fairly confident to manage their money after the training compared to 37% before.\\n\\nFollowing the training, 27% of participants planned to set up a budget, 22% intended to plan future spending differently and 23% planned to change how they save money; 18% planned to change how they would borrow money and 6% intended to look for debt advice; 16% planned to open a bank account and 46% a savings account.\\n\\n\\n\\nThe study also looked at the delivery of MoneyActive, making several recommendations for future practice:\\n\\nAdd in sufficient resource for marketing.\\n\\nMaximise existing contacts and networks.\\n\\nUnderstand the training needs for target groups in order to pitch appropriately and be ready to vary the pitch/content.\\n\\nProvision of training in pairs helped to provide this flexibility as well as an in-built quality control mechanism.\\n\\nWorking with existing groups to engage frontline workers and beneficiaries provided greater success than setting up new groups of users, which proved difficult.\\n\\nIncorporating fun, interesting & interactive exercises was important to retain attention and commitment. End users welcome the informal, non-threatening and non-judgemental delivery styles.\\n\\nThe study also provides a number of challenges, particularly in relation to the public funding of financial capability training. One example for instance involved the way in which financial capability training was deployed:\\n\\nMany end users were becoming more and more concerned with receiving emergency debt advice and it was proving difficult to persuade some to engage with preventative financial capability training in the face of severe personal crisis. Some bureaux had however, overcome this by insisting on beneficiaries receiving an integrated package of financial capability and debt advice.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nGeneralisability/ transferability:While this evaluation is large and looks at the project outcomes for 2,749 beneficiaries of a programme that reached over 100,000 beneficiaries the findings are not generalisable outside of the project setting.\\n\\nThere was no comparison group used in the study\\n\\n\\n\\nMethodological limitations:This large-scale study appears well performed using a range of research and data gathering approaches to triangulate the results found. While a significant volume of self-reporting was used, this was backed up by a good number of qualitative interviews to validate and deepen the analysis.\\n\\n\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Face-to-face programme aiming to increase the financial confidence and knowledge of front-line workers and volunteers, and ultimately the clients they worked with."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice's 'Quids In'",
+    "seoDescription": "Face-to-face financial skills programme for social housing tenants designed to improve their money management",
+    "title": "Citizens Advice's 'Quids In'",
+    "slug": "citizens-advice-s-quids-in",
+    "publishDate": "2012-01-01T00:00:00Z",
+    "lastUpdatedDate": "2012-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      },
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Saving",
+        "key": "saving"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\n‘Quids in’ was a free, voluntary financial skills training programme for social housing tenants designed to improve their money management skills and general financial awareness. It was delivered to 150 clients over 10 months. In particular it aimed to help tenants to:\\n\\nmaximise their available income;\\n\\naccess and use appropriate financial products; and\\n\\navoid financial difficulties.\\n\\nThe content was tailored depending on the needs and preferences of tenants, but broadly covered topics relating to everyday money management including:\\n\\nunderstanding the differences between needs and wants and priority and non-priority bills;\\n\\nunderstanding the consequences of not paying particular bills;\\n\\nhow to make your money go further;\\n\\nhow to budget and the benefits of budgeting;\\n\\naccessing and making informed choices about financial products;\\n\\nthe importance of saving; and\\n\\nhow to access affordable credit.\\n\\nThe programme typically involved one training session lasting 45 minutes or more, delivered one-to-one in tenants’ homes, the Citizens Advice Bureau (CAB) office or another community venue. In some instances, the information was delivered at group sessions (either as two 45 minute small groups workshops around one week apart, or as one longer session).\\n\\nThe programme was delivered by a skilled financial capability trainer, a paid employee of the CAB.\\n\\nParticipants were given a financial skills toolkit to take away after the session. This included an electronic calculator and a folder containing copies of the materials used in the training such as calculations and budget sheets."
+      },
+      {
+        "plaintext": "The study\\n\\nThe Personal Finance Research Centre at the University of Bristol undertook an independent evaluation in 2011 - 2012. This study involved pre- and post-programme measurement with participants, and a comparison group of social housing tenants in areas where the training was not delivered.\\n\\nOutcomes were monitored following participation in the programme 6-8 weeks after.\\n\\nQualitative interviews were conducted 3-4 months after the training with 20 participants.\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe evaluation found that positive outcomes were achieved in relation to:\\n\\nFinancial wellbeing:Over a quarter of participants (76%) who had taken action benefited financially, by an average of £10 a week.\\n\\n\\n\\nFinancial behaviour:Money management: an increase in the ability of programme participants to make ends meet and keep track of their money when compared to the comparison group. Underlying behaviour changes included an increase in using money saving tips, shopping around, reducing spending and budgeting.\\n\\nSaving: a positive change in the saving habits of participants compared to the comparison group, including starting saving and saving more. On average, programme participants who changed their saving behaviour were saving an extra £11 per week.\\n\\nBanking: a larger proportion of participants opening or changing bank and credit union accounts compared to the comparison group.\\n\\nTaking financial action: three-quarters (76%) of programme participants took action in relation to their finances following the programme compared with 43% of the comparison group.\\n\\nUse of further information and guidance: a larger proportion of participants using sources of money advice and guidance following the programme compared to the comparison group.\\n\\n\\n\\nFinancial capability (mindset):Participants demonstrated an increase in self-reported financial confidence compared to the comparison group, especially in relation to money management skills and financial control.\\n\\n\\n\\nThese positive outcomes are supported by qualitative data from participants which suggested that some of the impacts observed persisted beyond the 6-8 week survey follow-up.\\n\\nImprovements were observed in the level of rent arrears amongst the participants, but these were not statistically significant compared a comparison group, so not attributable to the programme.\\n\\nNearly six in ten (58%) participants reported sharing information learnt on the programme with others, suggesting that friends and family of participants may also experience benefits."
+      },
+      {
+        "plaintext": "Points to consider\\n\\nGeneralisability/transferability\\n\\nThe person delivering the training was a skilled financial capability trainer and member of the Institute for Learning. A less experienced worker may not have been able to achieve the same outcomes.\\n\\nEngaging tenants in the programme was a significant challenge. Three types of concerted activity were used to drive up participation: general awareness raising, targeted marketing and one-to-one follow ups. The most effective method proved to be personal contact over the telephone and at tenants’ homes. It was particularly difficult to get tenants to engage in group workshops and as a consequence the majority of training was delivered one-to-one.\\n\\nTenants living in households with earned income were seven times more likely to make positive changes to their money management compared to those with no earned income. This programme may therefore be less effective in relation to this outcome if delivered to households solely reliant on benefits or other sources of (non-earned) income.\\n\\nRelevance\\n\\nRelevant to practitioners and stakeholders in running workshops with the aim of improving financial skills; and to evaluators of similar programmes.\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nFull research report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Face-to-face financial skills programme for social housing tenants designed to improve their money management"
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Citizens Advice Southwark final evaluation report - What Works Fund",
+    "seoDescription": "Monthly welfare reform events for social housing tenants in Southwark likely to fall into problem debt delivered by Citizens Advice Southwark.",
+    "title": "Citizens Advice Southwark final evaluation report - What Works Fund",
+    "slug": "citizens-advice-southwark-final-evaluation-report-what-works-fund",
+    "publishDate": "2018-01-01T00:00:00Z",
+    "lastUpdatedDate": "2018-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Other",
+        "key": "other"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nCitizens Advice Southwark (CAS) arranged 12 monthly welfare reform events, which provided access to financial capability services, advice and information on welfare benefits and debt, and other support services. These were held at community venues in Southwark, which facilitated easy access to a regular series of events. In total, 287 people attended these events. Additionally, 136 money champions were trained by Citizens Advice Southwark and partner agencies and these comprised both volunteers and paid frontline workers. Their role was to provide financial capability support to their own communities or service users.\\n\\nThe evaluation considered:\\n\\nWhether people already on the path to financial exclusion or debt can take on board and act on financial capability messages;\\n\\nWhether utilising community-based financial capability money champions increases awareness and understanding of positive financial behaviours and actions.\\n\\n"
+      },
+      {
+        "plaintext": "The study\\n\\nTo investigate this, the project evaluated two target groups:\\n\\nSocial housing tenants living in the London Borough of Southwark;\\n\\nFrontline workers providing support to tenants and residents of the London Borough of Southwark.\\n\\nA mixed research methodology was employed:\\n\\n120 people attending welfare reform events in the first nine months of the project completed a quantitative pre- and post- event questionnaire;\\n\\n48 people attending welfare reform events in the final three months of the project completed a qualitative questionnaire;\\n\\nTwo focus groups took place involving 19 social housing tenants who had attended a welfare reform event;\\n\\nFinancial capability money champions were surveyed on the completion of their training.\\n\\n"
+      },
+      {
+        "plaintext": "Outcomes\\n\\nThe outcomes being measured among participants were:\\n\\nUnderstanding of current financial situation;\\n\\nAwareness of the impact of changes to their circumstances;\\n\\nMotivation to make their money go further;\\n\\nBe confident enough to take actions to prevent problems occurring;\\n\\nUnderstand when to seek help;\\n\\nUnderstand how and where to access financial advice.\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nOutcomes evaluation findings:\\n\\nThree-quarters of participants (73%) described their financial circumstances as unmanageable and 75% of people described themselves as unemployed, sick or disabled, meaning a majority of those attending welfare reform events were therefore 'people already on the path to financial exclusion or debt'.\\n\\nFewer people (26%) believe they will run out of money before the end of each month, having attended an event (compared to 45% before).\\n\\nAfter attending a welfare reform event fewer people believe they will need to access credit (8% compared to 33% before the intervention), as much over the next three months as they needed to previously.\\n\\nThe number of people who have a clear idea or some idea about how to create a household budget increased post-event from 53% to 63%; and the number of people with no idea of how to do this reduced post-event from 30% to 14%.\\n\\nMore people said they would save money to put against future falls in household income post-event, compared with pre-event (11% against 4%).\\n\\nOf greatest help to those attending, in order of importance, was that the events:\\n\\nProvided the opportunity to get help with welfare benefits;Were local to them;\\n\\nProvided help on rent arrears and council tax issues;\\n\\nProvided help on bills (including debt);\\n\\nProvided good signposting to other sources of help;\\n\\nHad a range of organisations present.\\n\\n\\n\\nProcess evaluation findings:\\n\\n136 money champions completed the training and 12 of these completed surveys. Specific ways in which the money champions felt the training has or will benefit the trainers included:\\n\\nImproving ability to support and advise their service user with financial capability messages;Improving ability to deliver financial capability workshops to service users;\\n\\nEnabling a new way of building relationships with service users;\\n\\nEnhancing confidence when giving budgeting advice.\\n\\n\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations:\\n\\nThere is no mention of testing for statistical significance.\\n\\nIntended rather than actual outcomes are captured making interpreting the data difficult.\\n\\nSome questions asked after the intervention don’t replicate the pre-intervention questions they compared with.\\n\\nRelevance:\\n\\nThis report is relevant to all stakeholders, Local Authorities and policymakers with an interest in financial capability interventions among social housing tenants.\\n\\nGeneralisability/ transferability:\\n\\nThe research, while thorough, is based on relatively small numbers in one geographic region of the United Kingdom. Combined with the lack of statistical testing, its findings cannot be readily generalised to the rest of the UK without further research.\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nCitizens Advice Southwark final evaluation report - full report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Monthly welfare reform events for social housing tenants in Southwark likely to fall into problem debt delivered by Citizens Advice Southwark."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Combining nudges and boosts to increase precautionary saving",
+    "seoDescription": "A pre-registered randomised controlled trial using multiple evidence-based nudges and boosts to increase savings account uptake at a major commercial bank.",
+    "title": "Combining nudges and boosts to increase precautionary saving",
+    "slug": "combining-nudges-and-boosts-to-increase-precautionary-saving",
+    "publishDate": "2022-01-01T00:00:00Z",
+    "lastUpdatedDate": "2022-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Other",
+        "key": "other"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThe Competition and Consumer Protection Commission (CCPC) had identified a need to encourage short-term saving habits among Irish consumers to increase financial resilience against unexpected financial shocks.\\nThe programme was designed and analysed by the Economic and Social Research Institute (ESRI)’s Behavioural Research Unit and facilitated by Bank of Ireland.\\n\\nThe programme used a combination of evidence-based behavioural nudges – altering the choice architecture to steer people in particular direction, and boosts - not attempting to direct decisions explicitly, but to improve people’s competence to make choices that align with their own goals.\\n\\nThe participants were consumers, either customers of the Bank of Ireland or people (who may or may not have been customers) who visited the bank’s website to fill out an online savings application form.\\n\\nThe trial ran for six months and involved over 160,000 customers who received an email from the Bank of Ireland and 993 customers who visited the website and opened a savings account."
+      },
+      {
+        "plaintext": "The study\\n\\nThe study tested whether evidence-based behavioural interventions would encourage consumers to take out savings accounts and engage in precautionary short-term saving.\\n\\nThe intervention was in the form of two treatments: the first a combined nudge-and-boost consisting of multiple changes to a bank’s online saving account application form, including changes to the order in which questions were asked, an interactive calculator to boost understanding of savings accumulation and a pledge tool offering customers the chance to make pre-commitments to withdraw only for specific reasons (e.g. a car breakdown.)\\n\\nThe second was a communication designed to engage precautionary motivation to save, in the form of an animated email that highlighted the cumulative risk of financial shocks, with statistics such as “6 in 10 people face an unexpected expense each year”.\\n\\nThese treatments were tested in two six-month field trials, run concurrently. The first trial involved over 160,000 bank customers who were randomly sent one of four different combinations of communication and savings account application form. There was also a ‘no-contact’ control group.\\n\\nThe second trial was an ‘organic’ trial of people who had not been contacted but who found their way organically to the bank’s website and were randomly allocated to a version of the savings account application form, with or without the behavioural interventions.\\n\\nIt is worth noting that the paper includes a short summary of findings from a literature review of previous behavioural research around financial decision-making, and a short summary of an analysis of existing survey data."
+      },
+      {
+        "plaintext": "Key findings\\n\\nOverall, the study showed that the financial shock communications and enhanced application forms with tools had a positive impact on saving behaviours.\\n\\nThe behavioural interventions increased the uptake of savings accounts by 25-40%.\\n\\nThe greatest benefit was among customers on lower incomes, who are most vulnerable to the negative effects of unexpected expenses and financial shocks.\\n\\nCustomers who received the behavioural ‘financial shock’ emails were 20% more likely to open a savings account than those who received standard marketing materials.\\n\\nCustomers who opened a savings account were 10% more likely to have used the optional interactive calculator than those who started a savings account application form but didn’t complete it.\\n\\nReframing ‘rainy day fund’ messaging to ‘unexpected expenses’ in the behaviourally-informed savings account application form positively influenced consumer behaviour.\\n\\nTrial participants who opened a savings account were over 2.5 times more likely to have used the optional pledge tool than those who started the application but didn’t complete it.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: The study used a robust, large-scale RCT. The report discusses the method in detail and addresses limitations such as the fact that combining multiple behavioural interventions into a single treatment increases the likelihood of impact, but also makes it impossible to infer which interventions are responsible for any effects observed. The authors conclude that this is less important for financial institutions wanting to apply the learnings than it is for behavioural scientists wanting to understand the mechanism of the behaviour change.Due to low response rates to the practitioner survey and low engagement with the evaluation by practitioners who attended network events, the findings may not reflect the full range of views of people who engaged with the pilot.\\n\\n\\n\\nGeneralisability/ transferability: The study was amongst consumers in Ireland, but similar interventions are likely to be effective elsewhere.\\n\\nRelevance: Highly relevant as the ongoing increases in the cost of living make people even more vulnerable to financial shocks.\\n\\nApplicability: Of interest to financial institutions and anyone working with people on low incomes or with no savings and vulnerable to financial shocks.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "A pre-registered randomised controlled trial using multiple evidence-based nudges and boosts to increase savings account uptake at a major commercial bank."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "An independent evaluation of the Community Money Mentors programme Year 1",
+    "seoDescription": "Run by Toynbee Hall, the programme partners with community organisations to train local people as money mentors across London. The money mentors support local people by sharing information and support concerning money management.",
+    "title": "An independent evaluation of the Community Money Mentors programme Year 1",
+    "slug": "community-money-mentors",
+    "publishDate": "2016-01-01T00:00:00Z",
+    "lastUpdatedDate": "2016-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme:\\n\\nCommunity Money Mentors is a three-year financial capability programme (2015- 18) run by Toynbee Hall across London. The programme aims to promote financial inclusion by partnering with community organisations to train local people as money mentors. The programme is training 280 money mentors in personal money management and mentoring. The training runs over 60 hours and leads to a nationally recognised qualification. The mentors learn financial skills and knowledge to improve their own financial health and wellbeing. The mentors develop the skills to share their new financial knowledge with people in their community. In this way the programme aims to improve the financial capability of partner organisations and 2,000 local residents. The programme is training 28 organisations in financial inclusion policy and practice, assessing current practice and providing good practice recommendations. The programme builds on the Community Money Mentors programme Toynbee Hall ran in Tower Hamlets (2012-15), which was funded by the Big Lottery Fund and designed to enhance financial capability and reduce financial exclusion."
+      },
+      {
+        "plaintext": "The study:\\n\\nThis evaluation covers the first year of the Community Money Mentors programme (2015-18) delivered across London. The aim of the evaluation was to assess the impact of the programme on the attitudes, knowledge and behaviour of the money mentors and the local people they shared information with. It also considered the effects on partner organisations receiving capacity-building support from Toynbee Hall.\\n\\nThe evaluation used a mixed methods approach including:\\n\\na survey completed by 35 money mentors;\\n\\nfocus groups attended by 15 money mentors; and\\n\\ninterviews with eight secondary beneficiaries (local people receiving information from the money mentors) and two partner organisations.\\n\\n"
+      },
+      {
+        "plaintext": "Key findings:\\n\\nThe report included both process and outcomes evaluations, and identified the following key findings:\\n\\nThe money mentors receiving training reported:\\n\\nIncreased knowledge: focus groups attendees reported gaining new knowledge on a range of topics, including priority and non-priority debts, prioritising spending and online shopping.Improved money management skills: money mentors reporting being okay or very good at managing their money more than doubled from 43% to 94%. This was reinforced by a reported increase in mentors undertaking weekly/monthly budgeting (from 57% to 83%). Mentors were also more likely to plan ahead after attending the training (77% compared to 49% prior to the training).\\n\\nEnhanced savings habits: Just over half the mentors responding to the survey reported saving money by changing payment method, tariff, supplier or borrowing.\\n\\nIncreased confidence: Mentors also reported heightened awareness of their consumer rights and opportunities to switch providers. Many had challenged existing service providers to lower their offer or had switched provider.\\n\\n\\n\\nThe results were compared with national benchmark data where possible and appropriate. The evaluation found that compared to the overall population, the money mentors entered the programme at a lower level of financial capability. However the money mentors experienced greater improvements in financial skills and knowledge, in some cases even surpassing the national average by the end of the course.\\n\\nDuring year one of the programme, the money mentors shared information with over 1,500 people. This included advice on personal budgeting, saving, price comparisons, banking and other financial matters. Eight of these secondary beneficiaries were consulted for the evaluation and suggested the mentoring had:\\n\\nIncreased their confidence and control over their finances by providing advice on budgeting and cutting non-essential spending.Improved their budgeting skills, by saving money on their shopping, reducing unnecessary spending and not spending all their money in one go.\\n\\nIncreased their awareness of financial services and offers. The mentoring advice made them more aware that they could switch providers and helped them understand the process, even if most had not actually switched.\\n\\nImproved their savings habits. Some were saving more and had set up a savings target, opened savings accounts and switched providers.\\n\\n\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider:\\n\\nMethodological limitations:\\n\\nReflections on secondary beneficiary impact were based on a very small group of respondents. Theauthors recognise that the evaluation methodology could have been enhanced in this area. For example, they suggest group interviews could be conducted with a selection of money mentors and secondary beneficiaries whom they provided sustained information and advice to.\\n\\nRelevance:\\n\\nThe study does not rely on a control group, as it can be complicated and costly to sample a group of people similar to those receiving the intervention. However, comparisons are made with national benchmark data where possible and appropriate. This does increase the credibility of the results and suggest they may be of interest to other similar settings.\\n\\nGeneralisability/ transferability:\\n\\nThe sample was too small to test for statistical significance. The evaluation was therefore too small in scale for inferences to be made to the wider population, and therefore caution should be used in generalising from the results.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Run by Toynbee Hall, the programme partners with community organisations to train local people as money mentors across London. The money mentors support local people by sharing information and support concerning money management."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Cost benefit analysis of the Money House 5-day programme",
+    "seoDescription": "A social cost benefit analysis (SCBA) of The Money House (TMH) 5-day programme, an accredited financial literacy programme that seeks to support young people (aged 16-25) who are living independently, or about to move into independent living.",
+    "title": "Cost benefit analysis of the Money House 5-day programme",
+    "slug": "cost-benefit-analysis-of-the-money-house-5-day-programme",
+    "publishDate": "2020-01-01T00:00:00Z",
+    "lastUpdatedDate": "2020-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Value for money",
+        "key": "value-for-money"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nMyBnk’s The Money House (TMH) is a 5-day programme aimed at enabling young people to increase their knowledge and skills relating to personal money management and independent living. These new skills and knowledge were expected to lead to several outcomes relating to behaviour change in the participants (e.g. reduced debt) and the evaluation also notes a strong link between financial capability and wellbeing in relation to longer-term outcomes (although this was beyond the scope of this study).\\n\\nDuring the period from January 2018 to March 2020, 984 participants attended, and 821 completed the programme.\\n\\nThe 5-day programme included: 1. Making tenancy agreements, calculating the costs of moving into a new flat, and avoiding eviction. 2. Understanding the benefits system. 3. Paying household bills and choosing utility providers. 4. Banking – accounts and savings. 5. Budgeting and spending habits. 6. Shopping (consumer rights, comparison websites and offers). 7. Borrowing money. 8. Spotting and avoiding scams.\\n\\nThis report is an evaluation of the third year of the programme."
+      },
+      {
+        "plaintext": "The study\\n\\nA social cost-benefit analysis (SCBA) was carried out by NEF Consulting during the period January 2018 to August 2020.\\n\\nMyBnk collected outcomes data through participant surveys at three specific time points – the first day of the programme (baseline), the last day of the programme (end line), and on a date between 1 and 11 months later (follow-up). NEF Consulting adjusted the survey questions for the SCBA and gathered indicator data against the following outcomes for participants: reduced debt, improved financial comfort, and improved emotional wellbeing.\\n\\nThe benefit beyond the young person was also assessed: to local authorities, housing providers and public health services. The outcomes for state and housing providers were: reduced eviction costs; reduced rent-arrears write-offs; reduced costs to health services; direct costs avoided from fulfilling statutory obligation to Care Leavers.\\n\\nMatched data (same individuals) and pooled analysis (using data from other programme participants) were both used, with a minimum sample size of 50 individuals. The analysis accounts for deadweight and sets out the assumptions used to calculate the attribution of change to the programme."
+      },
+      {
+        "plaintext": "Key findings\\n\\nImproved financial knowledge and skills. The majority of participants – ranging from 58 to 77%, depending on the type of knowledge – answered “a lot” to the questions on how much their skills and knowledge improved. The significant change in participants’ skills and knowledge observed was identified as a key immediate outcome when mapping outcomes.\\n\\nImproved frequency of saving. Those saving on a regular basis increased by 7 percentage points from baseline to follow-up.\\n\\nConfidence in managing their money increased. Participants reported that their confidence increased by 14 percentage points from baseline to follow-up.\\n\\nDebt reduction. Fewer participants experienced debt (1.8%) as a result of the programme.\\n\\nDoing well financially. Participants were more likely to be doing well financially (0.9%) and were less likely to report as suffering from money-related anxiety or depression (3%).\\n\\nReduction in evictions: TMH participants were 0.7% less frequently evicted than those who did not participate in the TMH programme.\\n\\nThe cost-benefit ratio was found to be positive, at £1: £1.76, meaning that for every £1 invested, £1.76 of social value is created (the cost of the programme over the evaluation period was £827,133 while the value created was £1,457,400, of which £963,300 (66%) is created for programme participants).\\n\\nThe report notes that each course had a maximum capacity of eight participants but that over the evaluation period attendance averaged at approximately four participants per course. The average net value generated per course could have more than tripled if course capacity was fully utilised."
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: While data collection is one of the programme’s strengths, further research through longer-term data collection (e.g. follow-up after one year or more) would build understanding of the sustainability of the outcomes.The SCBA modelling is highly sensitive to assumptions on attribution and drop-off. The evaluators included a useful sensitivity analysis, and note that they applied a ‘conservative approach’ to their findings.\\n\\n\\n\\nGeneralisability/ transferability: The intervention sites were all within central London, and so findings may not be directly transferable to other areas. The model is clearly set out and suitable for adaptation.\\n\\nRelevance: Findings will be of relevance to those interested in the SCBA methodology deployed here, and also to policy makers and practitioners working to support young adults’ financial capability and their transition to independent living.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "A social cost benefit analysis (SCBA) of The Money House (TMH) 5-day programme, an accredited financial literacy programme that seeks to support young people (aged 16-25) who are living independently, or about to move into independent living."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Council for Economic Education's 'Financing Your Future'",
+    "seoDescription": "Classroom-based financial education programme designed to increase financial knowledge, delivered by teachers with the aid of DVDs.",
+    "title": "Council for Economic Education's 'Financing Your Future'",
+    "slug": "council-for-economic-education-s-financing-your-future",
+    "publishDate": "2010-01-01T00:00:00Z",
+    "lastUpdatedDate": "2010-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "USA",
+        "key": "usa"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Gender/women",
+        "key": "gender-women"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nThe Finance your Future (FYF) programme was created by the Council for Economic Education in America. Its overarching aim was to improve financial knowledge and understanding of high school students aged 14 - 18. Teachers delivered the programme to students in the classroom over two to four weeks with the aid of five DVDs.\\n\\nThe programme covered the following:\\n\\nBasic vocabulary and key concepts in personal finance (e.g. savings, wealth building etc.);\\n\\nTrade-offs and opportunity costs related to wealth building and money management;\\n\\nBanking relationships;\\n\\nTopics including credit scores, APR, credit and debt; and\\n\\nFinancial budgeting, saving, investing and risk tolerance.\\n\\nFor each DVD, there were three printed lesson guides that teachers used alongside the digital content. These lessons included a written outline which guided teachers in presenting ideas and concepts, as well as practical activities and assignments for students to complete.\\n\\nThe FYF intervention was delivered by fifteen teachers who were trained through workshops, provided through the Council for Education’s national network of affiliated state councils or centres, over the course of Autumn 2006. The training was delivered by council or centre staff members with relevant teaching expertise."
+      },
+      {
+        "plaintext": "The study\\n\\nOne independent impact evaluation of the programme, done by Walstad et al in 2006/7, has been published. This study involved a quasi-experimental design with a comparison group, and a financial knowledge test that was undertaken pre- and post-intervention designed to measure students' understanding of the financial concepts and information covered in the programme. The treatment group was made up of 673 FYF participants and the control group of 127 students who were not involved in the programme."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThe evaluation (which involved pre and post-measurement amongst both participants and a comparison group) found positive impacts in relation to the following outcomes:\\n\\nFinancial capability (ability): An increase in the financial knowledge test scores of the participants at the end of the programme. The results showed statistically significant improvements for participants across all five topic areas, whereas no statistically significant improvement was observed between the pre and post-programme scores of the comparison group.\\n\\nSimilar levels of improvement were made by male and female participants. Improvements were highest among the second-year high school students (aged 15-16) compared to the third and fourth year students."
+      },
+      {
+        "plaintext": "Points to consider\\n\\nGeneralisability: the course content for FYF was very clearly defined so that it could be taught consistently by teachers across schools."
+      },
+      {
+        "plaintext": "Full report\\n\\nFull research report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Classroom-based financial education programme designed to increase financial knowledge, delivered by teachers with the aid of DVDs."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Debt on Teesside: Pathways to financial inclusion",
+    "seoDescription": "Mentoring scheme for highly indebted low income households in Teeside delivered by Durham University’s Centre for Social Justice and Community Action, CAP and Thrive.",
+    "title": "Debt on Teesside: Pathways to financial inclusion",
+    "slug": "debt-on-teesside-pathways-to-financial-inclusion",
+    "publishDate": "2013-01-01T00:00:00Z",
+    "lastUpdatedDate": "2013-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nReductions in benefits, rising food and energy costs, and an uncertain economic situation are increasing the extent and severity of financial exclusion in some communities. Earlier work by Church Action on Poverty (CAP), Thrive and Durham University highlighted how household indebtedness was linked to high cost credit for low income households in the Teesside area. Many of these households experience financial exclusion, and are without bank accounts, insurance, pensions or an adequate safety net of savings.\\n\\nThis programme aimed to develop a sustainable programme of mentoring on money management. It aimed to:\\n\\ncounter financial exclusion through community action and campaigning;\\n\\nsupport positive change away from high cost credit use; and\\n\\nhelp households develop skills and confidence in money management.\\n\\nThe mentees were 24 low income households experiencing unmanageable debt in the Teesside area of North East England. The mentoring scheme provided 64 sessions of mentoring (households received between 1-8 sessions). In addition, the programme held two workshops for mentees, convened two public assemblies to highlight issues of irresponsible lending, and organised campaigns to raise awareness of high cost credit locally and nationally.\\n\\nThe programme initially recruited 10 mentors, comprising volunteers and staff seconded from organisations advising the project. Staff delivered the project within an 'action research' framework."
+      },
+      {
+        "plaintext": "The study\\n\\nA researcher, based within the project team, evaluated this project. The research element of the project aimed to explore people’s financial choices, their attitudes to money management and debt, and to assess how the mentoring influenced their financial behaviour and attitudes over time.\\n\\nThe researcher held two small focus groups in the project areas to obtain information on attitudes, views and experiences relating to debt in low income households, which they used to inform the design of the scheme and the evaluation.\\n\\nThey then gathered detailed information from each of the 24 Teesside households taking part in the scheme. A questionnaire was completed by one ‘key contact’ per household during an initial interview covering demographic details, household income, financial service use, attitudes to money matters, health and well-being and household finances (including income, debt and credit) with qualitative data collected via open-ended questions.\\n\\nThe research then held further interviews and workshops with some participants in the programme as it progressed, and mentors gathered data after each mentoring session to record how financial behaviours changed over the course of the programme."
+      },
+      {
+        "plaintext": "What are the outcomes?\\n\\nFinancially capability (behaviour)\\n\\nFinancially capability (attitudes)\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nScheme outcomes:\\n\\nMentoring had some success:\\n\\nSome mentees did change their attitudes and behaviour in relation to money management. The authors identified that the main benefit mentees got from the programme was an increased feeling of control over their lives. Many had complex social and medical needs, and mentees felt this improvement over a wider range of problems in their lives, beyond just their financial situation. Some were able to save on their outgoings, move towards lower cost credit and improve their overall financial capability.\\n\\nThose who completed the scheme reported improved self-confidence, particularly in decision-making and money management.\\n\\nDelivering the scheme:\\n\\nIndividual mentoring was difficult to sustain:\\n\\nThe support required was very intensive, making it expensive and time consuming to provide. The workload for both those taking part in the programme and those acting as mentors was higher than anticipated.\\n\\nLife circumstances and motivation to change are important:\\n\\nFor future schemes, the authors recommend targeting households who have a motivation to change. They hope this will reduce dropouts and cancellations, which were a significant issue during this programme; 72 booked sessions were cancelled or missed, compared to 64 delivered.\\n\\nGroup-based schemes could be more successful, especially if they encourage peer support:\\n\\nThe authors suggest that workshops could be more effective than one-to-one mentoring in future projects. An initial course around financial capability could help develop peer mentoring as well as enhance individuals’ financial capability. Peer support would then be in place after the end of the formal course. This approach would require fewer resources and potentially be more sustainable over time.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations: The authors note they found it difficult to quantify the achievements of the mentoring scheme, as the households involved were in a constant state of change. The sample size is very small: only six households remained in the mentoring scheme until it ended, so they were the only ones to take part in a final evaluation interview. Of the 24 initially recruited, seven households did not participate in any sessions.\\n\\nApplicability: This study would be applicable to anyone with an interest in how mentoring or small group approaches can be delivered to improve financial understanding and money management skills among households in low income, highly indebted communities.\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nDebt on Teeside - full report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Mentoring scheme for highly indebted low income households in Teeside delivered by Durham University’s Centre for Social Justice and Community Action, CAP and Thrive."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Delivering community financial advice workshops in Leicester - What Works Fund",
+    "seoDescription": "Financial capability workshops delivered in the community to older people in Leicester by Vista, CALS and WEA.",
+    "title": "Delivering community financial advice workshops in Leicester - What Works Fund",
+    "slug": "delivering-community-financial-advice-workshops-in-leicester-what-works-fund",
+    "publishDate": "2018-01-01T00:00:00Z",
+    "lastUpdatedDate": "2018-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Saving",
+        "key": "saving"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Ethnicity",
+        "key": "ethnicity"
+      },
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nLeicester Ageing Together (LAT) is a Big Lottery Funded project aiming to reduce loneliness and isolation among people aged over 50. LAT identified poverty as a key cause of loneliness and isolation in Leicester, and thought that the project offered an opportunity to explore how to improve older people’s financial capability\\n\\nThe project aimed to identify if grounding people’s financial decision-making within their wider life context (including family and social connections) leads to greater and longer lasting changes in comparison to more traditional information-based financial capability support. Vista led the project, in partnership with the Community Advice and Law Service, and the Workers’ Educational Association. The partners designed the programme to have two strands of workshops, delivered within a week or two of each other, in local community venues across Leicester:\\n\\nThe ‘financial capability’ strand – covering ‘traditional’ financial capability skills and knowledge;\\n\\nThe ‘holistic’ strand – covering the same skills and knowledge as in the ‘financial capability’ strand, but within the context of what people wanted to achieve for their retirement as a whole.\\n\\nHowever, due to delays in project set-up and difficulties recruiting staff, the project found it hard to recruit participants and ended early. The project recruited a total of 163 participants (against a target of 300), aged from 60 to over 90 years old. Three quarters of participants were women, and half came from an ethnic minority background."
+      },
+      {
+        "plaintext": "The study\\n\\nIdeas to Impact conducted the evaluation, and used pre- and post-surveys, workshop observation, staff and participant focus groups, and interviews with delivery partners and community partners. The original methodology included three month follow-up telephone interviews with participants to understand their experiences and track changes against outcomes, but these did not happen due to the project finishing early."
+      },
+      {
+        "plaintext": "Key findings\\n\\nParticipants were least confident about planning for the future, for example, sorting out their care needs, wills, funerals or inheritances. Reasons for the lack of planning included: not having any spare money, not thinking about it, thinking that the state would provide for them, or not knowing where to get further information to help them.\\n\\nAsian or British-Asian people were more likely than white British people to say that their money situation limited their ability to do things, and women were less confident than men that their retirement income will give them the standard of living they hoped for in retirement. These differences were statistically significant.\\n\\nThere were various actions that participants identified that they would do as a result of the workshops. The most common actions were: reducing bills through changing or challenging providers, improving budgeting and goal setting and making financial plans for the future.\\n\\nParticipants were very positive about the quality of the workshops in the end-of-course survey.\\n\\nQualitative research highlighted the importance of other factors in making financial changes. These factors included relationships within families, and making decisions that seemed logical according to a different rationale, but not from a financial perspective, for example looking after health and wellbeing.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological limitations\\n\\nAs the project finished early, Ideas for Impact could not conduct the three-month follow-up telephone interviews, so there is limited evidence on the impact of the project on people’s financial capability.\\n\\nThe evaluators experienced challenges capturing data due to language difficulties and sensory disabilities.\\n\\nGeneralisability/transferability\\n\\nThe evaluation had to work with smaller sample sizes than anticipated, which reduced the evaluator’s ability to draw statistically significant conclusions and meaning the results are not generalizable to the wider population.\\n\\n"
+      },
+      {
+        "plaintext": "Full report\\n\\nDelivering community financial advice workshops in Leicester full report"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Financial capability workshops delivered in the community to older people in Leicester by Vista, CALS and WEA."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "On the front foot: Developing financial capability propositions to support the debt advice journey",
+    "seoDescription": "The study looks at the pilot of a budgeting-focused intervention which intended to provide both debt advice and improve financial capability.",
+    "title": "On the front foot: Developing financial capability propositions to support the debt advice journey",
+    "slug": "developing-financial-capability-to-support-debt-advice",
+    "publishDate": "2017-01-01T00:00:00Z",
+    "lastUpdatedDate": "2017-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Process Evaluation",
+        "key": "process-evaluation"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Struggling and squeezed",
+        "key": "struggling-squeezed"
+      },
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "Northern Ireland",
+        "key": "NI"
+      },
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      },
+      {
+        "name": "England",
+        "key": "england"
+      },
+      {
+        "name": "Scotland",
+        "key": "scotland"
+      },
+      {
+        "name": "Wales",
+        "key": "wales"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Context:\\n\\nThe Money Advice Service (MAS) plays a key strategic role in both financial capability and debt advice. It is the statutory body for financial capability and co-ordinates the UK Financial Capability Strategy. It is also the largest single funder of debt advice in the UK and has a statutory remit to improve the availability, quality and consistency of debt advice.\\n\\nThe potential for a more joined-up approach in the delivery of debt advice and financial capability is a key priority for MAS. As such, blending financial capability and debt advice was made one of 6 key areas of focus in the Debt Commissioning Strategy that MAS launched in 2017.\\n\\nIndividual Voluntary Arrangement (IVA)2 provider Aperture IVA began a programme of work to better understand the specific financial capability needs of their client base and test out new ways of working – inviting MAS to participate in the study.\\n\\nThe overarching aims of the project were to a) identify and understand the specific financial capability needs of debt advice clients, how these evolve through their debt advice journey and/or differ between client groups; b) start to quantify the degree to which financial capability interventions aimed at meeting these needs might amplify successful outcomes for debt advice clients; and c) understand the degree to which such interventions synergise (or not) with the existing debt advice/debt solution journey."
+      },
+      {
+        "plaintext": "The study:\\n\\nThe formative work undertaken by Aperture explored budgeting issues faced by clients as they enter an IVA, highlighting how the destructive money behaviours that develop during the journey into problem debt can persist following set up of a debt solution.\\n\\nThe study also showed that a light-touch financial capability intervention to encourage clients to adopt a forward planning approach to budgeting, has the potential to significantly improve their ability to make expected monthly IVA payments.\\n\\nThe evaluation was deliberately kept small to offer an initial indication as to whether the intervention showed promise before committing to a more in-depth study. Clients were allocated to one of two populations; a pilot group who received budgeting advice and a copy of the budget summary delivered by an adviser who had been trained on pilot processes, and a control group who followed ‘business as usual’ (BAU) processes and were dealt with by an adviser who had not received training on the pilot intervention. A total of 114 clients were allocated to the pilot group and 670 to the BAU group.\\n\\nClients were monitored and overall performance between the pilot and BAU group was then compared; demographic data was monitored. Aperture IVA supplied collated performance data for the 12 months following the clients’ initial IVA approval, including data on missed payments and customer service data."
+      },
+      {
+        "plaintext": "Key findings:\\n\\nYoung people’s confidence: Scores were measured using the General Sense of Self-Efficacy Scale. 105 (82%) of young people completed both before and after surveys. Scores increased for most participants. The average increase was 12%.\\n\\nPayments: Pilot clients consistently made more on-time monthly payments over the 12-month study period than BAU clients. Over the cumulative 12-month period, pilot clients paid 90% of all payments on time (1231 of 1375 payments due), compared to 81% of payments (5909 of 7260 payment due) owed by clients who had not received the intervention.\\n\\nContact reasons including payment holiday requests: pilot clients were 43% less likely to contact Aperture IVA regarding matters relating to their budget.\\n\\nBudget understanding: Pilot clients had a greater understanding of their budget.\\n\\nThe 43% reduction in budget-related queries together with the 11% uplift in on-time payments observed within the pilot group indicates that this intervention shows promise.\\n\\nDebt service outcomes: The pilot did result in a reduction in IVA arrears which is likely to have resulted in a reduction of arrears processing time for Aperture IVA. Until processes are optimised, it is impossible to calculate any overall time saving.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider:\\n\\nMethodological limitations:\\n\\nThe evaluation is based solely on one data source. Care should be taken in any inferences made.\\n\\nSome of the differences observed between the two groups could be attributed to adviser skill rather than the budgeting advice and budget summary clients received.\\n\\nThe evaluation only considers one intervention and does not offer a comparison of effectiveness across multiple intervention formats.\\n\\nRelevance:\\n\\nThe evaluation is relevant to studies of debt advice service effectiveness and the impact of interventions to help people who are in debt, including the provision of clear budgeting information.\\n\\nGeneralisability/ transferability:\\n\\nThe study is transferable, with the caveat that it is a small project with methodological limitations.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "The study looks at the pilot of a budgeting-focused intervention which intended to provide both debt advice and improve financial capability."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Digital Tax for Older People: What Works?",
+    "seoDescription": "An outcome-based evaluation, delivered by Tax Volunteers, to assess the impact of different types of intervention including guides, online, phone and face to face support, to enable older people to access online tax tools.",
+    "title": "Digital Tax for Older People: What Works?",
+    "slug": "digital-tax-for-older-people--what-works",
+    "publishDate": "2019-01-01T00:00:00Z",
+    "lastUpdatedDate": "2019-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\n[This is an extract from the Executive Summary of the evaluation report. Further amendments may be made to this Summary, pending review by the Evidence Hub partner]\\n\\nThe project aimed to answer the question: For older people aged 60+ with low levels of computer skills, what works well to enable them to access and manage their own digital personal tax accounts and overcome barriers to engaging with their finances online?\\n\\nThe project was aimed towards struggling older people in retirement across the UK who had below Basic Digital Skills as defined by Go ON UK. Four different methods of support were provided to help participants to access their Personal Tax Account (PTA) and/or their Self Assessment form online through the HM Revenue and Customs (HMRC) website by themselves. Participants had the following options: a written guide, an online guide, over the phone support from an adviser or face-to-face support from a volunteer adviser.\\n\\nThe study\\n\\nThis was an outcome-based evaluation to assess the impact of different types of intervention to help older people to access online tax tools. The evaluation included the collection and analysis of quantitative data taken during the process of recruiting participants, and again four weeks after the intervention in order to measure any change in digital and financial understanding and capability. The project ran from September 2017 to January 2019 and in total, 310 older people signed up and received help through the project and 216 (69%) provided responses to the follow-up survey. The evaluation focused on the following MAS outcome measures:\\n\\nBehavioural (managing money well day to day)\\n\\nMind-set (attitudes and motivation)\\n\\nAbility (skills and knowledge)\\n\\nKey findings\\n\\nThe different methods of support resulted in different levels of success to access and manage online personal tax information; the most successful methods in this study were through a written guide (82% were able to access their PTA and/or complete their online tax return using this method) and through face-to-face support (81% were able to access their PTA and/or complete their online tax return).\\n\\nThrough the process of accessing online personal tax information, participants reported a perceived improvement in some aspects of financial capability, specifically: satisfaction with their current financial situation; knowledge of where to go to get help with finances, and; understanding the need to keep track of their income and expenditure. In addition, participants reported a perceived improvement in their ability to: use the internet, and; check online that they are paying the correct amount of tax.\\n\\nFor those who were unable to access their online tax accounts (23%), for most (63%) this was due to identification issues with the HMRC website which were beyond their control. There was an unwillingness to try again by the majority (88%).\\n\\nPoints to consider\\n\\nEngaging participants: Recruiting the target number of participants, within our required parameters proved to be challenging. The majority of Tax Volunteers clients asked (81%) did not want to access their PTA or complete their Self Assessment online, the main reason being that they did not own a computer.\\n\\nIssues with accessing HMRC online tools: Not all participants could access the HMRC online tools due to HMRC having access to limited or no information to be able to identify them. HMRC, via certified companies, can check the identity of a customer using records held by mobile phone providers, credit agencies, HM Passport Office or the Driver and Vehicle Licensing Agency (DVLA). However, for those without a UK passport or driving licence, or who have little or no credit history, they cannot be identified and therefore are unable to access HMRC online tools.\\n\\nNo control group: Our study did not include a control group and as such, it is difficult to say with any certainty that any changes in the skills and behaviours of the participants are as a result of the intervention.\\n\\nShort-term outcomes: Due to the limited time-frame of the study, the evaluation has focused on the short-term outcomes; between one and two months after intervention. In order to fully explore the longer-term impact of the intervention, it would require a longer evaluation timeframe.\\n\\nSelf-reporting: It is important to note that the measures used in the quantitative survey were self-reported and do not provide objective information.\\n\\nThis project has developed a template which can be replicated in the future and any similar projects should aim to minimise the limitations outlined above as much as possible. Even with these limitations, the intervention and evaluation approach taken allowed the objectives of the project to be met."
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "An outcome-based evaluation, delivered by Tax Volunteers, to assess the impact of different types of intervention including guides, online, phone and face to face support, to enable older people to access online tax tools."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Digital tax for older people what works?",
+    "seoDescription": "The project aimed to see what works well for older people (60+) regarding accessing and managing their digital tax accounts, and in helping them overcome barriers to managing finances online.",
+    "title": "Digital tax for older people what works?",
+    "slug": "digital-tax-for-older-people-what-works",
+    "publishDate": "2019-01-01T00:00:00Z",
+    "lastUpdatedDate": "2019-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Programme Theory",
+        "key": "programme-theory"
+      },
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Older adults (65+)",
+        "key": "older-adults"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nTax Volunteers is a national charity providing free, independent and expert advice for older people on lower incomes without the means to pay for professional tax advice. They developed a programme, funded by the Money and Pensions Service, aiming to to answer the following question:\\n\\nFor older people aged 60+ with low levels of computer skills, what works well to enable them to access and manage their own digital personal tax accounts and overcome barriers to engaging with their finances online?\\n\\nThe programme ran between 2017-2019 and was aimed at older and retired people across the UK who were struggling financially and had poor digital skills. Participants were recruited through Tax Volunteer’s established Tax Help for Older People helpline, where they were asked a number of questions to assess suitability for the project.\\n\\nThere were four different methods of support available to help participants independently access their Personal Tax Account (PTA) and/or their Self Assessment form online through the HM Revenue and Customs (HMRC) website. Participants had the following options:\\n\\nA written guide;\\n\\nAn online guide;\\n\\nTelephone support from an adviser;\\n\\nFace-to-face support from an adviser.\\n\\n"
+      },
+      {
+        "plaintext": "The study\\n\\nThe outcome evaluation aimed to assess which of the intervention types were most effective in allowing participants to access online tax tools and their tax information on the HMRC website. Data was collected from participants during the recruitment process, and again four weeks after the intervention in order to measure any change in digital understanding and financial capability. The project ran from September 2017 until January 2019. The data collected comprised:\\n\\nBaseline interviews- data was collected at the start of the process from 310 people (aged 60+) who had signed up to the programme.\\n\\nFollow-up surveys – conducted four weeks after the intervention and completed by 216 participants.\\n\\nVolunteer questionnaires – data was also collected form the Tax Volunteers where face-to-face or telephone appointments had occurred.\\n\\n"
+      },
+      {
+        "plaintext": "Key findings\\n\\nParticipants were given a choice of tasks. Three-in-five (61%) chose to attempt to set up a Personal Tax Account (PTA); a quarter (24%) opted for an online tax return; while the remaining 15% opted to try both tasks.\\n\\nOver half of the participants received written support (55%), one-in-five (22%) received face-to-face support, 13% had telephone support and 9% accessed online support.\\n\\nOf the 216 participants who provided follow-up data, over three-quarters (77%) were successful in completing their task (either setting up a PTA or completing an online return).\\n\\nThe success rate was highest among those who had written support and face-to-face support (82% and 81% respectively; though note these percentages are based on a small number of observations).\\n\\nThe lowest success rate was among those who accessed telephone support (64%; though note these percentages are based on a very small number of observations).\\n\\nThe findings showed a statistically significant improvement in participants’ perceptions of some aspects of financial capability, such as satisfaction with their current financial situation, knowledge of where to go to get help with finances, and understanding the need to keep track of their income and expenditure.\\n\\nParticipants also reported a statistically significant improvement in their ability to use the internet and check online that they were paying the correct amount of tax.\\n\\nReasons given for being unable to compete the tasks included not being able to proceed because of identification issues (an issue outside of their control), a lack of confidence, and technical tax problems preventing further processing.\\n\\nThe sharing of information and feedback through the process resulted in:\\n\\nA better understanding of what works when helping older people with low digital skills;\\n\\nAn understanding of the impact of accessing online tools on wider financial capability;\\n\\nBuilding stronger relationships with HMRC;\\n\\nVolunteers having a better understanding of HMRC online tools;\\n\\nThe sharing of the programme materials as a free resource to people beyond the project.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: The lack of survey data from a control group meant it was not possible for the evaluation to evidence causality.\\n\\nHowever, due to statistical significance testing, we can have a fair degree of confidence in the results despite some relatively small sample sizes.\\n\\nA follow-up survey after 3-6 months would have helped to evaluate any lasting change that the intervention may have had.\\n\\nQualitative interviews would provide more depth and granularity to the research findings.\\n\\nGeneralisability/ transferability: The evaluation is of significant interest to those looking to commission or deliver online financial capability interventions among older people.\\n\\nRelevance: The results are tested for statistical significance, but due to the relatively low number of participants, further evidence would be needed before using this as a basis for commissioning similar interventions.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "The project aimed to see what works well for older people (60+) regarding accessing and managing their digital tax accounts, and in helping them overcome barriers to managing finances online."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Does robo-advice improve people's loan repayment decisions?",
+    "seoDescription": "An experimental trial of the effects of free and paid-for robo-advice on loan repayment decisions, run by the Financial Conduct Authority with participants representative of UK adults.",
+    "title": "Does robo-advice improve people's loan repayment decisions?",
+    "slug": "does-robo-advice-improve-peoples-loan-repayment-decisions",
+    "publishDate": "2022-01-01T00:00:00Z",
+    "lastUpdatedDate": "2022-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      },
+      {
+        "name": "Causality",
+        "key": "causality"
+      }
+    ],
+    "topic": [],
+    "countryOfDelivery": [
+      {
+        "name": "United Kingdom",
+        "key": "uk"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nWhen making loan repayment decisions, individuals tend to use counterproductive heuristics and biases, the negative impact of which shows through in wealth inequalities. The aim of this experiment, therefore, was to assess the adoption and effectiveness of robo-advice in helping to improve households’ loan repayment decisions and thereby reduce these inequalities.\\n\\nThe experiment involved the design of nine life-like debt-management games, each with three alternatives to reflect different levels of difficulty (easy, medium, hard). Across these 27 loan repayment problems in total, subjects were asked to fully allocate a specified sum of money across multiple loans in order to either minimise the monthly interest payment or minimise the sum of monthly interest payment and late fees (depending on the problem).\\n\\nThe pre- and post-intervention experimental design comprised random assignment to 5 conditions: 1 control condition (who received a repeat of the pre-test games); and 4 treatment conditions which provided free and paid-for robo-advice for loan repayment with and without additional educational features (e.g. tips and brief explanations).\\n\\nIn all treatment conditions, subjects were told the maximum interest and fees that they could save by using the robo-advisor (but received no feedback on optimal decisions), and those with paid-for robo-advice were asked about their willingness to pay for the robo-advice tool."
+      },
+      {
+        "plaintext": "The study\\n\\nThe study sought to address four research questions:\\n\\nWhether (and by how much) exposure to robo-advice improved loan repayment\\n\\nWhich forms of robo-advice were in the greatest demand\\n\\nHow much subjects were willing to pay for robo-advice\\n\\nWhich subjects ignored robo-advice recommendations\\n\\nData were collected in summer 2020 from 3,423 subjects who took part online; quota controls ensured a UK nationally representative sample of adults aged 18 and over on several demographic characteristics.\\n\\nEach subject was randomly assigned to their treatment or control condition and, within this condition, completed nine problems in three phases of three problems each: Pre-intervention (no advice), Intervention (no advice, free robo-advice, free robo-advice with education, paid-for robo-advice, paid-for robo-advice with education), and Post-Intervention (no advice).\\nSubjects within the paid-for robo-advice conditions who sought advice were asked to state their willingness to pay for the advice tool using a slider that ranged from 0 pounds to the maximum possible savings available to them in interest and fees in their problem scenario. If the amount they were willing to pay was higher than a random cost allocated to their problem (36.6%), they obtained the advice."
+      },
+      {
+        "plaintext": "Key findings\\n\\nThis study reports differences that are statistically significant where p<.10.\\n\\nLoan repayment decisions: The effect of robo-advice on subjects who sought it (‘Treatment on Treatment’) was large. The average losses (% savings forgone) of 21.9% at pre-intervention declined by 19.6 percentage points post-intervention (p<.01). The effect of robo-advice on subjects regardless of whether they used or disregarded it when offered (‘Intention to Treat’) was a decline of 14.6 percentage points (p<.01). When provided free, robo-advice was unlikely to be overridden, especially by the most vulnerable households.\\n\\nWillingness to pay for robo-advice: Subjects’ willingness to pay was higher than the monetary benefits they obtained from it on average. Other factors, such as the tool being easy and enticing, appeared to have played a role in this. Demand for robo-advice was greater among those with lower financial and numerical literacy, and also greater among those with low confidence in their own skills and high trust in robo-advice. Men and more trustful subjects were willing to pay more.\\n\\nLearning: Despite the behavioural improvements, there was no benefit to subjects in the treatment conditions in terms of their learning; they learned neither by imitation nor by the educational tips the robo-advice tool contained. In contrast, learning effects were observed among the control group, who had more problems to work through without robo-advice.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider\\n\\nMethodological strengths/weaknesses: The findings are based on hypothetical, experimental data, and may lack ecological validity, that is, it may not represent real-life situations well.\\n\\nGeneralisability/ transferability: Although the loan repayment scenarios were life-like, the decisions subjects made were not real-life decisions which would affect them materially. Equally, the robo-advice tool was provided as the single tool subjects had access to and, within the ‘game’ environment, concerns around reliability and trust are likely to be attenuated. As such, we do not know how well the findings from the experimental setting would generalise into real life.\\n\\nRelevance: The experiment relates to the topic of robo-advice and therefore findings will be relevant to similar interventions or programmes.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "An experimental trial of the effects of free and paid-for robo-advice on loan repayment decisions, run by the Financial Conduct Authority with participants representative of UK adults."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  },
+  {
+    "seoTitle": "Enabling ESOL clients to improve their financial health",
+    "seoDescription": "An evaluation of a project to create and deliver financial capability training materials to people who do not speak English as a first language.",
+    "title": "Enabling ESOL clients to improve their financial health",
+    "slug": "enabling-esol-clients-to-improve-their-financial-health",
+    "publishDate": "2018-01-01T00:00:00Z",
+    "lastUpdatedDate": "2018-01-01T00:00:00Z",
+    "pageType": {
+      "name": "Evaluation",
+      "key": "evaluation"
+    },
+    "dataTypes": [
+      {
+        "name": "Measured Outcomes",
+        "key": "measured-outcomes"
+      }
+    ],
+    "topic": [
+      {
+        "name": "Financial education",
+        "key": "financial-education"
+      },
+      {
+        "name": "Debt",
+        "key": "debt"
+      },
+      {
+        "name": "Financial capability",
+        "key": "financial-capability"
+      }
+    ],
+    "countryOfDelivery": [
+      {
+        "name": "England",
+        "key": "england"
+      }
+    ],
+    "organisation": [],
+    "clientGroup": [
+      {
+        "name": "Adults (18-64)",
+        "key": "working-age"
+      },
+      {
+        "name": "Ethnicity",
+        "key": "ethnicity"
+      },
+      {
+        "name": "Children and young people (18 and under)",
+        "key": "children"
+      }
+    ],
+    "sections": [
+      {
+        "plaintext": "Description of the programme\\n\\nMary Ward Legal Centre is an independent advice centre and registered charity based in Holborn in London. The focus of this project, which started in April 2017, was the financial capability needs of individuals with English as a second language (ESOL). This group consists of foreign adults, including ESOL students and economic migrants, asylum seekers and refugees. They are usually on low incomes and lack confidence when both speaking in English and dealing with financial matters. The project aimed to create financial capability training materials to improve the financial health of these people, as well as making the materials available to different community organisations and advice centres, to help them also engage more effectively with the ESOL group.\\n\\nThe study used mainly qualitative research methods, with the main research question being:\\n\\nHow can we develop financial capability resources for people who have English as a second language?\\n\\n"
+      },
+      {
+        "plaintext": "The study\\n\\nThe participant sample for the pilot workshops was made up of ESOL students in London. These students were recruited via the Mary Ward Adult Education Centre, which gave access to their ESOL coordinator and students.\\n\\nThe research comprised of:\\n\\nTextual analysis, which mapped existing ESOL financial capability resources;\\n\\nInterviews;\\n\\nFocus groups and consultations (with a total of 17 students);\\n\\nCase studies;\\n\\nParticipant observation;\\n\\nBaseline and post-intervention surveys, as well as follow-ups after six weeks;\\n\\nAn ‘end survey’ for front line workers.\\n\\nNote that some of the above were developed as part of the programme, and as such did not form part of the evaluation. There were 52 beneficiaries of the pilot workshops. The surveys were answered by 34 participants at the baseline; 15 participants following the intervention, and eight participants after six weeks. Due to these low numbers any findings from these surveys must be treated with extreme caution."
+      },
+      {
+        "plaintext": "Key findings:\\n\\nThe evaluation identifies the following key findings:\\n\\nThe review of existing resources showed that there were hardly any resources devoted to ESOL learners. The most relevant resource discovered was a toolkit developed by the Citizens Advice Bureau in 2015, helping ESOL clients with financial capability issues.\\n\\nThe consultations and focus groups helped develop a list of key topics for the workshops:\\n\\nBills;Budgeting and planning;\\n\\nDebt;\\n\\nPayslips (including taxation);\\n\\nBorrowing;\\n\\nWelfare benefits.\\n\\n\\n\\nSix ESOL Money Skills workshops were developed, and one training course on financial capability for frontline workers dealing with ESOL clients. As a result of the consultations it was decided:\\n\\nPowerPoint presentations that contained minimal text were an effective way of presenting information;The sessions needed to be interactive;\\n\\nHand-outs were important so the participants could digest the information at home;\\n\\nTo strike a delicate balance between financial and language learning;\\n\\nTo develop simplified versions of resources and avoid jargon;\\n\\nTo aim to develop ‘dateless’ materials that don’t require constant updating.\\n\\n\\n\\nTaster sessions were delivered to test the materials, with key findings being:\\n\\nCourse length needed to be flexible, and tailored to the level of English spoken by participants;Increasing the amount of English language, as opposed to financial, content;\\n\\nNumeracy skills were low, and many participants could not use calculators.\\n\\n\\n\\nWhile there are insufficient numbers for the results to be indicative of more general trends, all of the 15 participants who answered the post-intervention survey stated that they knew how to do their monthly budget, and that they now knew which bills were high priorities. In addition, 13 participants understood the consequences of not paying priority bills.\\n\\nFrontline workers attending the training session reported that their ability to deal with ESOL clients had improved.\\n\\n"
+      },
+      {
+        "plaintext": "Points to consider:\\n\\nMethodological limitations:\\n\\nDue to these workshops being pilots the sample size for assessing the impacts is very small, while no significance testing has been performed so we do not know if the results are statistically significant.\\n\\nThis small sample size impacted upon the level of analysis that could be conducted. The findings, therefore, are indicative of the perspectives and experience of ESOL workshop participants, and not the overall ESOL population.\\n\\nRelevance:\\n\\nThis report is relevant to all stakeholders and policymakers with an interest in financial capability interventions and financial education among vulnerable people, particularly those with English as a second language.\\n\\nGeneralisability/ transferability:\\n\\nThe research, while thorough, is based on small numbers in one geographic region of the United Kingdom. Combined with the lack of statistical testing, its findings cannot be readily generalised to the rest of the UK without considerable further research.\\n\\n"
+      }
+    ],
+    "overview": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "An evaluation of a project to create and deliver financial capability training materials to people who do not speak English as a first language."
+            }
+          ]
+        }
+      ]
+    },
+    "breadcrumbs": [],
+    "contactInformation": {
+      "json": []
+    },
+    "links": []
+  }
+]

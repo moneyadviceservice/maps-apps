@@ -1,0 +1,1154 @@
+{
+  "site": {
+    "title": "--WELSH Money Helper Booking Form",
+    "back": "--WELSH Back"
+  },
+  "layout": {
+    "title": "--WELSH Book an appointment",
+    "base": {
+      "title": "--WELSH Book an appointment"
+    },
+    "change": {
+      "title": "--WELSH Change or cancel an appointment"
+    }
+  },
+  "components": {
+    "appointment-type": {
+      "title": "--WELSH What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Divorce and separation",
+              "value": "ds|divorce-appointment",
+              "hint": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            }
+          ],
+          "error": "--WELSH Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "--WELSH Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH when you can access your pension pots",
+            "--WELSH the different ways you can take money from your pension",
+            "--WELSH how each option is usually taxed",
+            "--WELSH how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-appointment": {
+      "title": "--WELSH Self-employed appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH If you’re self-employed, pension options can feel complicated and hard to compare. This appointment helps you understand how pensions work when you work for yourself, and what your choices are."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH the types of pensions available to self-employed people",
+            "--WELSH how contributions work and what you can afford to save",
+            "--WELSH how tax relief is applied and what you could get back",
+            "--WELSH what to consider when choosing a pension provider or scheme",
+            "--WELSH how to check your state pension forecast",
+            "--WELSH how to spot risks and avoid pension scams",
+            "--WELSH where to get free, impartial guidance if you need more help"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a Self-employed appointment if:",
+            "items": ["--WELSH you aren’t self-employed"]
+          }
+        ]
+      }
+    },
+    "divorce-appointment": {
+      "title": "--WELSH Divorce and separation appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH Our divorce and separation section is here to give you all the guidance you need when it comes to managing your finances during a relationship break-up.\n\nIt doesn’t matter what your situation is. You may be divorcing or separating; have children or not; own your home or rent; or live in England, Scotland, Wales or Northern Ireland. We have guides that will cover your specific situation."
+        },
+        {
+          "content": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier.\n\nDuring your appointment, you'll speak with one of our pension specialists who will:",
+          "items": [
+            "--WELSH explain the pension options available during a divorce/dissolution",
+            "--WELSH help you understand what to consider and the questions to ask",
+            "--WELSH guide you on your next steps, including where to find additional help and how to access regulated financial advice if needed."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a divorce and separation appointment if: ",
+            "items": [
+              "--WELSH you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-loss-appointment": {
+      "title": "--WELSH Pension loss appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "sections": [
+        {
+          "content": "--WELSH There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.\n\nThat’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost."
+        },
+        {
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH what has happened to your pension and what it means for you",
+            "--WELSH what common scam-related pension terms and acronyms refer to",
+            "--WELSH what options you may have to recover some of the money you’ve lost",
+            "--WELSH what to expect next, including possible investigations or follow-up steps"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a pension loss appointment if: ",
+            "items": [
+              "--WELSH you have not been the victim of a suspected or confirmed pension scam"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-safeguarding-appointment": {
+      "title": "--WELSH Pension Safeguarding Guidance appointment",
+      "sections": [
+        {
+          "content": "--WELSH You’ve been referred by your pension provider for a free Pension Safeguarding Guidance appointment to talk about the transfer of your pension benefits.\n\nKeep in mind that this appointment is to help you understand the risk of being scammed and avoid making a transfer that leads to you losing some or all of your pension savings.\n\nYou must attend the appointment yourself. Appointments cannot be attended by someone acting on your behalf.\n\nIf you plan on consolidating more than one pension then please wait until you have requested all transfers before booking your appointment. This will avoid being asked to attend more than one safeguarding appointment.\n\nIf you don’t think you need this appointment, please contact your pension provider."
+        },
+        {
+          "title": "--WELSH What an appointment covers",
+          "content": "--WELSH You’ll find out:",
+          "items": [
+            "--WELSH Things to consider before moving a pension, for example loss of any special features, investments, security, fees and charges. ",
+            "--WELSH How to spot and avoid a scam."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "--WELSH Eligibility",
+        "sections": [
+          {
+            "content": "--WELSH You **can’t** book a safeguarding appointment if:",
+            "items": [
+              "--WELSH you haven’t been referred by the pension provider you’re seeking a transfer from"
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "content": "--WELSH Read our [Privacy Notice](#) to learn what data we collect and how we use it. "
+      }
+    },
+    "pre-appointment": {
+      "ds": {
+        "title": "--WELSH What you need for your divorce and separation appointment",
+        "sections": [
+          {
+            "content": "--WELSH So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances. You’ll usually benefit more from a divorce and separation appointment if, before your appointment, you:"
+          },
+          {
+            "content": "--WELSH Ask each of your pension providers:",
+            "items": [
+              "--WELSH how much your pension is currently worth",
+              "--WELSH if your pension has any special features, like a guaranteed pot value or annuity rate."
+            ]
+          },
+          {
+            "content": "--WELSH Check your State Pension forecast:",
+            "items": [
+              "--WELSH [online on GOV.UK (opens in a new tab)](https://www.gov.uk/check-state-pension)",
+              "--WELSH call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+            ]
+          },
+          {
+            "content": "--WELSH Have details of your other finances, like:",
+            "items": [
+              "--WELSH savings and investments",
+              "--WELSH debts and repayments."
+            ]
+          },
+          {
+            "content": "--WELSH Think about your plans for retirement, such as:",
+            "items": [
+              "--WELSH when you’d like to stop working",
+              "--WELSH what type of pension income you’d like."
+            ]
+          },
+          {
+            "content": "--WELSH On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+          }
+        ]
+      },
+      "psg": {
+        "title": "--WELSH What you need for your Pension Safeguarding appointment",
+        "sections": [
+          {
+            "content": "--WELSH During the appointment, you’ll be asked for details of the pension transfer you’re making and your financial situation. In order to provide the most beneficial guidance and to tailor your appointment to your personal circumstances, it’s helpful if you can find out:",
+            "items": [
+              "--WELSH The type of pension you already have – usually defined contribution or defined benefit – and the name of the product, like a personal or workplace pension.",
+              "--WELSH The type and name of the pension scheme you want to transfer to.",
+              "--WELSH The fees and charges for both schemes.",
+              "--WELSH If you are transferring a defined contribution pension, how each scheme plans to invest your money, including the funds or types of asset they use – you can ask each pension provider if you’re not sure.",
+              "--WELSH Any details provided by your current pension provider as to the reason for requiring an appointment.  They may refer to their reasons as a red or amber flag.",
+              "--WELSH Details of any financial adviser you’ve used."
+            ]
+          },
+
+          {
+            "content": "--WELSH **It’s also useful to:**",
+            "items": [
+              "--WELSH Have information about all the sources of retirement income you might have, including other pensions.",
+              "--WELSH Think about your plans for retirement, including when you want to start taking your pension and when you’d like to stop working or reduce your hours."
+            ]
+          },
+          {
+            "content": "--WELSH On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+          }
+        ]
+      }
+    },
+    "eligibility-defined-contribution": {
+      "title": "--WELSH Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "--WELSH This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|eligibility-over-50"
+            },
+            {
+              "text": "--WELSH No, I have a different type of pension",
+              "value": "no|pension-wise-not-eligible"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "not-sure|eligibility-over-50"
+            }
+          ],
+          "error": "--WELSH Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "--WELSH Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|eligibility-uk-pensions"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no|eligibility-age-exceptions"
+            }
+          ],
+          "error": "--WELSH Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "--WELSH Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "--WELSH You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|access-support"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no|pension-wise-not-eligible"
+            }
+          ],
+          "error": "--WELSH Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "--WELSH Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "--WELSH You have inherited someone else’s pension",
+              "value": "inherited-pension|eligibility-uk-pensions"
+            },
+            {
+              "text": "--WELSH You are retiring early due to poor health",
+              "value": "early-retirement-poor-health|eligibility-uk-pensions"
+            },
+            {
+              "text": "--WELSH Your pension scheme allows early access (protected pension age)",
+              "value": "protected-pension-age|eligibility-uk-pensions"
+            },
+            {
+              "text": "--WELSH None of these apply",
+              "value": "none|pension-wise-not-eligible"
+            }
+          ],
+          "error": "--WELSH Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "eligibility-business-state": {
+      "title": "--WELSH What is your business status?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Sole trader (declare income through Self Assessment)",
+              "value": "sole-trader"
+            },
+            {
+              "text": "--WELSH Partner in a business partnership (declare income through Self Assessment)",
+              "value": "business-partnership"
+            },
+            {
+              "text": "--WELSH Director of a limited company",
+              "value": "director-limited-company"
+            },
+            {
+              "text": "--WELSH Other (please specify)",
+              "value": "other"
+            }
+          ],
+          "error": "--WELSH Select what type of self-employed status you have."
+        }
+      }
+    },
+    "eligibility-financial-settlement": {
+      "title": "--WELSH Has a financial settlement already been agreed?",
+      "sections": [
+        {
+          "content": "--WELSH You cannot book a divorce and separation appointment if a financial settlement has been agreed."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Has a financial settlement already been agreed?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|divorce-not-eligible"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no|eligibility-divorce-jurisdiction"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "not-sure|eligibility-divorce-jurisdiction"
+            }
+          ],
+          "error": "--WELSH Please select whether a financial settlement has already been agreed."
+        }
+      }
+    },
+    "eligibility-divorce-jurisdiction": {
+      "title": "--WELSH Where did you last live together as a couple? ",
+      "sections": [
+        {
+          "content": "--WELSH This is usually what decides which country's divorce laws apply to you. We ask so your specialist has this information ahead of your appointment."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Where did you last live together as a couple?",
+          "options": [
+            {
+              "text": "--WELSH England ",
+              "value": "england"
+            },
+            {
+              "text": "--WELSH Wales",
+              "value": "wales"
+            },
+            {
+              "text": "--WELSH Scotland",
+              "value": "scotland"
+            },
+            {
+              "text": "--WELSH Northern Ireland",
+              "value": "northern-ireland"
+            }
+          ],
+          "error": "--WELSH Please select where you last lived together as a couple."
+        }
+      }
+    },
+    "eligibility-pension-loss": {
+      "title": "--WELSH Have you lost pension money because of a scam or fraud?",
+      "sections": [
+        {
+          "content": "--WELSH This appointment is only for people who have been the victim of pension fraud."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Have you lost pension money because of a scam or fraud?",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|access-support"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no|pension-loss-not-eligible"
+            },
+            {
+              "text": "--WELSH Not sure",
+              "value": "not-sure|access-support"
+            }
+          ],
+          "error": "--WELSH Please select whether you have lost pension money because of a scam or fraud."
+        }
+      }
+    },
+    "eligibility-pension-provider": {
+      "title": "--WELSH Pension providers",
+      "form": {
+        "referred-from": {
+          "label": "--WELSH Which pension provider referred you for Pension Safeguarding Guidance?",
+          "error": "--WELSH Please state the pension provider name that referred you"
+        },
+        "transferring-to": {
+          "label": "--WELSH Which pension provider do you plan to transfer to?",
+          "error": "--WELSH Please state the pension provider name that you plan to transfer to"
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "--WELSH You’re not eligible for a Pension Wise appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a Pension Wise appointment if:",
+            "items": [
+              "--WELSH you’re under 50",
+              "--WELSH you only have a defined benefit pension (final salary or career-average salary) or",
+              "--WELSH you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "--WELSH You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "pension-loss-not-eligible": {
+      "title": "--WELSH You’re not eligible for a pension loss appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a pension loss appointment if:",
+            "items": ["&nbsp;"]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        }
+      ]
+    },
+    "divorce-not-eligible": {
+      "title": "--WELSH You’re not eligible for a divorce and separation appointment",
+      "sub-title": "--WELSH What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "--WELSH You can’t book a divorce and separation appointment if:",
+            "items": [
+              "--WELSH you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "--WELSH We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "--WELSH [call us on 0800 011 3797](tel:08000113797)",
+            "--WELSH [use our webchat](#)",
+            "--WELSH [use our online form](#)"
+          ]
+        },
+        {
+          "content": "--WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "--WELSH You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "access-support": {
+      "title": "--WELSH Would you like any adjustments for your appointment?",
+      "sections": [
+        {
+          "content": "--WELSH A standard PensionWise appointment will be via telephone and last for approximately 1 hour. We can make adjustments to meet your needs. For example, you can ask for:",
+          "items": [
+            "--WELSH A Welsh-speaking pension specialist",
+            "--WELSH A British Sign Language interpreter",
+            "--WELSH A foreign language interpreter",
+            "--WELSH Someone to attend the appointment with you",
+            "--WELSH Adjustments for accessibility needs"
+          ]
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes|access-options"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "none-requested|pre-appointment"
+            }
+          ],
+          "error": "--WELSH Select whether you would like adjustments for your appointment."
+        }
+      }
+    },
+    "access-options": {
+      "title": "--WELSH What would help make your appointment easier?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "--WELSH A Welsh-speaking pension specialist",
+              "value": "welsh-speaking-pension-specialist|pre-appointment"
+            },
+            {
+              "text": "--WELSH A foreign language interpreter",
+              "value": "foreign-language-interpreter|access-language"
+            },
+            {
+              "text": "--WELSH A British Sign Language interpreter",
+              "value": "bsl-interpreter|access-bsl"
+            }
+          ],
+          "error": "--WELSH Select whether you would like adjustments for your appointment."
+        },
+        "companion-checkbox": {
+          "label": "--WELSH Someone to attend the appointment with you",
+          "value": "someone-to-attend-appointment"
+        },
+        "companion-name": {
+          "label": "--WELSH Who is attending the appointment with you?",
+          "hint": "--WELSH For example, a partner, friend or financial advisor.",
+          "accordion": {
+            "title": "--WELSH Why are we asking this?",
+            "content": "--WELSH Content TBC"
+          }
+        },
+        "additional-details": {
+          "label": "--WELSH Anything else that would help? (Optional)",
+          "hint": "--WELSH Tell us if there’s anything else that would make your appointment easier (for example, if you’re neurodivergent or prefer information explained slowly).",
+          "error": "--WELSH "
+        }
+      }
+    },
+    "access-language": {
+      "title": "--WELSH What language do you need an interpreter for?",
+      "sections": [
+        {
+          "content": "--WELSH We can arrange an interpreter for most spoken languages. Choose your preferred language from the list below. If your language isn’t shown, select ‘Other language’ and tell us which one you need."
+        }
+      ],
+      "form": {
+        "select": {
+          "options": [
+            { "text": "--WELSH Arabic", "value": "arabic" },
+            { "text": "--WELSH Bengali", "value": "bengali" },
+            { "text": "--WELSH Cantonese", "value": "cantonese" },
+            { "text": "--WELSH Farsi", "value": "farsi" },
+            { "text": "--WELSH French", "value": "french" },
+            { "text": "--WELSH Other language", "value": "other" }
+          ],
+          "error": "--WELSH Please select what language you need an interpreter for."
+        },
+        "language-other": {
+          "label": "--WELSH Other language (please specify)",
+          "error": "--WELSH Please specify which language you need an interpreter for."
+        }
+      }
+    },
+    "access-bsl": {
+      "title": "--WELSH Using a British Sign Language (BSL) interpreter for your appointment",
+      "sections": [
+        {
+          "content": "--WELSH This page explains how your appointment will work if you need a BSL interpreter."
+        },
+        {
+          "title": "--WELSH How the appointment will take place",
+          "content": "--WELSH Your appointment will take place as a video call. This means:",
+          "items": [
+            "--WELSH the pension specialist will join the video call",
+            "--WELSH a BSL interpreter will join the video call",
+            "--WELSH you will be given a link to join the video call"
+          ]
+        },
+        {
+          "content": "--WELSH The interpreter will translate between you and the pension specialist during the appointment."
+        }
+      ]
+    },
+    "access-companion": {
+      "title": "--WELSH Having someone attend your appointment with you",
+      "sections": [
+        {
+          "content": "--WELSH This page explains how your appointment will work if you want someone to attend with you."
+        },
+        {
+          "title": "--WELSH If someone will join your appointment remotely",
+          "content": "--WELSH If the other person cannot be with you in person - for example, if they have Power of Attorney or live far away,  they can join the appointment remotely.\n\nYour appointment will take place as a **conference call**. This means:",
+          "items": [
+            "--WELSH you will join the appointment as usual",
+            "--WELSH the pension specialist will join the call by telephone",
+            "--WELSH the person supporting you can join the call remotely",
+            "--WELSH we will provide details on how they can join the call after you book"
+          ]
+        },
+        {
+          "content": "--WELSH The person supporting you will be able to listen and speak during the appointment."
+        },
+        {
+          "title": "--WELSH If someone will be with you in the same room",
+          "content": "--WELSH If the person supporting you will be with you during the appointment - for example, a carer, family member or friend, they can sit with you while you join the call.\n\nThey do not need separate joining instructions unless you request them."
+        }
+      ]
+    },
+    "appointment-date-time": {
+      "title": "--WELSH Choose the appointment time",
+      "date": {
+        "sections": [
+          {
+            "title": "--WELSH Choose a day",
+            "content": "--WELSH Select a date to see available appointment times."
+          }
+        ]
+      },
+      "time": {
+        "sections": [
+          {
+            "title": "--WELSH Choose a time",
+            "content": "--WELSH Appointments usually last around 60 minutes. The times below are start times. The pension specialist may join up to 10 minutes after the start time if their earlier appointment runs over."
+          }
+        ]
+      },
+      "form": {
+        "radio-button": {
+          "label": "--WELSH Available times for **{selectedDateLabel}**",
+          "error": "--WELSH Please select an appointment time on the date you have chosen, or select a different date."
+        }
+      },
+      "help": {
+        "sections": [
+          {
+            "title": "--WELSH Can’t find a time that suits?",
+            "content": "--WELSH Try [Pension Wise Digital](#), where you can have an appointment anytime and do it at your own pace."
+          }
+        ]
+      }
+    },
+    "contact-details": {
+      "title": "--WELSH Your contact details",
+      "form": {
+        "first-name": {
+          "label": "--WELSH First name",
+          "error": "--WELSH Please enter your first name"
+        },
+        "last-name": {
+          "label": "--WELSH Last name",
+          "error": "--WELSH Please enter your last name"
+        },
+        "email-address": {
+          "label": "--WELSH Email",
+          "error": "--WELSH Enter an email address of up to 100 characters in the correct format, like name@example.com",
+          "expandable-section": {
+            "title": "--WELSH Why are we asking this?",
+            "content": "--WELSH We’ll send an email confirming your appointment date."
+          }
+        },
+        "phone-number": {
+          "label": "--WELSH Phone number",
+          "error": "--WELSH Please do not include spaces or special characters. However, it can include +44 to start. E.g. +441234567890",
+          "expandable-section": {
+            "title": "--WELSH What will my phone number be used for?",
+            "content": "--WELSH The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code."
+          }
+        },
+        "date-of-birth": {
+          "label": "--WELSH Date of birth",
+          "hint": "--WELSH Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960",
+          "error": "--WELSH Please enter your date of birth",
+          "expandable-section": {
+            "title": "--WELSH Why are we asking this?",
+            "content": "--WELSH You must be aged 50 or over to book an appointment, e.g. 31 3 1950"
+          }
+        },
+        "memorable-word": {
+          "label": "--WELSH Your memorable word",
+          "hint": "--WELSH Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service",
+          "error": "--WELSH Please enter a memorable word that the pension specialist will repeat back to you"
+        }
+      }
+    },
+    "communication-preferences": {
+      "title": "--WELSH Your communication preferences",
+      "form": {
+        "checkbox-preferred-method": {
+          "label": "--WELSH Preferred method of communication",
+          "hint": "--WELSH We’ll use your chosen method to send your appointment confirmation and reminders. We may still use email to send other information about your appointment.",
+          "items": [
+            {
+              "label": "--WELSH Text message",
+              "value": "text-message"
+            },
+            {
+              "label": "--WELSH Email",
+              "value": "email"
+            },
+            {
+              "label": "--WELSH Post",
+              "value": "post|address-details"
+            }
+          ],
+          "error": "--WELSH Select at least one preferred method of communication."
+        },
+        "radio-button-large-print": {
+          "label": "--WELSH Would you like your communication in large print? ",
+          "hint": "--WELSH This is only available for communication sent by email. Large print is text larger than size 16.",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no"
+            }
+          ],
+          "error": "--WELSH Select whether you would like large print for your appointment."
+        },
+        "radio-button-contact-you": {
+          "label": "--WELSH Can we contact you to ask about your experience using this service? ",
+          "hint": "--WELSH If you say yes, we might contact you using your preferred method of communication to take part in research, for example short surveys or interviews. Taking part is always optional.",
+          "options": [
+            {
+              "text": "--WELSH Yes",
+              "value": "yes"
+            },
+            {
+              "text": "--WELSH No",
+              "value": "no"
+            }
+          ],
+          "error": "--WELSH Select whether you would like to be contacted."
+        }
+      }
+    },
+    "address-details": {
+      "title": "--WELSH Enter your address",
+      "form": {
+        "address-line-1": {
+          "label": "--WELSH Address line 1",
+          "error": "--WELSH Please enter your address line 1"
+        },
+        "address-line-2": {
+          "label": "--WELSH Address line 2 (optional)"
+        },
+        "city": {
+          "label": "--WELSH Town or city",
+          "error": "--WELSH Please enter your town or city"
+        },
+        "county": {
+          "label": "--WELSH County (optional)"
+        },
+        "postcode": {
+          "label": "--WELSH Postcode",
+          "error": "--WELSH Please enter your postcode"
+        },
+        "country": {
+          "label": "--WELSH Country",
+          "error": "--WELSH Please enter your country"
+        }
+      }
+    },
+    "address-confirmation": {
+      "title": "--WELSH Review and confirm",
+      "link": "--WELSH Edit address"
+    },
+    "confirm-details": {
+      "title": "--WELSH Confirm your details",
+      "content": "--WELSH You can change the answers if you need to. If you choose to change your adjustment requests, you will need to select your appointment date and time again.",
+      "change-link": "--WELSH Change",
+      "appointment-details": {
+        "title": "--WELSH Appointment details",
+        "topic": "--WELSH Appointment topic",
+        "date": "--WELSH Date",
+        "time": "--WELSH Start time",
+        "format": "--WELSH Appointment format",
+        "adjustment-requests": {
+          "label": "--WELSH Adjustment requests",
+          "value": {
+            "none-requested": "--WELSH None requested",
+            "welsh-speaking-pension-specialist": "--WELSH A Welsh-speaking pension specialist",
+            "foreign-language-interpreter": "--WELSH A foreign language interpreter - ({accessLanguageType})",
+            "bsl-interpreter": "--WELSH A British Sign Language interpreter",
+            "someone-to-attend-appointment": "--WELSH Someone to attend the appointment with you"
+          }
+        }
+      },
+      "your-details": {
+        "title": "--WELSH Your details",
+        "first-name": "--WELSH First name",
+        "last-name": "--WELSH Last name",
+        "email-address": "--WELSH Email",
+        "phone-number": "--WELSH Phone number",
+        "date-of-birth": "--WELSH Date of birth",
+        "memorable-word": "--WELSH Memorable word",
+        "preferred-communication-method": {
+          "label": "--WELSH Preferred method of communication",
+          "value": {
+            "text-message": "--WELSH Text message",
+            "email": "--WELSH Email",
+            "post": "--WELSH Post"
+          }
+        }
+      }
+    },
+    "confirmation": {
+      "callout": {
+        "title": {
+          "ds": "--WELSH Your Divorce and Separation appointment is confirmed",
+          "psg": "--WELSH Your Pension Safeguarding Guidance appointment is confirmed"
+        },
+        "content": "--WELSH Your reference number is {referenceNumber}.",
+        "details": {
+          "date": {
+            "label": "--WELSH Date",
+            "value": "--WELSH {appointmentDate}"
+          },
+          "time": {
+            "label": "--WELSH Start Time",
+            "value": "--WELSH {appointmentTime} (Your appointment may begin up to 10 minutes after the start time)"
+          }
+        }
+      },
+      "sections": [
+        {
+          "title": "--WELSH What happens next",
+          "items": [
+            "--WELSH We’ll also send you a booking confirmation, including [how to   prepare for your appointment](#).",
+            "--WELSH Remember, we **cannot speak to you if you’re driving** - even if you use a hands-free device."
+          ]
+        },
+        {
+          "title": "--WELSH How to change or cancel your appointment",
+          "content": "--WELSH You will need your booking reference number to do the following:",
+          "items": [
+            "--WELSH change appointment date or time",
+            "--WELSH cancel your appointment",
+            "--WELSH You can also reply to the booking confirmation you’ll receive."
+          ]
+        },
+        {
+          "content": "--WELSH If you need to change any personal details you have provided, you will need to call us on [0800 138 3944](tel:08001383944) ([+44 20 3733 3495](tel:+442037333495) if you're outside the UK) or use the [webchat](#).\n\nWe're open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "title": "--WELSH What information you might be asked for",
+          "content": "--WELSH So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances.\n\nYou’ll usually benefit more from a Pension Wise appointment if, before your appointment, you:\n\n**Ask each of your pension providers:**",
+          "items": [
+            "--WELSH how much your pension is currently worth",
+            "--WELSH if your pension has any special features, like a guaranteed pot value or annuity rate."
+          ]
+        },
+        {
+          "content": "--WELSH **Check your State Pension forecast:**",
+          "items": [
+            "--WELSH [online on GOV.UK](#)",
+            "--WELSH call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+          ]
+        },
+        {
+          "content": "--WELSH **Have details of your other finances, like:**",
+          "items": [
+            "--WELSH savings and investments",
+            "--WELSH debts and repayments."
+          ]
+        },
+        {
+          "content": "--WELSH **Think about your plans for retirement, such as:**",
+          "items": [
+            "--WELSH when you’d like to stop working",
+            "--WELSH what type of pension income you’d like."
+          ]
+        },
+        {
+          "content": "--WELSH Our [Privacy Notice](#) provides further information, together with your rights in respect of the data we hold on you."
+        }
+      ]
+    },
+    "find-appointment": {
+      "title": "--WELSH Find your appointment",
+      "sections": [
+        {
+          "content": "--WELSH Enter your booking reference and date of birth to change or cancel your appointment."
+        }
+      ],
+      "form": {
+        "reference-number": {
+          "label": "--WELSH Your booking reference",
+          "hint": "--WELSH You’ll find this in your confirmation email",
+          "error": "--WELSH Please enter your booking reference number"
+        },
+        "date-of-birth": {
+          "label": "--WELSH Date of birth",
+          "hint": "--WELSH Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960",
+          "error": "--WELSH Please enter your date of birth"
+        }
+      }
+    },
+    "appointment-found": {
+      "title": "--WELSH What would you like to do?",
+      "callout": {
+        "title": {
+          "ds": "--WELSH Your Divorce and seperation appointment has been found",
+          "psg": "--WELSH Your Pension Safeguarding Guidance has been found"
+        },
+        "content": "--WELSH Your reference number is {referenceNumber}.",
+        "details": {
+          "date": {
+            "label": "--WELSH Date",
+            "value": "{appointmentDate}"
+          },
+          "time": {
+            "label": "--WELSH Start Time",
+            "value": "--WELSH {appointmentTime} (GMT)"
+          }
+        }
+      },
+      "form": {
+        "radio-button": {
+          "label": "--WELSH What would you like to do?",
+          "options": [
+            {
+              "text": "--WELSH Change appointment date or time",
+              "value": "change-appointment"
+            },
+            {
+              "text": "--WELSH Cancel your appointment",
+              "value": "cancel-appointment"
+            }
+          ],
+          "error": "--WELSH Please choose whether to change your appointment date or time, or to cancel the appointment"
+        }
+      }
+    },
+    "sidebar": {
+      "help": {
+        "title": "--WELSH Need Help?",
+        "content": "--WELSH Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+      },
+      "information": {
+        "overview": {
+          "pw": {
+            "title": "--WELSH Pension Wise appointment",
+            "content": "--WELSH Explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+          },
+          "se": {
+            "title": "--WELSH Self-employed pensions appointment",
+            "content": "--WELSH Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+          },
+          "ds": {
+            "title": "--WELSH Divorce and separation appointment",
+            "content": "--WELSH Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+          },
+          "pl": {
+            "title": "--WELSH Pension loss appointment",
+            "content": "--WELSH For people who have lost pension money due to a scam or fraud and need support."
+          },
+          "psg": {
+            "title": "--WELSH Pension Safeguarding appointment",
+            "content": "--WELSH You’ve been referred by your pension provider for a free Pension Safeguarding Guidance appointment to talk about the transfer of your pension benefits."
+          }
+        },
+        "details": {
+          "duration-label": "--WELSH Duration",
+          "format-label": "--WELSH Appointment format",
+          "request-label": "--WELSH Adjustment request",
+          "duration-value": "--WELSH About 1 hour",
+          "format-value": "--WELSH Telephone call",
+          "request-value": "--WELSH Our team will review your request and make any arrangements needed before your appointment.",
+          "welsh-speaking-pension-specialist": {
+            "duration-value": "--WELSH About 1 hour",
+            "format-value": "--WELSH Telephone call",
+            "request-value": "--WELSH A Welsh-speaking pension specialist"
+          },
+          "foreign-language-interpreter": {
+            "duration-value": "--WELSH About 1 to 2 hours",
+            "format-value": "--WELSH Telephone call",
+            "request-value": "--WELSH Foreign language interpreter - ({accessLanguage})"
+          },
+          "bsl-interpreter": {
+            "duration-value": "--WELSH About 1 to 2 hours",
+            "format-value": "--WELSH Video call",
+            "request-value": "--WELSH A British Sign Language interpreter"
+          }
+        }
+      }
+    },
+    "error": {
+      "title": "--WELSH Something went wrong",
+      "sections": [
+        {
+          "content": "--WELSH There was a problem."
+        },
+        {
+          "content": "--WELSH What you can do",
+          "items": ["--WELSH [Try again](/)"]
+        }
+      ]
+    },
+    "existing-appointment-callout": {
+      "title": "--WELSH Already booked an appointment? ",
+      "content": "--WELSH If you want to change or cancel an existing appointment booking, go to the [Find your appointment](/cy/find-appointment) page."
+    },
+    "no-js-notice": {
+      "title": "--WELSH You cannot book an appointment online",
+      "sections": [
+        {
+          "content": "--WELSH Your browser cannot use our online booking service.\n\nYou can still book an appointment by calling us on [0800 138 3944](tel:08001383944).\n\nCall between 8am to 6:30pm, Monday to Friday."
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "--WELSH Continue",
+        "save-changes-text": "--WELSH Save changes",
+        "send-text": "--WELSH Confirm appointment",
+        "pension-wise-appointment": "--WELSH Book your free appointment",
+        "self-employed-appointment": "--WELSH Book your free appointment",
+        "address-confirmation": "--WELSH Confirm address"
+      }
+    },
+    "appointment-details": {
+      "duration-label": "--WELSH Duration",
+      "format-label": "--WELSH Appointment format",
+      "request-label": "--WELSH Adjustment request",
+      "duration-value": "--WELSH About 1 hour",
+      "format-value": "--WELSH Telephone call",
+      "request-value": "--WELSH Our team will review your request and make any arrangements needed before your appointment.",
+      "welsh-speaking-pension-specialist": {
+        "duration-value": "--WELSH About 1 hour",
+        "format-value": "--WELSH Telephone call",
+        "request-value": "--WELSH A Welsh-speaking pension specialist"
+      },
+      "foreign-language-interpreter": {
+        "duration-value": "--WELSH About 1 to 2 hours",
+        "format-value": "--WELSH Telephone call",
+        "request-value": "--WELSH Foreign language interpreter - ({accessLanguage})"
+      },
+      "bsl-interpreter": {
+        "duration-value": "--WELSH About 1 to 2 hours",
+        "format-value": "--WELSH Video call",
+        "request-value": "--WELSH A British Sign Language interpreter"
+      }
+    },
+    "error-callout": {
+      "title": "--WELSH There was a problem"
+    },
+    "loading": {
+      "title": "--WELSH Loading",
+      "appointment-availability": {
+        "title": "--WELSH Finding available dates and times. This may take a few moments."
+      },
+      "booking-create": {
+        "title": "--WELSH Your request is being submitted - please stay on this page. This may take a few seconds."
+      },
+      "booking-lookup": {
+        "title": "--WELSH Looking up your appointment. This may take a few moments."
+      }
+    }
+  }
+}

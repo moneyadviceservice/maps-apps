@@ -1,0 +1,1 @@
+export { formatBookingSlotText } from './formatBookingSlotText';

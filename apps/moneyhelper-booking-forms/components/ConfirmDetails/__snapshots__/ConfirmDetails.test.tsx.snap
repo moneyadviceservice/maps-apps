@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ConfirmDetails Component renders component correctly 1`] = `
+<div>
+  <section>
+    <div
+      class="flex flex-col gap-6 md:gap-8"
+    >
+      <p
+        class="break-words mb-0"
+        data-testid="paragraph"
+      >
+        components.confirm-details.content
+      </p>
+      <div>
+        <h4
+          class="text-xl md:text-2xl font-bold mb-4 text-blue-700 md:mb-6"
+          data-testid="appointment-details-title"
+        >
+          components.confirm-details.appointment-details.title
+        </h4>
+        <div
+          class="flex flex-col gap-6 md:block"
+        >
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.appointment-details.topic
+              </dt>
+              <dd
+                class="md:col-span-7"
+              >
+                Self Employed
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.appointment-details.date
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/appointment-date-time?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.appointment-details.time
+              </dt>
+              <dd
+                class="md:col-span-5"
+              >
+                undefined (GMT)
+              </dd>
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/appointment-date-time?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.appointment-details.format
+              </dt>
+              <dd
+                class="md:col-span-7"
+              >
+                components.sidebar.information.details.format-value
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.appointment-details.adjustment-requests.label
+              </dt>
+              <dd
+                class="md:col-span-5"
+              >
+                <div
+                  class="flex flex-col gap-4"
+                >
+                  <p
+                    class="break-words mb-0"
+                    data-testid="paragraph"
+                  >
+                    components.confirm-details.appointment-details.adjustment-requests.value.none-requested
+                  </p>
+                </div>
+              </dd>
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/access-support?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <h4
+          class="text-xl md:text-2xl font-bold mb-4 text-blue-700 md:mb-6"
+          data-testid="your-details-title"
+        >
+          components.confirm-details.your-details.title
+        </h4>
+        <div
+          class="flex flex-col gap-6 md:block"
+        >
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.first-name
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.last-name
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.email-address
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.phone-number
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.date-of-birth
+              </dt>
+              <dd
+                class="md:col-span-5"
+              >
+                undefined/undefined/undefined
+              </dd>
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.memorable-word
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/contact-details?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <dl
+            class="border-b last:border-b-0 border-transparent md:border-gray-300 text-sm"
+          >
+            <div
+              class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+            >
+              <dt
+                class="md:col-span-5 font-bold"
+              >
+                components.confirm-details.your-details.preferred-communication-method.label
+              </dt>
+              <dd
+                class="md:col-span-5"
+              />
+              <dd
+                class="md:col-span-2 md:text-right md:pr-6"
+              >
+                <a
+                  class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+                  href="/undefined/communication-preferences?edit=true"
+                >
+                  components.confirm-details.change-link
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <form
+      action="/api/form-handler"
+      aria-label="form"
+      class="pt-0 md:pt-0"
+      method="POST"
+      novalidate=""
+    >
+      <input
+        name="locale"
+        type="hidden"
+        value="en"
+      />
+      <input
+        name="currentStep"
+        type="hidden"
+        value="step-0"
+      />
+      <input
+        name="nextStep"
+        type="hidden"
+        value="loading/booking-create"
+      />
+      <button
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+        data-testid="form-button"
+        type="submit"
+      >
+        <span />
+        common.form.button.send-text
+        <span />
+      </button>
+    </form>
+  </section>
+</div>
+`;

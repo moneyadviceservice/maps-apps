@@ -1,0 +1,59 @@
+# Reusable template for posting notifications to Microsoft Teams
+# Usage:
+#   - template: templates/teams-notification.yml
+#     parameters:
+#       webhookVariable: 'teams-webhook-url'
+#       messageTitle: 'Build Status'
+#       messagePayloadFile: '$(Build.SourcesDirectory)/teams-message.json'
+
+parameters:
+  - name: webhookVariable
+    type: string
+    displayName: 'Variable name containing the Teams webhook URL'
+
+  - name: messageTitle
+    type: string
+    displayName: 'Title for the Teams message'
+
+  - name: messagePayloadFile
+    type: string
+    displayName: 'Path to JSON file containing the Teams message payload'
+
+  - name: condition
+    type: string
+    default: 'always()'
+    displayName: 'Condition for running this template'
+
+steps:
+  - bash: |
+      if [ ! -f "${{ parameters.messagePayloadFile }}" ]; then
+        echo "Error: Message payload file not found: ${{ parameters.messagePayloadFile }}"
+        exit 1
+      fi
+
+      echo "Posting to Microsoft Teams..."
+      echo "Title: ${{ parameters.messageTitle }}"
+
+      RESPONSE=$(curl -H 'Content-Type: application/json' \
+        -d @"${{ parameters.messagePayloadFile }}" \
+        -w "\n%{http_code}" \
+        -s \
+        "$WEBHOOK_URL")
+
+      HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+      RESPONSE_BODY=$(echo "$RESPONSE" | sed '$d')
+
+      echo "HTTP Status Code: $HTTP_CODE"
+      echo "Response: $RESPONSE_BODY"
+
+      if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+        echo "Successfully posted to Teams"
+        exit 0
+      else
+        echo "Failed to post to Teams (HTTP $HTTP_CODE)"
+        exit 1
+      fi
+    displayName: 'Post notification to Teams - ${{ parameters.messageTitle }}'
+    env:
+      WEBHOOK_URL: $(${{ parameters.webhookVariable }})
+    condition: ${{ parameters.condition }}

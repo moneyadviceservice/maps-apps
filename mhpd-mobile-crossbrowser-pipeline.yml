@@ -1,0 +1,39 @@
+trigger: none
+
+variables:
+  - group: Maps-Apps-Pipeline-Secrets
+  - group: mhpdE2eTest-dev
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+stages:
+  - stage: Desktop_Browsers
+    displayName: 'Crossbrowser & Mobile Tests'
+    jobs:
+      - template: lambdatest-template.yml
+        parameters:
+          platform: windows
+          displayName: 'Windows Browsers'
+          condition: always()
+
+      - template: lambdatest-template.yml
+        parameters:
+          platform: mac
+          displayName: 'Mac Browsers'
+          dependsOn: windows_Tests
+          condition: always()
+
+      - template: lambdatest-template.yml
+        parameters:
+          platform: android
+          displayName: 'Android Real Devices'
+          dependsOn: mac_Tests
+          condition: always()
+
+      - template: lambdatest-template.yml
+        parameters:
+          platform: ios
+          displayName: 'iOS Viewport (Emulated)'
+          dependsOn: android_Tests
+          condition: always()

@@ -1,0 +1,38 @@
+trigger: none
+pr: none
+
+schedules:
+  - cron: '0 23 * * 0-5' # Runs 23:00 UTC (Midnight BST, 23:00 GMT), Sun–Thu
+    displayName: 'Nightly Weekday API Audit'
+    branches:
+      include:
+        - main
+    always: true
+
+jobs:
+  - job: TriggerAudit
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - checkout: none
+
+      - script: |
+          set -e
+
+          echo "Encoding Netlify Basic Auth..."
+
+          NETLIFY_AUTH=$(echo -n "$NETLIFY_USERNAME:$NETLIFY_PWD" | base64)
+
+          echo "Calling: $BASE_URL/api/scheduled-jobs/validate-firms"
+          curl --fail --show-error \
+              -X GET "$BASE_URL/api/scheduled-jobs/validate-firms" \
+              -H "Authorization: Basic $NETLIFY_AUTH" \
+              -H "X-Scheduled-Job-Secret: $JOB_SECRET" \
+              -w "\nHTTP Status: %{http_code}\n"
+
+        displayName: 'Invoke TID API to validate firms against the FCA register'
+        env:
+          NETLIFY_PWD: $(NETLIFY_AUTH_PASSWORD)
+          NETLIFY_USERNAME: $(NETLIFY_AUTH_USERNAME)
+          JOB_SECRET: $(VALIDATE_FIRM_API_SECRET)
+          BASE_URL: $(APP_ROOT_URL)

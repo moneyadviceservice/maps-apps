@@ -1,0 +1,1148 @@
+{
+  "site": {
+    "title": "Money Helper Booking Form",
+    "back": "Back"
+  },
+  "layout": {
+    "title": "Book an appointment",
+    "base": {
+      "title": "Book an appointment"
+    },
+    "change": {
+      "title": "Change or cancel an appointment"
+    }
+  },
+  "components": {
+    "appointment-type": {
+      "title": "What would you like to discuss?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Divorce and separation",
+              "value": "ds|divorce-appointment",
+              "hint": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+            }
+          ],
+          "error": "Select what type of appointment you would like."
+        }
+      }
+    },
+    "pension-wise-appointment": {
+      "title": "Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "A free Pension Wise appointment explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "when you can access your pension pots",
+            "the different ways you can take money from your pension",
+            "how each option is usually taxed",
+            "how to spot and avoid scams. "
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      }
+    },
+    "self-employed-appointment": {
+      "title": "Self-employed appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "If you’re self-employed, pension options can feel complicated and hard to compare. This appointment helps you understand how pensions work when you work for yourself, and what your choices are."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "the types of pensions available to self-employed people",
+            "how contributions work and what you can afford to save",
+            "how tax relief is applied and what you could get back",
+            "what to consider when choosing a pension provider or scheme",
+            "how to check your state pension forecast",
+            "how to spot risks and avoid pension scams",
+            "where to get free, impartial guidance if you need more help"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a Self-employed appointment if:",
+            "items": ["you aren’t self-employed"]
+          }
+        ]
+      }
+    },
+    "divorce-appointment": {
+      "title": "Divorce and separation appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "Our divorce and separation section is here to give you all the guidance you need when it comes to managing your finances during a relationship break-up.\n\nIt doesn’t matter what your situation is. You may be divorcing or separating; have children or not; own your home or rent; or live in England, Scotland, Wales or Northern Ireland. We have guides that will cover your specific situation."
+        },
+        {
+          "content": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier.\n\nDuring your appointment, you'll speak with one of our pension specialists who will:",
+          "items": [
+            "explain the pension options available during a divorce/dissolution",
+            "help you understand what to consider and the questions to ask",
+            "guide you on your next steps, including where to find additional help and how to access regulated financial advice if needed."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a divorce and separation appointment if: ",
+            "items": [
+              "you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-loss-appointment": {
+      "title": "Pension loss appointment",
+      "sub-title": "What an appointment covers",
+      "sections": [
+        {
+          "content": "There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.\n\nThat’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost."
+        },
+        {
+          "content": "You’ll find out:",
+          "items": [
+            "what has happened to your pension and what it means for you",
+            "what common scam-related pension terms and acronyms refer to",
+            "what options you may have to recover some of the money you’ve lost",
+            "what to expect next, including possible investigations or follow-up steps"
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a pension loss appointment if: ",
+            "items": [
+              "you have not been the victim of a suspected or confirmed pension scam"
+            ]
+          }
+        ]
+      }
+    },
+    "pension-safeguarding-appointment": {
+      "title": "Pension Safeguarding Guidance appointment",
+      "sections": [
+        {
+          "content": "You’ve been referred by your pension provider for a free Pension Safeguarding Guidance appointment to talk about the transfer of your pension benefits.\n\nKeep in mind that this appointment is to help you understand the risk of being scammed and avoid making a transfer that leads to you losing some or all of your pension savings.\n\nYou must attend the appointment yourself. Appointments cannot be attended by someone acting on your behalf.\n\nIf you plan on consolidating more than one pension then please wait until you have requested all transfers before booking your appointment. This will avoid being asked to attend more than one safeguarding appointment.\n\nIf you don’t think you need this appointment, please contact your pension provider."
+        },
+        {
+          "title": "What an appointment covers",
+          "content": "You’ll find out:",
+          "items": [
+            "Things to consider before moving a pension, for example loss of any special features, investments, security, fees and charges. ",
+            "How to spot and avoid a scam."
+          ]
+        }
+      ],
+      "callout": {
+        "title": "Eligibility",
+        "sections": [
+          {
+            "content": "You **can’t** book a safeguarding appointment if:",
+            "items": [
+              "you haven’t been referred by the pension provider you’re seeking a transfer from"
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "content": "Read our [Privacy Notice](#) to learn what data we collect and how we use it. "
+      }
+    },
+    "pre-appointment": {
+      "ds": {
+        "title": "What you need for your divorce and separation appointment",
+        "sections": [
+          {
+            "content": "So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances. You’ll usually benefit more from a divorce and separation appointment if, before your appointment, you:"
+          },
+          {
+            "content": "Ask each of your pension providers:",
+            "items": [
+              "how much your pension is currently worth",
+              "if your pension has any special features, like a guaranteed pot value or annuity rate."
+            ]
+          },
+          {
+            "content": "Check your State Pension forecast:",
+            "items": [
+              "[online on GOV.UK (opens in a new tab)](https://www.gov.uk/check-state-pension)",
+              "call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+            ]
+          },
+          {
+            "content": "Have details of your other finances, like:",
+            "items": ["savings and investments", "debts and repayments."]
+          },
+          {
+            "content": "Think about your plans for retirement, such as:",
+            "items": [
+              "when you’d like to stop working",
+              "what type of pension income you’d like."
+            ]
+          },
+          {
+            "content": "On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+          }
+        ]
+      },
+      "psg": {
+        "title": "What you need for your Pension Safeguarding appointment",
+        "sections": [
+          {
+            "content": "During the appointment, you’ll be asked for details of the pension transfer you’re making and your financial situation. In order to provide the most beneficial guidance and to tailor your appointment to your personal circumstances, it’s helpful if you can find out:",
+            "items": [
+              "The type of pension you already have – usually defined contribution or defined benefit – and the name of the product, like a personal or workplace pension.",
+              "The type and name of the pension scheme you want to transfer to.",
+              "The fees and charges for both schemes.",
+              "If you are transferring a defined contribution pension, how each scheme plans to invest your money, including the funds or types of asset they use – you can ask each pension provider if you’re not sure.",
+              "Any details provided by your current pension provider as to the reason for requiring an appointment.  They may refer to their reasons as a red or amber flag.",
+              "Details of any financial adviser you’ve used."
+            ]
+          },
+
+          {
+            "content": "**It’s also useful to:**",
+            "items": [
+              "Have information about all the sources of retirement income you might have, including other pensions.",
+              "Think about your plans for retirement, including when you want to start taking your pension and when you’d like to stop working or reduce your hours."
+            ]
+          },
+          {
+            "content": "On the next screen, you will be prompted to book your appointment date and time, but be mindful of having time to collate the information above to get the most out of your appointment."
+          }
+        ]
+      }
+    },
+    "eligibility-defined-contribution": {
+      "title": "Do you have a defined contribution pension?",
+      "sections": [
+        {
+          "content": "This is the type of pension where you or your employer pay into a pot, and its value can go up or down depending on investments. You can use our tool to [find out your pension type (opens in a new tab)](https://tool.moneyhelper.org.uk/en/pension-type/question-1)."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have a defined contribution pension?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|eligibility-over-50"
+            },
+            {
+              "text": "No, I have a different type of pension",
+              "value": "no|pension-wise-not-eligible"
+            },
+            {
+              "text": "Not sure",
+              "value": "not-sure|eligibility-over-50"
+            }
+          ],
+          "error": "Please select whether you have a defined contribution pension."
+        }
+      }
+    },
+    "eligibility-over-50": {
+      "title": "Are you aged 50 or over?",
+      "form": {
+        "radio-button": {
+          "label": "Are you aged 50 or over?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|eligibility-uk-pensions"
+            },
+            {
+              "text": "No",
+              "value": "no|eligibility-age-exceptions"
+            }
+          ],
+          "error": "Please select whether you are over 50 years old"
+        }
+      }
+    },
+    "eligibility-uk-pensions": {
+      "title": "Do you have any pensions based in the UK?",
+      "sections": [
+        {
+          "content": "You can book an appointment if you have at least one UK-based pension. For example, a pension you built up while working or living in the UK."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Do you have any pensions based in the UK?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|access-support"
+            },
+            {
+              "text": "No",
+              "value": "no|pension-wise-not-eligible"
+            }
+          ],
+          "error": "Please select whether you only have an overseas pension"
+        }
+      }
+    },
+    "eligibility-age-exceptions": {
+      "title": "Do any of the following apply to you?",
+      "form": {
+        "radio-button": {
+          "label": "Do any of the following apply to you?",
+          "options": [
+            {
+              "text": "You have inherited someone else’s pension",
+              "value": "inherited-pension|eligibility-uk-pensions"
+            },
+            {
+              "text": "You are retiring early due to poor health",
+              "value": "early-retirement-poor-health|eligibility-uk-pensions"
+            },
+            {
+              "text": "Your pension scheme allows early access (protected pension age)",
+              "value": "protected-pension-age|eligibility-uk-pensions"
+            },
+            {
+              "text": "None of these apply",
+              "value": "none|pension-wise-not-eligible"
+            }
+          ],
+          "error": "Please select whether any of the options apply to you"
+        }
+      }
+    },
+    "eligibility-business-state": {
+      "title": "What is your business status?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Sole trader (declare income through Self Assessment)",
+              "value": "sole-trader"
+            },
+            {
+              "text": "Partner in a business partnership (declare income through Self Assessment)",
+              "value": "business-partnership"
+            },
+            {
+              "text": "Director of a limited company",
+              "value": "director-limited-company"
+            },
+            {
+              "text": "Other (please specify)",
+              "value": "other"
+            }
+          ],
+          "error": "Select what type of self-employed status you have."
+        }
+      }
+    },
+    "eligibility-financial-settlement": {
+      "title": "Has a financial settlement already been agreed?",
+      "sections": [
+        {
+          "content": "You cannot book a divorce and separation appointment if a financial settlement has been agreed."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Has a financial settlement already been agreed?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|divorce-not-eligible"
+            },
+            {
+              "text": "No",
+              "value": "no|eligibility-divorce-jurisdiction"
+            },
+            {
+              "text": "Not sure",
+              "value": "not-sure|eligibility-divorce-jurisdiction"
+            }
+          ],
+          "error": "Please select whether a financial settlement has already been agreed."
+        }
+      }
+    },
+    "eligibility-divorce-jurisdiction": {
+      "title": "Where did you last live together as a couple? ",
+      "sections": [
+        {
+          "content": "This is usually what decides which country's divorce laws apply to you. We ask so your specialist has this information ahead of your appointment."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Where did you last live together as a couple?",
+          "options": [
+            {
+              "text": "England ",
+              "value": "england"
+            },
+            {
+              "text": "Wales",
+              "value": "wales"
+            },
+            {
+              "text": "Scotland",
+              "value": "scotland"
+            },
+            {
+              "text": "Northern Ireland",
+              "value": "northern-ireland"
+            }
+          ],
+          "error": "Please select where you last lived together as a couple."
+        }
+      }
+    },
+    "eligibility-pension-loss": {
+      "title": "Have you lost pension money because of a scam or fraud?",
+      "sections": [
+        {
+          "content": "This appointment is only for people who have been the victim of pension fraud."
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "label": "Have you lost pension money because of a scam or fraud?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|access-support"
+            },
+            {
+              "text": "No",
+              "value": "no|pension-loss-not-eligible"
+            },
+            {
+              "text": "Not sure",
+              "value": "not-sure|access-support"
+            }
+          ],
+          "error": "Please select whether you have lost pension money because of a scam or fraud."
+        }
+      }
+    },
+    "eligibility-pension-provider": {
+      "title": "Pension providers",
+      "form": {
+        "referred-from": {
+          "label": "Which pension provider referred you for Pension Safeguarding Guidance?",
+          "error": "Please state the pension provider name that referred you"
+        },
+        "transferring-to": {
+          "label": "Which pension provider do you plan to transfer to?",
+          "error": "Please state the pension provider name that you plan to transfer to"
+        }
+      }
+    },
+    "pension-wise-not-eligible": {
+      "title": "You’re not eligible for a Pension Wise appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a Pension Wise appointment if:",
+            "items": [
+              "you’re under 50",
+              "you only have a defined benefit pension (final salary or career-average salary) or",
+              "you only have an overseas pension."
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "pension-loss-not-eligible": {
+      "title": "You’re not eligible for a pension loss appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a pension loss appointment if:",
+            "items": ["&nbsp;"]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        }
+      ]
+    },
+    "divorce-not-eligible": {
+      "title": "You’re not eligible for a divorce and separation appointment",
+      "sub-title": "What an appointment covers",
+      "callout": {
+        "sections": [
+          {
+            "content": "You can’t book a divorce and separation appointment if:",
+            "items": [
+              "you have agreed a financial settlement in the divorce proceedings"
+            ]
+          }
+        ]
+      },
+      "sections": [
+        {
+          "content": "We can still help if you’re not eligible for an appointment. You can contact our pension specialists for free guidance:",
+          "items": [
+            "[call us on 0800 011 3797](tel:08000113797)",
+            "[use our webchat](#)",
+            "[use our online form](#)"
+          ]
+        },
+        {
+          "content": "We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "content": "You can also use our [pension guides and tools.](#)"
+        }
+      ]
+    },
+    "access-support": {
+      "title": "Would you like any adjustments for your appointment?",
+      "sections": [
+        {
+          "content": "A standard PensionWise appointment will be via telephone and last for approximately 1 hour. We can make adjustments to meet your needs. For example, you can ask for:",
+          "items": [
+            "A Welsh-speaking pension specialist",
+            "A British Sign Language interpreter",
+            "A foreign language interpreter",
+            "Someone to attend the appointment with you",
+            "Adjustments for accessibility needs"
+          ]
+        }
+      ],
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|access-options"
+            },
+            {
+              "text": "No",
+              "value": "none-requested|pre-appointment"
+            }
+          ],
+          "error": "Select whether you would like adjustments for your appointment."
+        }
+      }
+    },
+    "access-options": {
+      "title": "What would help make your appointment easier?",
+      "form": {
+        "radio-button": {
+          "options": [
+            {
+              "text": "A Welsh-speaking pension specialist",
+              "value": "welsh-speaking-pension-specialist|pre-appointment"
+            },
+            {
+              "text": "A foreign language interpreter",
+              "value": "foreign-language-interpreter|access-language"
+            },
+            {
+              "text": "A British Sign Language interpreter",
+              "value": "bsl-interpreter|access-bsl"
+            }
+          ],
+          "error": "Select whether you would like adjustments for your appointment."
+        },
+        "companion-checkbox": {
+          "label": "Someone to attend the appointment with you",
+          "value": "someone-to-attend-appointment"
+        },
+        "companion-name": {
+          "label": "Who is attending the appointment with you?",
+          "hint": "For example, a partner, friend or financial advisor.",
+          "accordion": {
+            "title": "Why are we asking this?",
+            "content": "Content TBC"
+          }
+        },
+        "additional-details": {
+          "label": "Anything else that would help? (Optional)",
+          "hint": "Tell us if there’s anything else that would make your appointment easier (for example, if you’re neurodivergent or prefer information explained slowly).",
+          "error": ""
+        }
+      }
+    },
+    "access-language": {
+      "title": "What language do you need an interpreter for?",
+      "sections": [
+        {
+          "content": "We can arrange an interpreter for most spoken languages. Choose your preferred language from the list below. If your language isn’t shown, select ‘Other language’ and tell us which one you need."
+        }
+      ],
+      "form": {
+        "select": {
+          "options": [
+            { "text": "Arabic", "value": "arabic" },
+            { "text": "Bengali", "value": "bengali" },
+            { "text": "Cantonese", "value": "cantonese" },
+            { "text": "Farsi", "value": "farsi" },
+            { "text": "French", "value": "french" },
+            { "text": "Other language", "value": "other" }
+          ],
+          "error": "Please select what language you need an interpreter for."
+        },
+        "language-other": {
+          "label": "Other language (please specify)",
+          "error": "Please specify which language you need an interpreter for."
+        }
+      }
+    },
+    "access-bsl": {
+      "title": "Using a British Sign Language (BSL) interpreter for your appointment",
+      "sections": [
+        {
+          "content": "This page explains how your appointment will work if you need a BSL interpreter."
+        },
+        {
+          "title": "How the appointment will take place",
+          "content": "Your appointment will take place as a video call. This means:",
+          "items": [
+            "the pension specialist will join the video call",
+            "a BSL interpreter will join the video call",
+            "you will be given a link to join the video call"
+          ]
+        },
+        {
+          "content": "The interpreter will translate between you and the pension specialist during the appointment."
+        }
+      ]
+    },
+    "access-companion": {
+      "title": "Having someone attend your appointment with you",
+      "sections": [
+        {
+          "content": "This page explains how your appointment will work if you want someone to attend with you."
+        },
+        {
+          "title": "If someone will join your appointment remotely",
+          "content": "If the other person cannot be with you in person - for example, if they have Power of Attorney or live far away,  they can join the appointment remotely.\n\nYour appointment will take place as a **conference call**. This means:",
+          "items": [
+            "you will join the appointment as usual",
+            "the pension specialist will join the call by telephone",
+            "the person supporting you can join the call remotely",
+            "we will provide details on how they can join the call after you book"
+          ]
+        },
+        {
+          "content": "The person supporting you will be able to listen and speak during the appointment."
+        },
+        {
+          "title": "If someone will be with you in the same room",
+          "content": "If the person supporting you will be with you during the appointment - for example, a carer, family member or friend, they can sit with you while you join the call.\n\nThey do not need separate joining instructions unless you request them."
+        }
+      ]
+    },
+    "appointment-date-time": {
+      "title": "Choose the appointment time",
+      "date": {
+        "sections": [
+          {
+            "title": "Choose a day",
+            "content": "Select a date to see available appointment times."
+          }
+        ]
+      },
+      "time": {
+        "sections": [
+          {
+            "title": "Choose a time",
+            "content": "Appointments usually last around 60 minutes. The times below are start times. The pension specialist may join up to 10 minutes after the start time if their earlier appointment runs over."
+          }
+        ]
+      },
+      "form": {
+        "radio-button": {
+          "label": "Available times for **{selectedDateLabel}**",
+          "error": "Please select an appointment time on the date you have chosen, or select a different date."
+        }
+      },
+      "help": {
+        "sections": [
+          {
+            "title": "Can’t find a time that suits?",
+            "content": "Try [Pension Wise Digital](#), where you can have an appointment anytime and do it at your own pace."
+          }
+        ]
+      }
+    },
+    "contact-details": {
+      "title": "Your contact details",
+      "form": {
+        "first-name": {
+          "label": "First name",
+          "error": "Please enter your first name"
+        },
+        "last-name": {
+          "label": "Last name",
+          "error": "Please enter your last name"
+        },
+        "email-address": {
+          "label": "Email",
+          "error": "Enter an email address of up to 100 characters in the correct format, like name@example.com",
+          "expandable-section": {
+            "title": "Why are we asking this?",
+            "content": "We’ll send an email confirming your appointment date."
+          }
+        },
+        "phone-number": {
+          "label": "Phone number",
+          "error": "Please do not include spaces or special characters. However, it can include +44 to start. E.g. +441234567890",
+          "expandable-section": {
+            "title": "What will my phone number be used for?",
+            "content": "The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code."
+          }
+        },
+        "date-of-birth": {
+          "label": "Date of birth",
+          "hint": "Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960",
+          "error": "Please enter your date of birth",
+          "expandable-section": {
+            "title": "Why are we asking this?",
+            "content": "You must be aged 50 or over to book an appointment, e.g. 31 3 1950"
+          }
+        },
+        "memorable-word": {
+          "label": "Your memorable word",
+          "hint": "Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service",
+          "error": "Please enter a memorable word that the pension specialist will repeat back to you"
+        }
+      }
+    },
+    "communication-preferences": {
+      "title": "Your communication preferences",
+      "form": {
+        "checkbox-preferred-method": {
+          "label": "Preferred method of communication",
+          "hint": "We’ll use your chosen method to send your appointment confirmation and reminders. We may still use email to send other information about your appointment.",
+          "items": [
+            {
+              "label": "Text message",
+              "value": "text-message"
+            },
+            {
+              "label": "Email",
+              "value": "email"
+            },
+            {
+              "label": "Post",
+              "value": "post|address-details"
+            }
+          ],
+          "error": "Select at least one preferred method of communication."
+        },
+        "radio-button-large-print": {
+          "label": "Would you like your communication in large print? ",
+          "hint": "This is only available for communication sent by email. Large print is text larger than size 16.",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes"
+            },
+            {
+              "text": "No",
+              "value": "no"
+            }
+          ],
+          "error": "Select whether you would like large print for your appointment."
+        },
+        "radio-button-contact-you": {
+          "label": "Can we contact you to ask about your experience using this service? ",
+          "hint": "If you say yes, we might contact you using your preferred method of communication to take part in research, for example short surveys or interviews. Taking part is always optional.",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes"
+            },
+            {
+              "text": "No",
+              "value": "no"
+            }
+          ],
+          "error": "Select whether you would like to be contacted."
+        }
+      }
+    },
+    "address-details": {
+      "title": "Enter your address",
+      "form": {
+        "address-line-1": {
+          "label": "Address line 1",
+          "error": "Please enter your address line 1"
+        },
+        "address-line-2": {
+          "label": "Address line 2 (optional)"
+        },
+        "city": {
+          "label": "Town or city",
+          "error": "Please enter your town or city"
+        },
+        "county": {
+          "label": "County (optional)"
+        },
+        "postcode": {
+          "label": "Postcode",
+          "error": "Please enter your postcode"
+        },
+        "country": {
+          "label": "Country",
+          "error": "Please enter your country"
+        }
+      }
+    },
+    "address-confirmation": {
+      "title": "Review and confirm",
+      "link": "Edit address"
+    },
+    "confirm-details": {
+      "title": "Confirm your details",
+      "content": "You can change the answers if you need to. If you choose to change your adjustment requests, you will need to select your appointment date and time again.",
+      "change-link": "Change",
+      "appointment-details": {
+        "title": "Appointment details",
+        "topic": "Appointment topic",
+        "date": "Date",
+        "time": "Start time",
+        "format": "Appointment format",
+        "adjustment-requests": {
+          "label": "Adjustment requests",
+          "value": {
+            "none-requested": "None requested",
+            "welsh-speaking-pension-specialist": "A Welsh-speaking pension specialist",
+            "foreign-language-interpreter": "A foreign language interpreter - ({accessLanguageType})",
+            "bsl-interpreter": "A British Sign Language interpreter",
+            "someone-to-attend-appointment": "Someone to attend the appointment with you"
+          }
+        }
+      },
+      "your-details": {
+        "title": "Your details",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "email-address": "Email",
+        "phone-number": "Phone number",
+        "date-of-birth": "Date of birth",
+        "memorable-word": "Memorable word",
+        "preferred-communication-method": {
+          "label": "Preferred method of communication",
+          "value": {
+            "text-message": "Text message",
+            "email": "Email",
+            "post": "Post"
+          }
+        }
+      }
+    },
+    "confirmation": {
+      "callout": {
+        "title": {
+          "ds": "Your Divorce and Separation appointment is confirmed",
+          "psg": "Your Pension Safeguarding Guidance appointment is confirmed"
+        },
+        "content": "Your reference number is {referenceNumber}.",
+        "details": {
+          "date": {
+            "label": "Date",
+            "value": "{appointmentDate}"
+          },
+          "time": {
+            "label": "Start Time",
+            "value": "{appointmentTime} (Your appointment may begin up to 10 minutes after the start time)"
+          }
+        }
+      },
+      "sections": [
+        {
+          "title": "What happens next",
+          "items": [
+            "We’ll also send you a booking confirmation, including [how to   prepare for your appointment](#).",
+            "Remember, we **cannot speak to you if you’re driving** - even if you use a hands-free device."
+          ]
+        },
+        {
+          "title": "How to change or cancel your appointment",
+          "content": "You will need your booking reference number to do the following:",
+          "items": [
+            "change appointment date or time",
+            "cancel your appointment",
+            "You can also reply to the booking confirmation you’ll receive."
+          ]
+        },
+        {
+          "content": "If you need to change any personal details you have provided, you will need to call us on [0800 138 3944](tel:08001383944) ([+44 20 3733 3495](tel:+442037333495) if you're outside the UK) or use the [webchat](#).\n\nWe're open between 9am and 5pm, Monday to Friday. Closed on bank holidays."
+        },
+        {
+          "title": "What information you might be asked for",
+          "content": "So we can understand your plans for retirement, we’ll usually ask you about your pensions and other finances.\n\nYou’ll usually benefit more from a Pension Wise appointment if, before your appointment, you:\n\n**Ask each of your pension providers:**",
+          "items": [
+            "how much your pension is currently worth",
+            "if your pension has any special features, like a guaranteed pot value or annuity rate."
+          ]
+        },
+        {
+          "content": "**Check your State Pension forecast:**",
+          "items": [
+            "[online on GOV.UK](#)",
+            "call [0800 731 0175](tel:08007310175) between 8am and 6pm, Monday to Friday."
+          ]
+        },
+        {
+          "content": "**Have details of your other finances, like:**",
+          "items": ["savings and investments", "debts and repayments."]
+        },
+        {
+          "content": "**Think about your plans for retirement, such as:**",
+          "items": [
+            "when you’d like to stop working",
+            "what type of pension income you’d like."
+          ]
+        },
+        {
+          "content": "Our [Privacy Notice](#) provides further information, together with your rights in respect of the data we hold on you."
+        }
+      ]
+    },
+    "find-appointment": {
+      "title": "Find your appointment",
+      "sections": [
+        {
+          "content": "Enter your booking reference and date of birth to change or cancel your appointment."
+        }
+      ],
+      "form": {
+        "reference-number": {
+          "label": "Your booking reference",
+          "hint": "You’ll find this in your confirmation email",
+          "error": "Please enter your booking reference number"
+        },
+        "date-of-birth": {
+          "label": "Date of birth",
+          "hint": "Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960",
+          "error": "Please enter your date of birth"
+        }
+      }
+    },
+    "appointment-found": {
+      "title": "What would you like to do?",
+      "callout": {
+        "title": {
+          "ds": "Your Divorce and seperation appointment has been found",
+          "psg": "Your Pension Safeguarding Guidance has been found"
+        },
+        "content": "Your reference number is {referenceNumber}.",
+        "details": {
+          "date": {
+            "label": "Date",
+            "value": "{appointmentDate}"
+          },
+          "time": {
+            "label": "Start Time",
+            "value": "{appointmentTime} (GMT)"
+          }
+        }
+      },
+      "form": {
+        "radio-button": {
+          "label": "What would you like to do?",
+          "options": [
+            {
+              "text": "Change appointment date or time",
+              "value": "change-appointment"
+            },
+            {
+              "text": "Cancel your appointment",
+              "value": "cancel-appointment"
+            }
+          ],
+          "error": "Please choose whether to change your appointment date or time, or to cancel the appointment"
+        }
+      }
+    },
+    "sidebar": {
+      "help": {
+        "title": "Need Help?",
+        "content": "Speak to someone who can help book your free appointment on [0800 138 3944](tel:08001383944) or use our [webchat](https://webchat.moneyhelper.org.uk/newchat/chat.aspx?domain=www.moneyhelper.org.uk).\n\nCall between 8am to 6:30pm, Monday to Friday."
+      },
+      "information": {
+        "overview": {
+          "pw": {
+            "title": "Pension Wise appointment",
+            "content": "Explains the options for taking money from your defined contribution pension. It’s impartial and backed by government."
+          },
+          "se": {
+            "title": "Self-employed pensions appointment",
+            "content": "Speak to a pensions specialist if you are self-employed and need help understanding your pension options."
+          },
+          "ds": {
+            "title": "Divorce and separation appointment",
+            "content": "Divorce and dissolution can be complicated and stressful. Getting impartial guidance from us can make managing your pension options easier."
+          },
+          "pl": {
+            "title": "Pension loss appointment",
+            "content": "For people who have lost pension money due to a scam or fraud and need support."
+          },
+          "psg": {
+            "title": "Pension Safeguarding appointment",
+            "content": "You’ve been referred by your pension provider for a free Pension Safeguarding Guidance appointment to talk about the transfer of your pension benefits."
+          }
+        },
+        "details": {
+          "duration-label": "Duration",
+          "format-label": "Appointment format",
+          "request-label": "Adjustment request",
+          "duration-value": "About 1 hour",
+          "format-value": "Telephone call",
+          "request-value": "Our team will review your request and make any arrangements needed before your appointment.",
+          "welsh-speaking-pension-specialist": {
+            "duration-value": "About 1 hour",
+            "format-value": "Telephone call",
+            "request-value": "A Welsh-speaking pension specialist"
+          },
+          "foreign-language-interpreter": {
+            "duration-value": "About 1 to 2 hours",
+            "format-value": "Telephone call",
+            "request-value": "Foreign language interpreter - ({accessLanguage})"
+          },
+          "bsl-interpreter": {
+            "duration-value": "About 1 to 2 hours",
+            "format-value": "Video call",
+            "request-value": "A British Sign Language interpreter"
+          }
+        }
+      }
+    },
+    "error": {
+      "title": "Something went wrong",
+      "sections": [
+        {
+          "content": "There was a problem."
+        },
+        {
+          "content": "What you can do",
+          "items": ["[Try again](/)"]
+        }
+      ]
+    },
+    "existing-appointment-callout": {
+      "title": "Already booked an appointment? ",
+      "content": "If you want to change or cancel an existing appointment booking, go to the [Find your appointment](/en/find-appointment) page."
+    },
+    "no-js-notice": {
+      "title": "You cannot book an appointment online",
+      "sections": [
+        {
+          "content": "Your browser cannot use our online booking service.\n\nYou can still book an appointment by calling us on [0800 138 3944](tel:08001383944).\n\nCall between 8am to 6:30pm, Monday to Friday."
+        }
+      ]
+    }
+  },
+  "common": {
+    "form": {
+      "button": {
+        "continue-text": "Continue",
+        "send-text": "Confirm appointment",
+        "save-changes-text": "Save changes",
+        "pension-wise-appointment": "Book your free appointment",
+        "self-employed-appointment": "Book your free appointment",
+        "address-confirmation": "Confirm address"
+      }
+    },
+    "appointment-details": {
+      "duration-label": "Duration",
+      "format-label": "Appointment format",
+      "request-label": "Adjustment request",
+      "duration-value": "About 1 hour",
+      "format-value": "Telephone call",
+      "request-value": "Our team will review your request and make any arrangements needed before your appointment.",
+      "welsh-speaking-pension-specialist": {
+        "duration-value": "About 1 hour",
+        "format-value": "Telephone call",
+        "request-value": "A Welsh-speaking pension specialist"
+      },
+      "foreign-language-interpreter": {
+        "duration-value": "About 1 to 2 hours",
+        "format-value": "Telephone call",
+        "request-value": "Foreign language interpreter - ({accessLanguage})"
+      },
+      "bsl-interpreter": {
+        "duration-value": "About 1 to 2 hours",
+        "format-value": "Video call",
+        "request-value": "A British Sign Language interpreter"
+      }
+    },
+    "error-callout": {
+      "title": "There was a problem"
+    },
+    "loading": {
+      "title": "Loading",
+      "appointment-availability": {
+        "title": "Finding available dates and times. This may take a few moments."
+      },
+      "booking-create": {
+        "title": "Your request is being submitted - please stay on this page. This may take a few seconds."
+      },
+      "booking-lookup": {
+        "title": "Looking up your appointment. This may take a few moments."
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/* eslint-disable no-restricted-imports */
+import { ExamplePage } from '@pages/example.page';
+import { test as base } from '@playwright/test';
+
+export * from '@playwright/test';
+
+interface CustomFixtures {
+  examplePage: ExamplePage;
+}
+
+export const test = base.extend<CustomFixtures>({
+  examplePage: async ({ page }, provideFixture) => {
+    await provideFixture(new ExamplePage(page));
+  },
+});

@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["playwright", "node"],
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@lib/*": ["apps/e2e/fuel-finder-e2e/src/e2e/lib/*"]
+    }
+  },
+
+  "include": ["**/*.ts", "**/*.js", "playwright.config.ts", "**/*.d.ts"],
+  "exclude": [
+    "cypress",
+    "**/*.cy.ts",
+    "**/*.cy.tsx",
+    "**/*.cy.js",
+    "**/*.cy.jsx"
+  ]
+}

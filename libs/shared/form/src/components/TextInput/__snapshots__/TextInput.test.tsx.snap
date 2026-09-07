@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`TextInput component renders correctly 1`] = `
+<div
+  class="text-base"
+>
+  <input
+    aria-invalid="false"
+    class="px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+    id="text-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`TextInput component renders correctly for type number input 1`] = `
+<div
+  class="text-base"
+>
+  <input
+    aria-invalid="false"
+    class="px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+    id="text-input"
+    type="number"
+  />
+</div>
+`;
+
+exports[`TextInput component renders correctly with a hint 1`] = `
+<div
+  class="text-base"
+>
+  <p
+    class="break-words mb-0 text-gray-650"
+    data-testid="text-input-hint"
+    id="text-input-hint"
+  >
+    some hint
+  </p>
+  <input
+    aria-describedby="text-input-hint"
+    aria-invalid="false"
+    class="px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+    id="text-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`TextInput component renders correctly with a label 1`] = `
+<div
+  class="text-base"
+>
+  <label
+    class="block text-2xl"
+    for="text-input"
+  >
+    some input
+  </label>
+  <input
+    aria-invalid="false"
+    class="px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+    id="text-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`TextInput component renders correctly with an error 1`] = `
+<div
+  class="text-base"
+>
+  <p
+    class="break-words mb-0 text-red-700"
+    data-testid="text-input-error"
+    id="text-input-error"
+  >
+    some error
+  </p>
+  <input
+    aria-describedby="text-input-error"
+    aria-invalid="true"
+    class="px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+    id="text-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`TextInput component renders correctly with an error and a hint 1`] = `
+<div
+  class="text-base"
+>
+  <p
+    class="break-words mb-0 text-gray-650"
+    data-testid="text-input-hint"
+    id="text-input-hint"
+  >
+    some hint
+  </p>
+  <p
+    class="break-words mb-0 text-red-700"
+    data-testid="text-input-error"
+    id="text-input-error"
+  >
+    some error
+  </p>
+  <input
+    aria-describedby="text-input-hint text-input-error"
+    aria-invalid="true"
+    class="px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+    id="text-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`TextInput component renders with children 1`] = `
+<div
+  class="text-base"
+>
+  <input
+    aria-invalid="false"
+    class="px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+    id="text-input"
+    type="text"
+  />
+  <div
+    class="mt-2"
+  >
+    <div>
+      Child content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput component renders with error wrapper 1`] = `
+<div
+  class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+  data-testid="errors"
+>
+  <div
+    class="text-base"
+  >
+    <p
+      class="break-words mb-0 text-gray-650"
+      data-testid="text-input-hint"
+      id="text-input-hint"
+    >
+      some hint
+    </p>
+    <p
+      class="break-words mb-0 text-red-700"
+      data-testid="text-input-error"
+      id="text-input-error"
+    >
+      some error
+    </p>
+    <input
+      aria-describedby="text-input-hint text-input-error"
+      aria-invalid="true"
+      class="px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+      id="text-input"
+      type="text"
+    />
+  </div>
+</div>
+`;

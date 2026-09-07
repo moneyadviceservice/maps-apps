@@ -1,0 +1,697 @@
+{
+  "site": {
+    "title": "Dangosfwrdd Pensiynau HelpwrArian",
+    "header": {
+      "logo": "Dangosfwrdd Pensiynau",
+      "links": {
+        "exit": "Allanfa ac allgofnodi"
+      }
+    },
+    "back": "Yn ôl",
+    "back-to-top": "Nôl i'r brig",
+    "help-and-support-link-text": "Cymorth a chefnogaeth",
+    "download-pension-information-link-text": "Lawrlwytho gwybodaeth pensiwn",
+    "hm-gov-logo-alt": "Logo Llywodraeth EM",
+    "home": "Cartref",
+    "feedback": "Mae hwn yn wasanaeth newydd. Rydym yn ei adeiladu a’i gwella o hyd.",
+    "help-and-support": {
+      "title": "Help a chefnogaeth",
+      "feedback-link": "Rhowch adborth",
+      "contact-us": "Cysylltu â ni",
+      "card-1": {
+        "title": "Archwilio'r Dangosfwrdd",
+        "description": "Ddim yn gwybod ble i ddechrau? Dysgwch sut i fanteisio i'r eithaf ar eich Dangosfwrdd Pensiynau a chael atebion i gwestiynau cyffredin."
+      },
+      "card-2": {
+        "title": "Deall eich pensiynau",
+        "description": "Ddim yn siŵr am eich camau nesaf? Gall ein canllawiau diduedd am ddim eich helpu i ddeall eich pensiynau a chynllunio ar gyfer ymddeoliad cyfforddus."
+      },
+      "card-3": {
+        "title": "Rhoi gwybod am broblem dechnegol",
+        "description": "Oes rhywbeth ddim yn gweithio? Dywedwch wrthym os oes problem gyda'ch Dangosfwrdd Pensiynau neu os ydych yn profi unrhyw broblemau technegol."
+      }
+    },
+    "logout": {
+      "about-to-leave": "Rydych chi ar fin gadael",
+      "we-will-redirect": "Byddwn yn eich ailgyfeirio at HelpwrArian. Os byddwch chi'n gadael y gwasanaeth nawr, bydd angen i chi fewngofnodi eto gan ddefnyddio GOV.UK One Login i weld eich pensiynau.",
+      "are-you-sure": "Ydych chi'n siŵr eich bod chi eisiau gadael?",
+      "yes-exit": "Ydw, gadael y Dangosfwrdd"
+    },
+    "dashboard-nav": "Dangosfwrdd"
+  },
+  "common": {
+    "a-month": "y mis",
+    "a-year": "y flwyddyn",
+    "or": "neu",
+    "on": "am",
+    "date-unavailable": "Dyddiad nad yw ar gael",
+    "unavailable": "Nid yw ar gael",
+    "unavailable-reason": "Rheswm nad yw ar gael",
+    "scheme": "Enw'r Cynllun Pensiwn",
+    "employer": "Enw'r cyflogwr",
+    "provider": "Darparwr pensiwn",
+    "retirement-date": "Dyddiad ymddeol",
+    "state-pension-date": "Dyddiad Pensiwn y Wladwriaeth",
+    "estimated-income": "Amcangyfrif o incwm",
+    "cash-balance": "Balans arian parod",
+    "lump-sum": "Cyfandaliad",
+    "details-link": "Gweld manylion",
+    "details-link-sr-only": " {schemeName}",
+    "progress-complete": "Wedi’i gwblhau",
+    "close": "Cau",
+    "more-information": "Dangos mwy o wybodaeth",
+    "reset": "Ailosod",
+    "cancel": "Canslo",
+    "contact": {
+      "preferred": "a ffefrir",
+      "telephone": "Rhif ffôn",
+      "telephone-main": "Prif rif ffôn",
+      "telephone-whatsapp": "WhatsApp",
+      "telephone-textphone": "Ffôn testun",
+      "telephone-welsh-language": "Llinell yr Iaith Gymraeg",
+      "telephone-outside-uk": "Tu allan i’r DU",
+      "email": "Cyfeiriad ebost",
+      "email-address": "Cyfeiriad e-bost",
+      "website": "Gwefan",
+      "address": "Cyfeiriad",
+      "postal-address": "Cyfeiriad",
+      "phone": "Ffôn"
+    },
+    "yes": "Ie",
+    "no": "Na",
+    "pension-opened": "Dechreuwyd y pensiwn",
+    "guide-title": "Beth sydd yn y canllaw hwn",
+    "months": "misoedd",
+    "year": "blwyddyn",
+    "years": "blynyddoedd",
+    "session": "Sesiwn",
+    "hours": "oriau",
+    "minute": "munud",
+    "minutes": "munudau",
+    "immediate": "Yn syth",
+    "linked-pensions": "Pensiynau sydd wedi’u cysylltu",
+    "linked-pension": "Pensiwn sydd wedi’u cysylltu"
+  },
+  "pages": {
+    "feature-not-available": {
+      "title": "Nid yw’r nodwedd hon ar gael eto",
+      "intro": "Diolch am eich diddordeb mewn nodwedd lawrlwytho neu allgludo. Rydym yn dal i ddatblygu’r gwasanaeth ac yn profi beth fyddai’n gweithio orau.",
+      "survey": "I’n helpu i adeiladu’r hyn sydd ei angen arnoch, [cwblhewch ein harolwg byr]({surveyUrl}). Byddem yn ddiolchgar am eich adborth.",
+      "provider": "Mae’r arolwg yn agor mewn ffenestr newydd ac fe’i darperir gan Informizely, ein partner ymchwil."
+    },
+    "error": {
+      "title": "Mae’n ddrwg gennym ni allem ddod o hyd i’r dudalen rydych yn chwilio amdani",
+      "intro": "Rydym yn parhau i adeiladu a gwella ein gwasanaeth. Aeth rhywbeth o'i le ond byddwn yn ceisio ei drwsio.",
+      "what-you-can-do": {
+        "title": "Beth allwch chi ei wneud:",
+        "items": [
+          "Cliciwch y botwm Yn ôl yn eich porwr i wirio a ydych chi yn y lle iawn.",
+          "[Cysylltu â ni.](/cy/contact-us-form)"
+        ]
+      }
+    },
+    "link-access-error": {
+      "page-title": "Gwall mynediad",
+      "title": "Mae’n ddrwg gennym, nid yw’r dudalen rydych yn chwilio amdani ar gael",
+      "intro": "Rydym yn parhau i adeiladu a gwella ein gwasanaeth. Mae'r ddolen hon wedi dod i ben ac ni ellir ei defnyddio i gael mynediad i'r Dangosfwrdd Pensiynau.",
+      "items": [
+        "Cliciwch y botwm Yn ôl yn eich porwr i wirio a ydych chi yn y lle iawn.",
+        "Anfonwch e-bost atom i ddweud wrthym beth aeth o'i le ar [researchpanel@maps.org.uk](mailto:researchpanel@maps.org.uk)"
+      ]
+    },
+    "start": {
+      "hero-text": "Gweler eich pensiynau mewn un lle gyda’n wasanaeth am ddim, diogel a gefnogir gan y llywodraeth. Hefyd, gweler faint gallwch chi ei gael pan fyddwch chi’n ymddeol.",
+      "form-button": "Dechrau nawr",
+      "section-how-it-works": {
+        "title": "Sut mae'n gweithio",
+        "duration": "Mae’n cymryd tua **10 munud** i fewngofnodi gyda GOV.UK One Login, neu **25 munud** os mai dyma’ch tro cyntaf.",
+        "items": [
+          "Profwch eich hunaniaeth gan ddefnyddio **GOV.UK One Login**. Gallwch sefydlu cyfrif gydag One Login fel rhan o'r gwasanaeth hwn.",
+          "Rhowch eich rhif **Yswiriant Gwladol**, os oes gennych un. Gallwch ddal i barhau heb un. ",
+          "Gweld yr holl bensiynau sy'n cyfateb i'ch manylion, gan gynnwys eich incwm amcangyfrifedig pan fyddwch yn ymddeol."
+        ]
+      },
+      "section-you-need": {
+        "title": "Byddwch angen",
+        "items": [
+          "eich cyfeiriad presennol",
+          "eich rhif Yswiriant Gwladol, os oes gennych un."
+        ],
+        "easier": "Fel arfer mae'n haws profi eich hunaniaeth gyda GOV.UK One Login os oes gennych:",
+        "easier-items": [
+          "ffôn symudol gyda chamera sy'n gweithio",
+          "ID gyda llun"
+        ],
+        "other-ways": "Ond gallwch brofi eich hunaniaeth mewn ffyrdd eraill. Gweler rhestr lawn o [ffyrdd o brofi eich hunaniaeth gyda GOV.UK One Login](https://www.gov.uk/defnyddio-eich-gov-uk-one-login/profi-eich-hunaniaeth)."
+      },
+      "section-your-data": {
+        "title": "Eich data",
+        "description": "Byddwn yn rhannu'r wybodaeth rydych chi neu GOV.UK One Login yn ei rhoi i ni gyda darparwyr pensiwn, cynlluniau, a'r Adran Gwaith a Phensiynau (DWP) i ddod o hyd i'ch pensiynau."
+      },
+      "more-about-your-data": {
+        "title": "Mwy am sut rydym yn defnyddio'ch data",
+        "items": [
+          "Pan fyddwn yn cael eich gwybodaeth yn ôl gan ddarparwyr pensiwn, cynlluniau neu'r DWP, rydym yn ei storio tra byddwch yn defnyddio'r Dangosfwrdd Pensiynau ac am hyd at 30 diwrnod ar ôl hynny.",
+          "Rydym yn storio rhywfaint o ddata dan ffugenw yn ddiogel er mwyn gwneud i'r gwasanaeth weithio. Dyma pryd y rhoddir codau neu docynnau i'ch data, fel na ellir eich adnabod yn uniongyrchol.",
+          "Dysgwch fwy yn ein [hysbysiad preifatrwydd_target=_self](/cy/dashboard-privacy-notice)."
+        ]
+      },
+      "some-pensions-may-not-be-included": {
+        "title": "Efallai na fydd rhai pensiynau wedi'u cynnwys",
+        "text": "Rydym yn parhau i gysylltu cynlluniau pensiwn newydd yn rheolaidd. Fodd bynnag, ni welwch gynlluniau pensiwn sydd:",
+        "items": [
+          "rydych chi eisoes wedi cymryd neu rydych chi'n derbyn arian ohono, gan gynnwys y rhai sy'n tynnu  pensiwn i lawr",
+          "yn gynlluniau gweithle gyda llai na 100 o aelodau'r cynllun, oni bai bod y darparwr yn cysylltu â'r Dangosfwrdd Pensiynau yn wirfoddol",
+          "yn cael eu gweinyddu y tu allan i'r Deyrnas Unedig",
+          "yn cael eu rheoli gan y Gronfa Diogelu Pensiwn (PPF), gan gynnwys y Cynllun Cymorth Ariannol (FAS)."
+        ],
+        "note-1": "Ni fyddwch yn gweld eich Pensiwn y Wladwriaeth os ydych wedi pasio oedran Pensiwn y Wladwriaeth, hyd yn oed os nad ydych wedi ei hawlio eto.",
+        "note-2": "Efallai na fydd darparwyr yn gallu anfon gwybodaeth atom mewn rhai amgylchiadau. Yn y rhan fwyaf o achosion, bydd y Dangosfwrdd yn darparu mwy o fanylion ar pam nad yw'r wybodaeth hon yn dangos."
+      }
+    },
+    "welcome": {
+      "title": "Croeso i Ddangosfwrdd Pensiynau HelpwrArian",
+      "heading": "Gwybodaeth bwysig",
+      "form-button": "Rwy'n deall",
+      "intro": "Peidiwch â gwneud penderfyniadau am eich arian a'ch pensiynau yn seiliedig ar y wybodaeth yn eich Dangosfwrdd Pensiynau yn unig.",
+      "content": "Mae'r gwerthoedd yn enghreifftau yn unig ac maent yn seiliedig ar rai rhagdybiaethau, fel eich oedran ymddeol. Dylech bob amser wirio gyda'ch darparwyr pensiwn am y wybodaeth ddiweddaraf, ac ystyriwch siarad ag ymgynghorydd ariannol rheoledig cyn gwneud penderfyniadau am eich pensiynau.",
+      "values": {
+        "title": "Mae gwerth pob pensiwn:",
+        "items": [
+          "yn amcangyfrif ac nid ydynt wedi'u gwarantu",
+          "yn cael eu dangos cyn treth, gan fod treth ar bensiwn yn dibynnu ar eich incwm a'ch amgylchiadau",
+          "yn gallu mynd i fyny neu i lawr yn seiliedig ar ffactorau fel perfformiad buddsoddiadau a'ch cyfraniadau."
+        ]
+      },
+      "excluded": {
+        "title": "Efallai na fydd rhywfaint o wybodaeth wedi'i chynnwys.",
+        "items": [
+          "Ni welwch bensiynau rydych eisoes wedi cymryd arian ohonynt, pensiynau a weinyddir y tu allan i'r Deyrnas Unedig neu bensiynau gydag ychydig iawn o aelodau yn y cynllun.",
+          "Efallai na fydd darparwyr yn gallu anfon gwybodaeth atom mewn rhai amgylchiadau. Yn y rhan fwyaf o achosion, bydd y Dangosfwrdd yn darparu mwy o fanylion ar pam nad yw'r wybodaeth hon i'w gweld."
+        ]
+      }
+    },
+    "searching-for-your-pension": {
+      "title": "Llwytho'ch pensiynau",
+      "description": "Gall hyn gymryd hyd at {duration} eiliad. Diolch am eich amynedd.",
+      "refresh": "Peidiwch ag adnewyddu na chau'r dudalen hon.",
+      "progress": "{progress}% wedi'i gwblhau..."
+    },
+    "your-pension-breakdown": {
+      "page-title": "Eich pensiynau",
+      "title": "Eich pensiynau",
+      "confirmed-pensions": {
+        "heading": "Pensiynau yn eich amcangyfrif",
+        "no-income-link": "Gweld pensiynau [sydd heb eu cynnwys yn eich amcangyfrif_target=_self](#no-income)."
+      },
+      "confirmed-pensions-no-income": {
+        "heading": "Ddim yn eich amcangyfrif",
+        "description": "Efallai na fydd rhai pensiynau’n dangos incwm amcangyfrifedig, fel pensiynau llai na 2 flynedd o’u dyddiad ymddeol disgwyliedig neu gynlluniau sydd yn y broses o gael eu dirwyn i ben. Gweler manylion y pensiwn am ragor o wybodaeth.\n\nOs oes unrhyw bensiynau eraill ar goll, gweler [Pensiynau ddim yn dangos_target=_self](/cy/pensions-not-showing)."
+      },
+      "scam-warning": {
+        "heading": "Byddwch yn ofalus rhag sgamiau",
+        "description": {
+          "items": [
+            "Mae eich Dangosfwrdd Pensiynau yn cynnwys gwybodaeth sensitif a gwerthfawr. Meddyliwch yn ofalus cyn rhannu eich gwybodaeth â thrydydd parti.",
+            "Mae sgamwyr yn chwarae ar ein gofidiau. Os oes rhywun wedi cysylltu heb rybudd a dweud bod angen i chi symud eich pensiynau i le diogel, mae hwn yn sgam."
+          ]
+        },
+        "action": {
+          "heading": "Os ydych yn poeni am sgamiau, gallwch:",
+          "items": [
+            "Ddarllen ein canllawiau ar [sylwi ar sgamiau pensiwn](https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam)",
+            "Ffoniwch ni ar [0800 011 3797](tel:08000113797)"
+          ]
+        }
+      },
+      "onward-journey": {
+        "heading": "Deall eich camau nesaf",
+        "body": "Gallwch gael cymorth am ddim gyda'ch pensiynau, gan gynnwys ffyrdd o'u cynyddu, sut a phryd y gallwch dderbyn incwm, ac a yw trosglwyddiad pensiwn yn syniad da.",
+        "cta": "Cael arweiniad ar ymddeoliad",
+        "cta-href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/make-the-most-of-your-pension"
+      }
+    },
+    "your-pensions-timeline": {
+      "page-title": "Eich llinell amser pensiynau",
+      "title": "Eich pensiynau",
+      "heading": "Llinell amser",
+      "intro": "Mae'r llinell amser yn dangos sut y gallai cyfanswm eich incwm pensiwn amcangyfrifedig newid dros amser yn seiliedig ar ddyddiad ymddeol pob pensiwn.",
+      "intro-2": "Nid yw'r gwerthoedd hyn wedi'u gwarantu a gallant fynd i lawr yn ogystal ag i fyny.",
+      "intro-3": "Bydd eich incwm gwirioneddol yn dibynnu ar sut a phryd y byddwch yn cymryd eich pensiynau. ",
+      "accordion-title": "Am y gwerthoedd hyn",
+      "accordion": {
+        "items": [
+          "Mae'r gwerthoedd hyn yn seiliedig ar y pensiynau rydym wedi amcangyfrif incwm ar eu cyfer hyd yma - efallai na fyddant yn cynnwys eich holl bensiynau. Nid ydynt wedi'u gwarantu, a gallant fynd i lawr yn ogystal ag i fyny. Mae'r incwm a'r llinell amser hefyd yn seiliedig ar ddyddiadau ymddeol disgwyliedig gan eich darparwyr pensiwn. Gweler tudalen manylion pob pensiwn am fwy o wybodaeth.",
+          "Dangosir pob gwerth cyn treth. Dysgwch fwy am [dreth a phensiynau](/cy/support/understand-your-pensions)."
+        ]
+      },
+      "view-pensions": "Gweld pensiynau",
+      "hide-pensions": "Cuddio pensiynau",
+      "key": {
+        "title": "Allwedd",
+        "accordion-open": "Gweld yr allwedd",
+        "accordion-close": "Cuddio’r allwedd",
+        "items": {
+          "SP": "Pensiwn y Wladwriaeth",
+          "DB": "Buddion wedi'u diffinio",
+          "DC": "Cyfraniadau wedi'u diffinio",
+          "AVC": "AVC",
+          "LU": "Cyfandaliad",
+          "HYB": "Hybrid",
+          "CDC": "CDC",
+          "CB": "Balans arian parod",
+          "VAR": "Cymysgedd"
+        }
+      }
+    },
+    "pension-details": {
+      "title": "{name} crynodeb",
+      "navigation-label": "Dangosfwrdd Pensiynau",
+      "state-pension": "Pensiwn y Wladwriaeth",
+      "summary-page-title": "Manylion pensiwn - Crynodeb",
+      "income-values-page-title": "Manylion pensiwn - Incwm a gwerthoedd",
+      "about-page-title": "Manylion pensiwn - Am y pensiwn hwn",
+      "contact-page-title": "Manylion pensiwn - Cysylltu â darparwr",
+      "estimate": "o'r dyddiad taladwy cyntaf o **{date}**.",
+      "estimate-cash-balance": "ar y dyddiad taladwy cyntaf sef **{date}**.",
+      "lump-sum": "Ynghyd â thaliad swm unigol amcangyfrifedig o **{amount}**",
+      "toolIntro": {
+        "estimate-SP": "Byddwch yn cyrraedd oedran Pensiwn y Wladwriaeth {tooltip} ar **{date}**. Eich rhagolwg yw **{monthly}** y mis,",
+        "estimate-SP2": "yn seiliedig ar eich cofnod Yswiriant Gwladol. {tooltip}.",
+        "estimate-SP3": "Mae Pensiwn y Wladwriaeth yn cael ei dalu bob **4 wythnos** yn hytrach na'r un dyddiad bob mis, felly bydd eich taliad yn is na'r swm misol."
+      },
+      "details": {
+        "title": "Manylion pensiwn",
+        "current-value": "Gwerth diweddaraf",
+        "estimate-at-retirement": "Amcangyfrif ar ôl ymddeol",
+        "latest-value": "Gwerth diweddaraf",
+        "forecast": "rhagolwg",
+        "mobile-current": "Nawr",
+        "estimate-today": "Gwerth diweddaraf",
+        "mobile-retirement": "Wrth ymddeol",
+        "annual-amount": "Swm blynyddol",
+        "yearly-amount": "Swm blynyddol",
+        "monthly-amount": "Swm misol",
+        "pot-value": "Gwerth y gronfa",
+        "tax-free-lump-sum": "Cyfandaliad",
+        "lump-sum": "Cyfandaliad",
+        "cash-balance-lump": "Cyfandaliad balans arian parod",
+        "payable-date": "Dyddiad taladwy",
+        "last-updated": "Dyddiad cyfrifo",
+        "you-could-receive": "Gallech dderbyn",
+        "in-this-pension-pot": "Yn y gronfa bensiwn hon",
+        "benefit-stops": "Mae'r budd-dal hwn yn dod i ben ar",
+        "cash-balance-you-could-have": "Gallai eich balans arian parod fod yn"
+      },
+      "header": {
+        "plan-reference": "Rhif cyfeirnod y cynllun",
+        "retirement-date": "Dyddiad ymddeol",
+        "summary": "Crynodeb",
+        "income-and-values": "Incwm a gwerthoedd",
+        "about-this-pension": "Am y pensiwn hwn",
+        "contact-provider": "Cysylltu â darparwr"
+      },
+      "chart-sections": {
+        "AVC": "Cyfraniadau ychwanegol gwirfoddol (AVC)",
+        "DB": "Buddion wedi'u diffinio",
+        "DC": "Cyfraniadau wedi'u diffinio",
+        "HYB": "Hybrid",
+        "CDC": "Cyfraniadau wedi'u diffinio ar y cyd",
+        "CB": "Balans arian parod"
+      },
+      "headings": {
+        "state-pension": "Am eich rhagolwg Pensiwn y Wladwriaeth",
+        "pot": "Gwerth y gronfa",
+        "employer": "Enw'r cyflogwr",
+        "more-information": "Mwy o wybodaeth",
+        "more-information-sub": "Darganfyddwch fwy am y cynllun pensiwn hwn, gan gynnwys y ffioedd a sut y caiff ei reoli.",
+        "about-this-pension": "Am y pensiwn hwn",
+        "income-and-values": "Incwm a gwerthoedd",
+        "income-and-values-sub": "Mae’r siartiau hyn yn dangos gwerth diweddaraf eich pensiwn a anfonwyd gan eich darparwr, yn ogystal â’i amcangyfrif o’r hyn y gallai fod yn werth yn y dyfodol.",
+        "income-and-values-sub-dc": "Bydd eich incwm gwirioneddol yn dibynnu ar sut a phryd y byddwch yn cymryd eich pensiwn. Dysgwch am eich opsiynau yn ein canllaw, [Beth allaf ei wneud gyda fy nghronfa bensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/pension-pot-options).",
+        "income-and-values-warning": "Mae'n bosibl bod unrhyw wybodaeth a welwch yn anghywir. Peidiwch â dibynnu ar unrhyw werthoedd nes bod y pensiwn hwn wedi'i gadarnhau.",
+        "contact-sub": "Dylech gael eich rhif cyfeirnod cynllun a manylion personol yn barod pan fyddwch yn cysylltu â'ch darparwr. Fel arfer, byddwch yn cael ateb cyflymach gan ddefnyddio'r dull(iau) cyswllt a ffefrir. Ond gallwch ddewis yr opsiwn sydd orau i chi."
+      },
+      "value-illustration-date": {
+        "summary": {
+          "title": "Pryd cafodd hyn ei gyfrifo?",
+          "content": [
+            "Gallwch weld y dyddiad cyfrifo ar y dudalen Incwm a gwerthoedd. Dyma'r data diweddaraf a anfonwyd atom gan eich darparwr pensiwn."
+          ]
+        },
+        "income-and-values": {
+          "title": "Ynglŷn â'r gwerthoedd hyn",
+          "content": [
+            "Mae'r gwerthoedd yn seiliedig ar y dyddiad cyfrifo a ddangosir isod. Dyma'r data diweddaraf a anfonwyd atom gan eich darparwr pensiwn.",
+            "Efallai y gall eich darparwr pensiwn roi gwerth mwy cyfredol i chi."
+          ]
+        }
+      },
+      "information": {
+        "about": {
+          "title": "Am y gwerthoedd hyn",
+          "description": "Mae gwerthoedd pensiwn yn seiliedig ar yr amcangyfrifon diweddaraf a'r dyddiadau ymddeoliad disgwyliedig gan eich darparwyr pensiwn. Nid ydynt wedi'u gwarantu, a gallant fynd i lawr yn ogystal â chodi.",
+          "sp-description": "Mae faint y byddwch yn ei gael yn eich Pensiwn y Wladwriaeth yn dibynnu ar faint o flynyddoedd rydych wedi gwneud cyfraniadau Yswiriant Gwladol. Pan fyddwch yn cyrraedd oedran Pensiwn y Wladwriaeth, rydych angen 35 mlynedd cymwys fel arfer i gael Pensiwn y Wladwriaeth llawn a 10 mlynedd cymwys i gael unrhyw beth. [Dysgwch fwy](/cy/support/understand-your-pensions)"
+        },
+        "how-estimate-is-calculated": {
+          "title": "Sut mae'r gwerthoedd hyn yn cael eu cyfrifo",
+          "avc": "Mae amcangyfrifon ar gyfer y pensiwn hwn yn seiliedig ar eich bod yn prynu incwm gwarantedig am oes (blwydd-dal), sy'n dechrau talu o'r dyddiad ymddeol disgwyliedig. Maent hefyd yn seiliedig ar ragdybiaethau y darparwr am chwyddiant, perfformiad buddsoddi, a lefelau cyfraniadau yn y dyfodol.\n\nEr mwyn eich helpu i ddeall effaith chwyddiant, mae'r incwm amcangyfrifedig yn cael ei ddangos yn arian heddiw, fel y gallwch weld beth fyddai'r swm hwnnw werth ar hyn o bryd.",
+          "dc": "Mae amcangyfrifon ar gyfer y pensiwn hwn yn seiliedig ar eich bod yn prynu incwm gwarantedig am oes (blwydd-dal), sy'n dechrau talu o'r dyddiad ymddeol disgwyliedig. Maent hefyd yn seiliedig ar ragdybiaethau y darparwr am chwyddiant, perfformiad buddsoddi, a lefelau cyfraniadau yn y dyfodol.\n\nEr mwyn eich helpu i ddeall effaith chwyddiant, mae'r incwm amcangyfrifedig yn cael ei ddangos yn arian heddiw, fel y gallwch weld beth fyddai'r swm hwnnw werth ar hyn o bryd.\n\n[Cysylltwch â’ch darparwr_target=_self](/cy/pension-details/contact-pension-provider) i gael rhagor o fanylion am sut mae’n cyfrifo gwerthoedd eich pensiwn.",
+          "db": "Mae amcangyfrifon ar gyfer y pensiwn hwn yn seiliedig ar eich cyflog a'r blynyddoedd rydych wedi bod yn aelod o'r cynllun, yn ogystal â'r dyddiad ymddeol disgwyliedig. Maent hefyd yn seiliedig ar ragdybiaethau y darparwr am chwyddiant ac a yw'r cynllun yn weithredol.\n\nEr mwyn eich helpu i ddeall effaith chwyddiant, mae'r incwm amcangyfrifedig yn cael ei ddangos yn arian heddiw, fel y gallwch weld beth fyddai'r swm hwnnw werth ar hyn o bryd.",
+          "cdc": "Mae amcangyfrifon ar gyfer y pensiwn hwn yn seiliedig ar eich bod yn cael cyfandaliad untro ac incwm am oes sy'n dechrau talu o'r dyddiad ymddeoliad disgwyliedig. Caiff eich incwm am oes ei adolygu a'i addasu bob blwyddyn, sy'n golygu y gallai fynd i lawr, yn ogystal ag i fyny, cyn ac ar ôl i chi ddechrau ei dderbyn. Maent hefyd yn seiliedig ar eich cyflog a'r blynyddoedd rydych chi wedi bod yn aelod o'r cynllun, yn ogystal â rhagdybiaethau'r darparwr am chwyddiant, perfformiad buddsoddi, a lefelau cyfraniadau yn y dyfodol.\n\nEr mwyn eich helpu i ddeall effaith chwyddiant, mae'r incwm amcangyfrifedig yn cael ei ddangos yn arian heddiw, fel y gallwch weld beth fyddai'r swm hwnnw werth ar hyn o bryd.",
+          "cb": "Mae amcangyfrifon ar gyfer y pensiwn hwn yn seiliedig ar eich cyflog a'r blynyddoedd rydych wedi bod yn aelod o'r cynllun, yn ogystal â'r dyddiad ymddeol disgwyliedig. Maent hefyd yn seiliedig ar ragdybiaethau y darparwr am chwyddiant ac a yw'r cynllun yn weithredol.\n\nEr mwyn eich helpu i ddeall effaith chwyddiant, mae'r incwm amcangyfrifedig yn cael ei ddangos yn arian heddiw, fel y gallwch weld beth fyddai'r swm hwnnw werth ar hyn o bryd.",
+          "missing": "Nid yw'r darparwr wedi anfon atom sut y gwnaethon nhw gyfrifo'r gwerthoedd hyn."
+        }
+      },
+      "estimated-income": {
+        "ap-heading": "Faint rydych yn  gymwys i’w gael",
+        "ap": "Amcangyfrif yn seiliedig ar eich cofnod Yswiriant Gwladol hyd at {date}",
+        "eri-heading": "Os byddwch yn parhau i gyfrannu",
+        "eri": "Rhagolwg os byddwch yn parhau i wneud cyfraniadau Yswiriant Gwladol"
+      },
+      "claiming-your-state-pension": {
+        "heading": "Gwneud cais am eich Pensiwn y Wladwriaeth",
+        "items": [
+          "Ni fyddwch yn cael eich Pensiwn y Wladwriaeth yn awtomatig - mae'n rhaid i chi wneud cais amdano.",
+          "Byddwch yn cael llythyr heb fod yn hwyrach na 2 fis cyn i chi gyrraedd oedran Pensiwn y Wladwriaeth yn dweud wrthych beth i'w wneud. Os nad ydych yn derbyn llythyr, gallwch wneud cais p'run bynnag.",
+          "Ar ôl i chi wneud cais amdano, mae'n cael ei dalu bob **4 wythnos** yn hytrach na'r un dyddiad bob mis."
+        ]
+      },
+      "plan-details": {
+        "plan-reference": "Rhif cyfeirnod y cynllun",
+        "pension-start-date": "Dechreuwyd y Pensiwn",
+        "active-contributions": "Cyfraniadau gweithredol",
+        "employer-name": "Enw'r cyflogwr",
+        "employer-status": "Statws cyflogwr",
+        "retirement-date": "Dyddiad ymddeol pensiwn",
+        "employment-start-date": "Dyddiad dechrau cyflogaeth",
+        "employment-end-date": "Dyddiad gorffen cyflogaeth",
+        "most-recent": "(mwyaf diweddar)",
+        "data-illustration-date": "WELSH -- Data illustration date",
+        "pension-origin": "Tarddiad pensiwn",
+        "employer-status-details": {
+          "C": "Cyflogwr presennol",
+          "H": "Cyn-gyflogwr"
+        }
+      },
+      "state-pension-callout": {
+        "heading": {
+          "keep-contributing": "Mae angen i chi barhau i gyfrannu i gyrraedd y swm a ragwelir gennych",
+          "already-qualify": "Rydych eisoes yn gymwys i gael swm llawn a ragwelir gennych"
+        },
+        "text": {
+          "partial-accrued": "Rydych chi wedi cronni digon o gyfraniadau neu gredydau Yswiriant Gwladol i gael rhywfaint o Bensiwn y Wladwriaeth, ond bydd angen i chi barhau i gyfrannu er mwyn cyrraedd y swm a ragwelir gennych.",
+          "full-forecast": "Mae eisoes gennych ddigon o flynyddoedd o gyfraniadau neu gredydau Yswiriant Gwladol cymwys i gael y swm Pensiwn y Wladwriaeth a ragwelir gennych.",
+          "no-accrued": "Fel arfer mae angen o leiaf **10 blwyddyn** o gyfraniadau neu gredydau Yswiriant Gwladol cymwys i gael unrhyw Bensiwn y Wladwriaeth. Bydd angen i chi barhau i gyfrannu er mwyn fod yn gymwys i gael Pensiwn y Wladwriaeth a chyrraedd y swm a ragwelir gennych."
+        }
+      }
+    },
+    "pending-pensions": {
+      "title": "Pensiynau ar y gweill",
+      "sub-title": "Deall eich pensiynau sydd ar y gweill",
+      "description": "**Beth mae ‘ar y gweill’ yn ei olygu?** Mae eich darparwr wedi cadarnhau mai eich pensiwn chi yw hwn. Nid ydynt wedi anfon yr holl fanylion atom eto, felly gallai rhai ffigyrau fod ar goll. \n\n**Oes angen i mi wneud unrhyw beth?** Na. Bydd pensiynau sydd ar y gweill yn symud yn awtomatig i ‘Eich pensiynau’ unwaith y bydd eu gwybodaeth yn gyflawn."
+    },
+    "pensions-that-need-action": {
+      "title": "Pensiynau sydd angen gweithredu",
+      "tool-intro": "Efallai y bydd angen i chi ddarparu mwy o wybodaeth i gadarnhau a yw pensiwn yn perthyn i chi, neu gallai fod mater arall y mae angen i'r darparwr siarad â chi amdano. Byddant yn ymddangos yn awtomatig yn 'Eich pensiynau' unwaith y bydd eu gwybodaeth wedi'i chwblhau.",
+      "what-you-can-do": {
+        "heading": "Beth allwch chi ei wneud",
+        "lead": "Ffoniwch, e-bostiwch neu ysgrifennwch at eich darparwr gan ddefnyddio'r manylion ar y dudalen hon.",
+        "body-before": "Cysylltwch â'ch darparwr gan ddefnyddio'r manylion ar y cerdyn a rhowch wybod iddynt yr hoffech ddatrys problem gyda phensiwn ar Ddangosfwrdd Pensiynau HelpwrArian. Efallai y byddant yn gofyn am y canlynol:",
+        "list-items": [
+          "eich enw llawn, ynghyd ag unrhyw enwau blaenorol",
+          "eich dyddiad geni",
+          "eich cyfeiriad presennol a chyfeiriadau blaenorol",
+          "eich rhif cyfeirnod, os oes un ar y cerdyn",
+          "eich rhif Yswiriant Gwladol (NINO)"
+        ],
+        "body-after": "Unwaith y bydd y broblem wedi'i datrys, bydd y pensiwn yn ymddangos yn 'Eich pensiynau' neu 'Pensiynau sydd ar y gweill'. Os cafodd ei baru i chi trwy gamgymeriad, ni fydd yn ymddangos mwyach ar y Dangosfwrdd Pensiynau."
+      },
+      "possible-match": {
+        "heading": "Paru bosibl â'ch manylion",
+        "description": "Mae angen i'r darparwr pensiwn sicrhau bod eich gwybodaeth yn cyd-fynd â'u cofnodion."
+      },
+      "more-information": {
+        "heading": "Angen rhagor o wybodaeth, camau gweithredu neu benderfyniad",
+        "description": "Ni all y darparwr pensiwn anfon unrhyw fanylion pellach nes i chi gysylltu â nhw."
+      },
+      "card": {
+        "description": "Cysylltwch â {pensionAdministrator} a rhowch eich rhif cyfeirnod iddynt os yw ar gael.",
+        "reference": "Rhif cyfeirnod",
+        "contact-heading-open": "Gweler manylion cyswllt",
+        "contact-heading-sr-only": " {schemeName}",
+        "details-link": "Gweld manylion pensiwn"
+      },
+      "scam-warning": {
+        "heading": "Byddwch yn ofalus rhag sgamiau",
+        "description": "Ni fydd darparwr pensiwn byth yn cysylltu â chi yn gyntaf i ofyn am eich gwybodaeth bersonol am bensiwn y maent yn dweud y gallai fod yn perthyn i chi. Rhaid i chi gysylltu â'r darparwr pensiwn gyda'ch rhif cyfeirnod neu fanylion adnabod eraill i gadarnhau ai eich un chi yw'r pensiwn."
+      }
+    },
+    "your-pension-search-results": {
+      "page-title": "Pensiynau wedi'u darganfod",
+      "title": "Pensiynau wedi'u darganfod",
+      "heading": "Rydym wedi darganfod {totalPensions} bensiwn",
+      "heading-single": "Rydym wedi darganfod 1 pensiwn",
+      "channels": {
+        "confirmed": {
+          "title": "Pensiynau wedi'u cadarnhau ({confirmedPensions})",
+          "cta": "Gweld eich pensiynau"
+        },
+        "incomplete": {
+          "title": "Pensiynau ar y gweill ({incompletePensions})",
+          "sub-title": "Rydym yn aros am ragor o wybodaeth gan y darparwr(wyr) pensiwn. Nid oes angen i chi wneud unrhyw beth.",
+          "cta": "Gweld pensiynau sydd ar y gweill"
+        },
+        "unconfirmed": {
+          "title": "Pensiynau sydd angen gweithredu ({unconfirmedPensions})",
+          "sub-title": "Efallai y bydd angen i chi ddarparu mwy o wybodaeth neu gysylltu â'r darparwr.",
+          "cta": "Gweld pensiynau sydd angen gweithredu"
+        }
+      },
+      "unsupported": {
+        "title": "Pensiynau heb eu cefnogi wedi'u darganfod",
+        "text": "Rydym wedi dod o hyd i un neu fwy o bensiynau a allai fod yn perthyn i chi na allwn eu harddangos eto. Rydym yn dal i adeiladu a gwella ein gwasanaeth, felly edrychwch yn ôl eto yn fuan."
+      },
+      "error": {
+        "title": "Problem wrth ddod o hyd i ddata ar gyfer {number} bensiwn",
+        "title-single": "Problem wrth ddod o hyd i ddata ar gyfer 1 pensiwn",
+        "text": "Fe wnaethon ni ddod o hyd i {number} bensiwn arall ond ni allwn ddangos y manylion i chi oherwydd bod problem wrth adfer y data. Gwiriwch eto yn nes ymlaen.",
+        "text-single": "Fe wnaethon ni ddod o hyd i 1 pensiwn arall ond ni allwn ddangos y manylion i chi oherwydd bod problem wrth adfer y data. Gwiriwch eto yn nes ymlaen."
+      },
+      "other-pensions": {
+        "title": "Ydych chi'n disgwyl gweld pensiynau eraill?",
+        "text": "Rydym yn dal i gysylltu cynlluniau pensiwn newydd yn rheolaidd. Os ydych chi'n gwybod bod gennych chi bensiynau eraill, [dyma beth allwch chi ei wneud._target=_self](/cy/pensions-not-showing)"
+      }
+    },
+    "no-pensions-found": {
+      "title": "Ni ddarganfyddwyd unrhyw bensiynau",
+      "heading": "Beth allwch chi ei wneud:",
+      "tooltip": "Rydym yn parhau i adeiladu a gwella ein gwasanaeth. Rydym yn cysylltu cynlluniau pensiwn newydd yn rheolaidd.",
+      "to-do": {
+        "item-1": "Dewch yn ôl yn nes ymlaen i weld a yw eich pensiynau'n dangos.",
+        "item-2": "Dywedwch wrthym eich rhif Yswiriant Gwladol (NINO) os nad ydych eisoes wedi gwneud. Bydd yn rhaid i chi fewngofnodi eto gyda GOV.UK One Login i ddychwelyd.",
+        "item-2-logout-link": "Gadael y Dangosfwrdd Pensiynau a dechrau eto i roi eich rhif Yswiriant Gwladol.",
+        "item-3": "Os nad yw eich Pensiwn y Wladwriaeth yn dangos a'ch bod yn meddwl bod gennych hawl i un, [gwiriwch eich manylion gan ddefnyddio'ch rhagolwg Pensiwn y Wladwriaeth](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth).",
+        "item-4": "Os ydych yn gwybod enw'ch cyflogwr(wyr) neu ddarparwr(wyr) pensiwn, cysylltwch â nhw'n uniongyrchol.",
+        "item-5": "Os ydych yn parhau i fethu gweld eich pensiynau, [rhowch wybod am broblem dechnegol](/cy/support/report-a-technical-problem).",
+        "item-6": "Os oedd gennych bensiwn gweithle o 1988 neu'n gynharach, neu os oeddech yn gweithio i gyflogwr am lai na dwy flynedd, edrychwch a gafodd eich cyfraniadau pensiwn eu had-dalu. [Dysgwch fwy am bensiynau a ad-dalwyd.](/cy/support/explore-the-pensions-dashboard)"
+      }
+    },
+    "pensions-not-showing": {
+      "title": "Pensiynau ddim yn dangos",
+      "intro": "Rydym yn parhau i adeiladu a gwella ein gwasanaeth. Rydym yn cysylltu cynlluniau pensiwn newydd yn rheolaidd.",
+      "heading": "Beth allwch chi ei wneud:",
+      "to-do": {
+        "item-1": "Dewch yn ôl yn nes ymlaen i weld a yw eich pensiynau'n dangos.",
+        "item-2": "Dywedwch wrthym eich rhif Yswiriant Gwladol (NINO) os nad ydych eisoes wedi gwneud. Bydd yn rhaid i chi fewngofnodi eto gyda GOV.UK One Login i ddychwelyd.",
+        "item-2-logout-link": "Gadael y Dangosfwrdd Pensiynau a dechrau eto i roi eich rhif Yswiriant Gwladol.",
+        "item-3": "Os nad yw eich Pensiwn y Wladwriaeth yn dangos a'ch bod yn meddwl bod gennych hawl i un, [gwiriwch eich manylion gan ddefnyddio'ch rhagolwg Pensiwn y Wladwriaeth](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth).",
+        "item-4": "Os ydych yn gwybod enw'ch cyflogwr(wyr) neu ddarparwr(wyr) pensiwn, cysylltwch â nhw'n uniongyrchol.",
+        "item-5": "Os oedd gennych bensiwn gweithle o 1988 neu'n gynharach, neu os oeddech yn gweithio i gyflogwr am lai na dwy flynedd, edrychwch a gafodd eich cyfraniadau pensiwn eu had-dalu. [Dysgwch fwy am bensiynau a ad-dalwyd.](/cy/support/explore-the-pensions-dashboard)"
+      }
+    }
+  },
+  "components": {
+    "unconfirmed-pensions-callout": {
+      "heading": "Pwysig",
+      "description": "Mae gennych {number} bensiwn mae angen i chi ddarparu mwy o wybodaeth neu gysylltu â'r darparwr pensiwn.",
+      "description-single": "Mae gennych {number} pensiwn mae angen i chi ddarparu mwy o wybodaeth neu gysylltu â'r darparwr pensiwn."
+    },
+    "pension-card": {
+      "type": {
+        "AVC": "AVC",
+        "DB": "Buddion wedi'u diffinio",
+        "DC": "Cyfraniadau wedi'u diffinio",
+        "HYB": "Hybrid",
+        "CDC": "CDC",
+        "CB": "Balans arian parod",
+        "VAR": "Cymysgedd",
+        "SP": "Pensiwn y Wladwriaeth",
+        "UNKNOWN": "Math y pensiwn heb ei gadarnhau"
+      }
+    },
+    "summary-sentence": {
+      "title": "Eich incwm amcangyfrifedig",
+      "state-pension-age": "Yn **{statePensionYear}**, faint allech chi ei gael o'ch pensiwn y flwyddyn honno (cyn treth)?",
+      "annually": "Mae hyn yn dod i tua **{annualTotal}** y flwyddyn.",
+      "snapshot": "**Dim ond ciplun yw hwn – nid yw'n cynnwys pensiynau heb incwm amcangyfrifedig neu sydd i fod i ddechrau talu yn nes ymlaen**. Wrth i chi ddechrau neu stopio cymryd eich pensiynau, gall eich incwm fynd i fyny neu i lawr.",
+      "view-timeline": "Gweld amserlen pensiynau lawn",
+      "accordion-title": "Am y gwerthoedd hyn",
+      "accordion-content": [
+        "Mae'r incwm hyn yn seiliedig ar y pensiynau sydd gennym amcangyfrifon ar eu cyfer hyd yma - efallai na fydd yn cynnwys eich holl bensiynau. Mae darparwyr pensiwn fel arfer yn diweddaru'r amcangyfrifon hyn o leiaf unwaith y flwyddyn, ac yn gwneud cyfrifiadau yn seiliedig ar lefelau cyfraniadau pob pensiwn a'r dyddiad ymddeol disgwyliedig. Nid ydynt wedi'u gwarantu, a gallant fynd i lawr yn ogystal ag i fyny. Gweler manylion y pensiwn am fwy o wybodaeth.",
+        "Mae'r rhan fwyaf o incwm amcangyfrifedig yn dangos i chi faint fyddai gwerth eich pensiwn yn arian heddiw. Dangosir pob gwerth cyn treth. Dysgwch fwy am [dreth a phensiynau](/cy/support/understand-your-pensions)."
+      ],
+      "no-state-pension-1": "Efallai y byddwch yn dechrau cymryd pob un o'ch pensiynau ar wahanol adegau. Wrth iddynt ddechrau neu stopio, gall eich incwm fynd i fyny neu i lawr.",
+      "no-state-pension-2": "Er mwyn eich helpu i weld faint o arian y gallech ei gael pan fyddwch yn ymddeol, rydym wedi rhoi'r incwm amcangyfrifedig sydd ar gael mewn llinell amser.",
+      "mccloud-title": "Mae gennych ddau opsiwn",
+      "mccloud-accordion-title": "Pam fod gennyf ddau opsiwn?",
+      "mccloud-accordion-content": [
+        "Mae gennych ddewis rhwng buddion pensiwn etifeddol (cyflog terfynol) ac amgen (cyfartaledd gyrfa), sy’n cael ei gyfrifo mewn ffyrdd gwahanol. Bydd yr incwm a’r cyfandaliadau yn wahanol ar gyfer pob opsiwn.",
+        "Nid oes angen i chi ddewis nes eich bod yn dechrau cymryd eich pensiwn."
+      ],
+      "specific-year-accordion-title": "Pam rydyn ni wedi defnyddio blwyddyn benodol?",
+      "specific-year-accordion-content": "Dyma’r flwyddyn y byddwch chi’n cyrraedd oedran **Pensiwn y Wladwriaeth** – yr oedran y gallwch chi hawlio’ch Pensiwn y Wladwriaeth. Efallai y byddwch chi’n dechrau cymryd pensiynau eraill cyn neu ar ôl hyn."
+    },
+    "pension-detail-income-values": {
+      "more-details-title": "Mwy o fanylion",
+      "features-title": "Nodweddion"
+    },
+    "pension-detail-next-steps": {
+      "heading": "Deall eich camau nesaf",
+      "intro": "Gall pensiynau fod yn gymhleth, ond rydyn ni yma i’ch helpu i ddeall eich opsiynau a’ch camau nesaf. \\\nGallai’r camau a gymerwch nawr effeithio ar ba mor gyfforddus fydd eich ymddeoliad yn y dyfodol.",
+      "intro-new-tab": "Mae pob un o’r dolenni hyn yn agor mewn tab newydd.",
+      "cards": [
+        {
+          "title": "Sut i wneud y mwyaf o’ch pensiwn?",
+          "text": "Cael help am ddim gyda’ch pensiwn, gan gynnwys ffyrdd o gynyddu ei werth a sut a phryd y gallwch ddechrau cymryd incwm.",
+          "link": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/make-the-most-of-your-pension"
+        },
+        {
+          "title": "Faint o arian fydd ei angen arnaf wrth ymddeol?",
+          "text": "Darganfyddwch faint o incwm ymddeol y bydd ei angen arnoch i dalu eich costau hanfodol gyda'n Cynlluniwr cyllideb.",
+          "link": "https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner"
+        },
+        {
+          "title": "A fydd gennyf ddigon i fyw’n gyfforddus?",
+          "text": "Gweld sut y gallai eich incwm ymddeol amcangyfrifedig newid pe baech yn cynilo mwy gan ddefnyddio ein Cyfrifiannell pensiwn.",
+          "link": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator"
+        },
+        {
+          "title": "A ddylwn i gyfuno fy mhensiynau?",
+          "text": "Os oes gennych fwy nag un pensiwn, darganfyddwch a yw trosglwyddo neu gyfuno eich pensiynau yn syniad da.",
+          "link": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation"
+        }
+      ]
+    },
+    "income-timeline": {
+      "multiplicity": "Mae gan y pensiwn hwn sawl incwm a allai dalu ar wahanol adegau. Efallai mai dim ond am gyfnod cyfyngedig y telir rhai.",
+      "mccloud": "Mae gennych ddewis rhwng buddion pensiwn **etifeddol** (cyflog terfynol) ac **amgen** (cyfartaledd gyrfa), sy’n cael ei gyfrifo mewn ffyrdd gwahanol.",
+      "no-state-pension": "**Efallai byddwch chi’n dechrau cymryd pob un o’ch pensiynau ar adegau gwahanol**. Wrth iddynt ddechrau neu stopio, gallai eich incwm gynyddu neu ostwng.",
+      "option": "opsiwn",
+      "legacy": "Etifeddol",
+      "alternative": "Amgen",
+      "monthlyText": "O {date} gallwch gael **{income} y mis**",
+      "lumpSumText": "a chyfandaliad untro o **{income}**",
+      "increase": "cynnydd o",
+      "decrease": "gostyngiad o"
+    },
+    "timeline-toggle": {
+      "intro": "Am un neu fwy o’ch pensiynau, mae gennych ddewis rhwng buddion pensiwn **etifeddol** (cyflog terfynol) ac **amgen** (cyfartaledd gyrfa). Newidiwch rwng yr opsiynau i weld y gwerthoedd gwahanol yn eich amserlen.",
+      "legacy": "Etifeddol",
+      "alternative": "Amgen",
+      "option": "opsiwn",
+      "view-by": "Gweld yn ôl",
+      "current": "Golwg presennol"
+    },
+    "pension-pot": {
+      "title": "Gwerth cronfa diweddaraf",
+      "text-dc": "mewn cronfeydd cyfraniadau wedi’u diffinio",
+      "text-avc": "mewn AVC",
+      "text-cbs": "mewn cronfeydd balans arian parod",
+      "text-dc-avc": "mewn cronfeydd cyfraniadau wedi’u diffinio ac AVC",
+      "text-dc-cbs": "mewn cronfeydd cyfraniadau wedi’u diffinio a balans arian parod",
+      "text-avc-cbs": "mewn cronfeydd balans arian parod ac AVC",
+      "text-dc-avc-cbs": "mewn cronfeydd cyfraniadau wedi’u diffinio, balans arian parod ac AVC",
+      "accordion-title": "Beth mae hyn yn ei olygu?",
+      "accordion-dc": "Mae’r pensiwn hwn yn cynnwys un neu fwy o gronfeydd **cyfraniadau wedi’u diffinio (DC)**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-avc": "Mae’r pensiwn hwn yn cynnwys un neu fwy o gynlluniau **cyfraniadau gwirfoddol ychwanegol (AVC)**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-cbs": "Mae’r pensiwn hwn yn cynnwys un neu fwy o gronfeydd **balans arian parod**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-dc-avc": "Mae’r pensiwn hwn yn cynnwys cronfeydd **cyfraniadau wedi’u diffinio (DC)** a **chyfraniadau gwirfoddol ychwanegol (AVC)**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-dc-cbs": "Mae’r pensiwn hwn yn cynnwys cronfeydd **cyfraniadau wedi’u diffinio (DC)** a **balans arian parod**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-avc-cbs": "Mae’r pensiwn hwn yn cynnwys cronfeydd **balans arian parod** a **chyfraniadau gwirfoddol ychwanegol (AVC)**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion.",
+      "accordion-dc-avc-cbs": "Mae’r pensiwn hwn yn cynnwys cronfeydd **cyfraniadau wedi’u diffinio**, **balans arian parod** a **chyfraniadau gwirfoddol ychwanegol (AVC)**. Mae gan y rhain werth cronfa ac incwm amcangyfrifedig ar wahân, a gallent fod â dyddiad talu gwahanol. Gweler yr incwm a'r gwerthoedd am fanylion."
+    }
+  },
+  "timeout": {
+    "keep-me-signed-in": "Cadwch fi wedi mewngofnodi",
+    "log-me-out": "Allgofnodi",
+    "return-to-start": "Dychwelyd i'r dudalen gyntaf",
+    "been-inactive": "Rydych chi wedi bod yn anweithgar ers peth amser",
+    "to-return-to-dashboard": "Gallwch ddychwelyd i'ch Dangosfwrdd Pensiynau gan ddefnyddio GOV.UK One Login neu ddefnyddio ein teclynnau am ddim eraill i fanteisio i'r eithaf ar eich pensiwn.",
+    "exited-the-dashboard": "Rydych chi wedi gadael y Dangosfwrdd Pensiynau",
+    "make-the-most": {
+      "heading": "Gwneud y mwyaf o’ch pensiwn",
+      "description": "Gall ein canllawiau eich helpu i [wneud y mwyaf o'ch pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/make-the-most-of-your-pension). Darganfyddwch ffyrdd o roi hwb i'ch cynilion ymddeol, gweld a yw trosglwyddo pensiwn yn syniad da a deall sut a phryd y gallwch chi ddechrau cymryd incwm.",
+      "tools-intro": "Gallwch hefyd ddefnyddio ein teclynnau am ddim:",
+      "tools": [
+        "[Cynlluniwr cyllideb](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner) i gyfrifo eich holl gostau hanfodol wrth ymddeol.",
+        "[Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator) i weld sut y byddai eich incwm ymddeol amcangyfrifedig yn newid os byddwch chi'n cynilo mwy."
+      ]
+    },
+    "sign-in-again": "Bydd angen i chi fewngofnodi eto gan ddefnyddio One Login i weld eich pensiynau.",
+    "session-expiry": "Mae eich sesiwn Dangosfwrdd Pensiynau yn dod i ben yn awtomatig ar ôl **{timeoutMinutes} munud**. Mae hyn er mwyn diogelu eich gwybodaeth bersonol.",
+    "inactivity-expiry": "Mae eich sesiwn Dangosfwrdd Pensiynau yn dod i ben yn awtomatig ar ôl **{timeoutMinutes} munud** o anweithgarwch. Mae hyn er mwyn diogelu eich gwybodaeth bersonol.",
+    "protect-your-information": "Mae hyn er mwyn diogelu eich gwybodaeth bersonol.",
+    "session-expired": "Mae eich sesiwn wedi dod i ben",
+    "session-will-timeout": "Bydd eich sesiwn Dangosfwrdd Pensiynau yn dod i ben ar ôl **{totalTimeout} munud**.",
+    "modal-session-timeout": "Bydd eich sesiwn Dangosfwrdd Pensiynau yn dod i ben mewn ",
+    "minutes": "munudau",
+    "minute": "munud",
+    "seconds": "eiliadau",
+    "second": "eiliad",
+    "what-did-you-think": "Beth oeddech chi'n ei feddwl o'r gwasanaeth hwn?",
+    "takes-2-mins": "(Yn cymryd 2 funud)"
+  },
+  "tooltips": {
+    "pension-origin": "`tooltip:: **Tarddiad pensiwn** yw o ble mae'r cynllun pensiwn hwn yn dod, fel swydd bresennol neu hen swydd, trosglwyddiad, neu flwydd-dal rydych eisoes wedi'i brynu.::center`",
+    "retirement-date": "`tooltip:: **Dyddiad ymddeol pensiwn** yw'r dyddiad y mae eich darparwr yn disgwyl i chi ddechrau cymryd arian o'r cynllun pensiwn hwn. Nid oes rhaid i chi ymddeol na chymryd eich pensiwn ar y dyddiad hwn - fel arfer gallwch ei newid trwy gysylltu â nhw.::center`",
+    "costs-and-charges": "`tooltip:: Mae **costau a ffioedd** yn cael eu talu i'ch darparwr pensiwn i gwmpasu'r costau o reoli eich arian. Maent fel arfer yn cael eu talu'n awtomatig allan o'ch cynllun pensiwn.::center`",
+    "illustration-date": "`tooltip:: Mae’r gwerthoedd hyn yn seiliedig ar y wybodaeth oedd gan eich darparwr ar y dyddiad penodol hwn. Gan fod gwybodaeth yn cael ei diweddaru ar adegau gwahanol, gallant fod yn wahanol i’r hyn a welwch ar eich datganiadau buddion blynyddol neu yn eich cyfrif ar-lein.::`",
+    "pot-value": "`tooltip:: **Gwerth cronfa** yw faint o arian sydd wedi'i gronni yn y cynllun pensiwn hwn. Mae'n gyfuniad o'ch cyfraniadau, cyfraniadau eich cyflogwr (os yw'n bensiwn gweithle), ac unrhyw dwf buddsoddi.::`",
+    "lump-sum": "`tooltip:: **Cyfandaliad** yw swm untro o arian sy’n cael ei dalu yn ychwanegol at eich incwm pensiwn, fel arfer pan fyddwch yn ymddeol. Mae’n seiliedig ar eich cyflog a nifer y blynyddoedd rydych wedi bod yn y cynllun pensiwn.::`",
+    "state-pension-age": "`tooltip:: Dyma eich oedran **Pensiwn y Wladwriaeth** - yr oedran y gallwch wneud cais am eich Pensiwn y Wladwriaeth. Efallai y byddwch yn dechrau cymryd pensiynau eraill cyn neu ar ôl hyn.::center`",
+    "status-active": "`tooltip:: Os yw'r pensiwn hwn yn **weithredol**, rydych chi a/neu'ch cyflogwr yn gwneud cyfraniadau (yn talu i mewn iddo).::`",
+    "status-inactive": "`tooltip:: Os yw'r pensiwn hwn yn **anweithredol**, nid yw'n cael ei dalu i mewn iddo mwyach ond mae eich arian yn parhau i gael ei reoli gan y darparwr pensiwn.::`",
+    "linked-pension": "`tooltip:: Mae pensiwn yn **gysylltiedig** pan fo buddion y pensiwn yn dod o fwy nag un darparwr neu gynllun pensiwn.::`",
+    "type-AVC": "`tooltip::Mae cynllun ***AVC (cyfraniadau gwirfoddol ychwanegol)*** yn gronfa bensiwn ar wahân rydych yn talu i mewn iddo yn ychwanegol at eich cyfraniadau pensiwn gweithle rheolaidd. Gall AVCs gael eu rheoli gan yr un darparwr pensiwn â'ch pensiwn gweithle neu ar wahân.::`",
+    "type-DB": "`tooltip:: Mae pensiwn **buddion wedi'u diffinio** yn bensiwn gweithle lle mae eich incwm yn seiliedig ar eich cyflog a'r blynyddoedd rydych wedi bod yn aelod o'r cynllun. [Dysgwch fwy](/cy/support/understand-your-pensions)::`",
+    "type-DC": "`tooltip:: Mae pensiwn **cyfraniadau wedi'u diffinio** yn gronfa o arian rydych chi (ac weithiau'ch cyflogwr) yn talu i mewn ar gyfer eich ymddeoliad. Mae'n fuddsoddiad, felly mae eich incwm yn dibynnu ar berfformiad y buddsoddiad a sut rydych yn dewis cymryd eich pensiwn ar ôl ymddeol. [Dysgwch fwy](/cy/support/understand-your-pensions)::`",
+    "type-HYB": "`tooltip:: Mae **pensiwn hybrid** yn gynllun gyda nodweddion buddion wedi'u diffinio a chyfraniadau wedi'u diffinio. Yn dibynnu ar y cynllun, gallech naill ai gael cyfuniad o'r mathau hyn o incwm neu'r uchaf o'r ddau.::`",
+    "type-CDC": "`tooltip:: **Mae cynllun cyfraniadau wedi'u diffinio** ar y cyd **(CDC)** yn talu incwm rheolaidd i chi am oes pan fyddwch chi'n ymddeol. Gall yr incwm gynyddu neu ostwng cyn ac ar ôl i chi ddechrau ei gymryd. Mae hyn yn dibynnu ar lawer o ffactorau, fel pa mor dda y mae buddsoddiadau'r cynllun wedi perfformio. Mae eich arian yn cael ei fuddsoddi ynghyd â'r cyfraniadau gan eich cyflogwr ac aelodau eraill y cynllun, felly mae'r risg yn cael ei rannu a gallai'r pensiwn dyfu ar gyfradd uwch. [Dysgu mwy](/cy/support/understand-your-pensions)::`",
+    "type-CB": "`tooltip::Pensiwn gweithle yw cynllun **balans arian** parod lle mae'r cyflogwr yn gwarantu naill ai cyfandaliad wrth ymddeol neu fod cyfraniadau'n tyfu ar gyfradd warantedig am bob blwyddyn rydych chi'n gweithio. Maent hefyd yn cymryd cyfrifoldeb am y risg buddsoddi, sy'n golygu y byddwch chi'n gwybod gwerth eich cronfa bensiwn pan fyddwch chi'n penderfynu ei chael. [Dysgwch fwy](/cy/support/understand-your-pensions)::`",
+    "type-CBLUMP": "`tooltip::Mae'r **cyfandaliad balans arian parod** hwn yn swm gwarantedig o arian pan fyddwch chi'n ymddeol. Gallwch ddewis sut i'w gymryd, er enghraifft trwy brynu blwydd-dal (incwm rheolaidd gwarantedig) neu drwy ddewis opsiynau incwm mwy hyblyg.::`",
+    "type-VAR": "`tooltip::Mae’r pensiwn hwn yn cynnwys cymysgedd o fathau o fuddion. Gallai’r rhain gael eu cyfrifo mewn gwahanol ffyrdd, cael incwm gwahanol a chael eu talu ar wahanol adegau.::`",
+    "national-insurance": "`tooltip:: Mae **Yswiriant Gwladol (NI)** yn fath o dreth rydych yn ei thalu i fod yn gymwys ar gyfer Pensiwn y Wladwriaeth a rhai mathau o fudd-daliadau. Fel arfer, rydych angen 35 mlynedd cymwys o gyfraniadau NI i gael Pensiwn y Wladwriaeth llawn, a deg mlynedd cymwys i gael unrhyw beth. [Dysgwch fwy](/cy/support/understand-your-pensions)::`",
+    "sr-text": {
+      "national-insurance": "Yswiriant Gwladol",
+      "state-pension-age": "Oedran Pensiwn y Wladwriaeth",
+      "pension-origin": "darddiad y pensiwn",
+      "retirement-date": "ddyddiad ymddeol",
+      "costs-and-charges": "gost a thaliadau",
+      "calculation-date": "ddyddiad y cyfrifiad",
+      "pot-value": "werth y gronfa",
+      "lump-sum": "gyfandaliadau",
+      "cash-balance-lump-sums": "gyfandaliadau balans arian",
+      "status-active": "statws pensiwn gweithredol",
+      "status-inactive": "statws pensiwn anweithredol",
+      "linked-pensions": "bensiynau cysylltiedig",
+      "type-AVC": "gynlluniau cyfraniadau gwirfoddol ychwanegol",
+      "type-DB": "gynlluniau buddion wedi’u diffinio",
+      "type-DC": "gynlluniau cyfraniadau wedi’u diffinio",
+      "type-HYB": "gynlluniau hybrid",
+      "type-CDC": "gynlluniau cyfraniadau wedi’u diffinio ar y cyd",
+      "type-CB": "gynlluniau balans arian",
+      "type-VAR": "gynlluniau cymysgedd"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "conventionalCommits.scopes": [
+    "adjustable-income-calculator",
+    "baby-cost-calculator",
+    "baby-money-timeline",
+    "budget-planner",
+    "cash-in-chunks",
+    "compare-accounts",
+    "credit-options",
+    "credit-rejection",
+    "debt-advice-locator",
+    "evidence-hub",
+    "fuel-finder",
+    "guaranteed-income-estimator",
+    "leave-pot-untouched",
+    "midlife-mot",
+    "money-adviser-network",
+    "moneyhelper-booking-forms",
+    "moneyhelper-contact-forms",
+    "moneyhelper-tools",
+    "mortgage-affordability",
+    "mortgage-calculator",
+    "pensions-dashboard",
+    "pensionwise-appointment",
+    "pensionwise-triage",
+    "redundancy-pay-calculator",
+    "retirement-budget-planner",
+    "salary-calculator",
+    "sandbox",
+    "savings-calculator",
+    "stamp-duty-calculator",
+    "standard-financial-statement",
+    "take-whole-pot",
+    "tools-index",
+    "travel-insurance-directory",
+    "shared-core",
+    "shared-csp-policy",
+    "shared-entra-id",
+    "shared-form",
+    "shared-hooks",
+    "shared-layouts",
+    "shared-mhf",
+    "shared-netlify-functions",
+    "shared-pension-tools",
+    "shared-pwd",
+    "shared-redis",
+    "shared-tools",
+    "shared-ui",
+    "shared-utils",
+    "shared-vendor",
+    "deps",
+    "ci",
+    "config",
+    "repo"
+  ],
+  "sonarlint.connectedMode.project": {
+    "connectionId": "maps",
+    "projectKey": "moneyandpensionsservice_maps-apps"
+  },
+  "js/ts.tsdk.path": "node_modules\\typescript\\lib"
+}

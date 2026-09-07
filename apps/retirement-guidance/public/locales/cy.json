@@ -1,0 +1,770 @@
+{
+  "backButton": "Yn ôl",
+  "continueButton": "Parhau",
+  "seeYourResultsButton": "Gweler eich canlyniadau",
+  "heading": "Cael arweiniad ymddeoliad",
+  "errorSummaryHeading": "Mae problem",
+  "errorSummaryDescription": "Dewiswch un opsiwn i barhau.",
+  "landingPage": {
+    "heading": "Cael arweiniad ymddeoliad",
+    "paragraph": "Crëwch gynllun gweithredu ymddeoliad gyda'n teclyn am ddim. Byddwn yn eich paru â chanllawiau i ddeall eich opsiynau ac yn egluro'r camau y gallwch eu cymryd i wneud y gorau o'ch pensiwn.",
+    "whatYouGetHeading": "Beth gewch chi",
+    "whatYouGetDescription": "Bydd y teclyn hwn yn rhoi cynllun gweithredu ymddeoliad i chi gyda:",
+    "whatYouGetList": [
+      "gwybodaeth allweddol i'ch helpu i ddeall eich opsiynau",
+      "camau awgrymedig i wneud y gorau o'ch pensiwn",
+      "offer defnyddiol i amcangyfrif faint o incwm ymddeoliad y gallech fod ei angen arnoch ac a ydych chi ar y trywydd i gyrraedd eich nodau",
+      "ble gallwch chi gael cymorth a chefnogaeth gyda'ch penderfyniadau."
+    ],
+    "whatYouGetAdditionalInfo": "Ni fyddwch chi'n gweld eich holl bensiynau na'ch union incwm pensiwn. Fel arfer gallwch ddod o hyd i'r wybodaeth hon trwy fewngofnodi i gyfrif ar-lein eich darparwr pensiwn neu drwy gysylltu â nhw.",
+    "howItWorksHeading": "Sut mae'n gweithio",
+    "howItWorksDescription": "Byddwn yn gofyn am fanylion amdanoch chi a'ch cynlluniau ar gyfer y dyfodol, gan gynnwys:",
+    "howItWorksList": [
+      "y mathau o bensiwn sydd gennych",
+      "pa mor bell o ymddeoliad ydych chi",
+      "os ydych chi'n bwriadu ymddeol y tu allan i'r DU."
+    ],
+    "startButton": "Cael arweiniad ymddeoliad",
+    "completionTime": "Amser cwblhau cyfartalog o 5 munud"
+  },
+  "q1": {
+    "question": "Beth yw'r prif beth yr hoffech chi gael help ag ef?",
+    "description": "Mae hyn yn ein helpu i flaenoriaethu'r arweiniad rydym yn darparu i chi. Dewiswch un opsiwn.",
+    "options": {
+      "option1": "Sut mae fy mhensiwn yn gweithio",
+      "option2": "Faint o arian sydd ei angen arnaf ar gyfer ymddeoliad",
+      "option3": "Sut i dyfu fy mhensiwn",
+      "option4": "Sut i drosglwyddo neu gyfuno fy mhensiwn",
+      "option5": "Pryd a sut y gallaf gymryd fy mhensiwn",
+      "option5Separator": "Neu",
+      "option6": "Gadewch i ni eich tywys"
+    },
+    "errorSummaryDescription": "Dewiswch un opsiwn i barhau"
+  },
+  "q2": {
+    "question": "Ydych chi'n bwriadu ymddeol yn y 10 mlynedd nesaf?",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na",
+      "option3": "Rydw i eisoes wedi ymddeol"
+    },
+    "errorSummaryDescription": "Dewiswch ‘Ydw’, ‘Na’, neu ‘Rwyf eisoes wedi ymddeol’ i barhau"
+  },
+  "q3": {
+    "question": "Oes gennych chi gyflogwr?",
+    "description": "Mae hyn yn cynnwys unrhyw swydd â thâl sydd gennych chi ar hyn o bryd. Gall fod yn llawn amser neu'n rhan amser.",
+    "options": {
+      "option1": "Oes",
+      "option2": "Na, rwy'n hunangyflogedig",
+      "option2HintText": "Mae hyn yn cynnwys unig fasnachwr a chyfarwyddwyr cwmnïau cyfyngedig",
+      "option3": "Na, dydw i ddim yn gyflogedig"
+    },
+    "errorSummaryDescription": "Dewiswch ‘Oes’, ‘Na, rwy’n hunangyflogedig’, neu ‘Na, dydw i ddim yn gyflogedig’ i barhau"
+  },
+  "q4": {
+    "question": "Ydych chi'n talu i mewn i unrhyw gynllun pensiwn ar hyn o bryd?",
+    "description": "Mae hyn yn cynnwys unrhyw bensiwn rydych chi'n talu iddo, fel pensiwn personol neu bensiwn gweithle. Gallai fod yn gyfraniad misol rheolaidd neu pryd bynnag y gallwch chi.",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na",
+      "option3": "Ddim yn siŵr"
+    },
+    "errorSummaryDescription": "Dewiswch ‘Ydw’, ‘Na’ neu ‘Ddim yn siŵr’ i barhau"
+  },
+  "q5": {
+    "question": "Pa fathau o bensiwn sydd gennych chi?",
+    "description": "Mae sut mae eich pensiwn yn gweithio, a'ch opsiynau, yn dibynnu ar y mathau sydd gennych chi.",
+    "options": {
+      "option1": "Cyfraniadau wedi’u diffinio",
+      "option1HintText": "Cronfa o arian rydych chi (ac weithiau'ch cyflogwr) yn talu iddo. Y cynlluniau pensiwn mwyaf diweddar yw'r math hwn.",
+      "option2": "Buddion wedi’u diffinio",
+      "option2HintText": "Yn aml yn cael ei alw'n gynllun cyflog terfynol neu gyfartaledd gyrfa. Pensiwn gweithle lle mae'r incwm yn seiliedig ar eich cyflog a'r blynyddoedd rydych chi wedi bod yn aelod o'r cynllun.",
+      "option3": "Pensiwn y Wladwriaeth",
+      "option3HintText": "Dyma arian y gallwch chi ei hawlio gan y llywodraeth pan fyddwch chi'n cyrraedd eich oedran Pensiwn y Wladwriaeth. Mae'r swm y byddwch chi'n ei gael yn dibynnu ar eich cofnod Yswiriant Gwladol.",
+      "option4": "Arall",
+      "option4HintText": "Er enghraifft, cynlluniau cyfraniadau wedi’u diffinio cyfunol, hybrid a balans arian parod.",
+      "option5": "Ddim yn siŵr",
+      "option5HintText": "Os nad ydych chi'n siŵr, byddwn ni'n dangos canllawiau i chi ar gyfer pob math ac yn egluro sut i ddarganfod pa fath sydd gennych."
+    },
+    "errorSummaryDescription": "Dewiswch o leiaf un opsiwn i barhau"
+  },
+  "q6": {
+    "question": "Ydych chi'n ystyried dod â nifer o bensiynau at ei gilydd?",
+    "description": "Os oes gennych chi fwy nag un cynllun pensiwn, un opsiwn yw eu trosglwyddo i un darparwr. Gelwir hyn yn gyfuno ac mae ganddo fanteision ac anfanteision.",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na",
+      "option3": "Ddim yn siŵr"
+    },
+    "errorSummaryDescription": "Dewiswch 'Ydw', 'Na', neu 'Ddim yn siŵr' i barhau."
+  },
+  "q7": {
+    "question": "Ydych chi'n bwriadu ymddeol y tu allan i'r DU?",
+    "description": "Efallai y byddwch chi'n cael eich effeithio gan reolau treth a Phensiwn y Wladwriaeth gwahanol os ydych chi'n bwriadu ymddeol dramor.",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na",
+      "option3": "Ddim yn siŵr"
+    },
+    "errorSummaryDescription": "Dewiswch 'Ydw', 'Na', neu 'Ddim yn siŵr' i barhau."
+  },
+  "q8": {
+    "question": "Ydych chi'n mynd trwy ysgariad neu'n dod â phartneriaeth sifil i ben?",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Pam ydyn ni'n gofyn hyn?",
+      "infoText": "Mae gennych chi wahanol opsiynau i rannu'ch pensiwn os ydych chi'n gwahanu oddi wrth eich partner."
+    },
+    "errorSummaryDescription": "Dewiswch ‘Ydw’ neu ‘Na’ i barhau."
+  },
+  "q9": {
+    "question": "Pa gostau tai ydych chi'n disgwyl eu cael yn eich ymddeoliad?",
+    "description": "Dyma'r gost o fyw yn eich cartref ar ôl i chi ymddeol, yn seiliedig ar eich cynlluniau presennol.",
+    "options": {
+      "option1": "Rhent –   landlord preifat",
+      "option2": "Rhent –   tai cymdeithasol",
+      "option3": "Morgais",
+      "option4": "Dim"
+    },
+    "errorSummaryDescription": "Dewiswch un opsiwn i barhau"
+  },
+  "q10": {
+    "question": "Ydych chi'n cael trafferth talu eich biliau neu'ch dyledion?",
+    "description": "Gallai hyn gynnwys biliau rhent, nwy, trydan neu Dreth Gyngor ac ad-daliadau ar gyfer benthyciad, cerdyn credyd neu forgais.",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Pam ydyn ni'n gofyn hyn?",
+      "infoText": "Os ydych chi'n cael trafferth talu eich costau neu eisoes ar ei hôl hi, gallai cyngor am ddim ar ddyled eich helpu i fynd yn ôl ar y trywydd iawn."
+    },
+    "errorSummaryDescription": "Dewiswch ‘Ydw’ neu ‘Na’ i barhau"
+  },
+  "q11": {
+    "question": "Ydych chi wedi cael cyngor ar ddyled?",
+    "options": {
+      "option1": "Ydw",
+      "option2": "Na"
+    },
+    "moreInfo": {
+      "moreInfoLink": "Pam ydyn ni'n gofyn hyn?",
+      "infoText": "Os nad ydych chi eisoes yn cael cyngor ar ddyled, gallwn ni ddangos i chi sut i ddod o hyd i ymgynghorwyr dyledion am ddim a chyfrinachol yn eich ardal chi."
+    },
+    "errorSummaryDescription": "Dewiswch ‘Ydw’ neu ‘Na’ i barhau"
+  },
+  "checkAnswers": {
+    "heading": "Gwiriwch eich atebion",
+    "description": "Dyma beth rydych chi wedi'i ddweud wrthym. Gallwch newid eich atebion os oes angen."
+  },
+  "results": {
+    "heading": "Eich canllaw pensiynau ac ymddeoliad wedi'u teilwra",
+    "description": "Yn seiliedig ar eich atebion, dyma'ch canllawiau pensiynau ac ymddeoliad wedi'u teilwra. Rydym wedi rhestru'r camau gweithredu a allai gael yr effaith fwyaf yn gyntaf, ond gallwch eu gwneud mewn unrhyw drefn.",
+    "changeAnswersButton": "Newid atebion",
+    "copyResultsLink": {
+      "default": "Copïo'r ddolen i'ch canlyniadau",
+      "confirmation": "Wedi copïo'r ddolen"
+    },
+    "otherTools": {
+      "heading": "Cyfrifwch eich incwm a'ch costau ymddeoliad",
+      "tool1": {
+        "name": "Gwiriwch faint sy'n cael ei dalu i mewn i'ch pensiwn gweithle",
+        "description": "Darganfyddwch faint rydych chi a'ch cyflogwr yn ei dalu i mewn bob mis gyda'n cyfrifiannell cyfraniadau pensiwn gweithle am ddim."
+      },
+      "tool2": {
+        "name": "Cyfrifwch eich costau ymddeoliad",
+        "description": "Darganfyddwch a fydd eich incwm ymddeoliad amcangyfrifedig yn talu eich holl gostau hanfodol gyda'n cynlluniwr cyllideb ymddeoliad am ddim."
+      },
+      "tool3": {
+        "name": "Gweler eich cyfanswm incwm ymddeoliad",
+        "description": "Amcangyfrifwch eich cyfanswm incwm ymddeoliad gyda'n cyfrifiannell pensiwn am ddim, gan gynnwys sut y byddai'n newid pe byddech chi'n cynilo mwy."
+      }
+    },
+    "staticGuidance": {
+      "heading": "Beth i ganolbwyntio arno nesaf",
+      "statePensionEligibilitySGR7": {
+        "title": "Gwiriwch eich bod ar y trywydd i gael y Pensiwn y Wladwriaeth llawn",
+        "paragraph1": "Mae swm y [Pensiwn y Wladwriaeth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/state-pension-an-overview) y byddwch yn ei gael yn dibynnu ar faint o flynyddoedd o gyfraniadau neu gredydau Yswiriant Gwladol sydd gennych pan fyddwch yn cyrraedd eich oedran Pensiwn y Wladwriaeth.",
+        "paragraph2": "Gallwch [wirio eich rhagolwg Pensiwn y Wladwriaeth](https://www.gov.uk/check-state-pension) ar GOV.UK i weld beth rydych ar y trywydd i'w gael.",
+        "paragraph3": "Ar yr amod na fyddwch yn cyrraedd eich oedran Pensiwn y Wladwriaeth o fewn 30 diwrnod, gallwch hefyd:",
+        "list1": "[ffonio llinell gymorth Canolfan Pensiwn y Dyfodol](https://www.gov.uk/future-pension-centre)",
+        "list2": "[gwneud cais drwy'r post](https://www.gov.uk/government/publications/application-for-a-state-pension-statement).",
+        "paragraph4": "Os yw eich rhagolwg yn dangos efallai na fyddwch yn gymwys i gael y swm llawn, mae yna ffyrdd o gynyddu eich Pensiwn y Wladwriaeth – gan gynnwys hawlio credydau am ddim neu dalu i lenwi bylchau yn eich cofnod.",
+        "paragraph5": "Gall hyn olygu eich bod yn talu cannoedd nawr i gael miloedd yn ôl mewn incwm ychwanegol yn ddiweddarach – yn dibynnu ar ba mor hir rydych yn byw.",
+        "paragraph6": "Am gymorth cam wrth gam, gweler ein canllaw [Cynyddu eich Pensiwn y Wladwriaeth gyda chyfraniadau Yswiriant Gwladol gwirfoddol](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/voluntary-national-insurance-contributions-and-the-state-pension)."
+      },
+      "benefitsSGR1": {
+        "title": "Gwiriwch a allwch chi hawlio Credyd Pensiwn",
+        "paragraph1": "Gwiriwch bob amser a oes gennych chi hawl i [Gredyd Pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/pension-credit) i roi hwb i'ch incwm. Hyd yn oed os nad ydych chi'n gymwys i gael llawer o arian ychwanegol, gall eich gwneud chi'n gymwys i gael grantiau a chymorth eraill.",
+        "paragraph2": "Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i weld beth rydych chi'n gymwys iddo."
+      },
+      "preRetirementBenefitsSGR2": {
+        "title": "Gwiriwch a allwch hawlio Credyd Pensiwn, ynghyd â grantiau a disgowntiau eraill",
+        "paragraph1": "Gwiriwch bob amser a oes gennych hawl i [Gredyd Pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/pension-credit) i roi hwb i'ch incwm. Hyd yn oed os nad ydych yn gymwys i gael llawer o arian ychwanegol, gall eich gwneud yn gymwys i gael grantiau a chymorth eraill.",
+        "paragraph2": "Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i weld beth sydd gennych hawl iddo.",
+        "paragraph3": "Efallai y byddwch hefyd yn gallu cael cymorth i dalu rhai costau. Er enghraifft:",
+        "list1": "cymorth gyda'ch biliau gwresogi",
+        "list2": "tocyn bws am ddim",
+        "list3": "trwydded deledu am ddim",
+        "list4": "cymorth gyda thriniaeth ddeintyddol.",
+        "paragraph4": "Darganfyddwch fwy yn ein canllaw am [fudd-daliadau yn ystod ymddeoliad](https://www.moneyhelper.org.uk/cy/benefits/benefits-in-later-life/benefits-in-retirement)."
+      },
+      "genderPensionGapSGR3": {
+        "title": "Gwiriwch a ydych chi'n cael eich effeithio gan y bwlch pensiynau rhywedd",
+        "paragraph1": "Y bwlch pensiynau rhywedd yw'r gwahaniaeth rhwng gwerthoedd pensiwn cyfartalog dynion a menywod. Ar gyfartaledd, mae gan fenywod tua hanner cymaint wedi'i gynilo mewn pensiwn â dynion erbyn 60 oed.",
+        "paragraph2": "Ond mae yna bethau y gallwch chi eu gwneud i helpu i bontio'r bwlch hwn, gan gynnwys ychwanegu at bensiwn partner â chyflog is a chynnwys pensiynau bob amser mewn cytundeb ysgaru, diddymu neu wahanu.",
+        "paragraph3": "Darganfyddwch fwy yn ein canllaw [Ffyrdd o gau'r bwlch pensiynau rhywedd](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/ways-to-close-gender-pensions-gap)."
+      },
+      "deathBenefitsSGR4": {
+        "title": "Deall beth sy'n digwydd i'ch pensiwn pan fyddwch chi'n marw",
+        "paragraph1": "Gallwch ddweud wrth eich darparwr pensiwn pwy hoffech chi dderbyn eich pensiwn pan fyddwch chi'n marw, a elwir yn fuddiolwyr.",
+        "paragraph2": "Fel arfer, rydych chi'n gwneud hyn trwy lenwi eu ffurflen mynegiant dymuniad. Mae'n bwysig cadw hyn yn gyfredol, yn enwedig ar ôl newidiadau fel ysgariad neu wahanu.",
+        "paragraph3": "Yn dibynnu ar y math o bensiwn sydd gennych, bydd eich buddiolwyr fel arfer naill ai'n derbyn:",
+        "list1": "eich cronfa bensiwn sy'n weddill",
+        "list2": "cyfran o'ch incwm rheolaidd, a elwir fel arfer yn fudd-daliadau marwolaeth",
+        "paragraph4": "Am wybodaeth lawn, gan gynnwys sut mae'r arian yn cael ei drethu, gweler ein canllaw [Beth sy'n digwydd i'm pensiwn pan fyddaf yn marw?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death)"
+      },
+      "deathBenefitsSGR5": {
+        "title": "Deall beth sy'n digwydd i'ch pensiwn pan fyddwch chi'n marw",
+        "paragraph1": "Gallwch ddweud wrth eich darparwr pensiwn pwy hoffech chi dderbyn eich pensiwn pan fyddwch chi'n marw, a elwir yn fuddiolwyr.",
+        "paragraph2": "Fel arfer, rydych chi'n gwneud hyn trwy lenwi eu ffurflen mynegiant dymuniad. Mae'n bwysig cadw hyn yn gyfredol, yn enwedig ar ôl newidiadau fel ysgariad neu wahanu.",
+        "paragraph3": "Yn dibynnu ar y math o bensiwn sydd gennych, bydd eich buddiolwyr fel arfer naill ai'n derbyn:",
+        "list1": "eich cronfa bensiwn sy'n weddill",
+        "list2": "cyfran o'ch incwm rheolaidd, a elwir fel arfer yn fudd-daliadau marwolaeth",
+        "paragraph4": "Fel arfer, caiff unrhyw arian a etifeddwyd o'ch pensiwn ei ychwanegu at enillion eich buddiolwyr i gyfrifo faint o Dreth Incwm y mae angen iddynt ei thalu.",
+        "paragraph5": "Os byddwch chi'n marw cyn 75 oed ac yn gadael pensiwn cyfraniadau wedi’u diffinio, mae lwfans di-dreth sydd fel arfer yn berthnasol ar gyfer cyfandaliadau.",
+        "paragraph6": "Am wybodaeth lawn, gan gynnwys sut mae'r arian yn cael ei drethu, gweler ein canllaw [Beth sy'n digwydd i'm pensiwn pan fyddaf yn marw?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/pensions-after-death)",
+        "subHeading": "Efallai y bydd eich buddiolwyr yn talu Treth Etifeddiant",
+        "paragraph7": "Hyd at fis Ebrill 2027, ni fydd unrhyw arian sydd gennych yn eich cronfa bensiwn pan fyddwch chi'n marw - neu unrhyw fudd-daliadau marwolaeth y mae eich cynllun yn addo eu talu - fel arfer yn cael ei gyfrif wrth gyfrifo Treth Etifeddiant.",
+        "paragraph8": "O fis Ebrill 2027 ymlaen, gellir cyfrif unrhyw arian sydd ar ôl yn eich pensiwn neu mewn budd-daliadau marwolaeth wrth gyfrifo Treth Etifeddiant.",
+        "paragraph9": "Am ragor o wybodaeth, gweler ein canllaw am [Dreth Etifeddiant yn y DU](https://www.moneyhelper.org.uk/cy/family-and-care/death-and-bereavement/a-guide-to-inheritance-tax)."
+      },
+      "scamsSGR6": {
+        "title": "Peidiwch byth â chyrchu eich pensiwn os ydych chi'n teimlo dan bwysau neu'n anniogel",
+        "paragraph1": "Peidiwch â chyrchu eich pensiwn na throsglwyddo unrhyw arian i ddarparwr pensiwn oherwydd galwad, ymweliad, e-bost neu neges destun diwahoddiad. Mae'n debygol o fod yn sgam sydd wedi'i chynllunio i ddwyn eich arian.",
+        "paragraph2": "Efallai y byddwch chi'n colli'ch holl gynilion ymddeoliad a gorfod talu bil treth drud.",
+        "paragraph3": "Darganfyddwch fwy yn ein canllaw [Sut i adnabod sgam pensiwn](https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam)."
+      }
+    },
+    "variableGuidance": {
+      "heading": "Beth i'w wneud yn gyntaf",
+      "divorce17": {
+        "title": "Penderfynwch sut i rannu eich pensiynau mewn ysgariad neu ddiddymiad",
+        "paragraph1": "Dylech bob amser gynnwys pensiynau mewn setliad ysgariad neu ddiddymiad, hyd yn oed os ydych chi wedi cytuno i'w cadw ar wahân.",
+        "paragraph2": "Mae hyn oherwydd efallai mai nhw bydd eich asedau mwyaf a gallant fod werth mwy na'ch cartref, felly efallai nad ydych chi'n cael bargen deg.",
+        "paragraph3": "Fel arfer gallwch ddewis defnyddio un neu fwy o'r opsiynau hyn:",
+        "list1": [
+          "trosglwyddo cyfran o bensiwn un person i un arall, a elwir yn rhannu pensiwn",
+          "gofyn i'r darparwr pensiwn dalu cyfran o'r incwm pensiwn yn y dyfodol i bob un ohonoch, a elwir yn atodi neu glustnodi pensiwn",
+          "cadw'r pensiwn llawn a gadael i'r partner arall gymryd asedau eraill o werth tebyg, a elwir yn wrthbwyso pensiwn."
+        ],
+        "paragraph4": "Fel arfer bydd angen i chi benderfynu sut mae eich pensiynau'n cael eu rhannu rhyngoch chi - nid oes angen eu rhannu'n gyfartal bob amser. Gallech ystyried defnyddio cyfryngwr i'ch helpu i benderfynu.",
+        "paragraph5": "Am ragor o wybodaeth, gweler [Sut i rannu pensiynau mewn ysgariad neu ddiddymiad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/split-pensions-in-a-divorce-or-dissolution). Gallwch hefyd trefnu [apwyntiad Pensiynau ac ysgariad neu ddiddymiad](https://www.moneyhelper.org.uk/cy/family-and-care/divorce-and-separation/divorce-dissolution-pensions-appointment) am ddim i gael arweiniad diduedd ar eich opsiynau gan un o'n harbenigwyr pensiwn."
+      },
+      "overseas8": {
+        "title": "Deall eich opsiynau pensiwn os byddwch yn symud dramor",
+        "description": "Os byddwch yn symud dramor, fel arfer mae gennych 2 opsiwn ar gyfer eich pensiwn yn y DU – ei adael lle mae neu ei gymryd gyda chi.",
+        "option1": "Opsiwn 1: Gadael eich pensiwn lle mae eisoes",
+        "paragraph1": "Rhaid i chi ddweud wrth eich darparwr eich bod yn symud dramor, ond bydd eich pensiwn yn parhau i gael ei reoli yn y DU.",
+        "paragraph2": "Pan fyddwch yn barod i gymryd eich pensiwn, fel arfer caiff ei dalu mewn punnoedd a'i drethu fel incwm yn y DU. Os oes ei angen arnoch mewn arian cyfred gwahanol, gallech drosglwyddo'r arian i gyfrif cyfnewid tramor – mae llawer o fanciau mawr yn cynnig y rhain.",
+        "paragraph3": "Y prif risg yw peidio â gwybod faint o incwm pensiwn y byddwch yn ei gael oherwydd:",
+        "list1": "efallai y bydd angen i chi dalu ffioedd cyfnewid",
+        "list2": "mae cyfraddau cyfnewid yn aml yn newid yn ddyddiol.",
+        "paragraph4": "Os ydych chi'n bwriadu parhau i dalu i mewn i bensiwn yn y DU ar ôl i chi symud dramor, efallai na fyddwch yn gymwys i gael unrhyw ryddhad treth ar eich cyfraniadau chwaith.",
+        "paragraph5": "Am ragor o wybodaeth, gweler [A allaf gynilo mewn pensiwn yn y DU os ydw i'n byw dramor?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad#Can-I-save-into-a-UK-pension-scheme-if-I-live-overseas)",
+        "option2": "Opsiwn 2: Trosglwyddo eich pensiwn i gynllun tramor",
+        "paragraph6": "Fe allech chi ystyried symud eich pensiwn i gynllun tramor i gael eich incwm pensiwn:",
+        "list3": "wedi'i dalu yn eich arian cyfred lleol",
+        "list4": "wedi'i drethu yn y wlad rydych chi'n symud iddi.",
+        "paragraph7": "Gall hyn fod yn gymhleth, felly fel arfer mae'n syniad da talu am gyngor ariannol yn y DU ac yn y wlad rydych chi'n symud eich pensiwn iddi.",
+        "paragraph8": "Am ragor o wybodaeth, gweler ein canllaw [Sut i symud eich pensiwn y DU dramor](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/moving-your-uk-pension-overseas)."
+      },
+      "overseas8a": {
+        "title": "Gwiriwch a fydd eich Pensiwn y Wladwriaeth y DU yn cael ei effeithio gan symud dramor",
+        "paragraph1": "Gallwch hawlio [Pensiwn y Wladwriaeth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/state-pension-an-overview) y DU os byddwch yn symud dramor, ond ni fyddwch yn gymwys ar gyfer:",
+        "list1": "cynnydd blynyddol – oni bai bod [y wlad rydych yn symud iddi wedi'i rhestru ar GOV.UK](https://www.gov.uk/government/publications/state-pensions-annual-increases-if-you-live-abroad/countries-where-we-pay-an-annual-increase-in-the-state-pension)",
+        "list2": "[Credyd Pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/pension-credit).",
+        "paragraph2": "Os telir eich Pensiwn y Wladwriaeth i gyfrif rhyngwladol, byddwch yn ei dderbyn yn eich arian cyfred lleol. Mae hyn yn golygu bod y swm a gewch yn dibynnu ar y gyfradd gyfnewid ar y pryd.",
+        "paragraph3": "Am ragor o wybodaeth, gweler ein canllaw [Beth sy'n digwydd i'm pensiwn os byddaf yn ymddeol dramor?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad)"
+      },
+      "overseas8b": {
+        "title": "Penderfynwch a ydych chi eisiau symud eich pensiwn dramor",
+        "description": "Os byddwch chi'n symud dramor, fel arfer mae gennych 2 opsiwn ar gyfer eich pensiwn yn y DU – ei adael lle mae neu ei gymryd gyda chi.",
+        "option1": "Opsiwn 1: Gadael eich pensiwn lle mae eisoes",
+        "paragraph1": "Rhaid i chi ddweud wrth eich darparwr eich bod chi'n symud dramor, ond bydd eich pensiwn yn parhau i gael ei reoli yn y DU.",
+        "paragraph2": "Pan fyddwch chi'n barod i gymryd eich pensiwn, fel arfer caiff ei dalu mewn punnoedd a'i drethu fel incwm yn y DU. Os oes ei angen arnoch chi mewn arian cyfred gwahanol, gallech chi drosglwyddo'r arian i gyfrif cyfnewid tramor – mae llawer o fanciau mawr yn cynnig y rhain.",
+        "paragraph3": "Y prif risg yw peidio â gwybod faint o incwm pensiwn y byddwch chi'n ei gael oherwydd:",
+        "list1": "efallai y bydd angen i chi dalu ffioedd cyfnewid",
+        "list2": "mae cyfraddau cyfnewid yn aml yn newid yn ddyddiol.",
+        "paragraph4": "Os ydych chi'n bwriadu parhau i dalu i mewn i bensiwn y DU ar ôl i chi symud dramor, efallai na fyddwch chi'n gymwys i gael unrhyw ryddhad treth ar eich cyfraniadau chwaith.",
+        "paragraph5": "Am ragor o wybodaeth, gweler [A allaf gynilo i mewn i bensiwn y DU os ydw i'n byw dramor?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad#Can-I-save-into-a-UK-pension-scheme-if-I-live-overseas-)",
+        "option2": "Opsiwn 2: Trosglwyddo eich pensiwn i gynllun tramor",
+        "paragraph6": "Fe allech chi ystyried symud eich pensiwn i gynllun tramor i gael eich incwm pensiwn:",
+        "list3": "wedi'i dalu yn eich arian cyfred lleol",
+        "list4": "wedi'i drethu yn y wlad rydych chi'n symud iddi.",
+        "paragraph7": "Gall hyn fod yn gymhleth, felly fel arfer mae'n syniad da talu am gyngor ariannol yn y DU ac yn y wlad rydych chi'n symud eich pensiwn iddi.",
+        "paragraph8": "Am ragor o wybodaeth, gweler ein canllaw [Sut i symud eich pensiwn y DU dramor](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/moving-your-uk-pension-overseas).",
+        "subHeading": "Efallai y bydd eich Pensiwn Gwladwriaeth y DU yn cael ei effeithio os byddwch chi'n symud dramor",
+        "paragraph9": "Gallwch hawlio [Pensiwn y Wladwriaeth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/state-pension-an-overview) y DU os byddwch yn symud dramor, ond ni fyddwch yn gymwys ar gyfer:",
+        "list5": "cynnydd blynyddol – oni bai bod [y wlad rydych yn symud iddi wedi'i rhestru ar GOV.UK](https://www.gov.uk/government/publications/state-pensions-annual-increases-if-you-live-abroad/countries-where-we-pay-an-annual-increase-in-the-state-pension)",
+        "list6": "[Credyd Pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension/pension-credit).",
+        "paragraph10": "Os telir eich Pensiwn y Wladwriaeth i gyfrif rhyngwladol, byddwch yn ei dderbyn yn eich arian cyfred lleol. Mae hyn yn golygu bod y swm a gewch yn dibynnu ar y gyfradd gyfnewid ar y pryd.",
+        "paragraph11": "Am ragor o wybodaeth, gweler ein canllaw [Beth sy'n digwydd i'm pensiwn os byddaf yn ymddeol dramor?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/moving-living-and-retiring-abroad)"
+      },
+      "employment02": {
+        "title": "Gwiriwch a fydd eich cyflogwr yn talu mwy i mewn i'ch pensiwn",
+        "paragraph1": "Mae eich cyflogwr eisoes yn talu i mewn i'ch pensiwn, ond efallai nad ydych chi'n cael y swm mwyaf posibl.",
+        "paragraph2": "I wirio, gofynnwch i'ch cyflogwr a ydyn nhw'n cynnig cyfateb cyfraniadau. Mae hyn yn golygu y byddan nhw'n talu mwy i mewn i'ch pensiwn os gwnewch chi hynny hefyd, hyd at derfyn penodol.",
+        "paragraph3": "Er enghraifft, os bydd eich cyflogwr yn cyfateb hyd at 10% o'ch cyflog, byddan nhw fel arfer yn talu i mewn:",
+        "list1": "5% os ydych chi'n talu 5% i mewn",
+        "list2": "8% os ydych chi'n talu 8% i mewn",
+        "list3": "10% os ydych chi'n talu 10% i mewn",
+        "paragraph4": "Gall hyn ychwanegu cannoedd neu filoedd o bunnoedd at eich pensiwn bob blwyddyn. Gall ein [Cyfrifiannell cyfraniadau pensiwn gweithle](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/workplace-pension-calculator) gyfrifo faint y gallech chi ei gael.",
+        "paragraph5": "Efallai na fydd talu mwy i mewn i'ch pensiwn yn lleihau eich cyflog net cymaint ag yr ydych chi'n meddwl. Mae hyn oherwydd eich bod chi fel arfer yn cael rhyddhad treth pan fyddwch chi'n talu i mewn i bensiwn.",
+        "paragraph6": "Er enghraifft, bydd cyfraniad o £10 i'ch pensiwn fel arfer yn costio:",
+        "list4": "£8 os ydych chi'n talu treth ar y gyfradd sylfaenol",
+        "list5": "£6 os ydych chi'n talu treth ar y gyfradd uwch.",
+        "paragraph7": "Darganfyddwch fwy yn ein canllaw [Ffyrdd o roi hwb i'ch pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "employment02a": {
+        "title": "Gwiriwch a allwch chi roi hwb i'ch pensiwn drwy wneud cyfraniadau ychwanegol",
+        "paragraph1": "Mae eich [pensiwn buddion wedi’u diffinio](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained) yn gweithio drwy roi incwm ymddeoliad gwarantedig i chi yn seiliedig ar eich cyflog a pha mor hir y gwnaethoch chi weithio i'ch cyflogwr.",
+        "paragraph2": "Ond efallai y byddwch chi'n gallu cynyddu eich buddion drwy wneud cyfraniadau gwirfoddol ychwanegol (AVCs).",
+        "paragraph3": "Mae'r rhain yn daliadau ychwanegol i'ch pensiwn ar ben eich cyfraniadau safonol, sydd fel arfer yn swm penodol yn seiliedig ar eich cyflog presennol.",
+        "paragraph4": "Darganfyddwch fwy yn ein canllaw [Rhoi hwb i'ch pensiwn gydag AVCs](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/what-are-avcs-and-fsavcs).",
+        "paragraph5": "Os nad yw'ch cynllun yn caniatáu i chi wneud AVCs, gallech chi [ddechrau eich pensiwn cyfraniadau wedi’u diffinio eich hun](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself) ar gyfer unrhyw gynilion ychwanegol."
+      },
+      "employment02b": {
+        "title": "Gwiriwch a allwch chi roi hwb i'ch pensiwn drwy wneud cyfraniadau ychwanegol",
+        "paragraph1": "Ar gyfer eich pensiwn [cyfraniadau wedi’u diffinio](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/defined-contribution-pension-schemes), gofynnwch i'ch cyflogwr a ydyn nhw'n cynnig [cyfateb cyfraniadau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/contribution-matching). Mae hyn yn golygu y byddan nhw'n talu mwy i'ch pensiwn os gwnewch chi hynny hefyd, hyd at derfyn penodol.",
+        "paragraph2": "Gall hyn ychwanegu cannoedd neu filoedd o bunnoedd at eich pensiwn bob blwyddyn. Gall ein [Cyfrifiannell cyfraniadau pensiwn gweithle](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/workplace-pension-calculator) gyfrifo faint y gallech chi ei gael.",
+        "paragraph3": "Ar gyfer eich [pensiwn buddion wedi’u diffinio](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained), efallai y byddwch chi'n gallu cynyddu eich buddion drwy wneud cyfraniadau gwirfoddol ychwanegol (AVCs).",
+        "paragraph4": "Mae'r rhain yn daliadau ychwanegol i'ch pensiwn ar ben eich cyfraniadau safonol, sydd fel arfer yn swm penodol yn seiliedig ar eich cyflog presennol.",
+        "paragraph5": "Darganfyddwch fwy yn ein canllaw [Rhoi hwb i'ch pensiwn gydag AVCs](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/what-are-avcs-and-fsavcs).",
+        "paragraph6": "Os nad yw'ch cynllun yn caniatáu i chi wneud AVCs, gallech chi [ddechrau eich pensiwn cyfraniadau wedi’u diffinio eich hun](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself) ar gyfer unrhyw gynilion ychwanegol."
+      },
+      "employment03": {
+        "title": "Gofynnwch i ymuno â chynllun pensiwn eich cyflogwr",
+        "paragraph1": "Gallwch ofyn i ymuno â chynllun pensiwn gweithle eich cyflogwr ar unrhyw adeg rhwng 16 a 75 oed. Os gwnaethoch adael y cynllun o'r blaen ac eisiau ailymuno, bydd rhai cynlluniau'n caniatáu hyn ar unrhyw adeg tra bydd eraill efallai ond yn ei ganiatáu unwaith y flwyddyn.",
+        "paragraph2": "Rhaid i'ch cyflogwr hefyd eich cofrestru'n awtomatig mewn cynllun pensiwn os ydych chi'n breswylydd yn y DU ac:",
+        "list1": "fel arfer yn gweithio yn y DU",
+        "list2": "rhwng 22 oed ac [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/state-pension-age)",
+        "list3": "yn ennill mwy na £192 yr wythnos, £833 y mis neu £10,000 y flwyddyn",
+        "list4": "nad oes gennych bensiwn gweithle addas eisoes.",
+        "paragraph3": "Mae hyn yn cynnwys os oeddech wedi optio allan o'r blaen ond yn dal i fodloni'r meini prawf, felly mae'n debygol y byddwch yn cael eich cofrestru'n awtomatig eto o fewn tair blynedd i optio allan.",
+        "paragraph4": "Am ragor o wybodaeth, gweler ein canllaw am [gofrestru awtomatig pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/automatic-enrolment-an-introduction)."
+      },
+      "employment04": {
+        "title": "Gwiriwch gost cynyddu eich cyfraniadau a manteisiwch ar ryddhad treth ychwanegol",
+        "paragraph1": "Fel arfer, bydd eich pensiwn yn talu incwm ymddeoliad uwch i chi os gallwch chi arbed dros y cyfnod hiraf posibl. Mae hyn oherwydd bod y swm y byddwch chi'n ei gael yn dibynnu'n fawr ar:",
+        "list1": "faint rydych chi'n ei dalu i mewn",
+        "list2": "faint sy'n cael ei ychwanegu o dwf buddsoddiad.",
+        "paragraph2": "Gall ein [Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator) eich helpu i gyfrifo amcangyfrif o gyfanswm eich incwm ymddeoliad, gan gynnwys faint y gallech fod ei angen a sut y gallai newid os byddwch chi’n cynilo mwy.",
+        "paragraph3": "Er enghraifft, os ydych chi’n cynilo £200 i mewn i bensiwn bob mis, yn 65 oed gallai eich pensiwn fod werth tua:",
+        "list3": "£158,000 os byddwch chi'n dechrau yn 20 oed",
+        "list4": "£112,000 os byddwch chi'n dechrau yn 30 oed",
+        "list5": "£73,000 os byddwch chi'n dechrau yn 40 oed",
+        "list6": "£40,000 os byddwch chi'n dechrau yn 50 oed.",
+        "subHeading1": "Fel arfer, byddwch chi'n elwa o ryddhad treth ychwanegol",
+        "paragraph4": "Pan fyddwch chi'n talu i mewn i bensiwn, fel arfer byddwch chi'n elwa o [ryddhad treth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/tax-relief-and-your-pension). Mae hwn yn daliad ychwanegol gan y llywodraeth ac mae'n golygu bod yr arian y byddech chi fel arfer yn ei dalu mewn Treth Incwm yn mynd i'ch pensiwn yn lle.",
+        "paragraph5": "Er enghraifft, am bob £100 a delir i'ch pensiwn:",
+        "list7": "mae trethdalwr cyfradd sylfaenol (20%) yn talu £80",
+        "list8": "mae trethdalwr cyfradd uwch (40%) yn talu £60.",
+        "paragraph6": "Daw'r gweddill o ryddhad treth.",
+        "paragraph7": "Bob blwyddyn dreth, fel arfer gallwch gael rhyddhad treth ar eich cyfraniadau pensiwn hyd at 100% o'ch enillion neu £60,000 – pa bynnag un sydd isaf.",
+        "paragraph8": "Os ydych chi'n ennill llai na £3,600, gallwch chi gynilo hyd at £2,880 i mewn i bensiwn a dal i gael rhyddhad treth.",
+        "subHeading2": "Efallai y bydd angen i chi hawlio rhywfaint o'ch rhyddhad treth",
+        "paragraph9": "Os ydych chi'n talu Treth Incwm uwchlaw 20%, fel arfer bydd angen i chi hawlio'r rhyddhad treth ychwanegol eich hun. Gallwch:",
+        "list9": "[wneud cais ar GOV.UK](https://www.gov.uk/guidance/claim-tax-relief-on-your-private-pension-payments)",
+        "list10": "[cysylltu â CThEF](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees) neu",
+        "list11": "cwblhau [ffurflen dreth Hunanasesiad](https://www.gov.uk/register-for-self-assessment).",
+        "paragraph10": "Am ragor o wybodaeth, gweler ein canllaw am [bensiynau hunangyflogedig](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pensions-for-self-employed-people)."
+      },
+      "employment05": {
+        "title": "Dechrau eich pensiwn eich hun",
+        "paragraph1": "Ar ei ben ei hun, mae'n annhebygol y bydd Pensiwn y Wladwriaeth yn rhoi digon o arian i chi ar gyfer ymddeoliad cyfforddus – hyd yn oed os ydych chi'n gymwys ar gyfer y swm uchaf.",
+        "paragraph2": "Bydd angen i chi hefyd aros tan eich [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/state-pension-age) i'w hawlio.",
+        "paragraph3": "Mae dechrau eich pensiwn eich hun fel arfer yn golygu y byddwch chi:",
+        "list1": "yn cael mwy o arian i fyw arno yn eich ymddeoliad",
+        "list2": "yn gallu cymryd eich pensiwn unrhyw bryd o 55 oed (57 o fis Ebrill 2028)",
+        "list3": "yn cael incwm os oes angen i chi ymddeol yn gynnar oherwydd iechyd gwael.",
+        "paragraph4": "Bydd llawer o ddarparwyr pensiwn yn gadael i chi ddewis faint rydych chi'n ei dalu i mewn a pha mor aml – fel swm rheolaidd neu daliadau untro pryd bynnag.",
+        "paragraph5": "Am ragor o wybodaeth, gweler ein canllawiau:",
+        "list4": "[Canllaw i bensiynau hunangyflogedig](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pensions-for-self-employed-people)",
+        "list5": "[Sut i ddechrau eich pensiwn eich hun](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/choosing-a-pension-yourself)"
+      },
+      "employment06": {
+        "title": "Gwiriwch a ydych chi'n cynilo digon ar gyfer eich ymddeoliad",
+        "paragraph1": "Os ydych chi'n sefydlu eich pensiwn eich hun, efallai y bydd gan eich darparwr isafswm y mae'n rhaid i chi ei dalu i mewn bob mis, fel £100. Ond fel arfer mae angen i chi dalu llawer mwy na'r isafswm i gynilo digon ar gyfer ymddeoliad cyfforddus.",
+        "paragraph2": "Gall ein [Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator) gyfrifo amcangyfrif o'ch incwm ymddeoliad, gan gynnwys faint y gallech fod ei angen a sut y gallai newid os byddwch chi'n cynilo mwy.",
+        "paragraph3": "Pan fyddwch chi'n talu i mewn i bensiwn, fel arfer rydych chi'n elwa o ryddhad treth. Mae hwn yn daliad ychwanegol gan y llywodraeth ac mae'n golygu bod yr arian y byddech chi fel arfer yn ei dalu mewn Treth Incwm yn mynd i mewn i'ch pensiwn yn lle.",
+        "paragraph4": "Er enghraifft, am bob £100 a delir i mewn i'ch pensiwn:",
+        "list1": "mae trethdalwr cyfradd sylfaenol (20%) yn talu £80",
+        "list2": "mae trethdalwr cyfradd uwch (40%) yn talu £60.",
+        "paragraph5": "Daw'r gweddill o ryddhad treth.",
+        "paragraph6": "Bob blwyddyn dreth, fel arfer gallwch gael rhyddhad treth ar eich cyfraniadau pensiwn hyd at 100% o'ch enillion neu £60,000 - pa bynnag un sydd isaf.",
+        "paragraph7": "Os ydych chi'n ennill llai na £3,600, gallwch chi gynilo hyd at £2,880 i mewn i bensiwn a dal i gael rhyddhad treth.",
+        "paragraph8": "Am ragor o wybodaeth, gweler [Pam ddylwn i gynilo i mewn i bensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/why-save-into-a-pension)",
+        "paragraph9": "Mae [Retirement Living Standards](https://www.retirementlivingstandards.org.uk/) hefyd yn rhestru faint y gallech fod ei angen ar gyfer ymddeoliad cyfforddus."
+      },
+      "employment07": {
+        "title": "Dechreuwch eich pensiwn eich hun",
+        "paragraph1": "Hyd yn oed os ydych chi'n gymwys ar gyfer y Pensiwn y Wladwriaeth uchaf, mae'n annhebygol y bydd yn rhoi digon o arian i chi ar gyfer ymddeoliad cyfforddus. Bydd angen i chi hefyd aros tan eich [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/state-pension-age) i'w hawlio.",
+        "paragraph2": "Mae cynilo i'ch pensiwn eich hun yn golygu y gallwch chi:",
+        "list1": "ddewis cymryd arian o 55 oed (57 o fis Ebrill 2028) neu'n iau os oes angen i chi [ymddeol oherwydd iechyd gwael](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/early-retirement-because-of-illness-sickness-or-disability)",
+        "list2": "dal i hawlio'r Pensiwn y Wladwriaeth pan fyddwch chi'n ddigon hen.",
+        "paragraph3": "Am ragor o wybodaeth, gweler:",
+        "list3": "ein canllaw [Pam ddylwn i gynilo i bensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/why-save-into-a-pension)",
+        "list4": "faint y gallech fod ei angen ar gyfer ymddeoliad cyfforddus ar wefan [Retirement Living Standards](https://www.retirementlivingstandards.org.uk/)"
+      },
+      "housing09": {
+        "title": "Ystyriwch ddefnyddio gwerth eich cartref i hybu eich incwm ymddeoliad",
+        "paragraph1": "Mae yna ffyrdd o ddefnyddio gwerth eich cartref i gynyddu eich incwm yn eich ymddeoliad, gan gynnwys talu am unrhyw gostau gofal. Er enghraifft, gallech:",
+        "list1": "symud i gartref rhatach a chynilo neu fuddsoddi'r gwahaniaeth, a elwir yn lleihau maint eich cartref",
+        "list2": "benthyg arian sydd wedi'i glymu yn eich cartref gan ddefnyddio morgais ymddeoliad o 50 oed neu ryddhau ecwiti o 55 oed.",
+        "paragraph2": "Am ragor o wybodaeth am eich opsiynau, gweler ein canllaw [A ddylwn i leihau maint fy nghartref i ariannu fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing09a": {
+        "title": "Ystyriwch ddefnyddio gwerth eich cartref i hybu eich incwm ymddeoliad",
+        "paragraph1": "Mae yna ffyrdd o ddefnyddio gwerth eich cartref i gynyddu eich incwm yn eich ymddeoliad, gan gynnwys talu am unrhyw gostau gofal. Er enghraifft, gallech:",
+        "list1": "symud i gartref rhatach a chynilo neu fuddsoddi'r gwahaniaeth, a elwir yn lleihau maint eich cartref",
+        "list2": "benthyg arian sydd wedi'i glymu yn eich cartref gan ddefnyddio morgais ymddeoliad o 50 oed neu ryddhau ecwiti o 55 oed.",
+        "paragraph2": "Am ragor o wybodaeth am eich opsiynau, gweler ein canllaw [A ddylwn i leihau maint fy nghartref i ariannu fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing10": {
+        "title": "Ystyriwch ddefnyddio gwerth eich cartref i hybu eich incwm ymddeoliad",
+        "paragraph1": "Efallai y byddwch yn gallu defnyddio gwerth eich cartref i gynyddu eich incwm yn eich ymddeoliad, gan gynnwys talu am unrhyw gostau gofal. Mae hyn yn cynnwys:",
+        "list1": "Symud i gartref rhatach a chynilo neu fuddsoddi'r gwahaniaeth, a elwir yn [lleihau maint eich cartref](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement). Gall hyn hefyd helpu i sicrhau bod eich cartref yn addas ar gyfer eich anghenion yn y dyfodol, fel byngalo, eiddo ymddeoliad neu dai gwarchod.",
+        "list2": "Cael mynediad at yr arian sydd wedi'i glymu yn eich cartref, naill ai gan ddefnyddio morgais neu ryddhau ecwiti.",
+        "paragraph2": "Gyda [morgais ymddeoliad llog yn unig (RIO)](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/retirement-interest-only-mortgages), rydych chi'n talu swm misol i dalu'r llog ac ad-dalu'r benthyciad pan fyddwch chi'n gwerthu'r tŷ, yn marw, yn symud i ofal hirdymor neu ar ddiwedd tymor y morgais. Mae hyn fel arfer ar gael o 50 oed.",
+        "paragraph3": "Gyda [rhyddhau ecwiti](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/what-is-equity-release), o 55 oed, gallwch fel arfer ddewis naill ai:",
+        "list3": "gymryd morgais gydol oes gyda thaliadau llog misol – yna caiff y benthyciad ei ad-dalu pan fyddwch chi'n gwerthu, yn marw neu'n symud allan",
+        "list4": "gwerthu'ch cartref cyfan neu ran ohono i ddarparwr cynllun gwrthdroi cartref am lai na'i werth marchnad ac aros yn byw yno fel tenant am gyfnod y cytunwyd arno gyda swm isel o rent i'w dalu.",
+        "paragraph4": "Efallai y byddwch hefyd yn gallu [defnyddio cynllun rhyddhau ecwiti i ariannu eich gofal](https://www.moneyhelper.org.uk/cy/family-and-care/long-term-care/using-an-equity-release-scheme-to-fund-your-care)."
+      },
+      "housing10a": {
+        "title": "Ystyriwch ddefnyddio gwerth eich cartref i hybu eich incwm ymddeoliad",
+        "paragraph1": "Efallai y byddwch yn gallu defnyddio gwerth eich cartref i gynyddu eich incwm yn eich ymddeoliad, gan gynnwys talu am unrhyw gostau gofal. Mae hyn yn cynnwys:",
+        "list1": "Symud i gartref rhatach a chynilo neu fuddsoddi'r gwahaniaeth, a elwir yn [lleihau maint eich cartref](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement). Gall hyn hefyd helpu i sicrhau bod eich cartref yn addas ar gyfer eich anghenion yn y dyfodol, fel byngalo, eiddo ymddeoliad neu dai gwarchod.",
+        "list2": "Cael mynediad at yr arian sydd wedi'i glymu yn eich cartref, naill ai gan ddefnyddio morgais neu ryddhau ecwiti.",
+        "paragraph2": "Gyda [morgais ymddeoliad llog yn unig (RIO)](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/retirement-interest-only-mortgages), rydych chi'n talu swm misol i dalu'r llog ac ad-dalu'r benthyciad pan fyddwch chi'n gwerthu'r tŷ, yn marw, yn symud i ofal hirdymor neu ar ddiwedd tymor y morgais. Mae hyn fel arfer ar gael o 50 oed.",
+        "paragraph3": "Gyda [rhyddhau ecwiti](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/what-is-equity-release), o 55 oed, gallwch fel arfer ddewis naill ai:",
+        "list3": "gymryd morgais gydol oes gyda thaliadau llog misol – yna caiff y benthyciad ei ad-dalu pan fyddwch chi'n gwerthu, yn marw neu'n symud allan",
+        "list4": "gwerthu'ch cartref cyfan neu ran ohono i ddarparwr cynllun gwrthdroi cartref am lai na'i werth marchnad ac aros yn byw yno fel tenant am gyfnod y cytunwyd arno gyda swm isel o rent i'w dalu.",
+        "paragraph4": "Efallai y byddwch hefyd yn gallu [defnyddio cynllun rhyddhau ecwiti i ariannu eich gofal](https://www.moneyhelper.org.uk/cy/family-and-care/long-term-care/using-an-equity-release-scheme-to-fund-your-care)."
+      },
+      "housing11": {
+        "title": "Gwiriwch yr opsiynau morgais sydd ar gael ar ôl i chi ymddeol a chynlluniwch sut y byddwch chi'n ad-dalu'r ddyled",
+        "paragraph1": "Fel arfer, mae'n anoddach cael morgais newydd wrth i chi agosáu at oedran ymddeol, gan fod angen i chi basio gwiriadau fforddiadwyedd benthycwyr o hyd. Ond mae cynhyrchion arbennig y gallech eu hystyried.",
+        "paragraph2": "Mae hyn yn cynnwys:",
+        "list1": "[Morgais ymddeoliad llog yn unig (RIO)](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/retirement-interest-only-mortgages), lle rydych chi'n talu swm misol i dalu'r llog ac ad-dalu'r benthyciad pan fyddwch chi'n gwerthu'r tŷ, yn marw, yn symud i ofal hirdymor neu ar ddiwedd tymor y morgais. Mae hyn fel arfer ar gael o 50 oed.",
+        "list2": "Cynllun [rhyddhau ecwiti](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/what-is-equity-release), o 55 oed, sydd naill ai'n caniatáu i chi:",
+        "sublist1": "gymryd morgais gydol oes gyda thaliadau llog misol - yna caiff y benthyciad ei ad-dalu pan fyddwch chi'n gwerthu, yn marw neu'n symud allan",
+        "sublist2": "werthu'ch cartref cyfan neu ran ohono i ddarparwr cynllun gwrthdroi cartref am lai na'i werth marchnad ac aros yn byw yno fel tenant am gyfnod y cytunwyd arno - gyda swm isel o rent i'w dalu.",
+        "subHeading": "Cynlluniwch sut y byddwch yn ad-dalu eich morgais presennol",
+        "paragraph3": "Oni bai eich bod eisoes yn berchen ar eich cartref yn llwyr, bydd angen i chi gynllunio sut y byddwch yn ad-dalu eich morgais cyn i chi ymddeol.",
+        "paragraph4": "Os oes gennych forgais llog yn unig, bydd angen i chi gyllidebu i dalu'r swm llawn sy’n ddyledus gennych, gan mai dim ond y llog y mae eich ad-daliadau arferol yn ei dalu.",
+        "paragraph5": "Osgowch ddibynnu ar ad-dalu eich morgais gan ddefnyddio cyfandaliad yn y dyfodol nad yw wedi'i warantu, fel:",
+        "list3": "arian o etifeddiaeth neu fonws",
+        "list4": "gwerthu a phrynu cartref rhatach i ddefnyddio'r gwahaniaeth.",
+        "paragraph6": "Yn lle, cysylltwch â'ch benthyciwr i ddeall eich opsiynau - fel symud i forgais ad-dalu. Mae hefyd yn syniad da darganfod a oes unrhyw gosbau am ad-dalu eich morgais yn gynnar.",
+        "paragraph7": "Am ragor o wybodaeth, gweler ein canllawiau:",
+        "list5": "[Ffyrdd o ad-dalu morgais llog yn unig](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage)",
+        "list6": "[A ddylech chi dalu eich morgais yn gynnar?](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/should-you-pay-off-your-mortgage-early)",
+        "subHeading2": "Ystyriwch ddefnyddio gwerth eich cartref i hybu eich incwm ymddeoliad",
+        "paragraph8": "Mae yna ffyrdd o ddefnyddio gwerth eich cartref i gynyddu eich incwm yn eich ymddeoliad, gan gynnwys talu am unrhyw gostau gofal.",
+        "paragraph9": "Er enghraifft, gallech symud i gartref rhatach a chynilo neu fuddsoddi'r gwahaniaeth, a elwir yn symud i gartref llai.",
+        "paragraph10": "Am ragor o wybodaeth am eich opsiynau, gweler ein canllaw [A ddylwn i symud i gartref llai i ariannu fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "housing12": {
+        "title": "Gwiriwch yr opsiynau morgais sydd ar gael ar ôl i chi ymddeol a chynlluniwch sut y byddwch chi'n ad-dalu'r ddyled",
+        "paragraph1": "Fel arfer, mae'n anoddach cael morgais newydd wrth i chi agosáu at oedran ymddeoliad, gan fod angen i chi basio gwiriadau fforddiadwyedd benthycwyr o hyd. Ond mae cynhyrchion arbennig y gallech eu hystyried.",
+        "paragraph2": "Mae hyn yn cynnwys:",
+        "list1": "[Morgais ymddeoliad llog yn unig (RIO)](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/retirement-interest-only-mortgages), lle rydych chi'n talu swm misol i dalu'r llog ac ad-dalu'r benthyciad pan fyddwch chi'n gwerthu'r tŷ, yn marw, yn symud i ofal hirdymor neu ar ddiwedd tymor y morgais. Mae hyn fel arfer ar gael o 50 oed.",
+        "list2": "Cynllun [rhyddhau ecwiti](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/what-is-equity-release), o 55 oed, sydd naill ai'n caniatáu i chi:",
+        "sublist1": "gymryd morgais gydol oes gyda thaliadau llog misol - yna caiff y benthyciad ei ad-dalu pan fyddwch chi'n gwerthu, yn marw neu'n symud allan",
+        "sublist2": "werthu'ch cartref cyfan neu ran ohono i ddarparwr cynllun gwrthdroi cartref am lai na'i werth marchnad ac aros yn byw yno fel tenant am gyfnod y cytunwyd arno - gyda swm isel o rent i'w dalu.",
+        "subHeading": "Cynlluniwch sut y byddwch yn ad-dalu eich morgais presennol",
+        "paragraph3": "Oni bai eich bod eisoes yn berchen ar eich cartref yn llwyr, bydd angen i chi gynllunio sut y byddwch yn ad-dalu eich morgais cyn i chi ymddeol.",
+        "paragraph4": "Os oes gennych forgais llog yn unig, bydd angen i chi gyllidebu i dalu'r swm llawn sy’n ddyledus gennych, gan mai dim ond y llog y mae eich ad-daliadau arferol yn ei dalu.",
+        "paragraph5": "Osgowch ddibynnu ar ad-dalu eich morgais gan ddefnyddio cyfandaliad yn y dyfodol nad yw wedi'i warantu, fel:",
+        "list3": "arian o etifeddiaeth neu fonws",
+        "list4": "gwerthu a phrynu cartref rhatach i ddefnyddio'r gwahaniaeth.",
+        "paragraph6": "Yn lle, cysylltwch â'ch benthyciwr i ddeall eich opsiynau - fel symud i forgais ad-dalu. Mae hefyd yn syniad da darganfod a oes unrhyw gosbau am ad-dalu eich morgais yn gynnar.",
+        "paragraph7": "Am ragor o wybodaeth, gweler ein canllawiau:",
+        "list5": "[Ffyrdd o ad-dalu morgais llog yn unig](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage)",
+        "list6": "[A ddylech chi dalu eich morgais yn gynnar?](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/should-you-pay-off-your-mortgage-early)",
+        "subHeading2": "Cael help os ydych chi’n poeni am dalu eich ad-daliadau morgais",
+        "paragraph8": "Os ydych chi’n poeni byddwch chi’n methu ad-daliad morgais, neu’n cael traffeth i’w had-dalu, rhowch wybod i’ch benthyciwr morgais. Mae’n rhaid iddynt eich helpu a’ch trin yn deg.",
+        "paragraph9": "Er enghraifft, efallai bydden nhw’n gallu lleihau neu stopio eich taliadau dros dro gan:",
+        "list7": "estynu tymor eich morgais",
+        "list8": "eich caniatau i ad-dalu’r llog yn unig",
+        "list9": "rhoi gwyliau talu i chi – fel arfer ni fydd angen i chi wneud unrhyw daliadau yn ystod y cyfnod hwn.",
+        "paragraph10": "Os ydych chi eisoes wedi methu taliad neu rydych mewn ôl-ddyledion morgais, y peth gorau yw siarad ag ymgynghorydd dyledion. Gall ein [teclyn Lleolwr Cyngor ar Ddyledion](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator) eich helpu i ddod o hyd i ymgynghorwyr dyledion am ddim a chyfrinachol yn agos atoch chi, ar-lein a dros y ffôn."
+      },
+      "housing12a": {
+        "title": "Cael help os ydych chi’n poeni am dalu eich ad-daliadau morgais",
+        "paragraph1": "Os ydych chi’n poeni byddwch chi’n methu ad-daliad morgais, neu’n cael trafferth i’w ad-dalu, rhowch wybod i’ch benthyciwr morgais. Mae’n rhaid iddynt eich helpu a’ch trin yn deg.",
+        "paragraph2": "Er enghraifft, efallai bydden nhw’n gallu lleihau neu stopio eich taliadau dros dro gan:",
+        "list1": "estynu tymor eich morgais",
+        "list2": "eich caniatau i ad-dalu’r llog yn unig",
+        "list3": "rhoi gwyliau talu i chi – fel arfer ni fydd angen i chi wneud unrhyw daliadau yn ystod y cyfnod hwn.",
+        "paragraph3": "Os ydych chi eisoes wedi methu taliad neu rydych mewn ôl-ddyledion morgais, y peth orau yw siarad ag ymgynghorydd dyledion. Gall ein [teclyn Lleolwr Cyngor ar Ddyledion](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator) eich helpu i ddod o hyd i ymgynghorwyr dyledion am ddim a chyfrinachol yn agos atoch chi, ar-lein a dros y ffôn."
+      },
+      "housing13": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu'ch rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer, mae rhent y cyngor neu gymdeithas dai yn cynyddu bob mis Ebrill, yn aml yn unol â chwyddiant neu hyd at uchafswm y cytunwyd arno ar gyfer yr ardal rydych chi'n byw ynddo.",
+        "paragraph2": "Mae hyn yn golygu y bydd angen i chi gynllunio sut y byddwch chi'n talu'r swm ychwanegol bob blwyddyn.",
+        "paragraph3": "Os ydych chi'n cael Budd-dal Tai neu elfen dai Credyd Cynhwysol, gwiriwch a ydych chi'n gymwys i gael Taliad Tai Dewisol (DHP). Gall hyn eich helpu i dalu'ch costau tai. Darganfyddwch fwy yn ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "Gallwch hefyd ofyn am gyfnewid eich cartref os nad yw bellach yn diwallu'ch anghenion, efallai oherwydd ei fod yn rhy fawr neu nad yw'n diwallu'ch anghenion hygyrchedd yn eich ymddeoliad. Gweler [eich hawliau os ydych chi'n rhentu gan y cyngor neu gymdeithas dai](https://www.moneyhelper.org.uk/cy/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association)."
+      },
+      "housing14": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu'ch rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer, mae rhent y cyngor neu gymdeithas dai yn cynyddu bob mis Ebrill, yn aml yn unol â chwyddiant neu hyd at uchafswm y cytunwyd arno ar gyfer yr ardal rydych chi'n byw ynddi.",
+        "paragraph2": "Mae hyn yn golygu y bydd angen i chi gynllunio sut y byddwch chi'n talu'r swm ychwanegol bob blwyddyn.",
+        "paragraph3": "Os ydych chi'n cael Budd-dal Tai neu elfen dai Credyd Cynhwysol, gwiriwch a ydych chi'n gymwys i gael Taliad Tai Dewisol (DHP). Gall hyn eich helpu i dalu'ch costau tai. Darganfyddwch fwy yn ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "Gallwch hefyd ofyn am gyfnewid eich cartref os nad yw bellach yn diwallu'ch anghenion, efallai oherwydd ei fod yn rhy fawr neu nad yw'n diwallu'ch anghenion hygyrchedd yn eich ymddeoliad. Gweler [eich hawliau os ydych chi'n rhentu gan y cyngor neu gymdeithas dai](https://www.moneyhelper.org.uk/cy/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association).",
+        "subHeading": "Gall cymryd cyfandaliad di-dreth o'ch pensiwn leihau'ch incwm yn y dyfodol",
+        "paragraph5": "Os cymerwch [gyfandaliad di-dreth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) o'ch pensiwn, byddwch fel arfer yn lleihau'r incwm yn y dyfodol y gall ei ddarparu - y gallai fod ei angen arnoch i dalu'ch costau hanfodol, gan gynnwys eich rhent. Mae hyn yn golygu y gallech fod mewn sefyllfa waeth yn gyffredinol. Os byddwch yn [cymryd eich pensiwn cyfan](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), byddwch fel arfer yn colli cyfran fawr ohono i Dreth Incwm.",
+        "paragraph6": "Os yw'r swm a gymerwch o'ch pensiwn yn cynyddu'ch incwm neu gynilion cyffredinol, gallai hefyd effeithio ar y budd-daliadau y mae gennych hawl iddynt. Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i wirio beth rydych yn gymwys i'w gael nawr a sut y gallai newid pe bai'ch incwm neu gynilion yn cynyddu."
+      },
+      "housing14a": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu'ch rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer, mae rhent y cyngor neu gymdeithas dai yn cynyddu bob mis Ebrill, yn aml yn unol â chwyddiant neu hyd at uchafswm y cytunwyd arno ar gyfer yr ardal rydych chi'n byw ynddi.",
+        "paragraph2": "Mae hyn yn golygu y bydd angen i chi gynllunio sut y byddwch chi'n talu'r swm ychwanegol bob blwyddyn.",
+        "paragraph3": "Os ydych chi'n cael Budd-dal Tai neu elfen dai Credyd Cynhwysol, gwiriwch a ydych chi'n gymwys i gael Taliad Tai Dewisol (DHP). Gall hyn eich helpu i dalu'ch costau tai. Darganfyddwch fwy yn ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph4": "Gallwch hefyd ofyn am gyfnewid eich cartref os nad yw bellach yn diwallu'ch anghenion, efallai oherwydd ei fod yn rhy fawr neu nad yw'n diwallu'ch anghenion hygyrchedd yn eich ymddeoliad. Gweler [eich hawliau os ydych chi'n rhentu gan y cyngor neu gymdeithas dai](https://www.moneyhelper.org.uk/cy/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association)."
+      },
+      "housing14b": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu'ch rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer, mae rhent y cyngor neu gymdeithas dai yn cynyddu bob mis Ebrill, yn aml yn unol â chwyddiant neu hyd at uchafswm y cytunwyd arno ar gyfer yr ardal rydych chi'n byw ynddi.",
+        "paragraph2": "Mae hyn yn golygu y bydd angen i chi gynllunio sut y byddwch chi'n talu'r swm ychwanegol bob blwyddyn.",
+        "paragraph3": "Mae eich incwm gwarantedig o’ch pensiwn buddion wedi’u diffinio fel arfer yn cynyddu pob blwyddyn, felly gallai hyn helpu i dalu eich cynnydd mewn rhent. Gofynnwch eich darparwr pensiwn faint dylai eich pensiwn cynyddu bob blwyddyn.",
+        "paragraph4": "Os ydych chi'n cael Budd-dal Tai neu elfen dai Credyd Cynhwysol, gwiriwch a ydych chi'n gymwys i gael Taliad Tai Dewisol (DHP). Gall hyn eich helpu i dalu'ch costau tai. Darganfyddwch fwy yn ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph5": "Gallwch hefyd ofyn am gyfnewid eich cartref os nad yw bellach yn diwallu'ch anghenion, efallai oherwydd ei fod yn rhy fawr neu nad yw'n diwallu'ch anghenion hygyrchedd yn eich ymddeoliad. Gweler [eich hawliau os ydych chi'n rhentu gan y cyngor neu gymdeithas dai](https://www.moneyhelper.org.uk/cy/homes/renting/your-legal-and-financial-responsibilities-when-renting#Your-rights-if-you-rent-from-the-council-or-housing-association).",
+        "subHeading": "Gall cymryd cyfandaliad di-dreth o'ch pensiwn leihau'ch incwm yn y dyfodol",
+        "paragraph6": "Os cymerwch [gyfandaliad di-dreth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) o'ch pensiwn, byddwch fel arfer yn lleihau'r incwm yn y dyfodol y gall ei ddarparu - y gallai fod ei angen arnoch i dalu'ch costau hanfodol, gan gynnwys eich rhent. Mae hyn yn golygu y gallech fod mewn sefyllfa waeth yn gyffredinol. Os byddwch yn [cymryd eich pensiwn cyfan](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), byddwch fel arfer yn colli cyfran fawr ohono i Dreth Incwm.",
+        "paragraph7": "Os yw'r swm a gymerwch o'ch pensiwn yn cynyddu'ch incwm neu gynilion cyffredinol, gallai hefyd effeithio ar y budd-daliadau y mae gennych hawl iddynt. Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i wirio beth rydych yn gymwys i'w gael nawr a sut y gallai newid pe bai'ch incwm neu gynilion yn cynyddu."
+      },
+      "housing15": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu eich rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Os ydych chi'n bwriadu symud i gartref rhent newydd ar ôl ymddeol, byddwch yn ymwybodol y bydd angen i chi fel arfer basio gwiriadau fforddiadwyedd o hyd. Er enghraifft, efallai y bydd angen i chi gael incwm blynyddol sy'n werth 2 neu 3 gwaith yn fwy na'r rhent blynyddol.",
+        "paragraph2": "Os yw eich incwm pensiwn rheolaidd yn is na hyn ond bod gennych chi gynilion arian parod, efallai y byddwch chi'n gallu dangos tystiolaeth o hyn yn lle. Ond peidiwch byth â thalu rhent ymlaen llaw gan fod hyn yn anghyfreithlon.",
+        "paragraph3": "Os na allwch chi fforddio cartref rhent sy'n diwallu eich anghenion, ystyriwch leihau maint eich tŷ neu symud i ardal rhatach.",
+        "paragraph4": "Fe allech chi hefyd wneud cais am dai cymdeithasol. Mae'r meini prawf cymhwysedd yn dibynnu ar ble rydych chi'n byw, ond efallai y byddwch chi'n cael blaenoriaeth os oes gennych chi incwm isel ac yn 50 oed neu'n hŷn.",
+        "paragraph5": "Fel arfer mae angen i chi wneud cais ac ymuno â rhestr aros, gyda chartrefi sydd ar gael yn cael eu rhoi i'r rhai sydd â'r flaenoriaeth uchaf.",
+        "paragraph6": "Darganfyddwch fwy yn ein canllaw [Sut i ddod o hyd i gartref rhent y gallwch chi ei fforddio](https://www.moneyhelper.org.uk/cy/homes/renting/how-much-rent-can-you-afford)."
+      },
+      "housing15a": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu eich rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer dim ond unwaith y flwyddyn y gall eich landlord gynyddu eich rhent a rhaid rhoi o leiaf 2 fis o rybudd i chi. Os ydych chi'n credu bod unrhyw gynnydd rhent yn uwch na chyfradd y farchnad ar gyfer eich ardal, gallwch ei herio a [gwneud cais am benderfyniad rhent marchnad](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "Ond mae'r union rheolau yn dibynnu ar y math o gytundeb sydd gennych, a ble yn y DU rydych chi'n rhentu. Er enghraifft, nid oes rhaid i'ch landlord roi rhybudd i chi i gynyddu eich rhent os ydych chi'n lletywr. Am ragor o wybodaeth, gweler ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph3": "Os ydych chi'n bwriadu symud i gartref rhent newydd ar ôl ymddeol, byddwch yn ymwybodol y bydd angen i chi fel arfer basio gwiriadau fforddiadwyedd o hyd. Er enghraifft, efallai y bydd angen i chi gael incwm blynyddol sy'n werth 2 neu 3 gwaith yn fwy na'r rhent blynyddol.",
+        "paragraph4": "Os yw eich incwm pensiwn rheolaidd yn is na hyn ond bod gennych chi gynilion arian parod, efallai y byddwch chi'n gallu dangos tystiolaeth o hyn yn lle. Ond peidiwch byth â thalu rhent ymlaen llaw gan fod hyn yn anghyfreithlon.",
+        "paragraph5": "Os na allwch chi fforddio cartref rhent sy'n diwallu eich anghenion, ystyriwch leihau maint eich tŷ neu symud i ardal rhatach.",
+        "paragraph6": "Fe allech chi hefyd wneud cais am dai cymdeithasol. Mae'r meini prawf cymhwysedd yn dibynnu ar ble rydych chi'n byw, ond efallai y byddwch chi'n cael blaenoriaeth os oes gennych chi incwm isel ac yn 50 oed neu'n hŷn.",
+        "paragraph7": "Fel arfer mae angen i chi wneud cais ac ymuno â rhestr aros, gyda chartrefi sydd ar gael yn cael eu rhoi i'r rhai sydd â'r flaenoriaeth uchaf.",
+        "paragraph8": "Darganfyddwch fwy yn ein canllaw [Sut i ddod o hyd i gartref rhent y gallwch chi ei fforddio](https://www.moneyhelper.org.uk/cy/homes/renting/how-much-rent-can-you-afford)."
+      },
+      "housing16": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu eich rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer dim ond unwaith y flwyddyn y gall eich landlord gynyddu eich rhent a rhaid rhoi o leiaf 2 fis o rybudd i chi. Os ydych chi'n credu bod unrhyw gynnydd rhent yn uwch na chyfradd y farchnad ar gyfer eich ardal, gallwch ei herio a [gwneud cais am benderfyniad rhent marchnad](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "Ond mae'r union rheolau yn dibynnu ar y math o gytundeb sydd gennych, a ble yn y DU rydych chi'n rhentu. Er enghraifft, nid oes rhaid i'ch landlord roi rhybudd i chi i gynyddu eich rhent os ydych chi'n lletywr. Am ragor o wybodaeth, gweler ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "subHeading": "Gall cymryd cyfandaliad di-dreth o'ch pensiwn leihau eich incwm yn y dyfodol",
+        "paragraph3": "Os cymerwch [gyfandaliad di-dreth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) o'ch pensiwn, byddwch fel arfer yn lleihau'r incwm yn y dyfodol y gall ei ddarparu - y gallai fod ei angen arnoch i dalu'ch costau hanfodol, gan gynnwys eich rhent. Mae hyn yn golygu y gallech fod mewn sefyllfa waeth yn gyffredinol. Os byddwch yn [cymryd eich pensiwn cyfan](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), byddwch fel arfer yn colli cyfran fawr ohono i Dreth Incwm.",
+        "paragraph4": "Os yw'r swm a gymerwch o'ch pensiwn yn cynyddu'ch incwm neu gynilion cyffredinol, gallai hefyd effeithio ar y budd-daliadau y mae gennych hawl iddynt. Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i wirio beth rydych yn gymwys i'w gael nawr a sut y gallai newid pe bai'ch incwm neu gynilion yn cynyddu."
+      },
+      "housing16a": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu eich rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Fel arfer dim ond unwaith y flwyddyn y gall eich landlord gynyddu eich rhent a rhaid rhoi o leiaf 2 fis o rybudd i chi. Os ydych chi'n credu bod unrhyw gynnydd rhent yn uwch na chyfradd y farchnad ar gyfer eich ardal, gallwch ei herio a [gwneud cais am benderfyniad rhent marchnad](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph2": "Ond mae'r union rheolau yn dibynnu ar y math o gytundeb sydd gennych, a ble yn y DU rydych chi'n rhentu. Er enghraifft, nid oes rhaid i'ch landlord roi rhybudd i chi i gynyddu eich rhent os ydych chi'n lletywr. Am ragor o wybodaeth, gweler ein canllaw [Cymorth gyda chodiadau rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph3": "Os ydych chi'n bwriadu symud i gartref rhent newydd ar ôl ymddeol, byddwch yn ymwybodol y bydd angen i chi basio gwiriadau fforddiadwyedd fel arfer. Er enghraifft, efallai y bydd angen i chi gael incwm blynyddol sy'n werth 2 neu 3 gwaith yn fwy na'r rhent blynyddol.",
+        "paragraph4": "Os yw eich incwm pensiwn rheolaidd yn is na hyn ond bod gennych chi gynilion arian parod, efallai y byddwch chi'n gallu dangos tystiolaeth o hyn yn lle. Ond peidiwch byth â thalu rhent ymlaen llaw gan fod hyn yn anghyfreithlon.",
+        "paragraph5": "Os na allwch fforddio cartref rhent sy'n diwallu eich anghenion, ystyriwch symud i dŷ llai neu symud i ardal rhatach.",
+        "paragraph6": "Fe allech chi hefyd wneud cais am dai cymdeithasol. Mae'r meini prawf cymhwysedd yn dibynnu ar ble rydych chi'n byw, ond efallai y byddwch chi'n cael blaenoriaeth os oes gennych chi incwm isel ac yn 50 oed neu'n hŷn.",
+        "paragraph7": "Fel arfer, mae angen i chi wneud cais ac ymuno â rhestr aros, gyda chartrefi sydd ar gael yn cael eu rhoi i'r rhai sydd â'r flaenoriaeth uchaf.",
+        "paragraph8": "Darganfyddwch fwy yn ein canllaw [Sut i ddod o hyd i gartref rhent y gallwch chi ei fforddio](https://www.moneyhelper.org.uk/cy/homes/renting/how-much-rent-can-you-afford).",
+        "subHeading": "Gall cymryd cyfandaliad di-dreth o'ch pensiwn leihau eich incwm yn y dyfodol",
+        "paragraph9": "Os cymerwch [gyfandaliad di-dreth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions) o'ch pensiwn, byddwch fel arfer yn lleihau'r incwm yn y dyfodol y gall ei ddarparu - y gallai fod ei angen arnoch i dalu'ch costau hanfodol, gan gynnwys eich rhent. Mae hyn yn golygu y gallech fod mewn sefyllfa waeth yn gyffredinol. Os byddwch yn [cymryd eich pensiwn cyfan](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go), byddwch fel arfer yn colli cyfran fawr ohono i Dreth Incwm.",
+        "paragraph10": "Os yw'r swm a gymerwch o'ch pensiwn yn cynyddu'ch incwm neu gynilion cyffredinol, gallai hefyd effeithio ar y budd-daliadau y mae gennych hawl iddynt. Gallwch ddefnyddio ein [Cyfrifiannell budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i wirio beth rydych yn gymwys i'w gael nawr a sut y gallai newid pe bai'ch incwm neu gynilion yn cynyddu."
+      },
+      "housing16b": {
+        "title": "Cynlluniwch sut y byddwch chi'n talu eich rhent ar ôl i chi ymddeol, gan gynnwys codiadau rhent yn y dyfodol",
+        "paragraph1": "Os ydych chi'n poeni na fyddwch chi'n gallu fforddio cartref rhent sy'n diwallu eich anghenion, ystyriwch leihau maint eich tŷ neu symud i ardal rhatach.",
+        "paragraph2": "Fe allech chi hefyd wneud cais am dai cymdeithasol. Mae'r meini prawf cymhwysedd yn dibynnu ar ble rydych chi'n byw, ond efallai y byddwch chi'n cael blaenoriaeth os oes gennych chi incwm isel ac yn 50 oed neu'n hŷn.",
+        "paragraph3": "Fel arfer, mae angen i chi wneud cais ac ymuno â rhestr aros, gyda chartrefi sydd ar gael yn cael eu rhoi i'r rhai sydd â'r flaenoriaeth uchaf. Darganfyddwch fwy yn ein canllaw [Sut i ddod o hyd i gartref rhent y gallwch chi ei fforddio](https://www.moneyhelper.org.uk/cy/homes/renting/how-much-rent-can-you-afford).",
+        "paragraph4": "Os ydych chi'n aros mewn cartref rhent preifat, byddwch yn ymwybodol mai dim ond unwaith y flwyddyn y gall eich landlord fel arfer gynyddu eich rhent a rhaid i chi gael o leiaf 2 fis o rybudd. Os ydych chi'n credu bod unrhyw gynnydd rhent yn uwch na chyfradd y farchnad ar gyfer eich ardal, gallwch ei herio a [gwneud cais am benderfyniad rhent marchnad](https://www.gov.uk/guidance/apply-for-an-open-market-rent-determination).",
+        "paragraph5": "Ond mae'r union rheolau yn dibynnu ar y math o gytundeb sydd gennych chi, a ble yn y DU rydych chi'n rhentu. Er enghraifft, nid oes rhaid i'ch landlord roi rhybudd i chi i gynyddu'ch rhent os ydych chi'n lletywr. Am ragor o wybodaeth, gweler ein canllaw [Cymorth gyda chynnydd rhent, ôl-ddyledion ac os ydych chi'n cael trafferth talu](https://www.moneyhelper.org.uk/cy/homes/renting/rent-arrears-problems-paying-your-rent#Help-if-you-can-t-afford-your-rent).",
+        "paragraph6": "Os ydych chi'n bwriadu symud i gartref rhent preifat newydd ar ôl ymddeol, byddwch yn ymwybodol y bydd angen i chi basio gwiriadau fforddiadwyedd fel arfer. Er enghraifft, efallai y bydd angen i chi gael incwm blynyddol sy'n werth 2 neu 3 gwaith yn fwy na'r rhent blynyddol.",
+        "paragraph7": "Os yw'ch incwm pensiwn rheolaidd yn is na hyn ond bod gennych chi gynilion arian parod, efallai y byddwch chi'n gallu dangos tystiolaeth o hyn yn lle. Ond peidiwch byth â thalu rhent ymlaen llaw gan fod hyn yn anghyfreithlon."
+      },
+      "debt23": {
+        "title": "Siaradwch ag ymgynghorydd dyledion cyfrinachol am ddim",
+        "paragraph1": "Mae'n syniad da cael help gyda'ch cyllid cyfredol yn gyntaf. Gall trefnu eich dyledion nawr eich helpu i gael ymddeoliad mwy cyfforddus. Nid ydych chi ar eich pen eich hun ac mae help ar gael.",
+        "paragraph2": "Gall ein [teclyn Lleolwr cyngor ar ddyledion](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator) eich helpu i ddod o hyd i ymgynghorwyr dyled cyfrinachol ac am ddim yn agos atoch chi, ar-lein a thros y ffôn."
+      },
+      "debt23a": {
+        "title": "Parhewch i gael cymorth am ddim gyda'ch dyledion",
+        "paragraph1": "Mae'n wych eich bod eisoes wedi cael cyngor ar ddyledion. Gall hyn eich helpu i gynllunio sut i drefnu ac ad-dalu'r arian sy’n ddyledus gennych.",
+        "paragraph2": "Os oes angen mwy o gymorth arnoch, gallwch ddefnyddio ein [teclyn Lleolwr cyngor ar ddyledion](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator) i ddod o hyd i ymgynghorwyr dyledion am ddim a chyfrinachol yn agos atoch chi, ar-lein a thros y ffôn."
+      },
+      "consolidation1": {
+        "title": "Gwiriwch a fyddech chi'n well eich byd wrth drosglwyddo neu gyfuno'ch pensiynau",
+        "paragraph1": "Gallai trosglwyddo'ch pensiwn i ddarparwr neu gynllun gwahanol olygu y gallwch chi:",
+        "list1": "dalu llai os oes gan y cynllun newydd ffioedd is",
+        "list2": "cael mwy o opsiynau i fuddsoddi neu gymryd eich pensiwn",
+        "list3": "dod â chynlluniau pensiwn lluosog at ei gilydd fel y gallwch chi eu rheoli mewn un lle, a elwir yn gyfuno.",
+        "paragraph2": "Gallwch ddewis pa bensiynau rydych chi eisiau cyfuno a pha rai yr hoffech eu cadw ar wahân – nid oes rhaid i chi gyfuno pob un.",
+        "paragraph3": "Ond gydag unrhyw drosglwyddiad pensiwn, mae risg y gallech chi:",
+        "list4": "dalu mwy os oes gan y cynllun newydd ffioedd uwch",
+        "list5": "colli buddion gwerthfawr os mai ond eich darparwr presennol sy’n eu cynnig.",
+        "paragraph4": "Er enghraifft, gallai eich cynllun presennol gynnig taliad bonws ar ôl dyddiad penodol neu fod ag oedran pensiwn gwarchodedig sy'n caniatáu i chi gael mynediad at eich pensiwn yn gynharach nag y byddai cynlluniau newydd eraill.",
+        "paragraph5": "Darganfyddwch fwy yn ein canllaw [A ddylwn i drosglwyddo neu gyfuno fy mhensiynau?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)"
+      },
+      "consolidation1a": {
+        "title": "Fel arfer, mae'n well i chi adael eich pensiwn lle mae",
+        "paragraph1": "Mae'n well i'r rhan fwyaf o bobl gadw buddion wedi’u diffinio, yn ôl yr Awdurdod Ymddygiad Ariannol (FCA) a'r Rheoleiddiwr Pensiynau (TPR).",
+        "paragraph2": "Mae hyn oherwydd bod pensiynau buddion wedi’u diffinio yn cynnig buddion gwarantedig na allwch eu cael yn ôl os byddwch yn trosglwyddo allan.",
+        "paragraph3": "Os byddwch yn trosglwyddo pensiwn buddion wedi’u diffinio i gynllun cyfraniadau wedi’u diffinio, byddwch yn colli'r addewid o incwm ymddeoliad gwarantedig yn seiliedig ar eich cyflog a hyd eich gwasanaeth.",
+        "paragraph4": "Yn lle hynny, mae'r swm a gewch yn ystod ymddeoliad yn dibynnu ar ba mor dda y mae eich arian a fuddsoddwyd yn perfformio - felly mae risg y gallech gael llawer llai.",
+        "paragraph5": "Efallai y bydd angen i chi hefyd gyfyngu ar faint rydych yn ei gymryd i wneud yn siŵr ei fod yn para am eich ymddeoliad llawn.",
+        "paragraph6": "Am wybodaeth lawn, gweler ein canllaw [Sut i drosglwyddo allan o bensiwn buddion wedi’u diffinio](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/transferring-your-defined-benefit-pension)."
+      },
+      "consolidation1b": {
+        "title": "Gwiriwch a fyddech chi'n well eich byd wrth drosglwyddo neu gyfuno'ch pensiynau",
+        "paragraph1": "Gallai trosglwyddo'ch pensiwn i ddarparwr neu gynllun gwahanol olygu y gallwch chi:",
+        "list1": "dalu llai os oes gan y cynllun newydd ffioedd is",
+        "list2": "cael mwy o opsiynau i fuddsoddi neu gymryd eich pensiwn",
+        "list3": "dod â chynlluniau pensiwn lluosog at ei gilydd fel y gallwch eu rheoli mewn un lle – gelwir hyn yn gyfuno.",
+        "paragraph2": "Ond mae risg bob amser o golli buddion gwerthfawr os mai ond eich darparwr presennol sy’n eu cynnig.",
+        "paragraph3": "Er enghraifft, gallai eich cynllun presennol gynnig taliad bonws ar ôl dyddiad penodol neu fod ag oedran pensiwn gwarchodedig sy'n caniatáu i chi gael mynediad at eich pensiwn yn gynharach nag y byddai cynlluniau newydd eraill.",
+        "paragraph4": "Cyn trosglwyddo pensiwn, gweler ein canllaw [A ddylwn i drosglwyddo neu gyfuno fy mhensiynau?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)"
+      },
+      "consolidation1c": {
+        "title": "Gwiriwch a fyddech chi'n well eich byd wrth drosglwyddo neu gyfuno'ch pensiynau",
+        "paragraph1": "Gallai trosglwyddo'ch pensiwn cyfraniadau wedi'u diffinio i ddarparwr neu gynllun gwahanol olygu y gallwch chi:",
+        "list1": "dalu llai os oes gan y cynllun newydd ffioedd is",
+        "list2": "cael mwy o opsiynau i fuddsoddi neu gymryd eich pensiwn",
+        "list3": "dod â chynlluniau pensiwn lluosog at ei gilydd fel y gallwch chi eu rheoli mewn un lle – gelwir hyn yn gyfuno.",
+        "paragraph2": "Gallwch ddewis pa bensiynau rydych chi am eu cyfuno a pha rai yr hoffech chi eu cadw ar wahân – nid oes rhaid i chi eu cyfuno i gyd.",
+        "paragraph3": "Ond gydag unrhyw drosglwyddiad pensiwn, mae risg y gallech chi:",
+        "list4": "dalu mwy os oes gan y cynllun newydd ffioedd uwch",
+        "list5": "colli buddion gwerthfawr os mai ond eich darparwr presennol sy'n eu cynnig.",
+        "paragraph4": "Er enghraifft, gallai eich cynllun presennol gynnig taliad bonws ar ôl dyddiad penodol neu fod ag oedran pensiwn gwarchodedig sy'n caniatáu i chi gael mynediad at eich pensiwn yn gynharach nag y byddai cynlluniau newydd eraill.",
+        "paragraph5": "Darganfyddwch fwy yn ein canllaw [A ddylwn i drosglwyddo neu gyfuno fy mhensiynau?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/transfer-or-combine-pensions)",
+        "subheading1": "Fel arfer, mae'n well i chi adael eich pensiwn buddion wedi'u diffinio lle mae",
+        "paragraph6": "Mae'n well i'r rhan fwyaf o bobl gadw pensiwn buddion wedi'u diffinio, yn ôl yr Awdurdod Ymddygiad Ariannol (FCA) a'r Rheoleiddiwr Pensiynau (TPR).",
+        "paragraph7": "Mae hyn oherwydd bod pensiynau buddion wedi'u diffinio yn cynnig buddion gwarantedig na allwch eu cael yn ôl os byddwch yn trosglwyddo allan.",
+        "paragraph8": "Os byddwch yn trosglwyddo pensiwn buddion wedi'u diffinio i gynllun cyfraniadau wedi'u diffinio, byddwch yn colli'r addewid o incwm ymddeoliad gwarantedig yn seiliedig ar eich cyflog.",
+        "paragraph9": "Yn lle hynny, mae'r swm a gewch yn ystod ymddeoliad yn dibynnu ar ba mor dda y mae eich arian a fuddsoddwyd yn perfformio - felly mae risg y gallech gael llawer llai.",
+        "paragraph10": "Efallai y bydd angen i chi hefyd gyfyngu ar faint rydych yn ei gymryd i wneud yn siŵr ei fod yn para am eich ymddeoliad llawn.",
+        "paragraph11": "Am wybodaeth lawn, gweler ein canllaw [Sut i drosglwyddo allan o bensiwn buddion wedi'u diffinio](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-transfers-consolidation/transferring-your-defined-benefit-pension)."
+      },
+      "findYourPensionType22": {
+        "title": "Darganfyddwch pa fathau o bensiwn sydd gennych",
+        "paragraph1": "Mae'r ffordd y mae eich pensiwn yn gweithio, a'r opsiynau sydd gennych, yn dibynnu ar y mathau sydd gennych.",
+        "paragraph2": "Gallwch [ddarganfod eich math o bensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type) gan ddefnyddio ein teclyn. Gall eich darparwr pensiwn hefyd gadarnhau'r union fath a nodweddion sydd gennych.",
+        "paragraph3": "Am ragor o gymorth a gwybodaeth am y gwahanol fathau o bensiynau, gweler ein hadran [esbonio pensiynau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/why-save-into-a-pension)."
+      },
+      "howMyPensionWorks22a": {
+        "title": "Darganfyddwch pa fathau o bensiwn sydd gennych",
+        "paragraph1": "Os oes gennych bensiynau nad ydych wedi'u cymryd eto, mae'r ffordd maen nhw'n gweithio a'ch opsiynau'n dibynnu ar y math sydd gennych.",
+        "paragraph2": "Gallwch [ddarganfod eich math o bensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type) gan ddefnyddio ein teclyn. Gall eich darparwr pensiwn hefyd gadarnhau'r union fath a nodweddion sydd gennych.",
+        "paragraph3": "Am ragor o gymorth a gwybodaeth am y gwahanol fathau o bensiynau, gweler ein hadran [esbonio pensiynau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/why-save-into-a-pension)."
+      },
+      "howMuchMoneyNeededForRetirement25": {
+        "title": "Darganfyddwch faint o arian fydd ei angen arnoch ar gyfer eich ymddeoliad",
+        "paragraph1": "Gall ein teclyn eich helpu i gyfrifo faint y gallai fod ei angen arnoch mewn ymddeoliad a faint rydych chi'n debygol o'i gael.",
+        "paragraph2": "Gall ein [Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator):",
+        "list1": "gyfrifo incwm ymddeoliad targed i chi, yn seiliedig ar eich cyflog presennol",
+        "list2": "dangos i chi faint rydych chi ar y trywydd i'w gael ar hyn o bryd, ar yr oedran yr hoffech ymddeol.",
+        "paragraph3": "Gallwch hefyd weld sut y gallai eich incwm ymddeoliad amcangyfrifedig newid os ydych chi’n:",
+        "list3": "newid eich cyfraniadau",
+        "list4": "ymddeol ar oedran gwahanol",
+        "list5": "cymryd rhywfaint fel cyfandaliad di-dreth.",
+        "paragraph4": "Gall ein [Cynlluniwr cyllideb ymddeoliad](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner) eich helpu i weld faint o incwm ymddeoliad y bydd ei angen arnoch i dalu eich costau hanfodol.",
+        "paragraph5": "Am ragor o wybodaeth, gweler ein canllaw [Faint o arian sydd ei angen arnaf ar gyfer fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement)"
+      },
+      "howMuchMoneyNeededForRetirement25a": {
+        "title": "Darganfyddwch faint o arian fydd ei angen arnoch ar gyfer eich ymddeoliad",
+        "paragraph1": "Gall ein teclynnau eich helpu i gyfrifo faint y gallai fod ei angen arnoch mewn ymddeoliad a faint rydych chi'n debygol o'i gael.",
+        "paragraph2": "Gall ein [Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator):",
+        "list1": "gyfrifo incwm ymddeoliad targed i chi, yn seiliedig ar eich cyflog presennol",
+        "list2": "dangos i chi faint rydych chi ar y trywydd i'w gael ar hyn o bryd, ar yr oedran yr hoffech ymddeol.",
+        "paragraph3": "Gallwch hefyd weld sut y gallai eich incwm ymddeoliad amcangyfrifedig newid os ydych chi’n:",
+        "list3": "newid eich cyfraniadau",
+        "list4": "ymddeol ar oedran gwahanol",
+        "list5": "cymryd rhywfaint fel cyfandaliad di-dreth.",
+        "paragraph4": "Gall ein [Cynlluniwr Cyllideb](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner) eich helpu i gadw golwg ar eich arian, gan gynnwys ffyrdd o wella eich cyllid.",
+        "paragraph5": "Os oes gennych chi bensiwn cyfraniadau wedi’u diffinio, gallwch gymharu faint o incwm y gallai ei roi i chi gan ddefnyddio ein:",
+        "list6": "[Teclyn cymharu blwydd-daliadau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities) – mae blwydd-dal yn caniatáu i chi drosi rhywfaint neu'ch holl bensiwn yn incwm gwarantedig",
+        "list7": "[Teclyn cymharu llwybrau buddsoddi](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/drawdown-investment-pathways) – mae hyn yn caniatáu i chi gymryd cyfandaliad di-dreth o'ch pensiwn a chadw'r gweddill wedi'i fuddsoddi nes bod ei angen arnoch, a elwir yn dynnu i lawr.",
+        "paragraph6": "Am ragor o wybodaeth, gweler ein canllawiau [Faint o arian sydd ei angen arnaf ar gyfer fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement) a [Beth allaf ei wneud gyda fy nghronfa bensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/pension-pot-options)"
+      },
+      "howMuchMoneyNeededForRetirement25b": {
+        "title": "Darganfyddwch faint o arian fydd ei angen arnoch ar gyfer gweddill eich ymddeoliad",
+        "paragraph1": "Gall ein teclynnau eich helpu i gyfrifo faint y gallai fod ei angen arnoch ar ôl ymddeol a faint rydych chi'n debygol o'i gael.",
+        "paragraph2": "Gall ein [Cynlluniwr cyllideb](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner) eich helpu i gadw cofnod o’ch arian, gan gynnwys ffyrdd i wella eich cyllid.",
+        "paragraph3": "Os oes gennych chi bensiwn buddion wedi’u diffinio sydd heb ddechrau talu, gwiriwch pa ddyddiad bydd yr incwm yn dechrau ac a oes gennych yr opsiwn i’w gymryd yn gynharach neu’n ddiweddarach.",
+        "paragraph4": "Os oes gennych chi bensiwn cyfraniadau wedi’u diffinio, gallwch gymharu faint o incwm y gallai ei roi i chi gan ddefnyddio ein:",
+        "list1": "[Teclyn cymharu blwydd-daliadau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/compare-annuities) – mae blwydd-dal yn caniatáu i chi drosi rhywfaint neu'ch holl bensiwn yn incwm gwarantedig",
+        "list2": "[Teclyn cymharu llwybrau buddsoddi](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/drawdown-investment-pathways) – mae hyn yn caniatáu i chi gymryd cyfandaliad di-dreth o'ch pensiwn a chadw'r gweddill wedi'i fuddsoddi nes bod ei angen arnoch, a elwir yn dynnu i lawr.",
+        "paragraph5": "Am ragor o wybodaeth, gweler ein canllawiau [Faint o arian sydd ei angen arnaf ar gyfer fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-long-might-your-money-need-to-last-in-retirement) a [Beth allaf ei wneud gyda fy nghronfa bensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/pension-pot-options)"
+      },
+      "howToGrowMyPensionAlreadyRetired26": {
+        "title": "Gwiriwch sut mae eich pensiwn wedi'i fuddsoddi",
+        "paragraph1": "Os oes gennych bensiwn cyfraniadau wedi’u diffinio nad ydych wedi'i gyrchu eto neu dim ond wedi cymryd rhywfaint o arian ohono, bydd eich arian yn dal i gael ei fuddsoddi. Mae hyn yn golygu y gall barhau i elwa o dwf buddsoddiad, ond gall ei werth godi a gostwng yn ddyddiol.",
+        "paragraph2": "Gwiriwch bob amser sut mae eich pensiwn wedi'i fuddsoddi, a yw'r strategaeth fuddsoddi yn cyd-fynd â'ch cynlluniau a faint allwch chi fforddio ei gymryd allan heb i'ch pensiwn redeg allan yn gynnar.",
+        "paragraph3": "Am ragor o wybodaeth, gweler ein canllaw am [fuddsoddi eich pensiwn yn eich ymddeoliad](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/investing-in-retirement)."
+      },
+      "whenAndHowCanITakeMyPension24": {
+        "title": "Gwiriwch a ydych chi'n gymwys i gael apwyntiad Pension Wise",
+        "paragraph1": "Mae ein canllaw cam wrth gam yn esbonio [Sut i gymryd eich pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/how-to-take-your-pension).",
+        "paragraph2": "Rydym hefyd yn cynnig [apwyntiadau Pension Wise am ddim](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type) i esbonio'r opsiynau ar gyfer cymryd pensiwn cyfraniadau wedi’u diffinio y DU. Gallwch gael apwyntiad os ydych chi’n:",
+        "list1": "50 oed neu'n hŷn",
+        "list2": "o dan 50 oed ac:",
+        "sublist1": "wedi etifeddu pensiwn rhywun arall",
+        "sublist2": "yn ymddeol yn gynnar oherwydd iechyd gwael, neu",
+        "sublist3": "mae eich cynllun yn caniatáu i chi gymryd eich pensiwn cyn 55 oed.",
+        "paragraph3": "Gallwch ddechrau apwyntiad ar-lein unrhyw bryd neu archebu dyddiad ac amser gydag un o'n harbenigwyr pensiwn."
+      },
+      "whenAndHowCanITakeMyPensionAlreadyRetired24a": {
+        "title": "Gwiriwch a ydych chi'n gymwys i gael apwyntiad Pension Wise",
+        "paragraph1": "Mae ein canllaw cam wrth gam yn esbonio [Sut i gymryd eich pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/how-to-take-your-pension).",
+        "paragraph2": "Rydym hefyd yn cynnig [apwyntiadau Pension Wise am ddim](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type) i esbonio'r opsiynau ar gyfer cymryd pensiwn cyfraniadau wedi’u diffinio y DU. Gallwch gael apwyntiad os ydych chi’n:",
+        "list1": "50 oed neu'n hŷn",
+        "list2": "o dan 50 oed ac:",
+        "sublist1": "wedi etifeddu pensiwn rhywun arall",
+        "sublist2": "yn ymddeol yn gynnar oherwydd iechyd gwael, neu",
+        "sublist3": "mae eich cynllun yn caniatáu i chi gymryd eich pensiwn cyn 55 oed.",
+        "paragraph3": "Gallwch ddechrau apwyntiad ar-lein unrhyw bryd neu archebu dyddiad ac amser gydag un o'n harbenigwyr pensiwn."
+      },
+      "whenAndHowCanITakeMyPension24b": {
+        "title": "Gwiriwch a ydych chi'n gymwys i gael apwyntiad Pension Wise",
+        "paragraph1": "Mae ein canllaw cam wrth gam yn esbonio [Sut i gymryd eich pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/how-to-take-your-pension).",
+        "paragraph2": "Rydym hefyd yn cynnig apwyntiadau Pension Wise am ddim i esbonio'r opsiynau ar gyfer cymryd pensiwn cyfraniadau wedi’u diffinio y DU. Gallwch gael apwyntiad os ydych chi’n:",
+        "list1": "50 oed neu'n hŷn",
+        "list2": "o dan 50 oed ac:",
+        "sublist1": "wedi etifeddu pensiwn rhywun arall",
+        "sublist2": "yn ymddeol yn gynnar oherwydd iechyd gwael, neu",
+        "sublist3": "mae eich cynllun yn caniatáu i chi gymryd eich pensiwn cyn 55 oed.",
+        "paragraph3": "Gallwch ddechrau apwyntiad ar-lein unrhyw bryd neu archebu dyddiad ac amser gydag un o'n harbenigwyr pensiwn."
+      },
+      "whenAndHowCanITakeMyPension24c": {
+        "title": "Gwiriwch pryd a sut y gallwch chi gymryd eich pensiwn",
+        "paragraph1": "Y cynharaf y gallwch chi gymryd arian o'ch pensiwn fel arfer yw 55 oed (yn codi i 57 oed o fis Ebrill 2028).",
+        "paragraph2": "Gelwir hyn yn isafswm oedran pensiwn arferol (NMPA).",
+        "paragraph3": "Ond efallai y byddwch chi'n gallu cymryd eich pensiwn cyn 55 oed os:",
+        "list1": "mae angen i chi ymddeol yn gynnar oherwydd iechyd gwael, neu",
+        "list2": "mae eich darparwr pensiwn yn rhestru NMPA gwarchodedig cynharach.",
+        "paragraph4": "Darganfyddwch fwy yn ein canllaw [Pryd allaf gymryd arian o fy mhensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/when-can-i-take-money-from-my-pension)",
+        "paragraph5": "I gael help i gymryd eich pensiwn, gweler ein canllawiau cam wrth gam:",
+        "list3": "[Sut i gynllunio ar gyfer ymddeoliad: Rhestr wirio cynllunio ymddeol](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/checklist-things-to-do-as-retirement-approaches)",
+        "list4": "[Sut i gymryd eich pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/how-to-take-your-pension)"
+      }
+    }
+  }
+}

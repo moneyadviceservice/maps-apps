@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DetailsRow Component renders a basic row 1`] = `
+<div>
+  <dl
+    class="border-b last:border-b-0"
+  >
+    <div
+      class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+    >
+      <dt
+        class="md:col-span-5"
+      >
+        Email address
+      </dt>
+      <dd
+        class="md:col-span-7"
+      >
+        hello@example.com
+      </dd>
+    </div>
+  </dl>
+</div>
+`;
+
+exports[`DetailsRow Component renders a row with a change link 1`] = `
+<div>
+  <dl
+    class="border-b last:border-b-0"
+  >
+    <div
+      class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+    >
+      <dt
+        class="md:col-span-5"
+      >
+        Phone number
+      </dt>
+      <dd
+        class="md:col-span-5"
+      >
+        01234567890
+      </dd>
+      <dd
+        class="md:col-span-2 md:text-right md:pr-6"
+      >
+        <a
+          class="inline-flex items-center gap-2 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none underline text-magenta-500 hover:text-pink-800"
+          href="/en/contact-details?edit=true"
+        >
+          Change
+        </a>
+      </dd>
+    </div>
+  </dl>
+</div>
+`;
+
+exports[`DetailsRow Component renders a row without a change link 1`] = `
+<div>
+  <dl
+    class="border-b last:border-b-0"
+  >
+    <div
+      class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+    >
+      <dt
+        class="md:col-span-5"
+      >
+        Phone number
+      </dt>
+      <dd
+        class="md:col-span-7"
+      >
+        01234567890
+      </dd>
+    </div>
+  </dl>
+</div>
+`;

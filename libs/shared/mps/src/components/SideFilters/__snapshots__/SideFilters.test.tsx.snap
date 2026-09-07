@@ -1,0 +1,797 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SideFiltersDesktop component renders component correctly 1`] = `
+<div>
+  <div
+    class="rounded-[4px] max-w-[300px] mb-12"
+  >
+    <div
+      class="border-[3px] border-gray-200"
+    >
+      <div
+        class="flex items-center p-2 lg:p-6 bg-gray-95 justify-between"
+      >
+        <h2
+          class="text-lg md:text-xl text-gray-800 font-bold"
+        >
+          Filters
+        </h2>
+        <a
+          class="items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-700 visited:text-magenta-700 text-sm hover:underline hidden lg:block"
+          href="/en/test-page"
+        >
+          Clear all
+        </a>
+      </div>
+      <div
+        data-testid="testId"
+      >
+        <div
+          class="px-6"
+        >
+          <fieldset
+            class="py-8 border-0"
+          >
+            <label
+              class="block pb-2 font-bold text-[18px]"
+              for="desktop-keyword"
+            >
+              Search by...
+            </label>
+            <legend
+              class="sr-only"
+            >
+              Search by...
+            </legend>
+            <div
+              class="text-base"
+            >
+              <input
+                aria-invalid="false"
+                class="px-3 m-px mt-2 h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full text-sm mb-4"
+                id="desktop-keyword"
+                name="keyword"
+                type="text"
+                value=""
+              />
+            </div>
+            <input
+              name="keyword-current"
+              type="hidden"
+              value=""
+            />
+            <button
+              class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-[16px] p-2 w-full lg:w-auto"
+              name="search"
+              type="submit"
+              value="true"
+            >
+              <span />
+              Search
+              <span />
+            </button>
+          </fieldset>
+          <details
+            class="group mb-[-1px] border-slate-400 tool-collapse [&>summary]:border-gray-300 [&>summary]:py-4 [&>summary]:border-t-1 [&>summary]:text-[20px] [&>summary]:lg:text-xl border-0 [&[open]>summary]:border-b-1 [&>summary:last-of-type]:border-b-1 [&>div]:m-0 [&>div]:p-0"
+            data-testid="group-1"
+            open=""
+          >
+            <summary
+              class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+            >
+              <svgr-mock
+                class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                Filter group 1
+              </div>
+            </summary>
+            <div
+              class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+            >
+              <div
+                class="text-[18px] mb-4 last-of-type:mb-8 border-0"
+                data-testid="desktop-group-1"
+              >
+                <fieldset>
+                  <legend
+                    class="text-2xl text-gray-800 sr-only"
+                  >
+                    Filter group 1
+                  </legend>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-1"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-1"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-1-children"
+                      >
+                        Filter 1
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-2"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-2"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-2-children"
+                      >
+                        Filter 2
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-3"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-3"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-3-children"
+                      >
+                        Filter 3
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-4"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-4"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-4-children"
+                      >
+                        Filter 4
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-5"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-5"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-5-children"
+                      >
+                        Filter 5
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-1-filter-6"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-6"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-1-filter-6-children"
+                      >
+                        Filter 6
+                      </p>
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+          </details>
+          <details
+            class="group mb-[-1px] border-slate-400 tool-expand [&>summary]:border-gray-300 [&>summary]:py-4 [&>summary]:border-t-1 [&>summary]:text-[20px] [&>summary]:lg:text-xl border-0 [&[open]>summary]:border-b-1 [&>summary:last-of-type]:border-b-1 [&>div]:m-0 [&>div]:p-0"
+            data-testid="group-2"
+          >
+            <summary
+              class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+            >
+              <svgr-mock
+                class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                Filter group 2
+              </div>
+            </summary>
+            <div
+              class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+            >
+              <div
+                class="text-[18px] mb-4 border-0 last-of-type:mb-0"
+                data-testid="desktop-group-2"
+              >
+                <fieldset>
+                  <legend
+                    class="text-2xl text-gray-800 sr-only"
+                  >
+                    Filter group 2
+                  </legend>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-2-filter-2-1"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-2"
+                      type="checkbox"
+                      value="filter-2-1"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-2-filter-2-1-children"
+                      >
+                        Filter 7
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="desktop-group-2-fitler-2-2"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-2"
+                      type="checkbox"
+                      value="fitler-2-2"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="desktop-group-2-fitler-2-2-children"
+                      >
+                        Filter 8
+                      </p>
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div
+          class="px-4 py-8 flex-col lg:flex space-y-6"
+        >
+          <button
+            class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-[16px] p-2 w-full lg:w-auto"
+            type="submit"
+          >
+            <span />
+            Apply filter
+            <span />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SideFiltersMobile component renders component correctly 1`] = `
+<div>
+  <div
+    class="lg:hidden mb-8"
+  >
+    <details
+      class="group border-1 border-gray-300 rounded-[4px]"
+    >
+      <summary
+        class="p-0.5 lg:p-6 bg-slate-200 cursor-pointer group-open:border-b-1 border-gray-300 list-none rounded-[4px]"
+      >
+        <div
+          class="flex items-center justify-center gap-2"
+        >
+          <div
+            class="w-6 h-6 flex items-center justify-center"
+          >
+            <svgr-mock
+              class="w-4 h-4 text-gray-600 group-open:hidden"
+            />
+            <svgr-mock
+              class="w-4 h-4 text-gray-600 hidden group-open:block fill-gray-600"
+            />
+          </div>
+          <h5
+            class="text-lg md:text-xl font-bold text-gray-900"
+          >
+            Filters
+          </h5>
+        </div>
+      </summary>
+      <div
+        data-testid="testId"
+      >
+        <div
+          class="px-6"
+        >
+          <fieldset
+            class="py-8 border-0"
+          >
+            <label
+              class="block pb-2 font-bold text-[18px]"
+              for="mobile-keyword"
+            >
+              Search by...
+            </label>
+            <legend
+              class="sr-only"
+            >
+              Search by...
+            </legend>
+            <div
+              class="text-base"
+            >
+              <input
+                aria-invalid="false"
+                class="px-3 m-px mt-2 h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400 w-full text-sm mb-4"
+                id="mobile-keyword"
+                name="keyword"
+                type="text"
+                value=""
+              />
+            </div>
+            <input
+              name="keyword-current"
+              type="hidden"
+              value=""
+            />
+            <button
+              class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-[16px] p-2 w-full lg:w-auto"
+              name="search"
+              type="submit"
+              value="true"
+            >
+              <span />
+              Search
+              <span />
+            </button>
+          </fieldset>
+          <details
+            class="group mb-[-1px] border-slate-400 tool-collapse [&>summary]:border-gray-300 [&>summary]:py-4 [&>summary]:border-t-1 [&>summary]:text-[20px] [&>summary]:lg:text-xl border-0 [&[open]>summary]:border-b-1 [&>summary:last-of-type]:border-b-1 [&>div]:m-0 [&>div]:p-0"
+            data-testid="group-1"
+            open=""
+          >
+            <summary
+              class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+            >
+              <svgr-mock
+                class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                Filter group 1
+              </div>
+            </summary>
+            <div
+              class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+            >
+              <div
+                class="text-[18px] mb-4 last-of-type:mb-8 border-0"
+                data-testid="mobile-group-1"
+              >
+                <fieldset>
+                  <legend
+                    class="text-2xl text-gray-800 sr-only"
+                  >
+                    Filter group 1
+                  </legend>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-1"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-1"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-1-children"
+                      >
+                        Filter 1
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-2"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-2"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-2-children"
+                      >
+                        Filter 2
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-3"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-3"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-3-children"
+                      >
+                        Filter 3
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-4"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-4"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-4-children"
+                      >
+                        Filter 4
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-5"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-5"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-5-children"
+                      >
+                        Filter 5
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-1-filter-6"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-1"
+                      type="checkbox"
+                      value="filter-6"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-1-filter-6-children"
+                      >
+                        Filter 6
+                      </p>
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+          </details>
+          <details
+            class="group mb-[-1px] border-slate-400 tool-expand [&>summary]:border-gray-300 [&>summary]:py-4 [&>summary]:border-t-1 [&>summary]:text-[20px] [&>summary]:lg:text-xl border-0 [&[open]>summary]:border-b-1 [&>summary:last-of-type]:border-b-1 [&>div]:m-0 [&>div]:p-0"
+            data-testid="group-2"
+          >
+            <summary
+              class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+            >
+              <svgr-mock
+                class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+              />
+              <div
+                class="block"
+                data-testid="summary-block-title"
+              >
+                Filter group 2
+              </div>
+            </summary>
+            <div
+              class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+            >
+              <div
+                class="text-[18px] mb-4 border-0 last-of-type:mb-0"
+                data-testid="mobile-group-2"
+              >
+                <fieldset>
+                  <legend
+                    class="text-2xl text-gray-800 sr-only"
+                  >
+                    Filter group 2
+                  </legend>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-2-filter-2-1"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-2"
+                      type="checkbox"
+                      value="filter-2-1"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-2-filter-2-1-children"
+                      >
+                        Filter 7
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex mt-4"
+                    data-testid="mobile-group-2-fitler-2-2"
+                  >
+                    <input
+                      class="sr-only peer tool-cbox"
+                      name="group-2"
+                      type="checkbox"
+                      value="fitler-2-2"
+                    />
+                    <div
+                      class="flex items-center justify-center flex-none w-10 h-10 p-1 bg-white border border-gray-400 rounded text-white peer-checked:bg-magenta-500 peer-checked:text-white peer-checked:border-magenta-500 peer-focus:border-4 peer-focus:border-blue-700 peer-focus:ring-[3px] peer-focus:ring-yellow-400 peer-checked:hover:bg-pink-800 peer-checked:hover:border-pink-800 peer-checked:hover:text-white active:bg-pink-400 active:border-pink-400 active:text-white peer-checked:active:bg-pink-400 peer-checked:active:border-pink-400 peer-disabled:bg-slate-400 peer-disabled:border-slate-400 peer-disabled:text-slate-400 peer-disabled:cursor-not-allowed"
+                    >
+                      <svgr-mock
+                        class="w-6 h-5"
+                        role="presentation"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col ml-3"
+                    >
+                      <p
+                        class="flex items-center text-base min-h-10"
+                        data-testid="mobile-group-2-fitler-2-2-children"
+                      >
+                        Filter 8
+                      </p>
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div
+          class="px-4 py-8 flex-col lg:flex space-y-6"
+        >
+          <button
+            class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button text-[16px] p-2 w-full lg:w-auto"
+            type="submit"
+          >
+            <span />
+            Apply filter
+            <span />
+          </button>
+          <a
+            class="items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none block text-magenta-700 visited:text-magenta-700 text-sm hover:underline w-full text-center"
+            href="/en/test-page"
+          >
+            Clear all
+          </a>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
+`;

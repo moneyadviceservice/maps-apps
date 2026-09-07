@@ -1,0 +1,1014 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ContactDetails Component renders component correctly 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            components.contact-details.form.first-name.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            components.contact-details.form.last-name.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            components.contact-details.form.email-address.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+            value=""
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  components.contact-details.form.email-address.expandable-section.title
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                components.contact-details.form.email-address.expandable-section.content
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            components.contact-details.form.phone-number.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+            value=""
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  components.contact-details.form.phone-number.expandable-section.title
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                components.contact-details.form.phone-number.expandable-section.content
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              components.contact-details.form.date-of-birth.label
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              components.contact-details.form.date-of-birth.hint
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Day
+                </label>
+                <input
+                  aria-label="Day"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Month
+                </label>
+                <input
+                  aria-label="Month"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Year
+                </label>
+                <input
+                  aria-label="Year"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    components.contact-details.form.date-of-birth.expandable-section.title
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  components.contact-details.form.date-of-birth.expandable-section.content
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            components.contact-details.form.memorable-word.label
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            components.contact-details.form.memorable-word.hint
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactDetails Component renders component correctly with errors 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="firstName"
+            >
+              components.contact-details.form.first-name.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="firstName-error"
+              id="firstName-error"
+            >
+              components.contact-details.form.first-name.error
+            </p>
+            <input
+              aria-describedby="firstName-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-firstName"
+              id="firstName"
+              name="firstName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="lastName"
+            >
+              components.contact-details.form.last-name.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="lastName-error"
+              id="lastName-error"
+            >
+              components.contact-details.form.last-name.error
+            </p>
+            <input
+              aria-describedby="lastName-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-lastName"
+              id="lastName"
+              name="lastName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="emailAddress"
+            >
+              components.contact-details.form.email-address.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="emailAddress-error"
+              id="emailAddress-error"
+            >
+              components.contact-details.form.email-address.error
+            </p>
+            <input
+              aria-describedby="emailAddress-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-emailAddress"
+              id="emailAddress"
+              name="emailAddress"
+              type="text"
+              value=""
+            />
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    components.contact-details.form.email-address.expandable-section.title
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  components.contact-details.form.email-address.expandable-section.content
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="phoneNumber"
+            >
+              components.contact-details.form.phone-number.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="phoneNumber-error"
+              id="phoneNumber-error"
+            >
+              components.contact-details.form.phone-number.error
+            </p>
+            <input
+              aria-describedby="phoneNumber-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-phoneNumber"
+              id="phoneNumber"
+              name="phoneNumber"
+              type="text"
+              value=""
+            />
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    components.contact-details.form.phone-number.expandable-section.title
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  components.contact-details.form.phone-number.expandable-section.content
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base flex flex-col"
+          >
+            <fieldset
+              aria-describedby="date-field-hint"
+            >
+              <legend
+                class="text-2xl text-gray-800 sr-only"
+                data-testid="date-field-legend"
+              >
+                components.contact-details.form.date-of-birth.label
+              </legend>
+              <p
+                class="break-words mb-0 text-gray-600"
+                data-testid="date-field-hint"
+                id="date-field-hint"
+              >
+                components.contact-details.form.date-of-birth.hint
+              </p>
+              <p
+                class="break-words mb-0 text-red-700"
+              >
+                components.contact-details.form.date-of-birth.error
+              </p>
+              <div
+                class="flex w-full mt-2"
+              >
+                <div
+                  class="flex flex-col items-start w-[56px] mr-4"
+                >
+                  <label
+                    class="mb-2"
+                    for="day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    aria-label="Day"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="day"
+                    inputmode="numeric"
+                    name="day"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-start w-[56px] mr-4"
+                >
+                  <label
+                    class="mb-2"
+                    for="month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    aria-label="Month"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="month"
+                    inputmode="numeric"
+                    name="month"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-start w-[72px]"
+                >
+                  <label
+                    class="mb-2"
+                    for="year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    aria-label="Year"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="year"
+                    inputmode="numeric"
+                    name="year"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                class="mt-2"
+              >
+                <details
+                  class="group tool-expand"
+                  data-testid="expandable-section"
+                >
+                  <summary
+                    class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                  >
+                    <svgr-mock
+                      class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                    />
+                    <div
+                      class="block"
+                      data-testid="summary-block-title"
+                    >
+                      components.contact-details.form.date-of-birth.expandable-section.title
+                    </div>
+                  </summary>
+                  <div
+                    class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                  >
+                    components.contact-details.form.date-of-birth.expandable-section.content
+                  </div>
+                </details>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="memorableWord"
+            >
+              components.contact-details.form.memorable-word.label
+            </label>
+            <p
+              class="break-words mb-0 text-gray-650"
+              data-testid="memorableWord-hint"
+              id="memorableWord-hint"
+            >
+              components.contact-details.form.memorable-word.hint
+            </p>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="memorableWord-error"
+              id="memorableWord-error"
+            >
+              components.contact-details.form.memorable-word.error
+            </p>
+            <input
+              aria-describedby="memorableWord-hint memorableWord-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-memorableWord"
+              id="memorableWord"
+              name="memorableWord"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactDetails Component renders next step as confirm-details when edit mode is true 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="confirm-details"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            components.contact-details.form.first-name.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            components.contact-details.form.last-name.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            components.contact-details.form.email-address.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+            value=""
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  components.contact-details.form.email-address.expandable-section.title
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                components.contact-details.form.email-address.expandable-section.content
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            components.contact-details.form.phone-number.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+            value=""
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  components.contact-details.form.phone-number.expandable-section.title
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                components.contact-details.form.phone-number.expandable-section.content
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              components.contact-details.form.date-of-birth.label
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              components.contact-details.form.date-of-birth.hint
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Day
+                </label>
+                <input
+                  aria-label="Day"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Month
+                </label>
+                <input
+                  aria-label="Month"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Year
+                </label>
+                <input
+                  aria-label="Year"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    components.contact-details.form.date-of-birth.expandable-section.title
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  components.contact-details.form.date-of-birth.expandable-section.content
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            components.contact-details.form.memorable-word.label
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            components.contact-details.form.memorable-word.hint
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.save-changes-text
+      <span />
+    </button>
+  </form>
+</div>
+`;

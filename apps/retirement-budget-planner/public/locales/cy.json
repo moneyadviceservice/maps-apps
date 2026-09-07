@@ -1,0 +1,537 @@
+{
+  "tabs": {
+    "about-you": "Amdanoch chi",
+    "income": "Incwm ymddeoliad",
+    "essential-outgoings": "Costau ymddeoliad",
+    "summary": "Eich canlyniadau",
+    "save": "Arbed a dod yn ôl yn hwyrach",
+    "progress-saved": "Arbed a dod yn ôl yn hwyrach",
+    "error-page": "Gwall"
+  },
+  "pageTitle": "Cynlluniwr cyllideb ar gyfer ymddeoliad",
+  "moneyHelperTools": "Teclynnau HelpwrArian",
+  "backButton": "Yn ôl",
+  "continueButton": "Parhau",
+  "saveAndComeBackButton": "Arbed a dod yn ôl yn hwyrach",
+  "moreInformationToggle": "Mwy o wybodaeth",
+  "errorSummary": {
+    "title": {
+      "default": "Mae yna broblem",
+      "moreInformation": "Mae angen mwy o wybodaeth arnom i gyfrifo eich cyllideb ymddeoliad."
+    },
+    "incomeText": "Rhowch yr holl incwm rydych chi'n bwriadu ei gael ar ôl i chi ymddeol. Rhaid i chi ychwanegu o leiaf un incwm i barhau.",
+    "costText": "Rhowch yr holl dreuliau rydych chi'n disgwyl eu talu ar ôl i chi ymddeol. Rhaid i chi ychwanegu o leiaf un gost i barhau.",
+    "income": "incwm",
+    "costs": "costau"
+  },
+  "income": {
+    "title": "Incwm ymddeoliad",
+    "description": "Rhowch yr holl incwm rydych yn disgwyl ei gael ar ôl i chi ymddeol, cyn treth. Gan na fyddwch yn gwybod am unrhyw gynnydd yn y dyfodol, defnyddiwch werthoedd cyfredol. Os nad ydych yn siŵr am swm, defnyddiwch eich amcangyfrif gorau neu'ch amcangyfrif diweddaraf.",
+    "statePension": {
+      "title": "Pensiwn y Wladwriaeth",
+      "description": "Gallwch [wirio eich rhagolwg Pensiwn y Wladwriaeth](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth) ar GOV.UK i weld faint rydych chi yn debygol i'w gael ac a oes ffyrdd i'w gynyddu. Mae'r swm rydych chi'n gymwys amdano yn dibynnu ar eich cofnod Yswiriant Gwladol.",
+      "statePay": {
+        "title": "Taliadau Pensiwn y Wladwriaeth"
+      }
+    },
+    "poundAria": "Yn bunnoedd",
+    "workplacePension": {
+      "definedContributionLabel": "Cyfraniadau wedi’u diffinio",
+      "definedBenefitLabel": "Buddion wedi’u diffinio",
+      "title": "Pensiwn (neu bensiynau) gweithle",
+      "description": "Dyma'r incwm rydych chi'n bwriadu ei gymryd o bensiwn y mae'ch cyflogwr wedi'i sefydlu ar eich cyfer. I ddarganfod faint y gallai eich pensiwn ei dalu i chi, fel arfer gallwch fewngofnodi i gyfrif ar-lein eich darparwr neu ddefnyddio'r datganiad blynyddol diwethaf a gawsoch.\n\nGallwch ddefnyddio ein teclyn i [ddarganfod eich math o bensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type) neu ofyn i'ch darparwr.",
+      "addButtonLabel": "Ychwanegu pensiwn",
+      "removeButtonLabel": "Dileu",
+      "definedContribution": {
+        "title": "Pensiwn cyfraniadau wedi'u diffinio",
+        "description": "Mae pensiynau cyfraniadau wedi’u diffinio yn talu incwm yn seiliedig ar faint sy'n cael ei dalu mewn, pa mor dda mae'r buddsoddiadau yn perfformio a sut a phryd rydych chi'n dewis cymryd yr arian. Darganfyddwch fwy yn ein canllaw [Beth alla i ei wneud gyda fy ngronfa pensiwn?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/pension-pot-options)"
+      },
+      "definedBenefit": {
+        "title": "Pensiwn buddion wedi'u diffinio",
+        "description": "Mae pensiynau buddion wedi'u diffinio yn talu incwm misol gwarantedig yn seiliedig ar eich cyflog a pha mor hir y gwnaethoch weithio i'r cyflogwr hwnnw."
+      }
+    },
+    "privatePension": {
+      "title": "Pensiynau preifat",
+      "description": "Dyma'r incwm rydych chi'n bwriadu ei gymryd o bensiwn rydych chi'n ei sefydlu. I ddarganfod faint y gallai eich pensiwn ei dalu i chi, fel arfer gallwch fewngofnodi i gyfrif ar-lein eich darparwr neu ddefnyddio'r datganiad blynyddol diwethaf a gawsoch.",
+      "addButtonLabel": "Ychwanegu pensiwn",
+      "removeButtonLabel": "Dileu",
+      "label": "Pensiwn"
+    },
+    "otherRetirementIncome": {
+      "title": "Incwm ymddeoliad arall",
+      "workPay": {
+        "title": "Tâl o'r gwaith (ar ôl treth)",
+        "infoType": "text",
+        "moreInfo": "Os ydych yn bwriadu ymddeol yn raddol, dyma'r incwm rydych yn disgwyl ei gael gan gyflogwr neu gan hunangyflogaeth. Os ydych yn hunangyflogedig, rhowch eich elw masnachu disgwyliedig (incwm eich busnes llai eich treuliau)."
+      },
+      "benefitsPay": {
+        "title": "Taliadau budd-daliadau",
+        "infoType": "html",
+        "moreInfo": "Dyma'r incwm rydych chi'n disgwyl ei dderbyn gan y llywodraeth, fel Credyd Cynhwysol neu Gredyd Pensiwn. Gallwch ddefnyddio ein <a href=\"https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">Cyfrifiannell Budd-daliadau</a> i wirio eich bod yn hawlio popeth sydd gennych hawl iddo."
+      },
+      "householdIncome": {
+        "title": "Incwm o aelodau eraill o'r aelwyd",
+        "infoType": "text",
+        "moreInfo": "Dyma unrhyw incwm gan aelodau eraill o’ch aelwyd, fel eich partner neu blant, a fydd yn helpu gyda chyllid yr aelwyd."
+      },
+      "otherIncome": {
+        "title": "Incwm arall",
+        "infoType": "text",
+        "moreInfo": "Rhowch unrhyw incwm arall rydych chi'n bwriadu ei gael, megis o gynilion, buddsoddiadau a rhentu allan eiddo."
+      }
+    },
+    "additionalItems": {
+      "title": "Incwm ymddeoliad arall"
+    },
+    "moneyInputLabelText": "Swm yr incwm",
+    "frequencySelectLabelText": "Amlder yr incwm"
+  },
+  "essentialOutgoings": {
+    "title": "Costau ymddeoliad",
+    "description": "Nodwch yr holl gostau hanfodol rydych chi'n disgwyl eu talu ar ôl i chi ymddeol, yn seiliedig ar werthoedd heddiw.",
+    "housingCost": {
+      "title": "Tai",
+      "mortgageRepayment": {
+        "labelText": "Ad-daliadau morgais",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw ad-daliad morgais y bydd angen i chi ei dalu o hyd."
+      },
+      "rent": {
+        "labelText": "Rhent neu ffioedd cartref gofal",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw ffioedd rhent neu gartref gofal y bydd gennych mewn ymddeoliad."
+      },
+      "groundRent": {
+        "labelText": "Rhent tir",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw rent tir ar eich eiddo. Byddwch yn aml yn talu rhent tir os ydych chi'n berchen ar eiddo lesddaliad yng Nghymru, Lloegr neu Ogledd Iwerddon, fel fflat neu maisonette."
+      },
+      "serviceCharge": {
+        "labelText": "Tâl gwasanaeth neu ffactorio",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw ffioedd gwasanaeth neu ffactorio y mae angen i chi ei dalu i fyw yn eich eiddo. Byddwch yn aml yn talu tâl gwasanaeth os ydych chi'n berchen ar eiddo lesddaliad yng Nghymru, Lloegr neu Ogledd Iwerddon, fel fflat neu maisonette. Yn yr Alban, fe'i gelwir yn ffi ffactorio."
+      }
+    },
+    "utilities": {
+      "title": "Biliau cartref",
+      "councilTax": {
+        "labelText": "Treth Gyngor neu Ardrethi",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw Dreth Gyngor neu Ardrethi y bydd angen i chi ei dalu i fyw yn eich cartref."
+      },
+      "electric": {
+        "labelText": "Ynni (nwy, trydan a thanwyddau eraill y cartref)",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw filiau ynni sydd gennych, gan gynnwys nwy, trydan, olew, glo a phren."
+      },
+      "water": {
+        "labelText": "Dŵr",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw filiau dŵr y bydd angen i chi ei dalu."
+      },
+      "phone": {
+        "labelText": "Band eang a ffôn cartref",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw filiau band eang a/neu ffôn cartref."
+      },
+      "mobilePhone": {
+        "labelText": "Ffôn symudol",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw filiau ffôn symudol y byddwch chi'n ei dalu. Os nad yw cost eich set law wedi'i gwmpasu yn eich taliad rheolaidd a'ch bod yn bwriadu ei newid yn rheolaidd, gallech rannu ei gost â nifer y misoedd rydych chi'n bwriadu ei gadw a'i ychwanegu at eich swm rheolaidd."
+      },
+      "tvLicence": {
+        "labelText": "Trwydded deledu",
+        "infoType": "html",
+        "moreInfo": "<p>Rhowch eich cyfran o unrhyw drwydded deledu y bydd angen i chi ei dalu. Gallwch ddarganfod <a href=\"https://www.tvlicensing.co.uk/cs/pay-for-your-tv-licence/index.app\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">faint mae trwydded deledu yn ei gostio</a> ac a ydych yn gymwys i gael <a href=\"https://www.tvlicensing.co.uk/reducedfee\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">trwydded deledu am ddim neu â ffi is</a> ar wefan TV Licensing.</p>"
+      },
+      "internet": {
+        "labelText": "Gwasanaethau teledu a ffrydio â thâl",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw danysgrifiadau teledu neu ffrydio rydych chi'n bwriadu eu cael."
+      }
+    },
+    "travelCosts": {
+      "title": "Teithio",
+      "publicTransport": {
+        "labelText": "Trafnidiaeth gyhoeddus",
+        "infoType": "text",
+        "moreInfo": "<p>Rhowch eich gwariant amcangyfrifedig ar drafnidiaeth gyhoeddus, gan gynnwys trenau a bysiau. Am fanylion pryd rydych chi'n gymwys i gael tocyn bws am ddim, gweler ein canllaw <a href=\"https://www.moneyhelper.org.uk/cy/benefits/benefits-in-later-life/benefits-in-retirement#Buddion-teithio-a-thrwyddedau-teledu\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">budd-daliadau mewn ymddeoliad</a>.</p>"
+      },
+      "petrol": {
+        "labelText": "Petrol, diesel neu wefru trydan",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich gwariant amcangyfrifedig ar betrol, diesel neu wefru trydan."
+      },
+      "roadTax": {
+        "labelText": "Treth ffordd",
+        "infoType": "text",
+        "moreInfo": "<p>Rhowch y swm rydych chi'n disgwyl ei dalu am dreth ffordd. Gallwch weld <a href=\"https://www.gov.uk/tablau-cyfraddau-treth-cerbyd\" target=\"_blank\" rel=\"noreferrer\" class=\"text-magenta-500 underline\">cyfraddau treth cerbydau</a> cyfredol ar GOV.UK.</p>"
+      },
+      "otherVehicle": {
+        "labelText": "Costau cynnal cerbydau eraill (MOT a gwasanaethu)",
+        "infoType": "text",
+        "moreInfo": "Rhowch swm i dalu'r costau eraill a allai fod yn rhaid i chi gynnal cerbyd, gan gynnwys gwasanaethu a MOT blynyddol."
+      }
+    },
+    "lending": {
+      "title": "Benthyg",
+      "loans": {
+        "labelText": "Ad-daliadau cerdyn credyd (os nad ydych chi bob amser yn ad-dalu'n llawn)",
+        "infoType": "text",
+        "moreInfo": "Rhowch yr amcangyfrif o ad-daliadau cerdyn credyd rydych chi'n disgwyl eu cael. Gallai hyn fod yn swm i glirio neu leihau'r swm sy'n ddyledus, neu'r isafswm taliad y mae'n rhaid i chi ei wneud.<br/><br/>Peidiwch â chyfrif yr un gwariant ddwywaith wrth gynllunio’r hyn rydych yn bwriadu ei wario. Er enghraifft, os ydych chi'n bwriadu gwario £50 y mis ar ddillad gan ddefnyddio cerdyn credyd (heb glirio'r balans), dylech ond rhoi’r ad-daliad cerdyn credyd yma."
+      },
+      "buyNowPayLater": {
+        "labelText": "Ad-daliadau benthyciadau neu gyllid car",
+        "infoType": "text",
+        "moreInfo": "Rhowch unrhyw ad-daliadau ar gyfer benthyciad, Prynu Nawr Talu Wedyn neu gyllid car, gan gynnwys prydlesu car."
+      }
+    },
+    "insurance": {
+      "title": "Yswiriant",
+      "homeContentInsurance": {
+        "labelText": "Cartref",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o unrhyw yswiriant cartref a allai fod gennych."
+      },
+      "lifeFuneralInsurance": {
+        "labelText": "Cynlluniau bywyd ac angladd",
+        "infoType": "text",
+        "moreInfo": "Rhowch y swm rydych chi'n disgwyl ei dalu am yswiriant bywyd neu angladd."
+      },
+      "petInsurance": {
+        "labelText": "Anifail anwes",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich costau amcangyfrifedig yswiriant anifeiliaid anwes. Mae yswiriant anifeiliaid anwes fel arfer yn ddrytach fel y mae eich anifail anwes yn mynd yn hŷn, felly efallai y byddwch chi'n talu mwy nag yr ydych yn ei wneud nawr."
+      },
+      "carVanMotorbike": {
+        "labelText": "Car, fan neu feic modur",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich cyfran o'r yswiriant y bydd ei angen arnoch i fod yn berchen a gyrru car, fan neu feic modur."
+      }
+    },
+    "householdExpenses": {
+      "title": "Costau byw",
+      "food": {
+        "labelText": "Bwyd",
+        "infoType": "text",
+        "moreInfo": "Rhowch y swm rydych chi'n disgwyl ei wario ar fwydydd, gan gynnwys bwyd, diod a chynhyrchion glanhau."
+      },
+      "healthBeauty": {
+        "labelText": "Iechyd a harddwch (pethau ymolchi, trin gwallt, gofal llygaid a deintyddol)",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich costau iechyd a harddwch amcangyfrifedig, gan gynnwys pethau ymolchi, trin gwallt, gofal llygaid a deintyddol."
+      },
+      "medication": {
+        "labelText": "Presgripsiynau a meddyginiaeth",
+        "infoType": "text",
+        "moreInfo": "Rhowch y swm rydych chi'n disgwyl ei dalu ar feddyginiaeth a phresgripsiynau."
+      },
+      "petEssentials": {
+        "labelText": "Anifeiliaid anwes (bwyd, biliau milfeddyg a gofal cyffredinol)",
+        "infoType": "text",
+        "moreInfo": "Rhowch eich costau amcangyfrifedig i fod yn berchen ar anifail anwes, gan gynnwys eu bwyd, biliau milfeddyg ac unrhyw gostau cyffredinol."
+      },
+      "clothesShoes": {
+        "labelText": "Dillad ac esgidiau",
+        "infoType": "text",
+        "moreInfo": "Rhowch y swm rydych chi'n disgwyl ei wario ar ddillad ac esgidiau."
+      }
+    },
+    "essentialsAdditionalItems": {
+      "title": "Taliadau hanfodol eraill",
+      "description": "Os ydych chi'n disgwyl cael unrhyw gostau hanfodol eraill ar ôl i chi ymddeol, gallwch eu nodi yma.",
+      "labelText": "Cost hanfodol {index}",
+      "labelPlaceholder": "Enw’r gost",
+      "labelInputLabelText": "Enw’r gost"
+    },
+    "moneyInputLabelText": "Swm y gost",
+    "frequencySelectLabelText": "Amlder y gost"
+  },
+  "summaryTotal": {
+    "title": "Cyfanswm crynodeb",
+    "titleWithFrequency": "(misol)",
+    "summaryPageTitle": "Cyfanswm crynodeb",
+    "income": "Incwm ymddeoliad",
+    "incomeAfterTax": "Incwm ymddeoliad ar ôl treth",
+    "spending": "Costau ymddeoliad",
+    "balance": "Balans",
+    "yearlyTotal": "Cyfanswm crynodeb blynyddol",
+    "monthlyTotal": "Cyfanswm crynodeb misol",
+    "submitLabel": "Diweddaru'r canlyniadau",
+    "aria": {
+      "description": "Crynodeb ariannol sy’n dangos incwm, gwariant a balans",
+      "statusOverspending": "Gorwario",
+      "statusPositive": "Balans positif",
+      "statusBalanced": "Cytbwys",
+      "amountSuffix": "swm:",
+      "selectLabel": "Newid amlder crynodeb"
+    },
+    "announcements": {
+      "summaryUpdated": "Crynodeb wedi'i ddiweddaru",
+      "onTrack": "ar y trywydd iawn",
+      "overspending": "gorwario"
+    }
+  },
+  "aboutYou": {
+    "title": "Amdanoch chi",
+    "dob": {
+      "labelText": "Beth yw eich dyddiad geni?",
+      "day": "Diwrnod",
+      "month": "Mis",
+      "year": "Blwyddyn"
+    },
+    "gender": {
+      "labelText": "Beth yw eich rhyw?",
+      "male": "Gwryw",
+      "female": "Benyw"
+    },
+    "retireAge": {
+      "labelText": "Pa oedran hoffech chi ymddeol?",
+      "suffix": "blwydd oed",
+      "hint": "Gall hyn fod rhwng 55 a 99.",
+      "suffixAria": "yn blynyddoedd."
+    },
+    "moreInfo": {
+      "moreInfoLink": "Pam mae angen y wybodaeth hon arnom?",
+      "infoText": "Mae angen eich dyddiad geni a'ch rhyw arnom i weithio allan y dyddiad cynharaf y gallwch hawlio Pensiwn y Wladwriaeth – ac os yw hyn cyn neu ar ôl eich dyddiad ymddeoliad arfaethedig."
+    },
+    "errors": {
+      "dob-empty": "Rhowch eich dyddiad geni fel DD:MM:BBBB. Er enghraifft, 16 10 1980.",
+      "day-invalid": "Rhowch ddiwrnod dilys",
+      "month-invalid": "Rhowch fis dilys",
+      "year-invalid": "Rhowch flwyddyn ddilys",
+      "dob-age-range": "Rhaid i chi fod o leiaf 18 oed",
+      "dob-invalid": "Rhowch ddyddiad geni dilys",
+      "gender-generic": "Dewiswch wryw neu fenyw.",
+      "retire-age-range": "Rhowch yr oedran yr hoffech chi ymddeol, o 55 i 99 oed. Gallai hyn fod eich oedran presennol neu’n hŷn."
+    }
+  },
+  "summaryPage": {
+    "title": "Eich canlyniadau",
+    "heading": "O'ch oedran Pensiwn y Wladwriaeth o **{age}** oed, Gallai eich incwm ymddeoliad fod yn **{incomeAmount}** y mis ar ôl treth.",
+    "altHeading": "Gallai eich incwm ymddeoliad fod yn **{incomeAmount}** y mis ar ôl treth",
+    "disclaimer": {
+      "taxRates": "Mae hyn yn seiliedig ar y cyfraddau Treth Incwm cyfredol ar gyfer Cymru, Lloegr a Gogledd Iwerddon. Gallwch weld [cyfraddau Treth Incwm yr Alban](https://www.gov.uk/scottish-income-tax) ar GOV.UK. Darganfyddwch fwy yn ein canllawiau am [dreth a phensiynau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/)."
+    },
+    "incomeCallout": {
+      "costsLowerThanIncome": {
+        "title": "Dylech gael arian dros ben",
+        "content": "Mae eich costau yn is na'ch incwm ymddeoliad amcangyfrifedig, felly dylech gael arian ar ôl.\n\nGall y [Safonau Byw Ymddeol](https://retirementlivingstandards.org.uk/) roi syniad i chi o'r ffordd o fyw y gallech ei fforddio."
+      },
+      "costsHigherThanIncome": {
+        "title": "Mae eich incwm ymddeoliad amcangyfrifedig yn annhebygol o dalu eich costau",
+        "content": "Mae eich costau yn uwch na'r incwm ymddeoliad yr amcangyfrifir i chi ei dderbyn.\n\nAm help, gweler ein canllawiau am [fudd-daliadau mewn ymddeoliad](https://www.moneyhelper.org.uk/cy/benefits/benefits-in-later-life/benefits-in-retirement) a [ffyrdd o roi hwb i'ch pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      }
+    },
+    "chart": {
+      "title": "Eich incwm ymddeoliad a'ch costau o oedran Pensiwn y Wladwriaeth",
+      "description": "Yn seiliedig ar y wybodaeth a roddoch chi i ni, dyma sut mae eich incwm ymddeoliad amcangyfrifedig yn cymharu â'ch costau gan ddefnyddio gwerthoedd heddiw. Dyma ganllaw i'ch helpu i gynllunio – nid yw'r ffigurau hyn wedi'u gwarantu.",
+      "label": "Costau ymddeoliad",
+      "costCategories": {
+        "housingCost": "Tai",
+        "utilities": "Biliau cartref",
+        "travelCosts": "Teithio",
+        "lending": "Benthyg",
+        "insurance": "Yswiriant",
+        "householdExpenses": "Costau byw",
+        "essentialsAdditionalItems": "Treuliau hanfodol eraill"
+      },
+      "edit": "Golygu"
+    },
+    "retirementCallout": {
+      "lifeExpectancy": {
+        "title": "Efallai y bydd angen i'ch incwm ymddeoliad bara am dros {years} mlynedd ",
+        "content": "Yn seiliedig ar ddisgwyliad oes cyfartalog, mae'n debygol y bydd angen i chi gyllidebu i wneud yn siŵr bod eich incwm ymddeoliad yn para nes eich bod o leiaf {age}.\n\nMae hyn yn golygu y dylech fod yn ofalus i beidio â rhedeg allan o arian yn rhy fuan.  \nGallwch ddefnyddio cyfrifiannell disgwyliad oes [y Swyddfa Ystadegau Gwladol](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/articles/lifeexpectancycalculator/2019-06-07) i ddarganfod disgwyliad oes cyfartalog rhywun o'ch oedran a'ch rhyw."
+      },
+      "statePensionAge": {
+        "title": "Rydych chi'n bwriadu ymddeol cyn y gallwch hawlio Pensiwn y Wladwriaeth",
+        "content": "Byddwch yn cyrraedd eich oedran Pensiwn y Wladwriaeth ar ôl eich dyddiad ymddeoliad arfaethedig.  \nMae hyn yn golygu:",
+        "listItems": [
+          "ni fyddwch chi’n gallu hawlio Pensiwn y Wladwriaeth pan fyddwch yn bwriadu ymddeol am y tro cyntaf",
+          "bydd angen i chi wneud yn siŵr eich bod yn gallu fforddio byw oddi ar incwm o ffynonellau eraill nes y gallwch hawlio Pensiwn y Wladwriaeth."
+        ]
+      }
+    },
+    "nextStepsCallout": {
+      "genderGap": {
+        "title": "Gwiriwch a yw'r bwlch pensiynau rhwng y rhywiau yn effeithio arnoch chi",
+        "content": "Mae llawer o fenywod yn ymddeol gyda hyd at hanner cymaint o gynilion ymddeol â dynion, yn aml oherwydd cyfrifoldebau gofalu a gweithio swyddi ar gyflog is.\n\nAm help, gweler ein canllaw am [ffyrdd o gau'r bwlch pensiynau rhwng y rhywiau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "benefits": {
+        "title": "Gwiriwch eich bod chi'n hawlio popeth sydd gennych hawl iddo",
+        "content": "Gweler yr holl help sydd ar gael yn ein canllaw am fudd-daliadau mewn ymddeoliad.\n\nGallwch hefyd ddefnyddio ein [Cyfrifiannell Budd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator) i wirio a fydd cymryd eich pensiwn yn effeithio ar y budd-daliadau rydych chi'n eu derbyn ar hyn o bryd."
+      },
+      "statePension": {
+        "title": "Gwiriwch a allwch roi hwb i'ch Pensiwn y Wladwriaeth",
+        "content": "Ar hyn o bryd nid ydych ar y trywydd iawn i dderbyn swm llawn Pensiwn y Wladwriaeth, ond efallai y bydd ffyrdd o gynyddu'r swm rydych chi'n ei gael.\n\nAm ragor o wybodaeth, gweler ein canllaw am [roi hwb i'ch Pensiwn y Wladwriaeth](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension)."
+      },
+      "debts": {
+        "title": "Ystyriwch help am ddim i glirio'ch dyledion",
+        "content": "Gallai ad-dalu dyled effeithio ar ba mor gyfforddus yw eich ymddeoliad. Am help i ddod o hyd i gyngor ar ddyledion am ddim a chamau eraill y gallwch eu cymryd, gweler [help os ydych chi'n cael trafferth gyda dyled](https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/help-if-youre-struggling-with-debt)."
+      },
+      "mortgage": {
+        "title": "Ystyriwch sut y byddwch chi'n ad-dalu'ch morgais mewn ymddeoliad",
+        "content": "Yn aml, mae llai o opsiynau morgais ar ôl i chi ymddeol, felly mae'n syniad da ad-dalu'ch morgais cyn gynted ag y gallwch fforddio. Os oes gennych forgais llog yn unig, gall eich benthyciwr neu gynghorydd ariannol eich helpu i gynllunio sut i ad-dalu'r swm a fenthycwyd.\n\nOs ydych chi'n ystyried defnyddio rhyddhau ecwiti neu forgais ymddeoliad llog yn unig, gweler ein canllaw [A ddylwn i symud i gartref llai o faint i ariannu fy ymddeoliad?](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/downsizing-in-retirement)"
+      },
+      "borrowing": {
+        "title": "Cynllunio i leihau eich benthyg ar ôl i chi ymddeol",
+        "content": "Os ydych chi'n defnyddio cardiau credyd neu fenthyciadau ar hyn o bryd i dalu am bethau, efallai y byddwch chi'n gweld na allwch fenthyg cymaint ar ôl i chi ymddeol. Mae hyn yn golygu efallai y bydd angen i chi gyllidebu i ddefnyddio eich incwm yn lle hynny, yn ogystal ag ad-dalu'r ddyled.\n\nOs ydych chi'n meddwl y byddwch chi'n cael trafferth gwneud eich ad-daliadau ar amser, neu os na allwch fforddio talu eich costau hanfodol, gweler ein canllaw ar sut i leihau benthyg."
+      },
+      "socialHousing": {
+        "title": "Gwiriwch a ydych chi'n gymwys i gael tai cymdeithasol mewn ymddeoliad",
+        "content": "Os ydych chi'n bwriadu rhentu ar ôl i chi ymddeol, gwnewch yn siŵr eich bod yn cyllidebu ar gyfer cynnydd rhent posibl a chostau i addasu eich cartref.\n\nMae hefyd yn werth gwirio a ydych chi'n gymwys i symud i dai cymdeithasol, sydd fel arfer yn rhatach na rhent preifat ac fel arfer yn cynnig mwy o ddiogelwch rhag troi allan. Darganfyddwch fwy am [rentu a thai cymdeithasol ar Age UK](https://www.ageuk.org.uk/information-advice/care/housing-options/renting-social-housing/)."
+      }
+    },
+    "cta": {
+      "save": "Arbed canlyniadau",
+      "restart": "Dechrau eto",
+      "loading": "Llwytho"
+    },
+    "checklist": {
+      "title": "Rhestr wirio cynllunio ymddeoliad",
+      "pension": {
+        "title": "Cynllunio sut a phryd i gymryd eich pensiwn",
+        "content": "Gall pryd a sut i gymryd eich pensiwn effeithio ar ba mor gyfforddus yw eich ymddeoliad. Mae'n syniad da deall eich opsiynau a dechrau cynllunio o leiaf ddeng mlynedd cyn rydych chi’n bwriadu ymddeol, fel bod gennych amser i gynilo mwy os oes angen.\n\nAm gymorth cam wrth gam, gan gynnwys sut i gael arweiniad am ddim, gweler ein canllaw [Sut i gymryd eich pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/how-to-take-your-pension)."
+      },
+      "income": {
+        "title": "Gwiriwch am ffyrdd o roi hwb i'ch incwm ymddeoliad",
+        "listIntro": "Mae yna lawer o ffyrdd y gallwch gynyddu eich incwm ymddeoliad, gan gynnwys:",
+        "listItems": [
+          "talu mwy i'ch pensiwn – efallai y bydd eich cyflogwr hefyd yn cyfateb eich cyfraniadau",
+          "gwirio eich bod chi'n cael yr holl ryddhad treth rydych chi'n gymwys amdano",
+          "gwneud yn siŵr eich bod ar y trywydd iawn ar gyfer uchafswm Pensiwn y Wladwriaeth",
+          "gohirio eich dyddiad ymddeol."
+        ],
+        "content": "Am ragor o wybodaeth, gweler ein canllaw [Ffyrdd o roi hwb i'ch pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "scams": {
+        "title": "Cadwch lygad allan am sgamiau pensiwn sydd wedi'u cynllunio i ddwyn eich arian",
+        "content": "Peidiwch byth â chael mynediad i'ch pensiwn na throsglwyddo unrhyw arian i ddarparwr pensiwn oherwydd galwad, ymweliad, e-bost neu neges destun ddiwahoddiad. Mae'n debygol o fod yn sgam sydd wedi'i gynllunio i ddwyn eich arian.\n\nEfallai y byddwch chi'n colli eich holl gynilion ymddeoliad a gorfod talu bil treth drud.\n\nAm ragor o wybodaeth, gweler ein canllaw [Sut i adnabod sgam pensiwn](https://www.moneyhelper.org.uk/cy/money-troubles/scams/how-to-spot-a-pension-scam)."
+      }
+    },
+    "tools": {
+      "title": "Teclynnau eraill i roi cynnig arnynt",
+      "budgetPlanner": {
+        "title": "Cynlluniwr cyllideb",
+        "content": "Cadwch olwg ar wariant cyfredol eich cartref, ynghyd ag awgrymiadau i wella eich cyllid."
+      },
+      "pensionCalculator": {
+        "title": "Cyfrifiannell pensiwn",
+        "content": "Darganfyddwch faint y gallai fod angen i chi gynilo ar gyfer ymddeoliad a'r incwm rydych chi yn debygol i'w gael."
+      },
+      "benefitsCalculator": {
+        "title": "Cyfrifiannell budd-daliadau",
+        "content": "Gwiriwch a oes gennych hawl i unrhyw daliadau neu grantiau ychwanegol, gan gynnwys Credyd Cynhwysol a Chredyd Pensiwn."
+      }
+    },
+    "share": {
+      "title": "Rhannwch yr offeryn hwn",
+      "subject": "Cynlluniwr cyllideb ar gyfer ymddeoliad",
+      "emailBodyText": "Darganfyddwch faint o arian gallai fod ei angen arnoch am ymddeoliad cyfforddus gyda’n teclyn am ddim ar-lein",
+      "xTitle": "Darganfyddwch faint o arian gallai fod ei angen arnoch am ymddeoliad cyfforddus gyda’n teclyn am ddim ar-lein"
+    }
+  },
+  "saveAndComeBack": {
+    "title": "Arbedwch a dewch yn ôl yn nes ymlaen",
+    "description": "Arbed cynnydd eich cyllideb ar gyfer ymddeoliad a chael dolen drwy e-bost i ddychwelyd iddo ar unrhyw adeg.",
+    "userEmailLabelText": "Rhowch eich cyfeiriad e-bost",
+    "emailHint": "Ni fydd eich cyfeiriad e-bost yn cael ei ddefnyddio ar gyfer unrhyw ddiben arall.",
+    "buttonLabel": "Arbed ac anfon e-bost",
+    "backButtonLink": "Yn ôl",
+    "errorSummary": {
+      "title": "Mae problem",
+      "email-generic": "Rhowch gyfeiriad e-bost yn y fformat gywir"
+    },
+    "errors": {
+      "email-generic": "Gwall: Rhowch gyfeiriad e-bost yn y fformat gywir, megis enw@enghraifft.com",
+      "email-error": "Roedd problem wrth anfon yr e-bost, rhowch gynnig arall."
+    }
+  },
+  "progressSaved": {
+    "title": "Mae eich cyllideb ar gyfer ymddeoliad wedi'i arbed",
+    "subtitle": "Rydym wedi anfon eich dolen drwy e-bost",
+    "description": "Mae'r ddolen i ddychwelyd i'ch cyllideb ar gyfer ymddeoliad wedi'i hanfon i'r cyfeiriad e-bost a roddoch i ni. Bydd yn dod o moneyhelper.pensions@notifications.service.gov.uk.",
+    "description2": "Os nad ydych wedi'i dderbyn, gwiriwch eich ffolder sbam neu dewiswch ail-anfon e-bost.",
+    "primaryButtonLabel": "Dychwelyd i'ch cyllideb ar gyfer ymddeoliad",
+    "secondaryButtonLabel": "Ail-anfon e-bost"
+  },
+  "errorPage": {
+    "title": "Ni allwn arbed eich manylion",
+    "description": "Aeth rhywbeth o’i le wrth arbed eich data.",
+    "listOfOptions": {
+      "description": "Gallwch:",
+      "goBackToTool": {
+        "text": "ddychwelyd i’n cynlluniwr cyllideb ymddeoliad"
+      },
+      "contactSupport": {
+        "linkText": "cysylltu â ni am gymorth",
+        "rest": "os ydych chi’n parhau i gael problemau."
+      }
+    }
+  },
+  "frequency": {
+    "day": "Fesul dydd",
+    "week": "Fesul wythnos",
+    "twoweeks": "Fesul 2 wythnos",
+    "fourweeks": "Fesul 4 wythnos",
+    "month": "Fesul mis",
+    "quarter": "Fesul chwarter",
+    "sixmonths": "Fesul 6 mis",
+    "year": "Fesul blwyddyn"
+  },
+  "landingPage": {
+    "heading": "Cynlluniwr cyllideb ymddeoliad",
+    "intro": "Darganfyddwch a fydd eich incwm ymddeoliad amcangyfrifedig yn ddigonol i dalu eich holl gostau hanfodol gyda'n teclyn ar-lein am ddim.",
+    "timeEstimate": "5 munud i'w gwblhau",
+    "startButton": "Dechrau fy nghyllideb ymddeoliad",
+    "sections": [
+      {
+        "id": 1,
+        "heading": "Beth gewch chi",
+        "introText": "Bydd y teclyn hwn yn dangos i chi:",
+        "listItems": [
+          "grynodeb syml o'ch costau tebygol yn eich ymddeoliad",
+          "faint o incwm ymddeoliad yr amcangyfrifir y byddwch chi'n ei gael o'ch oedran Pensiwn y Wladwriaeth",
+          "beth i'w wneud os yw'ch costau'n uwch na'ch incwm."
+        ],
+        "outroText": "Am ddadansoddiadau mwy manwl, gallwch ddefnyddio ein:",
+        "outroListItems": [
+          "[Cynlluniwr cyllideb](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner) i'ch helpu i gadw golwg ar eich arian nawr",
+          "[Cyfrifiannell pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/pension-calculator) i weld eich incwm ymddeoliad tebygol o'ch holl bensiynau - cyn ac ar ôl oedran Pensiwn y Wladwriaeth."
+        ]
+      },
+      {
+        "id": 2,
+        "heading": "Sut mae'n gweithio",
+        "introText": "Byddwn yn gofyn i chi am fanylion eich cyllid a'ch cynlluniau ar gyfer y dyfodol, gan gynnwys:",
+        "listItems": [
+          "pryd yr hoffech chi ymddeol",
+          "eich incwm ymddeoliad amcangyfrifedig",
+          "eich costau tebygol ar ôl i chi ymddeol, fel biliau, rhent a theithio."
+        ]
+      },
+      {
+        "id": 3,
+        "heading": "Yr hyn y bydd ei angen arnoch",
+        "introText": "Er mwyn cael y canlyniadau mwyaf cywir, y peth orau yw:",
+        "listItems": [
+          "[gwirio eich rhagolwg Pensiwn y Wladwriaeth](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth) ar GOV.UK i ddarganfod faint rydych chi’n debygol i'w gael",
+          "gwybod faint yr amcangyfrifir y bydd pensiynau preifat yn ei dalu i chi – fel arfer gallwch fewngofnodi i gyfrif ar-lein eich darparwr neu ddefnyddio'r datganiad blynyddol diwethaf a gawsoch",
+          "Defnyddiwch ddatganiad banc i wirio'r holl gostau sydd gennych ar hyn o bryd."
+        ],
+        "startButton": true
+      }
+    ],
+    "informationCallout": {
+      "heading": "Angen rhagor o wybodaeth am bensiynau?",
+      "introText": "Bydd un o'n harbenigwyr pensiwn yn hapus i ateb eich cwestiynau. Gallwch:",
+      "listItems": [
+        "[ddefnyddio ein gwe-sgwrs](https://www.moneyhelper.org.uk/cy/contact-us)",
+        "ffonio ni ar [0800 756 1012](tel:08007561012) neu [+44 20 7932 5780](tel:+442079325780) os ydych y tu allan i'r DU",
+        "[defnyddio ein ffurflen ar-lein](https://enquiry-form.moneyhelper.org.uk/cy)."
+      ],
+      "outroText": "Rydym ar agor rhwng 9am a 5pm, o ddydd Llun i ddydd Gwener. Ar gau ar wyliau banc."
+    }
+  }
+}

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`StatePensionEstimatedIncome renders correctly 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+    data-testid="state-pension-estimated-income"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700"
+      data-testid="callout-default-state-pension-callout"
+    >
+      <h2
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+        data-testid="state-pension-callout-heading"
+      >
+        pages.pension-details.state-pension-callout.heading.already-qualify
+      </h2>
+      <div
+        class="flex flex-row gap-[15px] mt-6"
+      >
+        <svgr-mock
+          class="text-blue-700 w-[25px] h-[30px] shrink-0 mt-2"
+        />
+        <p
+          class="mb-4 break-words"
+          data-testid="state-pension-callout-text"
+        >
+          pages.pension-details.state-pension-callout.text.full-forecast
+        </p>
+      </div>
+    </div>
+    <h2
+      class="text-gray-800 mt-6 mb-2 text-3xl font-bold md:mt-10 md:mb-4 md:text-5xl"
+    >
+      pages.pension-details.estimated-income.ap-heading
+    </h2>
+    <p
+      class="break-words mb-2 text-lg md:text-2xl"
+      data-testid="sp-estimated-income-ap"
+    >
+      pages.pension-details.estimated-income.ap
+    </p>
+    <p
+      class="break-words mb-2 text-lg text-gray-800 md:text-2xl"
+      data-testid="sp-progress-bar-ap"
+    >
+      <strong>
+        £958.50
+      </strong>
+       
+      common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+    </div>
+    <h2
+      class="text-gray-800 mt-10 mb-2 text-3xl font-bold md:mt-16 md:mb-4 md:text-5xl"
+    >
+      pages.pension-details.estimated-income.eri-heading
+    </h2>
+    <p
+      class="break-words mb-2 text-lg md:text-2xl"
+      data-testid="sp-estimated-income-eri"
+    >
+      pages.pension-details.estimated-income.eri
+    </p>
+    <p
+      class="break-words mb-2 text-lg text-gray-800 md:text-2xl"
+      data-testid="sp-progress-bar-eri"
+    >
+      <strong>
+        £958.50
+      </strong>
+       
+      common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+        style="width: 100%;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StatePensionEstimatedIncome renders zero values correctly 1`] = `
+<div>
+  <div
+    class="mt-10 md:mt-16"
+    data-testid="state-pension-estimated-income"
+  >
+    <h2
+      class="text-gray-800 mt-6 mb-2 text-3xl font-bold md:mt-10 md:mb-4 md:text-5xl"
+    >
+      pages.pension-details.estimated-income.ap-heading
+    </h2>
+    <p
+      class="break-words mb-2 text-lg md:text-2xl"
+      data-testid="sp-estimated-income-ap"
+    >
+      pages.pension-details.estimated-income.ap
+    </p>
+    <p
+      class="break-words mb-2 text-lg text-gray-800 md:text-2xl"
+      data-testid="sp-progress-bar-ap"
+    >
+      <strong>
+        £0
+      </strong>
+       
+      common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+      />
+    </div>
+    <h2
+      class="text-gray-800 mt-10 mb-2 text-3xl font-bold md:mt-16 md:mb-4 md:text-5xl"
+    >
+      pages.pension-details.estimated-income.eri-heading
+    </h2>
+    <p
+      class="break-words mb-2 text-lg md:text-2xl"
+      data-testid="sp-estimated-income-eri"
+    >
+      pages.pension-details.estimated-income.eri
+    </p>
+    <p
+      class="break-words mb-2 text-lg text-gray-800 md:text-2xl"
+      data-testid="sp-progress-bar-eri"
+    >
+      <strong>
+        £0
+      </strong>
+       
+      common.a-month
+    </p>
+    <div
+      aria-hidden="true"
+      class="overflow-hidden h-9 md:h-12 bg-blue-700/20"
+    >
+      <div
+        class="h-full bg-blue-700"
+      />
+    </div>
+  </div>
+</div>
+`;

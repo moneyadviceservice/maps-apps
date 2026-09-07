@@ -1,0 +1,1 @@
+export { getDaysPerWeek } from './getDaysPerWeek';

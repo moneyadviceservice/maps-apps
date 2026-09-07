@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Footer component renders correctly 1`] = `
+<footer
+  class="relative z-1"
+  data-testid="mps-footer"
+>
+  <div
+    class="flex flex-col py-8 bg-gray-800 md:py-6"
+  >
+    <div
+      class="container-auto max-w-[1200px]"
+    >
+      <nav
+        aria-label="Footer navigation"
+        class="grid grid-cols-1 gap-8 md:grid-cols-3"
+      >
+        <div
+          class="flex flex-col"
+        >
+          <h3
+            class="mb-4 text-lg font-semibold text-white"
+          >
+            Legal
+          </h3>
+          <ul
+            class="flex flex-col pl-6 space-y-1 text-white list-disc"
+          >
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="terms-and-conditions.com"
+              >
+                Terms and conditions
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="privacy-notice.com"
+              >
+                Privacy notice
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="cookie-policy.com"
+              >
+                Cookie policy
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="#cookie-preferences-banner"
+              >
+                Cookie preferences
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="standards.com"
+              >
+                Money and Pensions Service standards
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col"
+        >
+          <h3
+            class="mb-4 text-lg font-semibold text-white"
+          >
+            Our Services
+          </h3>
+          <ul
+            class="flex flex-col pl-6 space-y-1 text-white list-disc"
+          >
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="moneyHelper.com"
+              >
+                MoneyHelper
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="financial-capability.com"
+              >
+                Financial Capability Strategy for the UK
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col"
+        >
+          <h3
+            class="mb-4 text-lg font-semibold text-white"
+          >
+            Stay In Touch
+          </h3>
+          <ul
+            class="flex flex-col pl-6 space-y-1 text-white list-disc"
+          >
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="contact-us.com"
+              >
+                Contact us
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="newsletter.com"
+              >
+                Sign up to newsletter
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="twitter.com"
+              >
+                X
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none no-underline text-sm text-white visited:text-gray-100 hover:text-green-300 hover:underline transition-colors duration-200"
+                href="youTube.com"
+              >
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="pt-4 pb-10 mt-6 text-center border-t border-white"
+      >
+        <p
+          class="break-words m-0 text-white"
+          data-testid="paragraph"
+        >
+          Copyright 2026
+        </p>
+        <p
+          class="mb-4 break-words text-white"
+          data-testid="paragraph"
+        >
+          All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

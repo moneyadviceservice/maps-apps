@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FindAppointment Component renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <section
+      class="flex flex-col gap-4"
+    >
+      <h2
+        class="text-2xl md:text-4xl font-bold text-blue-700"
+        data-testid="step-0-title-0"
+      >
+        mock-title
+      </h2>
+      <p
+        class="break-words mb-2"
+        data-testid="step-0-content-0"
+      >
+        mock-content
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="step-0-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="step-0-item-0-0"
+            >
+              mock-item
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="step-0-item-0-1"
+            >
+              mock-item
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p
+        class="mb-4 break-words"
+        data-testid="step-0-footer-0"
+      >
+        mock-footer
+      </p>
+    </section>
+  </div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="loading/booking-lookup"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <input
+        name="journeyType"
+        type="hidden"
+        value="change"
+      />
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="referenceNumber"
+          >
+            components.step-0.form.reference-number.label
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="referenceNumber-hint"
+            id="referenceNumber-hint"
+          >
+            components.step-0.form.reference-number.hint
+          </p>
+          <input
+            aria-describedby="referenceNumber-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-referenceNumber"
+            id="referenceNumber"
+            name="referenceNumber"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800"
+              data-testid="date-field-legend"
+            >
+              components.step-0.form.date-of-birth.label
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              components.step-0.form.date-of-birth.hint
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Day
+                </label>
+                <input
+                  aria-label="Day"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Month
+                </label>
+                <input
+                  aria-label="Month"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Year
+                </label>
+                <input
+                  aria-label="Year"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`FindAppointment Component renders component correctly with errors 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <section
+      class="flex flex-col gap-4"
+    >
+      <h2
+        class="text-2xl md:text-4xl font-bold text-blue-700"
+        data-testid="step-0-title-0"
+      >
+        mock-title
+      </h2>
+      <p
+        class="break-words mb-2"
+        data-testid="step-0-content-0"
+      >
+        mock-content
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="step-0-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="step-0-item-0-0"
+            >
+              mock-item
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="step-0-item-0-1"
+            >
+              mock-item
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p
+        class="mb-4 break-words"
+        data-testid="step-0-footer-0"
+      >
+        mock-footer
+      </p>
+    </section>
+  </div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="loading/booking-lookup"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <input
+        name="journeyType"
+        type="hidden"
+        value="change"
+      />
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="referenceNumber"
+            >
+              components.step-0.form.reference-number.label
+            </label>
+            <p
+              class="break-words mb-0 text-gray-650"
+              data-testid="referenceNumber-hint"
+              id="referenceNumber-hint"
+            >
+              components.step-0.form.reference-number.hint
+            </p>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="referenceNumber-error"
+              id="referenceNumber-error"
+            >
+              components.step-0.form.reference-number.error
+            </p>
+            <input
+              aria-describedby="referenceNumber-hint referenceNumber-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-referenceNumber"
+              id="referenceNumber"
+              name="referenceNumber"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base flex flex-col"
+          >
+            <fieldset
+              aria-describedby="date-field-hint"
+            >
+              <legend
+                class="text-2xl text-gray-800"
+                data-testid="date-field-legend"
+              >
+                components.step-0.form.date-of-birth.label
+              </legend>
+              <p
+                class="break-words mb-0 text-gray-600"
+                data-testid="date-field-hint"
+                id="date-field-hint"
+              >
+                components.step-0.form.date-of-birth.hint
+              </p>
+              <p
+                class="break-words mb-0 text-red-700"
+              >
+                components.step-0.form.date-of-birth.error
+              </p>
+              <div
+                class="flex w-full mt-2"
+              >
+                <div
+                  class="flex flex-col items-start w-[56px] mr-4"
+                >
+                  <label
+                    class="mb-2"
+                    for="day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    aria-label="Day"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="day"
+                    inputmode="numeric"
+                    name="day"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-start w-[56px] mr-4"
+                >
+                  <label
+                    class="mb-2"
+                    for="month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    aria-label="Month"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="month"
+                    inputmode="numeric"
+                    name="month"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-start w-[72px]"
+                >
+                  <label
+                    class="mb-2"
+                    for="year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    aria-label="Year"
+                    class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+                    data-testid="number-input"
+                    id="year"
+                    inputmode="numeric"
+                    name="year"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+</div>
+`;
