@@ -1,0 +1,18 @@
+import { ReactNode } from 'react';
+
+export type <%= name %>Props = {
+  children: ReactNode;
+  testId?: string;
+};
+
+export const <%= name %> = ({
+  children,
+  testId,
+  ...props
+}: <%= name %>Props) => {
+  return (
+    <div data-testid={testId} {...props}>
+      {children}
+    </div>
+  );
+};

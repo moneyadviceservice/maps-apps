@@ -1,0 +1,1 @@
+export { MedicalSpecialism } from './MedicalSpecialism';

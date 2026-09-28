@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PieChart component renders correctly 1`] = `
+<div
+  class="h-0 pt-[100%] overflow-hidden relative flex-none my-10 w-full"
+>
+  <div
+    class="after:absolute after:bg-white after:rounded-full after:top-2/4 after:left-2/4 after:-translate-y-2/4 after:-translate-x-2/4 after:h-[55%] after:w-[55%] rounded-full w-full h-full absolute left-0 right-0 top-0 bottom-0"
+    style="background: conic-gradient(#007a91 0% 50%, #f56727 50% 70%, #bc0061 70% 85%, #879a24 85% 90%, #000d3d 90% 95%, #0b4a6d 95% 100%);"
+  />
+</div>
+`;

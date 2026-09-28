@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Summary Total component should render Summary Total component in balanced state 1`] = `
+<div>
+  <section
+    aria-label="Summary total (monthly)"
+    class="px-2 pt-6 pb-4 space-y-4 border rounded border-slate-400 h-fit"
+  >
+    <h2
+      class="text-gray-800 font-bold pl-2 text-xl leading-7"
+      id="summary-total-heading"
+    >
+      <span>
+        Summary total (monthly)
+      </span>
+    </h2>
+    <span
+      class="sr-only"
+      id="summary-total-description"
+    >
+      Financial summary showing income, spending and balance
+    </span>
+    <dl
+      aria-describedby="summary-total-description"
+      aria-labelledby="summary-total-heading"
+      class="space-y-2"
+    >
+      <div
+        aria-label="Retirement income £4,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Retirement income"
+          class="m-0 break-words grow"
+        >
+          Retirement income
+        </dt>
+        <dd
+          aria-label="Retirement income amount: £4,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-retirement-income"
+          >
+            £4,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Your spending £3,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Your spending"
+          class="m-0 break-words grow"
+        >
+          Your spending
+        </dt>
+        <dd
+          aria-label="Your spending amount: £3,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-your-spending"
+          >
+            £3,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Balance £1,000.00. Balanced"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 text-white bg-green-700"
+      >
+        <dt
+          aria-label="Balance"
+          class="m-0 break-words grow"
+        >
+          Balance
+        </dt>
+        <dd
+          aria-label="Balance amount: £1,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-balance"
+          >
+            £1,000.00
+          </span>
+        </dd>
+      </div>
+    </dl>
+  </section>
+</div>
+`;
+
+exports[`Summary Total component should render Summary Total component in negative state 1`] = `
+<div>
+  <section
+    aria-label="Summary total (monthly)"
+    class="px-2 pt-6 pb-4 space-y-4 border rounded border-slate-400 h-fit"
+  >
+    <h2
+      class="text-gray-800 font-bold pl-2 text-xl leading-7"
+      id="summary-total-heading"
+    >
+      <span>
+        Summary total (monthly)
+      </span>
+    </h2>
+    <span
+      class="sr-only"
+      id="summary-total-description"
+    >
+      Financial summary showing income, spending and balance
+    </span>
+    <dl
+      aria-describedby="summary-total-description"
+      aria-labelledby="summary-total-heading"
+      class="space-y-2"
+    >
+      <div
+        aria-label="Retirement income £4,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Retirement income"
+          class="m-0 break-words grow"
+        >
+          Retirement income
+        </dt>
+        <dd
+          aria-label="Retirement income amount: £4,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-retirement-income"
+          >
+            £4,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Your spending £5,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Your spending"
+          class="m-0 break-words grow"
+        >
+          Your spending
+        </dt>
+        <dd
+          aria-label="Your spending amount: £5,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-your-spending"
+          >
+            £5,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Balance -£1,000.00. Overspending"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 text-white bg-red-700"
+      >
+        <dt
+          aria-label="Balance"
+          class="m-0 break-words grow"
+        >
+          Balance
+        </dt>
+        <dd
+          aria-label="Balance amount: -£1,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-balance"
+          >
+            -£1,000.00
+          </span>
+        </dd>
+      </div>
+    </dl>
+  </section>
+</div>
+`;
+
+exports[`Summary Total component should render Summary Total component in positive state 1`] = `
+<div>
+  <section
+    aria-label="Summary total (monthly)"
+    class="px-2 pt-6 pb-4 space-y-4 border rounded border-slate-400 h-fit"
+  >
+    <h2
+      class="text-gray-800 font-bold pl-2 text-xl leading-7"
+      id="summary-total-heading"
+    >
+      <span>
+        Summary total (monthly)
+      </span>
+    </h2>
+    <span
+      class="sr-only"
+      id="summary-total-description"
+    >
+      Financial summary showing income, spending and balance
+    </span>
+    <dl
+      aria-describedby="summary-total-description"
+      aria-labelledby="summary-total-heading"
+      class="space-y-2"
+    >
+      <div
+        aria-label="Retirement income £4,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Retirement income"
+          class="m-0 break-words grow"
+        >
+          Retirement income
+        </dt>
+        <dd
+          aria-label="Retirement income amount: £4,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-retirement-income"
+          >
+            £4,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Your spending £3,000.00"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+      >
+        <dt
+          aria-label="Your spending"
+          class="m-0 break-words grow"
+        >
+          Your spending
+        </dt>
+        <dd
+          aria-label="Your spending amount: £3,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-your-spending"
+          >
+            £3,000.00
+          </span>
+        </dd>
+      </div>
+      <div
+        aria-label="Balance £1,000.00. Positive balance"
+        class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 text-white bg-green-700"
+      >
+        <dt
+          aria-label="Balance"
+          class="m-0 break-words grow"
+        >
+          Balance
+        </dt>
+        <dd
+          aria-label="Balance amount: £1,000.00"
+          class="font-bold justify-self-end whitespace-nowrap"
+        >
+          <span
+            aria-hidden="true"
+            data-testid="t-summary-value-balance"
+          >
+            £1,000.00
+          </span>
+        </dd>
+      </div>
+    </dl>
+  </section>
+</div>
+`;

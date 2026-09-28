@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Real Time Summary component should render the component 1`] = `
+<div>
+  <div
+    class="basis-4/12"
+  >
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="sr-only"
+      data-testid="summary-announcement"
+    >
+      Retirement income £1,000.00, Retirement costs £500.00, Balance £500.00. on track
+    </div>
+    <noscript />
+    <section
+      aria-label="Summary total"
+      class="px-2 pt-6 pb-4 space-y-4 border rounded h-fit border-gray-300 md:sticky md:top-4"
+      data-testid="summary-total"
+    >
+      <h2
+        class="text-gray-800 font-bold pl-2 text-xl leading-7"
+        id="summary-total-heading"
+      >
+        <span>
+          Summary total
+        </span>
+        <span
+          class="pl-2 text-xl font-normal"
+        >
+          (monthly)
+        </span>
+      </h2>
+      <span
+        class="sr-only"
+        id="summary-total-description"
+      >
+        Financial summary showing income, spending and balance
+      </span>
+      <dl
+        aria-describedby="summary-total-description"
+        aria-labelledby="summary-total-heading"
+        class="space-y-2"
+      >
+        <div
+          aria-label="Retirement income £1,000.00"
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+        >
+          <dt
+            aria-label="Retirement income"
+            class="m-0 break-words grow"
+          >
+            Retirement income
+          </dt>
+          <dd
+            aria-label="Retirement income amount: £1,000.00"
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            <span
+              aria-hidden="true"
+              data-testid="t-summary-value-retirement-income"
+            >
+              £1,000.00
+            </span>
+          </dd>
+        </div>
+        <div
+          aria-label="Retirement costs £500.00"
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 bg-gray-100"
+        >
+          <dt
+            aria-label="Retirement costs"
+            class="m-0 break-words grow"
+          >
+            Retirement costs
+          </dt>
+          <dd
+            aria-label="Retirement costs amount: £500.00"
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            <span
+              aria-hidden="true"
+              data-testid="t-summary-value-retirement-costs"
+            >
+              £500.00
+            </span>
+          </dd>
+        </div>
+        <div
+          aria-label="Balance £500.00. Positive balance"
+          class="py-[22px] pl-4 pr-6 rounded text-lg flex justify-between gap-4 text-white bg-green-700"
+        >
+          <dt
+            aria-label="Balance"
+            class="m-0 break-words grow"
+          >
+            Balance
+          </dt>
+          <dd
+            aria-label="Balance amount: £500.00"
+            class="font-bold justify-self-end whitespace-nowrap"
+          >
+            <span
+              aria-hidden="true"
+              data-testid="t-summary-value-balance"
+            >
+              £500.00
+            </span>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+</div>
+`;

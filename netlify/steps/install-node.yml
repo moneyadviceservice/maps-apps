@@ -1,0 +1,9 @@
+steps:
+  - task: UseNode@1
+    inputs:
+      version: "22.23.2"
+    displayName: "Install Node.js"
+  - script: |
+      node -v
+      npm -v
+    displayName: "Verify Node.js and NPM Version"

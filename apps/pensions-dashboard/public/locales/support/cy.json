@@ -1,0 +1,66 @@
+{
+  "back-text": "Gadael cymorth a chefnogaeth",
+  "callout": {
+    "title": "Nid yr hyn rydych chi'n chwilio amdano?",
+    "content": "Os na allwch ddod o hyd i'r ateb roeddech chi'n chwilio amdano, rhowch gynnig ar ein canllawiau eraill neu cysylltwch â ni"
+  },
+  "explore-the-pensions-dashboard": {
+    "title": "Archwilio'r Dangosfwrdd",
+    "link": "explore-the-pensions-dashboard",
+    "heading": "Cwestiynau cyffredinol",
+    "description": "Cael cymorth ar gwestiynau cyffredin a dysgu sut i wneud y defnydd gorau o’ch Dangosfwrdd Pensiynau."
+  },
+  "understand-your-pensions": {
+    "title": "Deall eich pensiynau",
+    "link": "understand-your-pensions",
+    "heading": "Cwestiynau cyffredinol",
+    "description": "Cael cymorth ar gwestiynau cyffredin am bensiynau.",
+    "further-guidance": {
+      "title": "Arweiniad pellach",
+      "description": "P'un a ydych chi newydd ddechrau meddwl am bensiynau neu os ydych ar fin ymddeol, mae gan HelpwrArian arweiniad i'ch helpu i gynllunio.",
+      "links": [
+        {
+          "title": "Esbonio pensiynau",
+          "text": "Sut i ddechrau pensiwn, sut mae pensiynau’n gweithio a’r buddion",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics"
+        },
+        {
+          "title": "Pensiwn y Wladwriaeth",
+          "text": "Faint o Bensiwn y Wladwriaeth y gallech ei gael a ffyrdd i’w gynyddu",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/state-pension"
+        },
+        {
+          "title": "Problemau a newidiadau pensiwn",
+          "text": "Sut i ddod o hyd i bensiynau coll, datrys problemau a chwyno",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems"
+        },
+        {
+          "title": "Cymryd eich pensiwn",
+          "text": "Sut a phryd i gymryd eich pensiwn – esboniad ar eich opsiynau",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension"
+        },
+        {
+          "title": "Rheoli a chronni’ch pensiwn",
+          "text": "Faint i’w gynilo ar gyfer ymddeoliad a ffyrdd o roi hwb i’ch pensiwn",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot"
+        },
+        {
+          "title": "Treth a phensiynau",
+          "text": "Sut mae rhyddhad treth, lwfansau di-dreth a threth ar incwm yn gweithio",
+          "href": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement"
+        },
+        {
+          "title": "Teclynnau",
+          "text": "Teclynnau defnyddiol, gan gynnwys; Cyfrifiannell Pensiwn, Dod o hyd i ymgynghorydd ymddeoliad a MOT Canol Oes Arian",
+          "href": "https://www.moneyhelper.org.uk/cy/tools-and-calculators"
+        }
+      ]
+    }
+  },
+  "report-a-technical-problem": {
+    "title": "Rhoi gwybod am broblem dechnegol",
+    "link": "report-a-technical-problem",
+    "intro": "Rydym yn parhau i adeiladu a gwella ein gwasanaeth. Cysylltwch â ni i roi gwybod am broblem dechnegol.",
+    "contact-us": "Cysylltu â ni"
+  }
+}

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`TextArea Component renders component 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="text-area"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a character counter 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a default value 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with a hint 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with an error message 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component renders with both hint and error message 1`] = `
+<label
+  class="text-2xl text-gray-800"
+  for="test-textarea"
+>
+  Test Text Area
+</label>
+`;
+
+exports[`TextArea Component wraps content in Errors component when error is present and hasErrorWrapper is set true 1`] = `
+<div
+  class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+  data-testid="errors"
+>
+  <label
+    class="text-2xl text-gray-800"
+    for="test-textarea"
+  >
+    Test Text Area
+  </label>
+  <p
+    class="break-words mb-0 text-red-700"
+    data-testid="test-textarea-error"
+    id="test-textarea-error"
+  >
+    This is an error
+  </p>
+  <textarea
+    aria-describedby="test-textarea-error"
+    aria-errormessage="test-textarea-error"
+    aria-invalid="true"
+    aria-required="false"
+    class="px-3 mx-px mb-px w-full rounded resize focus:outline-none focus:shadow-focus-outline tool-field min-h-[312px] focus:border-1 focus:border-blue-700 border-red-700 border-2 mt-2"
+    id="test-textarea"
+    maxlength="0"
+    minlength="0"
+  />
+</div>
+`;

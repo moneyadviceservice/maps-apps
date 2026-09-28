@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AdjustableIncomeResults should render correctly 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-6 text-blue-700 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl
+      class="space-y-2"
+    >
+      <dt
+        class="font-medium"
+      >
+        Taking a flexible income from a pension worth
+         
+        <span>
+          £100,000
+        </span>
+         
+        could give you an estimated:
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £25,000
+        </span>
+         
+        as a one-off tax-free lump sum
+      </dd>
+      <dt
+        class="font-medium"
+      >
+        and
+      </dt>
+      <dd
+        class="text-4xl font-bold"
+      >
+        <span>
+          £325
+        </span>
+         as a taxable monthly income until you’re 
+        <span>
+          85
+        </span>
+      </dd>
+    </dl>
+    <div
+      class="mt-8 space-y-2"
+    >
+      <p>
+        The average life expectancy for those aged 55 is mid-to-late 80s. A monthly income of £325 could last until you’re 85, though you could live longer.
+      </p>
+      <p>
+        Callout results message
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,1 @@
+export { PensionTypeBottomContent } from './PensionTypeBottomContent';

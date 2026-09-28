@@ -1,0 +1,89 @@
+#ccc-notify-accept:after,
+#ccc-recommended-settings:after,
+#ccc-reject-settings:after,
+#ccc-dismiss-button:after {
+  content: none !important;
+}
+
+#ccc-notify-accept > span,
+#ccc-notify-reject > span,
+#ccc-recommended-settings > span,
+#ccc-reject-settings > span,
+.ccc-notify-button#ccc-dismiss-button > span,
+#ccc-dismiss-button > span {
+  color: #000b3b !important;
+}
+.ccc-notify-link > span {
+  color: #000b3b !important;
+}
+
+.checkbox-toggle--slider input:checked ~ .checkbox-toggle-toggle {
+  background-color: #f0f05a !important;
+}
+
+.ccc-panel h3 > a:visited:not(:focus):not(:hover),
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover),
+.ccc-panel p > a:visited:not(:focus):not(:hover),
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) {
+  color: #000b3b !important;
+  background-color: #f0f05a !important;
+}
+
+#ccc-notify-accept,
+#ccc-notify-reject,
+#ccc-recommended-settings,
+#ccc-reject-settings,
+#ccc-dismiss-button {
+  border-color: #b0ca35 !important;
+  background-color: #b0ca35 !important;
+  color: #000b3b !important;
+}
+
+.ccc-notify-buttons .ccc-accept-button,
+.ccc-notify-buttons .ccc-reject-button {
+  border-color: #8dab01 !important;
+  background-color: #b0ca35 !important;
+  color: #000b3b !important;
+}
+
+#ccc-recommended-settings.ccc-accept-button:hover,
+#ccc-dismiss-button.ccc-close-button:hover,
+#ccc-reject-settings.ccc-reject-button:hover,
+.ccc-notify-buttons #ccc-notify-accept.ccc-accept-button:hover,
+.ccc-notify-buttons #ccc-notify-reject.ccc-reject-button:hover {
+  border-color: #8dab01 !important;
+  background-color: #8dab01 !important;
+  color: #000b3b !important;
+}
+
+#ccc-recommended-settings.ccc-accept-button:focus,
+#ccc-dismiss-button.ccc-close-button:focus,
+#ccc-reject-settings.ccc-reject-button:focus,
+.ccc-notify-buttons #ccc-notify-accept.ccc-accept-button:focus,
+.ccc-notify-buttons #ccc-notify-reject.ccc-reject-button:focus {
+  border-color: #8dab01 !important;
+  background-color: #f0f05a !important;
+  color: #000b3b !important;
+}
+
+#ccc-recommended-settings.ccc-accept-button:active:after,
+#ccc-dismiss-button.ccc-close-button:active:after,
+#ccc-reject-settings.ccc-reject-button:active:after,
+.ccc-notify-buttons #ccc-notify-accept.ccc-accept-button:active:after,
+.ccc-notify-buttons #ccc-notify-reject.ccc-reject-button:active:after {
+  border: 3px solid #00283e !important;
+}
+
+#ccc-recommended-settings.ccc-accept-button:focus:after,
+#ccc-dismiss-button.ccc-close-button:focus:after,
+#ccc-reject-settings.ccc-reject-button:focus:after,
+.ccc-notify-buttons #ccc-notify-accept.ccc-accept-button:focus:after,
+.ccc-notify-buttons #ccc-notify-reject.ccc-reject-button:focus:after,
+#ccc-recommended-settings.ccc-accept-button:active:after,
+#ccc-dismiss-button.ccc-close-button:active:after,
+#ccc-reject-settings.ccc-reject-button:active:after,
+.ccc-notify-buttons #ccc-notify-accept.ccc-accept-button:active:after,
+.ccc-notify-buttons #ccc-notify-reject.ccc-reject-button:active:after {
+  content: '' !important;
+  border: 3px solid #00283e !important;
+}

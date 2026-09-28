@@ -1,0 +1,1 @@
+export { requireJourneyAccess } from './requireJourneyAccess';

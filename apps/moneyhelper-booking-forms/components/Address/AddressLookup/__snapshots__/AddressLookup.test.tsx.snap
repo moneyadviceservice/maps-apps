@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AddressLookup Component renders component correctly 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-2xl"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <section
+          class="flex flex-col gap-4"
+        >
+          <h2
+            class="text-2xl md:text-4xl text-gray-800 font-bold"
+            data-testid="step-0-title-0"
+          >
+            mock-title
+          </h2>
+          <p
+            class="break-words mb-2"
+            data-testid="step-0-content-0"
+          >
+            mock-content
+          </p>
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+              data-testid="step-0-list-0"
+              start="-1"
+            >
+              <li>
+                <p
+                  class="mb-4 break-words"
+                  data-testid="step-0-item-0-0"
+                >
+                  mock-item
+                </p>
+              </li>
+              <li>
+                <p
+                  class="mb-4 break-words"
+                  data-testid="step-0-item-0-1"
+                >
+                  mock-item
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p
+            class="mb-4 break-words"
+            data-testid="step-0-footer-0"
+          >
+            mock-footer
+          </p>
+        </section>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lookupPostcode"
+          >
+            components.step-0.form.lookup-postcode.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lookupPostcode"
+            id="lookupPostcode"
+            name="lookupPostcode"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lookupAddressLine1"
+          >
+            components.step-0.form.lookup-address-line-1.label
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lookupAddressLine1"
+            id="lookupAddressLine1"
+            name="lookupAddressLine1"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+  <form
+    action="/api/form-handler"
+    aria-label="address-manual-entry-form"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="address-details"
+    />
+    <input
+      name="lookupPostcode"
+      type="hidden"
+      value="manual"
+    />
+    <input
+      name="lookupAddressLine1"
+      type="hidden"
+      value="manual"
+    />
+    <button
+      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button"
+      data-testid="address-manual-entry-form-button"
+      type="submit"
+    >
+      <span />
+      components.step-0.link
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`AddressLookup Component renders component correctly with errors 1`] = `
+<div>
+  <form
+    action="/api/form-handler"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-2xl"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <section
+          class="flex flex-col gap-4"
+        >
+          <h2
+            class="text-2xl md:text-4xl text-gray-800 font-bold"
+            data-testid="step-0-title-0"
+          >
+            mock-title
+          </h2>
+          <p
+            class="break-words mb-2"
+            data-testid="step-0-content-0"
+          >
+            mock-content
+          </p>
+          <div
+            class="flex items-center"
+            data-testid="list-element"
+          >
+            <ul
+              class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+              data-testid="step-0-list-0"
+              start="-1"
+            >
+              <li>
+                <p
+                  class="mb-4 break-words"
+                  data-testid="step-0-item-0-0"
+                >
+                  mock-item
+                </p>
+              </li>
+              <li>
+                <p
+                  class="mb-4 break-words"
+                  data-testid="step-0-item-0-1"
+                >
+                  mock-item
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p
+            class="mb-4 break-words"
+            data-testid="step-0-footer-0"
+          >
+            mock-footer
+          </p>
+        </section>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="lookupPostcode"
+            >
+              components.step-0.form.lookup-postcode.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="lookupPostcode-error"
+              id="lookupPostcode-error"
+            >
+              components.step-0.form.lookup-postcode.error
+            </p>
+            <input
+              aria-describedby="lookupPostcode-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-lookupPostcode"
+              id="lookupPostcode"
+              name="lookupPostcode"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+          data-testid="errors"
+        >
+          <div
+            class="text-base"
+          >
+            <label
+              class="block text-2xl"
+              for="lookupAddressLine1"
+            >
+              components.step-0.form.lookup-address-line-1.label
+            </label>
+            <p
+              class="break-words mb-0 text-red-700"
+              data-testid="lookupAddressLine1-error"
+              id="lookupAddressLine1-error"
+            >
+              components.step-0.form.lookup-address-line-1.error
+            </p>
+            <input
+              aria-describedby="lookupAddressLine1-error"
+              aria-invalid="true"
+              class="obfuscate px-3 m-px mt-2 w-full h-10 rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-red-700 border-2"
+              data-testid="input-lookupAddressLine1"
+              id="lookupAddressLine1"
+              name="lookupAddressLine1"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      common.form.button.continue-text
+      <span />
+    </button>
+  </form>
+  <form
+    action="/api/form-handler"
+    aria-label="address-manual-entry-form"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="locale"
+      type="hidden"
+    />
+    <input
+      name="currentStep"
+      type="hidden"
+      value="step-0"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="address-details"
+    />
+    <input
+      name="lookupPostcode"
+      type="hidden"
+      value="manual"
+    />
+    <input
+      name="lookupAddressLine1"
+      type="hidden"
+      value="manual"
+    />
+    <button
+      class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button"
+      data-testid="address-manual-entry-form-button"
+      type="submit"
+    >
+      <span />
+      components.step-0.link
+      <span />
+    </button>
+  </form>
+</div>
+`;

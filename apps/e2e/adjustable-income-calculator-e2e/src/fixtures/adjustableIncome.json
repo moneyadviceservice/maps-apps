@@ -1,0 +1,56 @@
+{
+  "core": {
+    "heading": "Estimate how much flexible income you could take",
+    "potLabel": "How much is your pension currently worth?",
+    "ageLabel": "What age do you want to start taking money?",
+    "resultsTitle": "Your results",
+    "potResultsLabel": "Taking a flexible income from a pension worth £%POT_VALUE% could give you an estimated:",
+    "estimateLabel": "and",
+    "taxAmount": "£%TAX_VALUE% as a taxable monthly income until you’re %AGE_UNTIL%",
+    "resultCalculationInfo": "This estimate is for a single-life non-escalating annuity.",
+    "resultEstimateInfo": "You may wish to choose a joint-life annuity that pays your spouse or partner after you die, or an enhanced annuity which pays more if you smoke or have a medical condition.",
+    "unableSubmitLabel": "Unable to submit the form",
+    "potErrorLabel": "How much is your pension currently worth? - Enter a figure",
+    "potErrorLabel1": "How much is your pension currently worth? - Amount must be less than £5,000,000",
+    "potZeroErrorLabel": "How much is your pension currently worth? - Amount must be at least £1",
+    "ageErrorLabel1": "What age do you want to start taking money? - Enter the age you’d like to retire, from 55 to 99",
+    "potFieldLevelErrorLabel": "Amount must be less than £5,000,000",
+    "potZeroFieldLevelErrorLabel": "Amount must be at least £1",
+    "ageFieldLevelErrorLabel": "Enter the age you’d like to retire, from 55 to 99"
+  },
+  "tests": [
+    {
+      "label": "pot £34,555 and age 56",
+      "pot": "34,555",
+      "age": "56",
+      "takeHome": "£8,639 as a one-off tax-free lump sum",
+      "tax": "104",
+      "ageUntil": "88"
+    },
+    {
+      "label": "pot £99,000 and age 65",
+      "pot": "99,000",
+      "age": "65",
+      "takeHome": "£24,750 as a one-off tax-free lump sum",
+      "tax": "408",
+      "ageUntil": "85"
+    },
+    {
+      "label": "pot £54,000 and age 75",
+      "pot": "54,000",
+      "age": "75",
+      "takeHome": "£13,500 as a one-off tax-free lump sum",
+      "tax": "391",
+      "ageUntil": "85"
+    },
+
+    {
+      "label": "pot £90,000 and age 55",
+      "pot": "90,000",
+      "age": "55",
+      "takeHome": "£22,500 as a one-off tax-free lump sum",
+      "tax": "283",
+      "ageUntil": "85"
+    }
+  ]
+}

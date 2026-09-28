@@ -1,0 +1,1 @@
+export { isInOfficeHours } from './isInOfficeHours';

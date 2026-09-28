@@ -1,0 +1,657 @@
+.ccc-notify__notify {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  padding-bottom: 40px !important;
+}
+@media only screen and (min-width: 600px) {
+  .ccc-notify__notify {
+    align-items: flex-start !important;
+  }
+}
+@media only screen and (min-width: 741px) {
+  .ccc-notify__notify {
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .ccc-notify__notify {
+    padding-right: 32px !important;
+    padding-left: 32px !important;
+  }
+}
+@media only screen and (min-width: 1337px) {
+  .ccc-notify__notify {
+    padding-right: 165.5px !important;
+    padding-left: 165.5px !important;
+  }
+}
+.ccc-notify-text {
+  margin-right: 16px !important;
+}
+.ccc-notify-link {
+  padding: 0 !important;
+}
+.ccc-notify-link > span {
+  color: #c82a87 !important;
+  font-size: 16px !important;
+  font-size: 1rem !important;
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  text-decoration: underline;
+}
+.ccc-notify-link:link > span {
+  color: #c82a87 !important;
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  text-decoration: underline;
+}
+.ccc-notify-link:link .ccc-notify-link > span {
+  color: #c82a87 !important;
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  text-decoration: underline;
+}
+.ccc-notify-link:hover > span {
+  color: #ae0060 !important;
+  text-decoration: none;
+}
+.ccc-notify-link:hover .ccc-notify-link > span {
+  color: #ae0060 !important;
+  text-decoration: none;
+}
+.ccc-notify-link:active,
+.ccc-notify-link:focus {
+  border: none !important;
+  outline: none !important;
+}
+.ccc-notify-link:active > span,
+.ccc-notify-link:focus > span {
+  color: #9c0052 !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+.ccc-notify-link:active .ccc-notify-link,
+.ccc-notify-link:focus .ccc-notify-link {
+  border: none !important;
+  outline: none !important;
+}
+.ccc-notify-link:active .ccc-notify-link > span,
+.ccc-notify-link:focus .ccc-notify-link > span {
+  color: #9c0052 !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+.ccc-notify-link:focus:not(:active) > span {
+  color: #000b3b !important;
+  background-color: #f0f05a !important;
+  -webkit-box-shadow: 0 4px 0 0 #8200d1;
+  -moz-box-shadow: 0 4px 0 0 #8200d1;
+  -ms-box-shadow: 0 4px 0 0 #8200d1;
+  -o-box-shadow: 0 4px 0 0 #8200d1;
+  box-shadow: 0 4px 0 0 #8200d1;
+  text-decoration: none;
+}
+.ccc-notify-link:focus:not(:active) .ccc-notify-link > span {
+  color: #000b3b !important;
+  background-color: #f0f05a !important;
+  -webkit-box-shadow: 0 4px 0 0 #8200d1;
+  -moz-box-shadow: 0 4px 0 0 #8200d1;
+  -ms-box-shadow: 0 4px 0 0 #8200d1;
+  -o-box-shadow: 0 4px 0 0 #8200d1;
+  box-shadow: 0 4px 0 0 #8200d1;
+  text-decoration: none;
+}
+.ccc-notify-link:visited:not(:focus):not(:hover) > span {
+  color: #792b9e !important;
+  text-decoration: underline;
+}
+.ccc-notify-link:visited:not(:focus):not(:hover) .ccc-notify-link > span {
+  color: #792b9e !important;
+  text-decoration: underline;
+}
+.ccc-notify-button {
+  margin-top: 25px !important;
+}
+@media only screen and (min-width: 741px) {
+  .ccc-notify-button {
+    margin-top: 28px !important;
+  }
+}
+.ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-close-button {
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  font-size: 16px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  background-color: #c82a87 !important;
+  border-radius: 4px !important;
+  border: none !important;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-accept-button > span,
+.ccc-notify-button.ccc-close-button > span {
+  background-color: inherit !important;
+  color: #fff;
+}
+.ccc-notify-button.ccc-accept-button:hover,
+.ccc-notify-button.ccc-close-button:hover {
+  background-color: #ae0060 !important;
+  box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-accept-button:hover .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-accept-button:hover .ccc-notify-button.ccc-close-button,
+.ccc-notify-button.ccc-close-button:hover .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-close-button:hover .ccc-notify-button.ccc-close-button {
+  background-color: #ae0060 !important;
+  box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-accept-button:active,
+.ccc-notify-button.ccc-close-button:active,
+.ccc-notify-button.ccc-accept-button:focus,
+.ccc-notify-button.ccc-close-button:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: #9c0052 !important;
+  position: relative;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-accept-button:active:after,
+.ccc-notify-button.ccc-close-button:active:after,
+.ccc-notify-button.ccc-accept-button:focus:after,
+.ccc-notify-button.ccc-close-button:focus:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 1px 0 #fff, inset 0 5px 2px rgba(0, 11, 59, 0.25);
+  border: 3px solid #f0f05a;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-accept-button:active
+  .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-accept-button:active .ccc-notify-button.ccc-close-button,
+.ccc-notify-button.ccc-close-button:active .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-close-button:active .ccc-notify-button.ccc-close-button,
+.ccc-notify-button.ccc-accept-button:focus .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-accept-button:focus .ccc-notify-button.ccc-close-button,
+.ccc-notify-button.ccc-close-button:focus .ccc-notify-button.ccc-accept-button,
+.ccc-notify-button.ccc-close-button:focus .ccc-notify-button.ccc-close-button {
+  border: none !important;
+  outline: none !important;
+  background-color: #9c0052 !important;
+  position: relative;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-accept-button:active
+  .ccc-notify-button.ccc-accept-button:after,
+.ccc-notify-button.ccc-accept-button:active
+  .ccc-notify-button.ccc-close-button:after,
+.ccc-notify-button.ccc-close-button:active
+  .ccc-notify-button.ccc-accept-button:after,
+.ccc-notify-button.ccc-close-button:active
+  .ccc-notify-button.ccc-close-button:after,
+.ccc-notify-button.ccc-accept-button:focus
+  .ccc-notify-button.ccc-accept-button:after,
+.ccc-notify-button.ccc-accept-button:focus
+  .ccc-notify-button.ccc-close-button:after,
+.ccc-notify-button.ccc-close-button:focus
+  .ccc-notify-button.ccc-accept-button:after,
+.ccc-notify-button.ccc-close-button:focus
+  .ccc-notify-button.ccc-close-button:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 1px 0 #fff, inset 0 5px 2px rgba(0, 11, 59, 0.25);
+  border: 3px solid #f0f05a;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-reject-button {
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  font-size: 16px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+  border: 1px solid #ae0060 !important;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-reject-button > span {
+  background-color: inherit !important;
+  color: #ae0060 !important;
+}
+.ccc-notify-button.ccc-reject-button:hover {
+  background-color: #f3f1f3 !important;
+  box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-reject-button:hover
+  .ccc-notify-button.ccc-reject-button {
+  background-color: #f3f1f3 !important;
+  box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+}
+.ccc-notify-button.ccc-reject-button:active,
+.ccc-notify-button.ccc-reject-button:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: #f3f1f3 !important;
+  position: relative;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-reject-button:active:after,
+.ccc-notify-button.ccc-reject-button:focus:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 1px 0 #fff, inset 0 5px 2px rgba(0, 11, 59, 0.25);
+  border: 3px solid #8200d1;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-reject-button:active
+  .ccc-notify-button.ccc-reject-button,
+.ccc-notify-button.ccc-reject-button:focus
+  .ccc-notify-button.ccc-reject-button {
+  border: none !important;
+  outline: none !important;
+  background-color: #f3f1f3 !important;
+  position: relative;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-reject-button:active
+  .ccc-notify-button.ccc-reject-button:after,
+.ccc-notify-button.ccc-reject-button:focus
+  .ccc-notify-button.ccc-reject-button:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 1px 0 #fff, inset 0 5px 2px rgba(0, 11, 59, 0.25);
+  border: 3px solid #8200d1;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active) {
+  border: none !important;
+  outline: none !important;
+  background-color: #f0f05a !important;
+  color: #000b3b;
+  position: relative;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active) > span {
+  background-color: inherit !important;
+  color: #000b3b !important;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active):after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+  border: 3px solid #8200d1;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active)
+  .ccc-notify-button.ccc-reject-button {
+  border: none !important;
+  outline: none !important;
+  background-color: #f0f05a !important;
+  color: #000b3b;
+  position: relative;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active)
+  .ccc-notify-button.ccc-reject-button
+  > span {
+  background-color: inherit !important;
+  color: #000b3b !important;
+}
+.ccc-notify-button.ccc-reject-button:focus:not(:active)
+  .ccc-notify-button.ccc-reject-button:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+  border: 3px solid #8200d1;
+  border-radius: 4px;
+}
+.ccc-notify-button#ccc-notify-accept:focus:not(:active) {
+  border: none !important;
+  outline: none !important;
+  background-color: #c82a87 !important;
+  position: relative;
+}
+.ccc-notify-button#ccc-notify-accept:focus:not(:active):after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+  border: 3px solid #f0f05a;
+  border-radius: 4px;
+}
+.ccc-notify-button#ccc-notify-accept:focus:not(:active)
+  .ccc-notify-button#ccc-notify-accept {
+  border: none !important;
+  outline: none !important;
+  background-color: #c82a87 !important;
+  position: relative;
+}
+.ccc-notify-button#ccc-notify-accept:focus:not(:active)
+  .ccc-notify-button#ccc-notify-accept:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+  border: 3px solid #f0f05a;
+  border-radius: 4px;
+}
+.ccc-notify-button#ccc-dismiss-button > span {
+  color: #fff !important;
+}
+.ccc-notify-button#ccc-dismiss-button:focus:not(:active) > span {
+  color: #000b3b !important;
+}
+.ccc-notify-button#ccc-dismiss-button:focus:not(:active)
+  .ccc-notify-button#ccc-dismiss-button
+  > span {
+  color: #000b3b !important;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active),
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active) {
+  background-color: #f0f05a !important;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active):after,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active):after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 3px solid #8200d1;
+  box-shadow: none;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active) > span,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active) > span {
+  color: #000b3b !important;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button.ccc-close-button,
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button.ccc-close-button,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings {
+  background-color: #f0f05a !important;
+  box-shadow: none;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button.ccc-close-button:after,
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings:after,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button.ccc-close-button:after,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 3px solid #8200d1;
+  box-shadow: none;
+  border-radius: 4px;
+}
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button.ccc-close-button
+  > span,
+.ccc-notify-button.ccc-close-button:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings
+  > span,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button.ccc-close-button
+  > span,
+.ccc-notify-button#ccc-recommended-settings:focus:not(:active)
+  .ccc-notify-button#ccc-recommended-settings
+  > span {
+  color: #000b3b !important;
+}
+.ccc-panel h2,
+.ccc-notify-text h2,
+.ccc-panel h1,
+.ccc-notify-text h1 {
+  padding: 0 !important;
+  line-height: 25px !important;
+  line-height: 1.563rem !important;
+  font-size: 20px !important;
+  font-size: 1.25rem !important;
+  color: #000b3b !important;
+}
+@media only screen and (min-width: 741px) {
+  .ccc-panel h2,
+  .ccc-notify-text h2,
+  .ccc-panel h1,
+  .ccc-notify-text h1 {
+    line-height: 28px !important;
+    line-height: 1.75rem !important;
+    font-size: 22px !important;
+    font-size: 1.375rem !important;
+  }
+}
+.ccc-panel h3,
+.ccc-notify-text h3,
+.ccc-panel p,
+.ccc-notify-text p {
+  line-height: 23px !important;
+  line-height: 1.438rem !important;
+  font-size: 1rem !important;
+  opacity: 1 !important;
+  color: #000b3b !important;
+}
+.ccc-panel h3 > img,
+.ccc-notify-text h3 > img,
+.ccc-panel p > img,
+.ccc-notify-text p > img {
+  padding-top: 35px !important;
+}
+.ccc-panel h3 > a,
+.ccc-notify-text h3 > a,
+.ccc-panel p > a,
+.ccc-notify-text p > a {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Roobert', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.4375em;
+  outline: 0;
+  color: #c82a87 !important;
+}
+.ccc-panel h3 > a:link,
+.ccc-notify-text h3 > a:link,
+.ccc-panel p > a:link,
+.ccc-notify-text p > a:link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c82a87 !important;
+  outline: 0;
+}
+.ccc-panel h3 > a:hover,
+.ccc-notify-text h3 > a:hover,
+.ccc-panel p > a:hover,
+.ccc-notify-text p > a:hover {
+  color: #ae0060 !important;
+  text-decoration: none;
+}
+.ccc-panel h3 > a:focus,
+.ccc-notify-text h3 > a:focus,
+.ccc-panel p > a:focus,
+.ccc-notify-text p > a:focus {
+  color: #000b3b;
+  text-decoration: none;
+}
+.ccc-panel h3 > a:focus:not(:active):not(:hover),
+.ccc-notify-text h3 > a:focus:not(:active):not(:hover),
+.ccc-panel p > a:focus:not(:active):not(:hover),
+.ccc-notify-text p > a:focus:not(:active):not(:hover) {
+  color: #000b3b !important;
+  background-color: #f0f05a;
+  -webkit-box-shadow: 0 4px 0 0 #8200d1;
+  -moz-box-shadow: 0 4px 0 0 #8200d1;
+  -ms-box-shadow: 0 4px 0 0 #8200d1;
+  -o-box-shadow: 0 4px 0 0 #8200d1;
+  box-shadow: 0 4px 0 0 #8200d1;
+  text-decoration: none;
+}
+.ccc-panel h3 > a:visited:not(:focus):not(:hover),
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover),
+.ccc-panel p > a:visited:not(:focus):not(:hover),
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) {
+  text-decoration: underline;
+  color: #792b9e !important;
+}
+.ccc-panel h3 > a:link .ccc-panel h3 > a,
+.ccc-panel h3 > a:link .ccc-notify-text h3 > a,
+.ccc-panel h3 > a:link .ccc-panel p > a,
+.ccc-panel h3 > a:link .ccc-notify-text p > a,
+.ccc-notify-text h3 > a:link .ccc-panel h3 > a,
+.ccc-notify-text h3 > a:link .ccc-notify-text h3 > a,
+.ccc-notify-text h3 > a:link .ccc-panel p > a,
+.ccc-notify-text h3 > a:link .ccc-notify-text p > a,
+.ccc-panel p > a:link .ccc-panel h3 > a,
+.ccc-panel p > a:link .ccc-notify-text h3 > a,
+.ccc-panel p > a:link .ccc-panel p > a,
+.ccc-panel p > a:link .ccc-notify-text p > a,
+.ccc-notify-text p > a:link .ccc-panel h3 > a,
+.ccc-notify-text p > a:link .ccc-notify-text h3 > a,
+.ccc-notify-text p > a:link .ccc-panel p > a,
+.ccc-notify-text p > a:link .ccc-notify-text p > a {
+  color: #c82a87 !important;
+}
+.ccc-panel h3 > a:hover .ccc-panel h3 > a,
+.ccc-panel h3 > a:hover .ccc-notify-text h3 > a,
+.ccc-panel h3 > a:hover .ccc-panel p > a,
+.ccc-panel h3 > a:hover .ccc-notify-text p > a,
+.ccc-notify-text h3 > a:hover .ccc-panel h3 > a,
+.ccc-notify-text h3 > a:hover .ccc-notify-text h3 > a,
+.ccc-notify-text h3 > a:hover .ccc-panel p > a,
+.ccc-notify-text h3 > a:hover .ccc-notify-text p > a,
+.ccc-panel p > a:hover .ccc-panel h3 > a,
+.ccc-panel p > a:hover .ccc-notify-text h3 > a,
+.ccc-panel p > a:hover .ccc-panel p > a,
+.ccc-panel p > a:hover .ccc-notify-text p > a,
+.ccc-notify-text p > a:hover .ccc-panel h3 > a,
+.ccc-notify-text p > a:hover .ccc-notify-text h3 > a,
+.ccc-notify-text p > a:hover .ccc-panel p > a,
+.ccc-notify-text p > a:hover .ccc-notify-text p > a {
+  color: #ae0060 !important;
+}
+.ccc-panel h3 > a:active,
+.ccc-notify-text h3 > a:active,
+.ccc-panel p > a:active,
+.ccc-notify-text p > a:active,
+.ccc-panel h3 > a:focus,
+.ccc-notify-text h3 > a:focus,
+.ccc-panel p > a:focus,
+.ccc-notify-text p > a:focus {
+  color: #9c0052 !important;
+}
+.ccc-panel h3 > a:active .ccc-panel h3 > a,
+.ccc-panel h3 > a:active .ccc-notify-text h3 > a,
+.ccc-panel h3 > a:active .ccc-panel p > a,
+.ccc-panel h3 > a:active .ccc-notify-text p > a,
+.ccc-notify-text h3 > a:active .ccc-panel h3 > a,
+.ccc-notify-text h3 > a:active .ccc-notify-text h3 > a,
+.ccc-notify-text h3 > a:active .ccc-panel p > a,
+.ccc-notify-text h3 > a:active .ccc-notify-text p > a,
+.ccc-panel p > a:active .ccc-panel h3 > a,
+.ccc-panel p > a:active .ccc-notify-text h3 > a,
+.ccc-panel p > a:active .ccc-panel p > a,
+.ccc-panel p > a:active .ccc-notify-text p > a,
+.ccc-notify-text p > a:active .ccc-panel h3 > a,
+.ccc-notify-text p > a:active .ccc-notify-text h3 > a,
+.ccc-notify-text p > a:active .ccc-panel p > a,
+.ccc-notify-text p > a:active .ccc-notify-text p > a,
+.ccc-panel h3 > a:focus .ccc-panel h3 > a,
+.ccc-panel h3 > a:focus .ccc-notify-text h3 > a,
+.ccc-panel h3 > a:focus .ccc-panel p > a,
+.ccc-panel h3 > a:focus .ccc-notify-text p > a,
+.ccc-notify-text h3 > a:focus .ccc-panel h3 > a,
+.ccc-notify-text h3 > a:focus .ccc-notify-text h3 > a,
+.ccc-notify-text h3 > a:focus .ccc-panel p > a,
+.ccc-notify-text h3 > a:focus .ccc-notify-text p > a,
+.ccc-panel p > a:focus .ccc-panel h3 > a,
+.ccc-panel p > a:focus .ccc-notify-text h3 > a,
+.ccc-panel p > a:focus .ccc-panel p > a,
+.ccc-panel p > a:focus .ccc-notify-text p > a,
+.ccc-notify-text p > a:focus .ccc-panel h3 > a,
+.ccc-notify-text p > a:focus .ccc-notify-text h3 > a,
+.ccc-notify-text p > a:focus .ccc-panel p > a,
+.ccc-notify-text p > a:focus .ccc-notify-text p > a {
+  color: #9c0052 !important;
+}
+.ccc-panel h3 > a:visited:not(:focus):not(:hover) .ccc-panel h3 > a,
+.ccc-panel h3 > a:visited:not(:focus):not(:hover) .ccc-notify-text h3 > a,
+.ccc-panel h3 > a:visited:not(:focus):not(:hover) .ccc-panel p > a,
+.ccc-panel h3 > a:visited:not(:focus):not(:hover) .ccc-notify-text p > a,
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover) .ccc-panel h3 > a,
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover) .ccc-notify-text h3 > a,
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover) .ccc-panel p > a,
+.ccc-notify-text h3 > a:visited:not(:focus):not(:hover) .ccc-notify-text p > a,
+.ccc-panel p > a:visited:not(:focus):not(:hover) .ccc-panel h3 > a,
+.ccc-panel p > a:visited:not(:focus):not(:hover) .ccc-notify-text h3 > a,
+.ccc-panel p > a:visited:not(:focus):not(:hover) .ccc-panel p > a,
+.ccc-panel p > a:visited:not(:focus):not(:hover) .ccc-notify-text p > a,
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) .ccc-panel h3 > a,
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) .ccc-notify-text h3 > a,
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) .ccc-panel p > a,
+.ccc-notify-text p > a:visited:not(:focus):not(:hover) .ccc-notify-text p > a {
+  color: #792b9e !important;
+}
+.ccc-panel #ccc-optional-categories h3,
+.ccc-notify-text #ccc-optional-categories h3 {
+  color: #000b3b !important;
+  font-weight: bold;
+}
+
+.checkbox-toggle.checkbox-toggle--slider {
+  border: 4px solid #f3f1f3 !important;
+  box-shadow: 0 0 0 1px #9da1ca !important;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: 0 0 0 2px #8200d1, 0 0 0 6px #f0f05a !important;
+  }
+}
+
+.checkbox-toggle--slider .checkbox-toggle-toggle {
+  background-color: #9da1ca !important;
+}
+
+.checkbox-toggle--slider input:checked ~ .checkbox-toggle-toggle {
+  background-color: #c9308d !important;
+}

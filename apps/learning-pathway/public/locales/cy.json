@@ -1,0 +1,68 @@
+{
+  "pageTitle": "Llwybr Dysgu",
+  "bannerTitle": "Fframwaith Ansawdd Cyngor ar Ddyled",
+  "back-to-top": "Nôl i'r brig",
+  "footer": {
+    "copyright": "Copyright",
+    "rightsReserved": "All rights reserved."
+  },
+  "document-pages": {
+    "ownerTitle": "Owner",
+    "dateLaunchedTitle": "Date Launched"
+  },
+  "details-page": {
+    "keyInfo": "Key Info",
+    "dateAccreditedTitle": "Date Accredited",
+    "prerequisitesTitle": "Pre-requisite learning required",
+    "furtherLinksTitle": "Links to further info"
+  },
+  "learning-pathway-list": {
+    "documentLinkTitle": "View document",
+    "documentsNumberText": "documents found",
+    "filtersTitle": "Filters",
+    "clearFiltersButton": "Clear all filters",
+    "applyFiltersButton": "Apply filters",
+    "searchTitle": "Keyword search",
+    "cardsPerPageDropdown": "View per page",
+    "sortLabel": "Trefnu canlyniadau yn ôl",
+    "sortAnnouncement": "Canlyniadau wedi'u trefnu yn ôl {order}",
+    "sort": {
+      "relevance": "Relevance",
+      "random": "Ar hap",
+      "titleAZ": "Teitl A-Z",
+      "titleZA": "Teitl Z-A",
+      "dateLaunched": "Dyddiad lansio (y diweddaraf yn gyntaf)"
+    }
+  },
+  "start-page": {
+    "activity-set-heading": "Set gweithgaredd",
+    "definition-heading": "Diffiniad",
+    "learning-pathway-hub": "Hwb llwybr dysgu"
+  },
+  "empty-results": {
+    "title": "We're sorry, no results have been found for your search.",
+    "description": {
+      "text": "Improve your search by:",
+      "list-1": "double-checking your spelling.",
+      "list-2": "using fewer filters.",
+      "list-3": "trying more general keywords.",
+      "list-4": "trying different keywords."
+    }
+  },
+  "sticky-nav": {
+    "exploreTopic": "Archwilio’r pwnc hwn",
+    "close": "Cau"
+  },
+  "error-page": {
+    "seoTitle": "Error",
+    "seoDescription": "Sorry, we couldn't find the page you're looking for",
+    "heading": "Sorry, we couldn't find the page you're looking for",
+    "description": "It may no longer exist, or the link contained an error.",
+    "whatYouCanDo": "What you can do",
+    "homepageText": "Return to the",
+    "homepageLink": "MaPS.org homepage",
+    "hubText": "Go back to the",
+    "hubLink": "Learning Pathway Hub",
+    "searchText": "Use the search form in the header of our website"
+  }
+}

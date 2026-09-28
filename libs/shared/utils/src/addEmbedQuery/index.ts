@@ -1,0 +1,1 @@
+export { addEmbedQuery } from './addEmbedQuery';

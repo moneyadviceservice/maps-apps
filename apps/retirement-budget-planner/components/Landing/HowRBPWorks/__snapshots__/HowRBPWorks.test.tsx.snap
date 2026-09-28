@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`test HowRBPWorks component should render the component 1`] = `
+<div>
+  <section
+    data-testid="how-rbp-works"
+  >
+    <div>
+      <h2
+        class="text-base text-gray-800 font-bold mb-4"
+      >
+        What you’ll get
+      </h2>
+      <p
+        class="mb-4 break-words"
+        data-testid="paragraph"
+      >
+        This tool will show you:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pb-8 pl-2 text-sm list-inside"
+          start="-1"
+        >
+          <li>
+            <span>
+              a simple summary of your likely costs in retirement
+            </span>
+          </li>
+          <li>
+            <span>
+              how much retirement income you're estimated to get from your State Pension age
+            </span>
+          </li>
+          <li>
+            <span>
+              what to do if your costs are higher than your income.
+            </span>
+          </li>
+        </ul>
+      </div>
+      <p
+        class="mb-4 break-words"
+        data-testid="paragraph"
+      >
+        For more detailed breakdowns, you can use our:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pb-8 pl-2 text-sm list-inside"
+          start="-1"
+        >
+          <li>
+            <span>
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Budget planner
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+               to help you keep track of your money now
+            </span>
+          </li>
+          <li>
+            <span>
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Pension calculator
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+               to see your likely retirement income from all your pensions – before and after State Pension age.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-base text-gray-800 font-bold mb-4"
+      >
+        How it works
+      </h2>
+      <p
+        class="mb-4 break-words"
+        data-testid="paragraph"
+      >
+        We’ll ask you for details of your finances and future plans, including:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pb-8 pl-2 text-sm list-inside"
+          start="-1"
+        >
+          <li>
+            <span>
+              when you’d like to retire
+            </span>
+          </li>
+          <li>
+            <span>
+              your estimated retirement income
+            </span>
+          </li>
+          <li>
+            <span>
+              your likely costs after you retire, such as bills, rent and travel.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-base text-gray-800 font-bold mb-4"
+      >
+        What you’ll need
+      </h2>
+      <p
+        class="mb-4 break-words"
+        data-testid="paragraph"
+      >
+        To get the most accurate results, it’s best to:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 pb-8 pl-2 text-sm list-inside"
+          start="-1"
+        >
+          <li>
+            <span>
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="https://www.gov.uk/check-state-pension"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                check your State Pension forecast
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+               on GOV.UK to find out how much you’re on track to get
+            </span>
+          </li>
+          <li>
+            <span>
+              know how much any private pensions are estimated to pay you – you can usually log in to your provider’s online account or use the last annual statement you received
+            </span>
+          </li>
+          <li>
+            <span>
+              use a bank statement to check all the costs you currently have.
+            </span>
+          </li>
+        </ul>
+      </div>
+      <a
+        class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white my-4"
+        data-testid="rbp-link-from-how-it-works"
+        href="/en/about-you"
+        id="submit"
+      >
+        Start my retirement budget
+      </a>
+    </div>
+  </section>
+</div>
+`;

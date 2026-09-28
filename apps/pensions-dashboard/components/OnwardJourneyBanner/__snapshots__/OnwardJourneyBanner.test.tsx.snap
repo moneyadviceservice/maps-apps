@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`OnwardJourneyBanner renders correctly 1`] = `
+<div>
+  <section
+    aria-labelledby="onward-journey-heading"
+    class="space-y-5 md:space-y-6"
+    data-testid="onward-journey-banner"
+  >
+    <h2
+      class="text-3xl md:text-5xl text-gray-800 font-bold scroll-mt-28 md:scroll-mt-32"
+      data-testid="onward-journey-banner-heading"
+      id="onward-journey-heading"
+      tabindex="-1"
+    >
+      pages.your-pension-breakdown.onward-journey.heading
+    </h2>
+    <p
+      class="break-words mb-0 text-lg md:text-2xl"
+      data-testid="onward-journey-banner-body"
+    >
+      pages.your-pension-breakdown.onward-journey.body
+    </p>
+    <a
+      class="border border-magenta-500 text-magenta-500 bg-white hover:border-pink-800 hover:text-pink-800 hover:bg-gray-50 focus:border-transparent active:text-slate-900 active:outline-blue-700 active:bg-gray-50 active:px-[13px] active:py-[9px] active:border-none t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white block w-full text-center lg:col-start-1 lg:row-start-3 lg:inline-flex lg:w-fit lg:text-left"
+      data-testid="onward-journey-banner-cta"
+      href="pages.your-pension-breakdown.onward-journey.cta-href"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      pages.your-pension-breakdown.onward-journey.cta
+      <span
+        class="sr-only"
+      >
+         (opens in a new window) 
+      </span>
+      <svgr-mock
+        class="inline ml-[6px] mr-[2px]"
+      />
+    </a>
+  </section>
+</div>
+`;

@@ -1,0 +1,24 @@
+{
+  "generators": {
+    "component": {
+      "factory": "./src/generators/component/generator",
+      "schema": "./src/generators/component/schema.json",
+      "description": "component generator"
+    },
+    "changelog": {
+      "factory": "./src/generators/changelog/generator",
+      "schema": "./src/generators/changelog/schema.json",
+      "description": "Generate an app CHANGELOG entry"
+    },
+    "e2e-generate": {
+      "factory": "./src/generators/playwright/generator",
+      "schema": "./src/generators/playwright/schema.json",
+      "description": "Generate a Playwright E2E application scaffold"
+    },
+    "e2e-migrate": {
+      "factory": "./src/generators/playwright/migrate-generator",
+      "schema": "./src/generators/playwright/migrate-schema.json",
+      "description": "Migrate an existing Cypress E2E project to Playwright"
+    }
+  }
+}

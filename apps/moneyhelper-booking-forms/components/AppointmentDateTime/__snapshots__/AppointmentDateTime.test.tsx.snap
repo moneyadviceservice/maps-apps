@@ -1,0 +1,994 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AppointmentDateTime Component renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <section
+      class="flex flex-col gap-4"
+    >
+      <h2
+        class="text-2xl md:text-4xl font-bold text-blue-700"
+        data-testid="appointment-date-time-title-0"
+      >
+        mock-title
+      </h2>
+      <p
+        class="break-words mb-2"
+        data-testid="appointment-date-time-content-0"
+      >
+        mock-content
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="appointment-date-time-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="appointment-date-time-item-0-0"
+            >
+              mock-item
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="appointment-date-time-item-0-1"
+            >
+              mock-item
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p
+        class="mb-4 break-words"
+        data-testid="appointment-date-time-footer-0"
+      >
+        mock-footer
+      </p>
+    </section>
+    <p
+      class="sr-only"
+      id="appointment-date-instructions"
+    >
+      Use arrow keys to move through days. Unavailable dates are skipped. Press Enter to select a date.
+    </p>
+    <div
+      aria-labelledby="appointment-date-time-title"
+      class="w-full max-w-[525px] text-sm sm:text-base flex flex-col gap-4"
+      data-mode="single"
+      lang="en-US"
+    >
+      <div
+        class="relative flex flex-wrap gap-6 max-w-[fit-content] border p-5 px-4 sm:px-6"
+      >
+        <nav
+          aria-label="Navigation bar"
+          class="absolute top-5 left-5 right-5 flex h-[29px] sm:h-[53px] items-center justify-between"
+        >
+          <button
+            aria-disabled="true"
+            aria-label="Go to the Previous Month"
+            class="rdp-button_previous flex items-center gap-1 text-magenta-500 underline decoration-1 underline-offset-2"
+            tabindex="-1"
+            type="button"
+          />
+          <button
+            aria-label="Go to the Next Month"
+            class="rdp-button_next flex items-center gap-1 text-magenta-500 underline decoration-1 underline-offset-2"
+            type="button"
+          >
+            <span
+              class="sm:hidden"
+            >
+              Oct
+            </span>
+            <span
+              class="hidden sm:inline"
+            >
+              October
+            </span>
+            <svg
+              class="w-5 h-5 fill-current"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <polygon
+                points="8 18.112 14.18888889 12 8 5.87733333 9.91111111 4 18 12 9.91111111 20"
+              />
+            </svg>
+          </button>
+        </nav>
+        <div
+          class="rdp-month"
+        >
+          <div
+            class="flex items-center justify-center h-[29px] sm:h-[53px] p-0 md:text-2xl text-blue-700 font-bold"
+          >
+            <span
+              aria-live="polite"
+              class="rdp-caption_label"
+              role="status"
+            >
+              September 2026
+            </span>
+          </div>
+          <table
+            aria-label="September 2026"
+            aria-multiselectable="false"
+            class="w-full table-fixed border-separate border-spacing-1 sm:w-auto sm:border-spacing-2"
+            role="grid"
+          >
+            <thead
+              aria-hidden="true"
+            >
+              <tr
+                class="rdp-weekdays"
+              >
+                <th
+                  aria-label="Monday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Mo
+                </th>
+                <th
+                  aria-label="Tuesday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Tu
+                </th>
+                <th
+                  aria-label="Wednesday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  We
+                </th>
+                <th
+                  aria-label="Thursday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Th
+                </th>
+                <th
+                  aria-label="Friday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Fr
+                </th>
+                <th
+                  aria-label="Saturday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Sa
+                </th>
+                <th
+                  aria-label="Sunday"
+                  class="h-[32px] w-auto text-[12px] font-normal sm:h-[48px] sm:w-[60px] sm:text-base"
+                  scope="col"
+                >
+                  Su
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="rdp-weeks"
+            >
+              <tr
+                class="rdp-week"
+              >
+                <td
+                  class="p-0 align-top rdp-disabled rdp-hidden rdp-outside"
+                  data-day="2026-08-31"
+                  data-disabled="true"
+                  data-hidden="true"
+                  data-month="2026-08"
+                  data-outside="true"
+                  role="gridcell"
+                />
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-01"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Tuesday, September 1st, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      1
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-02"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Wednesday, September 2nd, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      2
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-03"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Thursday, September 3rd, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      3
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-04"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Friday, September 4th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      4
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-05"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Saturday, September 5th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      5
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-06"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Sunday, September 6th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      6
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rdp-week"
+              >
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-07"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Monday, September 7th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      7
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-08"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Tuesday, September 8th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      8
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-09"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Wednesday, September 9th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      9
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-10"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Thursday, September 10th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      10
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-11"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Friday, September 11th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      11
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-12"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Saturday, September 12th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      12
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-13"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Sunday, September 13th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      13
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rdp-week"
+              >
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-14"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Monday, September 14th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      14
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-15"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Tuesday, September 15th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      15
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-16"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Wednesday, September 16th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      16
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-17"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Thursday, September 17th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      17
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-18"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Friday, September 18th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      18
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-19"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Saturday, September 19th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      19
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-20"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Sunday, September 20th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      20
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rdp-week"
+              >
+                <td
+                  class="p-0 align-top rdp-today"
+                  data-day="2026-09-21"
+                  data-today="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Today, Monday, September 21st, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex flex-col items-start justify-between border border-magenta-500 bg-white text-magenta-500 hover:bg-pink-300 focus-visible:bg-pink-300 focus-visible:outline-2 focus-visible:outline-blue-700"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      21
+                    </span>
+                    <span
+                      class="absolute bottom-0 left-0 flex h-5 w-full items-center justify-center text-xs leading-none sm:h-6 sm:text-sm border-t border-magenta-500 text-gray-800 bg-gray-95 group-hover:bg-magenta-300"
+                    >
+                      Today
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top"
+                  data-day="2026-09-22"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Tuesday, September 22nd, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start border border-magenta-500 bg-white text-magenta-500 hover:bg-pink-300 focus-visible:bg-pink-300 focus-visible:outline-2 focus-visible:outline-blue-700"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      22
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-23"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Wednesday, September 23rd, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      23
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-24"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Thursday, September 24th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      24
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-25"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Friday, September 25th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      25
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-26"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Saturday, September 26th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      26
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-27"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Sunday, September 27th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      27
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="rdp-week"
+              >
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-28"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Monday, September 28th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      28
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-29"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Tuesday, September 29th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      29
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled"
+                  data-day="2026-09-30"
+                  data-disabled="true"
+                  role="gridcell"
+                >
+                  <button
+                    aria-label="Wednesday, September 30th, 2026"
+                    class="rdp-day_button group relative w-full min-h-[40px] overflow-hidden p-1 text-left leading-none aspect-square sm:h-[60px] sm:w-[60px] sm:p-2 sm:aspect-auto flex items-start justify-start cursor-not-allowed bg-gray-150 text-gray-800"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <span
+                      class="relative z-10"
+                    >
+                      30
+                    </span>
+                  </button>
+                </td>
+                <td
+                  class="p-0 align-top rdp-disabled rdp-hidden rdp-outside"
+                  data-day="2026-10-01"
+                  data-disabled="true"
+                  data-hidden="true"
+                  data-month="2026-10"
+                  data-outside="true"
+                  role="gridcell"
+                />
+                <td
+                  class="p-0 align-top rdp-disabled rdp-hidden rdp-outside"
+                  data-day="2026-10-02"
+                  data-disabled="true"
+                  data-hidden="true"
+                  data-month="2026-10"
+                  data-outside="true"
+                  role="gridcell"
+                />
+                <td
+                  class="p-0 align-top rdp-disabled rdp-hidden rdp-outside"
+                  data-day="2026-10-03"
+                  data-disabled="true"
+                  data-hidden="true"
+                  data-month="2026-10"
+                  data-outside="true"
+                  role="gridcell"
+                />
+                <td
+                  class="p-0 align-top rdp-disabled rdp-hidden rdp-outside"
+                  data-day="2026-10-04"
+                  data-disabled="true"
+                  data-hidden="true"
+                  data-month="2026-10"
+                  data-outside="true"
+                  role="gridcell"
+                />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        aria-live="polite"
+        class="rdp-footer"
+        role="status"
+      >
+        <details
+          class="group tool-expand"
+          data-testid="expandable-section"
+        >
+          <summary
+            class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+          >
+            <svgr-mock
+              class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+            />
+            <div
+              class="block"
+              data-testid="summary-block-title"
+            >
+              Need help understanding the calendar?
+            </div>
+          </summary>
+          <div
+            class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+          >
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="marker:mr-2 marker:pr-2 marker:leading-snug list-none marker:text-pink-800 mt-4 space-y-4"
+                start="-1"
+              >
+                <li>
+                  <span
+                    class="flex items-center gap-4"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="min-h-10 min-w-10 sm:h-[60px] sm:w-[60px] shrink-0 border-2 border-gray-800 bg-gray-150"
+                    />
+                    <span>
+                      Unavailable date - shown with a grey square
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span
+                    class="flex items-center gap-4"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="min-h-10 min-w-10 sm:h-[60px] sm:w-[60px] shrink-0 border-2 border-magenta-500 bg-white"
+                    />
+                    <span>
+                      Available date – shown with a pink square
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span
+                    class="flex items-center gap-4"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="min-h-10 min-w-10 sm:h-[60px] sm:w-[60px] shrink-0 border-2 border-magenta-500 bg-magenta-500"
+                    />
+                    <span>
+                      Selected date – shown with a filled pink square
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      class="mt-10"
+    >
+      <section
+        class="flex flex-col gap-4"
+      >
+        <h2
+          class="text-2xl md:text-4xl font-bold text-blue-700"
+          data-testid="appointment-help-title-0"
+        >
+          mock-title
+        </h2>
+        <p
+          class="break-words mb-2"
+          data-testid="appointment-help-content-0"
+        >
+          mock-content
+        </p>
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+            data-testid="appointment-help-list-0"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="appointment-help-item-0-0"
+              >
+                mock-item
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="appointment-help-item-0-1"
+              >
+                mock-item
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p
+          class="mb-4 break-words"
+          data-testid="appointment-help-footer-0"
+        >
+          mock-footer
+        </p>
+      </section>
+    </div>
+  </div>
+</div>
+`;

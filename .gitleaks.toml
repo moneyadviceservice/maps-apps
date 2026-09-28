@@ -1,0 +1,11 @@
+# Extends the default Gitleaks rules (pipeline uses v8.18.4).
+[extend]
+useDefault = true
+
+# Allowlist the public Trustpilot TrustBox token by value so line moves
+# and snapshot copies do not break .gitleaksignore fingerprints.
+[allowlist]
+description = "Public Trustpilot TrustBox widget token"
+regexes = [
+  '''a55bb398-6aac-4455-b1bb-e228a7911933''',
+]

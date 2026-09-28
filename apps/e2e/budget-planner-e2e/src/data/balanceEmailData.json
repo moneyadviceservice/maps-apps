@@ -1,0 +1,59 @@
+{
+  "balanceTest": {
+    "data": {
+      "pay": "57",
+      "mortgage": "57",
+      "groceries": "20",
+      "sick-pay": "100",
+      "rent": "10"
+    },
+    "factorPrices": {
+      "per-day": {
+        "income": "£1.87",
+        "spending": "£4.73",
+        "overspend": "£2.86"
+      },
+      "per-week": {
+        "income": "£13.12",
+        "spending": "£33.12",
+        "overspend": "£20"
+      },
+      "per-2-weeks": {
+        "income": "£26.24",
+        "spending": "£66.24",
+        "overspend": "£40"
+      },
+      "per-4-weeks": {
+        "income": "£52.47",
+        "spending": "£132.47",
+        "overspend": "£80"
+      },
+      "per-month": {
+        "income": "£57",
+        "spending": "£143.9",
+        "overspend": "£86.9"
+      },
+      "per-quarter": {
+        "income": "£171",
+        "spending": "431.71",
+        "overspend": "£260.71"
+      },
+      "per-6-months": {
+        "income": "£342",
+        "spending": "£863.43",
+        "overspend": "£521.43"
+      },
+      "per-year": {
+        "income": "£684",
+        "spending": "£1,726.86",
+        "overspend": "£1,042.86"
+      }
+    }
+  },
+  "emailData": {
+    "payInput": "2000",
+    "rent": "745",
+    "email": "mock-mail@maps.org.uk",
+    "invalidEmail": "notanemail"
+  }
+}

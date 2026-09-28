@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`JsOnly component renders correctly 1`] = `
+<ul>
+  <li>
+    one
+  </li>
+  <li>
+    two
+  </li>
+  <li>
+    three
+  </li>
+</ul>
+`;

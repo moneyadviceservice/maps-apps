@@ -1,0 +1,1 @@
+export { analyticsObject } from './analyticsObject';

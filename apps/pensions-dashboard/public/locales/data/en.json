@@ -1,0 +1,80 @@
+{
+  "unavailable-reasons": {
+    "ANO": "Your provider is waiting for information from a third party and needs more time to send us the estimated values. You do not need to do anything at this point, but can check back soon.",
+    "DB": "As you’re no longer a member of this pension scheme, you’re not building up future benefits. The values at retirement are the same as if you could take your pension now.",
+    "DBC": "Your provider needs more time to calculate the estimated values. They have up to 10 days, but can sometimes take longer. **If you're still waiting after 10 days, you can contact your provider for more information.**",
+    "DCC": "Your provider needs more time to calculate the estimated values. They have up to 3 days, but can sometimes take longer. **If you're still waiting after 3 days, you can contact your provider for more information.**",
+    "DCHA": "The value of this pension is less than £5,000. Pension providers can choose whether to send data for pensions under this amount.",
+    "DCHP": "This pension’s expected retirement date is less than 2 years away or has passed, which means your provider cannot send an accurate estimate. You can still see an estimate of what you're built up so far.",
+    "DCSM": "Placeholder text for code DCSM.",
+    "MEM": "Placeholder text for code MEM.",
+    "NEW": "You’re a new member of this scheme, and the provider needs more time to calculate the estimated values. You do not need to do anything at this point. This should be updated no later than when you get your first annual benefit statement, or 12 months after you join the scheme.",
+    "NET": "You’ve recently transferred into this scheme, and the provider needs more time to calculate the estimated values. You do not need to do anything at this point. This should be updated no later than when you get your first annual benefit statement, or 12 months after you join the scheme.",
+    "PPF": "The pension scheme is currently in a Pension Protection Fund assessment period. Contact your provider for your pension details.",
+    "TRN": "There's a transaction affecting the value of this pension. Contact your provider for the most up-to-date information.",
+    "WU": "Your provider is unable to send estimated values as your pension is in the process of closing (winding up). Contact your provider for more details.",
+    "SML": "The estimated income for this pension is less than £120 a year. No data will be available unless the pension value increases.",
+    "SYS_MATCHTYPE": "There's an issue with the data from your pension provider. You do not need to take any action at this point.",
+    "NEW_MATCHTYPE": "This is a new pension. Your provider needs more time to send us data.",
+    "MULTIPLE": "We cannot show an estimated income for this pension. See 'Income & values' for more details."
+  },
+  "additional-types": {
+    "C_AND_C": "Costs and charges",
+    "SIP": "Investment principles",
+    "IMP": "Implementation statement",
+    "ANR": "Annual Report",
+    "SP": "Additional State Pension Information"
+  },
+  "pension-origin": {
+    "A": "Deferred annuity",
+    "PC": "Pension provider: Pension credit",
+    "PM": "Pension provider - Active or deferred",
+    "PT": "Pension provider - Deferred transfer in",
+    "WC": "Occupational pension scheme - Pension credit",
+    "WM": "Occupational pension scheme - Active or deferred",
+    "WT": "Occupational pension scheme - Deferred transfer in"
+  },
+  "types": {
+    "AVC": "AVC",
+    "DB": "defined benefit",
+    "DC": "defined contribution",
+    "HYB": "hybrid",
+    "CDC": "CDC",
+    "CB": "cash balance",
+    "VAR": "combination"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "increasing": "This income will rise after a set number of years.",
+  "safeguarded": "This pension has a safeguarded benefit, which means it includes valuable guaranteed features. This could limit your choices when taking or transferring this pension, so get regulated financial advice to make sure you understand your options. Speak to your provider for more information.",
+  "survivor-benefit": "This benefit includes any pension paid to a spouse, civil partner or other dependants after you die. Contact your provider for more details.",
+  "warnings": {
+    "PSO-title": "A pension sharing order has or is being applied to your pension.",
+    "PSO-description": "A pension sharing order (sometimes called ‘splitting’) has been or is being put in place. This means some or all of this pension will be transferred to your ex-spouse or ex-civil partner. The court order will say the percentage or amount. This means the values shown could be higher than what you’ll receive. Learn more about [divorce and pensions_target=_self](/en/support/understand-your-pensions).",
+    "PEO-title": "A pension attachment or earmarking order has or is being applied to your pension.",
+    "PEO-description": "A pension attachment or earmarking order means some or all of this pension might be paid to your ex-spouse or ex-civil partner when you take your pension. Learn more about [divorce and pensions_target=_self](/en/support/understand-your-pensions).",
+    "PNR-title": "This pension’s retirement date is in the past.",
+    "PNR-description": "Your estimated values may not be accurate because you’ve passed your retirement date, which is the date the provider used to calculate it. You do not usually have to retire or take your pension on this date - contact your provider to ask about your options.",
+    "SCP-title": "This scheme pays some or all annual allowance tax charge.",
+    "SCP-description": "An annual allowance tax charge from your scheme may impact these estimates. Once the charge is paid, your income, pot value or lump sums might be lower.",
+    "FAS-title": "The benefits in your pension will be supplemented by the Financial Assistance Scheme.",
+    "FAS-title-benefit": "This benefit will be supplemented by the Financial Assistance Scheme.",
+    "FAS-description": "Some or all of the income or other benefits you get from this scheme will be supplemented by the Financial Assistance Scheme (FAS). [Get more information on FAS from the Pension Protection Fund.](https://www.ppf.co.uk/our-members/what-it-means-fas)",
+    "UNP-description": "Your pension has an underpin. An underpin is when the income you'll get is calculated in two or more ways. You'll usually get the highest amount from these calculations.",
+    "TVI-description": "You've recently transferred one or more pensions into the pension, but the provider needs more time to include them in these values. Contact your provider for more up-to-date information.",
+    "CUR-description": "These values are normally held in a foreign currency. This means they're based on the exchange rate on the day they were calculated. Contact your provider for more details.",
+    "DEF-description": "Your estimated income was calculated when you were an active member of the scheme, which means it may be higher than what you'll get when you take it. Contact your provider for an up-to-date estimate.",
+    "DBAVC-title": "This pension includes additional voluntary contributions (AVC)",
+    "DBAVC-description": "This pension includes an additional voluntary contribution (AVC) scheme. It has a pot value and a separate estimated income, and could have a different payable date. See the income and values for details.",
+    "MCCLOUD-title": "This pension has different payment options",
+    "MCCLOUD-description": "You have a choice between **legacy** (final salary) and **alternative** (career average) pension benefits, which are calculated in different ways. The income and lump sums will be different for each option.\n\nYou do not have to choose until you start taking your pension.",
+    "CDC-title": "This is a collective defined contribution (CDC) pension",
+    "CDC-description": "The income you could receive is not guaranteed. Your income could go up or down both **before and after** you start receiving it.",
+    "CBLUMP-title": "This cash balance scheme provides a guaranteed lump sum",
+    "CBLUMP-description": "This cash balance scheme is set up to give you a guaranteed lump sum when you retire. You can choose how to take it, for example by buying an annuity (a guaranteed regular income) or by choosing more flexible income options.",
+    "VAR-title": "This pension has a combination of benefit types",
+    "VAR-description": "This pension includes a combination of benefit types. These can be calculated in different ways, have separate incomes and be paid out at different times. See the income and values for details."
+  }
+}

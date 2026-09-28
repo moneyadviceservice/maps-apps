@@ -1,0 +1,66 @@
+{
+  "back-text": "Exit help and support",
+  "callout": {
+    "title": "Not what you’re looking for?",
+    "content": "If you can’t find the answer you were looking for try our other guides or get in touch"
+  },
+  "explore-the-pensions-dashboard": {
+    "title": "Explore the Pensions Dashboard",
+    "link": "explore-the-pensions-dashboard",
+    "heading": "General questions",
+    "description": "Get support for common questions and learn how to make the most of your Pensions Dashboard."
+  },
+  "understand-your-pensions": {
+    "title": "Understand your pensions",
+    "link": "understand-your-pensions",
+    "heading": "General questions",
+    "description": "Get support for common questions about pensions.",
+    "further-guidance": {
+      "title": "Further guidance",
+      "description": "Whether you’re just starting to think about pensions or you’re about to retire, MoneyHelper has guidance to help you plan.",
+      "links": [
+        {
+          "title": "Pensions explained",
+          "text": "Starting a pension, types of pension, understanding pensions",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics"
+        },
+        {
+          "title": "State Pension",
+          "text": "How it works, what you might get, National Insurance",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension"
+        },
+        {
+          "title": "Pension problems and changes",
+          "text": "Complaints, financial help when retired, changes to schemes",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems"
+        },
+        {
+          "title": "Taking your pension",
+          "text": "Ways to draw your pension, when can you retire, Pension Wise appointments",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension"
+        },
+        {
+          "title": "Building your pension",
+          "text": "How much do you need, ways to build your pot, transferring and merging",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot"
+        },
+        {
+          "title": "Tax and pensions",
+          "text": "All guidance, including how to use the Pension Wise service",
+          "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement"
+        },
+        {
+          "title": "Tools",
+          "text": "Useful tools, including; Pension calculator, Find a retirement advisor and Money Midlife MOT",
+          "href": "https://www.moneyhelper.org.uk/en/tools-and-calculators"
+        }
+      ]
+    }
+  },
+  "report-a-technical-problem": {
+    "title": "Report a technical problem",
+    "link": "report-a-technical-problem",
+    "intro": "We're still building and improving our service. Contact us to report a technical problem.",
+    "contact-us": "Contact us"
+  }
+}

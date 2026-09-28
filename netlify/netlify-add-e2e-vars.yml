@@ -1,0 +1,111 @@
+name: Add environment variables for Netlify sites e2e tests
+trigger: none
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: APP
+    type: string
+    displayName: 'App to add variable for'
+  - name: KEYVAULT_SECRETS
+    type: string
+    displayName: 'Environment variables to add, NAME=VALUE separated by ; (A=1;B=2;C=3)'
+    default: ''
+
+stages:
+  - stage: Add_or_Update
+    jobs:
+      - job: Add_or_Update
+        displayName: 'Add or Update Environment Variable'
+        steps:
+          - checkout: self
+
+          - task: AzureCLI@2
+            displayName: 'Set or update Key Vault secret'
+            inputs:
+              azureSubscription: 'ADO-PWD-Connection'
+              scriptType: 'bash'
+              scriptLocation: 'inlineScript'
+              inlineScript: |
+                set -euo pipefail
+
+                if [ -z "${{ parameters.APP }}" ]; then
+                  echo "##vso[task.logissue type=error]APP is required."
+                  exit 1
+                fi
+
+                formatted_app="$(echo "${{ parameters.APP }}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')"
+                secrets_input="${{ parameters.KEYVAULT_SECRETS }}"
+
+                if [ -z "${secrets_input}" ]; then
+                  echo "##vso[task.logissue type=error]Provide KEYVAULT_SECRETS as NAME=VALUE entries separated by ';' (example: A=1;B=2;C=3)."
+                  exit 1
+                fi
+
+                if [[ "$secrets_input" == *$'\n'* || "$secrets_input" == *$'\r'* ]]; then
+                  echo "##vso[task.logissue type=error]KEYVAULT_SECRETS must be a single line with ';' separators (example: A=1;B=2;C=3)."
+                  exit 1
+                fi
+
+                secrets_list="$(printf '%s' "$secrets_input" | tr ';' '\n')"
+
+                saved_count=0
+
+                while IFS= read -r raw_line || [ -n "$raw_line" ]; do
+                  line="$(echo "$raw_line" | sed 's/^\s*//;s/\s*$//')"
+
+                  # Skip empty lines
+                  if [ -z "$line" ]; then
+                    continue
+                  fi
+
+                  # Skip comment lines for easier manual entry
+                  case "$line" in
+                    \#*)
+                      continue
+                      ;;
+                  esac
+
+                  if [[ "$line" != *=* ]]; then
+                    echo "##vso[task.logissue type=error]Invalid format '$line'. Expected NAME=VALUE."
+                    exit 1
+                  fi
+
+                  secret_name_raw="${line%%=*}"
+                  secret_value="${line#*=}"
+
+                  secret_name_raw="$(echo "$secret_name_raw" | sed 's/^\s*//;s/\s*$//')"
+
+                  if [ -z "$secret_name_raw" ]; then
+                    echo "##vso[task.logissue type=error]Secret name is empty in line '$line'."
+                    exit 1
+                  fi
+
+                  if [ -z "$secret_value" ]; then
+                    echo "##vso[task.logissue type=error]Secret value is empty for '$secret_name_raw'."
+                    exit 1
+                  fi
+
+                  formatted_secret_name="$(echo "$secret_name_raw" | tr '[:upper:]' '[:lower:]' | tr '_' '-')"
+                  combined_secret_name="${formatted_app}--${formatted_secret_name}"
+
+                  az keyvault secret set \
+                    --vault-name "netlify-e2e-env-vars" \
+                    --name "${combined_secret_name}" \
+                    --value "${secret_value}" \
+                    --output none
+
+                  echo "Secret '${combined_secret_name}' was set in vault 'netlify-e2e-env-vars'."
+                  saved_count=$((saved_count + 1))
+                done <<< "$secrets_list"
+
+                if [ "$saved_count" -eq 0 ]; then
+                  echo "##vso[task.logissue type=error]No valid secrets were provided."
+                  exit 1
+                fi
+
+                echo "Saved ${saved_count} secret(s) to Azure Key Vault 'netlify-e2e-env-vars'."

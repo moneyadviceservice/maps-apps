@@ -1,0 +1,107 @@
+{
+  "headings": {
+    "en": [
+      "In most cases, you’ll have a defined benefit pension",
+      "You might have a defined contribution pension",
+      "In most cases, you’ll have a defined contribution pension"
+    ],
+    "cy": [
+      "Yn y mwyafrif o achosion bydd gennych bensiwn buddion wedi’u diffinio",
+      "Efallai bod gennych bensiwn cyfraniadau wedi’u diffinio",
+      "Yn y mwyafrif o achosion bydd gennych bensiwn cyfraniadau wedi'u diffinio"
+    ]
+  },
+  "definedContributionContent": {
+    "en": [
+      "This is just a rough guide. Your provider or employer can confirm the exact type you have. You can also contact our pension specialists for free help.",
+      "A defined contribution pension is the most common type in the UK. It’s a pot of money that you (and sometimes your employer) pay into for your retirement. It might also be called a money purchase pension.",
+      "Your pension is invested, so your retirement income depends on how well the investments perform and how and when you choose to take it.",
+      "For more information, see our guides:",
+      "If you have more than one pension, you can check another pension."
+    ],
+    "cy": [
+      "Canllaw bras yn unig yw hwn. Gall eich darparwr neu eich cyflogwr gadarnhau’n union pa fath o bensiwn sydd gennych. Gallwch hefyd gysylltu â'n harbenigwyr pensiynau am gymorth am ddim.",
+      "Y math mwyaf cyffredin o bensiwn yn y DU yw pensiwn cyfraniadau wedi'u diffinio. Mae’n gronfa o arian rydych chi (ac weithiau eich cyflogwr) yn cyfrannu ati ar gyfer eich ymddeoliad. Efallai y bydd hefyd yn cael ei alw’n bensiwn prynu arian.",
+      "Mae eich pensiwn yn cael ei fuddsoddi, felly mae eich incwm ymddeol yn dibynnu ar berfformiad y buddsoddiadau ac ar sut a phryd rydych chi'n dewis ei gymryd.",
+      "Am ragor o wybodaeth, gweler ein canllawiau:",
+      "Os oes gennych fwy nag un pensiwn, gallwch wirio pensiwn arall."
+    ]
+  },
+  "questions": {
+    "en": [
+      "Was your pension set up by your employer?",
+      "Was that employer in the public sector?",
+      "Is your pension provider listed below?",
+      "When did you start this pension?"
+    ],
+    "cy": [
+      "A gafodd eich pensiwn ei sefydlu gan eich cyflogwr?",
+      "A oedd y cyflogwr hwnnw yn y sector cyhoeddus?",
+      "A yw eich darparwr pensiwn wedi'i restru isod?",
+      "Pryd wnaethoch chi ddechrau’r pensiwn hwn?"
+    ]
+  },
+  "titles": {
+    "setUpBy": "Was your pension set up by your employer?",
+    "pensionComeFrom": "Was that employer in the public sector?",
+    "pensionProvider": "Is your pension provider listed below?",
+    "pensionStartDate": "When did you start this pension?",
+    "checkYourAnswers": "Check your answers",
+    "checkYourAnswersCy": "Gwiriwch eich atebion",
+    "setUpByCy": "A gafodd eich pensiwn ei sefydlu gan eich cyflogwr?",
+    "pensionComeFromCy": "A oedd y cyflogwr hwnnw yn y sector cyhoeddus?",
+    "pensionProviderCy": "A yw eich darparwr pensiwn wedi'i restru isod?",
+    "pensionStartDateCy": "Pryd wnaethoch chi ddechrau’r pensiwn hwn?",
+    "providerDescription": "Some of these providers might have had different names in the past. For example, Aviva used to be called Norwich Union. You can check with your provider if you’re not sure.",
+    "providerDescriptionCy": "Mae’n bosibl bod rhai o’r darparwyr hyn wedi defnyddio enwau gwahanol yn y gorffennol. Er enghraifft, roedd Aviva yn cael ei alw’n Norwich Union yn flaenorol. Os nad ydych yn siŵr, gallwch wirio gyda’ch darparwr."
+  },
+  "providerResponses": {
+    "en": ["Yes", "No", "Not sure"],
+    "cy": ["Ydy", "Na", "Ddim yn siŵr"]
+  },
+  "providers": [
+    "Aberdeen Investments",
+    "Aegon",
+    "AJ Bell",
+    "Aviva",
+    "AXA",
+    "Barclays",
+    "Canada Life",
+    "Embark",
+    "Fidelity",
+    "Friends Life",
+    "Halifax",
+    "Hargreaves Lansdown",
+    "HSBC",
+    "Interactive Investor",
+    "Legal & General",
+    "Lloyds Bank",
+    "LV= (Liverpool Victoria)",
+    "M&G (previously the Prudential)",
+    "Moneybox",
+    "NEST (National Employment Savings Trust)",
+    "Novia",
+    "now:pensions",
+    "Nucleus",
+    "Penfold",
+    "PensionBee",
+    "Phoenix Life",
+    "Quilter",
+    "ReAssure",
+    "Royal Bank of Scotland",
+    "Royal London",
+    "RSA (Royal and Sun Alliance)",
+    "St. James’s Place",
+    "Scottish Friendly",
+    "Scottish Widows",
+    "Smart",
+    "Standard Life",
+    "The People’s Pension",
+    "Transact",
+    "Utmost",
+    "Vanguard",
+    "Virgin Money",
+    "Wesleyan General",
+    "Zurich"
+  ]
+}

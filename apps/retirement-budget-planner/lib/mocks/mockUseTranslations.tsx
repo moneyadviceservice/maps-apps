@@ -1,0 +1,112 @@
+type TranslationValue = Record<
+  string,
+  string | number | boolean | string[] | TranslationValue[]
+>;
+
+export const mockTranslationDataEn: TranslationValue = {
+  'tabs.about-you': 'About you',
+  'tabs.income': 'Retirement income',
+  'tabs.essential-outgoings': 'Retirement costs',
+  'tabs.summary': 'Results',
+  'tabs.save': 'Save and come back later',
+  'tabs.progress-saved': 'Progress saved',
+  'tabs.error-page': 'Error',
+  pageTitle: 'Retirement budget planner',
+  'summaryPage.chart.title': 'Chart title',
+  'summaryPage.chart.description': 'Chart of costs and total summary',
+  'summaryPage.chart.label': 'Retirement costs',
+  'summaryPage.chart.costCategories.housingCost': 'Housing',
+  'summaryPage.chart.costCategories.utilities': 'Household bills',
+  'summaryPage.chart.costCategories.travelCosts': 'Travel',
+  'summaryPage.chart.costCategories.lending': 'Borrowing',
+  'summaryPage.chart.costCategories.insurance': 'Insurance',
+  'summaryPage.chart.costCategories.householdExpenses': 'Living costs',
+  'summaryPage.chart.costCategories.essentialsAdditionalItems': 'Other costs',
+  'summaryPage.chart.edit': 'Edit',
+  'summaryTotal.title': 'Summary total',
+  'summaryTotal.titleWithFrequency': '(monthly)',
+  'summaryTotal.summaryPageTitle': 'Summary total',
+  'summaryTotal.income': 'Retirement income',
+  'summaryTotal.incomeAfterTax': 'Retirement income after tax',
+  'summaryTotal.spending': 'Retirement costs',
+  'summaryTotal.balance': 'Balance',
+  'summaryTotal.yearlyTotal': 'Yearly summary total',
+  'summaryTotal.monthlyTotal': 'Monthly summary total',
+  'summaryTotal.submitLabel': 'Update results',
+  'summaryTotal.aria.description':
+    'Financial summary showing income, spending and balance',
+  'summaryTotal.aria.statusOverspending': 'Overspending',
+  'summaryTotal.aria.statusPositive': 'Positive balance',
+  'summaryTotal.aria.statusBalanced': 'Balanced',
+  'summaryTotal.aria.amountSuffix': 'amount:',
+  'summaryTotal.aria.selectLabel': 'Change summary frequency',
+  'income.amountAria': 'amount',
+  'summaryTotal.announcements.summaryUpdated': 'Summary updated',
+  'summaryTotal.announcements.onTrack': 'on track',
+  'summaryTotal.announcements.overspending': 'overspending',
+  'frequency.day': 'Per day',
+  'frequency.week': 'Per week',
+  'frequency.twoweeks': 'Per 2 weeks',
+  'frequency.fourweeks': 'Per 4 weeks',
+  'frequency.month': 'Per month',
+  'frequency.quarter': 'Per quarter',
+  'frequency.sixmonths': 'Per 6 months',
+  'frequency.year': 'Per year',
+  'income.poundAria': 'in pounds',
+  'landingPage.heading': 'Retirement budget planner',
+  'landingPage.intro':
+    'Find out if your estimated retirement income will cover all your essential costs with our free online tool.',
+  'landingPage.timeEstimate': '5 minutes to complete',
+  'landingPage.startButton': 'Start my retirement budget',
+  'landingPage.sections': [
+    {
+      id: 1,
+      heading: 'What you’ll get',
+      introText: 'This tool will show you:',
+      listItems: [
+        'a simple summary of your likely costs in retirement',
+        "how much retirement income you're estimated to get from your State Pension age",
+        'what to do if your costs are higher than your income.',
+      ],
+      outroText: 'For more detailed breakdowns, you can use our:',
+      outroListItems: [
+        '[Budget planner](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner) to help you keep track of your money now',
+        '[Pension calculator](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/pension-calculator) to see your likely retirement income from all your pensions \u2013 before and after State Pension age.',
+      ],
+    },
+    {
+      id: 2,
+      heading: 'How it works',
+      introText:
+        'We’ll ask you for details of your finances and future plans, including:',
+      listItems: [
+        'when you’d like to retire',
+        'your estimated retirement income',
+        'your likely costs after you retire, such as bills, rent and travel.',
+      ],
+    },
+    {
+      id: 3,
+      heading: 'What you’ll need',
+      introText: 'To get the most accurate results, it’s best to:',
+      listItems: [
+        '[check your State Pension forecast](https://www.gov.uk/check-state-pension) on GOV.UK to find out how much you’re on track to get',
+        'know how much any private pensions are estimated to pay you – you can usually log in to your provider’s online account or use the last annual statement you received',
+        'use a bank statement to check all the costs you currently have.',
+      ],
+      startButton: true,
+    },
+  ],
+  'landingPage.informationCallout.heading':
+    'Need more information on pensions?',
+  'landingPage.informationCallout.introText':
+    'One of our pension specialists will be happy to answer your questions. You can:',
+  'landingPage.informationCallout.listItems': [
+    '[use our webchat](https://www.moneyhelper.org.uk/en/contact-us)',
+    'call us on [0800 011 3797](tel:08000113797) or [+44 20 7932 5780](tel:+442079325780) if you’re outside the UK',
+    '[use our online form](https://enquiry-form.moneyhelper.org.uk/en).',
+  ],
+  'landingPage.informationCallout.outroText':
+    'We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays.',
+  moreInformationToggle: 'More information',
+};

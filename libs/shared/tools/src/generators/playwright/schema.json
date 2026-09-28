@@ -1,0 +1,19 @@
+{
+  "cli": "nx",
+  "id": "playwright",
+  "type": "object",
+  "title": "Create a Playwright E2E project",
+  "description": "Generate a Playwright E2E application scaffold for an existing app.",
+  "properties": {
+    "application": {
+      "type": "string",
+      "description": "The existing Nx application to generate E2E coverage for.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Which application should the E2E project be created for?"
+    }
+  },
+  "required": ["application"]
+}

@@ -1,0 +1,1 @@
+export { validateReferrer } from './validateReferrer';

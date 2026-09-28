@@ -1,0 +1,1 @@
+export { RegisterStepTemplate } from './RegisterStepTemplate';

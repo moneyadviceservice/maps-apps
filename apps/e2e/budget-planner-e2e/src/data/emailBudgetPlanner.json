@@ -1,0 +1,153 @@
+{
+  "TestOne": {
+    "Income": {
+      "Pay": {
+        "PayAfterTax": "1234",
+        "Income from self-employment": "0"
+      },
+      "BenefitsTaxCredit": {
+        "income-universal-credit": "200"
+      },
+      "Pension": {},
+      "OtherIncome": {
+        "income-rent-or-board": "745"
+      },
+      "YourAdditionalItems": {}
+    },
+    "Household bills": {
+      "Mortgage & rent": {
+        "household-bills-mortgage": "457"
+      },
+      "Buildings insurance": {
+        "household-bills-buildings-insurance": "30",
+        "household-bills-contents-insurance": "26"
+      },
+      "Utilities": {
+        "household-bills-council-tax": "115",
+        "household-bills-gas": "60",
+        "household-bills-electricity": "25"
+      }
+    },
+    "Living costs": {
+      "Grocery shopping": {
+        "living-costs-grocery": "300",
+        "living-costs-grocery-factor": 5
+      },
+      "Food & drink": {
+        "living-costs-food-drinks": "300"
+      },
+      "Work": {
+        "living-costs-lunches-snacks": "170",
+        "living-costs-lunches-factor": 5
+      }
+    },
+    "Finance & insurance": {
+      "Insurance": {
+        "finance-insurance-life-insurance": "26",
+        "finance-insurance-income-protection-insurance": "25",
+        "finance-insurance-income-protection-insurance-factor": 5
+      },
+      "Savings and investments": {
+        "finance-insurance-payments-isa": "100",
+        "finance-insurance-payments-isa-factor": 5
+      }
+    },
+    "Family & friends": {
+      "Children": {
+        "family-friends-pocket-money": "50",
+        "family-friends-pocket-money-factor": 5
+      },
+      "Pets": {
+        "family-friends-pet-insurance": "26"
+      }
+    },
+    "Travel": {
+      "Car insurance": {
+        "travel-car-insurance": "45",
+        "travel-car-insurance-factor": 7
+      }
+    },
+    "Leisure": {
+      "Entertainment": {
+        "leisure-cinema-theatre-trips": "25",
+        "leisure-cinema-theatre-trips-factor": 5
+      },
+      "Holidays": {
+        "leisure-holidays": "500",
+        "leisure-holidays-factor": 7
+      }
+    },
+    "SummaryValues": {
+      "Breakdown": {
+        "household-bills": "£661.67",
+        "living-costs": "£156.67",
+        "finance-insurance": "£67.67",
+        "family-friends": "£42.67",
+        "travel": "£3.75",
+        "leisure": "£50.00"
+      },
+      "TotalComponent": {
+        "income": "£2,179",
+        "spending": "£982.42",
+        "spare-cash": "£1,196.58"
+      }
+    }
+  },
+  "TestTwo": {
+    "Income": {
+      "PayAfterTax": "3000",
+      "UniversalCredit": "200",
+      "income-rent-or-board": "745"
+    },
+    "Household bills": {
+      "mortgage": "568",
+      "building-insurance": "30",
+      "contents-insurance": "26",
+      "council-tax": "103",
+      "gas": "60",
+      "electricty": "35"
+    },
+    "Living costs": {
+      "grocery": "130",
+      "grocery-factor": 2,
+      "lunches-snacks": "40",
+      "lunches-snacks-factor": 3
+    },
+    "Finance & insurance": {
+      "life-insurance": "25",
+      "life-insurance-factor": 0,
+      "protection-insurance": "25",
+      "protection-insurance-factor": 5,
+      "isa": "100",
+      "isa-factor": 4
+    },
+    "Family & friends": {
+      "pocket-money": "20",
+      "pocket-money-factor": 0,
+      "pet-insurance": "26"
+    },
+    "Travel": {
+      "car-insurance": "5",
+      "car-insurance-factor": 3
+    },
+    "Leisure": {
+      "cinema-trips": "25",
+      "cinema-trips-factor": 5
+    },
+    "SummaryValues": {
+      "Breakdown": {
+        "household-bills": "£736.67",
+        "living-costs": "£325.89",
+        "finance-insurance": "£868.75",
+        "family-friends": "£877.74",
+        "travel": "£5.43",
+        "leisure": "£8.33"
+      },
+      "TotalComponent": {
+        "income": "£3,945",
+        "spending": "£2,822.81",
+        "spare-cash": "£1,122.19"
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DateInput Component Error Wrapper applies error wrapper styles when hasErrorWrapper is true 1`] = `
+<div
+  class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+  data-testid="errors"
+>
+  <div
+    class="text-base flex flex-col"
+  >
+    <fieldset>
+      <legend
+        class="text-2xl text-gray-800 sr-only"
+        data-testid="date-field-legend"
+      >
+        Date input
+      </legend>
+      <p
+        class="break-words mb-0 text-red-700"
+      >
+        Error: message goes here
+      </p>
+      <div
+        class="flex w-full mt-2"
+      >
+        <div
+          class="flex flex-col items-start w-[56px] mr-4"
+        >
+          <label
+            class="mb-2"
+            for="day"
+          >
+            Day
+          </label>
+          <input
+            aria-label="Day"
+            class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] text-center h-10 border-red-600 border-2 focus:border-blue-700 p-[calc(8px-1px)]"
+            data-testid="number-input"
+            id="day"
+            inputmode="numeric"
+            name="day"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="flex flex-col items-start w-[56px] mr-4"
+        >
+          <label
+            class="mb-2"
+            for="month"
+          >
+            Month
+          </label>
+          <input
+            aria-label="Month"
+            class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+            data-testid="number-input"
+            id="month"
+            inputmode="numeric"
+            name="month"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="flex flex-col items-start w-[72px]"
+        >
+          <label
+            class="mb-2"
+            for="year"
+          >
+            Year
+          </label>
+          <input
+            aria-label="Year"
+            class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+            data-testid="number-input"
+            id="year"
+            inputmode="numeric"
+            name="year"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;

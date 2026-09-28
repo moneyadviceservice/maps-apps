@@ -1,0 +1,1 @@
+export { isEmergencyTaxCode } from './isEmergencyTaxCode';
