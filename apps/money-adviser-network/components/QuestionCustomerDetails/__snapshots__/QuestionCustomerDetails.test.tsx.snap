@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`QuestionCustomerDetails Component should display error messages when errors are provided 1`] = `
+<div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="firstName"
+    >
+      Customer's first name
+    </label>
+    <p
+      class="break-words text-red-500 text-[18px] mb-0"
+      data-testid="paragraph"
+      id="online-firstName"
+    >
+      First name is required
+    </p>
+    <input
+      aria-describedby="online-firstName"
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="firstName"
+      name="firstName"
+      type="text"
+      value="John"
+    />
+  </div>
+  <div
+    class="mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="lastName"
+    >
+      Customer's last name
+    </label>
+    <input
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="lastName"
+      name="lastName"
+      type="text"
+      value="Doe"
+    />
+  </div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="email"
+    >
+      Customer's email address
+    </label>
+    <p
+      class="break-words text-red-500 text-[18px] mb-0"
+      data-testid="paragraph"
+      id="online-email"
+    >
+      Email is invalid
+    </p>
+    <input
+      aria-describedby="online-email"
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="email"
+      name="email"
+      type="text"
+      value="john.doe@example.com"
+    />
+  </div>
+</div>
+`;
+
+exports[`QuestionCustomerDetails Component should render the component with title, labels, and default values 1`] = `
+<div>
+  <div
+    class="mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="firstName"
+    >
+      Customer's first name
+    </label>
+    <input
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="firstName"
+      name="firstName"
+      type="text"
+      value="John"
+    />
+  </div>
+  <div
+    class="mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="lastName"
+    >
+      Customer's last name
+    </label>
+    <input
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="lastName"
+      name="lastName"
+      type="text"
+      value="Doe"
+    />
+  </div>
+  <div
+    class="mb-4 max-w-[410px]"
+    data-testid="errors"
+  >
+    <label
+      class="block mb-0 text-2xl"
+      for="email"
+    >
+      Customer's email address
+    </label>
+    <input
+      autocomplete="off"
+      class="w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      id="email"
+      name="email"
+      type="text"
+      value="john.doe@example.com"
+    />
+  </div>
+</div>
+`;

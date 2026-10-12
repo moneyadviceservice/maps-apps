@@ -1,0 +1,51 @@
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+
+import baseConfig from '../../../eslint.config.mjs';
+
+const compat = new FlatCompat({
+  baseDirectory: dirname(fileURLToPath(import.meta.url)),
+  recommendedConfig: js.configs.recommended,
+});
+
+export default [
+  {
+    ignores: ['**/dist', '**/out-tsc'],
+  },
+  ...baseConfig,
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    // Override or add rules here
+    rules: {},
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    // Override or add rules here
+    rules: {},
+  },
+  {
+    files: ['**/*.js', '**/*.jsx'],
+    // Override or add rules here
+    rules: {},
+  },
+  {
+    files: ['**/*.json'],
+    rules: {
+      '@nx/dependency-checks': 'error',
+    },
+    languageOptions: {
+      parser: await import('jsonc-eslint-parser'),
+    },
+  },
+  {
+    files: ['./package.json', './generators.json'],
+    rules: {
+      '@nx/nx-plugin-checks': 'error',
+    },
+    languageOptions: {
+      parser: await import('jsonc-eslint-parser'),
+    },
+  },
+];

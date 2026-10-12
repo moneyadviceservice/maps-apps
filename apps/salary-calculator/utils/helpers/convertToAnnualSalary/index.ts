@@ -1,0 +1,1 @@
+export { convertToAnnualSalary } from './convertToAnnualSalary';

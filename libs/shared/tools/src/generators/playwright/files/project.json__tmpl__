@@ -1,0 +1,32 @@
+{
+  "name": "<%= e2eProjectName %>",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/<%= e2eProjectName %>/src",
+  "tags": [],
+  "implicitDependencies": ["<%= application %>"],
+  "projectType": "application",
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/<%= e2eProjectName %>/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "<%= application %>:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/<%= e2eProjectName %>/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

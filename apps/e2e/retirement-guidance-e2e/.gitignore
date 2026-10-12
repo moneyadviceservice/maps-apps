@@ -1,0 +1,4 @@
+# Playwright session data
+
+src/e2e/sessions
+**/*.session.json

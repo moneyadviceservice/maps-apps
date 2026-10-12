@@ -1,0 +1,676 @@
+{
+  "core": {
+    "annualIncome": {
+      "title": "Mortgage affordability calculator",
+      "heading": "Annual income",
+      "primaryInfo": "Use your income to work out how much you could borrow and what you can comfortably repay each month - so you only borrow what works for your budget.",
+      "subHeading": "Annual Income",
+      "annualIncomeLabel": "What do you earn each year before tax?",
+      "takeHomeLabel": "What is your monthly take-home pay?",
+      "takeHomeHintText": "This is your monthly income after tax, minus pension, NI and other deductions.",
+      "otherIncomeLabel": "Do you have any other income? (Optional)",
+      "otherIncomeIncludeLabel": "What should I include?",
+      "otherIncomeDescription": "Include income from other jobs, guaranteed bonus, regular overtime, pensions, rental, car allowance, maintenance payments etc.",
+      "secondApplicantLabel": "Is there a second applicant?"
+    },
+
+    "householdCosts": {
+      "title": "Mortgage affordability calculator",
+      "heading": "Monthly household costs",
+      "monthlyHouseholdInfo": "Use your regular spending to work out your monthly budget. If you're not sure about costs for your future home, use an estimate.",
+      "applyingWithSomeoneNote": "If you're applying with someone else, add your costs together. You can leave any sections blank that don't apply to you.",
+      "householdSubHeading": "Essential bills and debt",
+
+      "mortgageLabel": "Rent or current mortgage",
+      "mortgageIncludeLabel": "What do I need to include here?",
+      "mortgageDescription": "This won't be included in the calculation, but you might want to include it to see the difference between your current rent or mortgage payments and the new payments you'll be making.",
+
+      "creditCardLabel": "Credit cards and loans",
+      "creditCardIncludeLabel": "Which payments should I include?",
+      "creditCardDescription": "Include: Credit card, store card and catalogue debts; car finance and personal loans; student loans; and hire purchase commitments.Exclude: Day-to-day living costs (e.g. food, clothes, entertainment and holidays); fixed spending (e.g. subscriptions to gyms or other memberships; utility bills; mobile phones; broadband; council tax; childcare or school fees).",
+
+      "childAndSpouseLabel": "Child and spousal maintenance",
+      "childAndSpouseIncludeLabel": "Which payments should I include?",
+      "childAndSpouseDescription": "Payment towards the support and maintenance of children, or maintenance of an ex-partner.",
+
+      "childCareLabel": "Childcare and school fees",
+      "childCareIncludeLabel": "Which costs should I include?",
+      "childCareDescription": "Include: Nursery and childcare fees, breakfast clubs, childminder, extracurricular classes etc.",
+
+      "subHeading2": "Travel and living costs",
+      "monthlyLivingCostsInfo": "Your lifestyle costs shouldn't change when you get a mortgage, but lenders will want to 'stress test' if you can afford your payments should interest rates rise or your circumstances change.",
+
+      "travelCostsLabel": "Travel (commuting, fuel, insurance)",
+      "travelCostsIncludeLabel": "Which costs count?",
+      "travelCostsDescription": "Include: Fuel, public transport, regular rail and air fares.Exclude: Expenses related to holidays and weekends away.",
+
+      "billsLabel": "Household bills (utilities, council tax, phone)",
+      "billsIncludeLabel": "Which bills to include?",
+      "billsDescription": "Include: Council Tax, gym memberships, utility bills, mobile phones, annual insurance (such as contents, car, pet, travel), magazine subscriptions, broadband, roadside recovery etc.",
+
+      "groceriesLabel": "Food and essentials",
+      "groceriesIncludeLabel": "Expenses to include?",
+      "groceriesDescription": "Include: Weekly shop, daily lunches, toiletries etc.",
+
+      "entertainmentLabel": "Entertainment and leisure",
+      "entertainmentHint": "Add up what you spend in a year and divide by 12",
+      "entertainmentIncludeLabel": "Expenses to include?",
+      "entertainmentDescription": "Include: Eating out, clothing, daily coffees/teas, theatre, museums, evenings out, family days out, personal grooming etc.",
+
+      "holidaysLabel": "Holidays",
+      "holidaysHint": "Add up what you spend in a year and divide by 12",
+      "holidaysIncludeLabel": "Expenses to include?",
+      "holidaysDescription": "Think about how much you typically spend on holidays or weekends away per year, and divide that by 12.Exclude: Travel insurance or travel for work."
+    },
+    "results": {
+      "yourResults": "Your results",
+      "yourResultsSubtitle": "You might be offered between",
+
+      "changeResults": "Change your results",
+      "mortgageAmount": "Mortgage amount",
+      "mortgageLength": "Length of mortgage",
+      "mortgageLengthDescription": "A longer term lowers your monthly costs, but you'll pay more interest overall.",
+
+      "interestRate": "Interest rate",
+      "interestRateDescription": "A higher interest rate means you'll pay more each month."
+    },
+    "overstretched": {
+      "title": "It appears your budget is overstretched",
+      "primaryInfo": "Your monthly household costs are higher than your take-home pay. Based on the costs you've entered, you won't be offered a mortgage.",
+      "subHeading": "Please check the numbers you have entered.",
+      "secondaryInfo": "If you are spending more than your take-home pay, this means that you are overstretching your budget and are at risk of getting into debt."
+    },
+    "budgetInfo": {
+      "positive": {
+        "heading": "Your budget is not overstretched.",
+        "info": "Your budget is not overstretched and you can meet these repayments. But think ahead - if interest rates rise, could you afford this mortgage?"
+      },
+      "warning": {
+        "heading": "You are at risk of overstretching your budget.",
+        "info": "You are at risk of overstretching your budget to meet these repayments, particularly if your circumstances change or interest rates rise. Here's what you can do now."
+      },
+      "basicPercentageLabel": "Your mortgage repayments + your monthly essential costs are %BASIC_COST_PERCENTAGE% of your total take-home pay."
+    },
+
+    "overstretchedInput": {
+      "annualIncome": "35000",
+      "takeHome": "2000",
+      "otherIncome": "344",
+      "mortgage": "1500",
+      "creditCard": "600",
+      "childAndSpouse": "500",
+      "childCare": "400",
+      "travelCosts": "200",
+      "bills": "500",
+      "groceries": "500",
+      "entertainment": "100",
+      "holidays": "300"
+    },
+
+    "riskyBudget": {
+      "annualIncome": "35000",
+      "takeHome": "2100",
+      "otherIncome": "3440",
+
+      "mortgage": "100",
+      "creditCard": "300",
+      "travelCosts": "200",
+      "bills": "250",
+      "entertainment": "50",
+      "holidays": "100",
+      "groceries": "500",
+
+      "offeredBetweenValue": "£52,260 and £174,200",
+      "percentageOfTakeHomePay": "95%",
+      "mortgageAmountSubtitle": "Enter how much you want to borrow. It must be between £52,260 and £174,200.",
+
+      "mortgageAmount": "113,230",
+      "mortgageValue": "£597.67",
+      "mortgageLength": "25",
+      "interestRate": "4",
+      "moneyLeft": "-£100.29",
+
+      "updatedMortgageAmount": "100,000",
+      "updatedMortgageValue": "£527.84",
+      "updatedMortgageTakeHome": 92,
+
+      "mortgageMoneyLeft": "-£6.78",
+      "updatedMortgageLength": "30",
+
+      "lengthMoneyLeft": "£34.70",
+
+      "interestMoneyLeft": "£5.57",
+
+      "updatedLengthTakeHome": 89,
+      "updatedLengthValue": "£477.42",
+
+      "lengthOfMortgageValue": "£527.84",
+
+      "updatedInterestRate": "4.43",
+      "updatedRateTakeHome": 91,
+      "updatedRateValue": "£502.53",
+
+      "rateValue": "£477.42",
+
+      "spendPerMonth": "£750.00",
+      "takeHomeMonthly": "£2,100.00",
+      "updatedLeftOver": "300",
+      "leftOverLivingCosts": "£547.47",
+      "interestRatesRepayment": "£694.43",
+      "interestRateRemainingBudget": "£355.57"
+    },
+    "safeBudget": {
+      "annualIncome": "65000",
+      "takeHome": "3500",
+      "otherIncome": "otherIncome",
+
+      "mortgage": "800",
+      "travelCosts": "200",
+      "bills": "250",
+      "entertainment": "50",
+      "holidays": "100",
+      "groceries": "400",
+
+      "offeredBetweenValue": "£97,500 and £325,000",
+      "percentageOfTakeHomePay": "60%",
+      "mortgageAmountSubtitle": "Enter how much you want to borrow. It must be between £97,500 and £325,000.",
+
+      "mortgageAmount": "211,250",
+      "mortgageValue": "£1,115.06",
+      "mortgageLength": "25",
+      "interestRate": "4",
+      "moneyLeft": "£1,006.93",
+
+      "updatedMortgageAmount": "250,000",
+      "updatedMortgageValue": "£1,319.59",
+      "updatedMortgageTakeHome": 66,
+
+      "mortgageMoneyLeft": "£733.05",
+      "updatedMortgageLength": "30",
+
+      "lengthMoneyLeft": "£836.74",
+
+      "interestMoneyLeft": "£763.93",
+
+      "updatedLengthTakeHome": 63,
+      "updatedLengthValue": "£1,193.54",
+
+      "lengthOfMortgageValue": "£527.84",
+
+      "updatedInterestRate": "4.43",
+      "updatedRateTakeHome": 64,
+      "updatedRateValue": "£1,256.34",
+
+      "rateValue": "£477.42",
+
+      "spendPerMonth": "£450.00",
+      "takeHomeMonthly": "£3,500.00",
+      "updatedLeftOver": "300",
+      "leftOverLivingCosts": "£1,493.66",
+      "interestRatesRepayment": "£1,736.07",
+      "interestRateRemainingBudget": "£1,013.93",
+
+      "updatedBorrowAmount": "97000",
+      "errorMessage": "Enter a number between £97,500 and £325,000"
+    },
+    "annualErrors": {
+      "incomeError": "Please enter your annual income or salary before tax.",
+      "monthlyError": "Please enter your monthly take-home pay.",
+      "secondIncomeError": "Please enter the second applicant's annual income or salary before tax.",
+      "secondMonthlyError": "Please enter the secondary applicant's monthly take-home pay."
+    },
+    "resultsErrorOne": {
+      "annualIncome": "50000",
+      "takeHome": "3000",
+      "mortgage": "500",
+      "creditCard": "200",
+      "childAndSpouse": "300",
+      "childCare": "400",
+      "travelCosts": "55",
+      "bills": "400",
+      "groceries": "250",
+      "entertainment": "100",
+      "holidays": "67",
+      "mortgageAmount": "2210000",
+      "errorMessage": "Enter a number between £64,200 and £214,000"
+    },
+    "resultsErrorTwo": {
+      "annualIncome": "40000",
+      "takeHome": "3100",
+      "mortgage": "500",
+      "creditCard": "100",
+      "childAndSpouse": "200",
+      "childCare": "300",
+      "travelCosts": "200",
+      "bills": "100",
+      "groceries": "200",
+      "entertainment": "300",
+      "holidays": "312",
+      "mortgageAmount": "90000",
+      "interestRate": "16",
+      "errorMessage": "Enter a number between 1 and 15"
+    },
+    "compareHousingCosts": {
+      "annualInput": "30000",
+      "takeHome": "1000",
+      "creditCard": "300",
+      "mortgage": "500",
+      "mortgageLength": "25",
+      "interest": "4",
+      "scenarios": [
+        {
+          "mortgageAmount": "90000",
+          "newMortgagePayment": "£475.05",
+          "difference": "£24.95",
+          "description": "Your new mortgage would cost £475.05 a month - that’s £24.95 less than you spend now."
+        },
+        {
+          "mortgageAmount": "120000",
+          "newMortgagePayment": "£633.40",
+          "difference": "£133.40",
+          "description": "Your new mortgage would cost £633.40 a month - that’s £133.40 more than you spend now."
+        },
+        {
+          "mortgageAmount": "39600",
+          "newMortgagePayment": "£209.02",
+          "difference": "£290.98",
+          "description": "Your new mortgage would cost £209.02 a month - that’s £290.98 less than you spend now."
+        },
+        {
+          "mortgageAmount": "132000",
+          "newMortgagePayment": "£696.74",
+          "difference": "£196.74",
+          "description": "Your new mortgage would cost £696.74 a month - that’s £196.74 more than you spend now."
+        },
+        {
+          "mortgageAmount": "94726",
+          "newMortgagePayment": "£500.00",
+          "difference": "£0.00",
+          "description": "Your new mortgage costs £500.00 a month - that’s the same as you pay now."
+        }
+      ]
+    },
+    "canYouAffordThis": {
+      "scenarios": [
+        {
+          "testName": "a new mortgage costing £475.05 per month and £752.95 left over",
+
+          "annualIncome": "50000",
+          "takeHome": "3000",
+
+          "mortgage": "500",
+          "creditCard": "200",
+          "childAndSpouse": "300",
+          "childCare": "400",
+          "travel": "55",
+          "bills": "400",
+          "groceries": "250",
+          "entertainment": "100",
+          "holidays": "67",
+
+          "borrowAmount": "90000",
+          "mortgageTerm": "25",
+          "interestRate": "4",
+
+          "takeHomePay": "£3,000.00",
+          "newMortgage": "£475.05",
+          "otherCosts": "£1,772.00",
+          "leftOver": "£752.95"
+        },
+        {
+          "testName": "overstretched budget costing £1465.47 per month and -£77.47 left over",
+
+          "annualIncome": "40000",
+          "takeHome": "3100",
+
+          "mortgage": "500",
+          "creditCard": "100",
+          "childAndSpouse": "200",
+          "childCare": "300",
+          "travel": "200",
+          "bills": "100",
+          "groceries": "200",
+          "entertainment": "300",
+          "holidays": "312",
+
+          "borrowAmount": "132000",
+          "mortgageTerm": "10",
+          "interestRate": "6",
+
+          "takeHomePay": "£3,100.00",
+          "newMortgage": "£1,465.47",
+          "otherCosts": "£1,712.00",
+          "leftOver": "-£77.47"
+        }
+      ]
+    },
+    "interestRatesRise": {
+      "scenarios": [
+        {
+          "testName": "loan amount = 122200, term = 25, interest rate = 4%",
+
+          "annualIncome": "30000",
+          "takeHome": "2000",
+          "otherIncome": "10000",
+
+          "creditCard": "200",
+          "childAndSpouse": "0",
+          "childCare": "75",
+          "travel": "75",
+          "bills": "100",
+          "mortgage": "500",
+          "entertainment": "100",
+          "holidays": "150",
+          "groceries": "300",
+
+          "borrowAmount": "122200",
+          "mortgageTerm": "25",
+          "interestRate": "4",
+
+          "rowOneRate": "7%",
+          "rowOnePayment": "£863.68",
+          "rowOneMoney": "£136.32",
+
+          "rowTwoRate": "8%",
+          "rowTwoPayment": "£943.16",
+          "rowTwoMoney": "£56.84",
+
+          "rowThreeRate": "9%",
+          "rowThreePayment": "£1,025.50",
+          "rowThreeMoney": "-£25.50"
+        },
+        {
+          "testName": "loan amount = 97993, term = 20, interest rate = 3.25%",
+
+          "annualIncome": "30000",
+          "takeHome": "2000",
+          "otherIncome": "0",
+
+          "creditCard": "200",
+          "childAndSpouse": "0",
+          "childCare": "100",
+          "travel": "100",
+          "bills": "100",
+          "mortgage": "500",
+          "entertainment": "100",
+          "holidays": "150",
+          "groceries": "300",
+
+          "borrowAmount": "97993",
+          "mortgageTerm": "20",
+          "interestRate": "3.25",
+
+          "rowOneRate": "6.25%",
+          "rowOnePayment": "£716.26",
+          "rowOneMoney": "£233.74",
+
+          "rowTwoRate": "7.25%",
+          "rowTwoPayment": "£774.51",
+          "rowTwoMoney": "£175.49",
+
+          "rowThreeRate": "8.25%",
+          "rowThreePayment": "£834.96",
+          "rowThreeMoney": "£115.04"
+        },
+        {
+          "testName": "loan amount = 509560, term = 30, interest rate = 5%",
+
+          "annualIncome": "130000",
+          "takeHome": "6000",
+          "otherIncome": "0",
+
+          "creditCard": "700",
+          "childAndSpouse": "700",
+          "childCare": "123",
+          "travel": "234",
+          "bills": "300",
+          "mortgage": "1500",
+          "entertainment": "300",
+          "holidays": "300",
+          "groceries": "600",
+
+          "borrowAmount": "509560",
+          "mortgageTerm": "30",
+          "interestRate": "5",
+
+          "rowOneRate": "8%",
+          "rowOnePayment": "£3,738.97",
+          "rowOneMoney": "-£995.97",
+
+          "rowTwoRate": "9%",
+          "rowTwoPayment": "£4,100.04",
+          "rowTwoMoney": "-£1,357.04",
+
+          "rowThreeRate": "10%",
+          "rowThreePayment": "£4,471.75",
+          "rowThreeMoney": "-£1,728.75"
+        },
+        {
+          "testName": "loan amount = 169800, term = 15, interest rate = 1%",
+
+          "annualIncome": "130000",
+          "takeHome": "6000",
+          "otherIncome": "0",
+
+          "creditCard": "700",
+          "childAndSpouse": "700",
+          "childCare": "123",
+          "travel": "234",
+          "bills": "300",
+          "mortgage": "1500",
+          "entertainment": "300",
+          "holidays": "300",
+          "groceries": "600",
+
+          "borrowAmount": "169800",
+          "mortgageTerm": "15",
+          "interestRate": "1",
+
+          "rowOneRate": "4%",
+          "rowOnePayment": "£1,255.99",
+          "rowOneMoney": "£1,487.01",
+
+          "rowTwoRate": "5%",
+          "rowTwoPayment": "£1,342.77",
+          "rowTwoMoney": "£1,400.23",
+
+          "rowThreeRate": "6%",
+          "rowThreePayment": "£1,432.87",
+          "rowThreeMoney": "£1,310.13"
+        },
+        {
+          "testName": "loan amount = 70696, term = 25, interest rate = 4%",
+
+          "annualIncome": "25000",
+          "takeHome": "1750",
+          "otherIncome": "450",
+
+          "creditCard": "0",
+          "childAndSpouse": "0",
+          "childCare": "0",
+          "travel": "120",
+          "bills": "200",
+          "mortgage": "0",
+          "entertainment": "100",
+          "holidays": "0",
+          "groceries": "500",
+
+          "borrowAmount": "70696",
+          "mortgageTerm": "25",
+          "interestRate": "4",
+
+          "rowOneRate": "7%",
+          "rowOnePayment": "£499.66",
+          "rowOneMoney": "£330.34",
+
+          "rowTwoRate": "8%",
+          "rowTwoPayment": "£545.64",
+          "rowTwoMoney": "£284.36",
+
+          "rowThreeRate": "9%",
+          "rowThreePayment": "£593.28",
+          "rowThreeMoney": "£236.72"
+        }
+      ]
+    },
+    "summaryCallout": {
+      "positiveScenarios": [
+        {
+          "testName": "£50000, with outgoings of 75%",
+
+          "annualIncome": "50000",
+          "takeHome": "3000",
+
+          "mortgage": "500",
+          "creditCard": "200",
+          "childAndSpouse": "300",
+          "childCare": "400",
+          "travel": "55",
+          "bills": "400",
+          "groceries": "250",
+          "entertainment": "100",
+          "holidays": "67",
+
+          "borrowAmount": "90000",
+          "mortgageTerm": "25",
+          "interestRate": "4",
+
+          "title": "You’re using 75% of your take-home pay each month",
+          "description": "This means you have £752.95 left over. If interest rates rose by 3%, this goes down to £591.90 a month - could you afford this?"
+        },
+        {
+          "testName": "£50000, with outgoings of 79%",
+
+          "annualIncome": "50000",
+          "takeHome": "3000",
+
+          "mortgage": "500",
+          "creditCard": "100",
+          "childAndSpouse": "200",
+          "childCare": "50",
+          "travel": "0",
+          "bills": "0",
+          "groceries": "0",
+          "entertainment": "150",
+          "holidays": "220",
+
+          "borrowAmount": "190000",
+          "mortgageTerm": "12",
+          "interestRate": "4",
+
+          "title": "You’re using 79% of your take-home pay each month",
+          "description": "This means you have £616.50 left over. If interest rates rose by 3%, this goes down to £326.08 a month - could you afford this?"
+        }
+      ],
+      "negativeScenarios": [
+        {
+          "testName": "£30000, with outgoings of 88%",
+
+          "annualIncome": "30000",
+          "takeHome": "2000",
+
+          "mortgage": "500",
+          "creditCard": "450",
+          "childAndSpouse": "230",
+          "childCare": "0",
+          "travel": "0",
+          "bills": "0",
+          "groceries": "44",
+          "entertainment": "111",
+          "holidays": "0",
+
+          "borrowAmount": "105000",
+          "mortgageTerm": "13",
+          "interestRate": "5",
+
+          "title": "You’re using 88% of your take-home pay each month",
+          "description": "This means you have £248.29 left over. If interest rates rose by 3%, this goes down to £80.27 a month - could you afford this?"
+        },
+        {
+          "testName": "£30000, with outgoings of 80%",
+
+          "annualIncome": "30000",
+          "takeHome": "2000",
+
+          "mortgage": "500",
+          "creditCard": "76",
+          "childAndSpouse": "54",
+          "childCare": "43",
+          "travel": "32",
+          "bills": "56",
+          "groceries": "45",
+          "entertainment": "56",
+          "holidays": "67",
+
+          "borrowAmount": "118800",
+          "mortgageTerm": "11",
+          "interestRate": "5",
+
+          "title": "You’re using 80% of your take-home pay each month",
+          "description": "This means you have £399.10 left over. If interest rates rose by 3%, this goes down to £214.84 a month - could you afford this?"
+        },
+        {
+          "testName": "£40000, with outgoings of 99%",
+
+          "annualIncome": "40000",
+          "takeHome": "3100",
+
+          "mortgage": "500",
+          "creditCard": "100",
+          "childAndSpouse": "200",
+          "childCare": "300",
+          "travel": "200",
+          "bills": "100",
+          "groceries": "200",
+          "entertainment": "300",
+          "holidays": "212",
+
+          "borrowAmount": "132000",
+          "mortgageTerm": "10",
+          "interestRate": "6",
+
+          "title": "You’re using 99% of your take-home pay each month",
+          "description": "This means you have £22.53 left over. If interest rates rose by 3%, this goes down to -£184.12 a month - could you afford this?"
+        }
+      ]
+    },
+    "overstretchedLabels": {
+      "scenarios": [
+        {
+          "testName": "scenario one",
+
+          "annualIncome": "25000",
+          "takeHome": "1750",
+          "otherIncome": "450",
+
+          "creditCard": "700",
+          "childAndSpouse": "700",
+          "childCare": "123",
+          "travel": "234",
+          "bills": "300",
+          "mortgage": "1500",
+          "entertainment": "300",
+          "holidays": "300",
+          "groceries": "600"
+        },
+        {
+          "testName": "scenario two",
+
+          "annualIncome": "40000",
+          "takeHome": "3100",
+          "otherIncome": "0",
+
+          "creditCard": "500",
+          "childAndSpouse": "500",
+          "childCare": "500",
+          "travel": "300",
+          "bills": "300",
+          "mortgage": "500",
+          "entertainment": "300",
+          "holidays": "100",
+          "groceries": "300"
+        }
+      ]
+    }
+  }
+}

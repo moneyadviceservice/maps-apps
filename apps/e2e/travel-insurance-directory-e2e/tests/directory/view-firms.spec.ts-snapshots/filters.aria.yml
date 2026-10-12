@@ -1,0 +1,50 @@
+- heading "Age at time of travel" [level=3]
+- button:
+    - group: More information
+- group "Age at time of travel":
+    - checkbox /0 - \d+/
+    - paragraph: /0 - \d+/
+    - checkbox /\d+ - \d+/
+    - paragraph: /\d+ - \d+/
+    - checkbox /\d+ - \d+/
+    - paragraph: /\d+ - \d+/
+    - checkbox /\d+ - \d+/
+    - paragraph: /\d+ - \d+/
+    - checkbox /\d+ \+/
+    - paragraph: /\d+ \+/
+- heading "Filter by insurance type" [level=3]
+- button:
+    - group: More information
+- group "Filter by insurance type":
+    - checkbox "Single trip"
+    - paragraph: Single trip
+    - checkbox "Annual multi-trip"
+    - paragraph: Annual multi-trip
+- heading "Length of trip" [level=3]
+- button:
+    - group: More information
+- group "Length of trip":
+    - checkbox /Up to \d+ days/
+    - paragraph: /Up to \d+ days/
+    - checkbox /Up to \d+ days/
+    - paragraph: /Up to \d+ days/
+    - checkbox /\d+\+ days/
+    - paragraph: /\d+\+ days/
+- heading "Land based or cruise?" [level=3]
+- button:
+    - group: More information
+- group "Land based or cruise?":
+    - checkbox "Land based"
+    - paragraph: Land based
+    - checkbox "Cruise"
+    - paragraph: Cruise
+- heading "Destination" [level=3]
+- button:
+    - group: More information
+- group "Destination":
+    - checkbox "Europe"
+    - paragraph: Europe
+    - checkbox "Worldwide"
+    - paragraph: Worldwide
+    - checkbox "Worldwide excluding USA, Canada and Caribbean"
+    - paragraph: Worldwide excluding USA, Canada and Caribbean

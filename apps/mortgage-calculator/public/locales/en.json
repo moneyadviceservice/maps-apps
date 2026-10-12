@@ -1,0 +1,183 @@
+{
+  "pageTitle": "Mortgage calculator",
+
+  "errorSummary": {
+    "title": "There is a problem",
+    "price": "Enter a property price, for example £200,000",
+    "rate": "Enter an interest rate, for example 5%"
+  },
+
+  "title": "Calculate your monthly mortgage payment",
+  "backLink": "Back",
+  "callout": "Remember to plan for other costs like mortgage fees, legal fees and Stamp Duty tax.",
+
+  "form": {
+    "optional": "(Optional)",
+    "typeOfMortgage": {
+      "label": "Type of mortgage",
+      "option1": "**Repayment:** repay capital and interest together.",
+      "option2": "**Interest-only:** repay the interest. Capital paid off at end of term."
+    },
+    "propertyPrice": {
+      "label": "Property price",
+      "description": "If you're not buying a property, enter the amount left on your mortgage.",
+      "aria": {
+        "label": "Property price in pounds"
+      }
+    },
+    "deposit": {
+      "label": "Deposit ",
+      "description": "If you're remortgaging, this does not apply.",
+      "aria": {
+        "label": "Deposit in pounds"
+      }
+    },
+    "term": {
+      "label": "Mortgage term",
+      "description": "The average period for repayment of a mortgage is 25 years.",
+      "aria": {
+        "description": "The average period for repayment of a mortgage is 25 years."
+      }
+    },
+    "interestRate": {
+      "label": "Interest rate",
+      "description": "We've defaulted to the current interest rate.",
+      "aria": {
+        "description": "Interest rate %"
+      }
+    },
+    "calculate": "Calculate",
+    "recalculate": "Recalculate"
+  },
+
+  "socialShareTool": {
+    "title": "Share this tool",
+    "subject": "Mortgage calculator - See your monthly payments",
+    "xTitle": "Mortgage calculator - See your monthly payments"
+  },
+
+  "otherTools": {
+    "title": "Other tools to try",
+    "card1": {
+      "title": "Calculate the mortgage you can afford",
+      "description": "This tool can help you estimate how much you can afford to borrow to buy a home."
+    },
+    "card2": {
+      "title": "Calculate your Stamp Duty",
+      "description": "Find out with this tool what tax may be due when buying your home."
+    }
+  },
+
+  "recommendedReading": {
+    "title": "Recommended reading",
+    "sections": [
+      {
+        "id": "repayQuicker",
+        "condition": "interestonly",
+        "title": "Repay your mortgage quicker",
+        "links": [
+          {
+            "prefix": "Explore",
+            "text": "ways of repaying an interest-only mortgage",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage"
+          }
+        ]
+      },
+      {
+        "id": "firstTimeBuyers",
+        "title": "First-time buyers",
+        "links": [
+          {
+            "prefix": "Read our",
+            "text": "first-time home buyer guide",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/first-time-buyer-money-tips"
+          },
+          {
+            "prefix": "How to",
+            "text": "save money for a mortgage deposit",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/saving-money-for-a-mortgage-deposit"
+          }
+        ]
+      },
+      {
+        "id": "mortgageEssentials",
+        "title": "Mortgage essentials",
+        "links": [
+          {
+            "prefix": "What are they and",
+            "text": "should you use a mortgage adviser?",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/choosing-a-mortgage-shop-around-or-get-advice"
+          },
+          {
+            "prefix": "Help",
+            "text": "understanding mortgage interest rates",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-interest-rate-options"
+          },
+          {
+            "prefix": "Get the right deal with our",
+            "text": "mortgage comparison checklist",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/your-mortgage-comparison-checklist"
+          }
+        ]
+      },
+      {
+        "id": "budgetPlanning",
+        "title": "Budget planning",
+        "links": [
+          {
+            "prefix": "Budget for",
+            "text": "the cost of buying a house and moving",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/estimate-your-overall-buying-and-moving-costs"
+          },
+          {
+            "prefix": "Learn",
+            "text": "how to prepare for an interest rate rise",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/how-to-prepare-for-an-interest-rate-rise"
+          }
+        ]
+      },
+      {
+        "id": "strugglingToPay",
+        "title": "Struggling to pay?",
+        "links": [
+          {
+            "prefix": "Advice if you're facing",
+            "text": "mortgage arrears or problems paying your mortgage",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-arrears-if-you-have-problems-paying-your-mortgage"
+          },
+          {
+            "prefix": "Support and",
+            "text": "Government help if you can't pay your mortgage",
+            "href": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/government-help-if-you-cant-pay-your-mortgage"
+          }
+        ]
+      }
+    ]
+  },
+
+  "results": {
+    "title": "Your results",
+    "intro": "To adjust the results, edit your answers.",
+    "monthlyRepayment": "Your monthly payment will be:",
+    "totalRepayment": "Total you'll repay over the term:",
+    "makeup": {
+      "title": "made up of:",
+      "capital": "capital, and",
+      "interest": "interest"
+    },
+    "breakdown": {
+      "title": "See breakdown of costs",
+      "column1": {
+        "heading": "Year",
+        "data": "Year {year}"
+      },
+      "column2": {
+        "heading": "Remaining Debt"
+      }
+    },
+    "notificationBox": {
+      "title": "Make sure you can afford it!",
+      "description": "For example, if your interest rate goes up by 3%, your payment will be:"
+    }
+  }
+}

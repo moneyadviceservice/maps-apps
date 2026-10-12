@@ -1,0 +1,29 @@
+{
+  "generators": {
+    "app": {
+      "factory": "./src/generators/app/generator",
+      "schema": "./src/generators/app/schema.json",
+      "description": "Scaffold a MoneyHelper app under apps/<name> and register it in the pipeline, PR title, Sonar and editor config"
+    },
+    "component": {
+      "factory": "./src/generators/component/generator",
+      "schema": "./src/generators/component/schema.json",
+      "description": "component generator"
+    },
+    "changelog": {
+      "factory": "./src/generators/changelog/generator",
+      "schema": "./src/generators/changelog/schema.json",
+      "description": "Generate an app CHANGELOG entry"
+    },
+    "e2e-generate": {
+      "factory": "./src/generators/playwright/generator",
+      "schema": "./src/generators/playwright/schema.json",
+      "description": "Generate a Playwright E2E application scaffold"
+    },
+    "e2e-migrate": {
+      "factory": "./src/generators/playwright/migrate-generator",
+      "schema": "./src/generators/playwright/migrate-schema.json",
+      "description": "Migrate an existing Cypress E2E project to Playwright"
+    }
+  }
+}

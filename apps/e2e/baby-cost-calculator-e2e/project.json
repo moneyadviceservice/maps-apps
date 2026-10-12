@@ -1,0 +1,77 @@
+{
+  "name": "baby-cost-calculator-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/baby-cost-calculator-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["baby-cost-calculator"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/baby-cost-calculator-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "baby-cost-calculator:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/baby-cost-calculator-e2e/playwright.config.ts"
+      }
+    },
+    "testmu-prelaunch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/e2e/baby-cost-calculator-e2e",
+        "command": "ts-node -r ../../../libs/shared/utils/src/e2e/playwright/testmu/pre-launch-script.ts"
+      }
+    },
+    "e2e-testmu": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["testmu-prelaunch"],
+      "options": {
+        "config": "apps/e2e/baby-cost-calculator-e2e/playwright.testmu.config.ts"
+      },
+      "configurations": {
+        "windows": {
+          "project": [
+            "chrome:latest:Windows 11@lambdatest",
+            "pw-firefox:latest:Windows 10@lambdatest",
+            "MicrosoftEdge:latest:Windows 11@lambdatest"
+          ]
+        },
+        "mac": {
+          "project": [
+            "pw-webkit:latest:MacOS Ventura@lambdatest",
+            "MicrosoftEdge:latest:MacOS Sequoia@lambdatest",
+            "pw-firefox:latest:MacOS Tahoe@lambdatest",
+            "chrome:latest:MacOS Ventura@lambdatest"
+          ]
+        },
+        "android": {
+          "project": [
+            "Galaxy.*:12:android@lambdatest",
+            "Galaxy.*:15:android@lambdatest",
+            "Galaxy.*:14:android@lambdatest",
+            "Pixel.*:15:android@lambdatest"
+          ]
+        },
+        "ios": {
+          "project": [
+            "pw-webkit:latest:MacOS Ventura@lambdatest (iPhone 12)",
+            "pw-webkit:latest:MacOS Ventura@lambdatest (iPhone 15 Pro Max)"
+          ]
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

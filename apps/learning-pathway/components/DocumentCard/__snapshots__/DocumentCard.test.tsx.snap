@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DocumentCard renders the document card contents correctly 1`] = `
+<div>
+  <div
+    class="rounded-bl-[36px] print:border-none print:shadow-none print:w-full px-2 pb-8 border-gray-95 border-3"
+    data-testid="document-card-test-slug"
+  >
+    <h3
+      class="text-lg md:text-xl font-bold m-4 text-blue-700"
+    >
+      Test document title
+    </h3>
+    <div
+      class="pb-4 mx-4 text-lg text-gray-800"
+    >
+      <div
+        class="space-y-6"
+      >
+        <div
+          class="block lg:hidden"
+        >
+          <p
+            class="mb-4 break-words"
+            data-testid="paragraph"
+          >
+            Mock overview content
+          </p>
+        </div>
+        <div
+          class="flex-col space-y-4 lg:flex justify-between pb-4 border-b-2 border-gray-95"
+        >
+          <a
+            class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="/en/learning-pathway/test-slug"
+          >
+            learning-pathway-list.documentLinkTitle
+          </a>
+          <div>
+            <span
+              class="font-bold pr-2"
+            >
+              document-pages.dateLaunchedTitle
+            </span>
+            04/3/2025
+          </div>
+        </div>
+        <div
+          class="flex border-b-2 border-gray-95 lg:border-0 pb-4 lg:pb-0"
+        >
+          <div
+            class="font-bold"
+          >
+            document-pages.ownerTitle
+          </div>
+           :
+           
+          Test owner
+        </div>
+        <div
+          class="hidden lg:block"
+        >
+          <p
+            class="mb-4 break-words"
+            data-testid="paragraph"
+          >
+            Mock overview content
+          </p>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row"
+        >
+          <div
+            class="border-b-1 lg:border-b-0 pb-10 lg:pb-0 border-gray-95 lg:border-gray-300 pl-2 lg:basis-1/4"
+          >
+            <div
+              class="font-bold"
+            >
+              Category One
+            </div>
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 ml-8 pt-4 pr-4"
+                start="-1"
+              >
+                <li>
+                  Tag item one
+                </li>
+                <li>
+                  Tag item two
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="lg:border-b-0 pb-10 lg:pb-0 pt-4 lg:pt-0 lg:border-l-1 border-b-0 border-gray-95 lg:border-gray-300 pl-2 lg:basis-1/4"
+          >
+            <div
+              class="font-bold"
+            >
+              Category Two
+            </div>
+            <div
+              class="flex items-center"
+              data-testid="list-element"
+            >
+              <ul
+                class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 ml-8 pt-4 pr-4"
+                start="-1"
+              >
+                <li>
+                  Tag item one
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,6 @@
+# Files Nx should not attribute to a project when computing the project graph or `nx affected`
+
+*.md
+*.MD
+
+.env.example

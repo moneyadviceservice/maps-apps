@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Running lint-staged..."
+npx lint-staged --concurrent false --relative
+node tools/scripts/check-staged-pkgs.js

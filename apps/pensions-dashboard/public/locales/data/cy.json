@@ -1,0 +1,80 @@
+{
+  "unavailable-reasons": {
+    "ANO": "Mae eich darparwr yn aros am wybodaeth gan drydydd parti ac maent angen mwy o amser i anfon y gwerthoedd amcangyfrifedig atom. Nid oes angen i chi wneud dim ar hyn o bryd, ond gwiriwch eto cyn bo hir.",
+    "DB": "Gan nad ydych bellach yn aelod o'r cynllun pensiwn hwn, nid ydych yn cronni buddion i'r dyfodol. Cliciwch 'gweld manylion' am amcangyfrif o'r hyn y gallech ei gael pe gallech ddechrau cymryd eich pensiwn nawr.",
+    "DBC": "Mae eich darparwr angen mwy o amser i gyfrifo’r gwerthoedd amcangyfrifedig. Mae ganddynt hyd at 10 diwrnod, ond gall gymryd yn hirach weithiau. **Os ydych yn dal i aros ar ôl 10 diwrnod, gallwch gysylltu â’ch darparwr i gael rhagor o wybodaeth.**",
+    "DCC": "Mae eich darparwr angen mwy o amser i gyfrifo’r gwerthoedd amcangyfrifedig. Mae ganddynt hyd at 3 diwrnod, ond gall gymryd yn hirach weithiau. **Os ydych yn dal i aros ar ôl 3 diwrnod, gallwch gysylltu â’ch darparwr i gael rhagor o wybodaeth.**",
+    "DCHA": "Mae gwerth y gronfa bensiwn anweithredol hon yn llai na £5,000. Ni fydd unrhyw incwm amcangyfrifedig ar gael oni bai bod cyfraniadau'n dechrau eto neu bod gwerth y pensiwn yn cynyddu dros £5,000.",
+    "DCHP": "Mae dyddiad ymddeol disgwyliedig y pensiwn hwn yn llai na 2 flynedd i ffwrdd neu wedi mynd heibio, sy'n golygu na all eich darparwr anfon amcangyfrif cywir. Gallwch dal weld amcangyfrif o’r hyn rydych wedi’i gronni hyd yn hyn.",
+    "DCSM": "WELSH - Placeholder text for code DCSM.",
+    "MEM": "Mae eich darparwr angen mwy o wybodaeth cyn y gallant anfon y gwerthoedd amcangyfrifedig. Cysylltwch â'ch darparwr.",
+    "NEW": "Rydych yn aelod newydd o’r cynllun hwn, ac mae’r darparwr angen mwy o amser i gyfrifo’r gwerthoedd amcangyfrifedig. Dylai hwn gael ei ddiweddaru fan bellaf pan fyddwch yn cael eich datganiad buddion blynyddol cyntaf, neu 12 mis ar ôl i chi ymuno â’r cynllun.",
+    "NET": "Rydych wedi trosglwyddo i’r cynllun hwn yn ddiweddar, ac mae angen mwy o amser ar y darparwr i gyfrifo’r gwerthoedd amcangyfrifedig. Nid oes angen i chi wneud dim ar hyn o bryd. Dylai hwn gael ei ddiweddaru fan bellaf pan fyddwch yn cael eich datganiad buddion blynyddol cyntaf, neu 12 mis ar ôl i chi ymuno â’r cynllun.",
+    "PPF": "Mae'r pensiwn hwn yn cael ei asesu i fynd i mewn i'r Gronfa Diogelu Pensiwn (PPF). Gall hyn ddigwydd os yw'r cyflogwr neu'r cyn-gyflogwr a'i sefydlodd yn mynd yn fethdalwr. Mae'r PPF yn diogelu eich pensiwn os na all y cyflogwr neu'r cynllun fforddio'i dalu mwyach. Cysylltwch â'ch darparwr am fwy o fanylion.",
+    "TRN": "Oherwydd trafodion diweddar, fel taliadau neu newidiadau i'ch buddsoddiadau, mae angen mwy o amser ar eich darparwr i anfon gwerthoedd amcangyfrifedig atom. Dewch yn ôl yn nes ymlaen neu cysylltwch â'ch darparwr am fwy o fanylion.",
+    "WU": "Nid yw eich darparwr yn gallu anfon gwerthoedd amcangyfrifedig gan fod eich pensiwn yn y broses o gau (dirwyn i ben). Cysylltwch â'ch darparwr am fwy o fanylion.",
+    "SML": "Mae’r incwm amcangyfrifedig diweddaraf ar gyfer y pensiwn hwn yn llai na £120 y flwyddyn.",
+    "SYS_MATCHTYPE": "Mae problem gyda’r data gan eich darparwr pensiwn. Nid oes angen i chi gymryd unrhyw gamau ar hyn o bryd.",
+    "NEW_MATCHTYPE": "Pensiwn newydd yw hwn. Mae angen mwy o amser ar eich darparwr i anfon data atom.",
+    "MULTIPLE": "Ni allem ddangos incwm amcangyfrifedig ar gyfer y pensiwn hwn. Gweler ‘Incwm a gwerthoedd’ am fwy o fanylion."
+  },
+  "additional-types": {
+    "C_AND_C": "Costau a ffioedd",
+    "SIP": "Egwyddorion buddsoddi",
+    "IMP": "Datganiad gweithredu",
+    "ANR": "Adroddiad Blynyddol",
+    "SP": "Gwybodaeth ychwanegol am Bensiwn y Wladwriaeth"
+  },
+  "pension-origin": {
+    "A": "Blwydd-dal gohiriedig",
+    "PC": "Darparwr pensiwn: Credyd pensiwn",
+    "PM": "Darparwr pensiwn: Gweithredol neu ohiriedig",
+    "PT": "Darparwr pensiwn: Trosglwyddiad gohiriedig i mewn",
+    "WC": "Cynllun pensiwn galwedigaethol: Credyd pensiwn",
+    "WM": "Cynllun pensiwn galwedigaethol: Gweithredol neu ohiriedig",
+    "WT": "Cynllun pensiwn galwedigaethol: Trosglwyddiad gohiriedig i mewn"
+  },
+  "types": {
+    "AVC": "AVC",
+    "DB": "Buddion wedi'u diffinio",
+    "DC": "Cyfraniadau wedi'u diffinio",
+    "HYB": "Hybrid",
+    "CDC": "CDC",
+    "CB": "balans arian parod",
+    "VAR": "Cymysgedd"
+  },
+  "status": {
+    "active": "Gweithredol",
+    "inactive": "Anweithredol"
+  },
+  "increasing": "Bydd yr incwm hwn yn codi ar ôl nifer penodol o flynyddoedd.",
+  "safeguarded": "Mae gan y pensiwn hwn fuddion wedi’u diogelu, sy’n golygu ei fod yn cynnwys nodweddion gwarantedig gwerthfawr. Gallai hyn gyfyngu ar eich dewisiadau wrth gymryd neu drosglwyddo’r pensiwn hwn, felly dylech gael cyngor ariannol rheoledig i sicrhau eich bod yn deall eich opsiynau. Siaradwch â’ch darparwr am ragor o wybodaeth.",
+  "survivor-benefit": "Mae'r budd-dal hwn yn cynnwys unrhyw bensiwn sy’n cael ei dalu i briod, partner sifil neu ddibynyddion eraill ar ôl i chi farw. Cysylltwch â'ch darparwr am fwy o fanylion.",
+  "warnings": {
+    "PSO-title": "Mae gorchymyn rhannu pensiwn wedi'i gymhwyso neu yn cael ei gymhwyso i'ch pensiwn",
+    "PSO-description": "Mae gorchymyn rhannu pensiwn (a elwir weithiau'n 'hollti') wedi'i roi mewn lle neu'n cael ei roi mewn lle. Mae hyn yn golygu y bydd rhywfaint neu'r cyfan o'r pensiwn hwn yn cael ei drosglwyddo i'ch cyn-briod neu'ch cyn-bartner sifil. Bydd gorchymyn y llys yn dweud y ganran neu'r swm. Mae hyn yn golygu y gallai'r gwerthoedd a ddangosir fod yn uwch na'r hyn y byddwch yn ei dderbyn. Dysgwch fwy am [ysgariad a phensiynau_target=_self](/cy/support/understand-your-pensions).",
+    "PEO-title": "Mae atodiad neu orchymyn clustnodi pensiwn wedi'i gymhwyso i'ch pensiwn",
+    "PEO-description": "Mae gorchymyn atafaelu pensiwn neu glustnodi pensiwn yn golygu y gallai rhywfaint neu’r cyfan o’r pensiwn hwn gael ei dalu i’ch cyn-briod neu’ch cyn-bartner sifil pan fyddwch yn cymryd eich pensiwn. Dysgwch fwy am [ysgariad a phensiynau_target=_self](/cy/support/understand-your-pensions).",
+    "PNR-title": "Mae dyddiad ymddeol y pensiwn hwn yn y gorffennol",
+    "PNR-description": "Efallai na fydd eich gwerthoedd amcangyfrifiedig yn gywir oherwydd eich bod wedi mynd heibio eich dyddiad ymddeol, sef y dyddiad a ddefnyddiodd y darparwr i’w gyfrifo. Fel arfer, nid oes rhaid i chi ymddeol na chymryd eich pensiwn ar y dyddiad hwn - cysylltwch â'ch darparwr i ofyn am eich opsiynau.",
+    "SCP-title": "Mae’r cynllun hwn yn talu rhywfaint neu’r cyfan o’r dreth lwfans blynyddol",
+    "SCP-description": "Gall tâl treth lwfans blynyddol o'ch cynllun effeithio ar yr amcangyfrifon hyn. Ar ôl talu'r tâl, gallai eich incwm, gwerth cronfa neu gyfandaliad fod yn is.",
+    "FAS-title": "Bydd y buddion yn eich pensiwn yn cael eu hategu gan y Cynllun Cymorth Ariannol",
+    "FAS-title-benefit": "Bydd y buddion yn eich pensiwn yn cael eu hategu gan y Cynllun Cymorth Ariannol.",
+    "FAS-description": "Bydd rhywfaint neu'r cyfan o'r incwm neu fuddion eraill a gewch o'r cynllun hwn yn cael eu hategu gan y Cynllun Cymorth Ariannol (FAS).",
+    "UNP-description": "Mae gan eich pensiwn sail. Sail yw pan fydd yr incwm y byddwch yn ei gael yn cael ei gyfrifo mewn dwy ffordd neu fwy. Fel arfer byddwch yn cael y swm uchaf o'r cyfrifiadau hyn. Cysylltwch â'ch darparwr am fwy o fanylion.",
+    "TVI-description": "Rydych wedi trosglwyddo un neu fwy o bensiynau i'r pensiwn, ond mae angen mwy o amser ar y darparwr i'w cynnwys yn y gwerthoedd hyn. Cysylltwch â'ch darparwr i gael mwy o wybodaeth gyfredol.",
+    "CUR-description": "Mae'r gwerthoedd hyn fel arfer yn cael eu dal mewn arian tramor. Mae hyn yn golygu eu bod yn seiliedig ar y gyfradd gyfnewid ar y diwrnod y cawsant eu cyfrifo. Cysylltwch â'ch darparwr am fwy o fanylion.",
+    "DEF-description": "Cyfrifwyd eich incwm amcangyfrifedig pan oeddech yn aelod gweithredol o'r cynllun, sy'n golygu y gallai fod yn uwch na'r hyn y byddwch yn ei gael pan fyddwch yn ei gymryd. Cysylltwch â'ch darparwr am amcangyfrif cyfredol.",
+    "DBAVC-title": "Mae’r pensiwn hwn yn cynnwys cyfraniadau ychwanegol gwirfoddol (AVC)",
+    "DBAVC-description": "Mae’r pensiwn hwn yn cynnwys cynllun cyfraniadau ychwanegol gwirfoddol (AVC). Mae gwerth cronfa ac incwm amcangyfrifedig ar wahan gan rain, a gallai fod ganddynt dyddiadau talu gwahanol. Gweler yr incwm a gwerthoedd am fanylion.",
+    "MCCLOUD-title": "Mae gan y pensiwn hwn opsiynau talu gwahanol",
+    "MCCLOUD-description": "Mae gennych ddewis rhwng buddion pensiwn **etifeddol** (cyflog terfynol) ac **amgen** (cyfartaledd gyrfa). Bydd yr incwm a’r cyfandaliadau ar gyfer pob opsiwn yn wahanol.\n\nNid oes angen i chi ddewis nes i chi ddechrau cymryd eich pensiwn.",
+    "CDC-title": "Mae hwn yn bensiwn cyfraniadau wedi'u diffinio ar y cyd (CDC)",
+    "CDC-description": "Nid yw'r incwm y gallech ei dderbyn wedi'i warantu. Gallai eich incwm gynyddu neu ostwng **cyn ac ar ôl** i chi ddechrau ei dderbyn.",
+    "CBLUMP-title": "Mae'r cynllun balans arian parod hwn yn darparu cyfandaliad gwarantedig",
+    "CBLUMP-description": "Mae'r cynllun balans arian parod hwn wedi'i sefydlu i roi swm cyfandaliad gwarantedig i chi pan fyddwch chi'n ymddeol. Gallwch ddewis sut i'w gymryd, er enghraifft trwy brynu blwydd-dal (incwm rheolaidd gwarantedig) neu drwy ddewis opsiynau incwm mwy hyblyg.",
+    "VAR-title": "Mae gan y pensiwn hwn gymysgedd o fathau o fuddion",
+    "VAR-description": "Mae’r pensiwn hwn yn cynnwys cymysgedd o fathau o fuddion. Gallai’r rhain gael eu cyfrifo mewn gwahanol ffyrdd, cael incwm gwahanol a chael eu talu ar wahanol adegau. Gweler yr incwm a gwerthoedd am fanylion."
+  }
+}

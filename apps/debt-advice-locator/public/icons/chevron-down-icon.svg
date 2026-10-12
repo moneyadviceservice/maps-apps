@@ -1,0 +1,16 @@
+<svg
+  width="100%"
+  viewBox="0 0 18 18"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"
+	aria-hidden="true"
+>
+  <g clipPath="url(#clip0_45_392)">
+    <path d="M16 8L14 6L10.1 9.9C9.5 10.5 8.6 10.5 8 9.9L4 6L2 8L6.2 12.2C7.8 13.8 10.3 13.8 11.9 12.2L16 8Z" />
+  </g>
+  <defs>
+    <clipPath id="clip0_45_392">
+      <rect width="18" height="18" />
+    </clipPath>
+  </defs>
+</svg>

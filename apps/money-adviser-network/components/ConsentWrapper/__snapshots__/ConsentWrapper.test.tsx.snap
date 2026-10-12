@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ConsentWrapper Component renders default cookieData values correctly 1`] = `
+<div>
+  <div
+    class="mt-4"
+  >
+    <div
+      class="mb-8"
+      data-testid="errors"
+    >
+      <div
+        class="block text-2xl"
+        id="label-consentReferral"
+      >
+        Does the customer give consent?
+      </div>
+      <div
+        class="flex flex-row mt-4"
+      >
+        <div
+          class="text-[18px] mr-8"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-0 label-consentReferral"
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                data-testid="radio-button-input"
+                id="id-0"
+                name="consentReferral"
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                data-testid="radio-button-label"
+                for="id-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-[18px]"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-1 label-consentReferral"
+                checked=""
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                data-testid="radio-button-input"
+                id="id-1"
+                name="consentReferral"
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                data-testid="radio-button-label"
+                for="id-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ConsentWrapper Component renders with errors 1`] = `
+<div>
+  <div
+    class="mt-4"
+  >
+    <div
+      class="border-0 border-l-4 border-red-600 border-solid mb-8 pl-4"
+      data-testid="errors"
+    >
+      <div
+        class="block text-2xl"
+        id="label-consentReferral"
+      >
+        Does the customer give consent?
+      </div>
+      <div
+        class="text-red-500 text-[18px]"
+        data-testid="errorMessage-consent"
+        id="consentReferral"
+      >
+        Please provide consent to continue
+      </div>
+      <div
+        class="flex flex-row mt-4"
+      >
+        <div
+          class="text-[18px] mr-8"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-0 label-consentReferral consentReferral"
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0 before:border-2 before:border-red-700"
+                data-testid="radio-button-input"
+                id="id-0"
+                name="consentReferral"
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 before:border-2 before:border-red-700"
+                data-testid="radio-button-label"
+                for="id-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-[18px]"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-1 label-consentReferral consentReferral"
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0 before:border-2 before:border-red-700"
+                data-testid="radio-button-input"
+                id="id-1"
+                name="consentReferral"
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100 before:border-2 before:border-red-700"
+                data-testid="radio-button-label"
+                for="id-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ConsentWrapper Component should render the default state of the component 1`] = `
+<div>
+  <div
+    class="mt-4"
+  >
+    <div
+      class="mb-8"
+      data-testid="errors"
+    >
+      <div
+        class="block text-2xl"
+        id="label-consentReferral"
+      >
+        Does the customer give consent?
+      </div>
+      <div
+        class="flex flex-row mt-4"
+      >
+        <div
+          class="text-[18px] mr-8"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-0 label-consentReferral"
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                data-testid="radio-button-input"
+                id="id-0"
+                name="consentReferral"
+                type="radio"
+                value="0"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                data-testid="radio-button-label"
+                for="id-0"
+              >
+                Yes
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-[18px]"
+        >
+          <div
+            class="relative text-base"
+            data-testid="radio-button"
+          >
+            <div
+              class="flex flex-wrap items-center"
+            >
+              <input
+                aria-describedby="hint-1 label-consentReferral"
+                class="w-[40px] h-[40px] m-0 opacity-0 cursor-pointer peer my-0"
+                data-testid="radio-button-input"
+                id="id-1"
+                name="consentReferral"
+                type="radio"
+                value="1"
+              />
+              <label
+                class="align-self-center max-w-[calc(100%-40px)] pl-[12px] cursor-pointer touch-action-manipulation before:content-[''] before:box-border before:absolute before:top-0 before:left-0 before:w-[40px] before:h-[40px] before:bg-transparent before:rounded-full before:border before:border-gray-400 after:content-[''] after:absolute after:top-[8px] after:left-[8px] after:w-0 after:h-0 after:border-[12px] after:border-solid after:border-magenta-500 after:rounded-full after:opacity-0 peer-checked:hover:after:border-pink-800 peer-focus:hover:after:border-magenta-500 active:after:opacity-100 active:after:border-white peer-checked:active:after:border-pink-400 peer-disabled:active:after:border-gray-200 peer-focus:active:after:border-magenta-500 peer-focus:before:border-4 peer-focus:before:border-blue-700 peer-focus:before:outline-[3px] peer-focus:before:outline-black peer-focus:before:outline-offset-1 peer-focus:before:shadow-[0_0_0_3px] peer-focus:before:shadow-yellow-400 peer-checked:after:opacity-100"
+                data-testid="radio-button-label"
+                for="id-1"
+              >
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

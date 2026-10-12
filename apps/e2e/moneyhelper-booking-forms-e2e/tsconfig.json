@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.playwright.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["../../moneyhelper-booking-forms/*"],
+      "@lib/*": ["src/lib/*"],
+      "@pages/*": ["src/pages/*"],
+      "@maps-react/utils/*": ["../../../libs/shared/utils/src/*"],
+      "@maps-react/mhf/*": ["../../../libs/shared/mhf/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "eslint.config.mjs", "**/*.js"]
+}

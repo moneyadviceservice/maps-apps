@@ -1,0 +1,28 @@
+{
+  "resultSections": {
+    "en": [
+      "Wait for six months before applying again",
+      "Check your credit report for errors",
+      "Open a bank account and/or set up Direct Debits",
+      "Consider putting household bills in your name",
+      "Update your bank and credit lenders' records",
+      "Make sure you're managing existing credit well",
+      "Get help with your current finances",
+      "Register to vote at your current address",
+      "Check how your linked finances affect you",
+      "Before applying again, use an eligibility checker"
+    ]
+  },
+  "questions": {
+    "en": [
+      "Have you been declined for credit in the past six months?",
+      "Have you checked your credit report for errors in the last month?",
+      "Do you have any of these accounts in your name?",
+      "Do any of the accounts in your name use old details?",
+      "Are you paying back any borrowing?",
+      "Do you always pay your bills on time?",
+      "Have you registered to vote at your current address?",
+      "Do you have joint finances with someone?"
+    ]
+  }
+}

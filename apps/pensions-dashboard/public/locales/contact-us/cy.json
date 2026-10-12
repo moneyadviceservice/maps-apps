@@ -1,0 +1,64 @@
+{
+  "title": "Cysylltwch â ni",
+  "intro": "Sut bynnag y byddwch chi’n dewis cysylltu â ni, rydyn ni yma i helpu - a byddwch bob amser yn sgwrsio â pherson go iawn.",
+  "complaint-link": "[Gwneud cwyn](https://www.moneyhelper.org.uk/cy/contact-us/complaints)",
+  "webchat": {
+    "title": "Gwesgwrs",
+    "subtitle": "Sgwrsiwch â ni",
+    "availability": "Dydd Llun - dydd Gwener: 9am i 5pm",
+    "js-notice": "Er mwyn i Webchat weithio, mae angen galluogi JavaScript yn y porwr hwn.",
+    "button": "Dechrau’r gwesgwrs",
+    "description": "Sad, Sul, gwyliau banc: **ar gau**\n\nByddwn yn gofyn rhai cwestiynau, ac yna’n eich cysylltu ag arbenigwr."
+  },
+  "phone": {
+    "title": "Ffôn",
+    "subtitle": "Ffoniwch ni",
+    "availability": "Dydd Llun - dydd Gwener: 9am i 5pm",
+    "tel": "tel:+448000720263",
+    "button": "0800 072 0263",
+    "description": "Dydd Sadwrn, dydd Sul, gwyliau banc: **ar gau**\n\nMae galwadau yn y DU am ddim ac efallai y cânt eu recordio er mwyn gwella ein gwasanaeth."
+  },
+  "online-form": {
+    "title": "Ffurflen ar-lein",
+    "subtitle": "E-bostiwch ni",
+    "availability": "Ymateb mewn 3 diwrnod gwaith",
+    "button": "Agor ffurflen ar-lein",
+    "description": "Os bydd gwell gennych ysgrifennu atom, llenwch ein ffurflen ar-lein.\n\nAtebwch ychydig o gwestiynau ac yna bydd gennych le i ysgrifennu gymaint o fanylion a hoffech."
+  },
+  "whatsapp": {
+    "title": "WhatsApp",
+    "subtitle": "Anfonwch neges atom",
+    "availability": "Dydd Llun - dydd Gwener: 9am i 5pm",
+    "description": "Lawrlwythwch yr ap: [WhatsApp](https://www.whatsapp.com/download) \n\nByddwn yn gofyn rhai cwestiynau, ac yna’n eich cysylltu ag arbenigwr. \n\nByddwn yn ymateb rhwng dydd Llun - dydd Gwener, 9am i 5pm (heblaw am wyliau banc)."
+  },
+  "accessible-options": {
+    "heading": "Opsiynau hygyrchedd",
+    "relay": {
+      "title": "Relay UK",
+      "toggle": "Defnyddio gwasanaethau testun",
+      "intro": "Defnyddiwch y gwasanaeth cyfrinachol i deipio negeseuon atom gan ddefnyddio ffôn testun neu ap.",
+      "cta": {
+        "label": "Ewch i Relay UK",
+        "href": "https://www.relayuk.bt.com/"
+      }
+    },
+    "bsl": {
+      "title": "BSL",
+      "toggle": "Defnyddio iaith arwyddion",
+      "intro": "Gwell gennych ddefnyddio Iaith Arwyddion Prydain? Defnyddiwch y gwasanaeth am ddim hon i gyrchu dehonglydd BSL – dewiswch bwnc o’r rhestr ‘department’.",
+      "cta": {
+        "label": "Cysylltu â InterpretersLive!",
+        "href": "https://connect.interpreterslive.co.uk/vrs?ilc=MoneyHelper"
+      }
+    },
+    "interpreter": {
+      "title": "Cyfieithydd",
+      "toggle": "Help mewn ieithoedd eraill",
+      "intro": "Os nad Saesneg neu Gymraeg yw eich iaith gyntaf, gallwn ddod o hyd i gyfieithydd i helpu.",
+      "cta": {
+        "label": "Ffoniwch 0800 756 1012",
+        "href": "tel:+448007561012"
+      }
+    }
+  }
+}

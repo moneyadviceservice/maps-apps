@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`test OtherToolsToTry component should render the component 1`] = `
+<div>
+  <h2
+    class="text-3xl md:text-5xl font-bold mt-2 mb-8 text-blue-700"
+  >
+    Other tools to try
+  </h2>
+  <div
+    class="grid grid-cols-1 gap-6 md:grid-cols-3"
+  >
+    <div
+      class="t-teaser relative flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden bg-white"
+      data-testid="teaserCard"
+    >
+      <img
+        alt=""
+        class="object-cover pointer-events-none w-full h-auto aspect-video"
+        data-nimg="1"
+        decoding="async"
+        height="300"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fpension-calculator.jpg&w=828&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fpension-calculator.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fpension-calculator.jpg&w=828&q=75 2x"
+        style="color: transparent;"
+        width="400"
+      />
+      <div
+        class="p-5 space-y-3"
+      >
+        <h3
+          class="md:text-xl text-gray-800 text-xl font-bold"
+        >
+          <a
+            class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="https://www.moneyhelper.org.uk/en/everyday-money/pension-calculator"
+            target="_blank"
+          >
+            Pension calculator
+            <span
+              class="sr-only"
+            >
+               (opens in a new window)
+            </span>
+          </a>
+        </h3>
+        <p
+          class="inline-block w-full text-base text-gray-800 no-underline pointer-events-none"
+        >
+          Find out how much you might need to save for retirement and the income you’re on track to get.
+        </p>
+      </div>
+    </div>
+    <div
+      class="t-teaser relative flex flex-col outline outline-1 outline-slate-400 shadow-bottom-gray rounded md:rounded-none md:rounded-bl-[36px] md:shadow-none overflow-hidden bg-white"
+      data-testid="teaserCard"
+    >
+      <img
+        alt=""
+        class="object-cover pointer-events-none w-full h-auto aspect-video"
+        data-nimg="1"
+        decoding="async"
+        height="300"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fbenefits-calculator.jpg&w=828&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fbenefits-calculator.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fbenefits-calculator.jpg&w=828&q=75 2x"
+        style="color: transparent;"
+        width="400"
+      />
+      <div
+        class="p-5 space-y-3"
+      >
+        <h3
+          class="md:text-xl text-gray-800 text-xl font-bold"
+        >
+          <a
+            class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+            href="https://www.moneyhelper.org.uk/en/everyday-money/benefits-calculator"
+            target="_blank"
+          >
+            Benefits calculator
+            <span
+              class="sr-only"
+            >
+               (opens in a new window)
+            </span>
+          </a>
+        </h3>
+        <p
+          class="inline-block w-full text-base text-gray-800 no-underline pointer-events-none"
+        >
+          Check if you’re entitled to any extra payments or grants, including Universal Credit and Pension Credit.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
