@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Modal component renders modal using a dialog element when isOpen is true 1`] = `
+<dialog
+  aria-labelledby="modal-heading"
+  aria-modal="true"
+  class="bg-white rounded-xl shadow-xl w-full max-w-[820px] relative"
+  open=""
+>
+  <div
+    class="p-10"
+  >
+    <div
+      class="flex justify-end items-center"
+    >
+      <button
+        class="t-close-button relative top-auto right-auto flex flex-col items-center gap-2 p-0 text-inherit no-underline focus-visible:text-gray-800 focus-visible:bg-yellow-400 focus-visible:shadow-link-focus focus-within:outline-none focus-visible:no-underline"
+        type="button"
+      >
+        <span />
+        <close.svg
+          class="w-6"
+        />
+        <span
+          class="text-sm -mt-"
+        >
+          close 
+          <span
+            class="sr-only"
+          >
+            modal
+          </span>
+        </span>
+        <span />
+      </button>
+    </div>
+    <div>
+      <div
+        data-testid="modal-content"
+      >
+        This is modal content
+      </div>
+    </div>
+  </div>
+</dialog>
+`;

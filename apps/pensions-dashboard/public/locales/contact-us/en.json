@@ -1,0 +1,64 @@
+{
+  "title": "Contact us",
+  "intro": "However you choose to get in touch, we’re here to help - and you’ll always chat with a real person.",
+  "complaint-link": "[Make a complaint](https://www.moneyhelper.org.uk/en/contact-us/complaints)",
+  "webchat": {
+    "title": "Webchat",
+    "subtitle": "Chat to us",
+    "availability": "Mon – Fri 9am to 5pm",
+    "js-notice": "For webchat to work, it’s necessary to enable JavaScript in this browser.",
+    "button": "Start webchat",
+    "description": "Sat, Sun, bank holidays: **closed**\n\nWe'll ask some questions, then connect you with a specialist."
+  },
+  "phone": {
+    "title": "Phone",
+    "subtitle": "Call us",
+    "availability": "Mon – Fri 9am to 5pm",
+    "tel": "tel:+448000720243",
+    "button": "0800 072 0243",
+    "description": "Sat, Sun, bank holidays: **closed**\n\nUK calls are free and may be recorded to improve our service."
+  },
+  "online-form": {
+    "title": "Online form",
+    "subtitle": "Email us",
+    "availability": "Reply in 3 working days",
+    "button": "Open online form",
+    "description": "If you'd rather write to us, fill out our online form.\n\nAnswer a few questions and then you'll have space to write as much detail as you need."
+  },
+  "whatsapp": {
+    "title": "WhatsApp",
+    "subtitle": "Message us",
+    "availability": "Mon – Fri 9am to 5pm",
+    "description": "Download app: [WhatsApp](https://www.whatsapp.com/download) \n\nWe'll ask some questions, then connect you with a specialist. \n\nWe'll reply between Monday - Friday, 9am to 5pm (except bank holidays)."
+  },
+  "accessible-options": {
+    "heading": "Accessibility options",
+    "relay": {
+      "title": "Relay UK",
+      "toggle": "Use text services",
+      "intro": "Use this confidential service to type messages to us using textphone or app.",
+      "cta": {
+        "label": "Visit Relay UK",
+        "href": "https://www.relayuk.bt.com/"
+      }
+    },
+    "bsl": {
+      "title": "BSL",
+      "toggle": "Use sign language",
+      "intro": "Prefer to use British Sign Language? Use this free service to access a BSL interpreter - just select a topic from the 'department' list.",
+      "cta": {
+        "label": "Connect to InterpretersLive!",
+        "href": "https://connect.interpreterslive.co.uk/vrs?ilc=MoneyHelper"
+      }
+    },
+    "interpreter": {
+      "title": "Interpreter",
+      "toggle": "Help in other languages",
+      "intro": "If English or Welsh isn't your first language, we can find an interpreter to help.",
+      "cta": {
+        "label": "Call 0800 072 0243",
+        "href": "tel:+448000720243"
+      }
+    }
+  }
+}

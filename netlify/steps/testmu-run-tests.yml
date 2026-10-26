@@ -1,0 +1,65 @@
+parameters:
+  # Pipeline display name for readability.
+  - name: displayName
+    type: string
+
+  # What operating system / configuration to use.
+  - name: testMu_platform
+    type: string
+
+  # What application test suite to execute.
+  - name: testMu_projectName
+    type: string
+
+  # What is the target test environment for TestMu tests.
+  - name: baseUrl
+    type: string
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: '22.23.2'
+    displayName: 'Install Node.js'
+
+  # Install dependencies
+  - script: |
+      npm ci --no-audit
+    displayName: 'Install Dependencies'
+
+  # Install Playwright 1.56.1 and matching browsers for this pipeline
+  - script: |
+      npm pkg set 'devDependencies.@playwright/test=1.56.1'
+      npm install --no-audit
+      ./node_modules/.bin/playwright install --with-deps
+    displayName: 'Install Playwright 1.56.1 and browsers'
+
+  # Run the tests
+  - script: >
+      npx nx run ${{ parameters.testMu_projectName }}-e2e:e2e-testmu:${{ parameters.testMu_platform }}
+      --output=results/${{ parameters.testMu_platform }}/test-results
+      --skip-nx-cache
+    displayName: 'Run ${{ parameters.displayName }} tests'
+    env:
+      CI: 'true'
+      BASE_URL: ${{ parameters.baseUrl }}
+
+      # Authorisation
+      NETLIFY_PASSWORD: $(netlify-password)
+      LT_USERNAME: MaPSPipelineServiceAccount
+      LT_ACCESS_KEY: $(lt-access-key)
+
+      # Some test frameworks require more than the standard environment variables
+      MHPD_API_URL: $(MHPD_API_DOMAIN)
+
+      # Reporting
+      PLAYWRIGHT_HTML_REPORT: results/${{ parameters.testMu_platform }}/playwright-report
+      PW_TEST_HTML_REPORT_OPEN: 'never'
+      TESTMU_BUILD_ID: $(Build.BuildId)
+
+  # Publish artifacts
+  - task: PublishBuildArtifacts@1
+    condition: succeededOrFailed()
+    inputs:
+      pathToPublish: results/${{ parameters.testMu_platform }}/playwright-report
+      artifactName: ${{ parameters.testMu_platform }}-playwright-report
+      publishLocation: 'Container'

@@ -1,0 +1,57 @@
+parameters:
+  - name: projectName
+    type: string
+  - name: baseUrl
+    type: string
+
+jobs:
+  - job: Windows_Tests
+    timeoutInMinutes: 0
+    displayName: 'Windows Browsers'
+    condition: succeededOrFailed()
+    steps:
+      - template: ../steps/testmu-run-tests.yml
+        parameters:
+          displayName: 'Windows Browsers'
+          testMu_projectName: ${{ parameters.projectName }}
+          testMu_platform: windows
+          baseUrl: ${{ parameters.baseUrl }}
+
+  - job: Mac_Tests
+    timeoutInMinutes: 0
+    displayName: 'Mac Browsers'
+    dependsOn: Windows_Tests
+    condition: succeededOrFailed()
+    steps:
+      - template: ../steps/testmu-run-tests.yml
+        parameters:
+          displayName: 'Mac Browsers'
+          testMu_projectName: ${{ parameters.projectName }}
+          testMu_platform: mac
+          baseUrl: ${{ parameters.baseUrl }}
+
+  - job: Android_Tests
+    timeoutInMinutes: 0
+    displayName: 'Android Real Devices'
+    dependsOn: Mac_Tests
+    condition: succeededOrFailed()
+    steps:
+      - template: ../steps/testmu-run-tests.yml
+        parameters:
+          displayName: 'Android Real Devices'
+          testMu_projectName: ${{ parameters.projectName }}
+          testMu_platform: android
+          baseUrl: ${{ parameters.baseUrl }}
+
+  - job: iOS_Tests
+    timeoutInMinutes: 0
+    displayName: 'iOS Viewport (Emulated)'
+    dependsOn: Android_Tests
+    condition: succeededOrFailed()
+    steps:
+      - template: ../steps/testmu-run-tests.yml
+        parameters:
+          displayName: 'iOS Viewport (Emulated)'
+          testMu_projectName: ${{ parameters.projectName }}
+          testMu_platform: ios
+          baseUrl: ${{ parameters.baseUrl }}

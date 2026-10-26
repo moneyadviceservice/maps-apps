@@ -1,0 +1,19 @@
+{
+  "cli": "nx",
+  "id": "e2e-migrate",
+  "type": "object",
+  "title": "Migrate a Cypress E2E project to Playwright",
+  "description": "Migrate an existing Cypress E2E folder into a Playwright-based E2E project structure.",
+  "properties": {
+    "application": {
+      "type": "string",
+      "description": "The existing E2E project folder name, with or without the -e2e suffix.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Which E2E project folder should be migrated?"
+    }
+  },
+  "required": ["application"]
+}

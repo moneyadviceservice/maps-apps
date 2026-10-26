@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`QuestionCustomerDetails Component should display error messages when errors are provided 1`] = `
+<div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+    data-testid="errors"
+  >
+    <div
+      class="text-base"
+    >
+      <label
+        class="block text-2xl"
+        for="firstName"
+      >
+        Customer's first name
+      </label>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="firstName-error"
+        id="firstName-error"
+      >
+        First name is required
+      </p>
+      <input
+        aria-describedby="firstName-error"
+        aria-invalid="true"
+        autocomplete="off"
+        class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+        data-testid="firstName"
+        id="firstName"
+        name="firstName"
+        type="text"
+        value="John"
+      />
+    </div>
+  </div>
+  <div
+    class="text-base"
+  >
+    <label
+      class="block text-2xl"
+      for="lastName"
+    >
+      Customer's last name
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="lastName"
+      id="lastName"
+      name="lastName"
+      type="text"
+      value="Doe"
+    />
+  </div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+    data-testid="errors"
+  >
+    <div
+      class="text-base"
+    >
+      <label
+        class="block text-2xl"
+        for="email"
+      >
+        Customer's email address
+      </label>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="email-error"
+        id="email-error"
+      >
+        Email is invalid
+      </p>
+      <input
+        aria-describedby="email-error"
+        aria-invalid="true"
+        autocomplete="off"
+        class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+        data-testid="email"
+        id="email"
+        name="email"
+        type="text"
+        value="john.doe@example.com"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`QuestionCustomerDetails Component should render the component with title, labels, and default values 1`] = `
+<div>
+  <div
+    class="text-base"
+  >
+    <label
+      class="block text-2xl"
+      for="firstName"
+    >
+      Customer's first name
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="firstName"
+      id="firstName"
+      name="firstName"
+      type="text"
+      value="John"
+    />
+  </div>
+  <div
+    class="text-base"
+  >
+    <label
+      class="block text-2xl"
+      for="lastName"
+    >
+      Customer's last name
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="lastName"
+      id="lastName"
+      name="lastName"
+      type="text"
+      value="Doe"
+    />
+  </div>
+  <div
+    class="text-base"
+  >
+    <label
+      class="block text-2xl"
+      for="email"
+    >
+      Customer's email address
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="email"
+      id="email"
+      name="email"
+      type="text"
+      value="john.doe@example.com"
+    />
+  </div>
+</div>
+`;

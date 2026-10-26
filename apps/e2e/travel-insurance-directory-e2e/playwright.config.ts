@@ -1,0 +1,71 @@
+import * as path from 'path';
+import { workspaceRoot } from '@nx/devkit';
+import { nxE2EPreset } from '@nx/playwright/preset';
+import { defineConfig } from '@playwright/test';
+
+// For CI, you may want to set BASE_URL to the deployed application.
+const baseURL = process.env['BASE_URL'] || 'http://localhost:4313';
+const commonTimeout = 100_000;
+const projectName = process.env.PROJECT_NAME || 'travel-insurance-directory';
+const reportDir = path.join(
+  workspaceRoot,
+  `apps/e2e/${projectName}-e2e/playwright-report`,
+);
+export default defineConfig({
+  timeout: commonTimeout,
+  ...nxE2EPreset(__filename, { testDir: './' }),
+  globalSetup: require.resolve('./global-setup.ts'),
+  globalTeardown: require.resolve('./global-teardown.ts'),
+  // Store reports in a per-app location
+  reporter: process.env.CI
+    ? [
+        ['list'],
+        ['html', { outputFolder: reportDir }],
+        ['junit', { outputFile: 'results.xml' }],
+      ]
+    : 'list',
+  retries: 2,
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  use: {
+    baseURL,
+    javaScriptEnabled: true,
+    actionTimeout: commonTimeout,
+    navigationTimeout: commonTimeout,
+    // Informizely's widget script (updated 29 Sep 2026) does not start when the
+    // browser advertises itself as HeadlessChrome or as WebDriver-controlled.
+    userAgent:
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+    launchOptions: {
+      args: ['--disable-blink-features=AutomationControlled'],
+    },
+  },
+
+  webServer: {
+    command: `npx nx run ${projectName}:serve`,
+    url: baseURL,
+    reuseExistingServer: !process.env.CI,
+    cwd: workspaceRoot,
+  },
+  expect: {
+    timeout: commonTimeout,
+  },
+
+  projects: [
+    {
+      name: 'default',
+      testIgnore:
+        /\/(account|cover-and-service|customer-contact-details|firm-details|reregistration|firm-directory-actions)\.spec\.ts$/,
+    },
+    {
+      name: 'self-serve',
+      testMatch:
+        /\/(account|cover-and-service|customer-contact-details|firm-details|reregistration)\.spec\.ts$/,
+      workers: 1,
+    },
+    {
+      name: 'admin-directory-actions',
+      testMatch: /\/firm-directory-actions\.spec\.ts$/,
+      workers: 1,
+    },
+  ],
+});

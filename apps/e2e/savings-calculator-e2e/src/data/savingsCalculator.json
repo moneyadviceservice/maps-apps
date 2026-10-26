@@ -1,0 +1,177 @@
+{
+  "core": {
+    "heading": "Savings calculator",
+    "intro": "Are you saving for a future bill? A new TV or car? Or just to have a bit in the bank? The calculator can help you understand how long it will take to save a specific amount, or how much you need to save to have enough by a particular date.",
+    "howLongIntro": "Know how much you want to save, but not sure how long it will take?",
+    "howMuchIntro": "Know when you need your savings and want to see how much you need to save regularly?",
+    "lowInterestMsg": "The interest rate you added looks lower than you could be getting. Shop around for the best savings account for you. (opens in a new window) ",
+    "highInterestMsg": "The interest rate you added looks higher than we'd expect, did you mean to enter 25%? "
+  },
+
+  "howMuch": {
+    "heading": "Savings calculator",
+    "title": "How much do I need to save each week/month to reach my goal?",
+    "savingsGoalLabel": "What is your savings goal?",
+    "savingDate": "When do you need your savings by?",
+    "month": "Month",
+    "year": "Year",
+    "savedAmount": "How much have you saved already? (optional)",
+    "grossInterest": "Gross annual interest rate on your savings (optional)",
+    "note": "This tool gives you an indication of how long it will take to reach your goal, or how much you need to regularly save to have your savings by a specific date. Results are an estimate and should only be used as such.",
+    "nextSteps": {
+      "stepOne": "Use our Budget planner (opens in a new window)  to work out how much you can afford to save.",
+      "stepTwo": "Compare the different types of saving and investment options with our Savings guides (opens in a new window) .",
+      "stepThree": "Learn how to set a savings goal (opens in a new window) ."
+    },
+    "inputs": {
+      "savingGoal": "20000",
+      "interest": "5.1",
+      "saved": "2000"
+    },
+    "results": {
+      "monthly": "£430 per month",
+      "total": "£20,002",
+      "reachGoalText": "You could reach your goal 9 months sooner by increasing your saving amount to £578 (an increase of £148 per month)."
+    },
+    "shareToolTitle": "Share this tool"
+  },
+
+  "howLong": {
+    "heading": "Savings calculator",
+    "title": "How long will it take to reach my goal amount?",
+    "savingsGoalLabel": "What is your savings goal?",
+    "selectDropdown": "How much can you save?",
+    "savedAmount": "How much have you saved already? (optional)",
+    "grossInterest": "Gross annual interest rate on your savings (optional)",
+    "note": "This tool gives you an indication of how long it will take to reach your goal, or how much you need to regularly save to have your savings by a specific date. Results are an estimate and should only be used as such.",
+    "nextSteps": {
+      "stepOne": "Use our Budget planner (opens in a new window)  to work out how much you can afford to save.",
+      "stepTwo": "Compare the different types of saving and investment options with our Savings guides (opens in a new window) .",
+      "stepThree": "Learn how to set a savings goal (opens in a new window) ."
+    },
+    "inputs": {
+      "savingGoal": "20000",
+      "howLongAmount": "250",
+      "duration": "12",
+      "interest": "5.1",
+      "saved": "2000"
+    },
+    "results": {
+      "dateAppendage": "(5 years and 2 months)",
+      "goal": "£20,000",
+      "save": "£250 a month",
+      "reachGoalText": "You could reach your goal over 1 year sooner by increasing your saving amount to £340 (an increase of £90 per month)."
+    },
+    "shareToolTitle": "Share this tool"
+  },
+
+  "howLongRecalculate": {
+    "title": "How long will it take to reach my goal amount?",
+    "grossInterest": "Gross annual interest rate on your savings (optional)",
+    "note": "This tool gives you an indication of how long it will take to reach your goal, or how much you need to regularly save to have your savings by a specific date. Results are an estimate and should only be used as such.",
+    "nextSteps": {
+      "stepOne": "Use our Budget planner (opens in a new window)  to work out how much you can afford to save.",
+      "stepTwo": "Compare the different types of saving and investment options with our Savings guides (opens in a new window) .",
+      "stepThree": "Learn how to set a savings goal (opens in a new window) ."
+    },
+    "inputs": {
+      "savingGoal": "20000",
+      "howLongAmount": "2500",
+      "duration": "1",
+      "interest": "0.1",
+      "saved": "2000"
+    },
+    "recalculateInputs": {
+      "interestOne": "25",
+      "howLongAmount": "250",
+      "duration": "12",
+      "interestTwo": "5.1"
+    },
+    "results": {
+      "dateAppendage": "(7 years and 3 months)",
+      "goal": "£20,000",
+      "save": "£2,500 a year",
+      "reachGoalText": "You could reach your goal almost 2 years sooner by increasing your saving amount to £3,264 (an increase of £764 per year)."
+    },
+    "recalculateResult": {
+      "dateAppendageOne": "(3 years and 11 months)",
+      "dateAppendageTwo": "(5 years and 2 months)",
+      "save": "£250 a month",
+      "reachGoalTextOne": "You could reach your goal 11 months sooner by increasing your saving amount to £3,804 (an increase of £1,304 per year).",
+      "reachGoalTextTwo": "You could reach your goal over 1 year sooner by increasing your saving amount to £340 (an increase of £90 per month)."
+    },
+    "shareToolTitle": "Share this tool"
+  },
+
+  "howMuchRecalculate": {
+    "title": "How much do I need to save each week/month to reach my goal?",
+
+    "inputs": {
+      "savingGoal": "20000",
+      "interest": "0.1",
+      "saved": "2000"
+    },
+    "recalculateInputs": {
+      "interestOne": "25",
+      "savingGoal": "20000",
+      "interestTwo": "5.1",
+      "saved": "2000"
+    },
+
+    "results": {
+      "monthly": "£473 per month",
+      "total": "£20,008",
+      "reachGoalText": "You could reach your goal 9 months sooner by increasing your saving amount to £620 (an increase of £147 per month)."
+    },
+    "recalculateResult": {
+      "monthly": "£292 per month",
+      "monthlyTwo": "£385 per month",
+      "total": "£20,034",
+      "totalTwo": "£20,007",
+      "reachGoalText": "You could reach your goal 9 months sooner by increasing your saving amount to £436 (an increase of £144 per month).",
+      "reachGoalTextTwo": "You could reach your goal 10 months sooner by increasing your saving amount to £519 (an increase of £134 per month)."
+    },
+    "shareToolTitle": "Share this tool"
+  },
+
+  "validationMessages": {
+    "input": {
+      "savingGoal": "20000",
+      "saved": "2000",
+      "interest": "5.1"
+    },
+    "savingsGoal": "Your savings goal can’t be blank",
+    "pastDate": "The date you need your savings by cannot be in the past",
+    "currentDate": "The date you need your savings by cannot be in the current month",
+    "amountToSave": "The amount you save can’t be blank"
+  },
+
+  "howLongDecimal": {
+    "inputs": {
+      "savingGoal": "20000.50",
+      "howLongAmount": "250.75",
+      "duration": "12",
+      "interest": "5.25",
+      "saved": "100.25"
+    },
+    "results": {
+      "dateAppendage": "(5 years and 9 months)",
+      "goal": "£20,000.5",
+      "save": "£250.75 a month",
+      "reachGoalText": "You could reach your goal over 1 year sooner by increasing your saving amount to £343 (an increase of £92.25 per month)."
+    }
+  },
+
+  "howMuchDecimal": {
+    "inputs": {
+      "savingGoal": "12345.67",
+      "saved": "543.21",
+      "interest": "4.75"
+    },
+    "results": {
+      "monthly": "£177 per month",
+      "total": "£12,390",
+      "reachGoalText": "You could reach your goal over 1 year sooner by increasing your saving amount to £239 (an increase of £62 per month)."
+    }
+  }
+}

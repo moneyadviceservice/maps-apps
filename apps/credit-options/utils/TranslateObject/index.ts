@@ -1,0 +1,1 @@
+export { translateObject } from './translateObject';

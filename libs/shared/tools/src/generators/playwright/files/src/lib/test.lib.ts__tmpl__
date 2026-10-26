@@ -1,0 +1,15 @@
+import { ExamplePage } from '@pages/example.page';
+
+import { test as base } from '@maps-react/playwright/fixtures/default.fixtures';
+
+export * from '@maps-react/playwright/fixtures/default.fixtures';
+
+interface CustomFixtures {
+  examplePage: ExamplePage;
+}
+
+export const test = base.extend<CustomFixtures>({
+  examplePage: async ({ page }, provideFixture) => {
+    await provideFixture(new ExamplePage(page));
+  },
+});

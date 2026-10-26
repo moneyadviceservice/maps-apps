@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Confirmation Component renders the component 1`] = `
+<div
+  class="flex flex-col gap-8 mt-[-32px]"
+>
+  <div
+    data-testid="appointment-summary-callout"
+  />
+  <section
+    class="flex flex-col gap-4"
+  >
+    <h2
+      class="text-2xl md:text-4xl font-bold text-blue-700"
+      data-testid="confirmation-section-title-0"
+    >
+      mock-title
+    </h2>
+    <p
+      class="break-words mb-2"
+      data-testid="confirmation-section-content-0"
+    >
+      mock-content
+    </p>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+        data-testid="confirmation-section-list-0"
+        start="-1"
+      >
+        <li>
+          <p
+            class="mb-4 break-words"
+            data-testid="confirmation-section-item-0-0"
+          >
+            mock-item
+          </p>
+        </li>
+        <li>
+          <p
+            class="mb-4 break-words"
+            data-testid="confirmation-section-item-0-1"
+          >
+            mock-item
+          </p>
+        </li>
+      </ul>
+    </div>
+    <p
+      class="mb-4 break-words"
+      data-testid="confirmation-section-footer-0"
+    >
+      mock-footer
+    </p>
+  </section>
+</div>
+`;

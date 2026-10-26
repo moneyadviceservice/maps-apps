@@ -1,0 +1,83 @@
+{
+  "pageLoads": {
+    "livingCountry": {
+      "page": {
+        "pageName": "DALT--calculator--country",
+        "pageTitle": "Find free debt advice - Where do you live? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    },
+    "selfEmployed": {
+      "page": {
+        "pageName": "DALT--self-employed",
+        "pageTitle": "Find free debt advice - Are you a small business owner or self-employed? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "2",
+        "stepName": "Are you a small business owner or self-employed?",
+        "toolCategory": ""
+      },
+      "event": "pageLoadReact"
+    }
+  },
+  "toolStarts": {
+    "livingCountry": {
+      "page": {
+        "pageName": "DALT--calculator--country",
+        "pageTitle": "Find free debt advice - Where do you live? - MoneyHelper Tools",
+        "lang": "en",
+        "site": "moneyhelper",
+        "pageType": "tool page",
+        "source": "direct",
+        "categoryL1": "Money Trouble",
+        "categoryL2": "Dealing with Debt",
+        "categoryL3": "Debt advice locator"
+      },
+      "tool": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "1",
+        "stepName": "Where do you live?",
+        "toolCategory": ""
+      },
+      "event": "toolStart"
+    }
+  },
+  "errorMessages": {
+    "location": {
+      "event": "errorMessage",
+      "eventInfo": {
+        "toolName": "Debt Advice Locator Tool",
+        "toolStep": "5",
+        "stepName": "What is your location?",
+        "errorDetails": [
+          {
+            "reactCompType": "QuestionInputText",
+            "reactCompName": "Location",
+            "errorMessage": "Error: Enter a valid city, town or postcode to continue."
+          }
+        ]
+      }
+    }
+  }
+}

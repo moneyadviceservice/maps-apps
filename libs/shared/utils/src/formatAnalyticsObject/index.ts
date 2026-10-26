@@ -1,0 +1,1 @@
+export { formatAnalyticsObject } from './formatAnalyticsObject';

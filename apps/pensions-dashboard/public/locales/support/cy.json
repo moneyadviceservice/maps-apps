@@ -1,0 +1,34 @@
+{
+  "back-text": "Gadael cymorth a chefnogaeth",
+  "callout": {
+    "title": "Nid yr hyn rydych chi'n chwilio amdano?",
+    "content": "Os na allwch ddod o hyd i'r ateb roeddech chi'n chwilio amdano, rhowch gynnig ar ein canllawiau eraill neu cysylltwch â ni."
+  },
+  "using-the-pensions-dashboard": {
+    "title": "Defnyddio’r Dangosfwrdd Pensiynau",
+    "link": "using-the-pensions-dashboard"
+  },
+  "understand-your-pensions": {
+    "title": "Deall eich pensiynau",
+    "link": "understand-your-pensions",
+    "heading": "Cwestiynau cyffredinol",
+    "description": "Cael cymorth ar gwestiynau cyffredin am bensiynau."
+  },
+  "support": {
+    "title": "Sut allwn ni eich helpu?",
+    "sub-title": "Cymorth i ddefnyddio’r Dangosfwrdd Pensiynau",
+    "intro": "Cewch gymorth i ddefnyddio'r Dangosfwrdd Pensiynau, deall eich pensiynau a chynllunio eich camau nesaf. Gallwch hefyd gysylltu â ni.",
+    "card-1": {
+      "title": "Defnyddio’r Dangosfwrdd Pensiynau",
+      "description": "Gwnewch y mwyaf o’ch Dangosfwrdd Pensiynau a chael atebion i gwestiynau cyffredin."
+    },
+    "card-2": {
+      "title": "Deall eich pensiynau",
+      "description": "Cymorth i gronni eich pensiwn, cymryd eich pensiwn a phroblemau pensiynau."
+    },
+    "card-3": {
+      "title": "Cysylltwch â ni",
+      "description": "Dros y ffôn, e-bost a mwy – byddwch bob amser yn siarad â pherson go iawn. Gallwch hefyd roi gwybod am broblem dechnegol."
+    }
+  }
+}
