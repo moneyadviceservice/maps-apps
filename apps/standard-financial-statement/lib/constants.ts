@@ -1,0 +1,1 @@
+export const ORG_SEARCH_INPUT_DEBOUNCE_MS = 500;

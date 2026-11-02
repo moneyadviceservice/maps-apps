@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Divorce17 should render the component 1`] = `
+<details
+  class="group border-t-1 mb-[-1px] border-slate-400 tool-expand border-b-1"
+  data-testid="divorce-17-section"
+  id="divorce-17-content"
+>
+  <summary
+    class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus text-[18px] hover:underline font-semibold justify-start"
+  >
+    <svgr-mock
+      class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+    />
+    <div
+      class="block"
+      data-testid="summary-block-title"
+    >
+      Decide how to split your pensions in a divorce or dissolution
+    </div>
+  </summary>
+  <div
+    class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+  >
+    <p
+      class="mb-4 break-words"
+      data-testid="paragraph"
+    >
+      Always include pensions in a divorce or dissolution settlement, even if you’ve agreed to keep them separate.
+    </p>
+    <p
+      class="mb-4 break-words"
+      data-testid="paragraph"
+    >
+      This is because they might be your biggest assets and can be worth more than your home, so you might not be getting a fair deal.
+    </p>
+    <p
+      class="mb-4 break-words"
+      data-testid="paragraph"
+    >
+      You can usually choose to use one or more of these options:
+    </p>
+    <div
+      class="flex items-center"
+      data-testid="list-element"
+    >
+      <ul
+        class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-gray-800 mb-4 list-inside"
+        data-testid="divorce-17-list-1"
+        start="-1"
+      >
+        <li>
+          transfer a portion of one person’s pension to another, called pension sharing
+        </li>
+        <li>
+          ask the pension provider to pay a share of the future pension income to each of you, called pension attachment or earmarking
+        </li>
+        <li>
+          keep the full pension and let the other partner take other assets of similar value, called pension offsetting.
+        </li>
+      </ul>
+    </div>
+    <p
+      class="mb-4 break-words"
+      data-testid="paragraph"
+    >
+      You’ll normally need to decide how your pensions are split between you – they do not always need to be shared equally. You could consider using a mediator to help you decide.
+    </p>
+    <p
+      class="mb-4 break-words"
+      data-testid="paragraph"
+    >
+      For more information, see 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/split-pensions-in-a-divorce-or-dissolution"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        How to split pensions in a divorce or dissolution
+      </a>
+      . You can also book a free 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="https://www.moneyhelper.org.uk/en/family-and-care/divorce-and-separation/divorce-dissolution-pensions-appointment"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Pensions and divorce or dissolution appointment
+      </a>
+       to get impartial guidance on your options from one of our pension specialists.
+    </p>
+  </div>
+</details>
+`;

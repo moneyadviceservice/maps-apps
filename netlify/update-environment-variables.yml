@@ -1,0 +1,57 @@
+name: Update environment variables for Netlify sites (Single app or All Apps)
+trigger: none
+
+variables:
+  - group: 'Maps-Apps-Pipeline-Secrets'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: APP
+    type: string
+    default: 'all'
+    displayName: 'App to toggle variable for (default: all)'
+  - name: ENV_VARIABLE_NAME
+    type: string
+    default: 'FORCE_BUILD'
+    displayName: 'Environment variable name to toggle'
+  - name: ENV_VARIABLE_VALUE
+    type: string
+    default: 'true'
+    displayName: 'Environment variable value to set'
+
+stages:
+  - stage: Toggle
+    jobs:
+      - job: Toggle_FORCE_BUILD
+        displayName: 'Toggle FORCE_BUILD'
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - checkout: self
+
+          - task: PythonScript@0
+            displayName: 'Toggle FORCE_BUILD for all apps'
+            condition: eq('${{ parameters.App }}', 'all')
+            inputs:
+              scriptSource: 'filePath'
+              scriptPath: 'netlify/scripts/update-environment-variable.py'
+            env:
+              NETLIFY_TOKEN: $(netlify-token)
+              VARIABLE_NAME: ${{ parameters.ENV_VARIABLE_NAME }}
+              VARIABLE_VALUE: ${{ parameters.ENV_VARIABLE_VALUE }}
+              ALL_SITES: 'true'
+
+          - task: PythonScript@0
+            displayName: 'Toggle FORCE_BUILD for ${{ parameters.App }}'
+            condition: ne('${{ parameters.App }}', 'all')
+            inputs:
+              scriptSource: 'filePath'
+              scriptPath: 'netlify/scripts/update-environment-variable.py'
+            env:
+              NETLIFY_TOKEN: $(netlify-token)
+              VARIABLE_NAME: ${{ parameters.ENV_VARIABLE_NAME }}
+              VARIABLE_VALUE: ${{ parameters.ENV_VARIABLE_VALUE }}
+              APP_NAME: ${{ parameters.APP }}
+              ALL_SITES: 'false'

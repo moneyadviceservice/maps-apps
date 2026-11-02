@@ -1,0 +1,19 @@
+import { H1 } from '@maps-react/common/index';
+import { Container } from '@maps-react/core/components/Container';
+
+export const TitleBanner = ({ title }: { title: string }) => {
+  return (
+    <div className="bg-blue-700" data-testid="title-banner">
+      <Container className="max-w-[1200px] py-4">
+        <H1
+          id="top"
+          className="text-white"
+          tabIndex={-1}
+          data-testid="title-banner-text"
+        >
+          {title}
+        </H1>
+      </Container>
+    </div>
+  );
+};

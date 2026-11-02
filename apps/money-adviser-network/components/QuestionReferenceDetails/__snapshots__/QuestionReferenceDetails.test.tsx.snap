@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`QuestionReferenceDetails Component should display error messages when errors are provided 1`] = `
+<div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+    data-testid="errors"
+  >
+    <div
+      class="text-base mb-4 max-w-[410px]"
+    >
+      <label
+        class="block text-2xl"
+        for="customerReference"
+      >
+        Your Internal Customer Reference (optional)
+      </label>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="customerReference-error"
+        id="customerReference-error"
+      >
+        Ref invalid
+      </p>
+      <input
+        aria-describedby="customerReference-error"
+        aria-invalid="true"
+        autocomplete="off"
+        class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+        data-testid="customerReference"
+        id="customerReference"
+        name="customerReference"
+        type="text"
+        value="random-ref-123"
+      />
+    </div>
+  </div>
+  <div
+    class="border-0 border-l-4 pl-5 border-red-600 border-solid"
+    data-testid="errors"
+  >
+    <div
+      class="text-base mb-4 max-w-[410px]"
+    >
+      <label
+        class="block text-2xl"
+        for="departmentName"
+      >
+        Your Name / Department name (optional)
+      </label>
+      <p
+        class="break-words mb-0 text-red-700"
+        data-testid="departmentName-error"
+        id="departmentName-error"
+      >
+        Department name invalid
+      </p>
+      <input
+        aria-describedby="departmentName-error"
+        aria-invalid="true"
+        autocomplete="off"
+        class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+        data-testid="departmentName"
+        id="departmentName"
+        name="departmentName"
+        type="text"
+        value="department name"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`QuestionReferenceDetails Component should render the component with title, labels, and default values 1`] = `
+<div>
+  <div
+    class="text-base mb-4 max-w-[410px]"
+  >
+    <label
+      class="block text-2xl"
+      for="customerReference"
+    >
+      Your Internal Customer Reference (optional)
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="customerReference"
+      id="customerReference"
+      name="customerReference"
+      type="text"
+      value="random-ref-123"
+    />
+  </div>
+  <div
+    class="text-base mb-4 max-w-[410px]"
+  >
+    <label
+      class="block text-2xl"
+      for="departmentName"
+    >
+      Your Name / Department name (optional)
+    </label>
+    <input
+      aria-invalid="false"
+      autocomplete="off"
+      class="tool-field focus:border-1 focus:border-blue-700 w-full md:max-w-[408px] h-10 px-3 m-px mt-2 text-lg border border-gray-800 rounded focus:outline-none focus:shadow-focus-outline obfuscate"
+      data-testid="departmentName"
+      id="departmentName"
+      name="departmentName"
+      type="text"
+      value="department name"
+    />
+  </div>
+</div>
+`;

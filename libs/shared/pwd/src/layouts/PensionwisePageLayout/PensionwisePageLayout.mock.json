@@ -1,0 +1,73 @@
+{
+  "helpAndSupportTitle": "Help and support",
+  "helpAndSupportText": {
+    "json": [
+      {
+        "nodeType": "paragraph",
+        "content": [
+          {
+            "nodeType": "text",
+            "value": "If you have any questions, you can use our webchat."
+          }
+        ]
+      },
+      {
+        "nodeType": "paragraph",
+        "content": [
+          {
+            "nodeType": "text",
+            "value": "Hours",
+            "format": { "variants": ["bold"] }
+          }
+        ]
+      },
+      {
+        "nodeType": "unordered-list",
+        "content": [
+          {
+            "nodeType": "list-item",
+            "content": [
+              { "nodeType": "text", "value": "Mon - Fri: " },
+              {
+                "nodeType": "text",
+                "value": "9am to 5pm",
+                "format": { "variants": ["bold"] }
+              }
+            ]
+          },
+          {
+            "nodeType": "list-item",
+            "content": [
+              { "nodeType": "text", "value": "Sat, Sun and bank holidays: " },
+              {
+                "nodeType": "text",
+                "value": "Closed",
+                "format": { "variants": ["bold"] }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeType": "paragraph",
+        "content": [
+          {
+            "nodeType": "text",
+            "value": "If you'd prefer to have your appointment by phone or face-to-face, you can "
+          },
+          {
+            "nodeType": "link",
+            "data": {
+              "href": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment"
+            },
+            "value": "book it here"
+          },
+          {
+            "nodeType": "text",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  }
+}

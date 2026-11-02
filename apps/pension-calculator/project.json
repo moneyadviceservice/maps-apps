@@ -1,0 +1,83 @@
+{
+  "name": "pension-calculator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pension-calculator",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/pension-calculator"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/pension-calculator",
+          "assets": [
+            {
+              "glob": "**/*",
+              "input": "libs/shared/ui/src/public/footer",
+              "output": "./footer"
+            }
+          ]
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pension-calculator:build",
+        "dev": true,
+        "port": 4311
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pension-calculator:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pension-calculator:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "pension-calculator:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/pension-calculator/jest.config.ts",
+        "collectCoverage": true,
+        "coverageReporters": ["lcov", "text"]
+      }
+    },
+    "snapshots": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/pension-calculator/jest.config.ts",
+        "updateSnapshot": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/pension-calculator",
+        "forwardAllArgs": false
+      }
+    }
+  }
+}

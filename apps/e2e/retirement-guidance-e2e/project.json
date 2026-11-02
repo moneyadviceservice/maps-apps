@@ -1,0 +1,32 @@
+{
+  "name": "retirement-guidance-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/retirement-guidance-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["retirement-guidance"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/retirement-guidance-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "retirement-guidance:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/retirement-guidance-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

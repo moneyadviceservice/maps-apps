@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`WorkingHoursCallout renders the working hours warning in cy for hourly pay over 48 hours a week 1`] = `
+[
+  "Efallai eich bod yn gweithio mwy o oriau na'r terfyn",
+  "Ar gyfartaledd, 48 awr yr wythnos dros gyfnod o bedwar mis yw'r uchafswm y gallwch ei weithio'n gyfreithlon fel arfer. Fodd bynnag, gallwch ddewis peidio â dilyn y rheol hon yn wirfoddol. Os nad ydych wedi gwneud hynny, siaradwch â'ch cyflogwr am adolygu eich oriau gwaith.",
+  "Angen help? Cewch gyngor cyfrinachol am ddim gan Acas (opens in a new window) , neu'r llinell gymorth Labour Relations (opens in a new window)  os ydych yng Ngogledd Iwerddon.",
+]
+`;
+
+exports[`WorkingHoursCallout renders the working hours warning in en for hourly pay over 48 hours a week 1`] = `
+[
+  "You may be working more hours than the limit",
+  "48 hours on average across four months is usually the most you can legally work in a week. However, you can voluntarily opt out. If you haven't chosen to do this, talk to your employer about reviewing your hours.",
+  "Need some help? Get free, confidential advice from Acas (opens in a new window) , or Labour Relations (opens in a new window)  helpline if you're in Northern Ireland.",
+]
+`;

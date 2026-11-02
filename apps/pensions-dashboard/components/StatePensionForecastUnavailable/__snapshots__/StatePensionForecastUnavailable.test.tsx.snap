@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`StatePensionForecastUnavailable renders correctly 1`] = `
+<div>
+  <div
+    data-testid="state-pension-no-forecast"
+  >
+    <h2
+      class="text-3xl md:text-5xl text-gray-800 font-bold mb-4 md:mb-6"
+    >
+      pages.pension-details.no-forecast.subheading
+    </h2>
+    <p
+      class="break-words mb-6 md:mb-10"
+      data-testid="paragraph"
+    >
+      pages.pension-details.no-forecast.intro
+    </p>
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700"
+      data-testid="notification-box-default-state-pension-no-forecast"
+    >
+      <h3
+        class="text-xl md:text-2xl text-gray-800 font-bold"
+        data-testid="state-pension-no-forecast-title"
+      >
+        pages.pension-details.no-forecast.notification-title
+      </h3>
+      <div
+        class="flex flex-row gap-[15px] mt-6"
+      >
+        <svgr-mock
+          class="text-blue-700 w-[25px] h-[30px] shrink-0 mt-2"
+          data-testid="state-pension-no-forecast-icon"
+        />
+        <p
+          class="mb-4 break-words"
+          data-testid="state-pension-no-forecast-message"
+        >
+          State Pension Message English
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,65 @@
+{
+  "title": "Hamdden",
+  "fields": {
+    "cinema-theatre-trips": {
+      "title": "Sinema, gwyliau & theatr",
+      "information": "Gwiriwch eich dyddiadur neu’ch datganiadau banc i weld faint rydych yn ei wario ar deithiau i’r sinema, gwyliau a theatr. Dylech hefyd gynnwys unrhyw ddigwyddiadau cerddoriaeth yma. Efallai wnewch chi ei chael yn haws i gyfrifo hwn dros flwyddyn, yn enwedig os nad ydych yn mynd yn rheolaidd. cofiwch gynnwys yr holl bethau ychwanegol yn ogystal â phris y tocyn: diodydd, popcorn, nwyddau, parcio, ayyb."
+    },
+    "days-out": {
+      "title": "Dyddiau allan",
+      "information": "Gwiriwch eich dyddiadur neu gyfriflenni banc i ganfod faint wariwch chi ar ddyddiau hamdden. Efallai y byddai'n fwy cywir os cyfrifwch hyn dros gyfnod o flwyddyn. Cofiwch fod y gost o fynd allan am y dydd i hamddena yn fwy na dim ond pris mynediad yr atyniad. Bydd angen i chi gynnwys: parcio, cinio, hufen iâ ac unrhyw beth arall."
+    },
+    "books-etc": {
+      "title": "Tanysgrifiadau teledu, cerddoriaeth, cyfryngau a gêmio",
+      "information": "Cofiwch gynnwys costau tanysgrifiadau ffrydio a gêmio, lawrlwythiadau yn ogystal â llyfrau corfforol. Dylai eich datganiadau banc helpu."
+    },
+    "hobbies": {
+      "title": "Diddordebau",
+      "information": "Gwiriwch eich dyddiadur neu gyfriflenni banc i ganfod faint wariwch chi (a gweddill y teulu) ar ddiddordebau. Ar gyfer y plant, nid oes angen cynnwys unrhyw beth yr ydych wedi ei roi eisoes dan 'Gweithgareddau a chlybiau'. Efallai y byddai'n fwy cywir os cyfrifwch hyn dros gyfnod o flwyddyn, yn enwedig os nad ydych yn gwario'n rheolaidd. Cofiwch gynnwys yr holl bethau ychwanegol hefyd megis y gost o deithio, parcio, llety ac offer."
+    },
+    "eating-out": {
+      "title": "Bwyta allan & yfed",
+      "information": "Gwiriwch eich datganiadau banc i weld faint yw cyfanswm hyn dros gyfnod o ychydig fisoedd. Cofiwch ddiodydd ar ôl gwaith yn ogystal â mynd i’r dafarn gyda ffrindiau a theulu. Os ydych yn gadael tip arian parod bydd angen ychwanegu swm bach ychwanegol gan na fydd hwn yn ymddangos ar eich datganiad banc. Dylech ond cynnwys pethau ychwanegol fel parcio, tacsis, gwarchodwr plant, ac yn y blaen os nad ydych yn barod wedi’u cynnwys yn ‘Teithio’ a ‘Teulu a ffrindiau’."
+    },
+    "sport": {
+      "title": "Iechyd a ffitrwydd",
+      "information": "Os ydych yn talu aelodaeth o gampfa, rhowch hynny yma. Hefyd dylech gynnwys cost unrhyw weithgareddau chwaraeon yr ydych yn cymryd rhan ynddynt yn ogystal â'r dillad a'r offer a brynwch."
+    },
+    "lottery": {
+      "title": "Lottery a gamblo ar-lein",
+      "information": "Cofiwch gynnwys popeth a wariwch ar docynnau loteri a chardiau crafu a brynwch eich hun ac unrhyw daliadau rheolaidd i syndicet. Os ydych yn hapchwarae, un ai ar-lein neu mewn bwci mae'n bwysig eich bod yn wir onest â'ch hun a rhoi'r swm cywir a wariwch. Peidiwch â cheisio amcangyfrif enillion y dyfodol a thynnu hynny oddi ar y cyfanswm; rhowch yr hyn a wariwch ar fetiau yn unig."
+    },
+    "newspapers": {
+      "title": "Llyfrau, gemau a ffilmiau",
+      "information": "Os hoffech chi gyfrifo beth yw cost eich papur newydd dyddiol neu gylchgrawn wythnosol dros gyfnod o amser, rhowch gynnig ar ein [Cyfrifiannell torri'n ôl](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/beginners-guide-to-managing-your-money)\n\nDylech gynnwys yma unrhyw danysgrifiadau hefyd ar gyfer cylchgronau ar-lein neu wedi eu hargraffu, cyfnodolion a phapurau newydd."
+    },
+    "birthdays": {
+      "title": "Penblwyddi",
+      "information": "Mae hwn yn un o'r ffigurau sydd angen i chi ei gyfrifo ar hyd y flwyddyn. Meddyliwch faint o anrhegion penblwydd a brynwch bob blwyddyn. Efallai yr hoffech chi wneud rhestrau gwahanol ar gyfer teulu, ffrindiau agos, ffrindiau'r plant, cydweithwyr ac ati. Yna edrychwch ar faint wariwch chi fel arfer ar bob unigolyn. Os ydych yn dueddol o gynnal parti penblwydd ar gyfer mab neu ferch, nodwch hynny hefyd. Yna cyfrifwch y cyfan a dewiswch yr opsiwn 'blynyddol' o'r gwymplen."
+    },
+    "christmas": {
+      "title": "Nadolig",
+      "information": "Bydd cyfriflen banc mis Rhagfyr y llynedd o ddefnydd yma. Gwnewch restr o'r holl anrhegion Nadolig a brynwch i bobl ac ysgrifennu faint wariwch chi ar bob eitem. Bydd angen i chi gyfrifo faint wariwch chi ar eich siopa bwyd Nadolig, cost unrhyw bartïon a diodydd ychwanegol ac ati. Cofiwch am y gost o brynu coeden ac unrhyw addurniadau a brynwch bob blwyddyn. Yna cyfrifwch y cyfan a dewiswch yr opsiwn 'blynyddol' o'r gwymplen."
+    },
+    "festivals-celebrations": {
+      "title": "Dathliadau eraill",
+      "information": "Rhestrwch yr holl ddigwyddiadau a dathliadau gydol y flwyddyn. Cyfrifwch gost hyn, gan gynnwys anrhegion, bwyd, diod, teithio, tân gwyllt ac ati. Gwnewch yn siŵr eich bod yn dewis yr opsiwn 'blynyddol' o'r gwymplen."
+    },
+    "weddings": {
+      "title": "Priodasau",
+      "information": "Meddyliwch am faint o briodasau y byddwch yn eu mynychu y flwyddyn nesaf. Cyfrifwch gost pethau fydd angen i chi dalu amdanynt megis nosweithiau'r darpar briodfab neu'r briodferch, dillad newydd, anrhegion, llety, diodydd ac ati, a'i roi yma.\n\nOs oes priodas ar y gweill yr ydych yn talu amdani - efallai eich priodas chi eich hun neu eich plentyn - rhowch y gyllideb gyfan yma i sicrhau eich bod yn cyllidebu ar ei chyfer."
+    },
+    "holidays": {
+      "title": "Gwyliau",
+      "information": "Ar gyfer unrhyw wyliau yr ydych wedi eu trefnu eleni cyfrifwch yr holl gostau, gan gynnwys teithio, llety, pasportiau, ac ati.\n\nPam nad ewch chi ati i weld a allech chi leihau cost eich gwyliau nesaf? Gweler: [Get holidays for less](https://www.moneyhelper.org.uk/cy/savings/types-of-savings/saving-money-for-a-holiday?source=mas)"
+    },
+    "insurance": {
+      "title": "Yswiriant teithio",
+      "information": "Os ydych yn teithio dramor bydd gwir angen i chi gael yswiriant teithio rhag ofn y bydd argyfwng meddygol. Ac os ydych yn teithio fwy na dwywaith y flwyddyn mae'n debygol o fod yn rhatach i chi gael polisi blynyddol. Un ai rhowch gost eich premiwm yma neu os nad ydych wedi prynu eich yswiriant eto, gweler ein canllaw:\n\n[Sut i gael y ddêl orau ar yswiriant teithio](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/a-good-insurance-policy?source=mas)"
+    },
+    "spending-money": {
+      "title": "Arian gwario",
+      "information": "Dim ond rhan o gost gwyliau yw talu am hedfan a llety. Sicrhewch eich bod yn cyllidebu ar gyfer eich arian gwario hefyd. Os hoffech gael gwybod sut i arbed arian ar y gost o gael arian tramor, darllenwch ein canllaw:\n\n[Cardiau rhad i'w defnyddio dramor](https://www.moneyadviceservice.org.uk/cy/articles/cardiau-rhad-iw-defnyddio-dramor)"
+    }
+  }
+}

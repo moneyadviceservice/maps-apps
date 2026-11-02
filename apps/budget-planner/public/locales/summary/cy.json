@@ -1,0 +1,101 @@
+{
+  "title": "Crynodeb",
+  "outcomes": {
+    "positive": {
+      "title": "Mae eich cyllideb yn edrych yn dda!",
+      "body": [
+        "Dyma rai ffyrdd eraill o geisio rhoi hwb i'ch arian, fel rydych chi hyd yn oed yn fwy parod ar gyfer yr annisgwyl. Mae hyn yn cynnwys awgrymiadau i dalu llai o dreth, cynilo mwy a sut i gynllunio ar gyfer ymddeoliad.",
+        "Mae crynodeb eich cyllideb isod. Gallwch arbed hwn i gyrchu ar adeg arall."
+      ]
+    },
+    "neutral": {
+      "title": "Newyddion da, mae eich cyllideb yn cydbwyso",
+      "body": [
+        "Ond mae lle o hyd i ryddhau rhywfaint o arian ychwanegol yn eich cyllideb. Dilynwch ein hawgrymiadau i helpu i wella eich cyllid ac arbed ar gyfer chostau annisgwyl.",
+        "Mae crynodeb eich cyllideb isod. Gallwch arbed hwn i gyrchu ar adeg arall."
+      ]
+    },
+    "negative": {
+      "title": "Ar hyn o bryd, mae gennych chi fwy yn mynd allan na dod i mewn",
+      "body": [
+        "Peidiwch â phoeni, dyma ffyrdd i'ch helpu chi yn ôl ar y trywydd iawn.",
+        "Mae crynodeb eich cyllideb isod. Gallwch arbed hwn i gyrchu amser arall."
+      ]
+    }
+  },
+  "breakdown-heading": "Dadansoddiad o'ch gwariant",
+  "save-results": "Arbed canlyniadau",
+  "download-spreadsheet": "Lawrlwythwch y daenlen",
+  "start-again": "Dechrau eto",
+  "recommended-reading": {
+    "heading": "Darllen a argymhellir",
+    "next-steps-heading": "Camau nesaf",
+    "items": {
+      "take-control-of-your-spending": {
+        "title": "Cymerwch reolaeth ar eich gwariant",
+        "text": "Mae ein [Canllaw i ddechreuwyr ar reoli eich arian_target=_self](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/beginners-guide-to-managing-your-money) yn lle gwych i ddechrau - gwelwch faint y gallech chi ei arbed."
+      },
+      "save-money-on-your-household-bills": {
+        "title": "Arbed arian ar eich biliau cartref",
+        "text": "Fel ynni, dŵr, Treth Gyngor, biliau ffôn a band eang. Dewch [o hyd i ffyrdd hawdd o dorri costau _target=_self](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/how-to-save-money-on-household-bills)- gallech arbed cannoedd o bunnoedd y flwyddyn."
+      },
+      "build-your-emergency-savings-buffer": {
+        "title": "Adeiladwch eich byffer cynilion brys",
+        "text": "Os oes gennych rywfaint o arian ar ôl yn eich cyllideb, mae’n syniad da ei arbed ar gyfer diwrnod glawog. Darganfyddwch [sut i adeiladu cronfa argyfwng_target=_self](https://www.moneyhelper.org.uk/cy/savings/types-of-savings/emergency-savings-how-much-is-enough)."
+      },
+      "make-the-most-of-your-savings": {
+        "title": "Gwnewch y mwyaf o'ch cynilion",
+        "text": "Dysgwch [sut i ddod o hyd i'r cyfrifon cynilo gorau_target=_self](https://www.moneyhelper.org.uk/cy/savings/how-to-save/cash-savings-at-a-glance) a chymharu'r cyfraddau gorau."
+      },
+      "review-your-pension-savings": {
+        "title": "Adolygwch eich cynilion pensiwn",
+        "text": "Darganfyddwch [sut i gronni eich cronfa bensiwn_target=_self](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/making-the-most-of-your-pensions). Byddwch yn dysgu am ryddhad treth, sut mae cyfraniadau'n gweithio, a [faint o bensiwn byddwch ei angen er mwyn ymddeol yn gyfforddus_target=_self](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-basics/why-save-into-a-pension?)."
+      },
+      "maximise-your-income": {
+        "title": "Gwnewch y mwyaf o'ch incwm",
+        "text": "Dysgwch sut i dorri costau a dod o hyd i help ychwanegol sydd ar gael yn ein canllaw [Byw ar incwm gwasgedig_target=_self](https://www.moneyhelper.org.uk/cy/money-troubles/cost-of-living/squeezed-income)."
+      },
+      "talk-to-your-creditor": {
+        "title": "Siaradwch â'ch credydwr",
+        "text": "Os credwch na allwch fforddio talu bil, [cysylltwch â'r cwmni bob amser i ofyn am help_target=_self](https://www.moneyhelper.org.uk/cy/money-troubles/cost-of-living/talking-to-your-creditor?) cyn methu taliad. Yna gallant roi cynllun ar waith i'ch helpu."
+      },
+      "prioritise-repaying-your-debts": {
+        "title": "Blaenoriaethwch ad-dalu eich dyledion",
+        "text": "Os oes gennych ddyledion, darganfyddwch beth i’w wneud os ydych [wedi’ch ymrestru’n awtomatig yng ngweithle eich cyflogwr_target=_self](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/auto-enrolment/automatic-enrolment-if-you-have-debts)."
+      }
+    }
+  },
+  "other-tools": {
+    "heading": "Teclynnau eraill i’w trio",
+    "items": {
+      "benefits-calculator": {
+        "title": "Defnyddiwch ein Cyfrifiannell budd-daliadau",
+        "text": "Darganfyddwch yn gyflym pa fudd-daliadau a chymorth arall y gallech eu cael -  a sut i'w hawlio",
+        "link": "https://www.moneyhelper.org.uk/cy/benefits/benefits-calculator"
+      },
+      "savings-calculator": {
+        "title": "Defnyddiwch ein Cyfrifiannell Cynilion",
+        "text": "Cyfrifwch faint o amser y bydd yn ei gymryd i gynilo ar gyfer rhywbeth, a faint y byddai angen i chi ei gynilo’n rheolaidd.",
+        "link": "https://www.moneyhelper.org.uk/cy/savings/how-to-save/savings-calculator"
+      },
+      "bill-prioritiser": {
+        "title": "Cael help gyda'ch biliau",
+        "text": "Defnyddiwch ein teclyn Blaenoriaethwr biliau i weithio allan pa filiau a thaliadau y mae angen i chi ddelio â nhw yn gyntaf - yn ogystal â sut i osgoi methu taliadau coll.",
+        "link": "https://www.moneyhelper.org.uk/cy/money-troubles/cost-of-living/bill-prioritiser"
+      },
+      "debt-advice-locator": {
+        "title": "Siaradwch ag ymgynghorydd dyledion",
+        "text": "Poeni am ddyled? Nid ydych ar eich pen eich hun. Darganfyddwch ble i gael cymorth cyfrinachol am ddim yn eich ardal chi, ar-lein neu dros y ffôn.",
+        "link": "https://www.moneyhelper.org.uk/cy/money-troubles/dealing-with-debt/debt-advice-locator"
+      }
+    }
+  },
+  "no-summary": {
+    "heading": "Ymddengys nad ydych wedi cynnwys unrhyw fanylion am eich arferion gwario",
+    "text": "Gallwch eu hychwanegu yn gyflym iawn ac yna fe gewch grynodeb o'ch cyllideb ac arweiniad penodol i chi."
+  },
+  "share": {
+    "title": "Rhannwch yr offeryn hwn",
+    "subject": "Cynlluniwr cyllideb – Olrhain eich arian gyda’n teclyn syml"
+  }
+}

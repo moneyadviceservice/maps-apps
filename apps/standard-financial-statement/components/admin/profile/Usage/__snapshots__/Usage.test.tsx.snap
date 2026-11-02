@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Usage Usage in read mode matches snapshot 1`] = `
+<div>
+  <h2
+    class="text-gray-800 w-full px-6 py-3 bg-slate-200 border-b border-slate-300 font-normal text-md md:text-md"
+  >
+    SFS Usage
+  </h2>
+  <dl
+    class="p-6"
+  >
+    <dt
+      class="text-gray-450 mb-0"
+      id="intended-use-of-sfs-label"
+    >
+      Intended use of SFS
+    </dt>
+    <dd
+      class="mb-6"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="usage-intended"
+      >
+        To support debt advice processes.
+      </p>
+    </dd>
+    <dt
+      class="text-gray-450 mb-0"
+    >
+      How do you deliver debt advice?
+    </dt>
+    <dd
+      class="mb-6"
+    >
+      <ul
+        class="font-bold flex flex-col lg:flex-row"
+        data-testid="usage-delivery-channel"
+      >
+        <li
+          class="flex items-start mb-0 mr-4"
+        >
+          <span
+            data-testid="mock-icon"
+          />
+          <span
+            class="ml-2"
+          >
+            Online
+          </span>
+        </li>
+        <li
+          class="flex items-start mb-0 mr-4"
+        >
+          <span
+            data-testid="mock-icon"
+          />
+          <span
+            class="ml-2"
+          >
+            Phone
+          </span>
+        </li>
+      </ul>
+    </dd>
+    <dt
+      class="text-gray-450 mb-0"
+      id="sfs-launch-date-label"
+    >
+      SFS Launch date (or estimated launch date)
+    </dt>
+    <dd
+      class="mb-6"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="usage-launch-date"
+      >
+        01/01/2025
+      </p>
+    </dd>
+    <dt
+      class="text-gray-450 mb-0"
+      id="sfs-case-management-software-used-label"
+    >
+      Case management software used
+    </dt>
+    <dd
+      class="mb-6"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="usage-software"
+      >
+        AdvicePro
+      </p>
+    </dd>
+  </dl>
+</div>
+`;

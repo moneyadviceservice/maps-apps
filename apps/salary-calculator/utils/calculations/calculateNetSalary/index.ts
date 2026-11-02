@@ -1,0 +1,1 @@
+export { calculateNetSalary } from './calculateNetSalary';

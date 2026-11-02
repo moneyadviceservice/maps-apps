@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AccessibleOptionCard matches snapshot when CTA is a tel URL (Link without outbound icon) 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center h-full min-h-0 gap-6 p-4 overflow-hidden text-base font-normal leading-relaxed text-gray-800 bg-gray-100 border-b-4 border-gray-300 rounded-lg"
+  >
+    <h3
+      class="text-gray-800 font-bold w-full max-w-full mb-0 text-xl leading-snug text-center shrink-0 md:text-xl"
+    >
+      Alternate example title
+    </h3>
+    <svgr-mock
+      aria-hidden=""
+      class="block object-contain text-blue-700 size-16 shrink-0 md:size-20"
+    />
+    <details
+      class="group tool-expand self-stretch flex-1 w-full min-h-0 text-left"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group font-bold"
+      >
+        <svgr-mock
+          class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Example toggle label
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <p
+          class="mb-4 break-words"
+          data-testid="paragraph"
+        >
+          Example intro body text for this card.
+        </p>
+        <a
+          class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-semibold"
+          href="tel:5551234567"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Example phone CTA label
+        </a>
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`AccessibleOptionCard matches snapshot with default props 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center h-full min-h-0 gap-6 p-4 overflow-hidden text-base font-normal leading-relaxed text-gray-800 bg-gray-100 border-b-4 border-gray-300 rounded-lg"
+  >
+    <h3
+      class="text-gray-800 font-bold w-full max-w-full mb-0 text-xl leading-snug text-center shrink-0 md:text-xl"
+    >
+      Example title
+    </h3>
+    <svgr-mock
+      aria-hidden=""
+      class="block object-contain text-blue-700 size-16 shrink-0 md:size-20"
+    />
+    <details
+      class="group tool-expand self-stretch flex-1 w-full min-h-0 text-left"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group font-bold"
+      >
+        <svgr-mock
+          class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Example toggle label
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <p
+          class="mb-4 break-words"
+          data-testid="paragraph"
+        >
+          Example intro body text for this card.
+        </p>
+        <a
+          class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none font-semibold"
+          href="example.com/path"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Example link label
+          <span
+            class="sr-only"
+          >
+             (opens in a new window) 
+          </span>
+          <svgr-mock
+            class="inline ml-[6px] mr-[2px]"
+          />
+        </a>
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`AccessibleOptionCard matches snapshot without optional CTA 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center h-full min-h-0 gap-6 p-4 overflow-hidden text-base font-normal leading-relaxed text-gray-800 bg-gray-100 border-b-4 border-gray-300 rounded-lg"
+  >
+    <h3
+      class="text-gray-800 font-bold w-full max-w-full mb-0 text-xl leading-snug text-center shrink-0 md:text-xl"
+    >
+      Second example title
+    </h3>
+    <svgr-mock
+      aria-hidden=""
+      class="block object-contain text-blue-700 size-16 shrink-0 md:size-20"
+    />
+    <details
+      class="group tool-expand self-stretch flex-1 w-full min-h-0 text-left"
+      data-testid="expandable-section"
+    >
+      <summary
+        class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group font-bold"
+      >
+        <svgr-mock
+          class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+        />
+        <div
+          class="block"
+          data-testid="summary-block-title"
+        >
+          Example toggle label
+        </div>
+      </summary>
+      <div
+        class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+      >
+        <p
+          class="mb-4 break-words"
+          data-testid="paragraph"
+        >
+          Example intro body text for this card.
+        </p>
+      </div>
+    </details>
+  </div>
+</div>
+`;

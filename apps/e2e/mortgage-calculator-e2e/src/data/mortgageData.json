@@ -1,0 +1,117 @@
+{
+  "calculatesRepayment": {
+    "input": {
+      "propertyPrice": "500000",
+      "depositPrice": "100000",
+      "mortgageTerm": "25",
+      "interestRate": "5"
+    },
+    "results": {
+      "monthlyPayment": "£2,338.36",
+      "repayCost": "701,508.05",
+      "capital": "£400,000",
+      "interest": "£301,508.05",
+      "interestRise": "£3,087.26",
+      "breakDownTable": {
+        "0": "£400,000",
+        "1": "£391,752",
+        "2": "£383,083",
+        "3": "£373,970",
+        "4": "£364,390",
+        "5": "£354,321",
+        "6": "£343,736",
+        "7": "£332,610",
+        "8": "£320,914",
+        "9": "£308,621",
+        "10": "£295,698",
+        "11": "£282,114",
+        "12": "£267,835",
+        "13": "£252,826",
+        "14": "£237,048",
+        "15": "£220,464",
+        "16": "£203,031",
+        "17": "£184,706",
+        "18": "£165,443",
+        "19": "£145,195",
+        "20": "£123,911",
+        "21": "£101,539",
+        "22": "£78,021",
+        "23": "£53,300",
+        "24": "£27,315",
+        "25": "£0"
+      }
+    },
+    "heading": {
+      "en": "Your results",
+      "cy": "Eich canlyniadau"
+    }
+  },
+  "calulatesInterest": {
+    "input": {
+      "propertyPrice": "350000",
+      "depositPrice": "35000",
+      "mortgageTerm": "12",
+      "interestRate": "6.5"
+    },
+    "results": {
+      "monthlyPayment": "£1,706.25",
+      "repayCost": "£560,700",
+      "capital": "£315,000",
+      "interest": "£245,700",
+      "interestRise": "£2,493.75",
+      "breakDownTable": {
+        "1": "£315,000",
+        "2": "£315,000",
+        "3": "£315,000",
+        "4": "£315,000",
+        "5": "£315,000",
+        "6": "£315,000",
+        "7": "£315,000",
+        "8": "£315,000",
+        "9": "£315,000",
+        "10": "£315,000",
+        "11": "£315,000",
+        "12": "£315,000"
+      }
+    }
+  },
+  "displaysZero": {
+    "propertyPrice": "50000",
+    "depositPrice": "1000000",
+    "mortgageTerm": "25",
+    "interestRate": "5",
+    "zeroResult": "£0"
+  },
+  "maximumInput": {
+    "propertyPrice": "9,999,999,999",
+    "depositPrice": "1,000,000,000",
+    "mortgageTerm": "25",
+    "interestRate": "5",
+    "propertyResult": "999,999,999",
+    "depositResult": "100,000,000"
+  },
+  "decimalPoint": {
+    "propertyInput": "100000.578",
+    "depositInput": "1000.8978",
+    "propertyResult": "100,000.57",
+    "depositResult": "1,000.89"
+  },
+  "handlesError": {
+    "negativeValues": {
+      "propertyPrice": "-500000",
+      "depositPrice": "-100000",
+      "mortgageTerm": "25",
+      "interestRate": "5"
+    },
+    "errorText": {
+      "en": {
+        "title": "There is a problem",
+        "message": "Enter a property price, for example £200,000"
+      },
+      "cy": {
+        "title": "Mae yna broblem",
+        "message": "Rhowch bris eiddo, er enghraifft £200,000"
+      }
+    }
+  }
+}

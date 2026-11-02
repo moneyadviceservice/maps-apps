@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "cli": "nx",
+  "id": "app",
+  "type": "object",
+  "title": "Create a MoneyHelper app",
+  "description": "Scaffold a Next.js Pages Router app under apps/<name> to the repo conventions and register it in the pipeline, PR title, Sonar and editor config files.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The app name in kebab-case, for example savings-calculator. Becomes the folder apps/<name> and the Nx project name.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the app (kebab-case)?",
+      "x-priority": "important"
+    },
+    "port": {
+      "type": "number",
+      "description": "Dev server port written to project.json and netlify.toml. Defaults to the lowest port from 4300 that no other project uses."
+    },
+    "e2e": {
+      "type": "boolean",
+      "description": "Also generate the Playwright e2e project at apps/e2e/<name>-e2e and its pipeline job.",
+      "default": true
+    },
+    "netlifySiteId": {
+      "type": "string",
+      "description": "The Netlify site id (UUID) for the app. When omitted the site id registrations are skipped and listed as manual steps."
+    }
+  },
+  "required": ["name"],
+  "examples": [
+    {
+      "command": "nx generate @maps-react/tools:app savings-goal --dry-run",
+      "description": "Preview the files that would be created and updated"
+    },
+    {
+      "command": "nx generate @maps-react/tools:app savings-goal",
+      "description": "Create apps/savings-goal and apps/e2e/savings-goal-e2e on the next free port"
+    },
+    {
+      "command": "nx generate @maps-react/tools:app savings-goal --port=4400 --netlifySiteId=f6cbe253-9083-4d34-bd91-b80632080494 --e2e=false",
+      "description": "Pick the port, register the Netlify site id and skip the e2e project"
+    }
+  ]
+}

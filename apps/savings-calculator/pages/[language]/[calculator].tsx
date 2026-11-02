@@ -1,0 +1,55 @@
+import { ErrorField, SavingsCalculator } from 'components/SavingsCalculator';
+import {
+  savingsCalculatorHowLongAnalytics,
+  savingsCalculatorHowMuchAnalytics,
+} from 'data/form-content/analytics/savings-calculator';
+import { pageData } from 'data/landing';
+import { SavingsCalculatorType } from 'types';
+
+import { useTranslation } from '@maps-react/hooks/useTranslation';
+import { DataFromQuery } from '@maps-react/utils/pageFilter';
+
+import { getServerSidePropsDefault, SavingsCalculatorWrapper } from '.';
+
+type Props = {
+  lang: string;
+  isEmbed: boolean;
+  calculatorType: SavingsCalculatorType;
+  queryData: DataFromQuery;
+  errors: ErrorField[];
+};
+
+const Calculator = ({
+  lang,
+  isEmbed,
+  calculatorType,
+  queryData,
+  errors,
+}: Props) => {
+  const { z } = useTranslation();
+  const page = pageData(z);
+  const analyticsData =
+    calculatorType === SavingsCalculatorType.HOW_MUCH
+      ? savingsCalculatorHowMuchAnalytics
+      : savingsCalculatorHowLongAnalytics;
+
+  return (
+    <SavingsCalculatorWrapper isEmbed={isEmbed}>
+      <SavingsCalculator
+        lang={lang}
+        queryData={queryData}
+        isEmbed={isEmbed}
+        calculatorType={calculatorType}
+        errors={errors}
+        analyticsData={{
+          ...analyticsData,
+          pageTitle: page.title,
+        }}
+      />
+    </SavingsCalculatorWrapper>
+  );
+};
+
+export default Calculator;
+
+export const getServerSideProps = getServerSidePropsDefault;

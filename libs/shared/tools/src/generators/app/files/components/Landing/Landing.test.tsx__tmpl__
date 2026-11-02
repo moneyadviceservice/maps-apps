@@ -1,0 +1,24 @@
+import { useRouter } from 'next/router';
+
+import { render, screen } from '@testing-library/react';
+
+import { Landing } from './Landing';
+
+import '@testing-library/jest-dom';
+
+jest.mock('next/router', () => ({
+  useRouter: jest.fn(),
+}));
+
+describe('Landing', () => {
+  it.each([
+    ['en', 'This is the starting page for <%= title %>.'],
+    ['cy', 'Dyma dudalen gychwyn <%= title %>.'],
+  ])('renders the %s copy', (language, expectedCopy) => {
+    (useRouter as jest.Mock).mockReturnValue({ query: { language } });
+
+    render(<Landing />);
+
+    expect(screen.getByTestId('landing-copy')).toHaveTextContent(expectedCopy);
+  });
+});

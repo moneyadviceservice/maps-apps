@@ -1,0 +1,1 @@
+export { getValueByPath } from './getValueByPath';

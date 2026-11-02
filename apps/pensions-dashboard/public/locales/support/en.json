@@ -1,0 +1,34 @@
+{
+  "back-text": "Exit help and support",
+  "callout": {
+    "title": "Not what you’re looking for?",
+    "content": "If you can’t find the answer you were looking for try our other guides or get in touch."
+  },
+  "using-the-pensions-dashboard": {
+    "title": "Using the Pensions Dashboard",
+    "link": "using-the-pensions-dashboard"
+  },
+  "understand-your-pensions": {
+    "title": "Understand your pensions",
+    "link": "understand-your-pensions",
+    "heading": "General questions",
+    "description": "Get support for common questions about pensions."
+  },
+  "support": {
+    "title": "How can we help you?",
+    "sub-title": "Help using the Pensions Dashboard",
+    "intro": "Get help using the Pensions Dashboard, understanding your pensions and planning your next steps. You can also contact us.",
+    "card-1": {
+      "title": "Using the Pensions Dashboard",
+      "description": "Make the most out of your Pensions Dashboard and get answers for common questions."
+    },
+    "card-2": {
+      "title": "Understand your pensions",
+      "description": "Help with building your pension, taking your pension and pension problems."
+    },
+    "card-3": {
+      "title": "Contact us",
+      "description": "Call, email and more - you’ll always chat with a real person. You can also report a technical problem."
+    }
+  }
+}

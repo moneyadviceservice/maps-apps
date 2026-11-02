@@ -1,0 +1,93 @@
+{
+  "title": "Finance & insurance",
+  "fields": {
+    "life-insurance": {
+      "title": "Life insurance",
+      "information": "Mortgage life insurance pays out a lump sum to cover your outstanding mortgage debt if you die.\n\nCheck your policy details or your bank statement to find out exactly what your monthly premiums are.\n\nIf you haven't checked your policy lately you might find that it's worth shopping around. Find out more in our guide:\n\n[What is life insurance?](https://www.moneyhelper.org.uk/en/everyday-money/insurance/what-is-life-insurance)"
+    },
+    "protection-insurance": {
+      "title": "Income protection insurance",
+      "information": "Income protection insurance pays a percentage of your income if you can't work because you're ill or injured.\n\nCheck your policy details or your bank statement to find out exactly what your monthly premiums are.\n\nIf you're not sure whether the policy you have is right for you or good value for money, see our guide: [What is income protection insurance?](https://www.moneyhelper.org.uk/en/everyday-money/insurance/what-is-protection-insurance)"
+    },
+    "critical-illness-insurance": {
+      "title": "Critical illness insurance",
+      "information": "Critical illness insurance pays out a lump sum if you get one of the specific medical conditions or injuries listed on your policy.\n\nIt's often sold alongside your mortgage.\n\nCheck your policy details or your bank statement to find out exactly what your monthly premiums are.\n\nIf you're not sure whether the policy you have is right for you or good value for money, see our guide: [What is critical illness cover?](https://www.moneyhelper.org.uk/en/everyday-money/insurance/what-is-critical-illness-cover)"
+    },
+    "health-insurance": {
+      "title": "Health insurance",
+      "information": "This is sometimes known as private medical insurance.\n\nCheck your policy details or your bank statement to find out exactly what your monthly premiums are.\n\nIf you have health insurance as part of your benefits package from work there is no need to include a figure here because your employer pays your premium for you."
+    },
+    "dental-insurance": {
+      "title": "Dental insurance",
+      "information": "This could be either an insurance policy or what's known as a 'capitation plan' (eg Denplan, which spreads the cost of treatment over the year).\n\nCheck your paperwork or your bank statement to find out exactly what your monthly payments are.\n\nDouble check 'Dental care' on the Living costs page to make sure you haven't entered the same figure twice."
+    },
+    "overdraft-charges-interest": {
+      "title": "Overdraft charges & interest",
+      "information": "You should be able to see the monthly interest and fees charged on your overdraft by checking your bank statements.\n\nLook at what you've been charged over the past few months and select the correct frequency from the dropdown so that the tool calculates your monthly average for you.\n\nIf you often go overdrawn you should consider switching to an account that has a fee-free overdraft and/or a low interest rate. Find out more: [How to choose the right bank account](https://www.moneyhelper.org.uk/en/everyday-money/banking/how-to-choose-the-right-bank-account)"
+    },
+    "bank-account-fees": {
+      "title": "Bank account fees",
+      "information": "If you have an account that charges a monthly or an annual fee, enter the amount here.\n\nIf this seems high and you want to shop around for an account that is more suitable for you, see our guide: [How to choose the right bank account](https://www.moneyhelper.org.uk/en/everyday-money/banking/how-to-choose-the-right-bank-account)"
+    },
+    "penalties": {
+      "title": "Penalties",
+      "information": "You might be charged penalties for an unauthorised overdraft or for refused payments (for example if there's not enough money in your account to cover a payment).\n\nLook at what you've been charged over the past few months and select the correct frequency from the dropdown so that the tool calculates your monthly average for you.\n\nIf you have a lot of penalties to pay you could consider switching to an account that is more suited to your situation. Find out more in our guide: [How to choose the right bank account](https://www.moneyhelper.org.uk/en/everyday-money/banking/how-to-choose-the-right-bank-account)"
+    },
+    "loan-repayments": {
+      "title": "Loan repayments",
+      "information": "If you're employed, your repayments are taken automatically from your salary. You can find the exact amount on your payslip.\n\nIf you're self-employed, you repay your student loan through your annual Self Assessment tax return.\n\nFind out more in our guide [How to deal with debts after graduation](https://www.moneyhelper.org.uk/en/family-and-care/student-and-graduate-money/how-to-deal-with-debts-after-graduation-from-university)."
+    },
+    "student-loan-repayments": {
+      "title": "Student loan repayments",
+      "information": "If you're employed, your repayments are taken automatically from your salary. You can find the exact amount on your payslip.\n\nIf you're self-employed, you repay your student loan through your annual Self Assessment tax return.\n\nFind out more in our guide [How to deal with debts after graduation](https://www.moneyhelper.org.uk/en/family-and-care/student-and-graduate-money/how-to-deal-with-debts-after-graduation-from-university)."
+    },
+    "credit-card-repayments": {
+      "title": "Credit card repayments",
+      "information": "If you clear your balance every month you can leave this box blank. Otherwise, check your credit card statements to see what your monthly repayments are."
+    },
+    "car-hire-payments": {
+      "title": "Car hire purchase payments",
+      "information": "Check your paperwork or your bank statement to find out exactly what your monthly repayments are.\n\nWhy not see if you could cut the cost of your borrowing? See our guide: [Bill prioritiser](https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/bill-prioritiser)"
+    },
+    "buy-now-pay-later": {
+      "title": "Buy now, pay later payments",
+      "information": "Enter the amount you pay regularly for purchases made through schemes like Klarna, Clearpay or PayPal, or if you have more than one, put it into Your additional items."
+    },
+    "other-credit-repayments": {
+      "title": "Other credit repayments",
+      "information": "Enter the amount you pay regularly for any other credit not listed above, such as store cards, catalogue credit or hire purchase agreements, or if you have more than one, put it into Your additional items."
+    },
+    "regular-saving": {
+      "title": "Regular saving",
+      "information": "Enter the amount here that you regularly put aside either weekly or monthly into a savings account or similar.\n\nIf you regularly put money into a savings account in someone else's name - for example your children - include that here too."
+    },
+    "lump-sum-savings": {
+      "title": "Lump sum savings",
+      "information": "Enter here any amounts that you put into an ISA account. Be sure to choose the correct frequency – for example, year or month – from the dropdown menu. If you put money into a Junior ISA for your child, include that here too."
+    },
+    "payments-isas": {
+      "title": "Payments into ISAs",
+      "information": "Enter here any amounts that you put into an ISA account. Be sure to choose the correct frequency - for example, year or month - from the dropdown menu. If you put money into a Junior ISA for your child, include that here too."
+    },
+    "buying-shares": {
+      "title": "Buying shares & other investments",
+      "information": "If you put money into investments, for example, shares or bonds, enter the amount you invest here. Be sure to choose the correct frequency - for example, year or month - from the dropdown menu."
+    },
+    "private-pensions": {
+      "title": "Private pension contributions ",
+      "information": "If your pension contributions are deducted from your pay then you should leave this box blank. However, if you're investing in your own private pension scheme, this is where you should put your contributions."
+    },
+    "long-term-care": {
+      "title": "Long term care plan",
+      "information": "If you're paying a fixed monthly payment into an insurance policy to fund your future long-term care then enter the premium here."
+    },
+    "funeral-plan": {
+      "title": "Funeral plan",
+      "information": "If you're paying regular instalments or a fixed monthly payment into a funeral plan enter the amount you pay here."
+    },
+    "financial-advice": {
+      "title": "Financial & legal advice",
+      "information": "If you pay fees for a financial adviser, or a legal professional, enter the amount here."
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Incwm",
+  "fields": {
+    "pay": {
+      "title": "Tâl (ar ôl treth)",
+      "information": "Cewch hyd i hwn ar eich slip cyflog neu gyfriflen banc. Rhowch yr union gyfanswm a gewch wedi i chi dalu treth, Yswiriant Gwladol ac wedi i ddidyniadau eraill (megis cyfraniadau pensiwn, ad-daliadau benthyciad myfyriwr ac ati) gael eu tynnu.\n\nCael trafferth deall eich slip cyflog? Darllenwch ein canllaw: [Deall eich slip cyflog](https://www.moneyadviceservice.org.uk/cy/articles/deall-eich-slip-cyflog)"
+    },
+    "self-employment": {
+      "title": "Incwm o hunangyflogaeth",
+      "information": "Nodwch naill ai’r swm rydych yn bwriadu ei dynnu o’r busnes at ddefnydd personol (a elwir yn ‘codi arian’), neu'ch elw net disgwyliedig - dyna gyfanswm incwm y busnes minws unrhyw dreuliau."
+    },
+    "statutory-pay-sick": {
+      "title": "Tâl Salwch Statudol",
+      "information": "Dylai hwn gael ei restru fel eitem ar wahân ar eich slip cyflog. Os ydych yn gymwys ar gyfer tâl salwch galwedigaethol, dylid dangos hwn fel ffigwr ar wahân, ac os felly, adiwch y ddau gyda’i gilydd."
+    },
+    "statutory-maternity-pay": {
+      "title": "Tâl Mamolaeth Statudol neu Dâl Mabwysiadu Statudol ",
+      "information": "Mae'r swm a gewch yn dibynnu ar faint yr ydych yn ei ennill ac ers faint y buoch i ffwrdd o'ch gwaith. Dylai hwn gael ei restru fel eitem ar wahân ar eich slip cyflog.\n\nGallwch gael rhagor o fanylion am dâl mamolaeth, gan gynnwys faint allwch chi ei hawlio, ar [GOV.UK](https://www.gov.uk/maternity-pay-leave)"
+    },
+    "universal-credit": {
+      "title": "Credyd Cynhwysol",
+      "information": "Mae Credyd Cynhwysol yn daliad misol i’ch helpu gyda’ch costau byw. Mae wedi disodli nifer o fudd-daliadau hŷn, ac mae’r swm a gewch yn dibynnu ar eich amgylchiadau personol.\n\nI ddarganfod faint rydych yn ei gael, gwiriwch unrhyw lythyrau neu bapurau gan yr Adran Gwaith a Phensiynau (DWP), neu edrychwch ar eich datganiad banc."
+    },
+    "child-benefit": {
+      "title": "Budd-dal Plant",
+      "information": "Fel arfer mae gennych hawl i Fudd-dal Plant am blant rydych yn gyfrifol amdanynt.\n\nGallwch ddod o hyd i ragor o wybodaeth, gan gynnwys Cyfraddau Budd-dal Plant, ar wefan [GOV.UK](https://www.gov.uk/child-benefit)"
+    },
+    "jobseekers-allowance": {
+      "title": "Lwfans Ceisio Gwaith",
+      "information": "Gwiriwch y gwaith papur o’r swyddfa sy’n talu eich budd-dal, neu edrychwch ar eich datganiad banc. Mae’r swm a gewch yn amrywio yn dibynnu ar bethau fel eich oedran ac os oes gennych blant. Fel arfer caiff ei dalu bob pythefnos."
+    },
+    "esa-or-incapacity-benefit": {
+      "title": "Lwfans Cyflogaeth a Chymorth (ESA) neu Fudd-dal Analluogrwydd",
+      "information": "Gwiriwch eich hysbysiad dyfarniad, neu edrychwch ar eich datganiad banc. Mae’r swm a gewch yn amrywio yn dibynnu ar bethau fel eich oedran ac os oes gennych blant. Fel arfer caiff ei dalu bob pythefnos."
+    },
+    "independence-payment": {
+      "title": "Taliad Annibyniaeth Personol, Lwfans Byw i’r Anabl neu Daliad Anabledd Oedolion",
+      "information": "Gwiriwch eich rhybudd o ddyfarniad, neu edrychwch ar eich cyfriflen banc. Bydd y swm a gewch yn amrywio gan ddibynnu ar natur eich anabledd a faint o gymorth sydd ei angen arnoch. Fel arfer caiff ei dalu bob pedair wythnos."
+    },
+    "pension-credit": {
+      "title": "Credyd Pensiwn",
+      "information": "Gwiriwch eich hysbysiad dyfarniad, neu edrychwch ar eich datganiad banc. Mae’r swm a gewch yn amrywio yn ôl eich incwm arall ac os ydych yn sengl neu mewn cwpl. Caiff Credyd Pensiwn ei dalu naill ai: bob wythnos, bob pythefnos, neu bob pedwar wythnos."
+    },
+    "attendance-allowance": {
+      "title": "Lwfans Gweini",
+      "information": "Gwiriwch eich hysbysiad dyfarnu, neu edrychwch ar eich cyfriflen banc. Mae’r swm a gewch yn amrywio yn ôl faint o gymorth sydd ei angen arnoch. Fel arfer, caiff ei dalu bob 4 wythnos."
+    },
+    "carers-allowance": {
+      "title": "Lwfans Gofalydd",
+      "information": "Gallwch ymgeisio am Lwfans Gofalwr os ydych yn gofalu am rywun am 35 awr yr wythnos o leiaf a bod yr unigolyn yn cael rhai budd-daliadau penodol.\n\nGallwch ganfod rhagor, gan gynnwys y cyfraddau, ar wefan [GOV.UK](https://www.gov.uk/carers-allowance)"
+    },
+    "housing-benefit": {
+      "title": "Budd-dal Tai",
+      "information": "Gwiriwch eich rhybudd o ddyfarniad i gael gwybod faint a gewch. Gellir talu Budd-dal Tai yn wythnosol, bob pythefnos, bob pedair wythnos neu'n fisol Os yw eich Budd-dal Tai yn cael ei dalu'n uniongyrchol i'ch landlord yna gadewch y blwch hwn yn wag. Os ydych yn cael Budd-dal Tai ac yn talu eich landlord eich hun rhowch y swm a gewch yma."
+    },
+    "state-pension": {
+      "title": "Pensiwn y wladwriaeth",
+      "information": "Os ydych yn cael Pensiwn y Wladwriaeth bydd yn ymddangos ar eich cyfriflen banc fel taliad gan y DWP (yr Adran Gwaith a Phensiynau) ac wrth ochr eich rhif Yswiriant Gwladol.\n\nGallwch gael rhagor o wybodaeth, gan gynnwys y cyfraddau ar wefan [GOV.UK](https://www.gov.uk/state-pension)"
+    },
+    "workplace-pension": {
+      "title": "Pensiwn gweithle – Buddion wedi’u diffinio neu Gyfraniadau wedi’u diffinio ar y cyd",
+      "information": "Os ydych yn cael taliad pensiwn gweithle cewch hyd i'r union swm ar eich slip cyflog neu gyfriflen banc. Rhowch y swm a gewch wedi i dreth gael ei ddidynnu. Fel arfer telir eich pensiwn gweithle'n fisol."
+    },
+    "annuity": {
+      "title": "Incwm blwydd-dal",
+      "information": "Gallwch ddefnyddio’ch cronfa bensiwn i brynu blwydd-dal gydol oes, incwm gwarantedig am fywyd. Neu gallwch brynu incwm am gyfnod sefydlog, a elwir hefyd yn flwydd-dal cyfnod sefydlog. Gallwch fel arfer dewis cymryd hyd at 25% o’ch cronfa fel cyfandaliad untro di-dreth ar y dechrau."
+    },
+    "drawdown": {
+      "title": "Pensiwn i lawr",
+      "information": "Cyfeirir at incwm ymddeol hyblyg yn aml fel tynnu pensiwn, neu dynnu mynediad hyblyg ac mae'n ffordd o dynnu arian allan o'ch cronfa bensiwn i fyw arno ar ôl ymddeol."
+    },
+    "savings-investments": {
+      "title": "Incwm o gynilion a buddsoddiadau",
+      "information": "Os oes gennych gyfrifon cynilo gwiriwch eich cyfriflenni cynilo i weld faint o log gallwch ei ennilll. Os oes gennych fuddsoddiadau megis cyfranddaliadau neu fondiau, gwiriwch eich gwaith papur i ganfod faint fydd eich elw. Bydd unrhyw dreth sydd yn ddyledus gennych yn dibynnu ar y math o fuddsoddiadau sydd gennych a byddwch yn talu drwy eich ffurflen dreth."
+    },
+    "rent-or-board": {
+      "title": "Rhentu neu breswylio",
+      "information": "Os oes gennych letywr neu blentyn hŷn sy'n byw adref ac yn talu rhent, rhowch y swm yma.\n\nI ddysgu rhagor am rentu preifat, gan gynnwys cyfraddau treth, ewch i [GOV.UK](https://www.gov.uk/private-renting)"
+    },
+    "child-maintenance": {
+      "title": "Cynhaliaeth plant",
+      "information": "Rhowch y swm llawn o gynhaliaeth plant neu gostau cynnal plant a gewch gan eich cynbriod neu gynbartner. Os yw'r swm yn amrywio, cyfrifwch bopeth a gawsoch y flwyddyn ddiwethaf a rhowch y ffigwr hwn, gan ddewis 'blynyddol' o'r gwymplen. Drwy wneud hynny, bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi.\n\nOs byddwch am gael gwybod rhagor ynglŷn â'ch hawl i gael cynhaliaeth plant, darllenwch ein canllaw: [Hawlio cynhaliaeth plant oddi wrth eich cynbartner](https://www.moneyhelper.org.uk/cy/family-and-care/divorce-and-separation/how-do-i-arrange-child-maintenance)"
+    },
+    "student-loans-and-grants": {
+      "title": "Benthyciadau a grantiau myfyrwyr",
+      "information": "Os ydych mewn addysg ac yn cael benthyciad neu grant myfyriwr, rhowch y swm yma. Peidiwch â rhoi eich benthyciad ffioedd dysgu, dim ond y benthyciad cynhaliaeth ac unrhyw beth arall a gewch i roi cymorth i chi gyda chostau byw. Sicrhewch eich bod yn adio'r swm a gewch ar gyfer y tair elfen gyda'i gilydd ac yna dewis 'blynyddol' o'r gwymplen."
+    },
+    "other-financial-support": {
+      "title": "Cymorth ariannol arall",
+      "information": "Os oes gennych unrhyw arian arall a gewch fel incwm rheolaidd, arian gan elusen efallai neu gan sefydliad arall, rhowch hynny yma."
+    },
+    "gifts": {
+      "title": "Rhoddion gan deulu a ffrindiau",
+      "information": "Os yw eich rhieni - neu unrhyw un arall - yn rhoi arian i chi'n rheolaidd fel costau byw, rhowch y swm yma."
+    }
+  }
+}

@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`HeaderSearch submits search form with correct action and query parameter 1`] = `
+<div>
+  <details
+    class="group"
+    open=""
+  >
+    <summary
+      class="t-header-search-close cursor-pointer list-none [&::-webkit-details-marker]:hidden bg-magenta-500 text-white rounded p-1 flex focus:bg-yellow-400 focus:text-gray-800 focus:outline-none focus:shadow-darkbg-link-focus"
+      data-testid="search-toggle"
+      title="Close search"
+    >
+      <svgr-mock
+        class="group-open:hidden"
+      />
+      <svgr-mock
+        class="hidden group-open:block"
+      />
+    </summary>
+    <form
+      action="https://www.moneyhelper.org.uk/en/search-results.html"
+      class="absolute left-0 right-0 flex px-4 pb-6 bg-blue-700 t-header-search-form top-full shadow-bottom-gray"
+      method="get"
+    >
+      <label
+        class="sr-only"
+        for="q"
+      >
+        Search MoneyHelper
+      </label>
+      <input
+        class="w-full rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-blue-700 border-gray-400 p-2 rounded-l border-0 focus:border-0 h-auto m-0 relative focus:z-10"
+        id="q"
+        name="q"
+        placeholder="How can we help you today?"
+        required=""
+        type="text"
+      />
+      <button
+        class="p-1 text-white rounded-r bg-magenta-500"
+        title="Search MoneyHelper"
+      >
+        <svgr-mock
+          class=""
+        />
+      </button>
+    </form>
+  </details>
+</div>
+`;
+
+exports[`HeaderSearch toggles closed on click without closing navigation 1`] = `
+<div>
+  <details
+    class="group"
+    open=""
+  >
+    <summary
+      class="t-header-search-close cursor-pointer list-none [&::-webkit-details-marker]:hidden bg-magenta-500 text-white rounded p-1 flex focus:bg-yellow-400 focus:text-gray-800 focus:outline-none focus:shadow-darkbg-link-focus"
+      data-testid="search-toggle"
+      title="Close search"
+    >
+      <svgr-mock
+        class="group-open:hidden"
+      />
+      <svgr-mock
+        class="hidden group-open:block"
+      />
+    </summary>
+    <form
+      action="https://www.moneyhelper.org.uk/en/search-results.html"
+      class="absolute left-0 right-0 flex px-4 pb-6 bg-blue-700 t-header-search-form top-full shadow-bottom-gray"
+      method="get"
+    >
+      <label
+        class="sr-only"
+        for="q"
+      >
+        Search MoneyHelper
+      </label>
+      <input
+        class="w-full rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-blue-700 border-gray-400 p-2 rounded-l border-0 focus:border-0 h-auto m-0 relative focus:z-10"
+        id="q"
+        name="q"
+        placeholder="How can we help you today?"
+        required=""
+        type="text"
+      />
+      <button
+        class="p-1 text-white rounded-r bg-magenta-500"
+        title="Search MoneyHelper"
+      >
+        <svgr-mock
+          class=""
+        />
+      </button>
+    </form>
+  </details>
+</div>
+`;
+
+exports[`HeaderSearch toggles open on click and closes navigation when opening 1`] = `
+<div>
+  <details
+    class="group"
+  >
+    <summary
+      class="t-header-search-open cursor-pointer list-none [&::-webkit-details-marker]:hidden bg-magenta-500 text-white rounded p-1 flex focus:bg-yellow-400 focus:text-gray-800 focus:outline-none focus:shadow-darkbg-link-focus"
+      data-testid="search-toggle"
+      title="Open search"
+    >
+      <svgr-mock
+        class="group-open:hidden"
+      />
+      <svgr-mock
+        class="hidden group-open:block"
+      />
+    </summary>
+    <form
+      action="https://www.moneyhelper.org.uk/en/search-results.html"
+      class="absolute left-0 right-0 flex px-4 pb-6 bg-blue-700 t-header-search-form top-full shadow-bottom-gray"
+      method="get"
+    >
+      <label
+        class="sr-only"
+        for="q"
+      >
+        Search MoneyHelper
+      </label>
+      <input
+        class="w-full rounded focus:outline-none focus:shadow-focus-outline tool-field focus:border-blue-700 border-gray-400 p-2 rounded-l border-0 focus:border-0 h-auto m-0 relative focus:z-10"
+        id="q"
+        name="q"
+        placeholder="How can we help you today?"
+        required=""
+        type="text"
+      />
+      <button
+        class="p-1 text-white rounded-r bg-magenta-500"
+        title="Search MoneyHelper"
+      >
+        <svgr-mock
+          class=""
+        />
+      </button>
+    </form>
+  </details>
+</div>
+`;

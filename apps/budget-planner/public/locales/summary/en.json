@@ -1,0 +1,101 @@
+{
+  "title": "Summary",
+  "outcomes": {
+    "positive": {
+      "title": "Your budget is looking good!",
+      "body": [
+        "Here are some other ways to try and boost your money, so you’re even better prepared for the unexpected. This includes tips to pay less tax, save more and how to plan for retirement.",
+        "Your budget summary is below. You can save this to access another time."
+      ]
+    },
+    "neutral": {
+      "title": "Good news, your budget balances",
+      "body": [
+        "But there's still room to free up some extra money in your budget. Follow our tips to help improve your finances and save for unexpected costs.",
+        "Your budget summary is below. You can save this to access another time."
+      ]
+    },
+    "negative": {
+      "title": "At the moment, you've got more going out than coming in.",
+      "body": [
+        "Don't worry, here are ways to help get you back on track.",
+        "Your budget summary is below. You can save this to access another time."
+      ]
+    }
+  },
+  "breakdown-heading": "Breakdown of your spending",
+  "save-results": "Save results",
+  "download-spreadsheet": "Download spreadsheet",
+  "start-again": "Start again",
+  "recommended-reading": {
+    "heading": "Recommended reading",
+    "next-steps-heading": "Next steps",
+    "items": {
+      "take-control-of-your-spending": {
+        "title": "Take control of your spending",
+        "text": "Our [Beginner's guide to managing your money_target=_self](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money) is a great place to start - see how much you could save."
+      },
+      "save-money-on-your-household-bills": {
+        "title": "Save money on your household bills",
+        "text": "Like energy, water, Council Tax, phone and broadband bills. Find [easy ways to cut costs _target=_self](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/how-to-save-money-on-household-bills)- you could save £100s each year."
+      },
+      "build-your-emergency-savings-buffer": {
+        "title": "Build your emergency savings buffer",
+        "text": "If you have some money left over in your budget, it’s a good idea to save it for a rainy day. Find out [how to build up an emergency fund_target=_self](https://www.moneyhelper.org.uk/en/savings/types-of-savings/emergency-savings-how-much-is-enough)."
+      },
+      "make-the-most-of-your-savings": {
+        "title": "Make the most of your savings",
+        "text": "Learn [how to find the best savings accounts_target=_self](https://www.moneyhelper.org.uk/en/savings/how-to-save/cash-savings-at-a-glance) and compare top rates."
+      },
+      "review-your-pension-savings": {
+        "title": "Review your pension savings",
+        "text": "Find out how to [grow your pension pot_target=_self](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/making-the-most-of-your-pensions). You'll learn about tax relief, how contributions work and [how much pension you'll need to retire comfortably_target=_self](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/how-to-increase-your-pension-savings)."
+      },
+      "maximise-your-income": {
+        "title": "Maximise your income",
+        "text": "Learn how to cut costs and find extra help that's available in our guide [Living on a squeezed income_target=_self](https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/squeezed-income)."
+      },
+      "talk-to-your-creditor": {
+        "title": "Talk to your creditor",
+        "text": "If you think you can't afford to pay a bill, always [contact the company to ask for help _target=_self](https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/talking-to-your-creditor)before missing a payment. They can then put a plan in place to help you."
+      },
+      "prioritise-repaying-your-debts": {
+        "title": "Prioritise repaying your debts",
+        "text": "If you have debts, find out what to do if you're [automatically enrolled in your employer's workplace_target=_self](https://www.moneyhelper.org.uk/en/pensions-and-retirement/auto-enrolment/automatic-enrolment-if-you-have-debts)."
+      }
+    }
+  },
+  "other-tools": {
+    "heading": "Other tools to try",
+    "items": {
+      "benefits-calculator": {
+        "title": "Use our benefits calculator",
+        "text": "Quickly find out what benefits and other support you could get - and how to claim them.",
+        "link": "https://www.moneyhelper.org.uk/en/benefits/benefits-calculator"
+      },
+      "savings-calculator": {
+        "title": "Use our savings calculator",
+        "text": "Work out how long it’ll take to save up for something, and how much you’d need to regularly save",
+        "link": "https://www.moneyhelper.org.uk/en/savings/how-to-save/savings-calculator"
+      },
+      "bill-prioritiser": {
+        "title": "Get help with your bills",
+        "text": "Use our Bill prioritiser to work out which bills and payments you need to deal with first - plus how to avoid missing payments.",
+        "link": "https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/bill-prioritiser"
+      },
+      "debt-advice-locator": {
+        "title": "Talk to a debt adviser",
+        "text": "Worried about debt? You’re not alone. Find out where to get free, confidential help near you, online or on the phone.",
+        "link": "https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/debt-advice-locator"
+      }
+    }
+  },
+  "no-summary": {
+    "heading": "It looks like you haven't included any details of your spending habits",
+    "text": "It only takes a few minutes to add them in and then you'll get a breakdown of your budget and tailored guidance."
+  },
+  "share": {
+    "title": "Share this tool",
+    "subject": "Budget planner – Track your money with our simple tool"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Cyllid ac Yswiriant",
+  "fields": {
+    "life-insurance": {
+      "title": "Yswiriant bywyd",
+      "information": "Mae yswiriant bywyd yn talu cyfandaliad neu daliadau rheolaidd i'ch dibynyddion petaech chi'n marw.\n\nGwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nOs oes gennych yswiriant bywyd fel rhan o'ch pecyn buddion o'ch gwaith nid oes angen i chi gynnwys ffigwr yma gan nad yw eich cyflogwr yn talu eich premiwm.\n\nOs nad ydych wedi gwirio eich polisi'n ddiweddar efallai y gwelwch y fantais o siopa o gwmpas. Dowch o hyd i ragor o wybodaeth yn ein canllaw: [Sut a ble i brynu yswiriant bywyd](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/what-is-life-insurance)"
+    },
+    "protection-insurance": {
+      "title": "Yswiriant diogelu incwm",
+      "information": "Mae yswiriant diogelu incwm yn talu canran o'ch incwm os byddwch yn methu gweithio oherwydd salwch neu anaf.\n\nGwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nOs ydych yn ansicr a yw'r polisi yn addas ar eich cyfer chi neu'n werth da am arian, gweler ein canllaw: [Sut a ble i brynu yswiriant diogelu incwm](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/what-is-protection-insurance)"
+    },
+    "critical-illness-insurance": {
+      "title": "Yswiriant salwch difrifol",
+      "information": "Mae yswiriant salwch critigol yn talu cyfandaliad os dioddefwch un o'r cyflyrau neu'r anafiadau meddygol penodol a restrir ar eich polisi.\n\nYn aml fe'i gwerthir ochr yn ochr â'ch morgais.\n\nGwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nOs ydych yn ansicr a yw'r polisi yn addas ar eich cyfer chi neu'n werth da am arian, gweler ein canllaw: [Sut a ble i brynu yswiriant salwch difrifol](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/what-is-critical-illness-cover)"
+    },
+    "health-insurance": {
+      "title": "Yswiriant iechyd",
+      "information": "Weithiau gelwir hyn yn yswiriant meddygol preifat.\n\nGwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nOs oes gennych yswiriant iechyd fel rhan o becyn buddion eich swydd nid oes angen cynnwys ffigwr yma gan fod eich cyflogwr yn talu eich premiwm ar eich rhan."
+    },
+    "dental-insurance": {
+      "title": "Yswiriant deintyddol",
+      "information": "Gall hwn fod yn un ai bolisi yswiriant neu'r hyn sy'n cael ei alw'n 'gynllun yn ôl y pen', (ee Denplan, sy'n lledaenu cost triniaeth dros y flwyddyn).\n\nGwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nGwiriwch yn ofalus 'Gofal deintyddol' ar y dudalen Costau byw i sicrhau nad ydych wedi rhoi'r un ffigwr ddwywaith."
+    },
+    "overdraft-charges-interest": {
+      "title": "Ffioedd gorddrafft & llog",
+      "information": "Dylech fedru gweld y llog misol a'r ffioedd a godir ar eich gorddrafft drwy wirio eich cyfriflenni banc.\n\nEdrychwch faint a godwyd arnoch dros yr ychydig fisoedd diwethaf a dewiswch yr amledd cywir o'r gwymplen fel bod y teclyn yn cyfrifo'r cyfartaledd misol i chi.\n\nOs ydych yn mynd i orddrafft yn aml dylech ystyried newid i gyfrif sy'n cynnig gorddrafft am ddim a/neu gyfradd llog isel. Cewch fwy o wybodaeth yn: [Sut mae dewis y cyfrif banc cywir](https://www.moneyadviceservice.org.uk/cy/articles/sut-mae-dewis-y-cyfrif-banc-cywir)"
+    },
+    "bank-account-fees": {
+      "title": "Ffioedd cyfrif banc",
+      "information": "Os oes gennych gyfrif sy'n codi ffi misol neu flynyddol, rhowch y swm yma.\n\nOs yw hyn yn ymddangos yn uchel a hoffech chwilio am fargen well a mwy addas ar gyfer eich cyfrif, edrychwch ar ein canllaw: [Sut mae dewis y cyfrif banc cywir](https://www.moneyhelper.org.uk/cy/everyday-money/banking/how-to-choose-the-right-bank-account)"
+    },
+    "penalties": {
+      "title": "Cosbau",
+      "information": "Mae'n bosib y codir tâl cosb arnoch am fynd i orddrafft heb ganiatâd neu am daliadau a wrthodwyd (er enghraifft os nad oes digon o arian yn eich cyfrif i wneud y taliad).\n\nEdrychwch faint a godwyd arnoch dros yr ychydig fisoedd diwethaf a dewiswch yr amledd cywir o'r gwymplen fel bod y teclyn yn cyfrifo'r cyfartaledd misol i chi.\n\nOs oes gennych lawer o daliadau cosb i'w gwneud gallech ystyried newid i gyfrif sy'n fwy addas i chi. Dowch o hyd i ragor o wybodaeth yn ein canllaw: [Sut mae dewis y cyfrif banc cywir](https://www.moneyhelper.org.uk/cy/everyday-money/banking/how-to-choose-the-right-bank-account)"
+    },
+    "loan-repayments": {
+      "title": "Ad-daliadau benthyciad",
+      "information": "Os ydych yn gyflogedig, caiff eich ad-daliadau eu tynnu’n awtomatig o’ch cyflog. Gallwch ddod o hyd i’r swm union ar eich slip cyflog.\n\nOs ydych yn hunangyflogedig, rydych yn ad-dalu eich benthyciad myfyriwr drwy’ch Ffurflen Dreth Hunanasesiad flynyddol.\n\nDarganfyddwch fwy yn ein canllaw [Sut i ddelio â dyledion ar ôl graddio](https://www.moneyhelper.org.uk/cy/family-and-care/student-and-graduate-money/how-to-deal-with-debts-after-graduation-from-university)."
+    },
+    "student-loan-repayments": {
+      "title": "Ad-daliadau benthyciad myfyriwr",
+      "information": "Os ydych yn gyflogedig, caiff eich ad-daliadau eu tynnu’n awtomatig o’ch cyflog. Gallwch ddod o hyd i’r swm union ar eich slip cyflog.\n\nOs ydych yn hunangyflogedig, rydych yn ad-dalu eich benthyciad myfyriwr drwy’ch Ffurflen Dreth Hunanasesiad flynyddol.\n\nDarganfyddwch fwy yn ein canllaw [Sut i ddelio â dyledion ar ôl graddio](https://www.moneyhelper.org.uk/cy/family-and-care/student-and-graduate-money/how-to-deal-with-debts-after-graduation-from-university)."
+    },
+    "credit-card-repayments": {
+      "title": "Ad-daliadau cerdyn credyd",
+      "information": "Os ydych yn setlo'r hyn sy'n ddyledus gennych bob mis cewch adael y blwch hwn yn wag. Fel arall, gwiriwch eich cyfriflenni cerdyn credyd i ganfod faint yn union yw eich ad-daliadau misol."
+    },
+    "car-hire-payments": {
+      "title": "Ad-daliadau hurbwrcasu a chatalog (RENAME)",
+      "information": "Gwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich ad-daliadau misol.\n\nPam nad ewch chi ati i weld a allech chi leihau eich costau benthyca? Gweler ein canllaw: [Lleihau costau sy'n gysylltiedig â phrynu car, hurbwrcas a chostau cyllid eraill](https://www.moneyadviceservice.org.uk/cy/articles/ceisiwch-leihau-ar-gostau-cyllid-car-hurbryniant-a-chostau-cyllid-eraill)"
+    },
+    "buy-now-pay-later": {
+      "title": "Taliadau prynu nawr, talu wedyn",
+      "information": "Rhowch y swm rydych chi'n ei dalu'n rheolaidd am bryniannau a wneir drwy gynlluniau fel Klarna, Clearpay neu PayPal; os oes gennych fwy nag un, rhowch y swm yn yr adran 'Eitemau ychwanegol'."
+    },
+    "other-credit-repayments": {
+      "title": "Ad-daliadau credyd eraill",
+      "information": "Rhowch y swm rydych chi'n ei dalu'n rheolaidd am unrhyw fath arall o gredyd nad yw wedi'i restru uchod, fel cardiau siop, credyd catalog neu gytundebau hurbwrcas; os oes gennych fwy nag un, rhowch y swm yn yr adran 'Eitemau ychwanegol'."
+    },
+    "regular-saving": {
+      "title": "Cynilo rheolaidd",
+      "information": "Yma, rhowch y swm yr ydych yn ei neilltuo'n rheolaidd un ai'n wythnosol neu'n fisol i mewn i gyfrif cynilo neu gyfrif tebyg.\n\nOs ydych yn rhoi arian i mewn i gyfrif cynilo yn rheolaidd, sydd yn enw rhywun arall - er enghraifft eich plant - cofiwch gynnwys hynny yma hefyd."
+    },
+    "lump-sum-savings": {
+      "title": "Cynilo cyfandaliad",
+      "information": "Rhowch unrhyw symiau rydych wedi eu rhoi mewn cyfrif ISA fan hyn. Sicrhewch eich bod yn dewis yr amlder cywir – er enghraifft, blwyddyn neu fis – o’r ddewislen. Os ydych yn rhoi arian mewn ISA Iau am eich plentyn, dylech gynnwys hynny yma hefyd."
+    },
+    "payments-isas": {
+      "title": "Taliadau i ISAs",
+      "information": "Rhowch yma unrhyw symiau y rhowch i mewn i gyfrif ISA. Cofiwch ddewis yr amledd cywir -  er enghraifft, yn flynyddol neu'n fisol - o'r gwymplen. Os ydych yn rhoi arian i mewn i ISA Iau ar gyfer eich plentyn, dylech gynnwys hynny yma hefyd."
+    },
+    "buying-shares": {
+      "title": "Prynu cyfranddaliadau a buddsoddiadau eraill",
+      "information": "Os ydych yn rhoi eich arian mewn buddsoddiadau, er enghraifft cyfranddaliadau neu fondiau, rhowch yr hyn a fuddsoddir gennych yma. Cofiwch ddewis yr amledd cywir - er enghraifft, yn flynyddol neu'n fisol - o'r gwymplen."
+    },
+    "private-pensions": {
+      "title": "Cyfraniadau pensiwn preifat",
+      "information": "Os didynnir eich cyfraniadau pensiwn o'ch cyflog yna dylech adael y blwch hwn yn wag. Fodd bynnag, os ydych yn buddsoddi yn eich cynllun pensiwn preifat eich hunan, dylech nodi eich cyfraniadau yma."
+    },
+    "long-term-care": {
+      "title": "Cynllun gofal hirdymor",
+      "information": "Os didynnir eich cyfraniadau pensiwn o'ch cyflog yna dylech adael y blwch hwn yn wag. Fodd bynnag, os ydych yn buddsoddi yn eich cynllun pensiwn preifat eich hunan, dylech nodi eich cyfraniadau yma."
+    },
+    "funeral-plan": {
+      "title": "Cynllun angladd",
+      "information": "Os ydych yn talu mewn rhandaliadau rheolaidd neu daliad misol sefydlog i mewn i gynllun angladd, rhowch y swm a delir gennych yma."
+    },
+    "financial-advice": {
+      "title": "Cyngor ariannol a chyfreithiol",
+      "information": "Os ydych yn talu ffioedd am gynghorydd ariannol, neu weithiwr proffesiynol cyfreithiol, nodwch y swm yma."
+    }
+  }
+}

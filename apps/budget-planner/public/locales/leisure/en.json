@@ -1,0 +1,65 @@
+{
+  "title": "Leisure",
+  "fields": {
+    "cinema-theatre-trips": {
+      "title": "Cinema, festivals & theatre",
+      "information": "Check your diary or bank statements to see how much you spend on trips to the cinema, festivals and theatre. You should also include any music events here. You may find it more accurate to work this out over a year, especially if you go irregularly. Remember to include all the extras as well as the ticket price: drinks, popcorn, merchandise, parking, etc."
+    },
+    "days-out": {
+      "title": "Days out",
+      "information": "Check your diary or bank statements to see how much you spend on days out. You might find it more accurate to work this out over a year. Remember the cost of a day out is more than just the entrance fee to wherever you go. You need to include: parking, lunch, ice creams and anything else."
+    },
+    "books-etc": {
+      "title": "TV, music, media and gaming subscriptions",
+      "information": "Remember to include the cost of streaming and gaming subscriptions, downloads as well as physical books. Your bank statements should be a help."
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "information": "Check your diary or bank statements to see how much you (and the rest of the family) spend on hobbies. For the kids, there's no need to include anything that you've already put in under 'Activities & clubs'. You may find it more accurate to work this out over a year, especially if you spend money irregularly. Remember to include all the extras too such as the cost of travel, parking, accommodation and equipment."
+    },
+    "eating-out": {
+      "title": "Eating out & drinking",
+      "information": "Check your bank statements to see how much this comes to over a period of a few months. Remember after-work drinks as well as going to the pub with friends and family. If you leave a cash tip you'll need to add a bit extra as this won't show up on your bank statement. Only include extras such as parking, taxis, babysitters, and so on if you haven't already counted these in 'Travel' and 'Family & friends'."
+    },
+    "sport": {
+      "title": "Health & fitness",
+      "information": "If you pay a monthly gym membership, enter it here. You should also include the cost of any other sports activities you take part in and the clothes and equipment you buy."
+    },
+    "lottery": {
+      "title": "Lottery & online gambling",
+      "information": "Include everything you spend on lottery tickets and scratch cards that you buy yourself plus any regular payments you make to a syndicate. If you gamble, either online or at a bookmaker's, it's important that you're really honest with yourself about the amount you spend. Don't try to estimate future winnings and take that off the total; just put down everything you spend on bets."
+    },
+    "newspapers": {
+      "title": "Books, games and films",
+      "information": "If you want to work out how much your daily paper or weekly magazine costs over a period of time, try our [Beginner's guide to managing your money](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money)\n\nYou should also include here any subscriptions for online or printed magazines, periodicals and newspapers."
+    },
+    "birthdays": {
+      "title": "Birthdays",
+      "information": "This is one of those costs that you have to work out across the year as a whole. Think about how many people you buy birthday presents for each year. You might want to make separate lists for family, close friends, children's friends, work colleagues, etc. Then look at how much you typically spend on each person. If you tend to throw a party for the birthday boy or girl, make sure you include that too. Then add the whole lot together and be sure to select 'year' from the dropdown menu."
+    },
+    "christmas": {
+      "title": "Christmas",
+      "information": "Last December's bank statement will come in handy here. Make a list of everyone you buy Christmas presents for and write alongside how much you spend on each of them. You also need to add up what you spend on your Christmas food shop, the cost of any parties and extra drinks, etc. Remember the cost of the tree and any decorations you buy each year. Then add the whole lot together and be sure to select 'year' from the dropdown menu."
+    },
+    "festivals-celebrations": {
+      "title": "Other celebrations",
+      "information": "List all the festivals and celebrations throughout the course of the year. Add up the cost of everything involved, including presents, food, drink, travel, fireworks, etc. Be sure to select 'year' from the dropdown menu."
+    },
+    "weddings": {
+      "title": "Weddings",
+      "information": "Think about how many weddings you're going to next year. Add up the cost of things you're going to have to pay for like hen/stag nights, new outfits, presents, accommodation, drinks, etc and enter it here.\n\nIf there's a wedding coming up that you're paying for - maybe it's your own or your child's - enter the full budget here to ensure it's covered by your budget."
+    },
+    "holidays": {
+      "title": "Holidays",
+      "information": "For any holidays you're going on this year add up all the costs, including travel, accommodation, passports, etc.\n\nWhy not see if you could cut the cost of your next holiday? See: [Get holidays for less](https://www.moneyhelper.org.uk/en/savings/types-of-savings/saving-money-for-a-holiday?source=mas)"
+    },
+    "insurance": {
+      "title": "Travel insurance",
+      "information": "If you're going abroad you really need to get travel insurance in case of a medical emergency. And if you're going away more than twice a year it's probably cheaper to get an annual policy. Either enter the cost of your premium here or if you've not yet bought your insurance, see our guide:\n\n[How to get the best deal on travel insurance](https://www.moneyhelper.org.uk/en/everyday-money/insurance/a-good-insurance-policy?source=mas)"
+    },
+    "spending-money": {
+      "title": "Spending money",
+      "information": "Paying for flights and accommodation is only part of the cost of a holiday. Make sure you budget for your spending money too."
+    }
+  }
+}

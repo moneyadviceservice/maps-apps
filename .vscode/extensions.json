@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "heybourn.headwind",
+    "nrwl.angular-console",
+    "vivaxy.vscode-conventional-commits",
+    "WallabyJs.wallaby-vscode",
+    "firsttris.vscode-jest-runner",
+    "aaron-bond.better-comments",
+    "Gruntfuggly.todo-tree",
+    "austenc.tailwind-docs",
+    "figma.figma-vscode-extension",
+    "johnpapa.vscode-peacock",
+    "ms-playwright.playwright"
+  ]
+}
