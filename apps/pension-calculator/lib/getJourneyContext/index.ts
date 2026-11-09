@@ -1,0 +1,1 @@
+export { getJourneyContext } from './getJourneyContext';

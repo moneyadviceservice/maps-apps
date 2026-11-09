@@ -1,0 +1,1 @@
+export { getSalaryTrackingData } from './getSalaryTrackingData';

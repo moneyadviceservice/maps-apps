@@ -1,0 +1,693 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SfsV3Layout renders correctly 1`] = `
+<div>
+  <div
+    id="top"
+  >
+    <div
+      aria-hidden="true"
+    >
+      <header
+        data-testid="header"
+      >
+        <a
+          class="sr-only focus:not-sr-only focus:bg-yellow-400 focus:border-b-4 focus:border-b-blue-700 focus:absolute focus:p-2 focus:rounded focus:top-4 focus:left-4 focus:z-50"
+          href="#main"
+        >
+          Skip to content
+        </a>
+        <div
+          class="hidden lg:block"
+        >
+          <div
+            class="relative bg-blue-600 print:hidden lg:bg-gray-150 lg:h-[101px]"
+          >
+            <div
+              class="container-auto flex items-center justify-center lg:justify-normal max-w-[1272px]"
+            >
+              <a
+                class="max-h-[64px] max-w-[116px] lg:max-w-[186px] lg:max-h-[102px]"
+                href="/en"
+              >
+                <img
+                  alt="Standard Financial Statement"
+                  data-nimg="1"
+                  decoding="async"
+                  height="102"
+                  src="/_next/image?url=%2Ftest.png&w=384&q=75"
+                  srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+                  style="color: transparent;"
+                  width="186"
+                />
+              </a>
+              <div
+                class="items-center hidden ml-auto lg:flex"
+              >
+                <profile.svg
+                  class="h-[18px] w-[18px] mr-2"
+                />
+                <nav>
+                  <ul
+                    class="flex"
+                  >
+                    <li>
+                      <a
+                        aria-label="Login"
+                        class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-500 visited:text-gray-500"
+                        href="/api/auth/signin"
+                      >
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav
+                  aria-label="Language switcher"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6 focus:shadow-darkbg-link-focus"
+                        href="/cy"
+                        hreflang="cy"
+                        lang="cy"
+                        rel="alternate"
+                      >
+                        <span
+                          aria-describedby="lang-description"
+                          class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px]"
+                        >
+                          Cymraeg
+                        </span>
+                      </a>
+                      <span
+                        class="sr-only"
+                        id="lang-description"
+                      >
+                        Newid yr iaith ir Gymraeg
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul
+                    class="flex mr-6"
+                  >
+                    <li>
+                      <a
+                        class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-500 visited:text-gray-500 text-sm"
+                        href="/en/test"
+                      >
+                        test
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <form
+                  action="/en/search"
+                  class="flex w-full h-9 border-gray-650 relative z-1 border-1 rounded pr-8 mt-4 lg:my-4 lg:w-[266px]"
+                  data-testid="search-form"
+                  role="search"
+                >
+                  <label
+                    class="absolute -top-7 text-sm text-white lg:text-gray-500"
+                    for="q"
+                  >
+                    Search
+                  </label>
+                  <input
+                    class="w-full p-2 rounded-l"
+                    id="q"
+                    name="q"
+                    required=""
+                    type="text"
+                  />
+                  <button
+                    aria-label="Search"
+                    class="p-1 bg-green-300 rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                    type="submit"
+                  >
+                    <search.svg
+                      aria-hidden="true"
+                      class=""
+                    />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden text-white bg-blue-600 lg:block shadow-bottom-gray"
+          >
+            <div
+              class="container-auto max-w-[1272px]"
+            >
+              <nav
+                data-testid="header-desktop-nav"
+              >
+                <ul
+                  class="flex h-[40px] items-center"
+                >
+                  <li>
+                    <a
+                      class="inline-flex items-center gap-2 focus-within:outline-none text-white no-underline visited:text-white focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-0 focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative mr-8 h-[40px] text-sm hover:text-green-300 hover:no-underline"
+                      data-testid="test-link"
+                      href="/en/test"
+                    >
+                      test
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative z-20 flex items-center px-4 bg-blue-600 lg:hidden print:hidden"
+        >
+          <div
+            class="container-auto w-auto p-0 m-0"
+          >
+            <div
+              data-fallback="true"
+              tabindex="-1"
+            />
+            <details
+              class="relative group w-[31px]"
+            >
+              <summary
+                class="open cursor-pointer list-none [&::-webkit-details-marker]:hidden text-center text-white text-sm"
+                data-testid="nav-toggle"
+                title="Open menu"
+              >
+                <div
+                  class="group-open:hidden flex flex-col h-[38px] w-[38px] text-left"
+                >
+                  <burger-curved.svg
+                    class=""
+                  />
+                  <span
+                    class="relative text-xs font-bold top-1"
+                  >
+                    menu
+                  </span>
+                </div>
+                <div
+                  class="hidden text-center group-open:block"
+                >
+                  <div
+                    class="flex flex-col"
+                  >
+                    <burger-close.svg
+                      class="w-[30px]"
+                    />
+                    <span
+                      class="relative text-xs -top-1"
+                    >
+                      close
+                    </span>
+                  </div>
+                </div>
+              </summary>
+              <div
+                class="bg-white absolute z-10 w-[320px] -left-4 top-[60px] h-screen"
+              >
+                <div
+                  class="pb-8 bg-white"
+                >
+                  <nav
+                    class="mb-6"
+                    data-testid="header-mobile-nav"
+                  >
+                    <ul>
+                      <li
+                        class="border-b border-slate-400"
+                      >
+                        <a
+                          class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none relative px-4 py-2 w-full hover:text-green-300 hover:no-underline no-underline text-lg font-bold text-blue-600 visited:text-blue-600"
+                          data-testid="test-link"
+                          href="/en/test"
+                        >
+                          test
+                          <chevron.svg
+                            class="ml-auto text-blue-600"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div
+                    class="flex mx-4"
+                  >
+                    <div
+                      class="flex items-center"
+                    >
+                      <profile.svg
+                        class="h-[18px] w-[18px] mr-2"
+                      />
+                      <nav>
+                        <ul
+                          class="flex"
+                        >
+                          <li>
+                            <a
+                              aria-label="Login"
+                              class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-500 visited:text-gray-500 font-bold"
+                              href="/api/auth/signin"
+                            >
+                              Login
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <nav
+                      aria-label="Language switcher"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            class="group inline-flex items-center gap-2 focus-within:outline-none hover:text-pink-400 focus:text-gray-800 focus:bg-yellow-400 focus-within:outline-0 hover:underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-600 visited:text-gray-600 mr-6 p-0 underline text-sm ml-6 focus:shadow-darkbg-link-focus"
+                            href="/cy"
+                            hreflang="cy"
+                            lang="cy"
+                            rel="alternate"
+                          >
+                            <span
+                              aria-describedby="lang-description"
+                              class="inline-block relative after:content-[''] after:inline-block after:absolute after:-bottom-1 after:left-0 after:bg-white after:w-full after:h-[1px] group-hover:after:h-[2px]"
+                            >
+                              Cymraeg
+                            </span>
+                          </a>
+                          <span
+                            class="sr-only"
+                            id="lang-description"
+                          >
+                            Newid yr iaith ir Gymraeg
+                          </span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <nav
+                    class="mx-4 mt-4 mb-6"
+                  >
+                    <ul
+                      class="flex mr-6"
+                    >
+                      <li>
+                        <a
+                          class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-gray-500 visited:text-gray-500 text-sm font-bold"
+                          href="/en/test"
+                        >
+                          test
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </details>
+          </div>
+          <a
+            class="mx-auto h-[64px]"
+            href="/en"
+          >
+            <img
+              alt="Standard Financial Statement"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              src="/_next/image?url=%2Ftest.png&w=384&q=75"
+              srcset="/_next/image?url=%2Ftest.png&w=256&q=75 1x, /_next/image?url=%2Ftest.png&w=384&q=75 2x"
+              style="color: transparent;"
+              width="146"
+            />
+          </a>
+          <div
+            class="container-auto w-auto p-0 m-0"
+          >
+            <div
+              data-fallback="true"
+              tabindex="-1"
+            />
+            <details
+              class="group"
+            >
+              <summary
+                class="open cursor-pointer list-none [&::-webkit-details-marker]:hidden  text-white rounded flex"
+                data-testid="search-toggle"
+                title="Open search"
+              >
+                <span
+                  class="h-9 w-9 border-1 border-gray-300 items-center justify-center rounded-[4px] hidden"
+                >
+                  <chevron-down-icon.svg
+                    class="h-6 w-6 rotate-180"
+                    fill="#ffffff"
+                  />
+                </span>
+                <span
+                  class="h-9 w-9 border-1 border-green-300 bg-green-300 flex items-center justify-center rounded-[4px]"
+                >
+                  <search.svg
+                    class="text-blue-600"
+                  />
+                </span>
+              </summary>
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-blue-600 top-full"
+              >
+                <div
+                  class="p-4 pt-2 bg-blue-600"
+                >
+                  <form
+                    action="/en/search"
+                    class="flex w-full h-9 border-gray-650 relative z-1 border-1 rounded pr-8 mt-4 lg:my-4 lg:w-[266px]"
+                    data-testid="search-form"
+                    role="search"
+                  >
+                    <label
+                      class="absolute -top-7 text-sm text-white lg:text-gray-500"
+                      for="q"
+                    >
+                      Search
+                    </label>
+                    <input
+                      class="w-full p-2 rounded-l"
+                      id="q"
+                      name="q"
+                      required=""
+                      type="text"
+                    />
+                    <button
+                      aria-label="Search"
+                      class="p-1 bg-green-300 rounded-r absolute right-[-1px] top-[-1px] shadow-bottom-gray max-h-9 max-w-9"
+                      type="submit"
+                    >
+                      <search.svg
+                        aria-hidden="true"
+                        class=""
+                      />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </header>
+      <div
+        class="px-0 bg-gray-150 hidden lg:block"
+        data-testid="breadcrumb-wrapper"
+      >
+        <div
+          class="container-auto m-0 p-0 md:m-auto md:px-4 max-w-[1272px]"
+        >
+          <div
+            class="[&_a]:text-blue-600 [&_p]:text-blue-600 [&_ul]:px-0 [&_ul]:py-3.5 [&_path]:fill-blue-600"
+          >
+            <a
+              class="print:hidden md:hidden outline-none t-breadcrumb-mobile pl-2.5 flex items-center py-1 relative z-1 border-1 border-white shadow-box-link hover:border-1 hover:border-pink-800 focus:bg-yellow-400 focus:shadow-box-link-focus focus:border-2 focus:border-purple-700 focus:border-opacity-100"
+              data-testid="breadcrumb-mobile"
+              href="/en"
+            >
+              <chevron-left.svg
+                class="w-4"
+              />
+              <div
+                class="pl-2"
+              >
+                <p
+                  class="text-base"
+                >
+                  Home
+                </p>
+                <p
+                  aria-current="page"
+                  class="text-base font-semibold text-magenta-500 hover:text-pink-900 focus:text-gray-800"
+                >
+                  SFS V3
+                </p>
+              </div>
+            </a>
+            <nav
+              aria-label="breadcrumbs"
+              class="hidden md:block"
+              data-testid="breadcrumb-desktop"
+            >
+              <ul
+                class="flex px-4 py-4 t-breadcrumb-desktop"
+              >
+                <li
+                  class="flex items-center pr-2"
+                >
+                  <a
+                    class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+                    href="/en"
+                  >
+                    Home
+                  </a>
+                  <chevron-right.svg
+                    class="w-4 pl-2"
+                  />
+                </li>
+                <li
+                  class="flex items-center pr-2"
+                >
+                  <a
+                    aria-current="page"
+                    class="text-magenta-500 text-sm font-bold hover:underline hover:text-pink-900 focus:bg-yellow-400 focus:shadow-link-focus outline-none"
+                    href="/en/v3"
+                  >
+                    SFS V3
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <main
+        class="py-4 lg:pt-10 lg:pb-[5rem] bg-gray-100"
+        id="main"
+      >
+        <div
+          class="container-auto max-w-[1272px]"
+        >
+          <div
+            class="flex flex-col lg:flex-row lg:gap-16"
+          >
+            <nav
+              aria-label="Standard Financial Statement section navigation"
+              class="lg:min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto bg-transparent hidden lg:block"
+            >
+              <div
+                class="border-1 border-slate-400 border-r-r rounded-bl-[24px] mb-8 overflow-hidden bg-white"
+              >
+                <ul>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-sm font-normal underline"
+                      data-testid="use-the-sfs-link"
+                      href="/en/use-the-sfs"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Use the SFS
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-personal-details-link"
+                      href="/en/v3/personal-details"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Personal details
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-monthly-income-link"
+                      href="/en/v3/monthly-income"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Monthly Income
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-outgoings-fixed-link"
+                      href="/en/v3/outgoings-fixed"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Outgoings Fixed
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-outgoings-flexible-link"
+                      href="/en/v3/outgoings-flexible"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Outgoings Flexible
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-savings-and-debt-link"
+                      href="/en/v3/savings-and-debt"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Savings and Debt
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 text-xl font-bold"
+                      data-testid="v3-review-your-sfs-link"
+                      href="/en/v3/review-your-sfs"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Review
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none text-sm font-normal underline"
+                      data-testid="v3-additional-notes-link"
+                      href="/en/v3/additional-notes"
+                    >
+                      <span
+                        class="max-w-[90%]"
+                      >
+                        Additional notes
+                      </span>
+                      <chevron.svg
+                        class="ml-auto"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="flex flex-col justify-start items-start lg:items-start"
+            >
+              <div
+                class="mb-4 [&_a]:text-sm [&_a]:font-semibold [&_a]:text-blue-600 [&_svg]:relative [&_svg]:top-[1px] lg:mb-8"
+              >
+                <a
+                  class="gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none inline-flex items-center"
+                  data-testid="tool-nav-prev"
+                  href="/en/v3"
+                >
+                  <chevron-left.svg
+                    aria-hidden="true"
+                    class="w-[8px] h-[15px]"
+                  />
+                  <span>
+                    Back
+                  </span>
+                </a>
+              </div>
+              <div
+                data-testid="test-children"
+              >
+                test children
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="relative z-1"
+        data-testid="footer"
+      >
+        <div
+          class="flex flex-col py-8 bg-gray-500 md:flex-row md:py-6"
+        >
+          <div
+            class="container-auto flex flex-col text-white md:flex-row max-w-[1272px]"
+          >
+            <img
+              alt="Money and Pensions Service"
+              data-nimg="1"
+              decoding="async"
+              height="53"
+              loading="lazy"
+              src="/_next/image?url=%2Ftest&w=384&q=75"
+              srcset="/_next/image?url=%2Ftest&w=256&q=75 1x, /_next/image?url=%2Ftest&w=384&q=75 2x"
+              style="color: transparent;"
+              width="167"
+            />
+            <ul
+              class="relative flex flex-row flex-wrap mt-8 md:ml-auto md:mt-0"
+            >
+              <li
+                class="text-white last:mr-0 relative px-2.5 sm:px-4 first:pl-0 flex items-center"
+              >
+                <a
+                  class="inline-flex items-center gap-2 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-gray-100 visited:text-gray-100 after:content-[""] after:absolute after:h-[16px] after:w-[1px] after:bg-blue-300 after:-m-[8px] after:top-[50%] after:right-[8px] hover:text-green-300 hover:underline after:hidden"
+                  data-testid="test-link"
+                  href="/en/test"
+                >
+                  test
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+`;

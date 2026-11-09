@@ -1,0 +1,21 @@
+#!/bin/sh
+. "$(dirname "$0")/conventional-commit-pattern.sh"
+
+commit_msg=$(head -1 "$1")
+
+if ! echo "$commit_msg" | grep -qE "$CONVENTIONAL_COMMIT_PATTERN"; then
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "Please use conventional commit format:"
+    echo "  type(scope): description"
+    echo ""
+    echo "Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert"
+    echo "Examples:"
+    echo "  feat: add user authentication"
+    echo "  fix(auth): resolve login redirect issue"
+    echo "  feat!: breaking change to API"
+    echo ""
+    echo "For more info: https://www.conventionalcommits.org/en/v1.0.0/#summary"
+    echo ""
+    exit 1
+fi

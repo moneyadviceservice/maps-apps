@@ -1,0 +1,77 @@
+{
+  "title": "Teulu a Ffrindiau",
+  "fields": {
+    "childcare": {
+      "title": "Gofal plant",
+      "information": "Rhowch y swm a wariwch ar feithrinfa, gwarchodwr plant neu famaeth, yma. Os ydych yn talu symiau gwahanol bob wythnos neu bob mis, cyfrifwch bopeth yr ydych wedi ei wario dros y flwyddyn ddiwethaf a rhowch y ffigwr hwn fel swm blynyddol.\n\nOs ydych yn ansicr a ydych yn cael yr holl help sy'n ddyledus i chi, gweler ein canllawiau: [Budd-daliadau y gallwch eu hawlio tra byddwch yn feichiog neu wedi cael babi](https://www.moneyhelper.org.uk/cy/benefits/benefits-if-you-have-children/benefits-and-entitlements-to-claim-when-you-have-a-baby)"
+    },
+    "nappies": {
+      "title": "Clytiau ac eitemau i'r babi",
+      "information": "Defnyddiwch ein [Cyfrifiannell costau babis](https://www.moneyhelper.org.uk/cy/family-and-care/becoming-a-parent/baby-costs-calculator)i gyfrifo'r gost o fwyd a diod babi, cewynnau, cadachau, bwyd babi ac unrhyw eitemau eraill i fabis."
+    },
+    "activities": {
+      "title": "Gweithgareddau a chlybiau",
+      "information": "Rhowch yma y swm a wariwch ar ysgol feithrin, clybiau ac unrhyw weithgareddau eraill ar gyfer eich plant."
+    },
+    "treats": {
+      "title": "Teganau a phethau neis",
+      "information": "Os prynwch bethau da, cylchgronau a theganau i'ch plant, cyfrifwch y gost a'i roi yma. Nid oes angen cynnwys anrhegion penblwydd - mae hynny'n cael ei gynnwys ar y dudalen \"Hamdden\". Os rhowch arian poced i'ch plant er mwyn iddynt gael prynu pethau da, rhowch hyn yn y blwch nesaf yn hytrach."
+    },
+    "pocket-money": {
+      "title": "Arian poced",
+      "information": "Os cytunwch i roi swm o arian i'ch plentyn bob wythnos yn arian poced, rhowch y swm hwn yma. Peidiwch â chynnwys unrhyw beth a rowch mewn cyfrifon cynilo ar eu cyfer - dylai hyn gael ei roi dan \"Cynilion rheolaidd\" yn hytrach."
+    },
+    "babysitting": {
+      "title": "Gwarchod y babi",
+      "information": "Os nad oes gennych chi drefniant rheolaidd gyda'ch gwarchodwr plant drwy dalu'r un swm bob wythnos (neu bob mis), mae'n debyg y bydd angen i chi edrych drwy eich dyddiadur a nodi pa mor aml y bu i chi ddefnyddio gwarchodwr plant yn ystod yr ychydig fisoedd diwethaf a chyfrifo faint daloch chi iddynt."
+    },
+    "maintenance": {
+      "title": "Cynhaliaeth neu gymorth i blant",
+      "information": "Rhowch y swm llawn o gynhaliaeth plant neu gostau cynnal plant yr ydych yn ei dalu i'ch cynbriod neu gynbartner. Os yw'r swm yn amrywio, cyfrifwch bopeth a gawsoch y flwyddyn ddiwethaf a rhowch y ffigwr hwn, gan ddewis \"blynyddol\" o'r gwymplen. Drwy wneud hynny, bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi."
+    },
+    "school-fees": {
+      "title": "Ffioedd ysgol",
+      "information": "Cyfrifwch yr hyn a wariwch bob blwyddyn a'i roi yma. Sicrhewch eich bod yn defnyddio'r gwymplen i ddangos mai hwn yw'r swm blynyddol."
+    },
+    "school-trips": {
+      "title": "Tripiau ysgol",
+      "information": "Gan fod y rhain yn medru amrywio cymaint - mewn amledd a chost - yr unig ffordd i gael darlun cywir yw i gyfrifo faint y bu i chi ei wario y llynedd a rhoi'r swm hwn. Os ydych yn talu am deithiau drwy ddefnyddio system sy'n rhydd o arian parod megis ParentPay, er enghraifft, gallwch edrych ar archif eich taliadau i weld faint a wariwyd. Sicrhewch eich bod yn defnyddio'r gwymplen i ddangos mai hwn yw'r swm blynyddol."
+    },
+    "school-dinners": {
+      "title": "Cinio ysgol",
+      "information": "Peidiwch ag anghofio ystyried gwyliau ysgol wrth gyfrifo faint wariwch chi ar ginio ysgol. Mae gan nifer o ysgolion 13 wythnos o wyliau bob blwyddyn, felly gallech luosi eich gwariant wythnosol gyda 39 i gael swm blynyddol.\n\nOs credwch eich bod yn gymwys i gael cymorth i dalu am brydau bwyd ysgol, darllenwch ein canllaw:\n\n[Sicrhewch eich bod yn cael yr hawliadau cywir](https://www.moneyhelper.org.uk/cy/blog/benefits-entitlements/free-school-meals-eligibility-and-how-to-apply)"
+    },
+    "school-clubs": {
+      "title": "Clybiau ar ôl ysgol",
+      "information": "Peidiwch ag anghofio ystyried cyfnod y tymor a gwyliau ysgol wrth gyfrifo faint wariwch chi ar glybiau ar ôl ysgol. Mae gan nifer o ysgolion 13 wythnos o wyliau bob blwyddyn, felly gallech luosi eich gwariant wythnosol gyda 39 i gael swm blynyddol cyfnod tymor ysgol.\n\nAc os aiff eich plant i glybiau gwyliau ysgol gallech luosi'r swm wythnosol gyda 13 (neu'r nifer o wythnosau priodol) a rhoi'r swm hwnnw yma hefyd."
+    },
+    "support-student": {
+      "title": "Cefnogaeth i blant myfyrwyr",
+      "information": "Os yw eich plant hŷn yn fyfyrwyr a'ch bod yn rhoi cymorth ariannol iddynt, rhowch y swm a delir iddynt yma."
+    },
+    "support-relatives": {
+      "title": "Cefnogaeth i berthnasau eraill",
+      "information": "Os ydych yn rhoi cymorth ariannol i aelodau eraill o'r teulu rhowch y swm yma."
+    },
+    "pet-food": {
+      "title": "Bwyd",
+      "information": "Peidiwch â chynnwys hyn os ydych wedi ei gynnwys yn eich siopa wythnosol eisoes. Ond os prynwch fwyd anifeilaid anwes ar wahân, ac nid ydych wedi ei gynnwys eisoes, cofiwch ei gynnwys yma."
+    },
+    "vet-bills": {
+      "title": "Biliau milfeddyg",
+      "information": "Mae hwn yn un anodd i'w gyllidebu ar ei gyfer gan nad ydych yn gwybod beth sy'n mynd i ddigwydd ymghylch iechyd eich anifail anwes yn y dyfodol.\n\nOs yw eich anifail anwes yn ifanc ac yn iach yna mae'n debyg mai dim ond gofal arferol y dylech chi gyllido ar ei gyfer. Ond os oes gan eich anifail anwes gyflwr eisoes a'ch bod yn talu am driniaeth yn aml dylech gyfrifo faint yr ydych wedi ei dalu i'r milfeddyg dros y flwyddyn ddiwethaf a rhoi'r swm hwn.\n\nOs oes gennych yswiriant anifeiliaid anwes dylech roi'r swm hwn yn y blwch isod. Cofiwch gynnwys y tâl dros ben (y swm a dalwch eich hun tuag at y gost a hawliwch)."
+    },
+    "pet-insurance": {
+      "title": "Yswiriant anifeiliaid anwes",
+      "information": "Gwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol."
+    },
+    "donations": {
+      "title": "Rhoddion a nawdd",
+      "information": "Os oes gennych Ddebydau Uniongyrchol wedi eu sefydlu gydag elusennau, rhowch y swm yma. Rhowch unrhyw gyfraniadau achlysurol i elusen, neu ddigwyddiadau codi arian. Peidiwch ag anghofio cynnwys tocynnau raffl, ac arian a warir mewn ffeiriau ysgol neu eglwys ac ati."
+    },
+    "loan": {
+      "title": "Ad-dalu benthyciad i deulu/ffrind",
+      "information": "Os ydych wedi benthyca arian gan aelod o'r teulu neu ffrind rhowch y swm y cytunoch i'w ad-dalu yma."
+    }
+  }
+}

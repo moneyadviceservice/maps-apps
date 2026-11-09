@@ -1,0 +1,1 @@
+export { getPersonalAllowanceFromTaxCode } from './getPersonalAllowanceFromTaxCode';

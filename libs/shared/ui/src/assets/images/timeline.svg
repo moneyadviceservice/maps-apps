@@ -1,0 +1,9 @@
+<svg aria-hidden="true" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14.3998 12H4.7998V13.6H14.3998V12Z" fill="currentColor"/>
+  <path d="M14.3998 6.39844H4.7998V7.99844H14.3998V6.39844Z" fill="currentColor"/>
+  <path d="M14.3998 0.800781H4.7998V2.40078H14.3998V0.800781Z" fill="currentColor"/>
+  <path d="M2.0002 2.39844H1.2002V11.9984H2.0002V2.39844Z" fill="currentColor"/>
+  <circle cx="1.6" cy="1.6" r="1.6" fill="currentColor"/>
+  <ellipse cx="1.6" cy="7.20156" rx="1.6" ry="1.6" fill="currentColor"/>
+  <ellipse cx="1.6" cy="12.7992" rx="1.6" ry="1.6" fill="currentColor"/>
+</svg>

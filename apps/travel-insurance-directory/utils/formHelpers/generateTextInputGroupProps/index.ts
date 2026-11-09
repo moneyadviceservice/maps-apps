@@ -1,0 +1,1 @@
+export { generateTextInputGroupProps } from './generateTextInputGroupProps';

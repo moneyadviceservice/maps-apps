@@ -1,0 +1,130 @@
+{
+  "site": {
+    "tool-name": "Cynlluniwr Cyllideb",
+    "title": "Cynlluniwr Cyllideb",
+    "document-title": "Budget Planner",
+    "money-helper-tools": "Teclynnau HelpwrArian",
+    "back": "Yn ôl",
+    "meta": {
+      "og-title": "Cynlluniwr cyllidebc",
+      "og-url": "https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/budget-planner",
+      "og-description": "Darganfyddwch ein cyfrifiannell Cynlluniwr Cyllideb HelpwrArian ar-lein am ddim i ennill dealltwriaeth well o'ch arian yn dod i mewn ac allan, a sut i wella'ch cyllid."
+    },
+    "analytics": {
+      "tab-page-title": "Cynlluniwr Cyllideb: {title} - Teclynnau HelpwrArian",
+      "page-title": "Cynlluniwr Cyllideb - Teclynnau HelpwrArian"
+    }
+  },
+  "common": {
+    "income": "Incwm",
+    "spending": "Gwariant",
+    "total-labels": {
+      "positive": "Arian sy'n weddill",
+      "neutral": "Balans",
+      "negative": "Gorwariant"
+    },
+    "frequencies": {
+      "day": "Fesul dydd",
+      "week": "Fesul wythnos",
+      "2-weeks": "Fesul 2 wythnos",
+      "4-weeks": "Fesul 4 wythnos",
+      "month": "Fesul mis",
+      "quarter": "Fesul chwarter",
+      "6-months": "Fesul 6 mis",
+      "year": "Fesul blwyddn"
+    },
+    "groups": {
+      "pay": "Tâl",
+      "benefits-and-tax-credits": "Budd-daliadau a Chredydau Treth",
+      "pension": "Pensiwn",
+      "other-income": "Incwm arall",
+      "mortgage-rent": "Morgais a rhent",
+      "other-property": "Taliadau eiddo eraill",
+      "home-insurance": "Yswiriant cartref",
+      "utilities": "Cyfleustodau",
+      "food-drink": "Bwyd a diod",
+      "insurance": "Yswiriant",
+      "banking": "Bancio",
+      "credit": "Chredyd",
+      "savings-investments": "Cynilion a buddsoddiadau",
+      "future-plans": "Cynlluniau i'r dyfodol",
+      "financial-advice": "Cyngor ariannol a chyfreithiol",
+      "children": "Plant",
+      "school": "Ysgol",
+      "support-student": "Cefnogaeth i blant myfyrwyr",
+      "support-relatives": "Cefnogaeth i berthnasau eraill",
+      "pets": "Anifeiliaid anwes",
+      "donations": "Rhoddion a nawdd",
+      "family-loan": "Ad-dalu benthyciad i deulu/ffrind",
+      "car-costs": "Costau car",
+      "public-transport": "Cludiant cyhoeddus",
+      "entertainment": "Adloniant",
+      "one-offs": "Eitemau untro",
+      "holidays": "Gwyliau",
+      "work": "Gwaith",
+      "clothes-shoes": "Dillad ac esgidiau",
+      "health-beauty": "Iechyd a harddwch",
+      "additional": "Eich eitemau ychwanegol"
+    }
+  },
+  "components": {
+    "summary-total": {
+      "progress": "Eich cynnydd",
+      "total": "Cyfanswm crynodeb",
+      "monthly": "(misol)",
+      "amount": "Amount"
+    },
+    "reset-calculator": {
+      "title": "Ailosod y gyfrifiannell",
+      "description": "Ydych chi'n siŵr eich bod am glirio'ch holl wybodaeth Gyllideb?",
+      "confirm": "Cadarnhau",
+      "cancel": "Canslo"
+    },
+    "dialog": {
+      "close": "Close",
+      "reset": "Reset"
+    }
+  },
+  "pages": {
+    "tab": {
+      "welcome-back": {
+        "title": "Croeso yn ôl i'ch cyllideb",
+        "items": [
+          "Parhewch i lenwi'r holl gategorïau sy'n berthnasol i chi.",
+          "Defnyddiwch \"arbed a dychwelyd\" eto os oes angen i chi oedi a dod yn ôl"
+        ]
+      },
+      "additional-item": "Eich eitemau ychwanegol",
+      "in-pounds": "{label} in pounds",
+      "more-info": "Mwy o wybodaeth",
+      "less-info": "Llai o wybodaeth",
+      "continue": "Parhau",
+      "save-and-come-back": "Arbedwch a dewch yn ôl yn nes ymlaen"
+    },
+    "save": {
+      "title": "Arbedwch a dewch yn ôl yn ddiweddarach",
+      "sub-heading": "Rhowch eich e-bost isod a byddwn yn anfon dolen atoch i gyrchu eich cynnydd wedi'i arbed. Defnyddiwch y ddolen hon i ddychwelyd i'ch cyllideb unrhyw bryd.",
+      "input-label": "Eich cyfeiriad e-bost",
+      "input-hint": "Byddwn ond yn defnyddio hyn i anfon dolen atoch i'ch cynnydd wedi'i arbed",
+      "error-message": "Error: Rhowch gyfeiriad e-bost yn y fformat cywir, fel name@example.com",
+      "button": "Arbed ac anfon e-bost"
+    },
+    "progress-saved": {
+      "title": "Cynnydd wedi’i arbed",
+      "sub-heading": "Beth fydd yn digwydd nesaf",
+      "text": [
+        "Rydym wedi anfon e-bost atoch. Mi fydd yn dod gan moneyhelper@notifications.service.gov.uk. Sicrhewch eich bod yn gwirio eich ffolder sbam os nad ydych wedi ei dderbyn.",
+        "cliciwch y ddolen yn yr e-bost i ddychwelyd i'ch cyllideb."
+      ],
+      "main-site-link": "https://www.moneyhelper.org.uk/cy",
+      "continue": "Parhau i Helpwr Arian",
+      "continue-embedded": "Ewch i HelpwrArian",
+      "resend-email": "Ail-anfon e-bost"
+    },
+    "error-page": {
+      "heading": "Mae'n ddrwg gennym, aeth rhywbeth o'i le",
+      "text": "Digwyddodd gwall annisgwyl wrth arbed eich data. Mae'n ddrwg gennym am yr anghyfleuster ac rydym yn gwerthfawrogi eich amynedd. Ceisiwch eto yn nes ymlaen. ",
+      "contact": "Os ydych chi'n dal i gael problemau, gallwch [gysylltu â ni](https://www.moneyhelper.org.uk/cy/contact-us) am gefnogaeth."
+    }
+  }
+}

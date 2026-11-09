@@ -1,0 +1,134 @@
+import { ReactNode } from 'react';
+
+import { GetServerSideProps, NextPage } from 'next';
+
+import { Paragraph } from '@maps-digital/shared/ui';
+
+import { Heading } from '@maps-react/common/components/Heading';
+import { ListElement } from '@maps-react/common/components/ListElement';
+import { ToolIntro } from '@maps-react/common/components/ToolIntro';
+import { useTranslation } from '@maps-react/hooks/useTranslation';
+import { Markdown } from '@maps-react/vendor/components/Markdown';
+
+import { LogoutLinkText } from '../../../components/Logout';
+import {
+  PensionsDashboardLayout,
+  PensionsDashboardLayoutProps,
+} from '../../../layouts/PensionsDashboardLayout';
+import { useMHPDAnalytics } from '../../../lib/hooks';
+import {
+  Cookies,
+  getMhpdSessionConfig,
+  withAuth,
+} from '../../../lib/utils/system';
+
+type Props = {
+  backLink: string;
+};
+
+const Page: NextPage<PensionsDashboardLayoutProps & Props> = ({ backLink }) => {
+  const { t, tList, locale } = useTranslation();
+  const { t: tEn } = useTranslation('en');
+  const titleKey = 'pages.pensions-not-showing.title';
+  const title = t(titleKey);
+  const noBacklink = backLink === '/your-pension-search-results';
+
+  // Track analytics for this page
+  useMHPDAnalytics({
+    pageTitle: tEn(titleKey),
+    pageName: tEn(titleKey),
+  });
+
+  const items = [
+    t('pages.pensions-not-showing.to-do.item-1'),
+    <Paragraph key="item-2">
+      {t('pages.pensions-not-showing.to-do.item-2')}{' '}
+      <LogoutLinkText
+        text={t('pages.pensions-not-showing.to-do.item-2-logout-link')}
+        testId="pensions-not-showing-logout-link"
+      />
+    </Paragraph>,
+    t('pages.pensions-not-showing.to-do.item-3'),
+    t('pages.pensions-not-showing.to-do.item-4'),
+    t('pages.pensions-not-showing.to-do.item-5'),
+  ].map((item: string | ReactNode, index) =>
+    typeof item === 'string' ? (
+      <Markdown key={`item-${index}`} content={item} />
+    ) : (
+      <>{item}</>
+    ),
+  );
+
+  return (
+    <PensionsDashboardLayout
+      title={title}
+      back={noBacklink ? undefined : `/${locale}${backLink}`}
+      backText={t('site.back')}
+      isOffset={false}
+      helpAndSupport
+      homeLink
+    >
+      <div className="xl:grid xl:grid-cols-12 xl:gap-6">
+        <div className="xl:col-span-8">
+          <ToolIntro className="mb-8 md:text-2xl">
+            {t('pages.pensions-not-showing.intro')}
+          </ToolIntro>
+
+          <Heading level="h2" className="mb-4">
+            {t('pages.pensions-not-showing.heading')}
+          </Heading>
+
+          <ListElement
+            items={items}
+            variant="unordered"
+            color="blue"
+            className="mb-6 ml-8 list-disc text-md"
+          />
+
+          <Heading
+            level="h2"
+            className="mb-8 md:mb-4"
+            data-testid="not-included-heading"
+          >
+            {t('pages.pensions-not-showing.not-included-heading')}
+          </Heading>
+
+          <Paragraph
+            className="mb-8 md:mb-5"
+            data-testid="not-included-description"
+          >
+            {t('pages.pensions-not-showing.not-included-description')}
+          </Paragraph>
+
+          <ListElement
+            items={tList('pages.pensions-not-showing.not-included')}
+            variant="unordered"
+            color="blue"
+            className="mb-6 ml-8 list-disc text-md"
+            dataTestId="not-included-list"
+          />
+
+          <Paragraph className="mb-0" data-testid="not-included-footer">
+            {t('pages.pensions-not-showing.not-included-footer')}
+          </Paragraph>
+        </div>
+      </div>
+    </PensionsDashboardLayout>
+  );
+};
+
+export default Page;
+
+export const getServerSideProps: GetServerSideProps = withAuth(
+  async ({ req, res }) => {
+    const cookies = new Cookies(req, res);
+    const { currentUrl } = getMhpdSessionConfig(cookies);
+    const backLink = currentUrl ?? null;
+
+    return {
+      props: {
+        backLink,
+      },
+    };
+  },
+);

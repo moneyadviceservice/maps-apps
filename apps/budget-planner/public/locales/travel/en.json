@@ -1,0 +1,57 @@
+{
+  "title": "Travel",
+  "fields": {
+    "petrol-diesel": {
+      "title": "Petrol/diesel/electric charging ports",
+      "information": "Check your bank statements to see how much you spend on fuel or charging ports for your car.\n\nIf you want to find out more about saving money on fuel, see: [Cut down on car and travel costs](https://www.moneyhelper.org.uk/en/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "car-insurance": {
+      "title": "Car insurance",
+      "information": "Check your policy details or your bank statement to find out exactly what your monthly or yearly premiums are.\n\nIf your policy is coming up for renewal you might find that it's worth shopping around. Find out more: [Car insurance - how to get the best deal](https://www.moneyhelper.org.uk/en/everyday-money/insurance/car-insurance-what-you-need-to-know?source=mas)"
+    },
+    "breakdown-cover": {
+      "title": "Breakdown cover",
+      "information": "Enter the amount you spend on breakdown cover. If this is included as part of your car insurance policy you can leave this box blank."
+    },
+    "car-tax": {
+      "title": "Car tax",
+      "information": "The cost of car tax depends on your vehicle type and engine size. You can [find out how much yours will cost on GOV.UK](https://www.gov.uk/check-tax-rates-new-unregistered-cars).\n\nPaying for 12 months upfront is cheaper than splitting it into two six-month payments. This is because a 5% surcharge is added to shorter payment terms, so if you can afford to pay in one go, you'll save money."
+    },
+    "car-finance": {
+      "title": "Car finance or loan repayment",
+      "information": "Check your paperwork or your bank statement to find out exactly what your monthly repayments are.\n\nWhy not see if you could cut the cost of your car finance agreement or personal loan. See our guides:\n\n[Cut car finance, hire purchase and other finance costs](https://www.moneyhelper.org.uk/en/everyday-money/buying-and-running-a-car/cut-your-car-finance-hire-purchase-and-other-finance-costs?source=mas) and [How to reduce the cost of your personal loans](https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/bill-prioritiser)"
+    },
+    "loan-insurance": {
+      "title": "Loan insurance",
+      "information": "Loan insurance (or payment protection) covers your car finance or loan repayments if you are ill, have an accident or are made redundant.\n\nIf you have a stand-alone policy, check your policy details or bank statement to find out exactly what your monthly premiums are.\n\nIf you pay for the cover alongside your repayments, it might be easier to leave this box blank and enter the total amount under 'Car finance or loan repayment' above.\n\nIf you think you might have been mis-sold the policy, see: [How to claim for mis-sold payment protection insurance (PPI)](https://www.moneyhelper.org.uk/en/everyday-money/insurance?source=mas)"
+    },
+    "mot": {
+      "title": "MOT",
+      "information": "Check MOT fees on the [GOV.UK](https://www.gov.uk/getting-an-mot/mot-test-fees) website."
+    },
+    "maintenance": {
+      "title": "Maintenance & repairs",
+      "information": "This is a tricky one to budget for since you don't know what's going to go wrong with your car in the future.\n\nIf your car is fairly new and problem-free you are probably OK to just budget for routine maintenance here. But if you frequently break down you should add up how much you've spent on repairs over the past year and enter that amount."
+    },
+    "parking": {
+      "title": "Parking & tolls",
+      "information": "Enter the amount you pay to use car parks, and also work out the cost of any parking tickets you get, over the time period you select in the dropdown menu."
+    },
+    "bus": {
+      "title": "Bus, tube & tram fares",
+      "information": "Enter the cost of your daily commute on public transport plus any travelling around that you do at evenings and weekends.\n\nWant to find out more about saving money on public transport? See our guide: [Cut down on car and travel costs](https://www.moneyhelper.org.uk/en/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "trains": {
+      "title": "Trains",
+      "information": "Enter the cost of train travel here.\n\nIf you want to find out more about saving money on train tickets, see our guide: [Cut down on car and travel costs](https://www.moneyhelper.org.uk/en/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "taxis": {
+      "title": "Taxis",
+      "information": "Enter the amount you spend on taxi fares here. Remember to include taxis to and from work, taxis you get as part of your social life and taxis as part of longer journeys, for example to and from the station or airport."
+    },
+    "air": {
+      "title": "Air travel",
+      "information": "Enter the amount you spend on air travel here. There's no need to include holiday flights here - these are covered on the 'Leisure' page."
+    }
+  }
+}

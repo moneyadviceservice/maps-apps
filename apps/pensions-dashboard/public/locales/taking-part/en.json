@@ -1,0 +1,251 @@
+{
+  "common": {
+    "exit-cta-link": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-dashboard/research-panel",
+    "exit-cta": "Return to Moneyhelper",
+    "error-callout": {
+      "title": "There is a problem"
+    }
+  },
+  "layout": {
+    "title": "Try the MoneyHelper Pensions Dashboard"
+  },
+  "components": {
+    "data-and-privacy": {
+      "title": "Your data and privacy",
+      "back": "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-dashboard/research-panel",
+      "intro": "We use your information to find your pensions, but **we do not store it**. We only hold pseudonymised codes to run the service.",
+      "these-are": "**These are:**",
+      "identifiers": [
+        "identifiers for your consents",
+        "a unique code representing you",
+        "identifiers for any pensions matched to you."
+      ],
+      "research-heading": "How we use your research data",
+      "research-paragraphs": [
+        "We will store your research data securely. Only authorised researchers will be able to access it.",
+        "We fully anonymise all research findings that we use in presentations and reports. This means nobody will see your details or know that the findings came from you.",
+        "We may use artificial intelligence (AI) tools to help analyse and summarise feedback. No personal data will be shared with any AI tool, and our research team will review any outputs before using them."
+      ],
+      "research-list": [
+        "We keep research data for up to **2 years**, then we remove or anonymise it.",
+        "We follow **GDPR** and all other relevant data protection laws.",
+        "You can stop taking part at any time. This will not affect any services or support you receive from us."
+      ],
+      "privacy-notice": "See our [privacy notice](https://portal.participantkit.com/f7446ec8-3a6a-4763-a416-fbac77ffdee7) for more information.",
+      "removing-heading": "Removing your research data",
+      "removing-intro": "You can ask to withdraw your research participation data by contacting [dpo@maps.org.uk_target=_self](mailto:dpo@maps.org.uk).",
+      "removing-list": [
+        "We'll delete your research panel data and any research participation data that has not yet been anonymised.",
+        "Pseudonymised data in the Find service will remain stored until it is automatically deleted after **5 years of inactivity**."
+      ]
+    },
+    "agreement-and-consent": {
+      "title": "Agree to take part",
+      "intro-paragraph": "To use the MoneyHelper Pensions Dashboard, you must agree to the following:",
+      "listItems": [
+        "You've read and agree to comply with the [website Terms and conditions](https://www.moneyhelper.org.uk/en/about-us/terms-and-conditions). These terms shall govern your use of the MoneyHelper Pensions Dashboard (“**MHPD**”) and Find your pensions (“**Find**”) service. Any references in the terms to the website is to the MHPD and Find websites;",
+        "You understand that using the MHPD and Find services requires you to confirm your identity using One Login, which is subject to the One Login terms and conditions set out here [Terms and conditions - GOV.UK One Login](https://signin.account.gov.uk/terms-and-conditions);",
+        "You understand that the MHPD and Find services are in a test phase. They may not work as intended and the content provided through them may be incomplete or inaccurate. You should not rely on this content for any financial decision-making or take any action on the basis of it;",
+        "You agree to only use the MHPD and Find services to assist the Money and Pensions Service in its testing and for personal and domestic purposes.",
+        "You understand you can stop taking part at any time, and this won't affect the service or support you get from the Money and Pensions Service (MaPS).",
+        "You understand that the ideas, designs and services on the dashboard are confidential and you won't share them.",
+        "You agree to take part in testing the MoneyHelper Pensions Dashboard and for your information to be used as specified above. You also agree that your data can be used for research (we’ll delete this data after 2 years).",
+        "You agree to be contacted for further research participation."
+      ],
+      "exit-link": {
+        "text": "No, I do not want to take part"
+      }
+    },
+    "decline": {
+      "title": "Are you sure you don't want to take part in our research?",
+      "back": "agreement-and-consent",
+      "content": "Currently, you can only use the service if you agree to take part in research. Click ‘Back’ if you want to change your response. \n\nIf you don’t agree to the research terms, you can come back and use the MoneyHelper Pensions Dashboard when it’s available to the public.",
+      "cta-link": "https://www.moneyhelper.org.uk/en"
+    },
+    "about-you": {
+      "title": "About you",
+      "form": {
+        "first-name": {
+          "label": "First name",
+          "error": "Enter your first name"
+        },
+        "last-name": {
+          "label": "Last name",
+          "error": "Enter your last name"
+        },
+        "email-address": {
+          "label": "Email",
+          "error": "Enter an email address in the correct format, like name@example.com"
+        },
+        "age-range": {
+          "label": "How old are you?",
+          "options": [
+            {
+              "text": "18-24",
+              "value": "18-24"
+            },
+            {
+              "text": "25-34",
+              "value": "25-34"
+            },
+            {
+              "text": "35-49",
+              "value": "35-49"
+            },
+            {
+              "text": "50-64",
+              "value": "50-64"
+            },
+            {
+              "text": "65-74",
+              "value": "65-74"
+            },
+            {
+              "text": "75+",
+              "value": "75+"
+            },
+            {
+              "text": "Prefer not to say",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Select your age"
+        }
+      }
+    },
+    "where-you-live": {
+      "title": "Where do you live?",
+      "form": {
+        "where-you-live": {
+          "label": "Where do you live?",
+          "options": [
+            {
+              "text": "England",
+              "value": "england"
+            },
+            {
+              "text": "Scotland",
+              "value": "scotland"
+            },
+            {
+              "text": "Wales",
+              "value": "wales"
+            },
+            {
+              "text": "Northern Ireland",
+              "value": "northern-ireland"
+            },
+            {
+              "text": "I don't live in the UK",
+              "value": "not-in-uk"
+            },
+            {
+              "text": "Prefer not to say",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Select the country where you live"
+        }
+      }
+    },
+    "your-sex": {
+      "title": "What is your sex?",
+      "sub-title": "If you prefer to use your own term, select ‘Other’ and tell us.",
+      "form": {
+        "your-sex": {
+          "label": "What is your sex?",
+          "options": [
+            {
+              "text": "Female",
+              "value": "female"
+            },
+            {
+              "text": "Male",
+              "value": "male"
+            },
+            {
+              "text": "Prefer not to say",
+              "value": "prefer-not-to-say"
+            },
+            {
+              "text": "Other",
+              "value": "other"
+            }
+          ],
+          "error": "Select whether you are female or male, or if you prefer not to say. If you use your own term, select ‘Other’ and tell us."
+        },
+        "other-sex": {
+          "label": "Tell us what term you use",
+          "error": "Enter the term you use"
+        }
+      }
+    },
+    "health-conditions": {
+      "title": "Do you have a long-term health condition or illness?",
+      "sub-title": "This could be any physical or mental health condition or illness that’s lasted or is expected to last a year or more.",
+      "form": {
+        "health-conditions": {
+          "label": "Do you have a long-term health condition or illness?",
+          "options": [
+            {
+              "text": "Yes",
+              "value": "yes|health-conditions-impact"
+            },
+            {
+              "text": "No",
+              "value": "no|submit"
+            },
+            {
+              "text": "Prefer not to say",
+              "value": "prefer-not-to-say|submit"
+            }
+          ],
+          "error": "Select whether you have a long-term health condition or illness, or if you prefer not to say"
+        }
+      }
+    },
+    "health-conditions-impact": {
+      "title": "Do any of your conditions or illnesses reduce your ability to do day-to-day activities?",
+      "sub-title": "For example eating, washing, walking, going shopping or doing tasks online.",
+      "form": {
+        "health-conditions-impact": {
+          "label": "Do any of your conditions or illnesses reduce your ability to do day-to-day activities?",
+          "options": [
+            {
+              "text": "Yes, a lot",
+              "value": "yes"
+            },
+            {
+              "text": "Yes, a little",
+              "value": "yes-little"
+            },
+            {
+              "text": "No",
+              "value": "no"
+            },
+            {
+              "text": "Prefer not to say",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Select whether any of your health conditions make it harder to do day-to-day activities. Or, select ‘Prefer not to say.’"
+        }
+      }
+    },
+    "loading": {
+      "title": "Your request is being submitted - please stay on this page. \n\nThis may take a few seconds."
+    },
+    "submit": {
+      "title": "You’re about to visit the Pensions Dashboard",
+      "content": "Thanks for agreeing to take part in our research. You're now ready to start using the MoneyHelper Pensions Dashboard."
+    },
+    "error": {
+      "title": "Sorry, there is a problem with the service",
+      "content": "We're sorry for any inconvenience and appreciate your patience. \n\nPlease try again later."
+    },
+    "sign-up-update": {
+      "title": "Sign up again to test the Pensions Dashboard",
+      "content": "Our sign-up process has changed since you previously agreed to take part in testing the MoneyHelper Pensions Dashboard. \n\nYou’ll need to fill in a short consent form again, including your name, email address and a few details about you for our research team. You’ll then get access to the dashboard right away."
+    }
+  }
+}

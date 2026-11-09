@@ -1,0 +1,374 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PensionWiseNotEligible (cy) renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700 mt-4"
+      data-testid="notification-box-default"
+    >
+      <section
+        class="flex flex-col gap-4"
+      >
+        <p
+          class="break-words mb-2"
+          data-testid="pension-wise-not-eligible-callout-content-0"
+        >
+          --WELSH You can’t book a Pension Wise appointment if:
+        </p>
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+            data-testid="pension-wise-not-eligible-callout-list-0"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-0"
+              >
+                --WELSH you’re under 50
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-1"
+              >
+                --WELSH you only have a defined benefit pension (final salary or career-average salary) or
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-2"
+              >
+                --WELSH you only have an overseas pension.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-0"
+      >
+        --WELSH We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="pension-wise-not-eligible-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-0"
+            >
+              --WELSH 
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="tel:08000113797"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                call us on 0800 011 3797
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-1"
+            >
+              --WELSH 
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                use our webchat
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-2"
+            >
+              --WELSH 
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                use our online form
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-1"
+      >
+        --WELSH We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays.
+      </p>
+    </section>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-2"
+      >
+        --WELSH You can also use our 
+        <a
+          class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none mb-2"
+          href="#"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          pension guides and tools.
+          <span
+            class="sr-only"
+          >
+             (opens in a new window) 
+          </span>
+          <svgr-mock
+            class="inline ml-[6px] mr-[2px]"
+          />
+        </a>
+      </p>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`PensionWiseNotEligible (en) renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700 mt-4"
+      data-testid="notification-box-default"
+    >
+      <section
+        class="flex flex-col gap-4"
+      >
+        <p
+          class="break-words mb-2"
+          data-testid="pension-wise-not-eligible-callout-content-0"
+        >
+          You can’t book a Pension Wise appointment if:
+        </p>
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+            data-testid="pension-wise-not-eligible-callout-list-0"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-0"
+              >
+                you’re under 50
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-1"
+              >
+                you only have a defined benefit pension (final salary or career-average salary) or
+              </p>
+            </li>
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-wise-not-eligible-callout-item-0-2"
+              >
+                you only have an overseas pension.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-0"
+      >
+        We can still help if you’re not eligible for Pension Wise. You can contact our pension specialists for free guidance:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="pension-wise-not-eligible-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-0"
+            >
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="tel:08000113797"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                call us on 0800 011 3797
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-1"
+            >
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                use our webchat
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-wise-not-eligible-item-0-2"
+            >
+              <a
+                class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                use our online form
+                <span
+                  class="sr-only"
+                >
+                   (opens in a new window) 
+                </span>
+                <svgr-mock
+                  class="inline ml-[6px] mr-[2px]"
+                />
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-1"
+      >
+        We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays.
+      </p>
+    </section>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-wise-not-eligible-content-2"
+      >
+        You can also use our 
+        <a
+          class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none mb-2"
+          href="#"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          pension guides and tools.
+          <span
+            class="sr-only"
+          >
+             (opens in a new window) 
+          </span>
+          <svgr-mock
+            class="inline ml-[6px] mr-[2px]"
+          />
+        </a>
+      </p>
+    </section>
+  </div>
+</div>
+`;

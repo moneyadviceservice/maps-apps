@@ -1,0 +1,50 @@
+trigger: none
+
+parameters:
+  - name: projectName
+    displayName: Playwright target project
+    type: string
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+
+variables:
+  - group: Maps-Apps-Pipeline-Secrets
+  - group: mhpdE2eTest-test
+
+stages:
+  - stage: Test_Cross_Browser
+    displayName: 'Cross Browser Tests'
+    jobs:
+      - ${{ if eq(parameters.projectName, 'adjustable-income-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: adjustable-income-calculator
+              baseUrl: https://develop--adjustable-income-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'baby-cost-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: baby-cost-calculator
+              baseUrl: https://develop--baby-cost-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'budget-planner') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: budget-planner
+              baseUrl: https://develop--mh-budget-planner.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'cash-in-chunks') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: cash-in-chunks
+              baseUrl: https://develop--cash-in-chunks.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'compare-accounts') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: compare-accounts
+              baseUrl: https://develop--mh-compare-accounts.netlify.app/

@@ -1,0 +1,81 @@
+{
+  "title": "Living costs",
+  "fields": {
+    "grocery-shopping": {
+      "title": "Grocery shopping",
+      "information": "This is a tricky figure to get right, but it's really important that you are as accurate as possible. Bear in mind that your weekly shop probably includes more than just food - you might buy things like toiletries and cleaning products too. And remember to include all those extras you buy throughout the week, like milk, bread and snacks.\n\nWhy not try saving money on your shopping bill: [Top money saving tips to help you shop smarter](https://www.moneyhelper.org.uk/en/blog/supermarket-savings/five-ways-to-save-at-the-supermarket)"
+    },
+    "takeaways": {
+      "title": "Takeaways",
+      "information": "Include the cost of any takeaways you buy at home and also any money you give to older children to buy their own takeaway food when they are out and about. Going out for meals is covered under 'Leisure' so there's no need to include that here."
+    },
+    "alcohol-at-home": {
+      "title": "Alcohol at home",
+      "information": "Don't include this if you've already counted it in your weekly shop. But if you buy alcohol from the off-licence or any other outlet, and you haven't already counted it, make sure you include it here. Seeing the amount you spend per month on alcohol might even motivate you to cut down a bit!"
+    },
+    "smoking-and-vaping": {
+      "title": "Smoking and vaping",
+      "information": "Don't include this if you've already counted it in your weekly shop. But if you buy cigarettes or vapes separately, make sure you include the cost here. Don't forget to include any extra you might buy when you're on a night out.\n\nSeeing the amount you spend per month on smoking might even motivate you to kick the habit!"
+    },
+    "lunches-snacks": {
+      "title": "Lunches & snacks",
+      "information": "Don't include the cost of packed lunches if you buy the ingredients as part of your weekly shop. And if you never buy any snacks then you can leave this one blank.\n\nFor the rest of us, this will probably come as a bit of a shock once we've added up sandwiches, crisps and all those other treats we buy to make the working day that little bit brighter!\n\nIf you want to see how much you spend on snacks and sandwiches, try our [Beginner's guide to managing your money](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money)"
+    },
+    "takeaway-coffees": {
+      "title": "Takeaway coffees",
+      "information": "If you want to know how much you spend each week on takeaway coffees and other hot drinks, try our [Beginner's guide to managing your money](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money)"
+    },
+    "union-professional-fees": {
+      "title": "Union/professional fees",
+      "information": "Include here the cost of your union membership and any other professional bodies you belong to and pay for yourself."
+    },
+    "clothes": {
+      "title": "Clothes",
+      "information": "The only way to get an accurate picture here is to work out what you (and your partner if you have one) spend in a year on clothes and enter that amount. Then you can ensure you've taken into account big items like a winter coat or a new suit. Only include clothes for work if you haven't entered them separately in the box above."
+    },
+    "shoes": {
+      "title": "Shoes",
+      "information": "This is one of those figures that you need to work out across the year. Count up the cost of every last pair of shoes, boots and flip flops that you've bought for the whole family in the past year. Only include school shoes, football boots, and so on if you haven't counted them under school uniform."
+    },
+    "work-clothes": {
+      "title": "Work clothes",
+      "information": "Depending on your job, this is where you need to include: overalls and work clothes that you buy yourself, any uniform that's not provided with the job, and suits and other smart clothes that you buy just for work."
+    },
+    "childrens-clothes": {
+      "title": "Children’s clothes",
+      "information": "The only way to get an accurate picture here is to work out what you spend in a year and enter that amount. Then you can be sure you've budgeted for big items like a winter coat or a football kit. Remember to take into account hand-me-downs when calculating the amount you spend on the younger ones.\n\nThere's a separate box for school uniform so no need to include that here."
+    },
+    "school-uniform": {
+      "title": "School uniform",
+      "information": "You might do one main school uniform shop just before the start of the school year, but you should also include things that you buy at other times of year like socks, tights and summer dresses or shorts.\n\nThings like blazers probably last more than one year so you can divide that cost by two or three (or more).\n\nOh, and don't forget to include the PE kit – that can sometimes be the most expensive part of a school uniform."
+    },
+    "laundry-and-dry-cleaning": {
+      "title": "Laundry and dry cleaning",
+      "information": "Enter everything you spend in the launderette or at the dry cleaners. Only include the money you spend on washing powder, etc if you haven't included it under grocery shopping."
+    },
+    "hairdressing": {
+      "title": "Hairdressing",
+      "information": "Add up here what you spend on haircuts for the whole family. If some of you get your hair cut more often than others you should add up how much you spend across a longer period. For example, if you and the children get your hair cut every three months and your husband gets his done every month, just add up what you spend on one haircut for you and the kids and three haircuts for him and select 'quarter' from the dropdown menu."
+    },
+    "beauty-treatments": {
+      "title": "Beauty treatments",
+      "information": "Enter anything that you spend on having your eyebrows or nails done or any other beauty treatments. Only include make-up products if you're not going to include them as part of toiletries in the next box."
+    },
+    "toiletries": {
+      "title": "Toiletries",
+      "information": "Leave this blank if you've already counted toiletries in your weekly shop. But if you buy toiletries separately, and/or you haven't already counted them, make sure you include your spend here."
+    },
+    "eye-care": {
+      "title": "Eye care",
+      "information": "This is where you should add up anything you spend on eye tests, glasses, contact lenses, solutions, etc. Eye tests for the under 16s and over 60s are free."
+    },
+    "dental-care": {
+      "title": "Dental care",
+      "information": "If you never need dental treatment you are probably OK to just budget for routine check-ups here. But if you frequently need to pay for treatment you should add up how much you've spent at the dentist over the past year. If you have dental insurance, or you pay a monthly amount towards a dental plan, you can leave this box blank and fill in the amount you pay in the insurance section on the next page. Remember, children under the age of 18 get free dental treatment. Only include the cost of toothpaste, floss, etc if you haven't already entered them under toiletries or as part of your grocery shopping."
+    },
+    "prescriptions-medicines": {
+      "title": "Prescriptions & medicines",
+      "information": "For prescription costs in England visit the [NHS Choices](https://www.nhs.uk/) website.\n\nRemember to include things you buy over the counter like painkillers and treatments for coughs and colds, etc. Prescriptions are free in Scotland, Wales and Northern Ireland."
+    }
+  }
+}

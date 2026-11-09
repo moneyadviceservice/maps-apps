@@ -1,0 +1,130 @@
+{
+  "site": {
+    "tool-name": "Budget planner",
+    "title": "Budget Planner",
+    "document-title": "Budget Planner",
+    "money-helper-tools": "MoneyHelper Tools",
+    "back": "Back",
+    "meta": {
+      "og-title": "Use our budget planner | MoneyHelper",
+      "og-url": "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/use-our-budget-planner",
+      "og-description": "Use the free online Money Helper Budget Planner tools to work out how much money you have coming in and what you're spending it on."
+    },
+    "analytics": {
+      "tab-page-title": "Budget planner: {title} - MoneyHelper Tools",
+      "page-title": "Budget Planner - MoneyHelper Tools"
+    }
+  },
+  "common": {
+    "income": "Income",
+    "spending": "Spending",
+    "total-labels": {
+      "positive": "Spare cash",
+      "neutral": "Balance",
+      "negative": "Overspend"
+    },
+    "frequencies": {
+      "day": "Per day",
+      "week": "Per week",
+      "2-weeks": "Per 2 weeks",
+      "4-weeks": "Per 4 weeks",
+      "month": "Per month",
+      "quarter": "Per quarter",
+      "6-months": "Per 6 months",
+      "year": "Per year"
+    },
+    "groups": {
+      "pay": "Pay",
+      "benefits-and-tax-credits": "Benefits & Tax Credit",
+      "pension": "Pension",
+      "other-income": "Other income",
+      "mortgage-rent": "Mortgage & rent",
+      "other-property": "Other property charges",
+      "home-insurance": "Home insurance",
+      "utilities": "Utilities",
+      "food-drink": "Food & drink",
+      "insurance": "Insurance",
+      "banking": "Banking",
+      "credit": "Credit",
+      "savings-investments": "Savings and investments",
+      "future-plans": "Future plans",
+      "financial-advice": "Financial and legal advice",
+      "children": "Children",
+      "school": "School",
+      "support-student": "Support for student children",
+      "support-relatives": "Support for other relatives",
+      "pets": "Pets",
+      "donations": "Donations & sponsorships",
+      "family-loan": "Loan repayment to family/friend",
+      "car-costs": "Car costs",
+      "public-transport": "Public transport",
+      "entertainment": "Entertainment",
+      "one-offs": "One-offs",
+      "holidays": "Holidays",
+      "work": "Work",
+      "clothes-shoes": "Clothes & shoes",
+      "health-beauty": "Health & beauty",
+      "additional": "Your additional items"
+    }
+  },
+  "components": {
+    "summary-total": {
+      "progress": "Your progress",
+      "total": "Summary total",
+      "monthly": "(monthly)",
+      "amount": "Amount"
+    },
+    "reset-calculator": {
+      "title": "Reset the calculator",
+      "description": "Are you sure you want to clear your budget information?",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    },
+    "dialog": {
+      "close": "Close",
+      "reset": "Reset"
+    }
+  },
+  "pages": {
+    "tab": {
+      "welcome-back": {
+        "title": "Welcome back to your budget",
+        "items": [
+          "Continue to fill out all the categories that apply to you",
+          "Use ‘save and return’ again if you need to pause and come back"
+        ]
+      },
+      "additional-item": "Your additional item",
+      "in-pounds": "{label} in pounds",
+      "more-info": "More info",
+      "less-info": "Less info",
+      "continue": "Continue",
+      "save-and-come-back": "Save and come back later"
+    },
+    "save": {
+      "title": "Save and come back later",
+      "sub-heading": "Enter your email below and we’ll send you a link to access your saved progress. Use the link to return to your budget any time.",
+      "input-label": "Your email address",
+      "input-hint": "We’ll only use this to send you a link to your saved progress",
+      "error-message": "Error: Enter an email address in the correct format, like name@example.com",
+      "button": "Save and send email"
+    },
+    "progress-saved": {
+      "title": "Progress saved",
+      "sub-heading": "What happens next",
+      "text": [
+        "We’ve sent you an email. It’ll come from moneyhelper@notifications.service.gov.uk. Make sure to check your spam folder if you haven’t received it.",
+        "Click the link in the email to return to your budget."
+      ],
+      "main-site-link": "https://www.moneyhelper.org.uk/en",
+      "continue": "Continue to MoneyHelper",
+      "continue-embedded": "Go to MoneyHelper",
+      "resend-email": "Resend email"
+    },
+    "error-page": {
+      "heading": "We're sorry, something went wrong",
+      "text": "An unexpected error occurred while saving your data. We're sorry for the inconvenience and appreciate your patience. Please try again later.",
+      "contact": "If you're still having issues, you can [contact us](https://www.moneyhelper.org.uk/en/contact-us) for support."
+    }
+  }
+}

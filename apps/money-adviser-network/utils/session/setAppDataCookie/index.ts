@@ -1,0 +1,1 @@
+export { setAppDataCookie } from './setAppDataCookie';

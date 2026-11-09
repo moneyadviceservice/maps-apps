@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ProgressIndicator component renders correctly 1`] = `
+<p
+  class="mb-1 text-sm font-semibold text-gray-650 leading-[normal] lg:hidden"
+  data-testid="progress-indicator"
+>
+  <span
+    class="sr-only"
+  >
+    test sr only text
+  </span>
+  <span>
+    test step
+  </span>
+   — 
+  <span>
+    test section
+  </span>
+</p>
+`;

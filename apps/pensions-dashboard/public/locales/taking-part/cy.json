@@ -1,0 +1,251 @@
+{
+  "common": {
+    "exit-cta-link": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-dashboard/research-panel",
+    "exit-cta": "Dychwelyd i HelpwrArian",
+    "error-callout": {
+      "title": "Mae yna broblem"
+    }
+  },
+  "layout": {
+    "title": "Rhowch gynnig ar Ddangosfwrdd Pensiynau HelpwrArian"
+  },
+  "components": {
+    "data-and-privacy": {
+      "title": "Eich data a'ch preifatrwydd",
+      "back": "https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pensions-dashboard/research-panel",
+      "intro": "Rydym yn defnyddio'ch gwybodaeth i ddod o hyd i'ch pensiynau, ond **nid ydym yn ei storio**. Dim ond codau gyda ffugenw yr ydym yn eu dal i redeg y gwasanaeth.",
+      "these-are": "**Y rhain yw:**",
+      "identifiers": [
+        "dynodwyr ar gyfer eich caniatâd",
+        "cod unigryw sy'n eich cynrychioli chi",
+        "dynodwyr ar gyfer unrhyw bensiynau sy'n cael eu cyfateb i chi."
+      ],
+      "research-heading": "Sut rydym yn defnyddio eich data ymchwil",
+      "research-paragraphs": [
+        "Byddwn yn storio eich data ymchwil yn ddiogel. Dim ond ymchwilwyr awdurdodedig fydd yn gallu cael mynediad ato.",
+        "Rydym yn gwneud yn ddienw yr holl ganfyddiadau ymchwil rydyn ni'n eu defnyddio mewn cyflwyniadau ac adroddiadau. Mae hyn yn golygu na fydd unrhyw un yn gweld eich manylion nac yn gwybod bod y canfyddiadau wedi dod oddi wrthych chi.",
+        "Efallai y byddwn yn defnyddio teclynnau deallusrwydd artiffisial (AI) i helpu i ddadansoddi a chrynhoi adborth. Ni fydd unrhyw ddata personol yn cael ei rannu ag unrhyw teclyn AI, a bydd ein tîm ymchwil yn adolygu unrhyw allbynnau cyn eu defnyddio."
+      ],
+      "research-list": [
+        "Rydym yn cadw data ymchwil am hyd at **2 flynedd**, yna rydyn ni'n ei ddileu neu'n ei wneud yn ddienw.",
+        "Rydym yn dilyn **GDPR** a'r holl gyfreithiau diogelu data perthnasol eraill.",
+        "Gallwch roi'r gorau i gymryd rhan ar unrhyw adeg. Ni fydd hyn yn effeithio ar unrhyw wasanaethau neu gefnogaeth a dderbyniwch gennym ni."
+      ],
+      "privacy-notice": "Gweler ein [hysbysiad preifatrwydd](https://portal.participantkit.com/f7446ec8-3a6a-4763-a416-fbac77ffdee7) (mewn Saesneg) am ragor o wybodaeth.",
+      "removing-heading": "Tynnu eich data ymchwil",
+      "removing-intro": "Gallwch ofyn i dynnu eich data cyfranogiad ymchwil yn ôl trwy gysylltu â [dpo@maps.org.uk_target=_self](mailto:dpo@maps.org.uk).",
+      "removing-list": [
+        "Byddwn yn dileu data eich panel ymchwil ac unrhyw ddata cyfranogiad ymchwil nad yw wedi'i wneud yn ddienw eto.",
+        "Bydd data dan ffugenw yn y gwasanaeth Find yn parhau i gael ei storio nes ei fod yn cael ei ddileu'n awtomatig ar ôl **5 blynedd o anweithgarwch**."
+      ]
+    },
+    "agreement-and-consent": {
+      "title": "Cytuno i gymryd rhan",
+      "intro-paragraph": "I ddefnyddio Dangosfwrdd Pensiynau HelpwrArian, mae’n rhaid i chi gytuno i’r canlynol:",
+      "listItems": [
+        "Rydych wedi darllen ac yn cytuno i gydymffurfio â [Thelerau ac amodau'r wefan](https://www.moneyhelper.org.uk/cy/about-us/terms-and-conditions). Bydd y telerau hyn yn llywodraethu eich defnydd o wasanaeth Dangosfwrdd Pensiynau HelpwrArian (“**MHPD**”) a Dod o hyd i’ch pensiynau (“**Find**”). Mae unrhyw gyfeiriadau yn y telerau at y wefan yn cyfeirio at wefannau MHPD a Find;",
+        "Rydych yn deall bod defnyddio gwasanaethau MHPD a Find yn gofyn i chi gadarnhau eich hunaniaeth gan ddefnyddio One Login, sy'n ddarostyngedig i delerau ac amodau One Login a nodir yma: [Telerau ac amodau - GOV.UK One Login](https://signin.account.gov.uk/terms-and-conditions);",
+        "Rydych yn deall bod gwasanaethau MHPD a Find mewn cyfnod profi. Efallai na fyddant yn gweithio fel y bwriadwyd ac efallai y bydd y cynnwys a ddarperir drwyddynt yn anghyflawn neu'n anghywir. Ni ddylech ddibynnu ar y cynnwys hwn ar gyfer gwneud unrhyw benderfyniadau ariannol na chymryd unrhyw gamau ar ei sail;",
+        "Rydych yn cytuno i ddefnyddio gwasanaethau MHPD a Find yn unig i gynorthwyo'r Gwasanaeth Arian a Phensiynau yn ei waith profi ac at ddibenion personol a domestig.",
+        "Rydych yn deall y gallwch roi'r gorau i gymryd rhan ar unrhyw adeg, ac ni fydd hyn yn effeithio ar y gwasanaeth neu'r gefnogaeth a gewch gan y Gwasanaeth Arian a Phensiynau (MaPS).",
+        "Rydych yn deall bod y syniadau, y dyluniadau a'r gwasanaethau ar y dangosfwrdd yn gyfrinachol ac na fyddwch yn eu rhannu.",
+        "Rydych yn cytuno i gymryd rhan yn y gwaith o brofi Dangosfwrdd Pensiynau HelpwrArian ac i'ch gwybodaeth gael ei defnyddio fel y nodir uchod. Rydych hefyd yn cytuno y gellir defnyddio eich data at ddibenion ymchwil (byddwn yn dileu'r data hwn ar ôl 2 flynedd).",
+        "Rydych yn cytuno y gellir cysylltu â chi ynghylch cymryd rhan mewn ymchwil pellach."
+      ],
+      "exit-link": {
+        "text": "Na, nid wyf eisiau cymryd rhan."
+      }
+    },
+    "decline": {
+      "title": "Ydych chi'n siŵr nad ydych am gymryd rhan yn ein hymchwil?",
+      "back": "agreement-and-consent",
+      "content": "Ar hyn o bryd, dim ond os ydych yn cytuno i gymryd rhan mewn ymchwil y gallwch ddefnyddio’r gwasanaeth. Cliciwch ‘Yn ôl’ os hoffech newid eich ymateb. \n\nOs nad ydych yn cytuno â thelerau’r ymchwil, gallwch ddod yn ôl a defnyddio Dangosfwrdd Pensiynau HelpwrArian pan fydd ar gael i’r cyhoedd.",
+      "cta-link": "https://www.moneyhelper.org.uk/cy"
+    },
+    "about-you": {
+      "title": "Amdanoch chi",
+      "form": {
+        "first-name": {
+          "label": "Enw cyntaf",
+          "error": "Rhowch eich enw cyntaf"
+        },
+        "last-name": {
+          "label": "Cyfenw",
+          "error": "Rhowch eich cyfenw"
+        },
+        "email-address": {
+          "label": "E-bost",
+          "error": "Rhowch gyfeiriad e-bost yn y fformat cywir, fel enw@esiampl.com"
+        },
+        "age-range": {
+          "label": "Beth yw eich oedran?",
+          "options": [
+            {
+              "text": "18-24",
+              "value": "18-24"
+            },
+            {
+              "text": "25-34",
+              "value": "25-34"
+            },
+            {
+              "text": "35-49",
+              "value": "35-49"
+            },
+            {
+              "text": "50-64",
+              "value": "50-64"
+            },
+            {
+              "text": "65-74",
+              "value": "65-74"
+            },
+            {
+              "text": "75+",
+              "value": "75+"
+            },
+            {
+              "text": "Gwell gennyf beidio â dweud",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Dewiswch eich oed"
+        }
+      }
+    },
+    "where-you-live": {
+      "title": "Ble ydych chi’n byw?",
+      "form": {
+        "where-you-live": {
+          "label": "Ble ydych chi’n byw?",
+          "options": [
+            {
+              "text": "Lloegr",
+              "value": "england"
+            },
+            {
+              "text": "Yr Alban",
+              "value": "scotland"
+            },
+            {
+              "text": "Cymru",
+              "value": "wales"
+            },
+            {
+              "text": "Gogledd Iwerddon",
+              "value": "northern-ireland"
+            },
+            {
+              "text": "Nid wyf yn byw yn y DU",
+              "value": "not-in-uk"
+            },
+            {
+              "text": "Gwell gennyf beidio â dweud",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Dewiswch y wlad lle rydych chi'n byw"
+        }
+      }
+    },
+    "your-sex": {
+      "title": "Beth yw eich rhywedd?",
+      "sub-title": "Os oes gwell gennych ddefnyddio term eich hun, dewiswch ‘Arall’ a rhowch wybod i ni.",
+      "form": {
+        "your-sex": {
+          "label": "Beth yw eich rhywedd?",
+          "options": [
+            {
+              "text": "Benyw",
+              "value": "female"
+            },
+            {
+              "text": "Gwryw",
+              "value": "male"
+            },
+            {
+              "text": "Gwell gennyf beidio â dweud",
+              "value": "prefer-not-to-say"
+            },
+            {
+              "text": "Arall",
+              "value": "other"
+            }
+          ],
+          "error": "Dewiswch a ydych yn fenyw neu'n ddyn, neu os yw'n well gennych beidio â dweud. Os ydych yn defnyddio eich term eich hun, dewiswch ‘Arall’ a rhowch wybod i ni."
+        },
+        "other-sex": {
+          "label": "Dywedwch wrthym pa derm rydych chi’n ei ddefnyddio",
+          "error": "Rhowch y term rydych chi’n ei ddefnyddio"
+        }
+      }
+    },
+    "health-conditions": {
+      "title": "A oes gennych gyflwr iechyd neu salwch hirdymor?",
+      "sub-title": "Gallai hyn fod yn unrhyw gyflwr iechyd neu salwch corfforol neu feddyliol sydd wedi para, neu y disgwylir iddo bara, am flwyddyn neu fwy.",
+      "form": {
+        "health-conditions": {
+          "label": "A oes gennych gyflwr iechyd neu salwch hirdymor?",
+          "options": [
+            {
+              "text": "Oes",
+              "value": "yes|health-conditions-impact"
+            },
+            {
+              "text": "Na",
+              "value": "no|submit"
+            },
+            {
+              "text": "Gwell gennyf beidio â dweud",
+              "value": "prefer-not-to-say|submit"
+            }
+          ],
+          "error": "Dewiswch a oes gennych gyflwr iechyd neu salwch hirdymor, neu a yw'n well gennych beidio â dweud"
+        }
+      }
+    },
+    "health-conditions-impact": {
+      "title": "A yw unrhyw un o'ch cyflyrau neu'ch salwch yn lleihau eich gallu i wneud gweithgareddau o ddydd i ddydd?",
+      "sub-title": "Er engrhaifft bwyta, ymolchi, cerdded, mynd i siopa neu wneud tasgau ar-lein.",
+      "form": {
+        "health-conditions-impact": {
+          "label": "A yw unrhyw un o'ch cyflyrau neu'ch salwch yn lleihau eich gallu i wneud gweithgareddau o ddydd i ddydd?",
+          "options": [
+            {
+              "text": "Ydyn, llawer",
+              "value": "yes"
+            },
+            {
+              "text": "Ydyn, ychydig",
+              "value": "yes-little"
+            },
+            {
+              "text": "Na",
+              "value": "no"
+            },
+            {
+              "text": "Gwell gennyf beidio â dweud",
+              "value": "prefer-not-to-say"
+            }
+          ],
+          "error": "Dewiswch a yw unrhyw un o'ch cyflyrau iechyd yn ei gwneud hi'n anoddach gwneud gweithgareddau o ddydd i ddydd. Neu, dewiswch ‘Mae'n well gen i beidio â dweud’"
+        }
+      }
+    },
+    "loading": {
+      "title": "Mae eich cais wedi’i anfon - arhoswch ar y dudalen hon. \n\nGall hyn gymryd ychydig eiliadau."
+    },
+    "submit": {
+      "title": "Rydych chi ar fin ymweld â'r Dangosfwrdd Pensiynau",
+      "content": "Diolch am gytuno i gymryd rhan yn ein hymchwil. Rydych bellach yn barod i ddechrau defnyddio Dangosfwrdd Pensiynau HelpwrArian."
+    },
+    "error": {
+      "title": "Mae'n ddrwg gennym, mae problem gyda'r gwasanaeth.",
+      "content": "Ymddiheurwn am unrhyw anghyfleustra a rydym yn gwerthfawrogi eich amynedd. \n\nCeisiwch eto yn nes ymlaen."
+    },
+    "sign-up-update": {
+      "title": "Cofrestrwch eto i brofi Dangosfwrdd Pensiynau",
+      "content": "Mae ein proses gofrestru wedi newid ers i chi gytuno o'r blaen i gymryd rhan mewn profi Dangosfwrdd Pensiynau HelpwrArian. \n\nBydd angen i chi lenwi ffurflen ganiatâd fer eto, gan gynnwys eich enw, eich cyfeiriad e-bost a rhai manylion amdanoch chi ar gyfer ein tîm ymchwil. Yna, byddwch yn cael mynediad at y dangosfwrdd ar unwaith."
+    }
+  }
+}

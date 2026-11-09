@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DownloadStatementButton component renders correctly 1`] = `
+<button
+  class="border-0 t-button relative rounded outline-none shadow-bottom-gray items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button flex w-full py-3 px-8 bg-green-300 text-lg font-bold leading-[normal] text-blue-600 hover:bg-green-500 active:bg-green-500 active:outline-blue-600 active:text-blue-600 lg:w-auto"
+  data-testid="download-statement-button"
+  type="button"
+>
+  <span />
+  Download PDF Statement
+  <span />
+</button>
+`;
