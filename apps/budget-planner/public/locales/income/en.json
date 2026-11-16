@@ -1,0 +1,97 @@
+{
+  "title": "Income",
+  "fields": {
+    "pay": {
+      "title": "Pay (after tax)",
+      "information": "You can find this on your payslip or bank statement. Enter the exact amount you get paid after tax, National Insurance and other deductions (such as pension contributions, student loan repayments and so on) have been taken off.\n\nCan't make sense of your payslip?\n\nSee our guide: [Understanding your payslip](https://www.moneyhelper.org.uk/en/work/employment/understanding-your-payslip)"
+    },
+    "self-employment": {
+      "title": "Income from self-employment",
+      "information": "Enter either the amount you plan to take out of the business for personal use (known as 'drawings'), or your expected net profit, that's your total business income minus any expenses."
+    },
+    "statutory-pay-sick": {
+      "title": "Statutory Sick Pay",
+      "information": "This should be listed as a separate item on your payslip. If you also qualify for occupational sick pay, this should be shown as a separate figure, in which case, add the two together."
+    },
+    "statutory-maternity-pay": {
+      "title": "Statutory Maternity Pay or Statutory Adoption Pay",
+      "information": "The amount you get depends on how much you earn and how long you've been off work. It should be listed as a separate item on your payslip.\n\nYou can find more details on maternity pay, including how much you're entitled to, on [GOV.UK](https://www.gov.uk/maternity-pay-leave)"
+    },
+    "universal-credit": {
+      "title": "Universal Credit",
+      "information": "Universal Credit is a monthly payment to help with your living costs. It has replaced a number of older benefits, and the amount you receive depends on your personal circumstances.\n\nTo find out how much you get, check any letters or paperwork from the Department for Work and Pensions (DWP), or look at your bank statement."
+    },
+    "child-benefit": {
+      "title": "Child Benefit",
+      "information": "You are usually entitled to Child Benefit for children you’re responsible for.\n\nYou can find more information, including Child Benefit Rates, on the [GOV.UK](https://www.gov.uk/child-benefit) website"
+    },
+    "jobseekers-allowance": {
+      "title": "Jobseeker's Allowance",
+      "information": "Check the paperwork from the office that pays your benefit, or look at your bank statement. The amount you get varies depending on things like how old you are and whether you have children. It's normally paid every two weeks."
+    },
+    "esa-or-incapacity-benefit": {
+      "title": "Employment and Support Allowance (ESA) or Incapacity Benefit",
+      "information": "Check your award notice, or look at your bank statement. The amount you get varies depending on how old you are and how long you've been claiming it. It's normally paid every two weeks."
+    },
+    "independence-payment": {
+      "title": "Personal Independence Payment, Disability Living Allowance or Adult Disability Payment",
+      "information": "Check your award notice, or look at your bank statement. The amount you get varies depending on the nature of your disability and how much help you need. It's normally paid every four weeks."
+    },
+    "pension-credit": {
+      "title": "Pension Credit",
+      "information": "Check your award notice or bank statement to see exactly how much you get. The amount varies according to your other income and whether you're single or in a couple. Pension Credit is paid either: every week, every two weeks, or every four weeks."
+    },
+    "attendance-allowance": {
+      "title": "Attendance Allowance",
+      "information": "Check your award notice, or look at your bank statement. The amount you get varies depending on how much help you need. It's usually paid every 4 weeks."
+    },
+    "carers-allowance": {
+      "title": "Carer's Allowance",
+      "information": "You can apply for Carer's Allowance if you care for someone at least 35 hours a week and they get certain benefits.\n\nYou can find out more, including rates, on the [GOV.UK](https://www.gov.uk/carers-allowance) website."
+    },
+    "housing-benefit": {
+      "title": "Housing Benefit",
+      "information": "Check your award notice to find out how much you get. Housing Benefit can be paid weekly, fortnightly, four-weekly or monthly. If your Housing Benefit goes directly to your landlord leave this box blank. If you receive the Housing Benefit and pay your landlord yourself enter the amount you get here."
+    },
+    "state-pension": {
+      "title": "State Pension",
+      "information": "If you're getting the State Pension it will show on your bank statement as being paid by DWP (the Department for Work and Pensions) and alongside your National Insurance number.\n\nYou can find more information, including rates, on [GOV.UK](https://www.gov.uk/state-pension) website."
+    },
+    "workplace-pension": {
+      "title": "Workplace pension - Defined benefit or Collective defined contribution",
+      "information": "If you're being paid a workplace pension you can find the exact amount on your payslip or bank statement. Enter the amount you get paid after tax has been taken off. Your workplace pension is usually paid monthly."
+    },
+    "annuity": {
+      "title": "Annuity income",
+      "information": "You can use your pension pot to buy a lifetime annuity, a guaranteed income for life. Or you can buy an income for a fixed term, also known as a fixed term annuity. You can usually choose to take up to 25% of your pot as a one-off tax-free lump sum at the start."
+    },
+    "drawdown": {
+      "title": "Pension drawdown",
+      "information": "Flexible retirement income is often referred to as pension drawdown, or flexi-access drawdown and is a way of taking money out of your pension pot to live on in retirement."
+    },
+    "savings-investments": {
+      "title": "Income from savings & investments",
+      "information": "If you have savings accounts check your savings statements to see how much interest you earn. If you have investments such as shares or bonds, check your paperwork to see how much of a return you make. Whether or not you owe any tax will depend on the type of investments you have and will be paid via your tax return."
+    },
+    "rent-or-board": {
+      "title": "Rent or board",
+      "information": "If you have a lodger or a grown-up child who lives at home and pays you rent, enter the amount here.\n\nTo find out more about private renting, including tax rates, visit [GOV.UK](https://www.gov.uk/private-renting)."
+    },
+    "child-maintenance": {
+      "title": "Child maintenance",
+      "information": "Enter the full amount of child maintenance or child support that you get from your ex. If the amount varies, add up everything you received last year and enter that, selecting 'year' from the dropdown menu. That way, the calculator will work out an average monthly amount for you.\n\nIf you want to know more about your right to child maintenance, see our guide: [How do I arrange child maintenance?](https://www.moneyhelper.org.uk/en/family-and-care/divorce-and-separation/how-do-i-arrange-child-maintenance)"
+    },
+    "student-loans-and-grants": {
+      "title": "Student loans & grants",
+      "information": "If you're in education and receiving a student loan or grant, enter the amount here. Don't enter your tuition fee loan, just the maintenance loan and anything else you get to help with living costs. Make sure you add the amount you get for all three terms together and select 'year' from the dropdown menu."
+    },
+    "other-financial-support": {
+      "title": "Other financial support",
+      "information": "If you have any other money coming in regularly, perhaps money from a charity or other organisation, enter it here."
+    },
+    "gifts": {
+      "title": "Gifts from family & friends",
+      "information": "If your parents - or anyone else - regularly give you money to live on, enter the amount here."
+    }
+  }
+}

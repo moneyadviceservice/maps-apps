@@ -1,0 +1,85 @@
+import { act } from 'react';
+
+import { render, screen, waitFor } from '@testing-library/react';
+
+import { RubyIFrame } from '.';
+
+import '@testing-library/jest-dom/extend-expect';
+
+jest.mock('next/router', () => ({
+  useRouter: jest.fn().mockReturnValue({
+    query: {},
+  }),
+}));
+
+describe('RubyIFrame component', () => {
+  it('renders correctly', () => {
+    render(
+      <RubyIFrame
+        toolData={{
+          url: {
+            en: 'https://embedded-journeys.moneyhelper.org.uk/en/leave-pot-untouched',
+            cy: 'https://embedded-journeys.moneyhelper.org.uk/cy/leave-pot-untouched',
+          },
+          id: 'leave-pot-untouched',
+        }}
+        testId="test-component"
+      />,
+    );
+    const container = screen.getByTestId('test-component');
+    expect(container).toMatchSnapshot();
+  });
+
+  it('updates iframe height on MASRESIZE- message', async () => {
+    render(
+      <RubyIFrame
+        toolData={{
+          url: {
+            en: 'https://embedded-journeys.moneyhelper.org.uk/en/leave-pot-untouched',
+            cy: 'https://embedded-journeys.moneyhelper.org.uk/cy/leave-pot-untouched',
+          },
+          id: 'leave-pot-untouched',
+        }}
+      />,
+    );
+    const container = screen.getByTestId('iframe');
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', {
+          data: 'MASRESIZE-200',
+          origin: 'https://embedded-journeys.moneyhelper.org.uk',
+        }),
+      );
+    });
+
+    await waitFor(() => {
+      expect(container).toHaveAttribute('height', '200');
+    });
+  });
+
+  it('ignores MASRESIZE- messages from an untrusted origin', () => {
+    render(
+      <RubyIFrame
+        toolData={{
+          url: {
+            en: 'https://embedded-journeys.moneyhelper.org.uk/en/leave-pot-untouched',
+            cy: 'https://embedded-journeys.moneyhelper.org.uk/cy/leave-pot-untouched',
+          },
+          id: 'leave-pot-untouched',
+        }}
+      />,
+    );
+    const container = screen.getByTestId('iframe');
+
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', {
+          data: 'MASRESIZE-200',
+          origin: 'https://example.com',
+        }),
+      );
+    });
+
+    expect(container).toHaveAttribute('height', '0');
+  });
+});

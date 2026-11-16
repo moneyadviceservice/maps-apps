@@ -1,0 +1,25 @@
+<script>
+  window.gtag = function () { };
+  window.CookieControl = { load: function () { } };
+</script>
+
+<script>
+  var IzWidget = IzWidget || {};
+  var informizelyApi = null;
+  IzWidget['insitez.ready'] = function (api) {
+    informizelyApi = api;
+    window.informizelyApi = api;
+  };
+</script>
+
+<script id="_informizely_script_tag">
+  var IzWidget = IzWidget || {};
+  (function (d) {
+    var scriptElement = d.createElement('script');
+    scriptElement.type = 'text/javascript';
+    scriptElement.async = true;
+    scriptElement.src = "https://insitez.blob.core.windows.net/site/679d6fcc-5e17-4981-9e1e-c5cad5d6bb62.js";
+    var node = d.getElementById('_informizely_script_tag');
+    node.parentNode.insertBefore(scriptElement, node);
+  })(document);
+</script>

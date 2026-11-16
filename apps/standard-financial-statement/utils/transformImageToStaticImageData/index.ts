@@ -1,0 +1,1 @@
+export { transformImageToStaticImageData } from './transformImageToStaticImageData';

@@ -1,0 +1,66 @@
+{
+  "name": "pensions-dashboard-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/pensions-dashboard-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["pensions-dashboard"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pensions-dashboard:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.config.ts"
+      }
+    },
+    "e2e-qa": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.qa.config.ts"
+      }
+    },
+    "testmu-prelaunch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/e2e/pensions-dashboard-e2e",
+        "command": "ts-node -r tsconfig-paths/register src/lambda-test/pre-launch-script.ts"
+      }
+    },
+    "e2e-testmu": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["testmu-prelaunch"],
+      "options": {
+        "config": "apps/e2e/pensions-dashboard-e2e/playwright.testmu.config.ts"
+      },
+      "configurations": {
+        "windows": {
+          "project": ["*Windows*@lambdatest"]
+        },
+        "mac": {
+          "project": ["*MacOS *@lambdatest"]
+        },
+        "android": {
+          "project": ["*android@lambdatest"]
+        },
+        "ios": {
+          "project": ["*MacOS *@lambdatest (iPhone *)"]
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export { getCanonicalUrl } from './getCanonicalUrl';

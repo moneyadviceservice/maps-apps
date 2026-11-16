@@ -1,0 +1,1 @@
+export { setCanonicalUrl } from './setCanonicalUrl';

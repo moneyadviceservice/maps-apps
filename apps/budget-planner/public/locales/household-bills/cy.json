@@ -1,0 +1,89 @@
+{
+  "title": "Biliau'r cartref",
+  "fields": {
+    "mortgage": {
+      "title": "Ad-daliad morgais",
+      "information": "Rhowch eich ad-daliad morgais misol yma.\n\nOs oes gennych forgais llog yn unig yn ogystal â morgais gwaddol (neu rywbeth cyffelyb) – rhowch y taliad llog yma a'r ffigwr arall yn y blwch 'morgais gwaddol' isod.\n\nGwiriwch i weld a allwch arbed ychydig o arian ar eich morgais:[Ailforgeisio i dorri costau](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/remortgaging-to-cut-costs)"
+    },
+    "rent": {
+      "title": "Rhent",
+      "information": "Rhowch eich rhent yma a sicrhewch eich bod yn dewis yr amledd cywir (misol neu wythnosol er enghraifft).\n\nOs yw rhent yn cael ei dalu gan Fudd-dal Tai yn uniongyrchol i'ch landlord yna gadewch y blwch hwn yn wag.\n\nOs ydych yn talu rhan o'ch rhent eich hun, neu'r cyfan, rhowch y swm hynny yma."
+    },
+    "endowment": {
+      "title": "Gwaddol morgais",
+      "information": "Mae morgais gwaddol yn gynnyrch buddsoddiad sydd yn gynllun cynilo rheolaidd sy'n rhyddhau cyfandaliad ar ddiwedd cyfnod eich morgais. Efallai bod gennych un o'r rhain os oes gennych forgais llog yn unig.\n\nRhowch y swm yr ydych yn ei dalu i mewn i'r morgais gwaddol. Rhowch y taliad llog yn y blwch uchod.\n\nOs ydych yn bryderus na fydd eich morgais gwaddol yn cwrdd â'r hyn fydd yn ddyledus ar ddiwedd cyfnod eich morgais dylech ddelio â hyn yn syth. Gweler ein canllaw: [Delio gyda diffyg gwaddol](https://www.moneyhelper.org.uk/cy/homes/buying-a-home/dealing-with-an-endowment-shortfall)"
+    },
+    "insurance": {
+      "title": "Yswiriant bywyd morgais",
+      "information": "Mae morgais yswiriant bywyd yn talu cyfandaliad i dalu unrhyw ddyled morgais sydd ar ôl gennych os ydych yn marw.\n\nGwiriwch fanylion eich polisi neu eich datganiad banc i ddarganfod yn union beth yw eich premiymau misol.\n\nOs nad ydych wedi gwirio’ch polisi yn ddiweddar efallai byddwch yn darganfod ei fod yn werth siopa o gwmpas. Darganfyddwch fwy yn ein canllaw: [Sut a ble i brynu yswiriant bywyd](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/what-is-life-insurance)"
+    },
+    "ground-rent": {
+      "title": "Rhent tir",
+      "information": "Dyma swm blynyddol yr ydych yn ei dalu os ydych yn berchen ar eiddo lesddaliad. Mae'r rhan fwyaf o fflatiau a maisonettes yn eiddo lesddaliad.\n\nMae'n swm bychan fel arfer (£100 neu £200 y flwyddyn). Os ydych yn ansicr faint yr ydych yn ei dalu, gwiriwch y les am y swm.\n\n(Nid yw hyn yn berthnasol yn yr Alban.)"
+    },
+    "service-charge": {
+      "title": "Tâl gwasanaeth",
+      "information": "Rydych yn talu hyn i rydd-ddeiliad eich eiddo lesddaliad neu i asiant rheoli i dalu am gynnal a chadw mannau cymunedol mewn bloc o fflatiau. (Fe'i gelwir yn dâl ffactoreiddio yn yr Alban.)\n\nOs ydych yn ansicr faint yw swm eich ffi gwasanaeth, gwiriwch y les am y swm.\n\nOs ydych yn rhentu, yna mae'r ffi gwasanaeth yn cael ei gynnwys yn y rhent fel arfer."
+    },
+    "buildings-insurance": {
+      "title": "Yswiriant adeiladau",
+      "information": "Mae yswiriant adeiladau yn diogelu adeiladwaith eich cartref yn ogystal â'r celfi sefydlog, fel ceginau ac ystafelloedd ymolchi.\n\nOs ydych yn talu premiwm sengl ar gyfer yswiriant adeiladau a chynnwys, rhowch y swm unwaith gan adael y blwch arall yn wag.\n\nOs ydych yn rhentu cewch adael y blwch hwn yn wag. Cyfrifoldeb eich landlord yw yswiriant adeiladau.\n\nGwiriwch a allech chi gael bargen well ar gyfer eich yswiriant cartref: [Yswiriant cartref - sut i gael y fargen orau](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/home-insurance-how-to-get-the-best-deal)"
+    },
+    "contents-insurance": {
+      "title": "Yswiriant cynnwys",
+      "information": "Mae yswiriant cynnwys yn diogelu'r pethau sydd yn eich cartref, fel dodrefn, setiau teledu ac eitemau personol.\n\nOs ydych yn talu premiwm sengl ar gyfer yswiriant adeiladau a chynnwys, rhowch y swm unwaith gan adael y blwch arall yn wag.\n\nGwiriwch a allech chi gael bargen well ar gyfer eich yswiriant cartref: [Yswiriant cartref - sut i gael y fargen orau](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/home-insurance-how-to-get-the-best-deal)"
+    },
+    "council-tax": {
+      "title": "Y Dreth Gyngor neu Ardrethi",
+      "information": "Gwiriwch eich bil Treth Gyngor (neu bil Ardrethi os ydych yng Ngogledd Iwerddon) i ganfod faint yr ydych yn ei dalu'n flynyddol. Os ydych yn talu trwy Ddebyd Uniongyrchol, mae'n debyg y gwnewch 12 taliad misol, ond bydd rhai cynghorau yn eich bilio am 10 taliad y flwyddyn felly gwiriwch hyn cyn i chi roi'r swm."
+    },
+    "gas": {
+      "title": "Nwy",
+      "information": "Gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi ar nwy bob mis.\n\nOs ydych yn talu am nwy a thrydan gyda'i gilydd, rhowch y swm unwaith gan adael y blwch arall yn wag.\n\nOs oes gennych fesurydd rhagdalu bydd angen i chi gyfrifo faint wariwch chi bob blwyddyn. Os rhowch y swm blynyddol, bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi. Drwy wneud hynny, byddwch yn sicr o fod wedi ystyried eich defnydd gaeaf a'r haf.\n\nGwiriwch a allech chi arbed arian:[Arbedwch arian ar eich biliau nwy a thrydan](https://www.moneyhelper.org.uk/cy/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "electricity": {
+      "title": "Trydan",
+      "information": "Gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi ar nwy bob mis.\n\nOs ydych yn talu am nwy a thrydan gyda'i gilydd, rhowch y swm unwaith gan adael y blwch arall yn wag.\n\nOs oes gennych fesurydd rhagdalu bydd angen i chi gyfrifo faint wariwch chi bob blwyddyn. Os rhowch y swm blynyddol, bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi. Drwy wneud hynny, byddwch yn sicr o fod wedi ystyried eich defnydd gaeaf a'r haf.\n\nGwiriwch a allech chi arbed arian: [Arbedwch arian ar eich biliau nwy a thrydan](https://www.moneyhelper.org.uk/cy/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "other-fuel": {
+      "title": "Tanwydd arall i'r cartref",
+      "information": "Os ydych yn defnyddio olew, glo, coed neu unrhyw fath arall o danwydd, rhowch y swm wariwch chi yma. Os cyfrifwch faint wariwch chi bob blwyddyn, bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi. Drwy wneud hynny, byddwch yn sicr o fod wedi ystyried eich defnydd gaeaf a'r haf o danwydd."
+    },
+    "water": {
+      "title": "Dŵr",
+      "information": "Gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi ar ddŵr bob mis.\n\nOs oes gennych fesurydd dŵr cyfrifwch faint wariwch chi bob blwyddyn. Bydd y cyfrifiannell yn cyfrifo swm misol cyfartalog i chi. Drwy wneud hynny, byddwch yn sicr o fod wedi ystyried pethau fel dyfrio'r ardd yn yr haf.\n\nGwiriwch a allech chi gael bargen well:[Arbed arian ar eich bil dŵr](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "home-phone": {
+      "title": "Ffôn cartref a band eang",
+      "information": "Gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi. Os ydych yn talu am rentu'ch llinell a'r galwadau ar wahân, sicrhewch eich bod yn cynnwys y ddau yma.\n\nOs ydych yn talu am eich llinell dir, teledu a band eang gyda'i gilydd, rhowch y swm unwaith gan adael y blychau eraill yn wag.\n\nGwiriwch a allech chi gael bargen well:[Arbedwch arian ar eich ffôn cartref a band eang](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "mobile": {
+      "title": "Ffôn symudol",
+      "information": "Os ydych ar gontract gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi bob mis.\n\nOs ydych ar gontract talu wrth alw, rhowch y swm y byddwch yn ei wario bob tro a pha mor aml. A pheidiwch ag anghofio cost y ffôn ei hun. Os cewch ffôn newydd bob blwyddyn, rhowch hwn fel cost blynyddol.\n\nGwiriwch a allech chi gael bargen well: [Arbed arian ar eich ffôn symudol](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "tv-licence": {
+      "title": "Trwydded deledu",
+      "information": "Gallwch ganfod beth yw pris trwydded deledu ar wefan [tvlicensing.co.uk](https://www.tvlicensing.co.uk/)"
+    },
+    "cabel-or-satellite-tv": {
+      "title": "Teledu cebl neu loeren",
+      "information": "Gwiriwch eich bil neu gyfriflen banc i ganfod faint wariwch chi ar eich tanysgrifiad teledu.\n\nOs ydych yn talu am eich llinell dir, teledu a band eang gyda'i gilydd, rhowch y swm unwaith gan adael y blychau eraill yn wag."
+    },
+    "home-maintenance": {
+      "title": "Cynhaliaeth cartref",
+      "information": "Ceisiwch gyfrifo faint a wariwch ar gynnal a chadw yn y cartref ar gyfartaledd mewn blwyddyn. Gall hyn gynnwys peintio ac addurno, neu drwsio to sy'n gollwng neu gafnau sydd wedi eu blocio. Sicrhewch eich bod yn cynnwys unrhyw ddeunyddiau DIY a brynwch yn ogystal â'ch taliadau i blymwyr, trydanwyr neu adeiladwyr.\n\nHyd yn oed os diogelir y gwaith gan eich yswiriant, sicrhewch eich bod yn cynnwys y tâl dros ben yma."
+    },
+    "garden-maintenance": {
+      "title": "Cynnal a chadw'r ardd",
+      "information": "Ceisiwch gyfrifo faint a wariwch ar eich gardd ar gyfartaledd mewn blwyddyn. Gall hyn gynnwys prynu pethau fel planhigion a hadau, compost, gwrtaith, neu betrol ar gyfer eich peiriant torri gwair.\n\nOs ydych yn talu rywun dorri eich gwair neu i wneud unrhyw waith arall yn yr ardd i chi, rhowch hynny yma."
+    },
+    "appliance-rental": {
+      "title": "Rhentu offer",
+      "information": "Os ydych yn llogi unrhyw beiriannau, megis peiriant golchi, oergell neu deledu, rhowch y pris rhent wythnosol neu fisol yma."
+    },
+    "boiler-cover": {
+      "title": "Yswiriant boeler",
+      "information": "Os ydych wedi cymryd yswiriant i'ch diogelu rhag i'ch boeler dorri, rhowch y swm yr ydych yn ei dalu yma."
+    }
+  }
+}

@@ -1,0 +1,79 @@
+name: Backup Netlify Environment Variables to Azure Key Vault
+
+trigger: none
+
+schedules:
+  - cron: '0 2 * * *'
+    always: true
+    branches:
+      include:
+        - main
+    displayName: Daily Environment Variable Backup
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+variables:
+  - group: Netlify-TF-Credentials
+
+jobs:
+  - job: BackupEnvironmentVariables
+    displayName: 'Backup Netlify Environment Variables'
+    timeoutInMinutes: 90
+    steps:
+      - checkout: none
+      - task: AzureCLI@2
+        displayName: 'Backup Netlify Environment Variables to Azure Key Vault'
+        inputs:
+          azureSubscription: 'ADO-PWD-Connection'
+          scriptType: 'pscore'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            $setSecrets = @()
+            $completeAppCount = 0
+            $env:NETLIFY_AUTH_TOKEN="$(NETLIFY_API_TOKEN)"
+
+            $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+            $headers.Add("Authorization", "Bearer $(NETLIFY_API_TOKEN)")
+            $sites = (netlify sites:list --json) | ConvertFrom-Json
+            foreach ($site in $sites) {
+                $completeAppCount++
+                Write-Output ('Backing up App {0} of {1} - {2}' -f $completeAppCount,$sites.Count,$site.name)
+                $envVars = Invoke-RestMethod ('https://app.netlify.com/access-control/bb-api/api/v1/accounts/668bdcc086b4e91c25541ac1/env?site_id={0}&scope=all&context=all&level=all' -f $site.Id) -Method 'GET' -Headers $headers
+                
+                foreach ($var in $envVars) {
+                    foreach ($val in $var.values) {
+                        $context = $val.context
+                        if ($val.context_parameter) {
+                            $context += ':{0}' -f $val.context_parameter
+                        }
+
+                        if ($val.value) {
+                            $secretName = ('{0}---{1}---{2}' -f $site.id.split('-')[0], $var.key, $context).Replace('_', '-US-').Replace(':', '-CLN-').Replace('.', '-DOT-').Replace('/', '-FSLSH-')
+                            $setSecrets += $secretName
+                            try { 
+                                $existingSecretValue = az keyvault secret show --vault-name maps-apps-var-backup --name $secretName | ConvertFrom-Json
+                                if ($existingSecretValue.value -ne ('"{0}"' -f $val.value)) {
+                                    Write-Output ('Updating Secret {0} in context {1}' -f $var.key,$context)
+                                    $setResult = az keyvault secret set --vault-name maps-apps-var-backup --name $secretName --value $val.value
+                                }
+                            }
+                            catch {                
+                                Write-Output ('Creating Secret {0} in context {1}' -f $var.key,$context)
+                                $setResult = az keyvault secret set --vault-name maps-apps-var-backup --name $secretName --value $val.value
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            $existingSecrets = az keyvault secret list --vault-name maps-apps-var-backup | ConvertFrom-Json
+            $existingSecretsNames = $existingSecrets | foreach { $_.name }
+
+            $secretsToDelete = $existingSecretsNames | Where-Object { $_ -notin $setSecrets }
+            foreach ($secretToDelete in $secretsToDelete) {
+                Write-Output ('Removing secret {0}' -f $secretToDelete)
+                az keyvault secret delete --vault-name maps-apps-var-backup --name $secretToDelete
+                az keyvault secret purge --vault-name maps-apps-var-backup --name $secretToDelete
+            }

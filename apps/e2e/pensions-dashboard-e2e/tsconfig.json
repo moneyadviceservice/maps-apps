@@ -1,0 +1,21 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["node"],
+    "sourceMap": false,
+    "paths": {
+      "@maps/playwright": ["./src/e2e/lib/test.fixture.ts"],
+      "@env": ["./src/environmentVariables.ts"],
+      "@lib/*": ["./src/e2e/lib/*"],
+      "@app/*": ["../../pensions-dashboard/*"],
+      "@maps-react/playwright/*": [
+        "../../../libs/shared/utils/src/e2e/playwright/*"
+      ]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js", "**/*.mjs"]
+}

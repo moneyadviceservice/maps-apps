@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SummaryTable component renders correctly 1`] = `
+<table
+  class="flex flex-col border-collapse w-full bg-white border-1 border-gray-300 rounded-lg overflow-hidden lg:max-w-[680px] mb-10 lg:mb-12"
+  data-testid="summary-table"
+>
+  <caption
+    class="sr-only"
+  >
+    Summary table
+  </caption>
+  <thead
+    class="sr-only"
+  >
+    <tr>
+      <th
+        scope="col"
+      >
+        Step / Category
+      </th>
+      <th
+        scope="col"
+      >
+        Selection
+      </th>
+      <th
+        scope="col"
+      >
+        Cost
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    class="grid grid-cols-[1fr_max-content] lg:grid-cols-[15fr_max-content_max-content]"
+  >
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-b-1 border-gray-300"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Monthly Income Total
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] text-left lg:pt-4 lg:text-right"
+      >
+        £1,948.81
+      </td>
+      <td
+        class="p-4 lg:px-6 pt-2 flex flex-row justify-start items-center pl-2 pr-10 lg:pt-4"
+      >
+        <a
+          class="flex text-sm font-semibold text-green-700 decoration-[2px] hover:underline"
+          href="#"
+        >
+          Change
+        </a>
+      </td>
+    </tr>
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-b-1 border-gray-300"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Monthly Outgoings (Fixed)
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] text-left lg:pt-4 lg:text-right"
+      >
+        £1,540.98
+      </td>
+      <td
+        class="p-4 lg:px-6 pt-2 flex flex-row justify-start items-center pl-2 pr-10 lg:pt-4"
+      >
+        <a
+          class="flex text-sm font-semibold text-green-700 decoration-[2px] hover:underline"
+          href="#"
+        >
+          Change
+        </a>
+      </td>
+    </tr>
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-b-1 border-gray-300"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Monthly Outgoings (Flexible)
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] text-left lg:pt-4 lg:text-right"
+      >
+        £120.00
+      </td>
+      <td
+        class="p-4 lg:px-6 pt-2 flex flex-row justify-start items-center pl-2 pr-10 lg:pt-4"
+      >
+        <a
+          class="flex text-sm font-semibold text-green-700 decoration-[2px] hover:underline"
+          href="#"
+        >
+          Change
+        </a>
+      </td>
+    </tr>
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-b-1 border-gray-300"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Monthly Savings
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] text-left lg:pt-4 lg:text-right"
+      >
+        £100.00
+      </td>
+      <td
+        class="p-4 lg:px-6 pt-2 flex flex-row justify-start items-center pl-2 pr-10 lg:pt-4"
+      >
+        <a
+          class="flex text-sm font-semibold text-green-700 decoration-[2px] hover:underline"
+          href="#"
+        >
+          Change
+        </a>
+      </td>
+    </tr>
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-b-1 border-gray-300"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Debt Administration Fee
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] text-left lg:pt-4 lg:text-right"
+      >
+        £34.50
+      </td>
+      <td
+        class="p-4 lg:px-6 pt-2 flex flex-row justify-start items-center pl-2 pr-10 lg:pt-4"
+      >
+        <a
+          class="flex text-sm font-semibold text-green-700 decoration-[2px] hover:underline"
+          href="#"
+        >
+          Change
+        </a>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot
+    class="grid grid-cols-[7fr_3fr]"
+  >
+    <tr
+      class="col-span-full grid grid-cols-subgrid border-gray-300 bg-blue-150 border-b-0"
+    >
+      <th
+        class="p-4 lg:px-6 pb-0 col-span-full text-left text-sm leading-[normal] font-normal underline lg:pb-4 lg:col-span-1 lg:text-base lg:leading-[1.5rem] lg:font-medium lg:no-underline"
+        scope="row"
+      >
+        Total Available for Creditors
+      </th>
+      <td
+        class="p-4 lg:px-6 pt-2 text-lg font-bold leading-[normal] lg:pt-4 text-left lg:text-center"
+        data-testid="summary-table-total-amount"
+      >
+        £153.33
+      </td>
+    </tr>
+  </tfoot>
+</table>
+`;

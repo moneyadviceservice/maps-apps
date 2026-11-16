@@ -1,0 +1,51 @@
+[
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=0&q-2=1&q-3=0&q-4=1",
+    "name": "Scenario one",
+    "questionCount": 4,
+    "header": "In most cases, you’ll have a defined contribution pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=0&q-2=1&q-3=1&q-4=2",
+    "name": "Scenario two",
+    "questionCount": 4,
+    "header": "You might have a defined contribution pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=0&q-2=1&q-3=1&q-4=0",
+    "name": "Scenario three",
+    "questionCount": 4,
+    "header": "In most cases, you’ll have a defined benefit pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=2&q-2=0",
+    "name": "Scenario four",
+    "questionCount": 2,
+    "header": "In most cases, you’ll have a defined benefit pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=2&q-2=1&q-3=1&q-4=1",
+    "name": "Scenario five",
+    "questionCount": 4,
+    "header": "In most cases, you’ll have a defined contribution pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=2&q-2=1&q-3=1&q-4=2",
+    "name": "Scenario six",
+    "questionCount": 4,
+    "header": "You might have a defined contribution pension",
+    "hasAppointmentButton": false
+  },
+  {
+    "endpoint": "/en/pension-type/change-options?q-1=0&q-2=0",
+    "name": "Scenario seven",
+    "questionCount": 2,
+    "header": "In most cases, you’ll have a defined benefit pension",
+    "hasAppointmentButton": false
+  }
+]

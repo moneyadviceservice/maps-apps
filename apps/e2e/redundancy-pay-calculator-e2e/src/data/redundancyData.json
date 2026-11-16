@@ -1,0 +1,272 @@
+{
+  "results": {
+    "noRedundancy": [
+      {
+        "testName": "Lives in England, age is around 25 years, less than 2 years with current employer, salary £11999 per year & No contractual redundancy pay",
+        "inputs": {
+          "location": "England",
+          "dateOfBirth": {
+            "day": "02",
+            "month": "02",
+            "year": "2001"
+          },
+          "employmentDate": {
+            "month": "03",
+            "year": "2023"
+          },
+          "income": {
+            "salary": "11999",
+            "frequency": "Yearly"
+          },
+          "redundancy": {
+            "redundancyOption": "No"
+          },
+          "answers": {
+            "location": "England",
+            "dateOfBirth": "2 February 2001",
+            "employerDate": "March 2023",
+            "income": "£11,999 Yearly",
+            "redundancy": "No"
+          },
+          "results": {
+            "redundancy": "£692",
+            "salary": "£11,999 yearly",
+            "months": "0.7"
+          }
+        }
+      },
+      {
+        "testName": "Lives in Scotland, age between 25-50 years, just 2 years with current employer, salary £765 per week & No contractual redundancy pay",
+        "inputs": {
+          "location": "Scotland",
+          "dateOfBirth": {
+            "day": "04",
+            "month": "05",
+            "year": "1978"
+          },
+          "employmentDate": {
+            "month": "11",
+            "year": "2022"
+          },
+          "income": {
+            "salary": "765",
+            "frequency": "Weekly"
+          },
+          "redundancy": {
+            "redundancyOption": "No"
+          },
+          "answers": {
+            "location": "Scotland",
+            "dateOfBirth": "4 May 1978",
+            "employerDate": "November 2022",
+            "income": "£765 Weekly",
+            "redundancy": "No"
+          },
+          "results": {
+            "redundancy": "£4,506",
+            "salary": "£765 weekly",
+            "months": "1.6"
+          }
+        }
+      },
+      {
+        "testName": "Lives in Wales, age between 50-65 years, more than 5 years with current employer, salary £1890.89 per month & contractual redundancy pay - I don't know",
+        "inputs": {
+          "location": "Wales",
+          "dateOfBirth": {
+            "day": "02",
+            "month": "03",
+            "year": "1966"
+          },
+          "employmentDate": {
+            "month": "11",
+            "year": "2001"
+          },
+          "income": {
+            "salary": "1890.89",
+            "frequency": "Monthly"
+          },
+          "redundancy": {
+            "redundancyOption": "I don't know"
+          },
+          "answers": {
+            "location": "Wales",
+            "dateOfBirth": "2 March 1966",
+            "employerDate": "November 2001",
+            "income": "£1,890.89 Monthly",
+            "redundancy": "I don't know"
+          },
+          "results": {
+            "redundancy": "£12,873",
+            "salary": "£1,890.89 monthly",
+            "months": "7.5"
+          }
+        }
+      }
+    ],
+    "zeroRedundancy": {
+      "testName": "Lives in England, age is around 75 years, less than 2 years with current employer, income before tax £88981 yearly & contractual redundancy pay - I don't know",
+      "inputs": {
+        "location": "England",
+        "dateOfBirth": {
+          "day": "21",
+          "month": "12",
+          "year": "1951"
+        },
+        "employmentDate": {
+          "month": "12",
+          "year": "2025"
+        },
+        "income": {
+          "salary": "88981",
+          "frequency": "Yearly"
+        },
+        "redundancy": {
+          "redundancyOption": "I don't know"
+        },
+        "answers": {
+          "location": "England",
+          "dateOfBirth": "21 December 1951",
+          "employerDate": "December 2025",
+          "income": "£88,981 Yearly",
+          "redundancy": "I don't know"
+        },
+        "results": {
+          "redundancy": "£0,00",
+          "salary": "£88,981 yearly",
+          "months": "0.0",
+          "cardTitle": "How long will your money last?",
+          "message": "Only employees who have worked at least two years are eligible for statutory redundancy pay."
+        }
+      }
+    },
+    "withRedundancy": {
+      "testName": "Lives in Northern Ireland, age between 60-70 years, more than 10 years with current employer, income before tax £56789.56 yearly & contractual redundancy pay £123,456,789",
+      "inputs": {
+        "location": "Northern Ireland",
+        "dateOfBirth": {
+          "day": "30",
+          "month": "04",
+          "year": "1958"
+        },
+        "employmentDate": {
+          "month": "12",
+          "year": "1999"
+        },
+        "income": {
+          "salary": "56789.56",
+          "frequency": "Yearly"
+        },
+        "redundancy": {
+          "redundancyOption": "Yes",
+          "redundancyAmount": "123,456,789"
+        },
+        "answers": {
+          "location": "Northern Ireland",
+          "dateOfBirth": "30 April 1958",
+          "employerDate": "December 1999",
+          "income": "£56,789.56 Yearly",
+          "redundancy": "Yes",
+          "redundancyAmount": "£123,456,789"
+        },
+        "results": {
+          "title": "Your results",
+          "subtitle": "You've told us your contractual redundancy pay will be:",
+          "redundancy": "£123,456,789",
+          "salary": "£56,789.56 yearly",
+          "months": "31762.7"
+        }
+      }
+    }
+  },
+  "errors": {
+    "errorTitle": "There is a problem",
+    "testOne": {
+      "message": "Select where you live in the UK"
+    },
+    "testTwo": {
+      "location": "England",
+      "message": "Enter a valid day, month, and year"
+    },
+    "testThree": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "2016"
+      },
+      "message": "You must be at least 15 years old"
+    },
+    "testFour": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "1978"
+      },
+      "message": "Enter a valid month and year"
+    },
+    "testFive": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "1979"
+      },
+      "message": "Enter a valid month and year"
+    },
+    "testSix": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "1979"
+      },
+      "employmentDate": {
+        "month": "12",
+        "year": "2023"
+      },
+      "message": "Enter a salary before tax"
+    },
+    "testSeven": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "1979"
+      },
+      "employmentDate": {
+        "month": "01",
+        "year": "2026"
+      },
+      "income": {
+        "salary": "2345.99",
+        "frequency": "Monthly"
+      },
+      "redundancy": {
+        "redundancyOption": "Yes"
+      },
+      "message": "Choose an option"
+    },
+    "testEight": {
+      "location": "England",
+      "dateOfBirth": {
+        "day": "04",
+        "month": "05",
+        "year": "1979"
+      },
+      "employmentDate": {
+        "month": "01",
+        "year": "2026"
+      },
+      "income": {
+        "salary": "2345.99",
+        "frequency": "Monthly"
+      },
+      "redundancy": {
+        "redundancyOption": "Yes"
+      },
+      "message": "Enter an amount (or select \"I don't know\")"
+    }
+  }
+}

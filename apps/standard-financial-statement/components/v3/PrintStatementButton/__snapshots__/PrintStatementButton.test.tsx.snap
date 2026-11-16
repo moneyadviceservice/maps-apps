@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PrintStatementButton component renders correctly 1`] = `
+<button
+  class="items-center visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none t-link-button flex flex-row w-full justify-center gap-0 px-4 text-sm font-semibold text-blue-600 no-underline lg:text-base lg:inline-flex lg:justify-start lg:w-auto lg:underline"
+  data-testid="print-statement-button"
+  type="button"
+>
+  <span />
+  Print statement
+  <span />
+</button>
+`;

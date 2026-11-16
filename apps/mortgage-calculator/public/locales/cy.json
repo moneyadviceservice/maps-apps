@@ -1,0 +1,183 @@
+{
+  "pageTitle": "Cyfrifiannell morgais",
+
+  "errorSummary": {
+    "title": "Mae yna broblem",
+    "price": "Rhowch bris eiddo, er enghraifft £200,000",
+    "rate": "Rhowch gyfradd llog, er enghraifft 5%"
+  },
+
+  "title": "Cyfrifo eich taliad morgais misol",
+  "backLink": "Yn ôl",
+  "callout": "Cofiwch i gynllunio ar gyfer costau eraill fel ffioedd morgais, ffioedd cyfreithiol a threth Stamp",
+
+  "form": {
+    "optional": "(Dewisol)",
+    "typeOfMortgage": {
+      "label": "Math o forgais",
+      "option1": "**Ad-daliad:** ad-dalu cyfalaf a llog gyda&apos;i gilydd",
+      "option2": "**Llog yn unig:** ad-dalu&apos;r llog. Mae cyfalaf yn cael eu had-dalu ar ddiwedd y tymor."
+    },
+    "propertyPrice": {
+      "label": "Pris eiddo",
+      "description": "Os nad ydych yn prynu eiddo, rhowch y swm sydd ar ôl ar eich morgais.",
+      "aria": {
+        "label": "Pris eiddo mewn punnoedd"
+      }
+    },
+    "deposit": {
+      "label": "Blaendal ",
+      "description": "Os ydych yn ail-forgeisi, nid yw hyn yn berthnasol.",
+      "aria": {
+        "label": "Blaendal mewn punnoedd"
+      }
+    },
+    "term": {
+      "label": "Tymor morgais",
+      "description": "Cyfnod ad-daliad morgais cyfartalog yw 25 blynedd.",
+      "aria": {
+        "description": "Cyfnod ad-daliad morgais cyfartalog yw 25 blynedd."
+      }
+    },
+    "interestRate": {
+      "label": "Cyfradd llog",
+      "description": "Rydym wedi nodi cyfradd llog presennol yn ddiofyn",
+      "aria": {
+        "description": "Cyfradd llog %"
+      }
+    },
+    "calculate": "Ailgyfrifo",
+    "recalculate": "Cyfrifwch"
+  },
+
+  "socialShareTool": {
+    "title": "Rhannwch yr offeryn hwn",
+    "subject": "Cyfrifiannell morgais – Gweler eich taliadau misol",
+    "xTitle": "Cyfrifiannell morgais – Gweler eich taliadau misol"
+  },
+
+  "otherTools": {
+    "title": "Teclynnau eraill i roi cynnig arnynt",
+    "card1": {
+      "title": "Cyfrifo'r morgais y gallwch ei fforddio",
+      "description": "Mae'r teclyn hwn yn eich helpu i gyfrifo faint gallwch fforddio ei fenthyg i brynu cartref"
+    },
+    "card2": {
+      "title": "Cyfrifo eich Treth Stamp",
+      "description": "Defnyddiwch y teclyn hwn i ddarganfod pa dreth a all fod yn ddyledus wrth brynu eich cartref"
+    }
+  },
+
+  "recommendedReading": {
+    "title": "Gwybodaeth a argymhellir i'w ddarllen",
+    "sections": [
+      {
+        "id": "repayQuicker",
+        "condition": "interestonly",
+        "title": "Ad-dalu eich morgais yn gyflymach",
+        "links": [
+          {
+            "prefix": "Archwiliwch",
+            "text": "ffyrdd o ad-dalu morgais llog yn unig",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/ways-of-repaying-an-interest-only-mortgage"
+          }
+        ]
+      },
+      {
+        "id": "firstTimeBuyers",
+        "title": "Prynwyr tro cyntaf",
+        "links": [
+          {
+            "prefix": "Darllenwch ein",
+            "text": "canllaw Prynwyr tro cyntaf",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/first-time-buyer-money-tips"
+          },
+          {
+            "prefix": "Sut i",
+            "text": "gynilo arian ar gyfer blaendal morgais",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/saving-money-for-a-mortgage-deposit"
+          }
+        ]
+      },
+      {
+        "id": "mortgageEssentials",
+        "title": "Hanfodion morgais",
+        "links": [
+          {
+            "prefix": "Beth ydynt ac",
+            "text": "a ddylech ddefnyddio cynghorydd morgais?",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/choosing-a-mortgage-shop-around-or-get-advice"
+          },
+          {
+            "prefix": "Help i",
+            "text": "ddeall cyfraddau llog morgais",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/mortgage-interest-rate-options"
+          },
+          {
+            "prefix": "Sicrhewch y cytundeb iawn gyda'n",
+            "text": "rhestr gwirio cymharu morgais",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/your-mortgage-comparison-checklist"
+          }
+        ]
+      },
+      {
+        "id": "budgetPlanning",
+        "title": "Cynllunio cyllideb",
+        "links": [
+          {
+            "prefix": "Cyllideb ar gyfer",
+            "text": "cost prynu tŷ a symud",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/estimate-your-overall-buying-and-moving-costs"
+          },
+          {
+            "prefix": "Dysgwch",
+            "text": "sut i baratoi ar gyfer cynnydd mewn cyfraddau llog",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/how-to-prepare-for-an-interest-rate-rise"
+          }
+        ]
+      },
+      {
+        "id": "strugglingToPay",
+        "title": "Cael trafferth talu?",
+        "links": [
+          {
+            "prefix": "Cyngor os ydych yn wynebu",
+            "text": "ôl-ddyledion morgais neu broblemau talu eich morgais",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/mortgage-arrears-if-you-have-problems-paying-your-mortgage"
+          },
+          {
+            "prefix": "Cefnogaeth a",
+            "text": "Help y llywodraeth os na allwch dalu eich morgais",
+            "href": "https://www.moneyhelper.org.uk/cy/homes/buying-a-home/government-help-if-you-cant-pay-your-mortgage"
+          }
+        ]
+      }
+    ]
+  },
+
+  "results": {
+    "title": "Eich canlyniadau",
+    "intro": "addasu'r canlyniadau, newidiwch eich atebion.",
+    "monthlyRepayment": "Taliad misol:",
+    "totalRepayment": "Cyfanswm y byddwch yn ad-dalu dros y cyfnod:",
+    "makeup": {
+      "title": "wedi'i wneud o:",
+      "capital": "cyfalaf a",
+      "interest": "llog"
+    },
+    "breakdown": {
+      "title": "Gweld manylion y costau",
+      "column1": {
+        "heading": "Blwyddyn",
+        "data": "Blwyddyn {year}"
+      },
+      "column2": {
+        "heading": "Dyled sy'n weddill"
+      }
+    },
+    "notificationBox": {
+      "title": "Sicrhewch y gallwch ei fforddio!",
+      "description": "Er enghraifft, os yw eich cyfradd llog yn cynyddu 3% bydd eich taliad yn:"
+    }
+  }
+}

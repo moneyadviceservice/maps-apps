@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Memberships Memberships component in edit mode render with correct defaultValues 1`] = `
+<div>
+  <h2
+    class="text-gray-800 w-full px-6 py-3 bg-slate-200 border-b border-slate-300 font-normal text-md md:text-md"
+  >
+    Memberships
+  </h2>
+  <dl
+    class="grid grid-cols-2 justify-between p-6"
+  >
+    <dt
+      class="text-gray-450 mb-0 col-start-1 row-start-1 col-span-2 lg:col-span-1"
+    >
+      Registered with FCA
+    </dt>
+    <dd
+      class="col-start-1 row-start-2 flex items-start col-span-2 lg:col-span-1"
+    >
+      <div
+        data-testid="radio-select"
+      >
+        yes
+      </div>
+    </dd>
+    <dt
+      class="text-gray-450 mb-0 col-start-1 row-start-3 col-span-2 lg:col-start-2 lg:row-start-1 lg:col-span-1"
+      id="fca-licence-number-label"
+    >
+      FCA licence number
+    </dt>
+    <dd
+      class="col-start-1 row-start-4 col-span-2 lg:col-start-2 lg:row-start-2 lg:col-span-1"
+    >
+      <input
+        aria-describedby="fca-licence-number-label"
+        class="w-full max-w-[458px] border border-gray-650 rounded px-2 py-1 h-[49px] font-normal"
+        data-testid="fca-number-input"
+        name="fca_number"
+        value="FCA-123456"
+      />
+    </dd>
+  </dl>
+  <div
+    class="m-6"
+  >
+    <table
+      class="w-full"
+    >
+      <thead>
+        <tr>
+          <th
+            class="font-normal text-left text-gray-450 mb-0 col-start-1 row-start-5 lg:col-start-1 lg:row-start-3"
+            id="organisation-membership-label"
+          >
+            Organisation Membership
+          </th>
+          <th
+            class="font-normal text-left text-gray-450 mb-0 col-start-2 row-start-5 lg:row-start-3"
+            id="membership-number-label"
+          >
+            Membership number
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-testid="membership-item"
+        >
+          <td>
+            <input
+              aria-describedby="organisation-membership-label"
+              class="w-full max-w-[458px] border border-gray-650 rounded px-2 py-1 h-[49px] font-normal mb-2"
+              data-testid="organisation-membership[auk].title"
+              name="organisation_membership[auk].title"
+              value="AdviceUK"
+            />
+          </td>
+          <td>
+            <input
+              aria-describedby="membership-number-label"
+              class="w-full max-w-[458px] border border-gray-650 rounded px-2 py-1 h-[49px] font-normal mb-2"
+              data-testid="organisation-membership[0].key"
+              name="organisation_membership[0].key"
+              value="auk"
+            />
+          </td>
+        </tr>
+        <tr
+          data-testid="membership-item"
+        >
+          <td>
+            <input
+              aria-describedby="organisation-membership-label"
+              class="w-full max-w-[458px] border border-gray-650 rounded px-2 py-1 h-[49px] font-normal"
+              data-testid="organisation-membership[ima].title"
+              name="organisation_membership[ima].title"
+              value="IMA"
+            />
+          </td>
+          <td>
+            <input
+              aria-describedby="membership-number-label"
+              class="w-full max-w-[458px] border border-gray-650 rounded px-2 py-1 h-[49px] font-normal"
+              data-testid="organisation-membership[1].key"
+              name="organisation_membership[1].key"
+              value="ima"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Memberships Memberships component in read mode matches snapshot 1`] = `
+<div>
+  <h2
+    class="text-gray-800 w-full px-6 py-3 bg-slate-200 border-b border-slate-300 font-normal text-md md:text-md"
+  >
+    Memberships
+  </h2>
+  <dl
+    class="grid grid-cols-2 justify-between p-6"
+  >
+    <dt
+      class="text-gray-450 mb-0 col-start-1 row-start-1 col-span-2 lg:col-span-1"
+    >
+      Registered with FCA
+    </dt>
+    <dd
+      class="col-start-1 row-start-2 flex items-start col-span-2 lg:col-span-1"
+      data-testid="fca-registered"
+    >
+      <tick-green.svg
+        class="w-4 inline mt-2 mr-2"
+      />
+       
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="paragraph"
+      >
+        Yes
+      </p>
+    </dd>
+    <dt
+      class="text-gray-450 mb-0 col-start-1 row-start-3 col-span-2 lg:col-start-2 lg:row-start-1 lg:col-span-1"
+      id="fca-licence-number-label"
+    >
+      FCA licence number
+    </dt>
+    <dd
+      class="col-start-1 row-start-4 col-span-2 lg:col-start-2 lg:row-start-2 lg:col-span-1"
+    >
+      <p
+        class="mb-4 break-words font-bold"
+        data-testid="fca-number"
+      >
+        999999
+      </p>
+    </dd>
+  </dl>
+  <div
+    class="m-6"
+  >
+    <table
+      class="w-full"
+    >
+      <thead>
+        <tr>
+          <th
+            class="font-normal text-left text-gray-450 mb-0 col-start-1 row-start-5 lg:col-start-1 lg:row-start-3"
+            id="organisation-membership-label"
+          >
+            Organisation Membership
+          </th>
+          <th
+            class="font-normal text-left text-gray-450 mb-0 col-start-2 row-start-5 lg:row-start-3"
+            id="membership-number-label"
+          >
+            Membership number
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-testid="membership-item"
+        >
+          <td
+            class="font-bold"
+          >
+            Example Org
+          </td>
+          <td
+            class="font-bold"
+          >
+            EX123
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

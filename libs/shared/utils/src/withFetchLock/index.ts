@@ -1,0 +1,1 @@
+export { withFetchLock } from './withFetchLock';

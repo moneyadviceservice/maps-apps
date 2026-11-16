@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+
+# Build artifacts
+
+build
+out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.production
+
+# IDEs and editors
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+
+# Version control
+.git
+.gitignore
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Tests
+/test
+/tests
+
+# Next.js
+out
+
+# Misc
+npm-debug.log
+yarn-error.log

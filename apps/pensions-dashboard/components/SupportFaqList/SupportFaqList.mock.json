@@ -1,0 +1,62 @@
+[
+  {
+    "title": "English title 1",
+    "content": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "english-content-1"
+            }
+          ]
+        }
+      ]
+    },
+    "cy_title": "Welsh title 1",
+    "cy_content": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "welsh-content-1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "English title 2",
+    "content": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "english-content-2"
+            }
+          ]
+        }
+      ]
+    },
+    "cy_title": "Welsh title 2",
+    "cy_content": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "welsh-content-2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

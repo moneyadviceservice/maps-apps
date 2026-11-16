@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ExistingAppointmentCallout Component (cy) renders component correctly 1`] = `
+<div>
+  <div
+    class="mt-6"
+  >
+    <h3
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-4"
+    >
+      --WELSH Already booked an appointment? 
+    </h3>
+    <p
+      class="mb-4 break-words"
+      data-testid="step-0-callout"
+    >
+      --WELSH If you want to change or cancel an existing appointment booking, go to the 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="/cy/find-appointment"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Find your appointment
+        <span
+          class="sr-only"
+        >
+           (opens in a new window) 
+        </span>
+        <svgr-mock
+          class="inline ml-[6px] mr-[2px]"
+        />
+      </a>
+       page.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`ExistingAppointmentCallout Component (en) renders component correctly 1`] = `
+<div>
+  <div
+    class="mt-6"
+  >
+    <h3
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-4"
+    >
+      Already booked an appointment? 
+    </h3>
+    <p
+      class="mb-4 break-words"
+      data-testid="step-0-callout"
+    >
+      If you want to change or cancel an existing appointment booking, go to the 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="/en/find-appointment"
+        rel="noopener noreferrer"
+        target="_self"
+      >
+        Find your appointment
+      </a>
+       page.
+    </p>
+  </div>
+</div>
+`;

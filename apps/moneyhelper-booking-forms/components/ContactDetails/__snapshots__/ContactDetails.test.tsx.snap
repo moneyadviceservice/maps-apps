@@ -1,0 +1,1257 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ContactDetails (cy) renders component correctly 1`] = `
+<div>
+  <section
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="contact-details-content-0"
+    >
+      --WELSH These should be the contact details of the person attending the appointment. If you're booking on behalf of someone else, enter their contact details below rather than your own.
+    </p>
+  </section>
+  <form
+    action="/api/form-handler?locale=cy"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="contact-details"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            --WELSH First name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            --WELSH Last name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            --WELSH Email
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  --WELSH Why are we asking this?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                --WELSH We’ll send an email confirming your appointment date.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            --WELSH Phone number
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  --WELSH What will my phone number be used for?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                --WELSH The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              --WELSH Date of birth
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              --WELSH Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Dydd
+                </label>
+                <input
+                  aria-label="Dydd"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Mis
+                </label>
+                <input
+                  aria-label="Mis"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Blwyddyn
+                </label>
+                <input
+                  aria-label="Blwyddyn"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    --WELSH Why are we asking this?
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  --WELSH You must be aged 50 or over to book an appointment, e.g. 31 3 1950
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            --WELSH Your memorable word
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            --WELSH Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      --WELSH Continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactDetails (cy) renders component correctly with errors 1`] = `
+<div>
+  <section
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="contact-details-content-0"
+    >
+      --WELSH These should be the contact details of the person attending the appointment. If you're booking on behalf of someone else, enter their contact details below rather than your own.
+    </p>
+  </section>
+  <form
+    action="/api/form-handler?locale=cy"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="contact-details"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            --WELSH First name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            --WELSH Last name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            --WELSH Email
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  --WELSH Why are we asking this?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                --WELSH We’ll send an email confirming your appointment date.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            --WELSH Phone number
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  --WELSH What will my phone number be used for?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                --WELSH The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              --WELSH Date of birth
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              --WELSH Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Dydd
+                </label>
+                <input
+                  aria-label="Dydd"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Mis
+                </label>
+                <input
+                  aria-label="Mis"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Blwyddyn
+                </label>
+                <input
+                  aria-label="Blwyddyn"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    --WELSH Why are we asking this?
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  --WELSH You must be aged 50 or over to book an appointment, e.g. 31 3 1950
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            --WELSH Your memorable word
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            --WELSH Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      --WELSH Continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactDetails (en) renders component correctly 1`] = `
+<div>
+  <section
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="contact-details-content-0"
+    >
+      These should be the contact details of the person attending the appointment. If you're booking on behalf of someone else, enter their contact details below rather than your own.
+    </p>
+  </section>
+  <form
+    action="/api/form-handler?locale=en"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="contact-details"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            First name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            Last name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            Email
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  Why are we asking this?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                We’ll send an email confirming your appointment date.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            Phone number
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  What will my phone number be used for?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              Date of birth
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Day
+                </label>
+                <input
+                  aria-label="Day"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Month
+                </label>
+                <input
+                  aria-label="Month"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Year
+                </label>
+                <input
+                  aria-label="Year"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Why are we asking this?
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  You must be aged 50 or over to book an appointment, e.g. 31 3 1950
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            Your memorable word
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      Continue
+      <span />
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactDetails (en) renders component correctly with errors 1`] = `
+<div>
+  <section
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="contact-details-content-0"
+    >
+      These should be the contact details of the person attending the appointment. If you're booking on behalf of someone else, enter their contact details below rather than your own.
+    </p>
+  </section>
+  <form
+    action="/api/form-handler?locale=en"
+    aria-label="form"
+    class="pt-6 md:pt-8 md:max-w-md"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="contact-details"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="communication-preferences"
+    />
+    <div
+      class="pb-6 md:pb-8"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="firstName"
+          >
+            First name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-firstName"
+            id="firstName"
+            name="firstName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="lastName"
+          >
+            Last name
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-lastName"
+            id="lastName"
+            name="lastName"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="emailAddress"
+          >
+            Email
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  Why are we asking this?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                We’ll send an email confirming your appointment date.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="phoneNumber"
+          >
+            Phone number
+          </label>
+          <input
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-phoneNumber"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="text"
+          />
+          <div
+            class="mt-2"
+          >
+            <details
+              class="group tool-expand"
+              data-testid="expandable-section"
+            >
+              <summary
+                class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+              >
+                <svgr-mock
+                  class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                />
+                <div
+                  class="block"
+                  data-testid="summary-block-title"
+                >
+                  What will my phone number be used for?
+                </div>
+              </summary>
+              <div
+                class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+              >
+                The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code.
+              </div>
+            </details>
+          </div>
+        </div>
+        <div
+          class="text-base flex flex-col"
+        >
+          <fieldset
+            aria-describedby="date-field-hint"
+          >
+            <legend
+              class="text-2xl text-gray-800 sr-only"
+              data-testid="date-field-legend"
+            >
+              Date of birth
+            </legend>
+            <p
+              class="break-words mb-0 text-gray-600"
+              data-testid="date-field-hint"
+              id="date-field-hint"
+            >
+              Enter a two digit day, a two digit month and a four digit year. For example: 15 03 1960
+            </p>
+            <div
+              class="flex w-full mt-2"
+            >
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="day"
+                >
+                  Day
+                </label>
+                <input
+                  aria-label="Day"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="day"
+                  inputmode="numeric"
+                  name="day"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[56px] mr-4"
+              >
+                <label
+                  class="mb-2"
+                  for="month"
+                >
+                  Month
+                </label>
+                <input
+                  aria-label="Month"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="month"
+                  inputmode="numeric"
+                  name="month"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start w-[72px]"
+              >
+                <label
+                  class="mb-2"
+                  for="year"
+                >
+                  Year
+                </label>
+                <input
+                  aria-label="Year"
+                  class="tool-field w-full ml-0 focus:outline-none focus:shadow-focus-outline rounded-[4px] border p-2 text-center h-10 focus:border-blue-700 border-gray-400"
+                  data-testid="number-input"
+                  id="year"
+                  inputmode="numeric"
+                  name="year"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <details
+                class="group tool-expand"
+                data-testid="expandable-section"
+              >
+                <summary
+                  class="text-magenta-500 flex [&::-webkit-details-marker]:hidden cursor-pointer py-2 outline-none focus:shadow-expander-focus underline hover:no-underline group"
+                >
+                  <svgr-mock
+                    class="group-open:rotate-[-180deg] text-magenta-500 shrink-0 w-5 mr-2"
+                  />
+                  <div
+                    class="block"
+                    data-testid="summary-block-title"
+                  >
+                    Why are we asking this?
+                  </div>
+                </summary>
+                <div
+                  class="mb-4 text-gray-800 text-base leading-[28px] tracking-[0.18px] pt-2"
+                >
+                  You must be aged 50 or over to book an appointment, e.g. 31 3 1950
+                </div>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div
+          class="text-base"
+        >
+          <label
+            class="block text-2xl"
+            for="memorableWord"
+          >
+            Your memorable word
+          </label>
+          <p
+            class="break-words mb-0 text-gray-650"
+            data-testid="memorableWord-hint"
+            id="memorableWord-hint"
+          >
+            Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service
+          </p>
+          <input
+            aria-describedby="memorableWord-hint"
+            aria-invalid="false"
+            class="obfuscate px-3 m-px mt-2 w-full h-10 rounded border focus:outline-none focus:shadow-focus-outline tool-field focus:border-1 focus:border-blue-700 border-gray-400"
+            data-testid="input-memorableWord"
+            id="memorableWord"
+            name="memorableWord"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      Continue
+      <span />
+    </button>
+  </form>
+</div>
+`;

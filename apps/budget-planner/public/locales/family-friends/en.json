@@ -1,0 +1,77 @@
+{
+  "title": "Family & friends",
+  "fields": {
+    "childcare": {
+      "title": "Childcare",
+      "information": "Enter here the amount you spend on your nursery, childminder or nanny. If you pay different amounts each week or month, add up everything you've spent over the past year and enter that figure as a yearly amount.\n\nIf you're not sure you're getting all the help you're entitled to, see our guide [Benefits you can claim when you're pregnant or have a baby.](https://www.moneyhelper.org.uk/en/benefits/benefits-if-you-have-children/benefits-and-entitlements-to-claim-when-you-have-a-baby)"
+    },
+    "nappies": {
+      "title": "Nappies and baby items",
+      "information": "Use our [Baby costs calculator](https://www.moneyhelper.org.uk/en/family-and-care/becoming-a-parent/baby-costs-calculator) to work out the cost of formula, nappies, wipes, baby food and other baby items."
+    },
+    "activities": {
+      "title": "Activities & clubs",
+      "information": "Enter here the amount you spend on playgroups, clubs and other activities you pay for your children to do."
+    },
+    "treats": {
+      "title": "Toys & treats",
+      "information": "If you buy things like sweets, comics and toys for your kids, add up the cost and enter it here. There's no need to include birthday presents - this is covered on the \"Leisure\" page. If you give your children pocket money so they can buy their own treats enter this amount in the next box instead."
+    },
+    "pocket-money": {
+      "title": "Pocket money",
+      "information": "If you agree to give your children a certain amount of pocket money each week enter the amount here. Don't include anything you put into a savings account for them - this should go under \"Regular saving\" instead."
+    },
+    "babysitting": {
+      "title": "Babysitting",
+      "information": "Unless you have a regular arrangement with your babysitter where you pay the same amount each week (or month), you'll probably need to look at your diary and see how often you've used a babysitter in the past few months and work out how much you've paid them."
+    },
+    "maintenance": {
+      "title": "Maintenance or child support",
+      "information": "Enter the full amount of child maintenance or child support that you pay your ex. If the amount varies, add up everything you paid last year and enter that, selecting \"year\" from the dropdown menu. That way, the calculator will work out an average monthly amount for you."
+    },
+    "school-fees": {
+      "title": "School fees",
+      "information": "Add up what you spend each year and enter that amount. Be sure to use the dropdown menu to show that this is the yearly amount."
+    },
+    "school-trips": {
+      "title": "School trips",
+      "information": "Because these can vary so much - both in frequency and cost - the only way to get an accurate picture is to add up what you spent last year and enter that amount. If you pay for trips using a cashless system like ParentPay, for example, you can look at your payment history to see how much you've spent. Be sure to use the dropdown menu to show that this is the yearly amount."
+    },
+    "school-dinners": {
+      "title": "School dinners",
+      "information": "Don't forget to take into account school holidays when working out how much you spend on school dinners. Many schools have 13 weeks' holiday each year, so you could multiply your weekly spend by 39 to get a yearly amount.\n\nIf you think you might qualify for help with school meals, see our guide:\n\n[Make sure you're getting the right entitlements](https://www.moneyhelper.org.uk/en/blog/benefits-entitlements/free-school-meals-eligibility-and-how-to-apply)"
+    },
+    "school-clubs": {
+      "title": "After-school clubs",
+      "information": "Don't forget to take into account term time and school holidays when working out how much you spend on after-school clubs. Many schools have 13 weeks' holiday each year, so you could multiply your weekly spend by 39 to get a term-time yearly amount.\n\nAnd if your children go to school holiday clubs you could multiply the weekly amount by 13 (or however many weeks they go) and enter that amount here too."
+    },
+    "support-student": {
+      "title": "Support for student children",
+      "information": "If your older children are students and you help them out financially, enter the amount you pay them here."
+    },
+    "support-relatives": {
+      "title": "Support for other relatives",
+      "information": "If you provide any financial help for other family members enter the amount here."
+    },
+    "pet-food": {
+      "title": "Food",
+      "information": "Don't include this if you've already counted it in your weekly shop. But if you buy pet food separately, and you haven't already counted it, make sure you include it here."
+    },
+    "vet-bills": {
+      "title": "Vet bills",
+      "information": "This is a tricky one to budget for since you don't know what's going to happen with your pet's health in the future.\n\nIf your pet is young and healthy you are probably OK to just budget for routine care here. But if your pet has an existing condition and you frequently pay for treatment you should add up how much you've spent at the vet over the past year and enter that amount.\n\nIf you have pet insurance you should put the amount you pay in the box below. Remember though to include the excess (the amount you pay yourself towards any treatment you claim for)."
+    },
+    "pet-insurance": {
+      "title": "Pet insurance",
+      "information": "Check your policy details or your bank statement to find out exactly what your monthly premiums are."
+    },
+    "donations": {
+      "title": "Donations & sponsorships",
+      "information": "If you have any Direct Debits set up with charities, enter the total amount here. Also include any ad hoc donations you make to charity, or fundraising events. Don't forget to include raffle tickets, and money spent at school or church fairs, etc."
+    },
+    "loan": {
+      "title": "Loan repayment to family/friend",
+      "information": "If you've borrowed money from a family member or a friend enter the amount you have agreed to repay here."
+    }
+  }
+}

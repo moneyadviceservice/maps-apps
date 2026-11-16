@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AppointmentSummaryCallout (cy) Appointment Found renders blank when startDateTime is not provided 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-4 text-white"
+      data-testid="appointment-found-callout-title"
+    >
+      --WELSH Your Pension Wise appointment has been found
+    </h2>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="appointment-found-callout-content"
+    >
+      --WELSH Your reference number is APT-000000008.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          />
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Start Time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-time"
+            >
+              --WELSH  (GMT)
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Appointment format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            --WELSH Telephone call
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentSummaryCallout (cy) Appointment Found renders null when no data is provided 1`] = `<div />`;
+
+exports[`AppointmentSummaryCallout (cy) Appointment Found renders the callout for the appointment-found step 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-4 text-white"
+      data-testid="appointment-found-callout-title"
+    >
+      --WELSH Your Pension Wise appointment has been found
+    </h2>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="appointment-found-callout-content"
+    >
+      --WELSH Your reference number is APT-000000008.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-date"
+            >
+              Dydd Llun, 30 Tachwedd 2026
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Start Time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-time"
+            >
+              --WELSH 11:10 (GMT)
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            --WELSH Appointment format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            --WELSH Telephone call
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentSummaryCallout (en) Appointment Found renders blank when startDateTime is not provided 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-4 text-white"
+      data-testid="appointment-found-callout-title"
+    >
+      Your Pension Wise appointment has been found
+    </h2>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="appointment-found-callout-content"
+    >
+      Your reference number is APT-000000008.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          />
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Start Time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-time"
+            >
+              (GMT)
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            Telephone call
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppointmentSummaryCallout (en) Appointment Found renders null when no data is provided 1`] = `<div />`;
+
+exports[`AppointmentSummaryCallout (en) Appointment Found renders the callout for the appointment-found step 1`] = `
+<div>
+  <div
+    class="t-information-callout border border-slate-400 rounded-bl-3xl flex flex-col gap-4 bg-blue-700 md:gap-2 p-9"
+    data-testid="information-callout"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-4 text-white"
+      data-testid="appointment-found-callout-title"
+    >
+      Your Pension Wise appointment has been found
+    </h2>
+    <p
+      class="mb-4 break-words text-xl text-white obfuscate md:text-2xl"
+      data-testid="appointment-found-callout-content"
+    >
+      Your reference number is APT-000000008.
+    </p>
+    <div>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Date
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-date"
+            >
+              Monday, 30 November 2026
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Start Time
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            <p
+              class="break-words mb-0 text-white"
+              data-testid="appointment-found-callout-row-time"
+            >
+              11:10 (GMT)
+            </p>
+          </dd>
+        </div>
+      </dl>
+      <dl
+        class="border-b last:border-b-0 py-4 text-white"
+      >
+        <div
+          class="grid gap-2 md:py-2 md:grid-cols-12 md:items-start md:gap-0"
+        >
+          <dt
+            class="md:col-span-5"
+          >
+            Appointment format
+          </dt>
+          <dd
+            class="md:col-span-7"
+          >
+            Telephone call
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+`;

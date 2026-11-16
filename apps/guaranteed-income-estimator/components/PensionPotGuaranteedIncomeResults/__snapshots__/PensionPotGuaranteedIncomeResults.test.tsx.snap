@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PensionPotGuaranteedIncomeResults should render correctly 1`] = `
+<div>
+  <div
+    id="results"
+  >
+    <h2
+      class="text-3xl md:text-5xl font-bold text-blue-700 mb-6 md:mb-8"
+    >
+      Your results
+    </h2>
+    <dl>
+      <dt
+        class="mb-2 font-medium"
+      >
+        Converting a pension worth
+         
+        <span>
+          £100,000
+        </span>
+         
+        into a guaranteed income for life (an annuity) could give you an estimated: 
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £25,000
+        </span>
+         
+        as a one-off tax-free lump sum
+      </dd>
+      <dt
+        class="mb-2 font-medium"
+      >
+        and
+      </dt>
+      <dd
+        class="mb-4 text-4xl font-bold"
+      >
+        <span>
+          £5,600
+        </span>
+         
+        as a fixed taxable income each year
+      </dd>
+    </dl>
+    <p
+      class="mb-4 break-words mt-4 text-base"
+      data-testid="paragraph"
+    >
+      It does not consider the effect of inflation or any Income Tax you might pay on the income.
+    </p>
+    <p
+      class="mb-4 break-words mt-4 text-base"
+      data-testid="paragraph"
+    >
+      You can usually take up to 25% from each of your pensions as tax-free lump sums, provided the total is less than the
+       
+      <a
+        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/lump-sum-allowances-for-pensions"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        lump sum allowance(LSA).
+      </a>
+       
+      The LSA is £268,275 for most.
+    </p>
+    <p
+      class="mb-4 break-words mt-4 text-base"
+      data-testid="paragraph"
+    >
+      This means your estimated tax-free lump sum might be lower if all your pensions are worth more than £1,073,100. A
+       
+      <a
+        class="inline-flex items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        regulated financial adviser
+      </a>
+       
+      can explain the rules that apply to you.
+    </p>
+    <p
+      class="mb-4 break-words mt-4 text-base"
+      data-testid="paragraph"
+    >
+      When you buy an annuity, you can usually choose different options – such as a joint-life annuity that pays an income to your dependents after you die. An enhanced annuity might also give you a higher income if you smoke or have a medical condition.
+    </p>
+  </div>
+</div>
+`;

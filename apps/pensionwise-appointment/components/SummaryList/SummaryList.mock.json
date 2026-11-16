@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "text": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Ask your provider if you need to take your pension by a certain date."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "text": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Ask if there are any fees for delaying taking your pension."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "text": {
+      "json": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Ask your provider if your pot has any special features, like a guaranteed annuity rate."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

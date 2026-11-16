@@ -1,0 +1,10 @@
+{
+  "site": {
+    "title": "<%= title %>"
+  },
+  "components": {
+    "landing": {
+      "intro": "Dyma dudalen gychwyn <%= title %>. Rhowch gam cyntaf y teclyn yn lle'r testun hwn."
+    }
+  }
+}

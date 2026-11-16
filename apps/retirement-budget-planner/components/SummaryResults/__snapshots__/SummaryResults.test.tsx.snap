@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`test SummaryResults component should render the component 1`] = `
+<div>
+  <div
+    class="space-y-8"
+  >
+    <div
+      data-testid="summary-results-details"
+    >
+      SummaryResultsDetails Mock
+    </div>
+    <div
+      data-testid="summary-results-checklist"
+    >
+      SummaryResultsChecklist Mock
+    </div>
+    <div
+      data-testid="summary-results-other-tools"
+    >
+      OtherToolsToTry Mock
+    </div>
+    <div
+      data-testid="tool-feedback"
+    >
+      ToolFeedback Mock
+    </div>
+    <div
+      data-testid="summary-results-share"
+    >
+      SummaryResultsShare Mock
+    </div>
+  </div>
+</div>
+`;

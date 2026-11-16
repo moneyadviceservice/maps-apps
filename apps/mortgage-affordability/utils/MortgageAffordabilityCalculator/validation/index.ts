@@ -1,0 +1,1 @@
+export { validationFunctions } from './resultsValidation';

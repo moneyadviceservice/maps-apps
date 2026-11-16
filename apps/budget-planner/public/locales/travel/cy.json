@@ -1,0 +1,57 @@
+{
+  "title": "Teithio",
+  "fields": {
+    "petrol-diesel": {
+      "title": "Petrol/diesel/pyrth gwefru cerbyd trydan",
+      "information": "Gwiriwch eich datganiad banc i weld faint rydych yn ei wario ar danwydd neu byrth gwefru am eich car.\n\nOs ydych am ddarganfod fwy am arbed arian ar danwydd, edrychwch ar: [Torri costau car a theithio](https://www.moneyhelper.org.uk/cy/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "car-insurance": {
+      "title": "Yswiriant car",
+      "information": "Gwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol neu flynyddol.\n\nOs yw eich polisi ar fin cael ei adnewyddu efallai y byddai o fantais ichi siopa o gwmpas. Cewch fwy o wybodaeth yn: [Yswiriant car - sut i gael y ddêl orau](https://www.moneyhelper.org.uk/cy/everyday-money/insurance/car-insurance-what-you-need-to-know?source=mas)"
+    },
+    "breakdown-cover": {
+      "title": "Yswiriant torri i lawr",
+      "information": "Rhowch y swm a wariwch ar ddiogelwch car yn torri i lawr. Os yw hyn wedi ei gynnwys fel rhan o'ch polisi yswiriant car cewch adael y blwch hwn yn wag."
+    },
+    "car-tax": {
+      "title": "Treth cerbyd",
+      "information": "Mae cost treth car yn dibynnu ar fath eich cerbyd a maint yr injan. [Gallwch gael gwybod faint fydd eich cost ar GOV.UK](https://www.gov.uk/check-tax-rates-new-unregistered-cars).\n\nMae talu am 12 mis ymlaen llaw yn rhatach na’i rannu’n ddwy daliad chwe mis. Mae hyn oherwydd bod tâl o 5% yn cael ei ychwanegu at dymorau talu byrrach, felly os gallwch fforddio talu mewn un tro, byddwch yn arbed arian."
+    },
+    "car-finance": {
+      "title": "Ad-dalu cyllid neu fenthyciad car",
+      "information": "Gwiriwch fanylion eich polisi neu eich cyfriflen banc i ganfod faint yn union yw eich ad-daliadau misol.\n\nPam nad ewch chi ati i weld a allech chi leihau cost eich cytundeb benthyciad talu am gar neu fenthyciad personol. Gweler ein canllawiau:\n\n[Lleihau costau sy'n gysylltiedig â phrynu car, hurbwrcas a chostau cyllid eraill](https://www.moneyhelper.org.uk/cy/everyday-money/buying-and-running-a-car/cut-your-car-finance-hire-purchase-and-other-finance-costs?source=mas) a [Sut i leihau cost eich benthyciadau personol](https://www.moneyhelper.org.uk/cy/money-troubles/cost-of-living/bill-prioritiser)"
+    },
+    "loan-insurance": {
+      "title": "Yswiriant benthyciad",
+      "information": "Mae yswiriant diogelu taliadau benthyca yn diogelu eich ad-daliadau prynu car neu fenthyciadau os ydych yn sâl, wedi cael damwain neu yn colli eich swydd.\n\nOs oes gennych bolisi unigol, gwiriwch fanylion y polisi hwn neu eich cyfriflen banc i ganfod faint yn union yw eich premiymau misol.\n\nOs ydych yn talu am eich yswiriant ochr yn ochr â'ch ad-daliadau, gall fod yn haws i chi adael y blwch hwn yn wag a rhoi'r swm dan 'Ad-dalu prynu car neu fenthyciad' uchod.\n\nOs ydych o'r farn bod y polisi wedi ei gam-werthu i chi, ewch i: [Sut i hawlio yswiriant gwarchod taliadau a gamwerthwyd (PPI).](https://www.moneyhelper.org.uk/cy/everyday-money/insurance?source=mas)"
+    },
+    "mot": {
+      "title": "MOT",
+      "information": "Gwiriwch ffioedd MOT ar wefan [GOV.UK](https://www.gov.uk/getting-an-mot/mot-test-fees)"
+    },
+    "maintenance": {
+      "title": "Cynnal a chadw a thrwsio",
+      "information": "Mae hwn yn un anodd i'w gyllidebu ar ei gyfer gan nad ydych yn gwybod beth fydd yn mynd o chwith gyda'ch car yn y dyfodol.\n\nOs yw eich car yn eithaf newydd ac yn rhydd o unrhyw broblemau yna mae'n debyg mai dim ond gofal arferol y dylech chi gyllido ar ei gyfer yma. Ond os yw eich car yn torri i lawr yn aml dylech gyfrifo faint warioch chi arno wrth ei drwsio dros y flwyddyn ddiwethaf a rhoi'r swm hwnnw."
+    },
+    "parking": {
+      "title": "Parcio a thollau",
+      "information": "Rhowch y swm a wariwch i ddefnyddio meysydd parcio, a chyfrifwch hefyd gost unrhyw daliadau cosb parcio dros y cyfnod o amser a ddewiswch yn y gwymplen."
+    },
+    "bus": {
+      "title": "Tocynnau bws, trên tanddaearol a thram",
+      "information": "Rhowch gost eich teithio dyddiol ar drafnidiaeth gyhoeddus yn ogystal ag unhryw deithiau gyda'r nos neu ar benwythnosau.\n\nHoffech chi gael gwybod rhagor ynglŷn ag arbed arian ar drafnidiaeth gyhoeddus? Gweler ein canllaw: [Cwtogwch ar gostau car a theithio](https://www.moneyhelper.org.uk/cy/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "trains": {
+      "title": "Trenau",
+      "information": "Rhowch y gost o deithio ar drên yma.\n\nOs hoffech ddarganfod rhagor ynglŷn ag arbed arian ar docynnau trên, darllenwch ein canllaw: [Cwtogwch ar gostau car a theithio](https://www.moneyhelper.org.uk/cy/everyday-money/buying-and-running-a-car/cut-your-car-and-train-costs?source=mas)"
+    },
+    "taxis": {
+      "title": "Tacsis",
+      "information": "Rhowch y swm a wariwch ar gostau tacsi yma. Cofiwch gynnwys tacsi i'r gwaith ac yn ôl, tacsis fel rhan o'ch bywyd cymdeithasol a thacsis fel rhan o deithiau hirach, i'r stesion neu i'r maes awyr ac yn ôl er enghraifft."
+    },
+    "air": {
+      "title": "Hedfan",
+      "information": "Rhowch y swm a wariwch ar hedfan yma. Nid oes angen cynnwys hediadau gwyliau yma - mae'r rhain yn cael eu cynnwys ar y dudalen 'Hamdden'."
+    }
+  }
+}

@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`NestedNavigation component renders nested nav correctly 1`] = `
+<div>
+  <nav
+    aria-label="Standard Financial Statement section navigation"
+    class="bg-white lg:min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+  >
+    <div
+      class="border-1 border-slate-400 border-r-r rounded-bl-[24px] mb-8 overflow-hidden"
+    >
+      <ul>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            data-testid="use-the-sfs-link"
+            href="/en/use-the-sfs"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Use the SFS
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+      <h5
+        class="text-lg md:text-xl text-gray-800 font-bold pt-6 pb-3 mx-5 border-b-1 border-b-slate-400"
+      >
+        Spending Guidelines
+      </h5>
+      <ul>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            data-testid="use-the-sfs-spending-guidelines-link"
+            href="/en/use-the-sfs/spending-guidelines"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Spending Guidelines 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+            data-testid="use-the-sfs-commentary-for-link"
+            href="/en/use-the-sfs/commentary-for"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Commentary for 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`SideNavigationWrapper component renders wrapper component with nested children correctly 1`] = `
+<div>
+  <nav
+    aria-label="Llywio adrannau’r Datganiad Ariannol Safonol"
+    class="bg-white lg:min-w-[300px] lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto"
+  >
+    <div
+      class="border-1 border-slate-400 border-r-r rounded-bl-[24px] mb-8 overflow-hidden"
+    >
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline focus:bg-yellow-400 relative focus:shadow-transparent z-1 bg-green-300 font-bold after:content-none hover:bg-green-300 hover:no-underline"
+            data-testid="use-the-sfs-link"
+            href="/cy/use-the-sfs"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Use the SFS
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+      <h5
+        class="text-lg md:text-xl text-gray-800 font-bold pt-6 pb-3 mx-5 border-b-1 border-b-slate-400"
+      >
+        Spending Guidelines
+      </h5>
+      <ul>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:content-[""] after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1"
+            data-testid="use-the-sfs-spending-guidelines-link"
+            href="/cy/use-the-sfs/spending-guidelines"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Spending Guidelines 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="gap-2 focus:text-gray-800 focus-within:outline-none focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+            data-testid="use-the-sfs-commentary-for-link"
+            href="/cy/use-the-sfs/commentary-for"
+          >
+            <span
+              class="max-w-[90%]"
+            >
+              Commentary for 2024/25
+            </span>
+            <chevron.svg
+              class="ml-auto"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`SideNavigationWrapper component renders wrapper component with unnested children correctly 1`] = `
+<div>
+  <nav
+    aria-label="Llywio adrannau’r Datganiad Ariannol Safonol"
+    class="bg-white lg:min-w-[300px] mb-6 lg:max-w-[300px] lg:sticky lg:top-4 lg:overflow-y-auto lg:mb-0"
+  >
+    <ul
+      class="border-1 border-slate-400 border-r-r rounded-bl-[24px] overflow-hidden"
+    >
+      <li>
+        <a
+          aria-current="page"
+          class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline focus:bg-yellow-400 relative focus:shadow-transparent z-1 bg-green-300 font-bold after:content-none hover:bg-green-300 hover:no-underline"
+          data-testid="what-is-the-sfs-link"
+          href="/en/what-is-the-sfs"
+        >
+          <span
+            class="max-w-[90%]"
+          >
+            What is the Standard Financial Statement?
+          </span>
+          <chevron.svg
+            class="ml-auto"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-sm text-magenta-800 visited:text-magenta-800 px-4 lg:px-6 py-3 flex items-center after:absolute after:bottom-[-1px] after:left-4 after:right-4 lg:after:left-6 lg:after:right-6 after:h-[1px] after:bg-slate-400 no-underline hover:underline hover:bg-gray-150 focus:bg-yellow-400 relative focus:shadow-transparent z-1 lg:rounded-bl-[23px] after:content-none"
+          data-testid="what-is-the-sfs-find-free-debt-advice-link"
+          href="/en/what-is-the-sfs/find-free-debt-advice"
+        >
+          <span
+            class="max-w-[90%]"
+          >
+            Find debt advice
+          </span>
+          <chevron.svg
+            class="ml-auto"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

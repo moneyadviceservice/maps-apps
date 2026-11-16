@@ -1,0 +1,267 @@
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-22.04'
+
+parameters:
+  - name: projectName
+    displayName: Playwright target project
+    type: string
+    values:
+      - adjustable-income-calculator
+      - baby-cost-calculator
+      - baby-money-timeline
+      - budget-planner
+      - cash-in-chunks
+      - compare-accounts
+      - credit-options
+      - credit-rejection
+      - debt-advice-locator
+      - evidence-hub
+      - fuel-finder
+      - guaranteed-income-estimator
+      - learning-pathway
+      - leave-pot-untouched
+      - midlife-mot
+      - money-adviser-network # Currently blocked due to use of server side mocks.
+      - moneyhelper-booking-forms # Currently blocked due to use of server side mocks.
+      - moneyhelper-contact-forms # Currently blocked due to use of server side mocks.
+      - mortgage-calculator
+      - pension-calculator
+      - pension-type-tool
+      - pensions-dashboard # This currently has a dedicated pipeline, once this work has been completed, we will move over to using this one.
+      - pensionwise-appointment
+      - pensionwise-triage
+      - redundancy-pay-calculator
+      - retirement-budget-planner
+      - retirement-guidance
+      - salary-calculator
+      - savings-calculator
+      - stamp-duty-calculator
+      - standard-financial-statement
+      - take-whole-pot
+      - travel-insurance-directory # Currently blocked due to use of basic auth.
+      - workplace-pension-calculator
+
+variables:
+  - group: Maps-Apps-Pipeline-Secrets
+  - group: mhpdE2eTest-test
+
+stages:
+  - stage: Test_Cross_Browser
+    displayName: '${{ parameters.projectName }} Cross Browser Tests'
+    jobs:
+      - ${{ if eq(parameters.projectName, 'adjustable-income-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: adjustable-income-calculator
+              baseUrl: https://develop--adjustable-income-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'baby-cost-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: baby-cost-calculator
+              baseUrl: https://develop--baby-cost-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'baby-money-timeline') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: baby-money-timeline
+              baseUrl: https://develop--maps-baby-money-timeline.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'budget-planner') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: budget-planner
+              baseUrl: https://develop--mh-budget-planner.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'cash-in-chunks') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: cash-in-chunks
+              baseUrl: https://develop--cash-in-chunks.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'compare-accounts') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: compare-accounts
+              baseUrl: https://develop--mh-compare-accounts.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'credit-options') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: credit-options
+              baseUrl: https://develop--credit-options.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'credit-rejection') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: credit-rejection
+              baseUrl: https://develop--credit-rejection.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'debt-advice-locator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: debt-advice-locator
+              baseUrl: https://develop--debt-advice-locator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'evidence-hub') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: evidence-hub
+              baseUrl: https://develop--evidence-hub.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'fuel-finder') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: fuel-finder
+              baseUrl: https://develop--maps-fuel-finder.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'guaranteed-income-estimator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: guaranteed-income-estimator
+              baseUrl: https://develop--guaranteed-income-estimator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'learning-pathway') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: learning-pathway
+              baseUrl: https://develop--learning-pathway.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'leave-pot-untouched') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: leave-pot-untouched
+              baseUrl: https://develop--leave-pot-untouched.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'midlife-mot') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: midlife-mot
+              baseUrl: https://develop--mh-midlife-mot.netlify.app/
+
+      # Currently blocked due to use of server side mocks.
+      - ${{ if eq(parameters.projectName, 'money-adviser-network') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: money-adviser-network
+              baseUrl: https://develop--money-adviser-network.netlify.app/
+
+      # Currently blocked due to use of server side mocks.
+      - ${{ if eq(parameters.projectName, 'moneyhelper-booking-forms') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: moneyhelper-booking-forms
+              baseUrl: https://develop--maps-moneyhelper-booking-forms.netlify.app/
+
+      # Currently blocked due to use of server side mocks.
+      - ${{ if eq(parameters.projectName, 'moneyhelper-contact-forms') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: moneyhelper-contact-forms
+              baseUrl: https://develop--moneyhelper-contact-forms.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'mortgage-affordability') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: mortgage-affordability
+              baseUrl: https://develop--mortgage-affordability-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'mortgage-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: mortgage-calculator
+              baseUrl: https://develop--mh-mortgage-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'pension-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: pension-calculator
+              baseUrl: https://develop--maps-pension-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'pension-type-tool') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: pension-type-tool
+              baseUrl: https://develop--pension-type-tool.netlify.app/
+
+      # This currently has a dedicated pipeline, once this work has been completed, we will move over to using this one.
+      - ${{ if eq(parameters.projectName, 'pensions-dashboard') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: pensions-dashboard
+              baseUrl: https://develop--pensions-dashboard.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'pensionwise-appointment') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: pensionwise-appointment
+              baseUrl: https://develop--pensionwise-appointment.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'pensionwise-triage') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: pensionwise-triage
+              baseUrl: https://develop--pensionwise-triage.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'redundancy-pay-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: redundancy-pay-calculator
+              baseUrl: https://develop--redundancy-pay-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'retirement-budget-planner') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: retirement-budget-planner
+              baseUrl: https://develop--retirement-budget-planner.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'retirement-guidance') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: retirement-guidance
+              baseUrl: https://develop--retirement-guidance.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'salary-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: salary-calculator
+              baseUrl: https://develop--maps-salary-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'savings-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: savings-calculator
+              baseUrl: https://develop--maps-savings-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'stamp-duty-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: stamp-duty-calculator
+              baseUrl: https://develop--stamp-duty-calculator.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'standard-financial-statement') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: standard-financial-statement
+              baseUrl: https://develop--standard-financial-statement.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'take-whole-pot') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: take-whole-pot
+              baseUrl: https://develop--take-whole-pot.netlify.app/
+
+      # Currently blocked due to use of basic auth.
+      - ${{ if eq(parameters.projectName, 'travel-insurance-directory') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: travel-insurance-directory
+              baseUrl: https://develop--travel-insurance-directory.netlify.app/
+
+      - ${{ if eq(parameters.projectName, 'workplace-pension-calculator') }}:
+          - template: templates/test-cross-compatibility.yml
+            parameters:
+              projectName: workplace-pension-calculator
+              baseUrl: https://develop--workplace-pension-calculator.netlify.app/

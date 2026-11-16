@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ResultsHeading should render the component 1`] = `
+<div>
+  <p
+    class="mb-4 break-words"
+    data-testid="paragraph"
+  >
+    Based on your answers, here are some options that may be suitable for you.
+  </p>
+</div>
+`;

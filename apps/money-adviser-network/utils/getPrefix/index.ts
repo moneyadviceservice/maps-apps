@@ -1,0 +1,1 @@
+export { getPrefix } from './getPrefix';

@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PensionLossAppointment (cy) renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="paragraph"
+    >
+      --WELSH There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.
+    </p>
+    
+
+    <p
+      class="break-words mb-2"
+      data-testid="paragraph"
+    >
+      That’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost.
+    </p>
+    <h2
+      class="text-3xl md:text-5xl font-bold text-blue-700"
+    >
+      --WELSH What an appointment covers
+    </h2>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-loss-appointment-content-0"
+      >
+        --WELSH You’ll find out:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="pension-loss-appointment-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-0"
+            >
+              --WELSH what has happened to your pension and what it means for you
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-1"
+            >
+              --WELSH what common scam-related pension terms and acronyms refer to
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-2"
+            >
+              --WELSH what options you may have to recover some of the money you’ve lost
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-3"
+            >
+              --WELSH what to expect next, including possible investigations or follow-up steps
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2
+      class="text-3xl md:text-5xl font-bold text-blue-700"
+    >
+      --WELSH Eligibility
+    </h2>
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700"
+      data-testid="notification-box-default"
+    >
+      <section
+        class="flex flex-col gap-4"
+      >
+        <p
+          class="break-words mb-2"
+          data-testid="pension-loss-appointment-callout-content-0"
+        >
+          --WELSH You 
+          <strong>
+            can’t
+          </strong>
+           book a pension loss appointment if: 
+        </p>
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+            data-testid="pension-loss-appointment-callout-list-0"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-loss-appointment-callout-item-0-0"
+              >
+                --WELSH you have not been the victim of a suspected or confirmed pension scam
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <form
+    action="/api/form-handler?locale=cy"
+    aria-label="form"
+    class="pt-6 md:pt-8"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="pension-loss-appointment"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="eligibility-pension-loss"
+    />
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      --WELSH Book your free appointment
+      <span />
+    </button>
+  </form>
+  <div
+    class="mt-6"
+  >
+    <h3
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-4"
+    >
+      --WELSH Already booked an appointment? 
+    </h3>
+    <p
+      class="mb-4 break-words"
+      data-testid="pension-loss-appointment-callout"
+    >
+      --WELSH If you want to change or cancel an existing appointment booking, go to the 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="/cy/find-appointment"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Find your appointment
+        <span
+          class="sr-only"
+        >
+           (opens in a new window) 
+        </span>
+        <svgr-mock
+          class="inline ml-[6px] mr-[2px]"
+        />
+      </a>
+       page.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PensionLossAppointment (en) renders component correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="break-words mb-2"
+      data-testid="paragraph"
+    >
+      There is scams support out there, but it can be overwhelming to navigate when you’ve been scammed. It can also come at a price that people cannot afford.
+    </p>
+    
+
+    <p
+      class="break-words mb-2"
+      data-testid="paragraph"
+    >
+      That’s why we have a specialist free Pension Loss service. Our pension specialists help consumers to make sense of what has happened and all the bewildering acronyms. We discuss the possible redress options and provide helpful resources at no charge. This can be enough to enable a scams victim to approach the right organisations to recover at least some of the money they have lost.
+    </p>
+    <h2
+      class="text-3xl md:text-5xl font-bold text-blue-700"
+    >
+      What an appointment covers
+    </h2>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <p
+        class="break-words mb-2"
+        data-testid="pension-loss-appointment-content-0"
+      >
+        You’ll find out:
+      </p>
+      <div
+        class="flex items-center"
+        data-testid="list-element"
+      >
+        <ul
+          class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+          data-testid="pension-loss-appointment-list-0"
+          start="-1"
+        >
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-0"
+            >
+              what has happened to your pension and what it means for you
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-1"
+            >
+              what common scam-related pension terms and acronyms refer to
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-2"
+            >
+              what options you may have to recover some of the money you’ve lost
+            </p>
+          </li>
+          <li>
+            <p
+              class="mb-4 break-words"
+              data-testid="pension-loss-appointment-item-0-3"
+            >
+              what to expect next, including possible investigations or follow-up steps
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2
+      class="text-3xl md:text-5xl font-bold text-blue-700"
+    >
+      Eligibility
+    </h2>
+    <div
+      class="relative min-h-[95px] p-6 rounded-bl-3xl before:content-[""] before:block before:h-[80px] before:w-[8px] before:absolute before:left-0 before:top-0 before:rounded-bl-[8px] bg-blue-100 before:bg-blue-700"
+      data-testid="notification-box-default"
+    >
+      <section
+        class="flex flex-col gap-4"
+      >
+        <p
+          class="break-words mb-2"
+          data-testid="pension-loss-appointment-callout-content-0"
+        >
+          You 
+          <strong>
+            can’t
+          </strong>
+           book a pension loss appointment if: 
+        </p>
+        <div
+          class="flex items-center"
+          data-testid="list-element"
+        >
+          <ul
+            class="marker:mr-2 marker:pr-2 space-y-2 marker:leading-snug list-disc marker:text-blue-700 mb-2 ml-8"
+            data-testid="pension-loss-appointment-callout-list-0"
+            start="-1"
+          >
+            <li>
+              <p
+                class="mb-4 break-words"
+                data-testid="pension-loss-appointment-callout-item-0-0"
+              >
+                you have not been the victim of a suspected or confirmed pension scam
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <form
+    action="/api/form-handler?locale=en"
+    aria-label="form"
+    class="pt-6 md:pt-8"
+    method="POST"
+    novalidate=""
+  >
+    <input
+      name="currentStep"
+      type="hidden"
+      value="pension-loss-appointment"
+    />
+    <input
+      name="nextStep"
+      type="hidden"
+      value="eligibility-pension-loss"
+    />
+    <button
+      class="border-0 text-white bg-magenta-500 hover:bg-pink-800 active:bg-pink-900 active:outline-yellow-400 active:text-white t-button relative px-3 py-2 font-semibold rounded outline-none shadow-bottom-gray inline-flex items-center justify-between gap-2 cursor-pointer disabled:cursor-not-allowed disabled:border-slate-400 disabled:border disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none focus:bg-yellow-400 focus:outline-blue-700 focus:outline-[3px] focus:outline-offset-0 focus:text-gray-800 focus:shadow-none focus:before:content-[""] focus:before:w-[calc(100%+6px)] focus:before:rounded-[0.45rem] focus:before:absolute focus:before:inset-0 focus:before:inset-x-[-3px] focus:before:inset-y-[-3px] focus:before:shadow-bottom-gray active:outline-[3px] active:outline-offset-0 active:shadow-inset active:before:content-[""] active:before:w-[calc(100%+6px)] active:before:rounded-[0.45rem] active:before:absolute active:before:inset-0 active:before:inset-x-[-3px] active:before:inset-y-[-3px] active:before:shadow-bottom-white t-primary-button w-full my-8 md:w-auto"
+      data-testid="form-button"
+      type="submit"
+    >
+      <span />
+      Book your free appointment
+      <span />
+    </button>
+  </form>
+  <div
+    class="mt-6"
+  >
+    <h3
+      class="text-xl md:text-2xl text-gray-800 font-bold mb-4"
+    >
+      Already booked an appointment? 
+    </h3>
+    <p
+      class="mb-4 break-words"
+      data-testid="pension-loss-appointment-callout"
+    >
+      If you want to change or cancel an existing appointment booking, go to the 
+      <a
+        class="inline items-center gap-2 text-magenta-500 visited:text-purple-700 focus:text-gray-800 focus:bg-yellow-400 focus:shadow-link-focus focus-within:outline-none underline hover:no-underline focus:no-underline cursor-pointer active:text-gray-800 active:underline active:bg-transparent active:shadow-none"
+        href="/en/find-appointment"
+        rel="noopener noreferrer"
+        target="_self"
+      >
+        Find your appointment
+      </a>
+       page.
+    </p>
+  </div>
+</div>
+`;

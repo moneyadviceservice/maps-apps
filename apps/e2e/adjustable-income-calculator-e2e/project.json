@@ -1,0 +1,59 @@
+{
+  "name": "adjustable-income-calculator-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e2e/adjustable-income-calculator-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["adjustable-income-calculator"],
+  "targets": {
+    "e2e-headed": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/adjustable-income-calculator-e2e/playwright.config.ts",
+        "ui": true
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "adjustable-income-calculator:serve:production"
+        }
+      }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "config": "apps/e2e/adjustable-income-calculator-e2e/playwright.config.ts"
+      }
+    },
+    "testmu-prelaunch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/e2e/adjustable-income-calculator-e2e",
+        "command": "ts-node -r ../../../libs/shared/utils/src/e2e/playwright/testmu/pre-launch-script.ts"
+      }
+    },
+    "e2e-testmu": {
+      "executor": "@nx/playwright:playwright",
+      "dependsOn": ["testmu-prelaunch"],
+      "options": {
+        "config": "apps/e2e/adjustable-income-calculator-e2e/playwright.testmu.config.ts"
+      },
+      "configurations": {
+        "windows": {
+          "project": ["*Windows*@lambdatest"]
+        },
+        "mac": {
+          "project": ["*MacOS *@lambdatest"]
+        },
+        "android": {
+          "project": ["*android@lambdatest"]
+        },
+        "ios": {
+          "project": ["*MacOS *@lambdatest (iPhone *)"]
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

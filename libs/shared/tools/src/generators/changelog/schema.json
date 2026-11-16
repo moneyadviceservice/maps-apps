@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "cli": "nx",
+  "id": "changelog",
+  "type": "object",
+  "title": "Generate an app CHANGELOG entry",
+  "description": "Generate a per-app changelog entry from the app's own commits, and optionally commit it as the release marker.",
+  "examples": [
+    {
+      "command": "nx generate @maps-react/tools:changelog mortgage-calculator 1.2.0 --preview",
+      "description": "Print the rendered changelog entry to the console without writing or committing."
+    },
+    {
+      "command": "nx generate @maps-react/tools:changelog mortgage-calculator 1.2.0",
+      "description": "Write apps/mortgage-calculator/CHANGELOG.md without committing."
+    },
+    {
+      "command": "nx generate @maps-react/tools:changelog mortgage-calculator 1.2.0 --commit",
+      "description": "Write the changelog entry and commit it as the 'chore(release)' release marker."
+    }
+  ],
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The app to release (Nx project name).",
+      "$default": { "$source": "argv", "index": 0 },
+      "x-prompt": "Which app are you releasing?",
+      "x-priority": "important"
+    },
+    "releaseVersion": {
+      "type": "string",
+      "description": "The new version, e.g. 1.2.0 (semver recommended to match existing tags). Named releaseVersion because Nx reserves the --version flag.",
+      "$default": { "$source": "argv", "index": 1 },
+      "x-prompt": "What version are you releasing (e.g. 1.2.0)?",
+      "x-priority": "important"
+    },
+    "from": {
+      "type": "string",
+      "description": "Override the boundary ref (git tag or SHA). Defaults to the last 'chore(release): <project>' commit, then the last commit that touched the app's CHANGELOG, then the first commit for a first release."
+    },
+    "preview": {
+      "type": "boolean",
+      "description": "Print the rendered changelog entry to the console without writing or committing.",
+      "default": false
+    },
+    "commit": {
+      "type": "boolean",
+      "description": "After writing, stage and commit only the CHANGELOG as 'chore(release): <project> <version>'. Off by default; the generator just writes the file.",
+      "default": false
+    }
+  },
+  "required": ["project", "releaseVersion"]
+}

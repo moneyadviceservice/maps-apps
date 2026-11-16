@@ -1,0 +1,1 @@
+export { ResultsHelpText } from './ResultsHelpText';

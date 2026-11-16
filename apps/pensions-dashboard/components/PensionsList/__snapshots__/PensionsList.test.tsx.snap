@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PensionsList renders correctly 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+    >
+      <span
+        class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+      >
+        <svgr-mock
+          class=""
+        />
+      </span>
+      <span
+        class="flex-1 min-w-0 break-words"
+      >
+        Scheme 1
+      </span>
+    </li>
+    <li
+      class="flex items-start gap-2 mt-5 leading-7 lg:gap-3"
+    >
+      <span
+        class="w-[24px] h-[24px] flex-shrink-0 ml-2 sm:ml-0 mt-1"
+      >
+        <svgr-mock
+          class=""
+        />
+      </span>
+      <span
+        class="flex-1 min-w-0 break-words"
+      >
+        Scheme 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;

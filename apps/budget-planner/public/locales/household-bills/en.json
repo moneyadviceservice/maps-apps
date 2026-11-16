@@ -1,0 +1,89 @@
+{
+  "title": "Household bills",
+  "fields": {
+    "mortgage": {
+      "title": "Mortgage repayment",
+      "information": "Enter your monthly mortgage repayment here.\n\nIf you have an interest-only mortgage plus an endowment (or something similar) - put the interest payment here and the other figure in the 'Mortgage endowment' box below.\n\nSee if you can save yourself some money on your mortgage: [Remortgaging to cut costs](https://www.moneyhelper.org.uk/en/homes/buying-a-home/remortgaging-to-cut-costs)"
+    },
+    "rent": {
+      "title": "Rent",
+      "information": "Enter your rent here and make sure you select the correct frequency (for example monthly or weekly).\n\n\\- If your rent is covered by Housing Benefit which goes directly to your landlord leave this box blank.\n\n\\- If you pay some or all of your rent yourself enter the amount you pay here."
+    },
+    "endowment": {
+      "title": "Mortgage endowment",
+      "information": "A mortgage endowment is an investment product that is set up as a regular savings plan which pays out a lump sum at the end of your mortgage term. You might have one of these if you have an interest-only mortgage.\n\nJust enter here the amount you pay into the endowment. Put the interest payment in the box above.\n\nIf you're worried that your endowment might not cover the amount owed at the end of your mortgage term you should act now. See our guide: [Dealing with an endowment shortfall](https://www.moneyhelper.org.uk/en/homes/buying-a-home/dealing-with-an-endowment-shortfall)"
+    },
+    "insurance": {
+      "title": "Mortgage life insurance",
+      "information": "Mortgage life insurance pays out a lump sum to cover your outstanding mortgage debt if you die.\n\nCheck your policy details or your bank statement to find out exactly what your monthly premiums are.\n\nIf you haven't checked your policy lately you might find that it's worth shopping around. Find out more in our guide: [How and where to buy life insurance](https://www.moneyhelper.org.uk/en/everyday-money/insurance/what-is-life-insurance)"
+    },
+    "ground-rent": {
+      "title": "Ground rent",
+      "information": "This is an annual amount that you pay if you own a leasehold property. Most flats and maisonettes are leasehold properties.\n\nIt's usually a small amount (such as £100 or £200 a year). If you're not sure how much you pay, check your lease for the amount.\n\n(This does not apply in Scotland.)"
+    },
+    "service-charge": {
+      "title": "Service charge",
+      "information": "You pay this to the freeholder of your leasehold property or to a managing agent to cover the upkeep of communal areas in a block of flats. (It's known as factoring charge in Scotland.)\n\nIf you're not sure how much your service charge is, check your lease for the amount.\n\nIf you're renting, the service charge is normally included in the rent."
+    },
+    "buildings-insurance": {
+      "title": "Buildings insurance",
+      "information": "Buildings insurance covers the bricks and mortar of your home plus permanent fixtures and fittings like kitchens and bathrooms.\n\nIf you pay a single premium for buildings and contents insurance, enter that amount once and leave the other box blank.\n\nIf you're renting you can leave this box blank. Buildings insurance is your landlord's responsibility.\n\nFind out whether you could save on your home insurance: [Home insurance - how to get the best deal](https://www.moneyhelper.org.uk/en/everyday-money/insurance/home-insurance-how-to-get-the-best-deal)"
+    },
+    "contents-insurance": {
+      "title": "Contents insurance",
+      "information": "Contents insurance covers the things you keep in your home, like furniture, TVs and personal belongings.\n\nIf you pay a single premium for buildings and contents insurance, enter that amount once and leave the other box blank.\n\nFind out whether you could save on your home insurance: [Home insurance - how to get the best deal](https://www.moneyhelper.org.uk/en/everyday-money/insurance/home-insurance-how-to-get-the-best-deal)"
+    },
+    "council-tax": {
+      "title": "Council Tax or Rates",
+      "information": "Check your Council Tax bill (or Rates bill if you're in Northern Ireland) to find out the annual amount you pay. If you pay by Direct Debit, this is probably in 12 monthly payments, but some councils will bill you for 10 payments per year so check this before you enter the amount."
+    },
+    "gas": {
+      "title": "Gas",
+      "information": "Check your bill or bank statement to see how much you spend on gas each month.\n\nIf you pay for gas and electricity together, enter that amount once and leave the other box blank.\n\nIf you have a prepay meter you'll need to add up how much you spend per year. If you put the yearly amount in, the calculator will work out an average monthly amount for you. That way, you can be sure you've taken into account both your winter and summer usage.\n\nFind out whether you could save yourself some money: [Save money on your gas and electricity bills](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "electricity": {
+      "title": "Electricity",
+      "information": "Check your bill or bank statement to see how much you spend on gas each month.\n\nIf you pay for gas and electricity together, enter that amount once and leave the other box blank.\n\nIf you have a prepay meter you'll need to add up how much you spend per year. If you put the yearly amount in, the calculator will work out an average monthly amount for you. That way, you can be sure you've taken into account both your winter and summer usage.\n\nFind out whether you could save yourself some money: [Save money on your gas and electricity bills](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "other-fuel": {
+      "title": "Other household fuel",
+      "information": "If you use oil, coal, wood, or any other type of fuel, enter the amount you spend here. If you add up how much you spend per year, the calculator will work out an average monthly amount for you. That way, you can be sure you've taken into account both your winter and summer fuel usage."
+    },
+    "water": {
+      "title": "Water",
+      "information": "Check your bill or bank statement to see how much you spend on water each month.\n\nIf you have a water meter, add up how much you spend per year. The calculator will work out an average monthly amount for you. That way, you can be sure you've taken into account things like watering the garden in the summer.\n\nFind out whether you could get a better deal: [Save money on your water bills](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "home-phone": {
+      "title": "Home phone and broadband",
+      "information": "Check your bill or bank statement to see how much you spend. If you pay separately for your line rental and calls, make sure you include both here.\n\nIf you pay for your landline, TV and broadband as a package enter that amount once and leave the other boxes blank.\n\nFind out whether you could get a better deal: [Save money on your home phone and broadband](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "mobile": {
+      "title": "Mobile phone",
+      "information": "If you're on a contract check your bill or your bank statement to see how much you spend each month.\n\nIf you're on a pay-as-you-go deal, enter the amount you top up and how often. And don't forget to include the cost of your handset. If you get a new phone every year, put this in as a yearly expense.\n\nFind out whether you could get a better deal: [Save money on your mobile phone](https://www.moneyhelper.org.uk/en/everyday-money/credit/struggling-to-pay-your-gas-or-electricity-bill)"
+    },
+    "tv-licence": {
+      "title": "TV licence",
+      "information": "You can find out how much a TV Licence costs on the [tvlicensing.co.uk](https://www.tvlicensing.co.uk/) website."
+    },
+    "cabel-or-satellite-tv": {
+      "title": "Cable or satellite TV",
+      "information": "Check your bill or bank statement to find out how much you spend on your TV subscription.\n\nIf you pay for your landline, TV and broadband together, enter the amount once leaving the other boxes blank."
+    },
+    "home-maintenance": {
+      "title": "Home maintenance",
+      "information": "Try to work out what you spend across an average year on household maintenance. This might include painting and decorating, or repairs to a leaking roof or a blocked gutter. Make sure you include any DIY materials you buy plus whatever you pay for plumbers, electricians or builders.\n\nEven if the work is covered by your insurance, make sure you include the excess here."
+    },
+    "garden-maintenance": {
+      "title": "Garden maintenance",
+      "information": "Try to work out what you spend in an average year on looking after your garden. This might include things like buying plants and seeds, compost, manure, or petrol for your lawn mower.\n\nIf you pay someone to mow your lawn or do other gardening jobs for you, include it here."
+    },
+    "appliance-rental": {
+      "title": "Appliance rental",
+      "information": "If you rent any appliances, such as a washing machine, fridge or TV, enter the weekly or monthly rental here."
+    },
+    "boiler-cover": {
+      "title": "Boiler cover",
+      "information": "If you've taken out insurance to cover you in case your boiler breaks down, enter the amount you pay here."
+    }
+  }
+}

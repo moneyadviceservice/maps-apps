@@ -1,0 +1,64 @@
+parameters:
+  - name: platform
+    type: string
+  - name: displayName
+    type: string
+  - name: dependsOn
+    type: string
+    default: ''
+  - name: condition
+    type: string
+    default: succeededOrFailed()
+
+jobs:
+  - job: ${{ parameters.platform }}_Tests
+    timeoutInMinutes: 0
+    displayName: ${{ parameters.displayName }}
+    dependsOn: ${{ parameters.dependsOn }}
+    condition: ${{ parameters.condition }}
+
+    steps:
+      - task: UseNode@1
+        inputs:
+          version: '22.23.3'
+        displayName: 'Install Node.js'
+
+      - script: |
+          node -v
+          npm -v
+          npx -v
+        displayName: 'Verify Node.js / npm / npx'
+
+      - script: npm ci --no-audit
+        displayName: 'Install Dependencies'
+
+      # Install Playwright 1.56.1 and matching browsers for this pipeline
+      - script: |
+          npm pkg set 'devDependencies.@playwright/test=1.56.1'
+          npm install --no-audit
+          ./node_modules/.bin/playwright install --with-deps
+        displayName: 'Install Playwright 1.56.1 and browsers'
+
+      - script: >
+          npx nx run pensions-dashboard-e2e:e2e-testmu:${{ parameters.platform }}
+          --config=apps/e2e/pensions-dashboard-e2e/playwright.testmu.config.ts
+          --output=results/${{ parameters.platform }}/test-results
+          --skip-nx-cache
+        displayName: 'Run ${{ parameters.displayName }} tests'
+        env:
+          E2E_TARGET: $(E2E_TARGET)
+          BASE_URL: $(PENSION_DASHBOARD_URL)
+          MHPD_API_URL: $(MHPD_API_DOMAIN)
+          NETLIFY_PASSWORD: $(netlify-password)
+          LT_USERNAME: $(LT_USERNAME)
+          LT_ACCESS_KEY: $(lt-access-key)
+          PLAYWRIGHT_HTML_REPORT: results/${{ parameters.platform }}/playwright-report
+          PW_TEST_HTML_REPORT_OPEN: 'never'
+          CI: 'true'
+
+      - task: PublishBuildArtifacts@1
+        condition: succeededOrFailed()
+        inputs:
+          pathToPublish: results/${{ parameters.platform }}/playwright-report
+          artifactName: ${{ parameters.platform }}-playwright-report
+          publishLocation: 'Container'

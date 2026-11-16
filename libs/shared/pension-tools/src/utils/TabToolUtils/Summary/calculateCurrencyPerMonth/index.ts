@@ -1,0 +1,1 @@
+export { calculateCurrencyPerMonth } from './calculateCurrencyPerMonth';

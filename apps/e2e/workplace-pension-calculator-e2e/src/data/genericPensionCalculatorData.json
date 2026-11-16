@@ -1,0 +1,56 @@
+{
+  "belowThreshold": {
+    "testData": {
+      "age": "21",
+      "salary": "6239",
+      "frequency": "1"
+    },
+    "messages": {
+      "salaryMessages": {
+        "primaryMessage": "Your employer will not automatically enrol you into a pension but you can choose to join. If you earn more than the lower level of qualifying earnings, your employer must also contribute.",
+        "secondaryMessage": "Please note: Your earnings are very close to the threshold at which your employer does not have to contribute to your pension if you choose to enrol. You should check to confirm whether or not your employer will contribute as this threshold varies depending on whether you are paid monthly, weekly or 4-weekly. Read more about the salary thresholds for workplace pensions. (opens in a new window)"
+      },
+      "contributionsMessages": {
+        "resultMessage": "Contributions will be based on your salary of £6,239 per year.",
+        "contributionMessage": "Contributions will be made on your salary of £6,239 per year.",
+        "totalContributionError": "Please double-check for the following errors:1. Total contribution must be at least 8%.",
+        "employerContributionError": "Employer contribution must be between 3 and 100%"
+      },
+      "ageMessage": "Your employer will not automatically enrol you into a pension but you can choose to join. If you earn more than the lower level of qualifying earnings, your employer must also contribute."
+    },
+    "contributionValues": {
+      "duration": "monthly",
+      "employeeContribution": "£26.00",
+      "employeeTaxContribution": "£5.20",
+      "employerContribution": "£15.60",
+      "totalContribution": "£41.60"
+    }
+  },
+  "ageValidation": {
+    "underAge": {
+      "testData": {
+        "age": "15",
+        "message": "You are too young to join a workplace pension. When you reach the age of 16 you can choose to join. If you do so, your employer might make contributions too depending on how much you earn."
+      }
+    },
+    "overAge": {
+      "testData": {
+        "age": "75",
+        "editAge": "80",
+        "message": "You are not entitled to be automatically enrolled into a workplace pension. Many of the tax benefits of saving into a pension stop at age 75."
+      }
+    }
+  },
+  "printEmailReset": {
+    "testData": {
+      "age": "21",
+      "salary": "6239"
+    },
+    "messages": {
+      "resultsMessage": "Contributions will be based on your salary of £6,239 per year",
+      "contributionsMessage": "Contributions will be made on your salary of £6,239 per year.",
+      "emailMessage": "\n    1. Your details: 21 Years, £6,239 per year, full salary\n\n    2. Your contributions: You: 5%, Your employer: 3%\n\n    3. Your Results\n\n    Qualifying earnings: £6,239\n\n    \n    Your monthly contribution: £26.00 (includes tax relief of £5.20)\n\n    Employers monthly contribution: £15.60\n\n    Total monthly contributions: £41.60\n      ",
+      "resetUrl": "/en/workplace-pension-calculator/calculator?reset=true#top"
+    }
+  }
+}

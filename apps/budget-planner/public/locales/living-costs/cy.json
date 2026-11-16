@@ -1,0 +1,81 @@
+{
+  "title": "Costau byw",
+  "fields": {
+    "grocery-shopping": {
+      "title": "Siopa am fwydydd",
+      "information": "Mae hwn yn ffigwr anodd i'w gael yn gywir ond mae'n wir bwysig i chi fod mor gywir â phosibl. Cofiwch fod eich siopa wythnosol yn debygol o gynnwys mwy na bwyd yn unig - mae'n bosib y byddwch yn prynu pethau fel nwyddau ymolchi a glanhau hefyd. A chofiwch gynnwys y pethau ychwanegol hynny y prynwch yn ystod yr wythnos, megis llefrith, bara a byrbrydau.\n\nRhowch gynnig ar geisio arbed arian ar eich bil siopa: [Awgrymiadau da ar arbed arian i'ch helpu i siopa'n fwy clyfar](https://www.moneyhelper.org.uk/en/blog/supermarket-savings/five-ways-to-save-at-the-supermarket)"
+    },
+    "takeaways": {
+      "title": "Pryd mynd allan",
+      "information": "Cofiwch gynnwys cost unrhyw fwyd tecawê y byddwch yn eu prynu gartref ac unrhyw arian rowch i blant hŷn i brynu eu bwyd tecawê eu hunain pan fyddant allan yn crwydro. Mae mynd allan am fwyd yn cael ei gynnwys dan 'Hamdden' felly nid oes angen cynnwys hynny yma."
+    },
+    "alcohol-at-home": {
+      "title": "Alcohol yn y cartref",
+      "information": "Peidiwch â chynnwys hyn os ydych wedi ei gynnwys yn eich siopa wythnosol eisoes. Ond os prynwch alcohol o siop drwyddedig neu unrhyw siop arall, ac nid ydych wedi ei gynnwys eisoes, cofiwch ei gynnwys yma. Bydd gweld faint a wariwch bob mis ar alcohol yn eich ysgogi i yfed llai efallai!"
+    },
+    "smoking-and-vaping": {
+      "title": "Ysmygu a defnyddio e-sigaréts",
+      "information": "Peidiwch â chynnwys hwn os ydych wedi’i ystyried yn eich siop wythnosol. Ond os ydych yn prynu sigaréts neu e-sigaréts ar wahân, sicrhewch eich bod yn cynnwys y gost yma. Peidiwch ag anghofio cynnwys unrhyw beth ychwanegol efallai byddwch yn prynu pan rydych ar noson allan.\n\nEfallai bydd gweld y swm rydych yn ei wario ar ysmygu bob mis hyd yn oed yn eich annog i roi’r gorau i’r arfer."
+    },
+    "lunches-snacks": {
+      "title": "Cinio a byrbrydau",
+      "information": "Peidiwch â chynnwys cost unrhyw becynnau bwyd os yw'r cynhwysion wedi eu prynu fel rhan o'ch siopa wythnosol. Ac os nad ydych yn prynu unrhyw fyrbrydau gallwch adael y blwch hwn yn wag\n\nI'r gweddill ohonom, gallwn gael tipyn o sioc unwaith y byddwn wedi cyfrifo'r brechdanau, y creision a'r holl bethau da yr ydym yn eu prynu i fywiogi diwrnod yn y gwaith!\n\nOs hoffech weld faint a wariwch ar fyrbrydau a brechdanau, rhowch gynnig ar ein [Awgrymiadau da ar arbed arian i'ch helpu i siopa'n fwy clyfar](https://www.moneyhelper.org.uk/cy/everyday-money/budgeting/beginners-guide-to-managing-your-money)"
+    },
+    "takeaway-coffees": {
+      "title": "Coffi cludfwyd",
+      "information": "Os hoffech weld faint a wariwch ar goffi tecawê, a diodydd poeth eraill, rhowch gynnig ar ein [Cyfrifiannell torri'n ôl](https://www.moneyhelper.org.uk/en/everyday-money/budgeting/beginners-guide-to-managing-your-money)"
+    },
+    "union-professional-fees": {
+      "title": "Ffioedd undeb/proffesiynol",
+      "information": "Cofiwch gynnwys yma gost eich aelodaeth o undeb ac unrhyw gyrff proffesiynol eraill yr ydych yn perthyn iddynt ac yn talu amdanynt o'ch poced eich hun"
+    },
+    "clothes": {
+      "title": "Dillad",
+      "information": "Yr unig ffordd i gael darlun cywir yma yw cyfrifo’r hyn rydych chi (a'ch partner os oes un gennych) yn ei wario mewn blwyddyn ar ddillad a rhoi’r swm hwnnw. Yna gallwch sicrhau eich bod wedi ystyried eitemau mawr fel cot aeaf neu siwt newydd. Dylech ond cynnwys dillad ar gyfer gwaith os nad ydych wedi eu nodi ar wahân yn y blwch uchod."
+    },
+    "shoes": {
+      "title": "Esgidiau",
+      "information": "Dyma un o'r ffigurau hynny y mae angen i chi gyfrifo dros y flwyddyn. Cyfrifwch gost bob pâr o esgidiau, bŵts a fflip -fflops rydych chi wedi'u prynu ar gyfer y teulu cyfan yn ystod y flwyddyn ddiwethaf. Dylech ond cynnwys esgidiau ysgol, esgidiau pêl -droed, ac ati os nad ydych wedi eu cyfrif o dan wisg ysgol."
+    },
+    "work-clothes": {
+      "title": "Dillad gwaith",
+      "information": "Yn dibynnu ar eich swydd, dyma le mae angen i chi gynnwys: oferôls a dillad gwaith rydych chi'n eu prynu'ch hun, unrhyw wisg nad yw'n cael ei darparu gan y swydd, a siwtiau a dillad craff eraill rydych chi'n eu prynu ar gyfer gwaith yn unig."
+    },
+    "childrens-clothes": {
+      "title": "Dillad plant",
+      "information": "Yr unig ffordd i gael darlun cywir yma yw cyfrifo’r hyn rydych chi’n ei wario mewn blwyddyn a rhoi’r swm hwnnw. Yna gallwch sicrhau eich bod wedi ystyried eitemau mawr fel cot aeaf neu git pêl droed. Cofiwch ystyried dillad ail-law wrth gyfrifo’r swm rydych yn ei wario ar y rhai ifancach.\n\nMae yna flwch ar wahân ar gyfer gwisg ysgol felly nid oes angen ei chynnwys yma."
+    },
+    "school-uniform": {
+      "title": "Gwisg ysgol",
+      "information": "Efallai y byddwch chi'n gwneud un brif siop wisg ysgol ychydig cyn dechrau'r flwyddyn ysgol, ond dylech chi hefyd gynnwys pethau rydych chi'n eu prynu ar adegau eraill o'r flwyddyn fel sanau, teits a ffrogiau haf neu siorts.\n\nMae'n debyg bod pethau fel blasers yn para mwy na blwyddyn felly gallwch rannu'r gost honno â dwy neu dri (neu fwy).\n\nO, a pheidiwch ag anghofio gynnwys y cit AG - gall hynny weithiau fod y rhan drytaf o wisg ysgol."
+    },
+    "laundry-and-dry-cleaning": {
+      "title": "Golchi dillad a sychlanhau",
+      "information": "Rhowch bopeth a wariwch yn y golchdy neu yn y siop glanhau dillad. Rhowch yr arian a wariwch ar bowdwr golchi ac ati yn unig, os nad ydych wedi ei gynnwys yn eich siopa groser."
+    },
+    "hairdressing": {
+      "title": "Trin gwallt",
+      "information": "Cyfrifwch yma yr hyn a wariwch ar dorri gwallt ar gyfer yr holl deulu. Os oes rhai ohonoch yn torri eich gwallt yn amlach na'ch gilydd yna dylech gyfrifo faint wariwch dros gyfnod hirach. Er enghraifft, os ydych chi a'r plant yn torri eich gwallt bob tri mis a'ch gŵr yn ei dorri bob mis, cyfrifwch yr hyn a wariwch ar eich cyfer chi a'r plant a thri ymweliad ar ei gyfer ef a dewiswch yn 'chwarterol' o'r gwymplen."
+    },
+    "beauty-treatments": {
+      "title": "Triniaethau harddwch",
+      "information": "Nodwch unrhyw beth a wariwch ar gyfer trin eich aeliau neu eich ewinedd neu unrhyw driniaethau prydferthwch eraill. Peidiwch â chynnwys cynnyrch colur os ydych am eu cynnwys fel rhan o'r deunydd ymolchi yn y blwch nesaf."
+    },
+    "toiletries": {
+      "title": "Pethau ymolchi",
+      "information": "Gadewch hwn yn wag os ydych wedi cynnwys deunydd ymolchi yn eich siopa wythnosol eisoes. Ond os prynwch ddeunydd ymolchi ar wahân, ac/neu nad ydych wedi eu cyfrifo eisoes, gwnewch yn siŵr eich bod yn eu cynnwys yma."
+    },
+    "eye-care": {
+      "title": "Gofal llygaid",
+      "information": "Dyma lle y dylech gyfrifo unrhyw beth a wariwch ar brofion llygaid, sbectolau, lensys cyffwrdd, toddiannau ac ati. Mae profion llygaid ar gyfer y rhai dan 16 oed a thros 60 oed yn rhad ac am ddim."
+    },
+    "dental-care": {
+      "title": "Gofal deintyddol",
+      "information": "Os nad oes arnoch fyth angen triniaeth ddeintyddol, gwell i chi gyllido ar gyfer triniaeth gwirio dannedd gyffredinol yn unig. Ond, os oes arnoch angen talu am driniaeth yn aml dylech gyfrifo faint yr ydych wedi ei dalu i'r deintydd dros y flwyddyn ddiwethaf. Os oes gennych yswiriant deintyddol, neu eich bod yn talu swm misol tuag at gynllun deintyddol, gallwch adael y blwch hwn yn wag a chwblhau'r swm yr ydych yn ei dalu yn y rhan yswiriant ar y dudalen nesaf. Cofiwch, mae plant dan 18 oed yn cael triniaeth ddeintyddol yn rhad ac am ddim. Peidiwch â chynnwys cost pâst dannedd, edau ac ati os ydych wedi eu cynnwys eisoes dan ddeunydd ymolchi neu fel rhan o'ch siopa groser."
+    },
+    "prescriptions-medicines": {
+      "title": "Presgripsiynau a moddion",
+      "information": "I ganfod costau presgripsiwn yn Lloegr, ewch i wefan [NHS Choices](https://www.nhs.uk/)website.\n\nCofiwch gynnwys pethau a brynwch dros y cownter megis tabledi lladd poen a thriniaethau ar gyfer pesychiadau ac anwydau, ac ati. Mae presgripsiynau am ddim yng Nghymru, yr Alban a Gogledd Iwerddon.nd."
+    }
+  }
+}

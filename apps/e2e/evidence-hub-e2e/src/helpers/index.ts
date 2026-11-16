@@ -1,0 +1,1 @@
+export { dismissCookieBanner } from './dismissCookieBanner';

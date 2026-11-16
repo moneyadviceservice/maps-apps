@@ -1,0 +1,1 @@
+export { validateIRN } from './validateIRN';

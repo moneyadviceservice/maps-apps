@@ -1,0 +1,10 @@
+import { Paragraph } from '@maps-react/common/components/Paragraph';
+import { useTranslation } from '@maps-react/hooks/useTranslation';
+
+export const Landing = () => {
+  const { t } = useTranslation();
+
+  return (
+    <Paragraph testId="landing-copy">{t('components.landing.intro')}</Paragraph>
+  );
+};

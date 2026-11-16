@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.playwright.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@maps-react/playwright/*": [
+        "../../../libs/shared/utils/src/e2e/playwright/*"
+      ]
+    }
+  },
+  "include": ["**/*.ts", "eslint.config.mjs", "**/*.js"]
+}

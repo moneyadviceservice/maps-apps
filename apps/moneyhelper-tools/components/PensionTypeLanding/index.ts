@@ -1,0 +1,1 @@
+export { PensionTypeLanding } from './PensionTypeLanding';
